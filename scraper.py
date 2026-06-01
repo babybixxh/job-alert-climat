@@ -41,8 +41,14 @@ def search_adzuna(keyword):
         results = data.get("results", [])
         print(f"  Total dispo: {count}, reçus: {len(results)}")
         
+EXCLUSIONS = ["stage", "alternance", "apprentissage", "intern", "junior"]
+        
         jobs = []
         for job in results:
+            title_lower = job.get("title", "").lower()
+            if any(excl in title_lower for excl in EXCLUSIONS):
+                print(f"  Exclu: {job.get('title')}")
+                continue
             jobs.append({
                 "title": job.get("title", "N/A"),
                 "company": job.get("company", {}).get("display_name", "N/A"),
