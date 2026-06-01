@@ -1,5 +1,6 @@
 import smtplib
 import os
+import json
 import requests
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -32,6 +33,20 @@ EXCLUSIONS = [
     "responsable bureau d'études", "technicien procédés",
     "préparateur coordinateur", "chef de projet urbanisme",
 ]
+
+SEEN_FILE = "seen_jobs.json"
+
+
+def load_seen():
+    if os.path.exists(SEEN_FILE):
+        with open(SEEN_FILE, "r") as f:
+            return set(json.load(f))
+    return set()
+
+
+def save_seen(seen):
+    with open(SEEN_FILE, "w") as f:
+        json.dump(list(seen), f)
 
 
 def search_adzuna(keyword, location):
@@ -90,6 +105,13 @@ def deduplicate(jobs):
     return unique
 
 
+def mark_seen(jobs, seen_ids):
+    for job in jobs:
+        key = f"{job['title'].lower()}|{job['company'].lower()}"
+        job["is_new"] = key not in seen_ids
+    return jobs
+
+
 def categorize(jobs):
     marseille, paca, paris = [], [], []
     for job in jobs:
@@ -106,19 +128,24 @@ def categorize(jobs):
 def section_html(title, emoji, jobs, color):
     if not jobs:
         return ""
+    new_count = sum(1 for j in jobs if j.get("is_new"))
     html = f"""
     <div style="margin: 2rem 0 1rem">
         <div style="display:flex; align-items:center; gap:10px; margin-bottom:1rem">
             <span style="font-size:20px">{emoji}</span>
             <h2 style="margin:0; font-size:17px; font-weight:500; color:{color}">{title}</h2>
             <span style="font-size:13px; color:#888; background:#f0f0f0; padding:2px 10px; border-radius:20px">{len(jobs)} offre(s)</span>
+            {f'<span style="font-size:13px; color:#fff; background:#e05c2a; padding:2px 10px; border-radius:20px">🆕 {new_count} nouvelle(s)</span>' if new_count else ''}
         </div>
     """
     for job in jobs:
+        is_new = job.get("is_new", True)
+        badge = '<span style="font-size:11px; color:#fff; background:#e05c2a; padding:1px 8px; border-radius:10px; margin-left:8px; vertical-align:middle">NOUVEAU</span>' if is_new else '<span style="font-size:11px; color:#888; background:#f0f0f0; padding:1px 8px; border-radius:10px; margin-left:8px; vertical-align:middle">Déjà vu</span>'
         html += f"""
-        <div style="margin-bottom:16px;padding:14px;border-left:4px solid {color};background:#f9f9f9;border-radius:4px">
+        <div style="margin-bottom:16px;padding:14px;border-left:4px solid {color};background:{'#fff8f5' if is_new else '#f9f9f9'};border-radius:4px">
             <h3 style="margin:0 0 6px 0">
                 <a href="{job['url']}" style="color:{color};text-decoration:none">{job['title']}</a>
+                {badge}
             </h3>
             <p style="margin:0 0 5px 0;color:#555;font-size:14px">
                 🏢 <strong>{job['company']}</strong> &nbsp;|&nbsp; 📍 {job['location']}
@@ -134,6 +161,7 @@ def build_email(jobs):
     today = datetime.now().strftime("%d/%m/%Y")
     marseille, paca, paris = categorize(jobs)
     total = len(jobs)
+    new_total = sum(1 for j in jobs if j.get("is_new"))
 
     if not total:
         return f"""
@@ -146,7 +174,7 @@ def build_email(jobs):
     body = f"""
     <html><body style="font-family:Arial,sans-serif;max-width:700px;margin:auto;padding:20px">
     <h2 style="color:#2d6a4f">🌱 Alerte emploi climat — {today}</h2>
-    <p style="color:#555">{total} offre(s) — Marseille ({len(marseille)}) · PACA ({len(paca)}) · Paris ({len(paris)})</p>
+    <p style="color:#555">{total} offre(s) dont <strong style="color:#e05c2a">{new_total} nouvelle(s)</strong> — Marseille ({len(marseille)}) · PACA ({len(paca)}) · Paris ({len(paris)})</p>
     <hr style="border:1px solid #e0e0e0">
     """
 
@@ -181,6 +209,9 @@ def send_email(html_body, job_count):
 
 
 if __name__ == "__main__":
+    seen_ids = load_seen()
+    print(f"{len(seen_ids)} offres déjà vues en mémoire")
+
     all_jobs = []
     for keyword in KEYWORDS:
         for location in LOCATIONS:
@@ -188,6 +219,11 @@ if __name__ == "__main__":
             all_jobs += found
 
     jobs = deduplicate(all_jobs)
+    jobs = mark_seen(jobs, seen_ids)
+
+    new_seen = seen_ids | {f"{j['title'].lower()}|{j['company'].lower()}" for j in jobs}
+    save_seen(new_seen)
+
     print(f"\nTotal : {len(jobs)} offres uniques")
     html = build_email(jobs)
     send_email(html, len(jobs))
