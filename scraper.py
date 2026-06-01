@@ -28,7 +28,7 @@ def search_adzuna(keyword, location):
         f"&results_per_page=5"
         f"&what={requests.utils.quote(keyword)}"
         f"&where={requests.utils.quote(location)}"
-        f"&max_days_old=1"
+        f"&max_days_old=7"
         f"&content-type=application/json"
     )
     try:
