@@ -17,7 +17,30 @@ KEYWORDS = [
 
 LOCATIONS = ["Paris", "Marseille", "Aix-en-Provence", "Toulon", "Nice"]
 
-EXCLUSIONS = ["stage", "alternance", "apprentissage", "intern", "junior"]
+EXCLUSIONS = [
+    # Déjà existants
+    "stage", "alternance", "apprentissage", "intern", "junior",
+
+    # Travaux, terrain, exploitation
+    "travaux", "moe", "chantier", "réhabilitation", "urbaniste",
+    "collecte", "nettoiement", "assainissement", "exploitation eau",
+    "inspection itv", "ouvrages d'art", "frigoriste", "polissage",
+    "électromécanicien", "electro mec",
+
+    # Achats, finance, compta
+    "acheteur", "achats", "procurement", "comptabilité", "comptable",
+    "amoa finance", "avant-vente", "présales",
+
+    # Secteurs sans lien climat
+    "nucléaire", "nucl", "hydraulique moe", "calcul mécanique",
+    "aéronautique", "aeronautics", "vessel", "optique",
+    "regulatory affairs", "r&d procédés",
+
+    # Rôles trop généralistes
+    "régisseur", "régisseuse", "vidéo", "delivery manager",
+    "responsable bureau d'études", "technicien procédés",
+    "préparateur coordinateur", "chef de projet urbanisme",
+]
 
 
 def search_adzuna(keyword, location):
