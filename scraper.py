@@ -118,36 +118,42 @@ def search_adzuna(keyword, location):
         return []
 
 
-def search_jtms(keyword):
-    url = f"https://jobs-that-make-sense.com/jobs?search={requests.utils.quote(keyword)}"
+def search_jtms(keyword, location):
+    loc_map = {
+        "Marseille": "marseille",
+        "Paris": "paris",
+        "Aix-en-Provence": "aix-en-provence",
+        "Toulon": "toulon",
+        "Nice": "nice",
+    }
+    loc_slug = loc_map.get(location, location.lower())
+    url = (
+        f"https://jobs.makesense.org/api/v3/jobs"
+        f"?query={requests.utils.quote(keyword)}"
+        f"&location={requests.utils.quote(loc_slug)}"
+        f"&contracts=cdi&contracts=cdd&contracts=freelance"
+        f"&per_page=10"
+    )
     try:
-        r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=10)
-        soup = BeautifulSoup(r.text, "html.parser")
+        r = requests.get(url, headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"}, timeout=10)
+        data = r.json()
+        results = data.get("jobs", data.get("results", []))
+        print(f"  JTMS '{keyword}' / '{location}' → {len(results)} offres brutes")
         jobs = []
-        cards = soup.find_all("a", class_=lambda c: c and "job" in c.lower())
-        for card in cards[:10]:
-            title_el = card.find(["h2", "h3", "span"], class_=lambda c: c and "title" in str(c).lower())
-            company_el = card.find(["span", "p"], class_=lambda c: c and "company" in str(c).lower())
-            location_el = card.find(["span", "p"], class_=lambda c: c and "location" in str(c).lower())
-            if not title_el:
-                continue
-            title = title_el.get_text(strip=True)
+        for job in results:
+            title = job.get("title", job.get("name", "N/A"))
             if any(excl in title.lower() for excl in EXCLUSIONS):
-                continue
-            location = location_el.get_text(strip=True) if location_el else "France"
-            if not any(loc in location.lower() for loc in ["paris", "marseille", "aix", "toulon", "nice", "remote", "télétravail", "france"]):
+                print(f"  Exclu JTMS: {title}")
                 continue
             jobs.append({
                 "title": title,
-                "company": company_el.get_text(strip=True) if company_el else "N/A",
-                "location": location,
-                "url": "https://jobs-that-make-sense.com" + card.get("href", ""),
-                "description": "",
-                "source": "Jobs That Make Sense",
+                "company": job.get("organization", {}).get("name", job.get("company", "N/A")) if isinstance(job.get("organization"), dict) else job.get("organization", "N/A"),
+                "location": job.get("city", job.get("location", location)),
+                "url": f"https://jobs.makesense.org/fr/o/{job.get('slug', job.get('id', ''))}",
+                "description": job.get("description", job.get("summary", ""))[:150] + "...",
+                "source": "Jobs that Make Sense",
             })
-        print(f"  JTMS '{keyword}' → {len(jobs)} offres")
         return jobs
-
     except Exception as e:
         print(f"  EXCEPTION JTMS: {e}")
         return []
@@ -269,7 +275,6 @@ def send_email(html_body, job_count):
 
     print(f"Email envoyé avec {job_count} offres !")
 
-
 if __name__ == "__main__":
     seen_ids = load_seen()
     print(f"{len(seen_ids)} offres déjà vues en mémoire")
@@ -277,10 +282,8 @@ if __name__ == "__main__":
     all_jobs = []
     for keyword in KEYWORDS:
         for location in LOCATIONS:
-            found = search_adzuna(keyword, location)
-            all_jobs += found
-        found_jtms = search_jtms(keyword)
-        all_jobs += found_jtms
+            all_jobs += search_adzuna(keyword, location)
+            all_jobs += search_jtms(keyword, location)
 
     jobs = deduplicate(all_jobs)
     jobs = mark_seen(jobs, seen_ids)
