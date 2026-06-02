@@ -48,6 +48,13 @@ EXCLUSIONS = [
     "préparateur coordinateur", "chef de projet urbanisme",
     "ingénieur travaux", "ingénieur calcul", "ingénieur hydraulique",
     "ingénieur mécanique", "projeteur",
+  
+    # Paysage / espaces verts
+    "paysagiste", "paysager", "espaces verts",
+
+    # Stages et alternances supplémentaires
+    "en alternance", "en stage", "contrat pro", "contrat d'apprentissage",
+    "bac+2", "bac+3", "débutant accepté",
 ]
 
 SEEN_FILE = "seen_jobs.json"
