@@ -2,6 +2,7 @@ import smtplib
 import os
 import json
 import requests
+from bs4 import BeautifulSoup
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from datetime import datetime
@@ -19,42 +20,27 @@ KEYWORDS = [
 LOCATIONS = ["Paris", "Marseille", "Aix-en-Provence", "Toulon", "Nice"]
 
 EXCLUSIONS = [
-    # Déjà existants
     "stage", "alternance", "apprentissage", "intern", "junior",
-
-    # Travaux, terrain, exploitation
+    "en alternance", "en stage", "contrat pro", "contrat d'apprentissage",
+    "bac+2", "bac+3", "débutant accepté",
     "travaux", "moe", "chantier", "réhabilitation", "urbaniste",
     "collecte", "nettoiement", "assainissement", "exploitation eau",
     "inspection itv", "ouvrages d'art", "frigoriste", "polissage",
     "électromécanicien", "electro mec",
-
-    # Techniciens (tous types)
     "technicien", "technicienne", "technician",
     "opérateur", "opératrice", "agent de",
     "conducteur d'engins", "chauffeur",
-
-    # Achats, finance, compta
     "acheteur", "achats", "procurement", "comptabilité", "comptable",
     "amoa finance", "avant-vente", "présales",
-
-    # Secteurs sans lien climat
     "nucléaire", "nucl", "hydraulique moe", "calcul mécanique",
     "aéronautique", "aeronautics", "vessel", "optique",
     "regulatory affairs", "r&d procédés",
-
-    # Rôles trop généralistes
     "régisseur", "régisseuse", "vidéo", "delivery manager",
     "responsable bureau d'études", "technicien procédés",
     "préparateur coordinateur", "chef de projet urbanisme",
     "ingénieur travaux", "ingénieur calcul", "ingénieur hydraulique",
     "ingénieur mécanique", "projeteur",
-  
-    # Paysage / espaces verts
     "paysagiste", "paysager", "espaces verts",
-
-    # Stages et alternances supplémentaires
-    "en alternance", "en stage", "contrat pro", "contrat d'apprentissage",
-    "bac+2", "bac+3", "débutant accepté",
 ]
 
 SEEN_FILE = "seen_jobs.json"
@@ -109,11 +95,47 @@ def search_adzuna(keyword, location):
                 "location": job.get("location", {}).get("display_name", location),
                 "url": job.get("redirect_url", ""),
                 "description": job.get("description", "")[:150] + "...",
+                "source": "Adzuna",
             })
         return jobs
 
     except Exception as e:
-        print(f"  EXCEPTION: {e}")
+        print(f"  EXCEPTION Adzuna: {e}")
+        return []
+
+
+def search_jtms(keyword):
+    url = f"https://jobs-that-make-sense.com/jobs?search={requests.utils.quote(keyword)}"
+    try:
+        r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=10)
+        soup = BeautifulSoup(r.text, "html.parser")
+        jobs = []
+        cards = soup.find_all("a", class_=lambda c: c and "job" in c.lower())
+        for card in cards[:10]:
+            title_el = card.find(["h2", "h3", "span"], class_=lambda c: c and "title" in str(c).lower())
+            company_el = card.find(["span", "p"], class_=lambda c: c and "company" in str(c).lower())
+            location_el = card.find(["span", "p"], class_=lambda c: c and "location" in str(c).lower())
+            if not title_el:
+                continue
+            title = title_el.get_text(strip=True)
+            if any(excl in title.lower() for excl in EXCLUSIONS):
+                continue
+            location = location_el.get_text(strip=True) if location_el else "France"
+            if not any(loc in location.lower() for loc in ["paris", "marseille", "aix", "toulon", "nice", "remote", "télétravail", "france"]):
+                continue
+            jobs.append({
+                "title": title,
+                "company": company_el.get_text(strip=True) if company_el else "N/A",
+                "location": location,
+                "url": "https://jobs-that-make-sense.com" + card.get("href", ""),
+                "description": "",
+                "source": "Jobs That Make Sense",
+            })
+        print(f"  JTMS '{keyword}' → {len(jobs)} offres")
+        return jobs
+
+    except Exception as e:
+        print(f"  EXCEPTION JTMS: {e}")
         return []
 
 
@@ -163,12 +185,15 @@ def section_html(title, emoji, jobs, color):
     """
     for job in jobs:
         is_new = job.get("is_new", True)
-        badge = '<span style="font-size:11px; color:#fff; background:#e05c2a; padding:1px 8px; border-radius:10px; margin-left:8px; vertical-align:middle">NOUVEAU</span>' if is_new else '<span style="font-size:11px; color:#888; background:#f0f0f0; padding:1px 8px; border-radius:10px; margin-left:8px; vertical-align:middle">Déjà vu</span>'
+        source = job.get("source", "")
+        badge = '<span style="font-size:11px; color:#fff; background:#e05c2a; padding:1px 8px; border-radius:10px; margin-left:8px">NOUVEAU</span>' if is_new else '<span style="font-size:11px; color:#888; background:#f0f0f0; padding:1px 8px; border-radius:10px; margin-left:8px">Déjà vu</span>'
+        source_badge = f'<span style="font-size:11px; color:#fff; background:#4a90a4; padding:1px 8px; border-radius:10px; margin-left:6px">{source}</span>'
         html += f"""
         <div style="margin-bottom:16px;padding:14px;border-left:4px solid {color};background:{'#fff8f5' if is_new else '#f9f9f9'};border-radius:4px">
             <h3 style="margin:0 0 6px 0">
                 <a href="{job['url']}" style="color:{color};text-decoration:none">{job['title']}</a>
                 {badge}
+                {source_badge}
             </h3>
             <p style="margin:0 0 5px 0;color:#555;font-size:14px">
                 🏢 <strong>{job['company']}</strong> &nbsp;|&nbsp; 📍 {job['location']}
@@ -240,6 +265,8 @@ if __name__ == "__main__":
         for location in LOCATIONS:
             found = search_adzuna(keyword, location)
             all_jobs += found
+        found_jtms = search_jtms(keyword)
+        all_jobs += found_jtms
 
     jobs = deduplicate(all_jobs)
     jobs = mark_seen(jobs, seen_ids)
