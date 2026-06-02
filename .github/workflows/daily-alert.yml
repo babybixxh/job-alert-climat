@@ -2,12 +2,14 @@ name: Daily Job Alert
 
 on:
   schedule:
-    - cron: '0 5 * * *'  # Tous les jours à 7h00 UTC (8h ou 9h Paris)
-  workflow_dispatch:       # Permet de lancer manuellement pour tester
+    - cron: '0 5 * * *'
+  workflow_dispatch:
 
 jobs:
   run-scraper:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -27,3 +29,11 @@ jobs:
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
         run: python scraper.py
+
+      - name: Sauvegarder seen_jobs.json
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add seen_jobs.json
+          git diff --staged --quiet || git commit -m "Update seen_jobs"
+          git push
