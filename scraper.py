@@ -118,41 +118,31 @@ def search_adzuna(keyword, location):
         return []
 
 
-def search_jtms(keyword, location):
-    loc_map = {
-        "Marseille": "marseille",
-        "Paris": "paris",
-        "Aix-en-Provence": "aix-en-provence",
-        "Toulon": "toulon",
-        "Nice": "nice",
-    }
-    loc_slug = loc_map.get(location, location.lower())
-    url = (
-        f"https://jobs.makesense.org/api/v3/jobs"
-        f"?query={requests.utils.quote(keyword)}"
-        f"&location={requests.utils.quote(loc_slug)}"
-        f"&contracts=cdi&contracts=cdd&contracts=freelance"
-        f"&per_page=10"
-    )
+def search_jtms():
+    import xml.etree.ElementTree as ET
+    url = "https://jobs.makesense.org/fr/s/jobs/all?cause=causes-i-support-ecology-environment-biodiversity&cause=causes-i-support-energies&cause=causes-i-support-transforming-organisations-and-csr&contracts=cdi&contracts=cdd&format=rss"
     try:
-        r = requests.get(url, headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"}, timeout=10)
-        data = r.json()
-        results = data.get("jobs", data.get("results", []))
-        print(f"  JTMS '{keyword}' / '{location}' → {len(results)} offres brutes")
+        r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=10)
+        root = ET.fromstring(r.content)
         jobs = []
-        for job in results:
-            title = job.get("title", job.get("name", "N/A"))
+        for item in root.findall(".//item"):
+            title = item.findtext("title", "N/A")
             if any(excl in title.lower() for excl in EXCLUSIONS):
                 print(f"  Exclu JTMS: {title}")
                 continue
+            location = item.findtext("location", item.findtext("{http://indeed.com/indeed-jobs-1.0}city", "France"))
+            loc_lower = location.lower()
+            if not any(loc in loc_lower for loc in ["paris", "marseille", "aix", "toulon", "nice", "remote", "télétravail", "france", "à distance"]):
+                continue
             jobs.append({
                 "title": title,
-                "company": job.get("organization", {}).get("name", job.get("company", "N/A")) if isinstance(job.get("organization"), dict) else job.get("organization", "N/A"),
-                "location": job.get("city", job.get("location", location)),
-                "url": f"https://jobs.makesense.org/fr/o/{job.get('slug', job.get('id', ''))}",
-                "description": job.get("description", job.get("summary", ""))[:150] + "...",
+                "company": item.findtext("author", item.findtext("{http://purl.org/dc/elements/1.1/}creator", "N/A")),
+                "location": location,
+                "url": item.findtext("link", ""),
+                "description": (item.findtext("description", "") or "")[:150] + "...",
                 "source": "Jobs that Make Sense",
             })
+        print(f"  JTMS RSS → {len(jobs)} offres après filtre")
         return jobs
     except Exception as e:
         print(f"  EXCEPTION JTMS: {e}")
@@ -283,7 +273,8 @@ if __name__ == "__main__":
     for keyword in KEYWORDS:
         for location in LOCATIONS:
             all_jobs += search_adzuna(keyword, location)
-            all_jobs += search_jtms(keyword, location)
+
+    all_jobs += search_jtms()
 
     jobs = deduplicate(all_jobs)
     jobs = mark_seen(jobs, seen_ids)
