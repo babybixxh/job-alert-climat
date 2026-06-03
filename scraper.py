@@ -118,34 +118,41 @@ def search_adzuna(keyword, location):
         return []
 
 
-def search_jtms():
-    import xml.etree.ElementTree as ET
-    url = "https://jobs.makesense.org/fr/s/jobs/all?cause=causes-i-support-ecology-environment-biodiversity&cause=causes-i-support-energies&cause=causes-i-support-transforming-organisations-and-csr&contracts=cdi&contracts=cdd&format=rss"
+def search_wttj(keyword, location):
+    url = (
+        f"https://api.welcometothejungle.com/api/v1/jobs"
+        f"?query={requests.utils.quote(keyword)}"
+        f"&location={requests.utils.quote(location)}"
+        f"&contract_type[]=full_time"
+        f"&per_page=10"
+    )
     try:
-        r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=10)
-        root = ET.fromstring(r.content)
+        r = requests.get(url, headers={
+            "User-Agent": "Mozilla/5.0",
+            "Accept": "application/json",
+            "Accept-Language": "fr-FR"
+        }, timeout=10)
+        data = r.json()
+        results = data.get("jobs", [])
+        print(f"  WTTJ '{keyword}' / '{location}' → {len(results)} offres brutes")
         jobs = []
-        for item in root.findall(".//item"):
-            title = item.findtext("title", "N/A")
+        for job in results:
+            title = job.get("name", "N/A")
             if any(excl in title.lower() for excl in EXCLUSIONS):
-                print(f"  Exclu JTMS: {title}")
+                print(f"  Exclu WTTJ: {title}")
                 continue
-            location = item.findtext("location", item.findtext("{http://indeed.com/indeed-jobs-1.0}city", "France"))
-            loc_lower = location.lower()
-            if not any(loc in loc_lower for loc in ["paris", "marseille", "aix", "toulon", "nice", "remote", "télétravail", "france", "à distance"]):
-                continue
+            org = job.get("organization", {})
             jobs.append({
                 "title": title,
-                "company": item.findtext("author", item.findtext("{http://purl.org/dc/elements/1.1/}creator", "N/A")),
-                "location": location,
-                "url": item.findtext("link", ""),
-                "description": (item.findtext("description", "") or "")[:150] + "...",
-                "source": "Jobs that Make Sense",
+                "company": org.get("name", "N/A"),
+                "location": job.get("office", {}).get("city", location),
+                "url": f"https://www.welcometothejungle.com/fr/companies/{org.get('slug', '')}/jobs/{job.get('slug', '')}",
+                "description": job.get("description", "")[:150] + "...",
+                "source": "Welcome to the Jungle",
             })
-        print(f"  JTMS RSS → {len(jobs)} offres après filtre")
         return jobs
     except Exception as e:
-        print(f"  EXCEPTION JTMS: {e}")
+        print(f"  EXCEPTION WTTJ: {e}")
         return []
 
 
@@ -273,8 +280,7 @@ if __name__ == "__main__":
     for keyword in KEYWORDS:
         for location in LOCATIONS:
             all_jobs += search_adzuna(keyword, location)
-
-    all_jobs += search_jtms()
+            all_jobs += search_wttj(keyword, location)
 
     jobs = deduplicate(all_jobs)
     jobs = mark_seen(jobs, seen_ids)
