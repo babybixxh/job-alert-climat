@@ -763,6 +763,15 @@ if __name__ == "__main__":
             all_jobs += search_greenhouse_board(board_token, keyword)
 
     jobs = deduplicate(all_jobs)
+    print("\nSources après déduplication :")
+source_counts = {}
+
+for job in jobs:
+    source = job.get("source", "N/A")
+    source_counts[source] = source_counts.get(source, 0) + 1
+
+for source, count in sorted(source_counts.items()):
+    print(f"  {source}: {count}")
     jobs = mark_seen(jobs, seen_ids)
 
     new_seen = seen_ids | {
