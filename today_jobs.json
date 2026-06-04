@@ -7,7 +7,7 @@
     "url": "https://www.adzuna.fr/details/5746017364?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Notre client est une organisation nationale au service des coopératives agricoles, engagée dans l'accompagnement de leurs transformations stratégiques...",
     "source": "Adzuna",
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5749744614",
@@ -17,7 +17,7 @@
     "url": "https://www.adzuna.fr/details/5749744614?utm_medium=api&utm_source=ae8a5ffa",
     "description": "La démarche RSE MGEN est pilotée au niveau de la Direction de la stratégie, de la transformation, de la coopération et des risques. Elle est portée du...",
     "source": "Adzuna",
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5748496238",
@@ -27,7 +27,7 @@
     "url": "https://www.adzuna.fr/details/5748496238?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Connaissez-vous le groupe MGEN ? * Un employeur de l'ESS qui réconcilie éthique et économie, solidarité et performance * Un acteur majeur en santé et ...",
     "source": "Adzuna",
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5743931629",
@@ -37,7 +37,7 @@
     "url": "https://www.adzuna.fr/details/5743931629?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Vos missions en quelques mots En 2022, deux enseignants-chercheurs ont été chargés d’établir un diagnostic et de procéder à une analyse de l’empreinte...",
     "source": "Adzuna",
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5746745596",
@@ -47,7 +47,7 @@
     "url": "https://www.adzuna.fr/details/5746745596?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Informations générales Organisme de rattachement Direction générale des entreprises (DGE) Référence MEF_2026-30523 Date de début de diffusion 29/05/20...",
     "source": "Adzuna",
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5749909673",
@@ -57,7 +57,7 @@
     "url": "https://www.adzuna.fr/details/5749909673?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Pionnier du développement durable et expert en transition socio-écologique, Auxilia est un cabinet de conseil qui accompagne collectivités et entrepri...",
     "source": "Adzuna",
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5750085748",
@@ -66,6 +66,16 @@
     "location": "Paris, Ile-de-France",
     "url": "https://www.adzuna.fr/details/5750085748?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Voies navigables de France (VNF) est l'établissement public en charge de la gestion, de l'exploitation et du développement d'un réseau de 6700 km de v...",
+    "source": "Adzuna",
+    "is_new": false
+  },
+  {
+    "id": "5752394966",
+    "title": "Ingénieur(e) Restauration – Plateforme Logistique",
+    "company": "Choisir le Service Public",
+    "location": "Allauch, Marseille",
+    "url": "https://www.adzuna.fr/details/5752394966?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Informations générales Organisme de rattachement HOPITAUX UNIVERSITAIRE DE MARSEILLE APHM Référence 2026-2299436 Date de début de diffusion 03/06/2026...",
     "source": "Adzuna",
     "is_new": true
   },
@@ -77,7 +87,7 @@
     "url": "https://www.adzuna.fr/details/5752357636?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Vos missions en quelques mots Contexte Marseille, deuxième ville de France, est une ville vibrante, profondément attachée à sa culture, et un territoi...",
     "source": "Adzuna",
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5751113078",
@@ -87,37 +97,17 @@
     "url": "https://www.adzuna.fr/details/5751113078?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Vos missions en quelques mots Vous souhaitez jouer un rôle dans la transition écologique des industries et agir sur le terrain pour concilier le dével...",
     "source": "Adzuna",
-    "is_new": true
-  },
-  {
-    "id": "5751083110",
-    "title": "Inspecteur.rice de l environnement -Pôle Déchet-Matériau",
-    "company": "Choisir le Service Public",
-    "location": "Allauch, Marseille",
-    "url": "https://www.adzuna.fr/details/5751083110?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Informations générales Organisme de rattachement Direction Régionale de l'Environnement, de l'Aménagement et du Logement Provence-Alpes-Côte d'Azur (D...",
-    "source": "Adzuna",
-    "is_new": true
-  },
-  {
-    "id": "5751051726",
-    "title": "Chargé(e) de Mission Projets DT Salon Etang de Berre",
-    "company": "Choisir le Service Public",
-    "location": "Salon-de-Provence, Aix-en-Provence",
-    "url": "https://www.adzuna.fr/details/5751051726?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Informations générales Organisme de rattachement Direction Départementale des Territoires et de la Mer des Bouches-du-Rhône (DDTM 13) Référence 2026-2...",
-    "source": "Adzuna",
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5748984983",
     "title": "RESPONSABLE PRODUCTION EAU POTABLE NICE LITTORAL H/F",
     "company": "Eau d'Azur",
     "location": "Nice, Alpes-Maritimes",
-    "url": "https://www.adzuna.fr/land/ad/5748984983?se=6PsmAVpg8RGOiOmPg4gP4A&utm_medium=api&utm_source=ae8a5ffa&v=76881897A1DFF89D3912F270DF1AD8F791718DF4",
+    "url": "https://www.adzuna.fr/land/ad/5748984983?se=_NlA2F1g8RGeGZQN_-WxfA&utm_medium=api&utm_source=ae8a5ffa&v=76881897A1DFF89D3912F270DF1AD8F791718DF4",
     "description": " REJOIGNEZ EAU D'AZUR EN TANT QUE RESPONSABLE PRODUCTION EAU POTABLE (H/F)   Nice Littoral – CDI Et si votre prochain défi consistait à garantir chaqu...",
     "source": "Adzuna",
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5742986344",
@@ -127,7 +117,7 @@
     "url": "https://www.adzuna.fr/details/5742986344?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Au sein d'une équipe spécialisée, vous intervenez sur des projets d'efficacité énergétique et de décarbonation appliqués à des sites tertiaires et/ou ...",
     "source": "Adzuna",
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5748960470",
@@ -137,6 +127,6 @@
     "url": "https://www.adzuna.fr/details/5748960470?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Votre rôle : Vous êtes responsable d’un portefeuille de centrales photovoltaïques, en garantissant leur performance financière et contractuelle. De la...",
     "source": "Adzuna",
-    "is_new": true
+    "is_new": false
   }
 ]
