@@ -138,8 +138,11 @@ def search_greenjobs(keyword):
     exclusions = get_exclusions()
     try:
         from bs4 import BeautifulSoup
-        url = f"https://www.greenjobs.fr/emplois/?q={requests.utils.quote(keyword)}"
-        r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=10)
+        url = f"https://www.greenjobs.fr/emplois/?q={requests.utils.quote(keyword)}&country=FR"
+        r = requests.get(url, headers={
+            "User-Agent": "Mozilla/5.0",
+            "Accept-Language": "fr-FR,fr;q=0.9",
+        }, timeout=10)
         soup = BeautifulSoup(r.text, "html.parser")
         jobs = []
         cards = soup.find_all("article", class_=lambda c: c and "job" in str(c).lower())
@@ -151,17 +154,29 @@ def search_greenjobs(keyword):
             if not title_el:
                 continue
             title = title_el.get_text(strip=True)
+
+            # Filtre langue : rejette si le titre contient des mots néerlandais/anglais typiques
+            if any(w in title.lower() for w in ["vacature", "bekijk", "werk", "medewerker", "allround", "manager", " de ", "the "]):
+                continue
             if any(excl in title.lower() for excl in exclusions):
                 print(f"  Exclu Greenjobs: {title}")
                 continue
+
             link_el = card.find("a", href=True)
             href = link_el["href"] if link_el else ""
             full_url = href if href.startswith("http") else "https://www.greenjobs.fr" + href
-            location_el = card.find(["span", "p"], class_=lambda c: c and ("loc" in str(c).lower() or "lieu" in str(c).lower() or "ville" in str(c).lower()))
+
+            # Filtre URL : rejette les offres étrangères
+            if "/vacature/" in full_url or "/job/" in full_url:
+                continue
+
+            location_el = card.find(["span", "p"], class_=lambda c: c and any(w in str(c).lower() for w in ["loc", "lieu", "ville"]))
             location = location_el.get_text(strip=True) if location_el else "France"
+
             if not any(loc in location.lower() for loc in ["paris", "marseille", "aix", "toulon", "nice", "remote", "télétravail", "france", "à distance", "paca"]):
                 continue
-            company_el = card.find(["span", "p"], class_=lambda c: c and ("company" in str(c).lower() or "entreprise" in str(c).lower() or "employeur" in str(c).lower()))
+
+            company_el = card.find(["span", "p"], class_=lambda c: c and any(w in str(c).lower() for w in ["company", "entreprise", "employeur"]))
             jobs.append({
                 "id": full_url,
                 "title": title,
