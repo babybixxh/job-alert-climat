@@ -742,7 +742,28 @@ def send_email(html_body, job_count):
 
     print(f"Email envoyé avec {job_count} offres.")
 
+def print_source_counts(label, jobs):
+    print(f"\n{label}")
 
+    if not jobs:
+        print("  Aucune offre")
+        return
+
+    counts = {}
+
+    for job in jobs:
+        sources = job.get("sources")
+
+        if not sources:
+            source = job.get("source", "N/A")
+            sources = [source]
+
+        for source in sources:
+            counts[source] = counts.get(source, 0) + 1
+
+    for source, count in sorted(counts.items()):
+        print(f"  {source}: {count}")
+        
 if __name__ == "__main__":
     seen_ids = set(load_json(SEEN_FILE, []))
 
@@ -762,9 +783,41 @@ if __name__ == "__main__":
         for board_token in GREENHOUSE_BOARDS:
             all_jobs += search_greenhouse_board(board_token, keyword)
 
-    jobs = deduplicate(all_jobs)
-    print("\nSources après déduplication :")
-source_counts = {}
+    def deduplicate(jobs):
+    by_key = {}
+
+    for job in jobs:
+        title = job.get("title", "").lower().strip()
+        company = job.get("company", "").lower().strip()
+        location = job.get("location", "").lower().strip()
+
+        key = (title, company, location)
+
+        source = job.get("source", "N/A")
+
+        if key not in by_key:
+            job["sources"] = [source]
+            by_key[key] = job
+        else:
+            existing = by_key[key]
+
+            existing_sources = existing.get("sources", [])
+            if source not in existing_sources:
+                existing_sources.append(source)
+
+            existing["sources"] = existing_sources
+            existing["source"] = " + ".join(existing_sources)
+
+            if existing.get("company") in ["", "N/A"] and job.get("company") not in ["", "N/A"]:
+                existing["company"] = job.get("company")
+
+            if existing.get("description") in ["", "N/A"] and job.get("description"):
+                existing["description"] = job.get("description")
+
+            if existing.get("url") in ["", "N/A"] and job.get("url"):
+                existing["url"] = job.get("url")
+
+    return list(by_key.values())
 
 for job in jobs:
     source = job.get("source", "N/A")
