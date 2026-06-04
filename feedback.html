@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌱 Offres non pertinentes</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; background: #f5f5f5; }
+  h1 { color: #2d6a4f; }
+  .job { background: white; padding: 16px; border-radius: 8px; margin-bottom: 12px; border-left: 4px solid #ccc; display: flex; align-items: flex-start; gap: 12px; }
+  .job.rejected { border-left-color: #e05c2a; background: #fff5f0; }
+  .job-info { flex: 1; }
+  .job-title { font-weight: bold; color: #333; }
+  .job-meta { font-size: 13px; color: #777; margin-top: 4px; }
+  .btn { padding: 8px 16px; border: none; border-radius: 6px; cursor: pointer; font-size: 13px; }
+  .btn-reject { background: #e05c2a; color: white; }
+  .btn-restore { background: #eee; color: #555; }
+  #save-btn { display: none; margin-top: 20px; padding: 12px 24px; background: #2d6a4f; color: white; border: none; border-radius: 8px; font-size: 15px; cursor: pointer; width: 100%; }
+  #status { margin-top: 12px; color: #2d6a4f; font-weight: bold; text-align: center; }
+  .source { font-size: 11px; color: white; padding: 1px 8px; border-radius: 10px; margin-left: 6px; }
+  .source-adzuna { background: #4a90a4; }
+  .source-wttj { background: #7b5ea7; }
+  #loading { text-align: center; color: #888; padding: 40px; }
+</style>
+</head>
+<body>
+<h1>🌱 Signaler des offres non pertinentes</h1>
+<p style="color:#555">Clique sur 👎 pour les offres qui ne correspondent pas. Elles seront exclues des prochains mails.</p>
+<div id="loading">Chargement des offres...</div>
+<div id="jobs-list"></div>
+<button id="save-btn" onclick="saveRejected()">💾 Enregistrer et exclure ces offres</button>
+<div id="status"></div>
+
+<script>
+const REPO = "babybixxh/job-alert-climat";
+const RAW_BASE = `https://raw.githubusercontent.com/${REPO}/main`;
+const API_BASE = `https://api.github.com/repos/${REPO}/contents`;
+
+let jobs = [];
+let rejected = new Set();
+let existingRejected = [];
+
+async function loadJobs() {
+  try {
+    const r = await fetch(`${RAW_BASE}/today_jobs.json?t=${Date.now()}`);
+    jobs = await r.json();
+    const r2 = await fetch(`${RAW_BASE}/rejected_keywords.json?t=${Date.now()}`);
+    if (r2.ok) existingRejected = await r2.json();
+  } catch(e) { jobs = []; }
+  render();
+}
+
+function render() {
+  const container = document.getElementById("jobs-list");
+  document.getElementById("loading").style.display = "none";
+  if (!jobs.length) { container.innerHTML = "<p>Aucune offre trouvée pour aujourd'hui.</p>"; return; }
+  container.innerHTML = jobs.map((job, i) => {
+    const sourceClass = job.source === "Adzuna" ? "source-adzuna" : "source-wttj";
+    return `
+    <div class="job" id="job-${i}">
+      <div class="job-info">
+        <div class="job-title">
+          <a href="${job.url}" target="_blank" style="color:#2d6a4f">${job.title}</a>
+          <span class="source ${sourceClass}">${job.source}</span>
+        </div>
+        <div class="job-meta">🏢 ${job.company} &nbsp;|&nbsp; 📍 ${job.location}</div>
+      </div>
+      <button class="btn btn-reject" onclick="toggleReject(${i}, '${job.title.replace(/'/g,"\\'")}')">👎 Non pertinent</button>
+    </div>`;
+  }).join("");
+}
+
+function toggleReject(i, title) {
+  const el = document.getElementById(`job-${i}`);
+  const btn = el.querySelector("button");
+  if (rejected.has(i)) {
+    rejected.delete(i);
+    el.classList.remove("rejected");
+    btn.className = "btn btn-reject";
+    btn.textContent = "👎 Non pertinent";
+  } else {
+    rejected.add(i);
+    el.classList.add("rejected");
+    btn.className = "btn btn-restore";
+    btn.textContent = "↩️ Restaurer";
+  }
+  document.getElementById("save-btn").style.display = rejected.size ? "block" : "none";
+}
+
+async function saveRejected() {
+  const token = prompt("Entre ton GitHub Personal Access Token (repo scope) :");
+  if (!token) return;
+
+  const newKeywords = [...rejected].map(i => jobs[i].title.toLowerCase());
+  const allKeywords = [...new Set([...existingRejected, ...newKeywords])];
+  const content = btoa(unescape(encodeURIComponent(JSON.stringify(allKeywords, null, 2))));
+
+  let sha = "";
+  try {
+    const r = await fetch(`${API_BASE}/rejected_keywords.json`, { headers: { Authorization: `token ${token}` }});
+    if (r.ok) { const d = await r.json(); sha = d.sha; }
+  } catch(e) {}
+
+  const body = { message: "Update rejected keywords", content };
+  if (sha) body.sha = sha;
+
+  const res = await fetch(`${API_BASE}/rejected_keywords.json`, {
+    method: "PUT",
+    headers: { Authorization: `token ${token}`, "Content-Type": "application/json" },
+    body: JSON.stringify(body)
+  });
+
+  if (res.ok) {
+    document.getElementById("status").textContent = `✅ ${newKeywords.length} offre(s) exclue(s) des prochains mails !`;
+    document.getElementById("save-btn").style.display = "none";
+  } else {
+    document.getElementById("status").textContent = "❌ Erreur — vérifie ton token GitHub.";
+  }
+}
+
+loadJobs();
+</script>
+</body>
+</html>
