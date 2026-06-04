@@ -12,9 +12,9 @@
   {
     "id": "5746017364",
     "title": "Consultant confirmé Bilan Carbone et Stratégie  H/F (CDI)",
-    "company": "MICHAEL PAGE",
+    "company": "Michael Page",
     "location": "1er Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/land/ad/5746017364?se=LssTQwJg8RG8463FYj5fYw&utm_medium=api&utm_source=ae8a5ffa&v=C47C34911E66D10205414B6B61D21D296C977508",
+    "url": "https://www.adzuna.fr/details/5746017364?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Notre client est une organisation nationale au service des coopératives agricoles, engagée dans l'accompagnement de leurs transformations stratégiques...",
     "source": "Adzuna",
     "is_new": false
@@ -38,6 +38,16 @@
     "description": "Rattaché(e) à l'équipe RSE , vous jouerez un rôle clé dans le suivi de notre stratégie climat, la production de nos reportings réglementaires et l'ani...",
     "source": "Adzuna",
     "is_new": false
+  },
+  {
+    "id": "5747093636",
+    "title": "Référent QSE et Etudes H/F",
+    "company": "DEMATHIEU BARD",
+    "location": "Aix-en-Provence, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5747093636?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Qui sommes-nous ? Forts de notre savoir-faire historique dans la constructiond'ouvrages d'art, nous conduisons des projets d'aménagement urbain d'enve...",
+    "source": "Adzuna",
+    "is_new": true
   },
   {
     "id": "5743931629",
@@ -64,7 +74,7 @@
     "title": "Responsable régional partenariats agricoles - Paris H/F (CDI)",
     "company": "IMAGREEN",
     "location": "1er Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/land/ad/5743596293?se=1Kj7RQJg8RGpofrea83FBQ&utm_medium=api&utm_source=ae8a5ffa&v=1CEB1F1D3160D146653A0AE94C7754C5A645AD86",
+    "url": "https://www.adzuna.fr/land/ad/5743596293?se=fO3EVlRg8RGeGZQN_-WxfA&utm_medium=api&utm_source=ae8a5ffa&v=1CEB1F1D3160D146653A0AE94C7754C5A645AD86",
     "description": "Imagreen est un cabinet de Conseil RH et de recrutement, spécialisé depuis 10 ans dans le secteur de la transition écologique et énergétique. Notre am...",
     "source": "Adzuna",
     "is_new": false
@@ -78,6 +88,16 @@
     "description": "Pionnier du développement durable et expert en transition socio-écologique, Auxilia est un cabinet de conseil qui accompagne collectivités et entrepri...",
     "source": "Adzuna",
     "is_new": false
+  },
+  {
+    "id": "5750085748",
+    "title": "Chargé d'Opération Fluvial Maîtrise d'Ouvrage et Environnement H/F",
+    "company": "Voies Navigables de France",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5750085748?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Voies navigables de France (VNF) est l'établissement public en charge de la gestion, de l'exploitation et du développement d'un réseau de 6700 km de v...",
+    "source": "Adzuna",
+    "is_new": true
   },
   {
     "id": "5751113078",
@@ -114,18 +134,8 @@
     "title": "RESPONSABLE PRODUCTION EAU POTABLE NICE LITTORAL H/F",
     "company": "Eau d'Azur",
     "location": "Nice, Alpes-Maritimes",
-    "url": "https://www.adzuna.fr/land/ad/5748984983?se=ogsjSAJg8RGpofrea83FBQ&utm_medium=api&utm_source=ae8a5ffa&v=76881897A1DFF89D3912F270DF1AD8F791718DF4",
+    "url": "https://www.adzuna.fr/land/ad/5748984983?se=GunMWlRg8RGeGZQN_-WxfA&utm_medium=api&utm_source=ae8a5ffa&v=76881897A1DFF89D3912F270DF1AD8F791718DF4",
     "description": " REJOIGNEZ EAU D'AZUR EN TANT QUE RESPONSABLE PRODUCTION EAU POTABLE (H/F)   Nice Littoral – CDI Et si votre prochain défi consistait à garantir chaqu...",
-    "source": "Adzuna",
-    "is_new": false
-  },
-  {
-    "id": "5743596097",
-    "title": "Directeur de Projet Complexes Environnement F/H (CDI)",
-    "company": "Brawo Impact",
-    "location": "15ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/land/ad/5743596097?se=ZtCGTAJg8RGpofrea83FBQ&utm_medium=api&utm_source=ae8a5ffa&v=54DC66DEEE1827DD17CDD9D9B56B89B09A7FE55B",
-    "description": "Brawo Impact est l'agence de recrutement de référence pour les professionnels et les organisations qui s'engagent en faveur de la transformation durab...",
     "source": "Adzuna",
     "is_new": false
   },
