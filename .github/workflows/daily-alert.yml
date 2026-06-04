@@ -31,6 +31,7 @@ jobs:
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
           GITHUB_REPOSITORY: ${{ github.repository }}
+          JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
         run: python scraper.py
 
       - name: Sauvegarder fichiers
