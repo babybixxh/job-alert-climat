@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pages: write
+      id-token: write
     steps:
       - uses: actions/checkout@v4
 
@@ -28,12 +30,13 @@ jobs:
           GMAIL_TO: ${{ secrets.GMAIL_TO }}
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: python scraper.py
 
-      - name: Sauvegarder seen_jobs.json
+      - name: Sauvegarder fichiers
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add seen_jobs.json
-          git diff --staged --quiet || git commit -m "Update seen_jobs"
+          git add seen_jobs.json today_jobs.json rejected_keywords.json || true
+          git diff --staged --quiet || git commit -m "Update jobs data"
           git push
