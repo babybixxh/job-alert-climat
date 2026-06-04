@@ -3,7 +3,7 @@ import os
 import json
 import requests
 import re
-from html import unescape
+from html import unescape, escape
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from datetime import datetime
@@ -70,21 +70,34 @@ GREENHOUSE_BOARDS = [
 ]
 
 
+FT_TOKEN_CACHE = None
+
+
 def clean_text(value):
-    value = re.sub(r"<[^>]+>", " ", value or "")
+    value = str(value or "")
+    value = re.sub(r"<[^>]+>", " ", value)
     value = unescape(value)
     return " ".join(value.split())
 
 
+def html_text(value):
+    return escape(str(value or ""), quote=True)
+
+
 def load_json(path, default):
-    if os.path.exists(path):
-        with open(path, "r") as f:
+    if not os.path.exists(path):
+        return default
+
+    try:
+        with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
-    return default
+    except Exception as e:
+        print(f"  Impossible de lire {path}: {e}")
+        return default
 
 
 def save_json(path, data):
-    with open(path, "w") as f:
+    with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
@@ -99,7 +112,7 @@ def is_excluded(title, description=""):
     return any(excl in text for excl in get_exclusions())
 
 
-def matches_location(value, wanted_location=None):
+def matches_location(value):
     text = (value or "").lower()
 
     allowed_terms = [
@@ -115,16 +128,62 @@ def matches_location(value, wanted_location=None):
         "france",
         "paca",
         "provence",
+        "var",
+        "alpes",
     ]
-
-    if wanted_location:
-        wanted = wanted_location.lower()
-        return wanted in text or any(term in text for term in allowed_terms)
 
     return any(term in text for term in allowed_terms)
 
 
+def print_config_status():
+    print("\nConfiguration détectée :")
+
+    env_keys = [
+        "GMAIL_USER",
+        "GMAIL_PASSWORD",
+        "GMAIL_TO",
+        "ADZUNA_APP_ID",
+        "ADZUNA_APP_KEY",
+        "FT_CLIENT_ID",
+        "FT_CLIENT_SECRET",
+        "JOOBLE_API_KEY",
+    ]
+
+    for key in env_keys:
+        status = "OK" if os.environ.get(key) else "ABSENT"
+        print(f"  {key}: {status}")
+
+    print(f"  GREENHOUSE_BOARDS: {len(GREENHOUSE_BOARDS)} board(s)")
+
+
+def print_source_counts(label, jobs):
+    print(f"\n{label}")
+
+    if not jobs:
+        print("  Aucune offre")
+        return
+
+    counts = {}
+
+    for job in jobs:
+        sources = job.get("sources")
+
+        if not sources:
+            sources = [job.get("source", "N/A")]
+
+        for source in sources:
+            counts[source] = counts.get(source, 0) + 1
+
+    for source, count in sorted(counts.items()):
+        print(f"  {source}: {count}")
+
+
 def get_ft_token():
+    global FT_TOKEN_CACHE
+
+    if FT_TOKEN_CACHE:
+        return FT_TOKEN_CACHE
+
     client_id = os.environ.get("FT_CLIENT_ID", "")
     client_secret = os.environ.get("FT_CLIENT_SECRET", "")
 
@@ -141,18 +200,26 @@ def get_ft_token():
                 "client_secret": client_secret,
                 "scope": "api_offresdemploiv2 o2dsoffre",
             },
-            timeout=10,
+            timeout=15,
         )
-        r.raise_for_status()
-        return r.json().get("access_token", "")
+
+        if r.status_code >= 400:
+            print(f"  ERREUR token FT HTTP {r.status_code}: {r.text[:300]}")
+            return ""
+
+        FT_TOKEN_CACHE = r.json().get("access_token", "")
+
+        if not FT_TOKEN_CACHE:
+            print(f"  FT: réponse sans token: {r.text[:300]}")
+
+        return FT_TOKEN_CACHE
+
     except Exception as e:
         print(f"  EXCEPTION token FT: {e}")
         return ""
 
 
 def search_france_travail(keyword, location):
-    exclusions = get_exclusions()
-
     try:
         token = get_ft_token()
 
@@ -179,10 +246,13 @@ def search_france_travail(keyword, location):
                 "Authorization": f"Bearer {token}",
                 "Accept": "application/json",
             },
-            timeout=10,
+            timeout=15,
         )
 
-        r.raise_for_status()
+        if r.status_code >= 400:
+            print(f"  ERREUR FT HTTP {r.status_code}: {r.text[:300]}")
+            return []
+
         data = r.json()
         results = data.get("resultats", [])
 
@@ -191,28 +261,31 @@ def search_france_travail(keyword, location):
         jobs = []
 
         for job in results:
-            title = job.get("intitule", "N/A")
-            description = job.get("description", "")
+            title = clean_text(job.get("intitule", "N/A"))
+            description = clean_text(job.get("description", ""))
 
-            if any(excl in f"{title} {description}".lower() for excl in exclusions):
+            if is_excluded(title, description):
                 print(f"  Exclu FT: {title}")
                 continue
 
+            job_id = job.get("id", "")
+            company = clean_text(job.get("entreprise", {}).get("nom", "N/A"))
+            job_location = clean_text(job.get("lieuTravail", {}).get("libelle", location))
+
             jobs.append({
-                "id": job.get("id", ""),
+                "id": f"france-travail:{job_id}",
                 "title": title,
-                "company": job.get("entreprise", {}).get("nom", "N/A"),
-                "location": job.get("lieuTravail", {}).get("libelle", location),
-                "url": job.get(
-                    "origineOffre", {}
-                ).get(
+                "company": company,
+                "location": job_location,
+                "url": job.get("origineOffre", {}).get(
                     "urlOrigine",
-                    f"https://www.francetravail.fr/offres/recherche/detail/{job.get('id', '')}",
+                    f"https://www.francetravail.fr/offres/recherche/detail/{job_id}",
                 ),
-                "description": description[:150] + "..." if description else "",
+                "description": description[:150] + "..." if len(description) > 150 else description,
                 "source": "France Travail",
             })
 
+        print(f"  FT '{keyword}' / '{location}' -> {len(jobs)} après filtre")
         return jobs
 
     except Exception as e:
@@ -221,8 +294,6 @@ def search_france_travail(keyword, location):
 
 
 def search_greenjob(keyword):
-    exclusions = get_exclusions()
-
     try:
         from bs4 import BeautifulSoup
 
@@ -234,8 +305,12 @@ def search_greenjob(keyword):
                 "User-Agent": "Mozilla/5.0",
                 "Accept-Language": "fr-FR",
             },
-            timeout=10,
+            timeout=15,
         )
+
+        if r.status_code >= 400:
+            print(f"  ERREUR Greenjob.fr HTTP {r.status_code}: {r.text[:300]}")
+            return []
 
         soup = BeautifulSoup(r.text, "html.parser")
 
@@ -257,12 +332,12 @@ def search_greenjob(keyword):
             if not title_el:
                 continue
 
-            title = title_el.get_text(strip=True)
+            title = clean_text(title_el.get_text(" ", strip=True))
 
             if not title or len(title) < 5:
                 continue
 
-            if any(excl in title.lower() for excl in exclusions):
+            if is_excluded(title):
                 continue
 
             link_el = card.find("a", href=True)
@@ -277,16 +352,16 @@ def search_greenjob(keyword):
                 ),
             )
 
-            location = location_el.get_text(strip=True) if location_el else "France"
+            job_location = clean_text(location_el.get_text(" ", strip=True)) if location_el else "France"
 
-            if not matches_location(location):
+            if not matches_location(job_location):
                 continue
 
             jobs.append({
-                "id": full_url,
+                "id": f"greenjob:{full_url}",
                 "title": title,
                 "company": "N/A",
-                "location": location,
+                "location": job_location,
                 "url": full_url,
                 "description": "",
                 "source": "Greenjob.fr",
@@ -301,8 +376,6 @@ def search_greenjob(keyword):
 
 
 def search_hellowork(keyword, location):
-    exclusions = get_exclusions()
-
     try:
         from bs4 import BeautifulSoup
 
@@ -319,8 +392,12 @@ def search_hellowork(keyword, location):
                 "User-Agent": "Mozilla/5.0",
                 "Accept-Language": "fr-FR",
             },
-            timeout=10,
+            timeout=15,
         )
+
+        if r.status_code >= 400:
+            print(f"  ERREUR Hellowork HTTP {r.status_code}: {r.text[:300]}")
+            return []
 
         soup = BeautifulSoup(r.text, "html.parser")
 
@@ -342,9 +419,12 @@ def search_hellowork(keyword, location):
             if not title_el:
                 continue
 
-            title = title_el.get_text(strip=True)
+            title = clean_text(title_el.get_text(" ", strip=True))
 
-            if any(excl in title.lower() for excl in exclusions):
+            if not title or len(title) < 5:
+                continue
+
+            if is_excluded(title):
                 continue
 
             link_el = card.find("a", href=True)
@@ -359,10 +439,12 @@ def search_hellowork(keyword, location):
                 ),
             )
 
+            company = clean_text(company_el.get_text(" ", strip=True)) if company_el else "N/A"
+
             jobs.append({
-                "id": full_url,
+                "id": f"hellowork:{full_url}",
                 "title": title,
-                "company": company_el.get_text(strip=True) if company_el else "N/A",
+                "company": company,
                 "location": location,
                 "url": full_url,
                 "description": "",
@@ -385,22 +467,25 @@ def search_adzuna(keyword, location):
         print("  Adzuna: identifiants absents")
         return []
 
-    exclusions = get_exclusions()
-
-    url = (
-        "https://api.adzuna.com/v1/api/jobs/fr/search/1"
-        f"?app_id={app_id}"
-        f"&app_key={app_key}"
-        "&results_per_page=10"
-        f"&what={requests.utils.quote(keyword)}"
-        f"&where={requests.utils.quote(location)}"
-        "&max_days_old=7"
-        "&content-type=application/json"
-    )
-
     try:
-        r = requests.get(url, timeout=10)
-        r.raise_for_status()
+        url = "https://api.adzuna.com/v1/api/jobs/fr/search/1"
+
+        params = {
+            "app_id": app_id,
+            "app_key": app_key,
+            "results_per_page": 10,
+            "what": keyword,
+            "where": location,
+            "max_days_old": 7,
+            "content-type": "application/json",
+        }
+
+        r = requests.get(url, params=params, timeout=15)
+
+        if r.status_code >= 400:
+            print(f"  ERREUR Adzuna HTTP {r.status_code}: {r.text[:300]}")
+            return []
+
         data = r.json()
 
         if "exception" in data:
@@ -414,23 +499,24 @@ def search_adzuna(keyword, location):
         jobs = []
 
         for job in results:
-            title = job.get("title", "N/A")
-            description = job.get("description", "")
+            title = clean_text(job.get("title", "N/A"))
+            description = clean_text(job.get("description", ""))
 
-            if any(excl in f"{title} {description}".lower() for excl in exclusions):
+            if is_excluded(title, description):
                 print(f"  Exclu Adzuna: {title}")
                 continue
 
             jobs.append({
-                "id": str(job.get("id", "")),
+                "id": f"adzuna:{job.get('id', '')}",
                 "title": title,
-                "company": job.get("company", {}).get("display_name", "N/A"),
-                "location": job.get("location", {}).get("display_name", location),
+                "company": clean_text(job.get("company", {}).get("display_name", "N/A")),
+                "location": clean_text(job.get("location", {}).get("display_name", location)),
                 "url": job.get("redirect_url", ""),
-                "description": description[:150] + "..." if description else "",
+                "description": description[:150] + "..." if len(description) > 150 else description,
                 "source": "Adzuna",
             })
 
+        print(f"  Adzuna '{keyword}' / '{location}' -> {len(jobs)} après filtre")
         return jobs
 
     except Exception as e:
@@ -445,8 +531,6 @@ def search_jooble(keyword, location):
         print("  Jooble: clé API absente")
         return []
 
-    exclusions = get_exclusions()
-
     try:
         url = f"https://jooble.org/api/{api_key}"
 
@@ -460,10 +544,12 @@ def search_jooble(keyword, location):
             url,
             json=payload,
             headers={"Content-Type": "application/json"},
-            timeout=10,
+            timeout=15,
         )
 
-        r.raise_for_status()
+        if r.status_code >= 400:
+            print(f"  ERREUR Jooble HTTP {r.status_code}: {r.text[:300]}")
+            return []
 
         data = r.json()
         results = data.get("jobs", [])
@@ -476,12 +562,12 @@ def search_jooble(keyword, location):
             title = clean_text(job.get("title", "N/A"))
             description = clean_text(job.get("snippet", ""))
 
-            if any(excl in f"{title} {description}".lower() for excl in exclusions):
+            if is_excluded(title, description):
                 print(f"  Exclu Jooble: {title}")
                 continue
 
             jobs.append({
-                "id": str(job.get("id") or job.get("link", "")),
+                "id": f"jooble:{job.get('id') or job.get('link', '')}",
                 "title": title,
                 "company": clean_text(job.get("company", "N/A")),
                 "location": clean_text(job.get("location", location)),
@@ -505,10 +591,12 @@ def search_greenhouse_board(board_token, keyword):
         r = requests.get(
             url,
             params={"content": "true"},
-            timeout=10,
+            timeout=15,
         )
 
-        r.raise_for_status()
+        if r.status_code >= 400:
+            print(f"  ERREUR Greenhouse/{board_token} HTTP {r.status_code}: {r.text[:300]}")
+            return []
 
         data = r.json()
         results = data.get("jobs", [])
@@ -570,22 +658,50 @@ def search_greenhouse_board(board_token, keyword):
         return []
 
 
+def normalize_for_key(value):
+    value = clean_text(value).lower()
+    value = re.sub(r"\s+", " ", value)
+    return value.strip()
+
+
 def deduplicate(jobs):
-    seen = set()
-    unique = []
+    by_key = {}
 
     for job in jobs:
-        title = job.get("title", "").lower().strip()
-        company = job.get("company", "").lower().strip()
-        location = job.get("location", "").lower().strip()
+        title = normalize_for_key(job.get("title", ""))
+        company = normalize_for_key(job.get("company", ""))
+        location = normalize_for_key(job.get("location", ""))
 
         key = (title, company, location)
 
-        if key not in seen:
-            seen.add(key)
-            unique.append(job)
+        source = job.get("source", "N/A")
 
-    return unique
+        if key not in by_key:
+            copied_job = dict(job)
+            copied_job["sources"] = [source]
+            by_key[key] = copied_job
+            continue
+
+        existing = by_key[key]
+
+        existing_sources = existing.get("sources", [])
+
+        if source not in existing_sources:
+            existing_sources.append(source)
+
+        existing["sources"] = existing_sources
+        existing["source"] = " + ".join(existing_sources)
+
+        if existing.get("company") in ["", "N/A"] and job.get("company") not in ["", "N/A"]:
+            existing["company"] = job.get("company")
+
+        if existing.get("description") in ["", "N/A"] and job.get("description"):
+            existing["description"] = job.get("description")
+
+        if existing.get("url") in ["", "N/A"] and job.get("url"):
+            existing["url"] = job.get("url")
+
+    return list(by_key.values())
 
 
 def mark_seen(jobs, seen_ids):
@@ -602,7 +718,7 @@ def categorize(jobs):
     paris = []
 
     for job in jobs:
-        loc = job["location"].lower()
+        loc = job.get("location", "").lower()
 
         if "marseille" in loc:
             marseille.append(job)
@@ -632,7 +748,7 @@ def section_html(title, jobs, color):
     html = f"""
     <div style="margin:2rem 0 1rem">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:1rem">
-            <h2 style="margin:0;font-size:17px;font-weight:500;color:{color}">{title}</h2>
+            <h2 style="margin:0;font-size:17px;font-weight:500;color:{color}">{html_text(title)}</h2>
             <span style="font-size:13px;color:#888;background:#f0f0f0;padding:2px 10px;border-radius:20px">{len(jobs)} offre(s)</span>
             {f'<span style="font-size:13px;color:#fff;background:#e05c2a;padding:2px 10px;border-radius:20px">{new_count} nouvelle(s)</span>' if new_count else ''}
         </div>
@@ -640,8 +756,19 @@ def section_html(title, jobs, color):
 
     for job in jobs:
         is_new = job.get("is_new", True)
-        source = job.get("source", "")
-        source_color = source_colors.get(source, "#888")
+
+        sources = job.get("sources")
+        if not sources:
+            sources = [job.get("source", "N/A")]
+
+        source_badges = ""
+
+        for source in sources:
+            source_color = source_colors.get(source, "#888")
+            source_badges += (
+                f'<span style="font-size:11px;color:#fff;background:{source_color};'
+                f'padding:1px 8px;border-radius:10px;margin-left:6px">{html_text(source)}</span>'
+            )
 
         badge_new = (
             '<span style="font-size:11px;color:#fff;background:#e05c2a;padding:1px 8px;border-radius:10px;margin-left:8px">NOUVEAU</span>'
@@ -649,20 +776,22 @@ def section_html(title, jobs, color):
             else '<span style="font-size:11px;color:#888;background:#f0f0f0;padding:1px 8px;border-radius:10px;margin-left:8px">Déjà vu</span>'
         )
 
-        badge_source = (
-            f'<span style="font-size:11px;color:#fff;background:{source_color};padding:1px 8px;border-radius:10px;margin-left:6px">{source}</span>'
-        )
+        title_safe = html_text(job.get("title", "N/A"))
+        company_safe = html_text(job.get("company", "N/A"))
+        location_safe = html_text(job.get("location", "N/A"))
+        description_safe = html_text(job.get("description", ""))
+        url_safe = html_text(job.get("url", ""))
 
         html += f"""
         <div style="margin-bottom:16px;padding:14px;border-left:4px solid {color};background:{'#fff8f5' if is_new else '#f9f9f9'};border-radius:4px">
             <h3 style="margin:0 0 6px 0">
-                <a href="{job['url']}" style="color:{color};text-decoration:none">{job['title']}</a>
-                {badge_new}{badge_source}
+                <a href="{url_safe}" style="color:{color};text-decoration:none">{title_safe}</a>
+                {badge_new}{source_badges}
             </h3>
             <p style="margin:0 0 5px 0;color:#555;font-size:14px">
-                Entreprise : <strong>{job['company']}</strong> &nbsp;|&nbsp; Lieu : {job['location']}
+                Entreprise : <strong>{company_safe}</strong> &nbsp;|&nbsp; Lieu : {location_safe}
             </p>
-            <p style="margin:0;font-size:13px;color:#777">{job['description']}</p>
+            <p style="margin:0;font-size:13px;color:#777">{description_safe}</p>
         </div>
         """
 
@@ -697,7 +826,7 @@ def build_email(jobs, feedback_url):
                 - Marseille ({len(marseille)}) - PACA ({len(paca)}) - Paris ({len(paris)})
             </p>
 
-            <a href="{feedback_url}" style="display:inline-block;margin:8px 0 16px;padding:10px 20px;background:#2d6a4f;color:#fff;border-radius:6px;text-decoration:none;font-size:14px">
+            <a href="{html_text(feedback_url)}" style="display:inline-block;margin:8px 0 16px;padding:10px 20px;background:#2d6a4f;color:#fff;border-radius:6px;text-decoration:none;font-size:14px">
                 Signaler des offres non pertinentes
             </a>
 
@@ -742,37 +871,16 @@ def send_email(html_body, job_count):
 
     print(f"Email envoyé avec {job_count} offres.")
 
-def print_source_counts(label, jobs):
-    print(f"\n{label}")
 
-    if not jobs:
-        print("  Aucune offre")
-        return
-
-    counts = {}
-
-    for job in jobs:
-        sources = job.get("sources")
-
-        if not sources:
-            source = job.get("source", "N/A")
-            sources = [source]
-
-        for source in sources:
-            counts[source] = counts.get(source, 0) + 1
-
-    for source, count in sorted(counts.items()):
-        print(f"  {source}: {count}")
-        
-if __name__ == "__main__":
-    seen_ids = set(load_json(SEEN_FILE, []))
-
-    print(f"{len(seen_ids)} offres déjà vues en mémoire")
-
+def collect_jobs():
     all_jobs = []
 
     for keyword in KEYWORDS:
+        print(f"\nRecherche pour le mot-clé : {keyword}")
+
         for location in LOCATIONS:
+            print(f"\nVille : {location}")
+
             all_jobs += search_adzuna(keyword, location)
             all_jobs += search_france_travail(keyword, location)
             all_jobs += search_hellowork(keyword, location)
@@ -783,48 +891,24 @@ if __name__ == "__main__":
         for board_token in GREENHOUSE_BOARDS:
             all_jobs += search_greenhouse_board(board_token, keyword)
 
-    def deduplicate(jobs):
-    by_key = {}
+    return all_jobs
 
-    for job in jobs:
-        title = job.get("title", "").lower().strip()
-        company = job.get("company", "").lower().strip()
-        location = job.get("location", "").lower().strip()
 
-        key = (title, company, location)
+if __name__ == "__main__":
+    print_config_status()
 
-        source = job.get("source", "N/A")
+    seen_ids = set(load_json(SEEN_FILE, []))
 
-        if key not in by_key:
-            job["sources"] = [source]
-            by_key[key] = job
-        else:
-            existing = by_key[key]
+    print(f"\n{len(seen_ids)} offres déjà vues en mémoire")
 
-            existing_sources = existing.get("sources", [])
-            if source not in existing_sources:
-                existing_sources.append(source)
+    all_jobs = collect_jobs()
 
-            existing["sources"] = existing_sources
-            existing["source"] = " + ".join(existing_sources)
+    print_source_counts("Sources avant déduplication :", all_jobs)
 
-            if existing.get("company") in ["", "N/A"] and job.get("company") not in ["", "N/A"]:
-                existing["company"] = job.get("company")
+    jobs = deduplicate(all_jobs)
 
-            if existing.get("description") in ["", "N/A"] and job.get("description"):
-                existing["description"] = job.get("description")
+    print_source_counts("Sources après déduplication :", jobs)
 
-            if existing.get("url") in ["", "N/A"] and job.get("url"):
-                existing["url"] = job.get("url")
-
-    return list(by_key.values())
-
-for job in jobs:
-    source = job.get("source", "N/A")
-    source_counts[source] = source_counts.get(source, 0) + 1
-
-for source, count in sorted(source_counts.items()):
-    print(f"  {source}: {count}")
     jobs = mark_seen(jobs, seen_ids)
 
     new_seen = seen_ids | {
