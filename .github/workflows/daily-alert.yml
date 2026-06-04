@@ -33,7 +33,7 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: python scraper.py
 
-- name: Sauvegarder fichiers
+      - name: Sauvegarder fichiers
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
