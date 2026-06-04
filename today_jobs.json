@@ -1,15 +1,5 @@
 [
   {
-    "id": "5748637191",
-    "title": "Consultant Confirmé Bilan Carbone et Stratégie Climat H/F",
-    "company": "Michael Page",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5748637191?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Rattaché au Directeur, vous contribuez activement au développement et au déploiement de l'offre « Solutions Climat » auprès des coopératives agricoles...",
-    "source": "Adzuna",
-    "is_new": false
-  },
-  {
     "id": "5746017364",
     "title": "Consultant confirmé Bilan Carbone et Stratégie  H/F (CDI)",
     "company": "Michael Page",
@@ -17,7 +7,7 @@
     "url": "https://www.adzuna.fr/details/5746017364?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Notre client est une organisation nationale au service des coopératives agricoles, engagée dans l'accompagnement de leurs transformations stratégiques...",
     "source": "Adzuna",
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "5749744614",
@@ -27,25 +17,15 @@
     "url": "https://www.adzuna.fr/details/5749744614?utm_medium=api&utm_source=ae8a5ffa",
     "description": "La démarche RSE MGEN est pilotée au niveau de la Direction de la stratégie, de la transformation, de la coopération et des risques. Elle est portée du...",
     "source": "Adzuna",
-    "is_new": false
+    "is_new": true
   },
   {
-    "id": "5748669559",
-    "title": "Chargé de Projet RSE - Climat H/F",
+    "id": "5748496238",
+    "title": "Chargé de projet RSE/Climat H/F",
     "company": "MGEN",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5748669559?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Rattaché(e) à l'équipe RSE , vous jouerez un rôle clé dans le suivi de notre stratégie climat, la production de nos reportings réglementaires et l'ani...",
-    "source": "Adzuna",
-    "is_new": false
-  },
-  {
-    "id": "5747093636",
-    "title": "Référent QSE et Etudes H/F",
-    "company": "DEMATHIEU BARD",
-    "location": "Aix-en-Provence, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5747093636?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Qui sommes-nous ? Forts de notre savoir-faire historique dans la constructiond'ouvrages d'art, nous conduisons des projets d'aménagement urbain d'enve...",
+    "url": "https://www.adzuna.fr/details/5748496238?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Connaissez-vous le groupe MGEN ? * Un employeur de l'ESS qui réconcilie éthique et économie, solidarité et performance * Un acteur majeur en santé et ...",
     "source": "Adzuna",
     "is_new": true
   },
@@ -57,7 +37,7 @@
     "url": "https://www.adzuna.fr/details/5743931629?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Vos missions en quelques mots En 2022, deux enseignants-chercheurs ont été chargés d’établir un diagnostic et de procéder à une analyse de l’empreinte...",
     "source": "Adzuna",
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "5746745596",
@@ -67,17 +47,7 @@
     "url": "https://www.adzuna.fr/details/5746745596?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Informations générales Organisme de rattachement Direction générale des entreprises (DGE) Référence MEF_2026-30523 Date de début de diffusion 29/05/20...",
     "source": "Adzuna",
-    "is_new": false
-  },
-  {
-    "id": "5743596293",
-    "title": "Responsable régional partenariats agricoles - Paris H/F (CDI)",
-    "company": "IMAGREEN",
-    "location": "1er Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/land/ad/5743596293?se=fO3EVlRg8RGeGZQN_-WxfA&utm_medium=api&utm_source=ae8a5ffa&v=1CEB1F1D3160D146653A0AE94C7754C5A645AD86",
-    "description": "Imagreen est un cabinet de Conseil RH et de recrutement, spécialisé depuis 10 ans dans le secteur de la transition écologique et énergétique. Notre am...",
-    "source": "Adzuna",
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "5749909673",
@@ -87,7 +57,7 @@
     "url": "https://www.adzuna.fr/details/5749909673?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Pionnier du développement durable et expert en transition socio-écologique, Auxilia est un cabinet de conseil qui accompagne collectivités et entrepri...",
     "source": "Adzuna",
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "5750085748",
@@ -100,6 +70,16 @@
     "is_new": true
   },
   {
+    "id": "5752357636",
+    "title": "Chargé(e) de Gestion Urbanisme et Cadre de Vie (H/F) - COMMUNE DE MARSEILLE",
+    "company": "Fonction publique Territoriale",
+    "location": "Marseille, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5752357636?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots Contexte Marseille, deuxième ville de France, est une ville vibrante, profondément attachée à sa culture, et un territoi...",
+    "source": "Adzuna",
+    "is_new": true
+  },
+  {
     "id": "5751113078",
     "title": "Inspecteur.rice de l environnement -Pôle Déchet-Matériau",
     "company": "DREAL",
@@ -107,7 +87,7 @@
     "url": "https://www.adzuna.fr/details/5751113078?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Vos missions en quelques mots Vous souhaitez jouer un rôle dans la transition écologique des industries et agir sur le terrain pour concilier le dével...",
     "source": "Adzuna",
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "5751083110",
@@ -117,7 +97,7 @@
     "url": "https://www.adzuna.fr/details/5751083110?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Informations générales Organisme de rattachement Direction Régionale de l'Environnement, de l'Aménagement et du Logement Provence-Alpes-Côte d'Azur (D...",
     "source": "Adzuna",
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "5751051726",
@@ -127,17 +107,17 @@
     "url": "https://www.adzuna.fr/details/5751051726?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Informations générales Organisme de rattachement Direction Départementale des Territoires et de la Mer des Bouches-du-Rhône (DDTM 13) Référence 2026-2...",
     "source": "Adzuna",
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "5748984983",
     "title": "RESPONSABLE PRODUCTION EAU POTABLE NICE LITTORAL H/F",
     "company": "Eau d'Azur",
     "location": "Nice, Alpes-Maritimes",
-    "url": "https://www.adzuna.fr/land/ad/5748984983?se=GunMWlRg8RGeGZQN_-WxfA&utm_medium=api&utm_source=ae8a5ffa&v=76881897A1DFF89D3912F270DF1AD8F791718DF4",
+    "url": "https://www.adzuna.fr/land/ad/5748984983?se=6PsmAVpg8RGOiOmPg4gP4A&utm_medium=api&utm_source=ae8a5ffa&v=76881897A1DFF89D3912F270DF1AD8F791718DF4",
     "description": " REJOIGNEZ EAU D'AZUR EN TANT QUE RESPONSABLE PRODUCTION EAU POTABLE (H/F)   Nice Littoral – CDI Et si votre prochain défi consistait à garantir chaqu...",
     "source": "Adzuna",
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "5742986344",
@@ -147,7 +127,7 @@
     "url": "https://www.adzuna.fr/details/5742986344?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Au sein d'une équipe spécialisée, vous intervenez sur des projets d'efficacité énergétique et de décarbonation appliqués à des sites tertiaires et/ou ...",
     "source": "Adzuna",
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "5748960470",
@@ -157,26 +137,6 @@
     "url": "https://www.adzuna.fr/details/5748960470?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Votre rôle : Vous êtes responsable d’un portefeuille de centrales photovoltaïques, en garantissant leur performance financière et contractuelle. De la...",
     "source": "Adzuna",
-    "is_new": false
-  },
-  {
-    "id": "5748503383",
-    "title": "Chargé de projet RSE/Climat H/F (75)",
-    "company": "AKTISEA",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5748503383?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "AKTISEA est une entreprise adaptée spécialisée dans l'accompagnement des entreprises vers plus d'inclusion, en les aidant notamment dans le recrutemen...",
-    "source": "Adzuna",
-    "is_new": false
-  },
-  {
-    "id": "5744864338",
-    "title": "Assistant pédagogique - Ecole du climat H/F",
-    "company": "Sciences Po",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5744864338?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Informations générales Entité de rattachement Fondée en 1872, Sciences Po est une université internationale de référence en sciences humaines et socia...",
-    "source": "Adzuna",
-    "is_new": false
+    "is_new": true
   }
 ]
