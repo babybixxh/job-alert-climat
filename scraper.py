@@ -134,49 +134,76 @@ def search_france_travail(keyword, location):
         return []
 
 
-def search_greenjobs(keyword):
+def search_greenjob(keyword):
     exclusions = get_exclusions()
     try:
         from bs4 import BeautifulSoup
-        url = f"https://www.greenjobs.fr/emplois/?q={requests.utils.quote(keyword)}&country=FR"
-        r = requests.get(url, headers={
-            "User-Agent": "Mozilla/5.0",
-            "Accept-Language": "fr-FR,fr;q=0.9",
-        }, timeout=10)
+        url = f"https://www.greenjob.fr/offres-emploi/?s={requests.utils.quote(keyword)}"
+        r = requests.get(url, headers={"User-Agent": "Mozilla/5.0", "Accept-Language": "fr-FR"}, timeout=10)
         soup = BeautifulSoup(r.text, "html.parser")
         jobs = []
-        cards = soup.find_all("article", class_=lambda c: c and "job" in str(c).lower())
+        cards = soup.find_all(["article", "div"], class_=lambda c: c and any(w in str(c).lower() for w in ["job", "offre", "annonce"]))
+        print(f"  Greenjob.fr '{keyword}' → {len(cards)} cartes")
+        for card in cards[:10]:
+            title_el = card.find(["h2", "h3", "h4"])
+            if not title_el:
+                continue
+            title = title_el.get_text(strip=True)
+            if not title or len(title) < 5:
+                continue
+            if any(excl in title.lower() for excl in exclusions):
+                continue
+            link_el = card.find("a", href=True)
+            href = link_el["href"] if link_el else ""
+            full_url = href if href.startswith("http") else "https://www.greenjob.fr" + href
+            location_el = card.find(["span", "p", "div"], class_=lambda c: c and any(w in str(c).lower() for w in ["loc", "lieu", "ville", "city"]))
+            location = location_el.get_text(strip=True) if location_el else "France"
+            if not any(loc in location.lower() for loc in ["paris", "marseille", "aix", "toulon", "nice", "remote", "télétravail", "france", "paca"]):
+                continue
+            jobs.append({
+                "id": full_url,
+                "title": title,
+                "company": "N/A",
+                "location": location,
+                "url": full_url,
+                "description": "",
+                "source": "Greenjob.fr",
+            })
+        print(f"  Greenjob.fr '{keyword}' → {len(jobs)} après filtre")
+        return jobs
+    except Exception as e:
+        print(f"  EXCEPTION Greenjob.fr: {e}")
+        return []
+
+
+def search_hellowork(keyword, location):
+    exclusions = get_exclusions()
+    try:
+        url = (
+            f"https://www.hellowork.com/fr-fr/emploi/recherche.html"
+            f"?k={requests.utils.quote(keyword)}"
+            f"&l={requests.utils.quote(location)}"
+            f"&c=CDI"
+        )
+        from bs4 import BeautifulSoup
+        r = requests.get(url, headers={"User-Agent": "Mozilla/5.0", "Accept-Language": "fr-FR"}, timeout=10)
+        soup = BeautifulSoup(r.text, "html.parser")
+        jobs = []
+        cards = soup.find_all(["article", "li"], attrs={"data-id": True})
         if not cards:
             cards = soup.find_all("div", class_=lambda c: c and "job" in str(c).lower())
-        print(f"  Greenjobs '{keyword}' → {len(cards)} cartes trouvées")
+        print(f"  Hellowork '{keyword}' / '{location}' → {len(cards)} cartes")
         for card in cards[:10]:
             title_el = card.find(["h2", "h3", "a"])
             if not title_el:
                 continue
             title = title_el.get_text(strip=True)
-
-            # Filtre langue : rejette si le titre contient des mots néerlandais/anglais typiques
-            if any(w in title.lower() for w in ["vacature", "bekijk", "werk", "medewerker", "allround", "manager", " de ", "the "]):
-                continue
             if any(excl in title.lower() for excl in exclusions):
-                print(f"  Exclu Greenjobs: {title}")
                 continue
-
             link_el = card.find("a", href=True)
             href = link_el["href"] if link_el else ""
-            full_url = href if href.startswith("http") else "https://www.greenjobs.fr" + href
-
-            # Filtre URL : rejette les offres étrangères
-            if "/vacature/" in full_url or "/job/" in full_url:
-                continue
-
-            location_el = card.find(["span", "p"], class_=lambda c: c and any(w in str(c).lower() for w in ["loc", "lieu", "ville"]))
-            location = location_el.get_text(strip=True) if location_el else "France"
-
-            if not any(loc in location.lower() for loc in ["paris", "marseille", "aix", "toulon", "nice", "remote", "télétravail", "france", "à distance", "paca"]):
-                continue
-
-            company_el = card.find(["span", "p"], class_=lambda c: c and any(w in str(c).lower() for w in ["company", "entreprise", "employeur"]))
+            full_url = href if href.startswith("http") else "https://www.hellowork.com" + href
+            company_el = card.find(["span", "p"], class_=lambda c: c and any(w in str(c).lower() for w in ["company", "entreprise"]))
             jobs.append({
                 "id": full_url,
                 "title": title,
@@ -184,14 +211,13 @@ def search_greenjobs(keyword):
                 "location": location,
                 "url": full_url,
                 "description": "",
-                "source": "Greenjobs",
+                "source": "Hellowork",
             })
-        print(f"  Greenjobs '{keyword}' → {len(jobs)} après filtre")
+        print(f"  Hellowork '{keyword}' / '{location}' → {len(jobs)} après filtre")
         return jobs
     except Exception as e:
-        print(f"  EXCEPTION Greenjobs: {e}")
+        print(f"  EXCEPTION Hellowork: {e}")
         return []
-
 
 def search_adzuna(keyword, location):
     app_id = os.environ.get("ADZUNA_APP_ID", "")
@@ -366,7 +392,8 @@ if __name__ == "__main__":
         for location in LOCATIONS:
             all_jobs += search_adzuna(keyword, location)
             all_jobs += search_france_travail(keyword, location)
-        all_jobs += search_greenjobs(keyword)
+            all_jobs += search_hellowork(keyword, location)
+        all_jobs += search_greenjob(keyword)
 
     jobs = deduplicate(all_jobs)
     jobs = mark_seen(jobs, seen_ids)
