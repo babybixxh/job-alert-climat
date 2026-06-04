@@ -12,6 +12,7 @@ jobs:
       contents: write
       pages: write
       id-token: write
+
     steps:
       - uses: actions/checkout@v4
 
@@ -28,10 +29,18 @@ jobs:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_PASSWORD: ${{ secrets.GMAIL_PASSWORD }}
           GMAIL_TO: ${{ secrets.GMAIL_TO }}
+
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
+
+          FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
+          FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
+
           JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
+
+          GREENHOUSE_BOARDS: ""
+
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: python scraper.py
 
       - name: Sauvegarder fichiers
