@@ -4,13 +4,13 @@
     "title": "Consultant confirmé Bilan Carbone et Stratégie H/F (CDI)",
     "company": "Michael Page",
     "location": "1er Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/details/5746017364?utm_medium=api&utm_source=ae8a5ffa",
+    "url": "https://www.adzuna.fr/land/ad/5746017364?se=PHyivrpg8RG88rkiu28HPQ&utm_medium=api&utm_source=ae8a5ffa&v=C47C34911E66D10205414B6B61D21D296C977508",
     "description": "Notre client est une organisation nationale au service des coopératives agricoles, engagée dans l'accompagnement de leurs transformations stratégiques...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "adzuna:5749744614",
@@ -32,19 +32,6 @@
     "location": "Paris, Ile-de-France",
     "url": "https://www.adzuna.fr/details/5748496238?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Connaissez-vous le groupe MGEN ? * Un employeur de l'ESS qui réconcilie éthique et économie, solidarité et performance * Un acteur majeur en santé et ...",
-    "source": "Adzuna",
-    "sources": [
-      "Adzuna"
-    ],
-    "is_new": false
-  },
-  {
-    "id": "adzuna:5743931629",
-    "title": "Chargé de transition écologique",
-    "company": "Ministère de la Culture",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5743931629?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots En 2022, deux enseignants-chercheurs ont été chargés d’établir un diagnostic et de procéder à une analyse de l’empreinte...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
@@ -78,6 +65,19 @@
     "is_new": false
   },
   {
+    "id": "adzuna:5750085748",
+    "title": "Chargé d'Opérations Fluviales MOA - Environnement H/F",
+    "company": "Voies Navigables de France",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5750085748?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Voies navigables de France (VNF) est l'établissement public en charge de la gestion, de l'exploitation et du développement d'un réseau de 6700 km de v...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": true
+  },
+  {
     "id": "adzuna:5751113078",
     "title": "Inspecteur.rice de l environnement -Pôle Déchet-Matériau",
     "company": "DREAL",
@@ -95,7 +95,7 @@
     "title": "RESPONSABLE PRODUCTION EAU POTABLE NICE LITTORAL H/F",
     "company": "Eau d'Azur",
     "location": "Nice, Alpes-Maritimes",
-    "url": "https://www.adzuna.fr/land/ad/5748984983?se=8CgkWGJg8RG6_NtKDTfvqA&utm_medium=api&utm_source=ae8a5ffa&v=76881897A1DFF89D3912F270DF1AD8F791718DF4",
+    "url": "https://www.adzuna.fr/land/ad/5748984983?se=rtXWyLpg8RGTyYTYU6ltQQ&utm_medium=api&utm_source=ae8a5ffa&v=76881897A1DFF89D3912F270DF1AD8F791718DF4",
     "description": "REJOIGNEZ EAU D'AZUR EN TANT QUE RESPONSABLE PRODUCTION EAU POTABLE (H/F) Nice Littoral – CDI Et si votre prochain défi consistait à garantir chaque j...",
     "source": "Adzuna",
     "sources": [
@@ -104,17 +104,43 @@
     "is_new": false
   },
   {
-    "id": "adzuna:5742986344",
-    "title": "Ingénieur en Efficacité Énergétique Sénior H/F",
-    "company": "Achil",
+    "id": "adzuna:5751519237",
+    "title": "Responsable Ingénierie Mécanique H/F",
+    "company": "Solve Recrutement",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5742986344?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Au sein d'une équipe spécialisée, vous intervenez sur des projets d'efficacité énergétique et de décarbonation appliqués à des sites tertiaires et/ou ...",
+    "url": "https://www.adzuna.fr/details/5751519237?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Et si votre expertise mécanique contribuait à décarboner le transport maritime mondial ? Nous sommes une start-up industrielle française qui développe...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
     ],
-    "is_new": false
+    "is_new": true
+  },
+  {
+    "id": "adzuna:5744474720",
+    "title": "Tech Lead / Data engineer confirmé (H/F)",
+    "company": "MP DATA",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/land/ad/5744474720?se=mO_Gz7pg8RG88rkiu28HPQ&utm_medium=api&utm_source=ae8a5ffa&v=23197BCEF70E21188B04BCD781A2C962005FAC43",
+    "description": "Tech Lead / Data Engineer Confirmé (H/F) À propos de la société : MP DATA est une société spécialisée dans l’acquisition, le traitement et la valorisa...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": true
+  },
+  {
+    "id": "adzuna:5752630162",
+    "title": "Chef de service maintenance H/F",
+    "company": "SPIE Industrie",
+    "location": "Aix en Provence Sud-Ouest, Aix-en-Provence",
+    "url": "https://www.adzuna.fr/details/5752630162?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Nous quand on pose des capteurs, c'est pas pour prendre notre fréquence cardiaque. C'est pour piloter les process industriels ou encore la production ...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": true
   },
   {
     "id": "adzuna:5748960470",
@@ -128,5 +154,18 @@
       "Adzuna"
     ],
     "is_new": false
+  },
+  {
+    "id": "adzuna:5752755986",
+    "title": "Ingénieur Génie des Procédés - Expérimenté H/F",
+    "company": "Groupe ADF",
+    "location": "Aix en Provence Sud-Ouest, Aix-en-Provence",
+    "url": "https://www.adzuna.fr/details/5752755986?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Nous recherchons notre nouveau Ingénieur Génie des procédés confirmé F/H à Aix-En-Provence Que proposons-nous ? Vous souhaitez rejoindre une entrepris...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": true
   }
 ]
