@@ -2,9 +2,9 @@
   {
     "id": "adzuna:5746017364",
     "title": "Consultant confirmé Bilan Carbone et Stratégie H/F (CDI)",
-    "company": "Michael Page",
+    "company": "MICHAEL PAGE",
     "location": "1er Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/land/ad/5746017364?se=wMfr2Xth8RGn0Z1dKY-zHQ&utm_medium=api&utm_source=ae8a5ffa&v=C47C34911E66D10205414B6B61D21D296C977508",
+    "url": "https://www.adzuna.fr/land/ad/5746017364?se=dmtBUUpi8RGI27gKLue9KA&utm_medium=api&utm_source=ae8a5ffa&v=C47C34911E66D10205414B6B61D21D296C977508",
     "description": "Notre client est une organisation nationale au service des coopératives agricoles, engagée dans l'accompagnement de leurs transformations stratégiques...",
     "source": "Adzuna",
     "sources": [
@@ -39,6 +39,19 @@
     "is_new": false
   },
   {
+    "id": "adzuna:5752785123",
+    "title": "Coordinateur·trice Moyens Généraux & Qualité Environnement H/F",
+    "company": "EXTEND CONSULTING",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5752785123?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Notre client accompagne l'exploitation et le développement de plusieurs sites emblématiques parisiens. Engagée dans une démarche Climat et Solidarité,...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": true
+  },
+  {
     "id": "adzuna:5746745596",
     "title": "Chef(e) de projet « Transition écologique des industries de santé » SI-SDISBC-183 H/F",
     "company": "Choisir le Service Public",
@@ -62,7 +75,7 @@
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "adzuna:5749909673",
@@ -71,6 +84,19 @@
     "location": "Paris, Ile-de-France",
     "url": "https://www.adzuna.fr/details/5749909673?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Pionnier du développement durable et expert en transition socio-écologique, Auxilia est un cabinet de conseil qui accompagne collectivités et entrepri...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": false
+  },
+  {
+    "id": "adzuna:5750085748",
+    "title": "Chargé d'Opérations Fluviales MOA - Environnement H/F",
+    "company": "Voies Navigables de France",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5750085748?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Voies navigables de France (VNF) est l'établissement public en charge de la gestion, de l'exploitation et du développement d'un réseau de 6700 km de v...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
@@ -91,6 +117,19 @@
     "is_new": false
   },
   {
+    "id": "adzuna:5754288189",
+    "title": "Gestionnaire opérationnel de plateforme (H/F/X)",
+    "company": "Cityway",
+    "location": "Aix-en-Provence, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5754288189?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Acteur majeur du numérique au service de la mobilité, Cityway conçoit et opère des plateformes digitales qui facilitent les déplacements : sites web, ...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": true
+  },
+  {
     "id": "adzuna:5752965240",
     "title": "INGENIEUR DEVELOPPEUR INFORMATIQUE F/H",
     "company": "Job Direct",
@@ -101,14 +140,14 @@
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "adzuna:5748984983",
     "title": "RESPONSABLE PRODUCTION EAU POTABLE NICE LITTORAL H/F",
     "company": "Eau d'Azur",
     "location": "Nice, Alpes-Maritimes",
-    "url": "https://www.adzuna.fr/land/ad/5748984983?se=xNg55Xth8RGn0Z1dKY-zHQ&utm_medium=api&utm_source=ae8a5ffa&v=76881897A1DFF89D3912F270DF1AD8F791718DF4",
+    "url": "https://www.adzuna.fr/details/5748984983?utm_medium=api&utm_source=ae8a5ffa",
     "description": "REJOIGNEZ EAU D'AZUR EN TANT QUE RESPONSABLE PRODUCTION EAU POTABLE (H/F) Nice Littoral – CDI Et si votre prochain défi consistait à garantir chaque j...",
     "source": "Adzuna",
     "sources": [
@@ -127,7 +166,7 @@
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "adzuna:5751519237",
@@ -153,6 +192,45 @@
     "sources": [
       "Adzuna"
     ],
+    "is_new": false
+  },
+  {
+    "id": "adzuna:5747426151",
+    "title": "Ingénieur électricien H/F",
+    "company": "Vulcain Engineering Group",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5747426151?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vulcain fournit des services d’ingénierie et de conseil dans le monde entier . Nous créons, concevons, construisons et exploitons des solutions qui am...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": true
+  },
+  {
+    "id": "adzuna:5746742670",
+    "title": "Ingénieur d'Études Sol",
+    "company": "Enoe Solaire",
+    "location": "Allauch, Marseille",
+    "url": "https://www.adzuna.fr/details/5746742670?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "À propos de ENOE SOLAIRE Producteur français d’énergies renouvelables, Enoé développe, construit et exploite des centrales photovoltaïques partout en ...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": true
+  },
+  {
+    "id": "adzuna:5752254416",
+    "title": "Chef d'équipe Construction (H/F)",
+    "company": "Enoé",
+    "location": "Allauch, Marseille",
+    "url": "https://www.adzuna.fr/details/5752254416?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "À propos de Enoé Producteur français d’énergies renouvelables, Enoé développe, construit et exploite des centrales photovoltaïques partout en France ....",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
     "is_new": true
   },
   {
@@ -166,7 +244,7 @@
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "adzuna:5752630162",
@@ -182,6 +260,19 @@
     "is_new": false
   },
   {
+    "id": "adzuna:5754244832",
+    "title": "Monteur-Câbleur / Monteuse-Câbleuse - Électrotechnique et Électronique F/H",
+    "company": "CSTI GROUPE",
+    "location": "Gardanne, Aix-en-Provence",
+    "url": "https://www.adzuna.fr/details/5754244832?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos principales missions Conformément aux instructions spécifiques de fabrication et dans le respect des critères qualité requis dans notre atelier de...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": true
+  },
+  {
     "id": "adzuna:5753627559",
     "title": "Chef de service maintenance H/F",
     "company": "SPIE",
@@ -192,19 +283,19 @@
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
+    "is_new": false
   },
   {
-    "id": "adzuna:5748960470",
-    "title": "Asset Manager Photovoltaïque F/H",
-    "company": "IRISOLARIS GROUPE",
-    "location": "Rousset, Trets",
-    "url": "https://www.adzuna.fr/details/5748960470?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Votre rôle : Vous êtes responsable d’un portefeuille de centrales photovoltaïques, en garantissant leur performance financière et contractuelle. De la...",
+    "id": "adzuna:5754244820",
+    "title": "Ingénieur(e) Automatisme - Nice F/H",
+    "company": "Consultys Services",
+    "location": "Nice, Alpes-Maritimes",
+    "url": "https://www.adzuna.fr/details/5754244820?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Dans le cadre d'un projet, nous recrutons en CDI, un(e) Ingénieur(e) Automatisme. VOS MISSIONS Modifier l'ensemble des analyses fonctionnelles détaill...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
     ],
-    "is_new": false
+    "is_new": true
   }
 ]
