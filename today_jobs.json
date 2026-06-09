@@ -1,5 +1,18 @@
 [
   {
+    "id": "adzuna:5756811189",
+    "title": "Consultant Assurance Collective",
+    "company": "Celencia",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5756811189?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Celencia en quelques mots Celencia est un cabinet de conseil en transformation de référence dans le secteur du tertiaire financier. L'aventure est née...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": true
+  },
+  {
     "id": "adzuna:5749744614",
     "title": "Chargé de projet RSE/Climat H/F",
     "company": "MGEN",
@@ -39,6 +52,19 @@
     "is_new": false
   },
   {
+    "id": "adzuna:5755359264",
+    "title": "Consultant spécialiste",
+    "company": "Projet en cours de structuration",
+    "location": "Allauch, Marseille",
+    "url": "https://www.adzuna.fr/details/5755359264?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Intitulé du poste : Advisor / Co-fondateur – Projet Hydrogène Renouvelable PACA Type de poste : Bénévolat / Equity (BSA) Lieu : Région Provence-Alpes-...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": true
+  },
+  {
     "id": "adzuna:5753966214",
     "title": "Stagiaire chargé(e) de mission résilience et adaptation du patrimoine",
     "company": "Elogie-Siemp",
@@ -50,6 +76,19 @@
       "Adzuna"
     ],
     "is_new": false
+  },
+  {
+    "id": "adzuna:5755169473",
+    "title": "Ingénieur GNC & Systèmes Autonomes (H/F)",
+    "company": "Teamis",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/land/ad/5755169473?se=mNiPrN1j8RG_KqnWdnFn5Q&utm_medium=api&utm_source=ae8a5ffa&v=35DD6E54795101E457DC6AA24FA33D8F41E4EBBA",
+    "description": "En postulant à cette offre vous aurez l'opportunité de rejoindre une structure innovante en forte croissance, spécialisée dans le développement de sol...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": true
   },
   {
     "id": "adzuna:5749909673",
@@ -78,17 +117,30 @@
     "is_new": false
   },
   {
-    "id": "adzuna:5751113078",
-    "title": "Inspecteur.rice de l environnement -Pôle Déchet-Matériau",
-    "company": "DREAL",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5751113078?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Vous souhaitez jouer un rôle dans la transition écologique des industries et agir sur le terrain pour concilier le dével...",
+    "id": "adzuna:5756612685",
+    "title": "Charge (E) De Mission Isef - Etablissement Public D'Amenagement Et Gestion Des Eaux (Epage Huca)",
+    "company": "Fonction publique Territoriale",
+    "location": "Aubagne, Marseille",
+    "url": "https://www.adzuna.fr/details/5756612685?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots Consultez le détail complet de l'offre sur la page https://www.emploi-territorial.fr/offre/o013260603000370-charge-e-mis...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
     ],
-    "is_new": false
+    "is_new": true
+  },
+  {
+    "id": "adzuna:5755365491",
+    "title": "Ingénieur confirmé en Ouvrages portuaires et dragages – H/F",
+    "company": "SUEZ",
+    "location": "Aix-en-Provence, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5755365491?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Rejoignez-nous pour accélérer la transition écologique et accompagner l’évolution des territoires ! SUEZ Consulting est un acteur majeur des projets d...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": true
   },
   {
     "id": "adzuna:5754288189",
@@ -117,6 +169,19 @@
     "is_new": false
   },
   {
+    "id": "adzuna:5756849309",
+    "title": "Electricien H/F",
+    "company": "Satis Jobs Center - Toulon",
+    "location": "Six-Fours-les-Plages, Toulon",
+    "url": "https://www.adzuna.fr/details/5756849309?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "VOS MISSIONS : Organisation du travail - Recevoir les consignes des opérations à réaliser. - Vérifier l'adéquation du matériel, des matériaux et de l'...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": true
+  },
+  {
     "id": "adzuna:5748984983",
     "title": "RESPONSABLE PRODUCTION EAU POTABLE NICE LITTORAL H/F",
     "company": "Eau d'Azur",
@@ -140,7 +205,7 @@
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "adzuna:5752965130",
@@ -192,19 +257,6 @@
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
-  },
-  {
-    "id": "adzuna:5747426151",
-    "title": "Ingénieur électricien H/F",
-    "company": "Vulcain Engineering Group",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5747426151?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vulcain fournit des services d’ingénierie et de conseil dans le monde entier . Nous créons, concevons, construisons et exploitons des solutions qui am...",
-    "source": "Adzuna",
-    "sources": [
-      "Adzuna"
-    ],
     "is_new": false
   },
   {
@@ -218,7 +270,7 @@
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "adzuna:5753807069",
@@ -270,7 +322,7 @@
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "adzuna:5753627559",
@@ -296,6 +348,6 @@
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
+    "is_new": false
   }
 ]
