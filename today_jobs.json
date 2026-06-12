@@ -1,5 +1,18 @@
 [
   {
+    "id": "adzuna:5759750917",
+    "title": "Ingénieur Climat H/F",
+    "company": "GIO Recrutement Boulogne",
+    "location": "8ème Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/details/5759750917?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Au sein d'une équipe engagée, vous interviendrez sur des missions à forte valeur ajoutée, en audit comme en conseil. Vos missions sont les suivantes :...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": true
+  },
+  {
     "id": "adzuna:5756832662",
     "title": "Chef de Projet Environnement - Amo H/F",
     "company": "Métiga",
@@ -23,7 +36,7 @@
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "adzuna:5759442898",
@@ -36,7 +49,20 @@
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
+    "is_new": false
+  },
+  {
+    "id": "adzuna:5752785123",
+    "title": "Coordinateur·trice Moyens Généraux & Qualité Environnement H/F",
+    "company": "EXTEND CONSULTING",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5752785123?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Notre client accompagne l'exploitation et le développement de plusieurs sites emblématiques parisiens. Engagée dans une démarche Climat et Solidarité,...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": false
   },
   {
     "id": "adzuna:5755359264",
@@ -65,25 +91,12 @@
     "is_new": false
   },
   {
-    "id": "adzuna:5756612685",
-    "title": "Charge (E) De Mission Isef - Etablissement Public D'Amenagement Et Gestion Des Eaux (Epage Huca)",
-    "company": "Fonction publique Territoriale",
-    "location": "Aubagne, Marseille",
-    "url": "https://www.adzuna.fr/details/5756612685?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Consultez le détail complet de l'offre sur la page https://www.emploi-territorial.fr/offre/o013260603000370-charge-e-mis...",
-    "source": "Adzuna",
-    "sources": [
-      "Adzuna"
-    ],
-    "is_new": false
-  },
-  {
-    "id": "adzuna:5755702145",
-    "title": "Chargée/Chargé de mission appui au projet métropolitain",
-    "company": "Fonction publique Territoriale",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5755702145?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots La Métropole d'Aix-Marseille-Provence pilote des politiques publiques innovantes au service de ses habitants. Son action...",
+    "id": "adzuna:5759435134",
+    "title": "Conseiller Emploi Formation H/F",
+    "company": "L Opcommerce",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5759435134?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Au sein de la Délégation Île-de-France, vous rejoindrez l'équipe de Julie, Responsable Front Office, et vous travaillerez directement avec d'autres ex...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
@@ -91,12 +104,38 @@
     "is_new": true
   },
   {
-    "id": "adzuna:5755365491",
-    "title": "Ingénieur confirmé en Ouvrages portuaires et dragages – H/F",
-    "company": "SUEZ",
-    "location": "Aix-en-Provence, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5755365491?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Rejoignez-nous pour accélérer la transition écologique et accompagner l’évolution des territoires ! SUEZ Consulting est un acteur majeur des projets d...",
+    "id": "adzuna:5755169473",
+    "title": "Ingénieur GNC & Systèmes Autonomes (H/F)",
+    "company": "Teamis",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5755169473?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "En postulant à cette offre vous aurez l'opportunité de rejoindre une structure innovante en forte croissance, spécialisée dans le développement de sol...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": false
+  },
+  {
+    "id": "adzuna:5756591132",
+    "title": "Chargé d'opérations fluviales MOA/Environnement H/F",
+    "company": "VNF",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5756591132?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots Voies navigables de France (VNF) est l’établissement public en charge de la gestion, de l’exploitation et du développeme...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": true
+  },
+  {
+    "id": "adzuna:5756612685",
+    "title": "Charge (E) De Mission Isef - Etablissement Public D'Amenagement Et Gestion Des Eaux (Epage Huca)",
+    "company": "Fonction publique Territoriale",
+    "location": "Aubagne, Marseille",
+    "url": "https://www.adzuna.fr/details/5756612685?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots Consultez le détail complet de l'offre sur la page https://www.emploi-territorial.fr/offre/o013260603000370-charge-e-mis...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
@@ -115,6 +154,19 @@
       "Adzuna"
     ],
     "is_new": false
+  },
+  {
+    "id": "adzuna:5759794208",
+    "title": "Ingénieur Data (H/F/X)",
+    "company": "CITYWAY",
+    "location": "Aix-en-Provence, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5759794208?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Acteur majeur du numérique au service de la mobilité, Cityway conçoit et opère des plateformes digitales qui facilitent les déplacements : sites web, ...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": true
   },
   {
     "id": "adzuna:5754288189",
@@ -140,19 +192,6 @@
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
-  },
-  {
-    "id": "adzuna:5752965240",
-    "title": "INGENIEUR DEVELOPPEUR INFORMATIQUE F/H",
-    "company": "Job Direct",
-    "location": "La Garde, Toulon",
-    "url": "https://www.adzuna.fr/details/5752965240?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "ABC Conseil & Service recherche pour son client un Ingénieur Développeur Informatique (H/F). Le poste Au cœur de la transformation numérique et de la ...",
-    "source": "Adzuna",
-    "sources": [
-      "Adzuna"
-    ],
     "is_new": false
   },
   {
@@ -162,6 +201,19 @@
     "location": "Six-Fours-les-Plages, Toulon",
     "url": "https://www.adzuna.fr/details/5756849309?utm_medium=api&utm_source=ae8a5ffa",
     "description": "VOS MISSIONS : Organisation du travail - Recevoir les consignes des opérations à réaliser. - Vérifier l'adéquation du matériel, des matériaux et de l'...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": false
+  },
+  {
+    "id": "adzuna:5752965240",
+    "title": "INGENIEUR DEVELOPPEUR INFORMATIQUE F/H",
+    "company": "Job Direct",
+    "location": "La Garde, Toulon",
+    "url": "https://www.adzuna.fr/details/5752965240?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "ABC Conseil & Service recherche pour son client un Ingénieur Développeur Informatique (H/F). Le poste Au cœur de la transformation numérique et de la ...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
@@ -182,19 +234,6 @@
     "is_new": false
   },
   {
-    "id": "adzuna:5757714243",
-    "title": "Consultant senior Industrie - Energie et carbone (CDI) - HF",
-    "company": "GreenFlex",
-    "location": "9ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/details/5757714243?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "GreenFlex accompagne depuis plus de 15 ans ses clients industriels sur leur performance carbone et énergie, avec une approche intégrée allant de la st...",
-    "source": "Adzuna",
-    "sources": [
-      "Adzuna"
-    ],
-    "is_new": false
-  },
-  {
     "id": "adzuna:5752965130",
     "title": "Ingénieur en efficacité énergétique sénior F/H",
     "company": "Achil",
@@ -208,30 +247,30 @@
     "is_new": false
   },
   {
-    "id": "adzuna:5751519237",
-    "title": "Responsable Ingénierie Mécanique H/F",
-    "company": "Solve Recrutement",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5751519237?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Et si votre expertise mécanique contribuait à décarboner le transport maritime mondial ? Nous sommes une start-up industrielle française qui développe...",
+    "id": "adzuna:5760312897",
+    "title": "Ingénieur réseau de chaleur Hu002FF",
+    "company": "new-e",
+    "location": "13ème Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/details/5760312897?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vous intervenez sur l’ensemble des phases de projets de réseaux de chaleur : études techniques, conception, dimensionnement et optimisation. Vous gara...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
     ],
-    "is_new": false
+    "is_new": true
   },
   {
-    "id": "adzuna:5755359868",
-    "title": "Consultant(e) éditorial bilingue Fr/En",
-    "company": "Story Jungle",
+    "id": "adzuna:5752760669",
+    "title": "Chef de Projet Développement d'Infrastructures Énergétiques H/F",
+    "company": "Elatos",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5755359868?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vous savez et aimez gérer des sujets complexes ? Les défis intellectuels vous motivent ? Vous appréciez être en responsabilité et gérer des projets de...",
+    "url": "https://www.adzuna.fr/details/5752760669?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "DESCRIPTION Fondée en 2022 par Sanji.h et Green Tower, ACACIA est un acteur clé des infrastructures électriques dédiées à la transition énergétique. E...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
     ],
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "adzuna:5755939811",
@@ -323,5 +362,18 @@
       "Adzuna"
     ],
     "is_new": false
+  },
+  {
+    "id": "adzuna:5759765477",
+    "title": "Superviseur Maintenance - Nice F/H",
+    "company": "Consultys Services",
+    "location": "Nice, Alpes-Maritimes",
+    "url": "https://www.adzuna.fr/details/5759765477?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Dans le cadre d'un projet, nous recrutons en CDI, un(e) Superviseur Maintenance . VOS MISSIONS Superviser, accompagner et gérer les sous-traitants sur...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": true
   }
 ]
