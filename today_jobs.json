@@ -10,7 +10,7 @@
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "adzuna:5756832662",
@@ -52,19 +52,6 @@
     "is_new": false
   },
   {
-    "id": "adzuna:5752785123",
-    "title": "Coordinateur·trice Moyens Généraux & Qualité Environnement H/F",
-    "company": "EXTEND CONSULTING",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5752785123?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Notre client accompagne l'exploitation et le développement de plusieurs sites emblématiques parisiens. Engagée dans une démarche Climat et Solidarité,...",
-    "source": "Adzuna",
-    "sources": [
-      "Adzuna"
-    ],
-    "is_new": false
-  },
-  {
     "id": "adzuna:5755359264",
     "title": "Consultant spécialiste",
     "company": "Projet en cours de structuration",
@@ -91,38 +78,12 @@
     "is_new": false
   },
   {
-    "id": "adzuna:5759435134",
-    "title": "Conseiller Emploi Formation H/F",
-    "company": "L Opcommerce",
+    "id": "adzuna:5761691407",
+    "title": "DGT-POLSEC3-ED - Adjoint(e) au chef de bureau H/F",
+    "company": "Choisir le Service Public",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5759435134?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Au sein de la Délégation Île-de-France, vous rejoindrez l'équipe de Julie, Responsable Front Office, et vous travaillerez directement avec d'autres ex...",
-    "source": "Adzuna",
-    "sources": [
-      "Adzuna"
-    ],
-    "is_new": true
-  },
-  {
-    "id": "adzuna:5755169473",
-    "title": "Ingénieur GNC & Systèmes Autonomes (H/F)",
-    "company": "Teamis",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5755169473?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "En postulant à cette offre vous aurez l'opportunité de rejoindre une structure innovante en forte croissance, spécialisée dans le développement de sol...",
-    "source": "Adzuna",
-    "sources": [
-      "Adzuna"
-    ],
-    "is_new": false
-  },
-  {
-    "id": "adzuna:5756591132",
-    "title": "Chargé d'opérations fluviales MOA/Environnement H/F",
-    "company": "VNF",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5756591132?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Voies navigables de France (VNF) est l’établissement public en charge de la gestion, de l’exploitation et du développeme...",
+    "url": "https://www.adzuna.fr/details/5761691407?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Informations générales Organisme de rattachement Direction générale du Trésor (DGT) Référence MEF_2026-30801 Date de début de diffusion 10/06/2026 Dat...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
@@ -143,6 +104,32 @@
     "is_new": false
   },
   {
+    "id": "adzuna:5761802870",
+    "title": "Chef(fe) de projets et d’études stratégiques (H/F) - COMMUNE DE MARSEILLE",
+    "company": "Fonction publique Territoriale",
+    "location": "Marseille, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5761802870?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots La DGA la Ville du Temps Libre regroupe quatre directions : La Direction de la Culture en charge de l'action culturelle ...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": true
+  },
+  {
+    "id": "adzuna:5761745920",
+    "title": "DGA en charge des Grands projets et du développement économique. - COMMUNE DES PENNES-MIRABEAU",
+    "company": "Fonction publique Territoriale",
+    "location": "Les Pennes-Mirabeau, Aix-en-Provence",
+    "url": "https://www.adzuna.fr/details/5761745920?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots Sous l'autorité du Directeur Général des Services et en étroite collaboration avec le Maire et les élus, le Directeur Gé...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": true
+  },
+  {
     "id": "adzuna:5758191005",
     "title": "Ingénieur agronome H/F",
     "company": "METIGA",
@@ -156,25 +143,12 @@
     "is_new": false
   },
   {
-    "id": "adzuna:5759794208",
-    "title": "Ingénieur Data (H/F/X)",
-    "company": "CITYWAY",
+    "id": "adzuna:5755365491",
+    "title": "Ingénieur confirmé en Ouvrages portuaires et dragages – H/F",
+    "company": "SUEZ",
     "location": "Aix-en-Provence, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5759794208?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Acteur majeur du numérique au service de la mobilité, Cityway conçoit et opère des plateformes digitales qui facilitent les déplacements : sites web, ...",
-    "source": "Adzuna",
-    "sources": [
-      "Adzuna"
-    ],
-    "is_new": true
-  },
-  {
-    "id": "adzuna:5754288189",
-    "title": "Gestionnaire opérationnel de plateforme (H/F/X)",
-    "company": "Cityway",
-    "location": "Aix-en-Provence, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5754288189?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Acteur majeur du numérique au service de la mobilité, Cityway conçoit et opère des plateformes digitales qui facilitent les déplacements : sites web, ...",
+    "url": "https://www.adzuna.fr/details/5755365491?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Rejoignez-nous pour accélérer la transition écologique et accompagner l’évolution des territoires ! SUEZ Consulting est un acteur majeur des projets d...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
@@ -182,12 +156,12 @@
     "is_new": false
   },
   {
-    "id": "adzuna:5759091064",
-    "title": "Product Owner / Product Manager Data H/F",
-    "company": "Onepoint Sas",
+    "id": "adzuna:5759794208",
+    "title": "Ingénieur Data (H/F/X)",
+    "company": "Cityway",
     "location": "Aix-en-Provence, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5759091064?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Contribuez aux grandes transformations des entreprises et des acteurs publics en alliant innovation technologique et expertise métier, au service de n...",
+    "url": "https://www.adzuna.fr/details/5759794208?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Acteur majeur du numérique au service de la mobilité, Cityway conçoit et opère des plateformes digitales qui facilitent les déplacements : sites web, ...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
@@ -208,19 +182,6 @@
     "is_new": false
   },
   {
-    "id": "adzuna:5752965240",
-    "title": "INGENIEUR DEVELOPPEUR INFORMATIQUE F/H",
-    "company": "Job Direct",
-    "location": "La Garde, Toulon",
-    "url": "https://www.adzuna.fr/details/5752965240?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "ABC Conseil & Service recherche pour son client un Ingénieur Développeur Informatique (H/F). Le poste Au cœur de la transformation numérique et de la ...",
-    "source": "Adzuna",
-    "sources": [
-      "Adzuna"
-    ],
-    "is_new": false
-  },
-  {
     "id": "adzuna:5754712317",
     "title": "Contrat de projet – Chargé de mission cartographie des risques climatiques et biodiversité du MI",
     "company": "Ministere Interieur",
@@ -234,25 +195,12 @@
     "is_new": false
   },
   {
-    "id": "adzuna:5752965130",
-    "title": "Ingénieur en efficacité énergétique sénior F/H",
-    "company": "Achil",
+    "id": "adzuna:5761249042",
+    "title": "CHARGE DE MISSION DEVELOPPEMENT DURABLE ET ENERGIE",
+    "company": "Ministère des Armées",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5752965130?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Au sein d’une équipe spécialisée, vous intervenez sur des projets d’efficacité énergétique et de décarbonation appliqués à des sites tertiaires et/ou ...",
-    "source": "Adzuna",
-    "sources": [
-      "Adzuna"
-    ],
-    "is_new": false
-  },
-  {
-    "id": "adzuna:5760312897",
-    "title": "Ingénieur réseau de chaleur Hu002FF",
-    "company": "new-e",
-    "location": "13ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/details/5760312897?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vous intervenez sur l’ensemble des phases de projets de réseaux de chaleur : études techniques, conception, dimensionnement et optimisation. Vous gara...",
+    "url": "https://www.adzuna.fr/land/ad/5761249042?se=vBXM_ABn8RGcBrNIBTRH_g&utm_medium=api&utm_source=ae8a5ffa&v=B5E65BF846DDA0FF9D0E2D79860A481BD77E0DF0",
+    "description": "Au sein de la MTEEDD, le titulaire du poste est rattaché au chef de la mission. Il contribue à l'élaboration et au suivi des documents stratégiques re...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
@@ -260,12 +208,12 @@
     "is_new": true
   },
   {
-    "id": "adzuna:5752760669",
-    "title": "Chef de Projet Développement d'Infrastructures Énergétiques H/F",
-    "company": "Elatos",
+    "id": "adzuna:5760969360",
+    "title": "Contremaître Itinérant - Idf H/F",
+    "company": "ENGIE",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5752760669?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "DESCRIPTION Fondée en 2022 par Sanji.h et Green Tower, ACACIA est un acteur clé des infrastructures électriques dédiées à la transition énergétique. E...",
+    "url": "https://www.adzuna.fr/details/5760969360?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Pour intervenir en itinérance en Ile-de-France, nous recherchons pour notre entité Engie Solution des : Contremaîtres itinérants (F/H) Votre bon espri...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
@@ -286,24 +234,24 @@
     "is_new": false
   },
   {
-    "id": "adzuna:5753807069",
-    "title": "Responsable d'activité automatisme H/F",
+    "id": "adzuna:5762082513",
+    "title": "Responsable d'activité maintenance industrielle H/F",
     "company": "SPIE Industrie",
     "location": "Aix en Provence Sud-Ouest, Aix-en-Provence",
-    "url": "https://www.adzuna.fr/details/5753807069?utm_medium=api&utm_source=ae8a5ffa",
+    "url": "https://www.adzuna.fr/details/5762082513?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Nous quand on pose des capteurs, c'est pas pour prendre notre fréquence cardiaque. C'est pour piloter les process industriels ou encore la production ...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
     ],
-    "is_new": false
+    "is_new": true
   },
   {
-    "id": "adzuna:5752630162",
-    "title": "Chef de service maintenance H/F",
+    "id": "adzuna:5753807069",
+    "title": "Responsable d'activité automatisme H/F",
     "company": "SPIE Industrie",
     "location": "Aix en Provence Sud-Ouest, Aix-en-Provence",
-    "url": "https://www.adzuna.fr/details/5752630162?utm_medium=api&utm_source=ae8a5ffa",
+    "url": "https://www.adzuna.fr/details/5753807069?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Nous quand on pose des capteurs, c'est pas pour prendre notre fréquence cardiaque. C'est pour piloter les process industriels ou encore la production ...",
     "source": "Adzuna",
     "sources": [
@@ -325,43 +273,30 @@
     "is_new": false
   },
   {
-    "id": "adzuna:5753781805",
-    "title": "Ingénieur études réseaux de chaleurs (H/F)",
-    "company": "Systea Infrastructures",
-    "location": "Aix en Provence Sud-Ouest, Aix-en-Provence",
-    "url": "https://www.adzuna.fr/details/5753781805?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Nous recherchons un Ingénieur Études Réseaux de Chaleur (H/F) pour rejoindre un cabinet reconnu pour son expertise dans les infrastructures énergétiqu...",
+    "id": "adzuna:5757546011",
+    "title": "Chargé de Mission Développement Grands Projets H/F",
+    "company": "Tenergie",
+    "location": "Fuveau, Trets",
+    "url": "https://www.adzuna.fr/details/5757546011?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vous êtes convaincu(e) que les énergies renouvelables ont un rôle majeur à jouer dans l'avenir et souhaitez être acteur(trice) de ce changement, vous ...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
     ],
-    "is_new": false
+    "is_new": true
   },
   {
-    "id": "adzuna:5753627559",
-    "title": "Chef de service maintenance H/F",
-    "company": "SPIE",
-    "location": "Aix en Provence Sud-Ouest, Aix-en-Provence",
-    "url": "https://www.adzuna.fr/details/5753627559?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Informations générales Entité Nous quand on pose des capteurs, c'est pas pour prendre notre fréquence cardiaque. C'est pour piloter les process indust...",
+    "id": "adzuna:5757929452",
+    "title": "Chef de Produit - Meyreuil H/F",
+    "company": "CITEPARK",
+    "location": "Aix-en-Provence-Sud-Ouest, Aix-en-Provence",
+    "url": "https://www.adzuna.fr/details/5757929452?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Décarbonation des trajets et sécurisation des usagers sont des enjeux majeurs du domaine de la mobilité. Fareco (groupe Fayat) répond à ces enjeux par...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
     ],
-    "is_new": false
-  },
-  {
-    "id": "adzuna:5753947589",
-    "title": "Ingénieur Études Réseaux de Chaleurs H/F",
-    "company": "Systea Infrastructures",
-    "location": "Nice 13e Canton, Nice",
-    "url": "https://www.adzuna.fr/details/5753947589?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Nous recherchons un Ingénieur Études Réseaux de Chaleur (H/F) pour rejoindre un cabinet reconnu pour son expertise dans les infrastructures énergétiqu...",
-    "source": "Adzuna",
-    "sources": [
-      "Adzuna"
-    ],
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "adzuna:5759765477",
@@ -374,6 +309,6 @@
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
+    "is_new": false
   }
 ]
