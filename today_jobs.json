@@ -23,7 +23,7 @@
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "adzuna:5756832662",
@@ -31,6 +31,19 @@
     "company": "Métiga",
     "location": "Paris, Ile-de-France",
     "url": "https://www.adzuna.fr/details/5756832662?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Au sein des équipes des équipes de notre client, leader français de l'ingénierie, votre rôle sera de : Assurer et coordonner la production et le pilot...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": false
+  },
+  {
+    "id": "adzuna:5759759893",
+    "title": "Chef de projet environnement - AMO F/H",
+    "company": "METIGA",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5759759893?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Au sein des équipes des équipes de notre client, leader français de l'ingénierie, votre rôle sera de : Assurer et coordonner la production et le pilot...",
     "source": "Adzuna",
     "sources": [
@@ -52,38 +65,12 @@
     "is_new": false
   },
   {
-    "id": "adzuna:5759759893",
-    "title": "Chef de projet environnement - AMO F/H",
-    "company": "METIGA",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5759759893?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Au sein des équipes des équipes de notre client, leader français de l'ingénierie, votre rôle sera de : Assurer et coordonner la production et le pilot...",
-    "source": "Adzuna",
-    "sources": [
-      "Adzuna"
-    ],
-    "is_new": true
-  },
-  {
     "id": "adzuna:5759442898",
     "title": "Ingénieur Climat H/F",
     "company": "GIO Recrutement",
     "location": "Paris, Ile-de-France",
     "url": "https://www.adzuna.fr/details/5759442898?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Au sein d'une équipe engagée, vous interviendrez sur des missions à forte valeur ajoutée, en audit comme en conseil. Vos missions sont les suivantes :...",
-    "source": "Adzuna",
-    "sources": [
-      "Adzuna"
-    ],
-    "is_new": false
-  },
-  {
-    "id": "adzuna:5755359264",
-    "title": "Consultant spécialiste",
-    "company": "Projet en cours de structuration",
-    "location": "Allauch, Marseille",
-    "url": "https://www.adzuna.fr/details/5755359264?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Intitulé du poste : Advisor / Co-fondateur – Projet Hydrogène Renouvelable PACA Type de poste : Bénévolat / Equity (BSA) Lieu : Région Provence-Alpes-...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
@@ -101,7 +88,7 @@
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "adzuna:5761691407",
@@ -127,7 +114,7 @@
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "adzuna:5761797351",
@@ -136,32 +123,6 @@
     "location": "Paris, Ile-de-France",
     "url": "https://www.adzuna.fr/details/5761797351?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Informations générales Organisme de rattachement Direction générale du Trésor (DGT) Référence MEF_2026-30766 Date de début de diffusion 10/06/2026 Dat...",
-    "source": "Adzuna",
-    "sources": [
-      "Adzuna"
-    ],
-    "is_new": true
-  },
-  {
-    "id": "adzuna:5763342468",
-    "title": "Chargé / Chargée de mission Education à l'environnement et au développement durable",
-    "company": "MBway Bordeaux",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5763342468?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "MBway Bordeaux recherche pour une de ses entreprises partenaire un Chargé de mission Environnement (H/F) . Vous préparez un diplôme en MBA Management ...",
-    "source": "Adzuna",
-    "sources": [
-      "Adzuna"
-    ],
-    "is_new": true
-  },
-  {
-    "id": "adzuna:5759435134",
-    "title": "Conseiller Emploi Formation H/F",
-    "company": "L Opcommerce",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5759435134?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Au sein de la Délégation Île-de-France, vous rejoindrez l'équipe de Julie, Responsable Front Office, et vous travaillerez directement avec d'autres ex...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
@@ -205,6 +166,45 @@
     "sources": [
       "Adzuna"
     ],
+    "is_new": false
+  },
+  {
+    "id": "adzuna:5758259569",
+    "title": "Commercial itinérant (H/F)",
+    "company": "HARRY HOPE",
+    "location": "Allauch, Marseille",
+    "url": "https://www.adzuna.fr/details/5758259569?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "L'essentiel : Commercial itinérant (H/F) - Marseille - Autonomie - Solutions innovantes Engagez-vous dans la transition énergétique et propulsez les v...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": true
+  },
+  {
+    "id": "adzuna:5758270286",
+    "title": "Ingénieur Data F/H",
+    "company": "CITYWAY",
+    "location": "Allauch, Marseille",
+    "url": "https://www.adzuna.fr/details/5758270286?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Ta destination : Construire la donnée au service de la mobilité ! Rattaché(e) au Responsable de pôle Conception Produit Réservation, Compte voyageurs ...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": true
+  },
+  {
+    "id": "adzuna:5761164172",
+    "title": "Développeur·euse Full Stack F/H",
+    "company": "QUANTUM OF TRUST",
+    "location": "Marseille, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5761164172?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vous interviendrez sur trois plateformes complémentaires de l'écosystème Quantum of Trust : Trust Intelligence Studio — le cœur de Quantum of Trust No...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
     "is_new": true
   },
   {
@@ -214,6 +214,19 @@
     "location": "Les Pennes-Mirabeau, Aix-en-Provence",
     "url": "https://www.adzuna.fr/details/5761745920?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Vos missions en quelques mots Sous l'autorité du Directeur Général des Services et en étroite collaboration avec le Maire et les élus, le Directeur Gé...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": false
+  },
+  {
+    "id": "adzuna:5760455098",
+    "title": "Chargée/Chargé de mission accessibilité et inclusion",
+    "company": "Fonction publique Territoriale",
+    "location": "Aix-en-Provence, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5760455098?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots La Métropole d'Aix-Marseille-Provence pilote des politiques publiques innovantes au service de ses habitants. Son action...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
@@ -234,17 +247,17 @@
     "is_new": false
   },
   {
-    "id": "adzuna:5760455098",
-    "title": "Chargée/Chargé de mission accessibilité et inclusion",
-    "company": "Fonction publique Territoriale",
+    "id": "adzuna:5759794208",
+    "title": "Ingénieur Data (H/F/X)",
+    "company": "Cityway",
     "location": "Aix-en-Provence, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5760455098?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots La Métropole d'Aix-Marseille-Provence pilote des politiques publiques innovantes au service de ses habitants. Son action...",
+    "url": "https://www.adzuna.fr/details/5759794208?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Acteur majeur du numérique au service de la mobilité, Cityway conçoit et opère des plateformes digitales qui facilitent les déplacements : sites web, ...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "adzuna:5756849309",
@@ -270,15 +283,28 @@
     "sources": [
       "Adzuna"
     ],
+    "is_new": false
+  },
+  {
+    "id": "adzuna:5763828293",
+    "title": "Economiste – décarbonation des services marchands SCIDE-SDP3E-075 H/F",
+    "company": "Choisir le Service Public",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5763828293?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Informations générales Organisme de rattachement Direction générale des entreprises (DGE) Référence MEF_2026-30854 Date de début de diffusion 12/06/20...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
     "is_new": true
   },
   {
-    "id": "adzuna:5762175581",
-    "title": "Ingénieur Confirmé CVC & Fluides - Chef de Projet H/F",
-    "company": "Work & You",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5762175581?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "çamatchentrenous Excellence technique sur des projets d'exception à fort impact environnemental Culture de la pluridisciplinarité et de l'expertise Pa...",
+    "id": "adzuna:5762333507",
+    "title": "Chargé.e d'Affaires - Efficacité Energétique et Décarbonation F/H",
+    "company": "MANERGY",
+    "location": "Allauch, Marseille",
+    "url": "https://www.adzuna.fr/details/5762333507?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "En tant que Chargé(e) d'Affaires, vous interviendrez sur des missions complètes et variées, allant des études et audits énergétiques jusqu'au contrôle...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
@@ -296,7 +322,7 @@
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "adzuna:5755939811",
@@ -338,29 +364,29 @@
     "is_new": false
   },
   {
-    "id": "adzuna:5757929452",
-    "title": "Chef de Produit - Meyreuil H/F",
-    "company": "CITEPARK",
-    "location": "Aix-en-Provence-Sud-Ouest, Aix-en-Provence",
-    "url": "https://www.adzuna.fr/details/5757929452?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Décarbonation des trajets et sécurisation des usagers sont des enjeux majeurs du domaine de la mobilité. Fareco (groupe Fayat) répond à ces enjeux par...",
+    "id": "adzuna:5763833528",
+    "title": "Déménageur Permis B F/H",
+    "company": "Hexvia",
+    "location": "Les Pennes-Mirabeau, Aix-en-Provence",
+    "url": "https://www.adzuna.fr/details/5763833528?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Rejoignez l’aventure HEXVIA : Alliés de votre mobilité ! Créé en 1986 , HEXVIA représente plus d’une cinquantaine de sociétés implantées au niveau eur...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
     ],
-    "is_new": false
+    "is_new": true
   },
   {
-    "id": "adzuna:5759765477",
-    "title": "Superviseur Maintenance - Nice F/H",
-    "company": "Consultys Services",
-    "location": "Nice, Alpes-Maritimes",
-    "url": "https://www.adzuna.fr/details/5759765477?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Dans le cadre d'un projet, nous recrutons en CDI, un(e) Superviseur Maintenance . VOS MISSIONS Superviser, accompagner et gérer les sous-traitants sur...",
+    "id": "adzuna:5763836878",
+    "title": "Chargé de mission Accompagnement et financement de la transition",
+    "company": "Dgafp",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5763836878?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Informations générales Organisme de rattachement AC/DGPE Référence AGRI_2026-11-A5SCP00079-57019 Date de début de diffusion 11/06/2026 Date de parutio...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
     ],
-    "is_new": false
+    "is_new": true
   }
 ]
