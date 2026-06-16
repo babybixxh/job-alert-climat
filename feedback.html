@@ -7,24 +7,33 @@
 <style>
   body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; background: #f5f5f5; }
   h1 { color: #2d6a4f; }
-  .job { background: white; padding: 16px; border-radius: 8px; margin-bottom: 12px; border-left: 4px solid #ccc; display: flex; align-items: flex-start; gap: 12px; }
+  .job { background: white; padding: 16px; border-radius: 8px; margin-bottom: 12px; border-left: 4px solid #ccc; }
   .job.rejected { border-left-color: #e05c2a; background: #fff5f0; }
-  .job-info { flex: 1; }
   .job-title { font-weight: bold; color: #333; }
   .job-meta { font-size: 13px; color: #777; margin-top: 4px; }
-  .btn { padding: 8px 16px; border: none; border-radius: 6px; cursor: pointer; font-size: 13px; }
+  .btn { padding: 8px 16px; border: none; border-radius: 6px; cursor: pointer; font-size: 13px; margin-top: 8px; }
   .btn-reject { background: #e05c2a; color: white; }
   .btn-restore { background: #eee; color: #555; }
-  #save-btn { display: none; margin-top: 20px; padding: 12px 24px; background: #2d6a4f; color: white; border: none; border-radius: 8px; font-size: 15px; cursor: pointer; width: 100%; }
-  #status { margin-top: 12px; color: #2d6a4f; font-weight: bold; text-align: center; }
-  .source { font-size: 11px; color: white; padding: 1px 8px; border-radius: 10px; margin-left: 6px; }
-  .source-adzuna { background: #4a90a4; }
-  .source-wttj { background: #7b5ea7; }
-  #loading { text-align: center; color: #888; padding: 40px; }
+  .reason-box { margin-top: 10px; display: none; }
+  .reason-box select { width: 100%; padding: 8px; border-radius: 6px; border: 1px solid #ddd; font-size: 13px; }
+  #save-btn { display:none; margin-top:20px; padding:12px 24px; background:#2d6a4f; color:white; border:none; border-radius:8px; font-size:15px; cursor:pointer; width:100%; }
+  #status { margin-top:12px; color:#2d6a4f; font-weight:bold; text-align:center; }
+  #loading { text-align:center; color:#888; padding:40px; }
+  #token-bar { background:#fff3cd; padding:12px 16px; border-radius:8px; margin-bottom:16px; font-size:13px; display:none; }
+  #token-bar input { padding:6px 10px; border:1px solid #ddd; border-radius:6px; width:300px; font-size:13px; }
+  #token-bar button { padding:6px 14px; background:#2d6a4f; color:white; border:none; border-radius:6px; cursor:pointer; margin-left:8px; }
+  .source { font-size:11px; color:white; padding:1px 8px; border-radius:10px; margin-left:6px; }
 </style>
 </head>
 <body>
 <h1>🌱 Signaler des offres non pertinentes</h1>
+
+<div id="token-bar">
+  🔑 Token GitHub requis (une seule fois) :
+  <input type="password" id="token-input" placeholder="ghp_...">
+  <button onclick="saveToken()">Enregistrer</button>
+</div>
+
 <p style="color:#555">Clique sur 👎 pour les offres qui ne correspondent pas. Elles seront exclues des prochains mails.</p>
 <div id="loading">Chargement des offres...</div>
 <div id="jobs-list"></div>
@@ -35,17 +44,45 @@
 const REPO = "babybixxh/job-alert-climat";
 const RAW_BASE = `https://raw.githubusercontent.com/${REPO}/main`;
 const API_BASE = `https://api.github.com/repos/${REPO}/contents`;
+const TOKEN_KEY = "gh_pat_job_alert";
+
+const REASONS = [
+  "Trop technique / terrain",
+  "Mauvais secteur (nucléaire, aéro, maritime...)",
+  "Poste RH / finance / achats",
+  "Niveau trop junior",
+  "Pas conseil / pas stratégique",
+  "Hors localisation",
+  "Doublon / offre générique",
+  "Autre",
+];
 
 let jobs = [];
-let rejected = new Set();
-let existingRejected = [];
+let rejected = {};
+let existingReasons = [];
+
+function getToken() {
+  return localStorage.getItem(TOKEN_KEY) || "";
+}
+
+function saveToken() {
+  const val = document.getElementById("token-input").value.trim();
+  if (!val) return;
+  localStorage.setItem(TOKEN_KEY, val);
+  document.getElementById("token-bar").style.display = "none";
+  document.getElementById("status").textContent = "✅ Token enregistré !";
+  setTimeout(() => document.getElementById("status").textContent = "", 2000);
+}
 
 async function loadJobs() {
+  if (!getToken()) {
+    document.getElementById("token-bar").style.display = "block";
+  }
   try {
     const r = await fetch(`${RAW_BASE}/today_jobs.json?t=${Date.now()}`);
     jobs = await r.json();
-    const r2 = await fetch(`${RAW_BASE}/rejected_keywords.json?t=${Date.now()}`);
-    if (r2.ok) existingRejected = await r2.json();
+    const r2 = await fetch(`${RAW_BASE}/rejected_reasons.json?t=${Date.now()}`);
+    if (r2.ok) existingReasons = await r2.json();
   } catch(e) { jobs = []; }
   render();
 }
@@ -53,86 +90,101 @@ async function loadJobs() {
 function render() {
   const container = document.getElementById("jobs-list");
   document.getElementById("loading").style.display = "none";
-  if (!jobs.length) { container.innerHTML = "<p>Aucune offre trouvée pour aujourd'hui.</p>"; return; }
+  if (!jobs.length) {
+    container.innerHTML = "<p>Aucune offre trouvée pour aujourd'hui.</p>";
+    return;
+  }
+  const sourceColors = {
+    "Adzuna": "#4a90a4", "France Travail": "#003189",
+    "Greenjob.fr": "#2d8a4e", "Hellowork": "#d95f02", "Jooble": "#b56900"
+  };
   container.innerHTML = jobs.map((job, i) => {
-    const sourceClass = job.source === "Adzuna" ? "source-adzuna" : "source-wttj";
+    const sc = sourceColors[job.source] || "#888";
     return `
     <div class="job" id="job-${i}">
-      <div class="job-info">
-        <div class="job-title">
-          <a href="${job.url}" target="_blank" style="color:#2d6a4f">${job.title}</a>
-          <span class="source ${sourceClass}">${job.source}</span>
-        </div>
-        <div class="job-meta">🏢 ${job.company} &nbsp;|&nbsp; 📍 ${job.location}</div>
+      <div class="job-title">
+        <a href="${job.url}" target="_blank" style="color:#2d6a4f">${job.title}</a>
+        <span class="source" style="background:${sc}">${job.source}</span>
       </div>
-      <button class="btn btn-reject" onclick="toggleReject(${i}, '${job.title.replace(/'/g,"\\'")}')">👎 Non pertinent</button>
+      <div class="job-meta">🏢 ${job.company} &nbsp;|&nbsp; 📍 ${job.location}</div>
+      <button class="btn btn-reject" onclick="toggleReject(${i})">👎 Non pertinent</button>
+      <div class="reason-box" id="reason-${i}">
+        <select id="select-${i}">
+          ${REASONS.map(r => `<option value="${r}">${r}</option>`).join("")}
+        </select>
+      </div>
     </div>`;
   }).join("");
 }
 
-function toggleReject(i, title) {
+function toggleReject(i) {
   const el = document.getElementById(`job-${i}`);
   const btn = el.querySelector("button");
-  if (rejected.has(i)) {
-    rejected.delete(i);
+  const reasonBox = document.getElementById(`reason-${i}`);
+  if (rejected[i]) {
+    delete rejected[i];
     el.classList.remove("rejected");
     btn.className = "btn btn-reject";
     btn.textContent = "👎 Non pertinent";
+    reasonBox.style.display = "none";
   } else {
-    rejected.add(i);
+    rejected[i] = true;
     el.classList.add("rejected");
     btn.className = "btn btn-restore";
     btn.textContent = "↩️ Restaurer";
+    reasonBox.style.display = "block";
   }
-  document.getElementById("save-btn").style.display = rejected.size ? "block" : "none";
+  document.getElementById("save-btn").style.display = Object.keys(rejected).length ? "block" : "none";
 }
 
 async function saveRejected() {
-  let token = window._ghPat || "";
+  let token = getToken();
   if (!token) {
-    token = prompt("Entre ton GitHub Personal Access Token (repo scope) :");
+    document.getElementById("token-bar").style.display = "block";
+    document.getElementById("status").textContent = "⚠️ Entre ton token d'abord !";
+    return;
   }
-  if (!token) return;
 
-  const newKeywords = [...rejected].map(i => jobs[i].title.toLowerCase());
-  const allKeywords = [...new Set([...existingRejected, ...newKeywords])];
-  const content = btoa(unescape(encodeURIComponent(JSON.stringify(allKeywords, null, 2))));
+  const newReasons = Object.keys(rejected).map(i => ({
+    title: jobs[i].title,
+    company: jobs[i].company,
+    reason: document.getElementById(`select-${i}`).value,
+  }));
+
+  const allReasons = [...existingReasons, ...newReasons];
+  const content = btoa(unescape(encodeURIComponent(JSON.stringify(allReasons, null, 2))));
 
   let sha = "";
   try {
-    const r = await fetch(`${API_BASE}/rejected_keywords.json`, { headers: { Authorization: `token ${token}` }});
+    const r = await fetch(`${API_BASE}/rejected_reasons.json`, {
+      headers: { Authorization: `token ${token}` }
+    });
     if (r.ok) { const d = await r.json(); sha = d.sha; }
   } catch(e) {}
 
-  const body = { message: "Update rejected keywords", content };
+  const body = { message: "Update rejected reasons", content };
   if (sha) body.sha = sha;
 
-  const res = await fetch(`${API_BASE}/rejected_keywords.json`, {
+  const res = await fetch(`${API_BASE}/rejected_reasons.json`, {
     method: "PUT",
     headers: { Authorization: `token ${token}`, "Content-Type": "application/json" },
     body: JSON.stringify(body)
   });
 
   if (res.ok) {
-    document.getElementById("status").textContent = `✅ ${newKeywords.length} offre(s) exclue(s) des prochains mails !`;
+    document.getElementById("status").textContent = `✅ ${newReasons.length} offre(s) signalée(s) — Mistral s'en souviendra !`;
     document.getElementById("save-btn").style.display = "none";
+    rejected = {};
+  } else if (res.status === 401) {
+    localStorage.removeItem(TOKEN_KEY);
+    document.getElementById("token-bar").style.display = "block";
+    document.getElementById("status").textContent = "❌ Token invalide — entre-en un nouveau.";
   } else {
-    document.getElementById("status").textContent = "❌ Erreur — vérifie ton token GitHub.";
+    document.getElementById("status").textContent = "❌ Erreur lors de la sauvegarde.";
   }
 }
 
-async function loadJobs() {
-  try {
-    const r = await fetch(`${RAW_BASE}/today_jobs.json?t=${Date.now()}`);
-    jobs = await r.json();
-    const r2 = await fetch(`${RAW_BASE}/rejected_reasons.json?t=${Date.now()}`);
-    if (r2.ok) existingReasons = await r2.json();
-    // Charge le token automatiquement
-    const r3 = await fetch(`${RAW_BASE}/meta.json?t=${Date.now()}`);
-    if (r3.ok) {
-      const meta = await r3.json();
-      if (meta.gh_pat) window._ghPat = meta.gh_pat;
-    }
-  } catch(e) { jobs = []; }
-  render();
-}
+loadJobs();
+</script>
+</body>
+</html>
