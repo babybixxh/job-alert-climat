@@ -96,5 +96,5 @@ def get_exclusions():
 
 def matches_location(value):
     text = (value or "").lower()
-    allowed_terms = [
-        "paris", "marseille", "aix", "aix-en-provence", "toulon",
+    allowed_terms = ["paris", "marseille", "aix", "aix-en-provence", "toulon", "nice", "remote", "télétravail", "teletravail", "france", "paca", "provence"]
+    return any(term in text for term in allowed_terms)
