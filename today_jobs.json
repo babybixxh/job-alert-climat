@@ -7,7 +7,7 @@
     "url": "https://www.adzuna.fr/details/5759750917?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Au sein d'une équipe engagée, vous interviendrez sur des missions à forte valeur ajoutée, en audit comme en conseil. Vos missions sont les suivantes :...",
     "source": "Adzuna",
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5761168611",
@@ -17,7 +17,7 @@
     "url": "https://www.adzuna.fr/details/5761168611?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Au sein d'une équipe engagée, vous interviendrez sur des missions à forte valeur ajoutée, en audit comme en conseil. Vos missions sont les suivantes :...",
     "source": "Adzuna",
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5759442898",
@@ -27,7 +27,7 @@
     "url": "https://www.adzuna.fr/details/5759442898?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Au sein d'une équipe engagée, vous interviendrez sur des missions à forte valeur ajoutée, en audit comme en conseil. Vos missions sont les suivantes :...",
     "source": "Adzuna",
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5761691407",
@@ -37,17 +37,7 @@
     "url": "https://www.adzuna.fr/details/5761691407?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Informations générales Organisme de rattachement Direction générale du Trésor (DGT) Référence MEF_2026-30801 Date de début de diffusion 10/06/2026 Dat...",
     "source": "Adzuna",
-    "is_new": true
-  },
-  {
-    "id": "5765366116",
-    "title": "Chef·fe de projet Janus F/H",
-    "company": "Université Aix-Marseille",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5765366116?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Votre rôle est d'assurer la réussite opérationnelle du campus en déployant une offre de formation aux métiers de la décarbonation, en structurant un é...",
-    "source": "Adzuna",
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5761802870",
@@ -57,7 +47,7 @@
     "url": "https://www.adzuna.fr/details/5761802870?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Vos missions en quelques mots La DGA la Ville du Temps Libre regroupe quatre directions : La Direction de la Culture en charge de l'action culturelle ...",
     "source": "Adzuna",
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5762904068",
@@ -67,7 +57,7 @@
     "url": "https://www.adzuna.fr/details/5762904068?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Informations générales Organisme de rattachement Direction de l'évaluation, de la performance, de l'achat, des finances et de l'immobilier Référence M...",
     "source": "Adzuna",
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5763828293",
@@ -77,7 +67,7 @@
     "url": "https://www.adzuna.fr/details/5763828293?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Informations générales Organisme de rattachement Direction générale des entreprises (DGE) Référence MEF_2026-30854 Date de début de diffusion 12/06/20...",
     "source": "Adzuna",
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5763836878",
@@ -87,6 +77,6 @@
     "url": "https://www.adzuna.fr/details/5763836878?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Informations générales Organisme de rattachement AC/DGPE Référence AGRI_2026-11-A5SCP00079-57019 Date de début de diffusion 11/06/2026 Date de parutio...",
     "source": "Adzuna",
-    "is_new": true
+    "is_new": false
   }
 ]
