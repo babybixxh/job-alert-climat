@@ -104,12 +104,12 @@
     "is_new": false
   },
   {
-    "id": "adzuna:5761815386",
-    "title": "DGT-POLSEC1- VB - Adjoint(e) au chef de bureau H/F",
-    "company": "Choisir le Service Public",
+    "id": "adzuna:5759435134",
+    "title": "Conseiller Emploi Formation H/F",
+    "company": "L Opcommerce",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5761815386?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Informations générales Organisme de rattachement Direction générale du Trésor (DGT) Référence MEF_2026-30771 Date de début de diffusion 10/06/2026 Dat...",
+    "url": "https://www.adzuna.fr/details/5759435134?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Au sein de la Délégation Île-de-France, vous rejoindrez l'équipe de Julie, Responsable Front Office, et vous travaillerez directement avec d'autres ex...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
@@ -117,30 +117,17 @@
     "is_new": false
   },
   {
-    "id": "adzuna:5761797351",
-    "title": "DGT-POLSEC2-CF- Adjoint(e) au chef de bureau H/F",
-    "company": "Choisir le Service Public",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5761797351?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Informations générales Organisme de rattachement Direction générale du Trésor (DGT) Référence MEF_2026-30766 Date de début de diffusion 10/06/2026 Dat...",
+    "id": "adzuna:5765366116",
+    "title": "Chef·fe de projet Janus F/H",
+    "company": "Université Aix-Marseille",
+    "location": "Marseille, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5765366116?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Votre rôle est d'assurer la réussite opérationnelle du campus en déployant une offre de formation aux métiers de la décarbonation, en structurant un é...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
     ],
-    "is_new": false
-  },
-  {
-    "id": "adzuna:5756612685",
-    "title": "Charge (E) De Mission Isef - Etablissement Public D'Amenagement Et Gestion Des Eaux (Epage Huca)",
-    "company": "Fonction publique Territoriale",
-    "location": "Aubagne, Marseille",
-    "url": "https://www.adzuna.fr/details/5756612685?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Consultez le détail complet de l'offre sur la page https://www.emploi-territorial.fr/offre/o013260603000370-charge-e-mis...",
-    "source": "Adzuna",
-    "sources": [
-      "Adzuna"
-    ],
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "adzuna:5761802870",
@@ -179,7 +166,7 @@
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "adzuna:5758270286",
@@ -192,20 +179,7 @@
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
-  },
-  {
-    "id": "adzuna:5761164172",
-    "title": "Développeur·euse Full Stack F/H",
-    "company": "QUANTUM OF TRUST",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5761164172?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vous interviendrez sur trois plateformes complémentaires de l'écosystème Quantum of Trust : Trust Intelligence Studio — le cœur de Quantum of Trust No...",
-    "source": "Adzuna",
-    "sources": [
-      "Adzuna"
-    ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "adzuna:5761745920",
@@ -260,19 +234,6 @@
     "is_new": false
   },
   {
-    "id": "adzuna:5756849309",
-    "title": "Electricien H/F",
-    "company": "Satis Jobs Center - Toulon",
-    "location": "Six-Fours-les-Plages, Toulon",
-    "url": "https://www.adzuna.fr/details/5756849309?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "VOS MISSIONS : Organisation du travail - Recevoir les consignes des opérations à réaliser. - Vérifier l'adéquation du matériel, des matériaux et de l'...",
-    "source": "Adzuna",
-    "sources": [
-      "Adzuna"
-    ],
-    "is_new": false
-  },
-  {
     "id": "adzuna:5762904068",
     "title": "Contrat de projet – Chargé de mission cartographie des risques climatiques et biodiversité du MI",
     "company": "Dgafp",
@@ -296,7 +257,7 @@
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "adzuna:5762333507",
@@ -309,7 +270,7 @@
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "adzuna:5762333503",
@@ -325,17 +286,43 @@
     "is_new": false
   },
   {
-    "id": "adzuna:5755939811",
-    "title": "Chargé·e d'Affaires - Efficacité Energétique & Décarbonation H/F",
-    "company": "Manergy",
-    "location": "Aix en Provence Sud-Ouest, Aix-en-Provence",
-    "url": "https://www.adzuna.fr/details/5755939811?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "En tant que Chargé(e) d'Affaires, vous interviendrez sur des missions complètes et variées, allant des études et audits énergétiques jusqu'au contrôle...",
+    "id": "adzuna:5764491120",
+    "title": "Contrôleur de Gestion Opérationnel H/F",
+    "company": "Veolia Energie & Décarbonation",
+    "location": "Marseille, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5764491120?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Description du poste En tant que Contrôleur de Gestion Opérationnel, votre mission principale sera de piloter la performance économique des activités ...",
     "source": "Adzuna",
     "sources": [
       "Adzuna"
     ],
-    "is_new": false
+    "is_new": true
+  },
+  {
+    "id": "adzuna:5765344343",
+    "title": "Ingénieur études de prix GC industriel et bât H/F",
+    "company": "NGE",
+    "location": "Allauch, Marseille",
+    "url": "https://www.adzuna.fr/details/5765344343?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Dans le cadre de son développement, notre agence basée à Aix-en-Provence et Marseille (13) cherche un Ingénieur(e) études de prix génie civil industri...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": true
+  },
+  {
+    "id": "adzuna:5765366070",
+    "title": "Cartographe SIG F/H",
+    "company": "ENOE ENERGIE",
+    "location": "Marseille, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5765366070?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Intégré(e) au sein du Pôle SIG (DSI), placé(e) sous la direction de son Responsable, vous concourez au renforcement des bases de données spatiales du ...",
+    "source": "Adzuna",
+    "sources": [
+      "Adzuna"
+    ],
+    "is_new": true
   },
   {
     "id": "adzuna:5762082513",
@@ -374,19 +361,6 @@
     "sources": [
       "Adzuna"
     ],
-    "is_new": true
-  },
-  {
-    "id": "adzuna:5763836878",
-    "title": "Chargé de mission Accompagnement et financement de la transition",
-    "company": "Dgafp",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5763836878?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Informations générales Organisme de rattachement AC/DGPE Référence AGRI_2026-11-A5SCP00079-57019 Date de début de diffusion 11/06/2026 Date de parutio...",
-    "source": "Adzuna",
-    "sources": [
-      "Adzuna"
-    ],
-    "is_new": true
+    "is_new": false
   }
 ]
