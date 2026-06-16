@@ -88,7 +88,10 @@ function toggleReject(i, title) {
 }
 
 async function saveRejected() {
-  const token = prompt("Entre ton GitHub Personal Access Token (repo scope) :");
+  let token = window._ghPat || "";
+  if (!token) {
+    token = prompt("Entre ton GitHub Personal Access Token (repo scope) :");
+  }
   if (!token) return;
 
   const newKeywords = [...rejected].map(i => jobs[i].title.toLowerCase());
@@ -118,7 +121,18 @@ async function saveRejected() {
   }
 }
 
-loadJobs();
-</script>
-</body>
-</html>
+async function loadJobs() {
+  try {
+    const r = await fetch(`${RAW_BASE}/today_jobs.json?t=${Date.now()}`);
+    jobs = await r.json();
+    const r2 = await fetch(`${RAW_BASE}/rejected_reasons.json?t=${Date.now()}`);
+    if (r2.ok) existingReasons = await r2.json();
+    // Charge le token automatiquement
+    const r3 = await fetch(`${RAW_BASE}/meta.json?t=${Date.now()}`);
+    if (r3.ok) {
+      const meta = await r3.json();
+      if (meta.gh_pat) window._ghPat = meta.gh_pat;
+    }
+  } catch(e) { jobs = []; }
+  render();
+}
