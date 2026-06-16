@@ -527,7 +527,10 @@ def build_email(jobs, feedback_url):
     body += "</body></html>"
     return body
 
-
+# Sauvegarde le token dans today_jobs.json pour la page feedback
+    meta = {"gh_pat": os.environ.get("GH_PAT", "")}
+    save_json("meta.json", meta)
+    
 def send_email(html_body, job_count):
     gmail_user = os.environ["GMAIL_USER"]
     gmail_password = os.environ["GMAIL_PASSWORD"]
