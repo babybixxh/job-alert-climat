@@ -40,14 +40,24 @@
     "is_new": false
   },
   {
-    "id": "5761802870",
-    "title": "Chef(fe) de projets et d’études stratégiques (H/F) - COMMUNE DE MARSEILLE",
-    "company": "Fonction publique Territoriale",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5761802870?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots La DGA la Ville du Temps Libre regroupe quatre directions : La Direction de la Culture en charge de l'action culturelle ...",
+    "id": "5761815386",
+    "title": "DGT-POLSEC1- VB - Adjoint(e) au chef de bureau H/F",
+    "company": "Choisir le Service Public",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5761815386?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Informations générales Organisme de rattachement Direction générale du Trésor (DGT) Référence MEF_2026-30771 Date de début de diffusion 10/06/2026 Dat...",
     "source": "Adzuna",
-    "is_new": false
+    "is_new": true
+  },
+  {
+    "id": "5761797351",
+    "title": "DGT-POLSEC2-CF- Adjoint(e) au chef de bureau H/F",
+    "company": "Choisir le Service Public",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5761797351?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Informations générales Organisme de rattachement Direction générale du Trésor (DGT) Référence MEF_2026-30766 Date de début de diffusion 10/06/2026 Dat...",
+    "source": "Adzuna",
+    "is_new": true
   },
   {
     "id": "5762904068",
