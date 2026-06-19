@@ -351,6 +351,69 @@ def search_greenjob(keyword):
         print(f"  EXCEPTION Greenjob.fr: {e}")
         return []
 
+def search_ademe():
+    exclusions = get_exclusions()
+    try:
+        from bs4 import BeautifulSoup
+        # On récupère toutes les offres ADEME sans filtre keyword (volume faible ~70 offres)
+        url = "https://recrutement.ademe.fr/offre-de-emploi/liste-offres.aspx"
+        r = requests.get(url, headers={
+            "User-Agent": "Mozilla/5.0",
+            "Accept-Language": "fr-FR",
+        }, timeout=15)
+        soup = BeautifulSoup(r.text, "html.parser")
+
+        jobs = []
+        # Talent Soft structure : les offres sont dans des liens avec classe ts-offer
+        cards = soup.find_all("a", class_=lambda c: c and "offer" in str(c).lower())
+        if not cards:
+            cards = soup.find_all(["li", "div", "article"], class_=lambda c: c and any(
+                w in str(c).lower() for w in ["offer", "offre", "job", "poste"]))
+
+        print(f"  ADEME → {len(cards)} cartes trouvées")
+
+        for card in cards:
+            title_el = card.find(["h2", "h3", "h4", "span", "p"])
+            if not title_el:
+                title = card.get_text(strip=True)
+            else:
+                title = title_el.get_text(strip=True)
+
+            if not title or len(title) < 5:
+                continue
+            if any(excl in title.lower() for excl in exclusions):
+                print(f"  Exclu ADEME: {title}")
+                continue
+
+            href = card.get("href", "")
+            if not href:
+                link_el = card.find("a", href=True)
+                href = link_el["href"] if link_el else ""
+            full_url = href if href.startswith("http") else "https://recrutement.ademe.fr" + href
+
+            location_el = card.find(["span", "p", "div"], class_=lambda c: c and any(
+                w in str(c).lower() for w in ["loc", "lieu", "ville", "city", "region"]))
+            location = location_el.get_text(strip=True) if location_el else "France"
+
+            if not matches_location(location):
+                continue
+
+            jobs.append({
+                "id": full_url,
+                "title": title,
+                "company": "ADEME",
+                "location": location,
+                "url": full_url,
+                "description": "",
+                "source": "ADEME",
+            })
+
+        print(f"  ADEME → {len(jobs)} après filtre")
+        return jobs
+
+    except Exception as e:
+        print(f"  EXCEPTION ADEME: {e}")
+        return []
 
 def filter_jobs_with_ai(jobs):
     mistral_key = os.environ.get("MISTRAL_API_KEY", "")
