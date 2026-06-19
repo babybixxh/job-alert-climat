@@ -134,7 +134,9 @@ def get_ft_token():
             headers={"Content-Type": "application/x-www-form-urlencoded"},
             timeout=10,
         )
-        r.raise_for_status()
+        if r.status_code != 200:
+            print(f"  FT token erreur {r.status_code}: {r.text[:300]}")
+            return ""
         return r.json().get("access_token", "")
     except Exception as e:
         print(f"  EXCEPTION token FT: {e}")
@@ -307,14 +309,24 @@ def search_jooble(keyword, location):
         for job in results[:10]:
             title = clean_text(job.get("title", "N/A"))
             description = clean_text(job.get("snippet", ""))
-            if any(excl in f"{title} {description}".lower() for excl in exclusions):
+            job_location = clean_text(job.get("location", location))
+
+            # Filtre anti-offres US/internationales : Jooble ne propose pas de paramètre pays strict
+            loc_lower = job_location.lower()
+            us_markers = ["usa", "united states", ", tx", ", ny", ", ca", ", fl", ", oh", ", il", ", uk", "united kingdom"]
+            if any(marker in loc_lower for marker in us_markers):
+                continue
+            if not matches_location(job_location):
+                continue
+
+            if any(excl in title.lower() for excl in exclusions):
                 print(f"  Exclu Jooble: {title}")
                 continue
             jobs.append({
                 "id": str(job.get("id") or job.get("link", "")),
                 "title": title,
                 "company": clean_text(job.get("company", "N/A")),
-                "location": clean_text(job.get("location", location)),
+                "location": job_location,
                 "url": job.get("link", ""),
                 "description": description[:150] + "..." if len(description) > 150 else description,
                 "source": "Jooble",
@@ -680,7 +692,8 @@ if __name__ == "__main__":
             all_jobs += search_france_travail(keyword, location)
             all_jobs += search_hellowork(keyword, location)
             all_jobs += search_jooble(keyword, location)
-        all_jobs += search_greenjob(keyword)
+        # Greenjob.fr abandonné : recherche par mot-clé non fonctionnelle côté site,
+        # et contenu majoritairement stages/bénévolat hors profil.
 
     all_jobs += search_ademe()
 
