@@ -3,10 +3,13 @@ import os
 import json
 import requests
 import re
+import urllib3
 from html import unescape
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from datetime import datetime
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 KEYWORDS = [
     "consultant climat",
@@ -91,10 +94,11 @@ def save_json(path, data):
 EXCLUDED_LOG = []
 
 
-def log_excluded(title, company, source, reason):
+def log_excluded(title, company, location, source, reason):
     EXCLUDED_LOG.append({
         "title": title,
         "company": company,
+        "location": location,
         "source": source,
         "reason": reason,
     })
@@ -125,8 +129,9 @@ def get_ft_token():
                 "grant_type": "client_credentials",
                 "client_id": client_id,
                 "client_secret": client_secret,
-                "scope": "api_offresdemploiv2 o2dsoffre",
+                "scope": f"api_offresdemploiv2 o2dsoffre application_{client_id}",
             },
+            headers={"Content-Type": "application/x-www-form-urlencoded"},
             timeout=10,
         )
         r.raise_for_status()
@@ -165,9 +170,11 @@ def search_adzuna(keyword, location):
         for job in results:
             title = job.get("title", "N/A")
             description = job.get("description", "")
-            if any(excl in f"{title} {description}".lower() for excl in exclusions):
+            if any(excl in title.lower() for excl in exclusions):
                 print(f"  Exclu Adzuna: {title}")
-                log_excluded(title, job.get("company", {}).get("display_name", "N/A"), "Adzuna", "mot-clé exclu")
+                log_excluded(title, job.get("company", {}).get("display_name", "N/A"),
+                             job.get("location", {}).get("display_name", location),
+                             "Adzuna", "mot-clé exclu")
                 continue
             jobs.append({
                 "id": str(job.get("id", "")),
@@ -211,9 +218,11 @@ def search_france_travail(keyword, location):
         for job in results:
             title = job.get("intitule", "N/A")
             description = job.get("description", "")
-            if any(excl in f"{title} {description}".lower() for excl in exclusions):
+            if any(excl in title.lower() for excl in exclusions):
                 print(f"  Exclu FT: {title}")
-                log_excluded(title, job.get("entreprise", {}).get("nom", "N/A"), "France Travail", "mot-clé exclu")
+                log_excluded(title, job.get("entreprise", {}).get("nom", "N/A"),
+                             job.get("lieuTravail", {}).get("libelle", location),
+                             "France Travail", "mot-clé exclu")
                 continue
             jobs.append({
                 "id": job.get("id", ""),
@@ -245,6 +254,7 @@ def search_hellowork(keyword, location):
             "User-Agent": "Mozilla/5.0",
             "Accept-Language": "fr-FR",
         }, timeout=10)
+        print(f"  Hellowork status={r.status_code} len={len(r.text)}")
         soup = BeautifulSoup(r.text, "html.parser")
         cards = soup.find_all(["article", "li"], attrs={"data-id": True})
         if not cards:
@@ -325,6 +335,7 @@ def search_greenjob(keyword):
             "User-Agent": "Mozilla/5.0",
             "Accept-Language": "fr-FR",
         }, timeout=10)
+        print(f"  Greenjob.fr status={r.status_code} len={len(r.text)}")
         soup = BeautifulSoup(r.text, "html.parser")
         cards = soup.find_all(["article", "div"], class_=lambda c: c and any(
             w in str(c).lower() for w in ["job", "offre", "annonce"]))
@@ -368,10 +379,15 @@ def search_ademe():
     try:
         from bs4 import BeautifulSoup
         url = "https://recrutement.ademe.fr/offre-de-emploi/liste-offres.aspx"
-        r = requests.get(url, headers={
+        headers = {
             "User-Agent": "Mozilla/5.0",
             "Accept-Language": "fr-FR",
-        }, timeout=15)
+        }
+        try:
+            r = requests.get(url, headers=headers, timeout=15)
+        except requests.exceptions.SSLError:
+            print("  ADEME: erreur SSL, retry sans vérification du certificat")
+            r = requests.get(url, headers=headers, timeout=15, verify=False)
         soup = BeautifulSoup(r.text, "html.parser")
 
         jobs = []
@@ -485,7 +501,8 @@ Rejette si : ressemble aux offres rejetées, terrain, technique, RH, finance, nu
                 excl_job = jobs[idx]
                 reason = decision.get('reason', '')
                 print(f"  IA exclu: {excl_job['title']} → {reason}")
-                log_excluded(excl_job['title'], excl_job['company'], excl_job.get('source', ''), f"IA: {reason}")
+                log_excluded(excl_job['title'], excl_job['company'], excl_job.get('location', ''),
+                             excl_job.get('source', ''), f"IA: {reason}")
 
         print(f"  Mistral: {len(kept)}/{len(jobs)} offres conservées")
         return kept
@@ -577,6 +594,7 @@ def excluded_section_html(excluded_log):
         <tr>
             <td style="padding:6px 10px;font-size:12px;color:#555;border-bottom:1px solid #eee">{item['title']}</td>
             <td style="padding:6px 10px;font-size:12px;color:#888;border-bottom:1px solid #eee">{item['company']}</td>
+            <td style="padding:6px 10px;font-size:12px;color:#888;border-bottom:1px solid #eee">{item.get('location', '')}</td>
             <td style="padding:6px 10px;font-size:12px;color:#888;border-bottom:1px solid #eee">{item['source']}</td>
             <td style="padding:6px 10px;font-size:12px;color:#b56900;border-bottom:1px solid #eee">{item['reason']}</td>
         </tr>
@@ -590,6 +608,7 @@ def excluded_section_html(excluded_log):
             <tr style="text-align:left">
                 <th style="padding:6px 10px;font-size:11px;color:#999;text-transform:uppercase">Titre</th>
                 <th style="padding:6px 10px;font-size:11px;color:#999;text-transform:uppercase">Entreprise</th>
+                <th style="padding:6px 10px;font-size:11px;color:#999;text-transform:uppercase">Lieu</th>
                 <th style="padding:6px 10px;font-size:11px;color:#999;text-transform:uppercase">Source</th>
                 <th style="padding:6px 10px;font-size:11px;color:#999;text-transform:uppercase">Raison</th>
             </tr>
