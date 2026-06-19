@@ -10,66 +10,6 @@
     "is_new": false
   },
   {
-    "id": "5767909729",
-    "title": "Ingénieur environnement F/H",
-    "company": "Innova Solutions",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5767909729?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Innova Solutions est chargée par des entreprises locales, nationales et internationales de trouver le bon candidat au bon moment. Innova déploie des s...",
-    "source": "Adzuna",
-    "is_new": true
-  },
-  {
-    "id": "5764490889",
-    "title": "Consulting - Manager Senior Transports & Mobilités - Digitalisation des processus métiers - Interopérabilité SI - CDI - Paris (H/F)",
-    "company": "Talan",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5764490889?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Description du poste Votre mission : Vous jouerez un rôle clé dans la conception et l’exécution de projets stratégiques à fort impact pour des acteurs...",
-    "source": "Adzuna",
-    "is_new": true
-  },
-  {
-    "id": "5768540921",
-    "title": "Data Analyst - Fonds Vert - 2026",
-    "company": "beta.gouv.fr",
-    "location": "8ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/details/5768540921?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Le Fonds Vert est un fonds doté en 2025 de plus d’un milliard d’euros destiné à financer des projets de transition écologique partout en France. La mi...",
-    "source": "Adzuna",
-    "is_new": true
-  },
-  {
-    "id": "5761691407",
-    "title": "DGT-POLSEC3-ED - Adjoint(e) au chef de bureau H/F",
-    "company": "Choisir le Service Public",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5761691407?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Informations générales Organisme de rattachement Direction générale du Trésor (DGT) Référence MEF_2026-30801 Date de début de diffusion 10/06/2026 Dat...",
-    "source": "Adzuna",
-    "is_new": false
-  },
-  {
-    "id": "5768533048",
-    "title": "Rédacteur(trice) qualifié(e), chargé(e) de la mobilité et du pilotage de la flotte de véhicules",
-    "company": "Ministère de la justice",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5768533048?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Groupe IFSE : 3 Le rédacteur pilote et analyse cette flotte, anime le réseau des référents interrégionaux, et promeut le...",
-    "source": "Adzuna",
-    "is_new": true
-  },
-  {
-    "id": "5765334722",
-    "title": "Ingénieur d'études réseaux de chaleur - Paris",
-    "company": "METIGA",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5765334722?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Au sein d'un bureau d'études reconnu sur le marché du conseil et de l'ingénierie dans le domaine de l'environnement participant activement à la transi...",
-    "source": "Adzuna",
-    "is_new": true
-  },
-  {
     "id": "5761164031",
     "title": "Chargé.e de mission Transition écologique F/H",
     "company": "COORDINATION DES ORGANISMES D'AIDE AUX CHOMEURS PAR L'EMPLOI PROVENCE ALPES COTE D'AZUR CORSE",
@@ -77,7 +17,7 @@
     "url": "https://www.adzuna.fr/details/5761164031?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Rattaché·e à la déléguée régionale du Coorace PACA et intégré·e à l’équipe opérationnelle du projet inter-réseaux FTJ (Chantier École, COORACE PACA, F...",
     "source": "Adzuna",
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5761802870",
@@ -90,26 +30,6 @@
     "is_new": false
   },
   {
-    "id": "5761814293",
-    "title": "Conseillère / conseiller support juridique marchés publics",
-    "company": "Fonction publique Territoriale",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5761814293?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots La Métropole d'Aix-Marseille-Provence pilote des politiques publiques innovantes au service de ses habitants. Son action...",
-    "source": "Adzuna",
-    "is_new": true
-  },
-  {
-    "id": "5765996038",
-    "title": "Responsable de la Division des Services Concédés (H/F) - COMMUNE DE MARSEILLE",
-    "company": "Fonction publique Territoriale",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5765996038?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Le Pôle Mobilité de la Direction de l'Espace Public et de la Mobilité, rattachés à la Direction Générale Adjointe Ville ...",
-    "source": "Adzuna",
-    "is_new": true
-  },
-  {
     "id": "5762904068",
     "title": "Contrat de projet – Chargé de mission cartographie des risques climatiques et biodiversité du MI",
     "company": "Dgafp",
@@ -120,64 +40,24 @@
     "is_new": false
   },
   {
+    "id": "5763828293",
+    "title": "Economiste – décarbonation des services marchands SCIDE-SDP3E-075 H/F",
+    "company": "Choisir le Service Public",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5763828293?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Informations générales Organisme de rattachement Direction générale des entreprises (DGE) Référence MEF_2026-30854 Date de début de diffusion 12/06/20...",
+    "source": "Adzuna",
+    "is_new": false
+  },
+  {
     "id": "5762415527",
     "title": "Ingénieur stratégie Énergie & Carbone - (H/F)",
     "company": "Briks - Recrutement immobilier et construction",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/land/ad/5762415527?se=xI9HsK9r8RGipeYA766XJw&utm_medium=api&utm_source=ae8a5ffa&v=262F55BE7A30BB1C549F0DC65966241B81FFE069",
+    "url": "https://www.adzuna.fr/land/ad/5762415527?se=xghrnbBr8RGipeYA766XJw&utm_medium=api&utm_source=ae8a5ffa&v=262F55BE7A30BB1C549F0DC65966241B81FFE069",
     "description": "Descriptif de la société BRIKS est un cabinet de chasse de têtes spécialisé sur les profils de techniciens et de cadres travaillant dans les secteurs ...",
     "source": "Adzuna",
-    "is_new": true
-  },
-  {
-    "id": "5762333507",
-    "title": "Chargé.e d'Affaires - Efficacité Energétique et Décarbonation F/H",
-    "company": "MANERGY",
-    "location": "Allauch, Marseille",
-    "url": "https://www.adzuna.fr/details/5762333507?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "En tant que Chargé(e) d'Affaires, vous interviendrez sur des missions complètes et variées, allant des études et audits énergétiques jusqu'au contrôle...",
-    "source": "Adzuna",
-    "is_new": true
-  },
-  {
-    "id": "5762333503",
-    "title": "Chargé.e d'Affaires - Transition Energétique Territoires/Réseaux de Chaleur F/H",
-    "company": "MANERGY",
-    "location": "Allauch, Marseille",
-    "url": "https://www.adzuna.fr/details/5762333503?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vous accompagnerez vos clients (Collectivité, Etablissement Public Territorial, Métropole, Syndicat d'énergie,?) dans la mise en oeuvre de leurs proje...",
-    "source": "Adzuna",
-    "is_new": true
-  },
-  {
-    "id": "5765366070",
-    "title": "Cartographe SIG F/H",
-    "company": "ENOE ENERGIE",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5765366070?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Intégré(e) au sein du Pôle SIG (DSI), placé(e) sous la direction de son Responsable, vous concourez au renforcement des bases de données spatiales du ...",
-    "source": "Adzuna",
-    "is_new": true
-  },
-  {
-    "id": "5766481606",
-    "title": "Chef de Projet Procédés - Uve Csr & Biomasse H/F",
-    "company": "Agence Oriflam",
-    "location": "Saint-Mandrier-sur-Mer, Toulon",
-    "url": "https://www.adzuna.fr/details/5766481606?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "En tant que Chef de Projet Procédés, vous pilotez des projets d'ingénierie portant sur des installations de valorisation énergétique et de traitement ...",
-    "source": "Adzuna",
-    "is_new": true
-  },
-  {
-    "id": "5766591201",
-    "title": "Chef de Projet Procédés - UVE, CSR & Biomasse F/H",
-    "company": "Agence Oriflam",
-    "location": "Toulon, Var",
-    "url": "https://www.adzuna.fr/details/5766591201?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "En tant que Chef de Projet Procédés, vous pilotez des projets d'ingénierie portant sur des installations de valorisation énergétique et de traitement ...",
-    "source": "Adzuna",
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5763836878",
@@ -190,6 +70,16 @@
     "is_new": false
   },
   {
+    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-ingenieur-e-batiment-durable-f-h_4803.aspx",
+    "title": "Ingénieur.e Bâtiment Durable F/H",
+    "company": "ADEME",
+    "location": "France",
+    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-ingenieur-e-batiment-durable-f-h_4803.aspx",
+    "description": "",
+    "source": "ADEME",
+    "is_new": true
+  },
+  {
     "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-chaleur-renouvelable-f-h_4746.aspx",
     "title": "Chargé.e de mission Chaleur Renouvelable F/H",
     "company": "ADEME",
@@ -197,7 +87,7 @@
     "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-chaleur-renouvelable-f-h_4746.aspx",
     "description": "",
     "source": "ADEME",
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-electrification-des-engins-agricoles-f-h_4799.aspx",
@@ -207,16 +97,6 @@
     "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-electrification-des-engins-agricoles-f-h_4799.aspx",
     "description": "",
     "source": "ADEME",
-    "is_new": true
-  },
-  {
-    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-industries-du-velo-f-h_4789.aspx",
-    "title": "Chargé.e de mission « Industries du vélo » F/H",
-    "company": "ADEME",
-    "location": "France",
-    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-industries-du-velo-f-h_4789.aspx",
-    "description": "",
-    "source": "ADEME",
-    "is_new": true
+    "is_new": false
   }
 ]
