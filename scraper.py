@@ -88,6 +88,18 @@ def save_json(path, data):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
+EXCLUDED_LOG = []
+
+
+def log_excluded(title, company, source, reason):
+    EXCLUDED_LOG.append({
+        "title": title,
+        "company": company,
+        "source": source,
+        "reason": reason,
+    })
+
+
 def get_exclusions():
     base = list(EXCLUSIONS)
     rejected = load_json(REJECTED_FILE, [])
@@ -155,6 +167,7 @@ def search_adzuna(keyword, location):
             description = job.get("description", "")
             if any(excl in f"{title} {description}".lower() for excl in exclusions):
                 print(f"  Exclu Adzuna: {title}")
+                log_excluded(title, job.get("company", {}).get("display_name", "N/A"), "Adzuna", "mot-clé exclu")
                 continue
             jobs.append({
                 "id": str(job.get("id", "")),
@@ -200,6 +213,7 @@ def search_france_travail(keyword, location):
             description = job.get("description", "")
             if any(excl in f"{title} {description}".lower() for excl in exclusions):
                 print(f"  Exclu FT: {title}")
+                log_excluded(title, job.get("entreprise", {}).get("nom", "N/A"), "France Travail", "mot-clé exclu")
                 continue
             jobs.append({
                 "id": job.get("id", ""),
@@ -468,7 +482,10 @@ Rejette si : ressemble aux offres rejetées, terrain, technique, RH, finance, nu
             if decision.get("keep") and idx is not None and idx < len(jobs):
                 kept.append(jobs[idx])
             elif idx is not None and idx < len(jobs):
-                print(f"  IA exclu: {jobs[idx]['title']} → {decision.get('reason', '')}")
+                excl_job = jobs[idx]
+                reason = decision.get('reason', '')
+                print(f"  IA exclu: {excl_job['title']} → {reason}")
+                log_excluded(excl_job['title'], excl_job['company'], excl_job.get('source', ''), f"IA: {reason}")
 
         print(f"  Mistral: {len(kept)}/{len(jobs)} offres conservées")
         return kept
@@ -551,7 +568,38 @@ def section_html(title, emoji, jobs, color):
     return html
 
 
-def build_email(jobs, feedback_url):
+def excluded_section_html(excluded_log):
+    if not excluded_log:
+        return ""
+    rows = ""
+    for item in excluded_log[:100]:
+        rows += f"""
+        <tr>
+            <td style="padding:6px 10px;font-size:12px;color:#555;border-bottom:1px solid #eee">{item['title']}</td>
+            <td style="padding:6px 10px;font-size:12px;color:#888;border-bottom:1px solid #eee">{item['company']}</td>
+            <td style="padding:6px 10px;font-size:12px;color:#888;border-bottom:1px solid #eee">{item['source']}</td>
+            <td style="padding:6px 10px;font-size:12px;color:#b56900;border-bottom:1px solid #eee">{item['reason']}</td>
+        </tr>
+        """
+    return f"""
+    <details style="margin-top:2.5rem;padding:14px;background:#fafafa;border-radius:8px;border:0.5px solid #e0e0e0">
+        <summary style="cursor:pointer;font-size:14px;color:#555;font-weight:500">
+            🗂️ Voir les {len(excluded_log)} offre(s) écartée(s) aujourd'hui
+        </summary>
+        <table style="width:100%;border-collapse:collapse;margin-top:10px">
+            <tr style="text-align:left">
+                <th style="padding:6px 10px;font-size:11px;color:#999;text-transform:uppercase">Titre</th>
+                <th style="padding:6px 10px;font-size:11px;color:#999;text-transform:uppercase">Entreprise</th>
+                <th style="padding:6px 10px;font-size:11px;color:#999;text-transform:uppercase">Source</th>
+                <th style="padding:6px 10px;font-size:11px;color:#999;text-transform:uppercase">Raison</th>
+            </tr>
+            {rows}
+        </table>
+    </details>
+    """
+
+
+def build_email(jobs, feedback_url, excluded_log=None):
     today = datetime.now().strftime("%d/%m/%Y")
     marseille, paca, paris = categorize(jobs)
     total = len(jobs)
@@ -582,6 +630,7 @@ def build_email(jobs, feedback_url):
     if (marseille or paca) and paris:
         body += '<hr style="border:0.5px solid #e0e0e0;margin:1rem 0">'
     body += section_html("Paris", "🔴", paris, "#993c1d")
+    body += excluded_section_html(excluded_log or [])
     body += "</body></html>"
     return body
 
@@ -630,5 +679,12 @@ if __name__ == "__main__":
     feedback_url = f"https://{repo.split('/')[0]}.github.io/{repo.split('/')[1]}/feedback.html"
 
     print(f"\nTotal : {len(jobs)} offres uniques")
-    html = build_email(jobs, feedback_url)
+    print(f"Total écarté : {len(EXCLUDED_LOG)} offres")
+
+    sources_count = {}
+    for j in jobs:
+        sources_count[j.get("source", "?")] = sources_count.get(j.get("source", "?"), 0) + 1
+    print(f"Répartition par source (offres conservées) : {sources_count}")
+
+    html = build_email(jobs, feedback_url, EXCLUDED_LOG)
     send_email(html, len(jobs))
