@@ -351,6 +351,8 @@ def search_greenjob(keyword):
         print(f"  EXCEPTION Greenjob.fr: {e}")
         return []
 
+all_jobs += search_ademe()
+
 def search_ademe():
     exclusions = get_exclusions()
     try:
@@ -522,6 +524,7 @@ def section_html(title, emoji, jobs, color):
         "Adzuna": "#4a90a4",
         "France Travail": "#003189",
         "Greenjob.fr": "#2d8a4e",
+        "ADEME": "#c04a00",
         "Hellowork": "#d95f02",
         "Jooble": "#b56900",
     }
