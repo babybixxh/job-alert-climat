@@ -96,10 +96,7 @@ def get_exclusions():
 
 def matches_location(value):
     text = (value or "").lower()
-    allowed_terms = [
-        "paris", "marseille", "aix", "aix-en-provence", "toulon", "nice",
-        "remote", "télétravail", "teletravail", "france", "paca", "provence",
-    ]
+    allowed_terms = ["paris", "marseille", "aix", "aix-en-provence", "toulon", "nice", "remote", "télétravail", "teletravail", "france", "paca", "provence"]
     return any(term in text for term in allowed_terms)
 
 
@@ -351,13 +348,11 @@ def search_greenjob(keyword):
         print(f"  EXCEPTION Greenjob.fr: {e}")
         return []
 
-all_jobs += search_ademe()
 
 def search_ademe():
     exclusions = get_exclusions()
     try:
         from bs4 import BeautifulSoup
-        # On récupère toutes les offres ADEME sans filtre keyword (volume faible ~70 offres)
         url = "https://recrutement.ademe.fr/offre-de-emploi/liste-offres.aspx"
         r = requests.get(url, headers={
             "User-Agent": "Mozilla/5.0",
@@ -366,7 +361,6 @@ def search_ademe():
         soup = BeautifulSoup(r.text, "html.parser")
 
         jobs = []
-        # Talent Soft structure : les offres sont dans des liens avec classe ts-offer
         cards = soup.find_all("a", class_=lambda c: c and "offer" in str(c).lower())
         if not cards:
             cards = soup.find_all(["li", "div", "article"], class_=lambda c: c and any(
@@ -376,10 +370,7 @@ def search_ademe():
 
         for card in cards:
             title_el = card.find(["h2", "h3", "h4", "span", "p"])
-            if not title_el:
-                title = card.get_text(strip=True)
-            else:
-                title = title_el.get_text(strip=True)
+            title = title_el.get_text(strip=True) if title_el else card.get_text(strip=True)
 
             if not title or len(title) < 5:
                 continue
@@ -416,6 +407,7 @@ def search_ademe():
     except Exception as e:
         print(f"  EXCEPTION ADEME: {e}")
         return []
+
 
 def filter_jobs_with_ai(jobs):
     mistral_key = os.environ.get("MISTRAL_API_KEY", "")
@@ -524,9 +516,9 @@ def section_html(title, emoji, jobs, color):
         "Adzuna": "#4a90a4",
         "France Travail": "#003189",
         "Greenjob.fr": "#2d8a4e",
-        "ADEME": "#c04a00",
         "Hellowork": "#d95f02",
         "Jooble": "#b56900",
+        "ADEME": "#c04a00",
     }
     html = f"""
     <div style="margin:2rem 0 1rem">
@@ -593,10 +585,7 @@ def build_email(jobs, feedback_url):
     body += "</body></html>"
     return body
 
-# Sauvegarde le token dans today_jobs.json pour la page feedback
-    meta = {"gh_pat": os.environ.get("GH_PAT", "")}
-    save_json("meta.json", meta)
-    
+
 def send_email(html_body, job_count):
     gmail_user = os.environ["GMAIL_USER"]
     gmail_password = os.environ["GMAIL_PASSWORD"]
@@ -624,6 +613,8 @@ if __name__ == "__main__":
             all_jobs += search_hellowork(keyword, location)
             all_jobs += search_jooble(keyword, location)
         all_jobs += search_greenjob(keyword)
+
+    all_jobs += search_ademe()
 
     print(f"\n{len(all_jobs)} offres brutes avant filtrage IA")
     all_jobs = filter_jobs_with_ai(all_jobs)
