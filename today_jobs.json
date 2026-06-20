@@ -1,73 +1,33 @@
 [
   {
-    "id": "5761168611",
-    "title": "Ingénieur Climat F/H",
-    "company": "GIO Recrutement Boulogne",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5761168611?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Au sein d'une équipe engagée, vous interviendrez sur des missions à forte valeur ajoutée, en audit comme en conseil. Vos missions sont les suivantes :...",
-    "source": "Adzuna",
-    "is_new": false
-  },
-  {
-    "id": "5761164031",
-    "title": "Chargé.e de mission Transition écologique F/H",
-    "company": "COORDINATION DES ORGANISMES D'AIDE AUX CHOMEURS PAR L'EMPLOI PROVENCE ALPES COTE D'AZUR CORSE",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5761164031?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Rattaché·e à la déléguée régionale du Coorace PACA et intégré·e à l’équipe opérationnelle du projet inter-réseaux FTJ (Chantier École, COORACE PACA, F...",
-    "source": "Adzuna",
-    "is_new": false
-  },
-  {
-    "id": "5761802870",
-    "title": "Chef(fe) de projets et d’études stratégiques (H/F) - COMMUNE DE MARSEILLE",
-    "company": "Fonction publique Territoriale",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5761802870?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots La DGA la Ville du Temps Libre regroupe quatre directions : La Direction de la Culture en charge de l'action culturelle ...",
-    "source": "Adzuna",
-    "is_new": false
-  },
-  {
-    "id": "5762904068",
-    "title": "Contrat de projet – Chargé de mission cartographie des risques climatiques et biodiversité du MI",
-    "company": "Dgafp",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5762904068?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Informations générales Organisme de rattachement Direction de l'évaluation, de la performance, de l'achat, des finances et de l'immobilier Référence M...",
-    "source": "Adzuna",
-    "is_new": false
-  },
-  {
-    "id": "5763828293",
-    "title": "Economiste – décarbonation des services marchands SCIDE-SDP3E-075 H/F",
-    "company": "Choisir le Service Public",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5763828293?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Informations générales Organisme de rattachement Direction générale des entreprises (DGE) Référence MEF_2026-30854 Date de début de diffusion 12/06/20...",
-    "source": "Adzuna",
-    "is_new": false
-  },
-  {
-    "id": "5763836878",
-    "title": "Chargé de mission Accompagnement et financement de la transition",
-    "company": "Dgafp",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5763836878?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Informations générales Organisme de rattachement AC/DGPE Référence AGRI_2026-11-A5SCP00079-57019 Date de début de diffusion 11/06/2026 Date de parutio...",
-    "source": "Adzuna",
-    "is_new": false
-  },
-  {
-    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-chef-fe-de-projet-evaluation-du-programme-prodicee-f-h_4804.aspx",
-    "title": "Chef.fe de projet Evaluation du programme PRODICEE F/H",
+    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-adaptation-au-changement-climatique-f-h_4807.aspx",
+    "title": "Chargé.e de mission adaptation au changement climatique F/H",
     "company": "ADEME",
     "location": "France",
-    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-chef-fe-de-projet-evaluation-du-programme-prodicee-f-h_4804.aspx",
+    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-adaptation-au-changement-climatique-f-h_4807.aspx",
     "description": "",
     "source": "ADEME",
     "is_new": true
+  },
+  {
+    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-transition-ecologique-f-h_4806.aspx",
+    "title": "VSC - Chargé·e de mission Transition Ecologique F/H",
+    "company": "ADEME",
+    "location": "France",
+    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-transition-ecologique-f-h_4806.aspx",
+    "description": "",
+    "source": "ADEME",
+    "is_new": true
+  },
+  {
+    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-chef-fe-de-projet-evaluation-du-programme-prodicee-f-h_4805.aspx",
+    "title": "Chef.fe de projet Evaluation du programme PRODICEE F/H",
+    "company": "ADEME",
+    "location": "France",
+    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-chef-fe-de-projet-evaluation-du-programme-prodicee-f-h_4805.aspx",
+    "description": "",
+    "source": "ADEME",
+    "is_new": false
   },
   {
     "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-ingenieur-e-batiment-durable-f-h_4803.aspx",
@@ -90,13 +50,13 @@
     "is_new": false
   },
   {
-    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-electrification-des-engins-agricoles-f-h_4799.aspx",
-    "title": "Chargé.e de mission \"électrification des engins agricoles\" F/H",
+    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-juriste-d-affaires-aides-et-financement-f-h_4778.aspx",
+    "title": "Juriste d'affaires aides et financement F/H",
     "company": "ADEME",
     "location": "France",
-    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-electrification-des-engins-agricoles-f-h_4799.aspx",
+    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-juriste-d-affaires-aides-et-financement-f-h_4778.aspx",
     "description": "",
     "source": "ADEME",
-    "is_new": false
+    "is_new": true
   }
 ]
