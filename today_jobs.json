@@ -7,7 +7,7 @@
     "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-adaptation-au-changement-climatique-f-h_4807.aspx",
     "description": "",
     "source": "ADEME",
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-transition-ecologique-f-h_4806.aspx",
@@ -17,7 +17,7 @@
     "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-transition-ecologique-f-h_4806.aspx",
     "description": "",
     "source": "ADEME",
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-chef-fe-de-projet-evaluation-du-programme-prodicee-f-h_4805.aspx",
@@ -57,6 +57,46 @@
     "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-juriste-d-affaires-aides-et-financement-f-h_4778.aspx",
     "description": "",
     "source": "ADEME",
+    "is_new": false
+  },
+  {
+    "id": "5770960832",
+    "title": "Chef(fe) de projet alimentation durable et circuit court - COMMUNE DE MARSEILLE",
+    "company": "Fonction publique Territoriale",
+    "location": "Marseille, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5770960832?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots Marseille, ville d'arts et d'histoire, 1er Port de France, labellisée French Tech Descriptif de l'emploi s'engage dans u...",
+    "source": "Adzuna",
     "is_new": true
+  },
+  {
+    "id": "5771062758",
+    "title": "Chargé de mission direction (H/F) - CONSEIL REGIONAL PROVENCE-ALPES-COTE D'AZUR",
+    "company": "Fonction publique Territoriale",
+    "location": "Marseille, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5771062758?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots Chargé de mission direction (H/F) Missions : Accompagner et contribuer au projet de direction Piloter la feuille de rout...",
+    "source": "Adzuna",
+    "is_new": true
+  },
+  {
+    "id": "5771459926",
+    "title": "CHARGE DE MISSION DEVELOPPEMENT DURABLE ET ENERGIE",
+    "company": "Ministère des Armées",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/land/ad/5771459926?se=EmM1X09t8RGl0MKcaJBBpg&utm_medium=api&utm_source=ae8a5ffa&v=288FADDF71D85119CAAF5BD91D0D597DA4F38141",
+    "description": "Au sein de la MTEEDD, le titulaire du poste est rattaché au chef de la mission. Il contribue à l'élaboration et au suivi des documents stratégiques re...",
+    "source": "Adzuna",
+    "is_new": true
+  },
+  {
+    "id": "5764490889",
+    "title": "Consulting - Manager Senior Transports & Mobilités - Digitalisation des processus métiers - Interopérabilité SI - CDI - Paris (H/F)",
+    "company": "Talan",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5764490889?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Description du poste Votre mission : Vous jouerez un rôle clé dans la conception et l’exécution de projets stratégiques à fort impact pour des acteurs...",
+    "source": "Adzuna",
+    "is_new": false
   }
 ]
