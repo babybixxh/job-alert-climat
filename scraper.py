@@ -241,56 +241,6 @@ def search_france_travail(keyword, location):
         print(f"  EXCEPTION FT: {e}")
         return []
 
-
-def search_hellowork(keyword, location):
-    exclusions = get_exclusions()
-    try:
-        from bs4 import BeautifulSoup
-        url = (
-            f"https://www.hellowork.com/fr-fr/emploi/recherche.html"
-            f"?k={requests.utils.quote(keyword)}"
-            f"&l={requests.utils.quote(location)}"
-            f"&c=CDI"
-        )
-        r = requests.get(url, headers={
-            "User-Agent": "Mozilla/5.0",
-            "Accept-Language": "fr-FR",
-        }, timeout=10)
-        print(f"  Hellowork status={r.status_code} len={len(r.text)}")
-        soup = BeautifulSoup(r.text, "html.parser")
-        cards = soup.find_all(["article", "li"], attrs={"data-id": True})
-        if not cards:
-            cards = soup.find_all("div", class_=lambda c: c and "job" in str(c).lower())
-        print(f"  Hellowork '{keyword}' / '{location}' → {len(cards)} cartes")
-        jobs = []
-        for card in cards[:10]:
-            title_el = card.find(["h2", "h3", "a"])
-            if not title_el:
-                continue
-            title = title_el.get_text(strip=True)
-            if any(excl in title.lower() for excl in exclusions):
-                continue
-            link_el = card.find("a", href=True)
-            href = link_el["href"] if link_el else ""
-            full_url = href if href.startswith("http") else "https://www.hellowork.com" + href
-            company_el = card.find(["span", "p"], class_=lambda c: c and any(
-                w in str(c).lower() for w in ["company", "entreprise"]))
-            jobs.append({
-                "id": full_url,
-                "title": title,
-                "company": company_el.get_text(strip=True) if company_el else "N/A",
-                "location": location,
-                "url": full_url,
-                "description": "",
-                "source": "Hellowork",
-            })
-        print(f"  Hellowork '{keyword}' / '{location}' → {len(jobs)} après filtre")
-        return jobs
-    except Exception as e:
-        print(f"  EXCEPTION Hellowork: {e}")
-        return []
-
-
 def search_jooble(keyword, location):
     api_key = os.environ.get("JOOBLE_API_KEY", "")
     if not api_key:
@@ -683,15 +633,12 @@ if __name__ == "__main__":
     seen_ids = set(load_json(SEEN_FILE, []))
     print(f"{len(seen_ids)} offres déjà vues en mémoire")
 
-    all_jobs = []
+all_jobs = []
     for keyword in KEYWORDS:
         for location in LOCATIONS:
             all_jobs += search_adzuna(keyword, location)
             all_jobs += search_france_travail(keyword, location)
-            all_jobs += search_hellowork(keyword, location)
             all_jobs += search_jooble(keyword, location)
-        # Greenjob.fr abandonné : recherche par mot-clé non fonctionnelle côté site,
-        # et contenu majoritairement stages/bénévolat hors profil.
 
     all_jobs += search_ademe()
 
