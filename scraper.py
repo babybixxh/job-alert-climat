@@ -633,7 +633,8 @@ if __name__ == "__main__":
     seen_ids = set(load_json(SEEN_FILE, []))
     print(f"{len(seen_ids)} offres déjà vues en mémoire")
 
-all_jobs = []
+    all_jobs = []
+
     for keyword in KEYWORDS:
         for location in LOCATIONS:
             all_jobs += search_adzuna(keyword, location)
@@ -648,7 +649,11 @@ all_jobs = []
     jobs = deduplicate(all_jobs)
     jobs = mark_seen(jobs, seen_ids)
 
-    new_seen = seen_ids | {f"{j['title'].lower()}|{j['company'].lower()}" for j in jobs}
+    new_seen = seen_ids | {
+        f"{j['title'].lower()}|{j['company'].lower()}"
+        for j in jobs
+    }
+
     save_json(SEEN_FILE, list(new_seen))
     save_json(TODAY_FILE, jobs)
 
@@ -661,6 +666,7 @@ all_jobs = []
     sources_count = {}
     for j in jobs:
         sources_count[j.get("source", "?")] = sources_count.get(j.get("source", "?"), 0) + 1
+
     print(f"Répartition par source (offres conservées) : {sources_count}")
 
     html = build_email(jobs, feedback_url, EXCLUDED_LOG)
