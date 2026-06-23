@@ -299,7 +299,7 @@ def search_jooble(keyword, location):
     exclusions = get_exclusions()
     try:
         url = f"https://jooble.org/api/{api_key}"
-        payload = {"keywords": keyword, "location": location, "page": 1}
+        payload = {"keywords": keyword, "location": location, "page": 1, "country": "fr"}
         r = requests.post(url, json=payload, headers={"Content-Type": "application/json"}, timeout=10)
         r.raise_for_status()
         data = r.json()
@@ -308,20 +308,18 @@ def search_jooble(keyword, location):
         jobs = []
         for job in results[:10]:
             title = clean_text(job.get("title", "N/A"))
-            description = clean_text(job.get("snippet", ""))
             job_location = clean_text(job.get("location", location))
 
-            # Filtre anti-offres US/internationales : Jooble ne propose pas de paramètre pays strict
-            loc_lower = job_location.lower()
-            us_markers = ["usa", "united states", ", tx", ", ny", ", ca", ", fl", ", oh", ", il", ", uk", "united kingdom"]
-            if any(marker in loc_lower for marker in us_markers):
-                continue
-            if not matches_location(job_location):
+            # Filtre anti-offres US uniquement (marqueurs évidents)
+            us_markers = [", tx", ", ny", ", ca", ", fl", ", oh", " usa", "united states", "united kingdom", " uk,"]
+            if any(m in job_location.lower() for m in us_markers):
                 continue
 
             if any(excl in title.lower() for excl in exclusions):
                 print(f"  Exclu Jooble: {title}")
                 continue
+
+            description = clean_text(job.get("snippet", ""))
             jobs.append({
                 "id": str(job.get("id") or job.get("link", "")),
                 "title": title,
