@@ -582,6 +582,8 @@ def search_jtms():
             soup = BeautifulSoup(r.text, "html.parser")
             links = soup.find_all("a", href=lambda h: h and "/fr/jobs/" in h and "/fiches-metiers/" not in h)
             print(f"  JTMS '{loc}' → {len(links)} liens d'offres trouvés")
+            for i, link in enumerate(links[:3]):
+                print(f"  JTMS DEBUG HTML [{loc}][{i}]: {str(link)[:600]}")
             for link in links:
                 href = link.get("href", "")
                 job_url = href if href.startswith("http") else "https://jobs.makesense.org" + href
