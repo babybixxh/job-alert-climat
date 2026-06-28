@@ -734,6 +734,23 @@ def search_remotive():
     return jobs
 
 
+def debug_climatebase():
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36",
+    }
+    try:
+        r = requests.get("https://climatebase.org/jobs", headers=headers, timeout=15)
+        print(f"DEBUG climatebase /jobs → HTTP {r.status_code}, len={len(r.text)}")
+        text = r.text
+        for marker in ["algolia", "ALGOLIA", "api.climatebase", "appId", "apiKey", "/api/", "graphql"]:
+            idx = text.find(marker)
+            print(f"  marker '{marker}' found at {idx}")
+            if idx != -1:
+                print("    context:", text[max(0, idx-100):idx+300])
+    except Exception as e:
+        print(f"DEBUG EXCEPTION: {e}")
+
+
 def search_arbeitnow():
     """Arbeitnow (arbeitnow.com/api/job-board-api) : API JSON publique sans
     clé, fort accent Europe. Pas de paramètre de recherche : on filtre les
@@ -1355,6 +1372,7 @@ def send_email(html_body, job_count):
 
 
 if __name__ == "__main__":
+    debug_climatebase()
     seen_ids = set(load_json(SEEN_FILE, []))
     print(f"{len(seen_ids)} offres déjà vues en mémoire")
 
