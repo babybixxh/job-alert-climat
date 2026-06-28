@@ -749,20 +749,15 @@ def search_wttj():
     return jobs
 
 
-def filter_jobs_with_ai(jobs):
-    mistral_key = os.environ.get("MISTRAL_API_KEY", "")
-    if not mistral_key:
-        print("  Mistral: clé API absente, pas de filtrage IA")
-        return jobs
-    if not jobs:
-        return jobs
+MISTRAL_BATCH_SIZE = 25
 
-    rejected_reasons = load_json(REJECTED_REASONS_FILE, [])
-    reasons_text = "\n".join([
-        f"- \"{r['title']}\" chez {r['company']} → Raison : {r['reason']}"
-        for r in rejected_reasons[-30:]
-    ]) if rejected_reasons else "Aucun rejet enregistré."
 
+def _filter_jobs_batch(jobs, reasons_text):
+    """Filtre un lot d'offres via Mistral. Lève en cas d'échec (API ou JSON
+    invalide) : à l'appelant de décider du repli, plutôt que de renvoyer le
+    lot non filtré (ce qui spammerait l'utilisateur avec tout le bruit que
+    le filtre est censé éliminer)."""
+    mistral_key = os.environ["MISTRAL_API_KEY"]
     jobs_text = "\n".join([
         f"{i}. TITRE: {job['title']} | ENTREPRISE: {job['company']} | LIEU: {job['location']}"
         + (f" | ENTREPRISE CIBLÉE: oui" if job.get("company_watch") else "")
@@ -806,42 +801,68 @@ Dans le doute, REJETTE.
 Réponds UNIQUEMENT avec un JSON (sans texte avant/après, sans backticks) :
 [{{"index": 0, "keep": true, "reason": "consultant climat senior, correspond au profil"}}, ...]"""
 
-    try:
-        r = requests.post(
-            "https://api.mistral.ai/v1/chat/completions",
-            headers={
-                "Authorization": f"Bearer {mistral_key}",
-                "Content-Type": "application/json",
-            },
-            json={
-                "model": "mistral-small-latest",
-                "max_tokens": 3000,
-                "messages": [{"role": "user", "content": prompt}],
-                "temperature": 0,
-            },
-            timeout=30,
-        )
-        text = r.json()["choices"][0]["message"]["content"].strip()
-        text = re.sub(r"```json|```", "", text).strip()
-        decisions = json.loads(text)
+    r = requests.post(
+        "https://api.mistral.ai/v1/chat/completions",
+        headers={
+            "Authorization": f"Bearer {mistral_key}",
+            "Content-Type": "application/json",
+        },
+        json={
+            "model": "mistral-small-latest",
+            "max_tokens": 4000,
+            "messages": [{"role": "user", "content": prompt}],
+            "temperature": 0,
+        },
+        timeout=30,
+    )
+    text = r.json()["choices"][0]["message"]["content"].strip()
+    text = re.sub(r"```json|```", "", text).strip()
+    decisions = json.loads(text)
 
-        kept = []
-        for decision in decisions:
-            idx = decision.get("index")
-            if decision.get("keep") and idx is not None and idx < len(jobs):
-                kept.append(jobs[idx])
-            elif idx is not None and idx < len(jobs):
-                excl_job = jobs[idx]
-                reason = decision.get('reason', '')
-                print(f"  IA exclu: {excl_job['title']} → {reason}")
-                log_excluded(excl_job['title'], excl_job['company'], excl_job.get('location', ''),
-                             excl_job.get('source', ''), f"IA: {reason}")
+    kept = []
+    for decision in decisions:
+        idx = decision.get("index")
+        if idx is None or idx >= len(jobs):
+            continue
+        if decision.get("keep"):
+            kept.append(jobs[idx])
+        else:
+            excl_job = jobs[idx]
+            reason = decision.get('reason', '')
+            print(f"  IA exclu: {excl_job['title']} → {reason}")
+            log_excluded(excl_job['title'], excl_job['company'], excl_job.get('location', ''),
+                         excl_job.get('source', ''), f"IA: {reason}")
+    return kept
 
-        print(f"  Mistral: {len(kept)}/{len(jobs)} offres conservées")
-        return kept
-    except Exception as e:
-        print(f"  EXCEPTION Mistral: {e}")
+
+def filter_jobs_with_ai(jobs):
+    mistral_key = os.environ.get("MISTRAL_API_KEY", "")
+    if not mistral_key:
+        print("  Mistral: clé API absente, pas de filtrage IA")
         return jobs
+    if not jobs:
+        return jobs
+
+    rejected_reasons = load_json(REJECTED_REASONS_FILE, [])
+    reasons_text = "\n".join([
+        f"- \"{r['title']}\" chez {r['company']} → Raison : {r['reason']}"
+        for r in rejected_reasons[-30:]
+    ]) if rejected_reasons else "Aucun rejet enregistré."
+
+    # On découpe en lots : avec beaucoup de sources actives, le nombre
+    # d'offres peut dépasser ce qu'un seul appel Mistral peut traiter sans
+    # tronquer sa réponse JSON (cause vue en prod : "Unterminated string").
+    kept = []
+    for start in range(0, len(jobs), MISTRAL_BATCH_SIZE):
+        batch = jobs[start:start + MISTRAL_BATCH_SIZE]
+        try:
+            kept += _filter_jobs_batch(batch, reasons_text)
+        except Exception as e:
+            print(f"  EXCEPTION Mistral (lot {start}-{start+len(batch)}): {e}")
+            print("  → lot écarté par sécurité (pas de filtre fiable = pas d'envoi non filtré)")
+
+    print(f"  Mistral: {len(kept)}/{len(jobs)} offres conservées")
+    return kept
 
 
 def deduplicate(jobs):
