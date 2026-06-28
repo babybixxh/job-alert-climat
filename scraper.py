@@ -734,34 +734,54 @@ def search_remotive():
     return jobs
 
 
-def debug_climatebase():
+def search_climatebase():
+    """Climatebase (climatebase.org/jobs) : job board spécialisé climat, donc
+    pas besoin de filtrer par mot-clé climat (tout le board l'est déjà). La
+    page intègre les offres en SSR dans un <script id="__NEXT_DATA__"> JSON
+    (pas besoin de navigateur headless). On ne garde que les offres avec
+    remote_preferences contenant 'Remote'."""
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36",
     }
+    exclusions = get_exclusions()
+    jobs = []
     try:
         r = requests.get("https://climatebase.org/jobs", headers=headers, timeout=15)
-        print(f"DEBUG climatebase /jobs → HTTP {r.status_code}, len={len(r.text)}")
+        if r.status_code != 200:
+            print(f"  Climatebase → HTTP {r.status_code}")
+            return jobs
         text = r.text
-        import json as _json
         idx = text.find('id="__NEXT_DATA__"')
         start = text.find(">", idx) + 1
         end = text.find("</script>", start)
-        raw = text[start:end]
-        data = _json.loads(raw)
-        page_props = data.get("props", {}).get("pageProps", {})
-        print("PAGE PROPS KEYS:", list(page_props.keys()))
-        jobs = page_props.get("jobs", [])
-        print("NUM JOBS:", len(jobs))
-        if jobs:
-            print("JOB[0] KEYS:", list(jobs[0].keys()))
-            print("JOB[0]:", jobs[0])
-        employers = page_props.get("employers", page_props.get("employersById"))
-        print("EMPLOYERS TYPE:", type(employers))
-        if isinstance(employers, dict):
-            first_key = next(iter(employers))
-            print("EMPLOYER SAMPLE:", employers[first_key])
+        data = json.loads(text[start:end])
+        raw_jobs = data.get("props", {}).get("pageProps", {}).get("jobs", [])
+        print(f"  Climatebase → {len(raw_jobs)} offres récupérées")
+        for job in raw_jobs:
+            if "remote" not in " ".join(job.get("remote_preferences", [])).lower():
+                continue
+            job_id = str(job.get("id", ""))
+            if not job_id:
+                continue
+            title = job.get("title", "")
+            if any(excl in title.lower() for excl in exclusions):
+                log_excluded(title, job.get("name_of_employer", "N/A"),
+                             "Remote", "Remote EU", "mot-clé exclu")
+                continue
+            slug = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
+            jobs.append({
+                "id": job_id,
+                "title": clean_text(title),
+                "company": job.get("name_of_employer", "N/A"),
+                "location": "Remote",
+                "url": f"https://climatebase.org/job/{slug}-{job_id}",
+                "description": job.get("employer_short_description", "")[:150],
+                "source": "Remote EU",
+            })
     except Exception as e:
-        print(f"DEBUG EXCEPTION: {e}")
+        print(f"  EXCEPTION Climatebase: {e}")
+    print(f"  Climatebase total → {len(jobs)} offres")
+    return jobs
 
 
 def search_arbeitnow():
@@ -1385,7 +1405,6 @@ def send_email(html_body, job_count):
 
 
 if __name__ == "__main__":
-    debug_climatebase()
     seen_ids = set(load_json(SEEN_FILE, []))
     print(f"{len(seen_ids)} offres déjà vues en mémoire")
 
@@ -1407,6 +1426,7 @@ if __name__ == "__main__":
     all_jobs += search_ess()
     all_jobs += search_remotive()
     all_jobs += search_arbeitnow()
+    all_jobs += search_climatebase()
 
     before_loc_filter = len(all_jobs)
     filtered_jobs = []
