@@ -228,6 +228,64 @@ def search_adzuna(keyword, location):
         return []
 
 
+def search_adzuna_companies():
+    """Recherche par nom d'entreprise sur Adzuna pour les entreprises ciblées
+    (WTTJ_COMPANIES) : le scraping WTTJ direct est peu fiable, donc on
+    réutilise le seul canal d'API qui fonctionne de façon fiable. Ne
+    remonte que les offres effectivement publiées sur Adzuna par ces
+    entreprises (peut être vide pour les structures qui n'y publient pas)."""
+    app_id = os.environ.get("ADZUNA_APP_ID", "")
+    app_key = os.environ.get("ADZUNA_APP_KEY", "")
+    if not app_id or not app_key:
+        return []
+    exclusions = get_exclusions()
+    jobs = []
+    for slug, label in WTTJ_COMPANIES.items():
+        url = (
+            f"https://api.adzuna.com/v1/api/jobs/fr/search/1"
+            f"?app_id={app_id}&app_key={app_key}"
+            f"&results_per_page=10"
+            f"&what={requests.utils.quote(label)}"
+            f"&max_days_old=30"
+            f"&content-type=application/json"
+        )
+        try:
+            r = requests.get(url, timeout=10)
+            r.raise_for_status()
+            data = r.json()
+            if "exception" in data:
+                print(f"  ERREUR Adzuna entreprise '{label}': {data['exception']}")
+                continue
+            results = data.get("results", [])
+            print(f"  Adzuna entreprise '{label}' → {len(results)} brutes")
+            for job in results:
+                title = job.get("title", "N/A")
+                company = job.get("company", {}).get("display_name", "N/A")
+                # On ne garde que les offres où l'entreprise ciblée correspond
+                # vraiment (et pas un cabinet de recrutement qui cite son nom).
+                if label.lower() not in company.lower() and label.lower() not in title.lower():
+                    continue
+                if any(excl in title.lower() for excl in exclusions):
+                    log_excluded(title, company, job.get("location", {}).get("display_name", ""),
+                                 "Adzuna", "mot-clé exclu")
+                    continue
+                description = job.get("description", "")
+                jobs.append({
+                    "id": str(job.get("id", "")),
+                    "title": title,
+                    "company": company,
+                    "location": job.get("location", {}).get("display_name", "France"),
+                    "url": job.get("redirect_url", ""),
+                    "description": description[:150] + "..." if description else "",
+                    "source": "Adzuna",
+                    "company_watch": True,
+                })
+        except Exception as e:
+            print(f"  EXCEPTION Adzuna entreprise '{label}': {e}")
+    print(f"  Adzuna entreprises ciblées → {len(jobs)} après filtre")
+    return jobs
+
+
 def search_france_travail(keyword, location):
     exclusions = get_exclusions()
     try:
@@ -498,31 +556,78 @@ def _wttj_text(value):
     return ""
 
 
+def _wttj_find_job_lists(node, found):
+    """Parcourt récursivement le JSON __NEXT_DATA__ d'une page WTTJ pour
+    repérer les listes d'offres (l'API publique JSON n'existe plus, les
+    offres ne sont disponibles que via ce JSON embarqué côté serveur)."""
+    if isinstance(node, dict):
+        keys = set(node.keys())
+        if {"name", "slug"}.issubset(keys) or {"title", "slug"}.issubset(keys):
+            if any(k in keys for k in ("contractType", "contract_type", "officeIds", "offices", "publishedAt")):
+                found.append(node)
+        for v in node.values():
+            _wttj_find_job_lists(v, found)
+    elif isinstance(node, list):
+        for item in node:
+            _wttj_find_job_lists(item, found)
+
+
 def search_wttj():
-    """Récupère les offres directement chez les entreprises suivies via l'API
-    publique JSON de Welcome to the Jungle. Données structurées (titre, lieu,
-    contrat, URL) → aucun risque de remonter des liens « Careers page »."""
+    """Récupère les offres directement chez les entreprises suivies en
+    scrapant la page carrière publique de Welcome to the Jungle (l'API JSON
+    publique n'existe plus, cf. HTTP 404 sur tous les slugs). Les offres
+    sont extraites du JSON __NEXT_DATA__ embarqué dans la page ; à défaut,
+    repli sur un scraping HTML générique des liens d'offres."""
     exclusions = get_exclusions()
     headers = {
-        "User-Agent": "Mozilla/5.0",
-        "Accept": "application/json",
-        "Referer": "https://www.welcometothejungle.com/",
-        "Origin": "https://www.welcometothejungle.com",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36",
+        "Accept-Language": "fr-FR",
     }
     jobs = []
     for slug, label in WTTJ_COMPANIES.items():
         try:
-            url = f"https://api.welcometothejungle.com/api/v1/organizations/{slug}/jobs"
-            r = requests.get(url, params={"page": 1, "per_page": 50}, headers=headers, timeout=12)
+            url = f"https://www.welcometothejungle.com/fr/companies/{slug}/jobs"
+            r = requests.get(url, headers=headers, timeout=15)
             if r.status_code != 200:
                 print(f"  WTTJ {label} ({slug}) → HTTP {r.status_code} (slug à vérifier ?)")
                 continue
-            data = r.json()
-            if isinstance(data, list):
-                raw = data
+            soup = BeautifulSoup(r.text, "html.parser")
+
+            raw = []
+            script = soup.find("script", id="__NEXT_DATA__")
+            if script and script.string:
+                try:
+                    next_data = json.loads(script.string)
+                    _wttj_find_job_lists(next_data, raw)
+                except (json.JSONDecodeError, TypeError):
+                    pass
+
+            if raw:
+                print(f"  WTTJ {label} → {len(raw)} brutes (JSON embarqué)")
             else:
-                raw = data.get("jobs") or data.get("data") or []
-            print(f"  WTTJ {label} → {len(raw)} brutes")
+                # Repli : scraping HTML générique des liens vers des offres
+                links = soup.find_all("a", href=lambda h: h and "/jobs/" in h)
+                print(f"  WTTJ {label} → 0 via JSON, {len(links)} liens en repli HTML")
+                for link in links:
+                    title = link.get_text(strip=True)
+                    if not title or len(title) < 5:
+                        continue
+                    if any(excl in title.lower() for excl in exclusions):
+                        log_excluded(title, label, "", "WTTJ", "mot-clé exclu")
+                        continue
+                    href = link.get("href", "")
+                    job_url = href if href.startswith("http") else "https://www.welcometothejungle.com" + href
+                    jobs.append({
+                        "id": job_url,
+                        "title": clean_text(title),
+                        "company": label,
+                        "location": "France",
+                        "url": job_url,
+                        "description": "",
+                        "source": "WTTJ",
+                        "company_watch": True,
+                    })
+                continue
 
             for job in raw:
                 title = clean_text(_wttj_text(job.get("name") or job.get("title")))
@@ -829,6 +934,7 @@ if __name__ == "__main__":
 
     all_jobs += search_ademe()
     all_jobs += search_wttj()
+    all_jobs += search_adzuna_companies()
 
     before_loc_filter = len(all_jobs)
     filtered_jobs = []
