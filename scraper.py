@@ -689,6 +689,21 @@ def _sp_paca_location(job_url, card_text):
     return None
 
 
+def debug_ess_structure():
+    """DEBUG TEMPORAIRE : inspecte la structure HTML de emploi-ess.fr pour
+    préparer search_ess(). À supprimer une fois la fonction réelle écrite."""
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36",
+        "Accept-Language": "fr-FR",
+    }
+    try:
+        r = requests.get("https://www.emploi-ess.fr/offres-d-emploi", headers=headers, timeout=15)
+        print(f"DEBUG ESS status={r.status_code} len={len(r.text)}")
+        print(r.text[:6000])
+    except Exception as e:
+        print(f"DEBUG ESS EXCEPTION: {e}")
+
+
 def search_service_public():
     """Scrape choisirleservicepublic.gouv.fr (ex-Place de l'emploi public /
     BIEP) : offres des fonctions publiques d'État, territoriale et hospitalière.
@@ -1202,6 +1217,7 @@ if __name__ == "__main__":
     all_jobs += search_adzuna_companies()
     all_jobs += search_jtms()
     all_jobs += search_service_public()
+    debug_ess_structure()
 
     before_loc_filter = len(all_jobs)
     filtered_jobs = []
