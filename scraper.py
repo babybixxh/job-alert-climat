@@ -470,8 +470,6 @@ def search_jooble(keyword, location):
         data = r.json()
         results = data.get("jobs", [])
         print(f"  Jooble '{keyword}' / '{location}' → {len(results)} brutes")
-        if results:
-            print("    DEBUG Jooble locs:", [clean_text(j.get("location", ""))[:25] for j in results[:8]])
         jobs = []
         for job in results[:10]:
             title = clean_text(job.get("title", "N/A"))
@@ -1255,10 +1253,16 @@ IMPORTANT : « ENTREPRISE CIBLÉE: oui » signifie seulement que l'entreprise es
 intéressante — le POSTE doit quand même passer les règles ci-dessus. Une offre
 de développeur ou de commercial chez une entreprise ciblée doit être REJETÉE.
 
-Dans le doute, REJETTE.
+CAS LIMITES (« borderline ») : pour les postes RSE / développement durable
+génériques que tu hésiterais à rejeter (pertinents sur le fond mais sans
+preuve nette d'un niveau stratégie/conseil senior), ne les rejette PAS
+sèchement : garde-les (keep=true) MAIS marque "borderline": true. Réserve
+borderline=false aux offres qui correspondent clairement et pleinement au
+profil. Les rejets absolus listés plus haut restent rejetés (keep=false).
 
-Réponds UNIQUEMENT avec un JSON (sans texte avant/après, sans backticks) :
-[{{"index": 0, "keep": true, "reason": "consultant climat senior, correspond au profil"}}, ...]"""
+Réponds UNIQUEMENT avec un JSON (sans texte avant/après, sans backticks).
+Chaque objet : index, keep (bool), borderline (bool), reason.
+[{{"index": 0, "keep": true, "borderline": false, "reason": "consultant climat senior, correspond au profil"}}, ...]"""
 
     r = requests.post(
         "https://api.mistral.ai/v1/chat/completions",
@@ -1291,10 +1295,12 @@ Réponds UNIQUEMENT avec un JSON (sans texte avant/après, sans backticks) :
             continue
         job = jobs[idx]
         keep = bool(decision.get("keep"))
+        borderline = bool(decision.get("borderline"))
         reason = decision.get('reason', '')
         if verdicts is not None:
-            verdicts[ai_key(job)] = {"keep": keep, "reason": reason}
+            verdicts[ai_key(job)] = {"keep": keep, "reason": reason, "borderline": borderline}
         if keep:
+            job["borderline"] = borderline
             kept.append(job)
         else:
             print(f"  IA exclu: {job['title']} → {reason}")
@@ -1328,6 +1334,7 @@ def filter_jobs_with_ai(jobs):
         if cached is None:
             to_evaluate.append(job)
         elif cached.get("keep"):
+            job["borderline"] = cached.get("borderline", False)
             kept.append(job)
         else:
             log_excluded(job['title'], job['company'], job.get('location', ''),
@@ -1426,6 +1433,8 @@ def section_html(title, emoji, jobs, color):
         sc = source_colors.get(source, "#888")
         badge_new = '<span style="font-size:11px;color:#fff;background:#e05c2a;padding:1px 8px;border-radius:10px;margin-left:8px">NOUVEAU</span>' if is_new else '<span style="font-size:11px;color:#888;background:#f0f0f0;padding:1px 8px;border-radius:10px;margin-left:8px">Déjà vu</span>'
         badge_source = f'<span style="font-size:11px;color:#fff;background:{sc};padding:1px 8px;border-radius:10px;margin-left:6px">{source}</span>'
+        badge_borderline = ('<span style="font-size:11px;color:#fff;background:#e0a800;padding:1px 8px;border-radius:10px;margin-left:6px">⚠️ À VÉRIFIER</span>'
+                            if job.get("borderline") else '')
         meta_bits = []
         if job.get("salary"):
             meta_bits.append(f"💰 {job['salary']}")
@@ -1440,7 +1449,7 @@ def section_html(title, emoji, jobs, color):
         <div style="margin-bottom:16px;padding:14px;border-left:4px solid {color};background:{'#fff8f5' if is_new else '#f9f9f9'};border-radius:4px">
             <h3 style="margin:0 0 6px 0">
                 <a href="{job['url']}" style="color:{color};text-decoration:none">{job['title']}</a>
-                {badge_new}{badge_source}
+                {badge_new}{badge_source}{badge_borderline}
             </h3>
             <p style="margin:0 0 5px 0;color:#555;font-size:14px">
                 🏢 <strong>{job['company']}</strong> &nbsp;|&nbsp; 📍 {job['location']}
@@ -1553,14 +1562,16 @@ if __name__ == "__main__":
     #
     # Hellowork désactivé : parseur renvoie « 0 cartes » à chaque appel (HTML
     # changé). Greenjob.fr abandonné (recherche mot-clé non fonctionnelle).
-    # WTTJ désactivé : HTTP 202 anti-bot Cloudflare → 0 offre. Les fonctions
-    # sont conservées mais plus appelées.
+    # WTTJ désactivé : HTTP 202 anti-bot Cloudflare → 0 offre.
+    # Jooble désactivé : pour nos villes (Paris/Toulon/Nice…) l'API renvoie les
+    # villes US homonymes (Paris TX, Toulon IL, Nice CA…) → 0 offre en zone,
+    # 45 requêtes/run gaspillées. Les fonctions sont conservées mais non
+    # appelées.
     tasks = []
     for keyword in KEYWORDS:
         for location in LOCATIONS:
             tasks.append((search_adzuna, (keyword, location)))
             tasks.append((search_france_travail, (keyword, location)))
-            tasks.append((search_jooble, (keyword, location)))
     for fn in (search_ademe, search_adzuna_companies, search_jtms,
                search_service_public, search_ess, search_remotive,
                search_arbeitnow, search_climatebase, search_apec):
