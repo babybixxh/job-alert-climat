@@ -26,6 +26,13 @@ KEYWORDS = [
 
 LOCATIONS = ["Paris", "Marseille", "Aix-en-Provence", "Toulon", "Nice"]
 
+# Mots-clés FR + EN pour les offres 100% télétravail Europe (Remotive, Arbeitnow) :
+# l'utilisateur lit l'anglais et le français, donc on couvre les deux.
+REMOTE_KEYWORDS = [
+    "climate", "sustainability", "carbon", "ESG", "decarbonization",
+    "climat", "durable", "carbone", "RSE",
+]
+
 # Communes trop excentrées à écarter même quand elles ressortent comme
 # "Toulon"/"Nice" dans les résultats bruts (ex: La Garde est une commune
 # distincte de l'agglomération toulonnaise, jugée hors zone par Arnaud).
@@ -676,6 +683,105 @@ SP_PACA_TEXT = [
 ]
 
 
+def search_remotive():
+    """Remotive (remotive.com/remote-jobs/api) : API JSON publique sans clé,
+    offres 100% télétravail (souvent ouvertes Europe entière). Recherche par
+    mot-clé FR/EN via le paramètre ?search=."""
+    exclusions = get_exclusions()
+    jobs = []
+    seen_ids = set()
+    for kw in REMOTE_KEYWORDS:
+        try:
+            r = requests.get(
+                "https://remotive.com/api/remote-jobs",
+                params={"search": kw},
+                timeout=15,
+            )
+            if r.status_code != 200:
+                print(f"  Remotive '{kw}' → HTTP {r.status_code}")
+                continue
+            results = r.json().get("jobs", [])
+            print(f"  Remotive '{kw}' → {len(results)} offres")
+            for job in results:
+                job_id = str(job.get("id", ""))
+                if not job_id or job_id in seen_ids:
+                    continue
+                seen_ids.add(job_id)
+                title = job.get("title", "")
+                if any(excl in title.lower() for excl in exclusions):
+                    log_excluded(title, job.get("company_name", "N/A"),
+                                 job.get("candidate_required_location", "Remote"),
+                                 "Remote EU", "mot-clé exclu")
+                    continue
+                description = job.get("description", "")
+                jobs.append({
+                    "id": job_id,
+                    "title": clean_text(title),
+                    "company": job.get("company_name", "N/A"),
+                    "location": job.get("candidate_required_location", "Remote"),
+                    "url": job.get("url", ""),
+                    "description": description[:150] + "..." if description else "",
+                    "source": "Remote EU",
+                })
+        except Exception as e:
+            print(f"  EXCEPTION Remotive '{kw}': {e}")
+    print(f"  Remotive total → {len(jobs)} offres")
+    return jobs
+
+
+def search_arbeitnow():
+    """Arbeitnow (arbeitnow.com/api/job-board-api) : API JSON publique sans
+    clé, fort accent Europe. Pas de paramètre de recherche : on filtre les
+    offres remote=true par mot-clé sur titre+tags, sur quelques pages
+    (les plus récentes)."""
+    exclusions = get_exclusions()
+    jobs = []
+    seen_slugs = set()
+    keywords_lower = [kw.lower() for kw in REMOTE_KEYWORDS]
+    try:
+        for page in range(1, 4):
+            r = requests.get(
+                "https://www.arbeitnow.com/api/job-board-api",
+                params={"page": page},
+                timeout=15,
+            )
+            if r.status_code != 200:
+                print(f"  Arbeitnow page {page} → HTTP {r.status_code}")
+                break
+            results = r.json().get("data", [])
+            if not results:
+                break
+            for job in results:
+                if not job.get("remote"):
+                    continue
+                slug = job.get("slug", "")
+                if not slug or slug in seen_slugs:
+                    continue
+                title = job.get("title", "")
+                tags_text = " ".join(job.get("tags", [])).lower()
+                if not any(kw in (title + " " + tags_text).lower() for kw in keywords_lower):
+                    continue
+                seen_slugs.add(slug)
+                if any(excl in title.lower() for excl in exclusions):
+                    log_excluded(title, job.get("company_name", "N/A"),
+                                 job.get("location", "Remote"), "Remote EU", "mot-clé exclu")
+                    continue
+                description = job.get("description", "")
+                jobs.append({
+                    "id": slug,
+                    "title": clean_text(title),
+                    "company": job.get("company_name", "N/A"),
+                    "location": job.get("location", "Remote"),
+                    "url": job.get("url", ""),
+                    "description": description[:150] + "..." if description else "",
+                    "source": "Remote EU",
+                })
+    except Exception as e:
+        print(f"  EXCEPTION Arbeitnow: {e}")
+    print(f"  Arbeitnow total → {len(jobs)} offres")
+    return jobs
+
+
 def _sp_paca_location(job_url, card_text):
     """Renvoie un libellé de lieu PACA si l'offre est en PACA, sinon None.
     1) offre territoriale : département lu dans la référence d'URL ;
@@ -1120,6 +1226,7 @@ def section_html(title, emoji, jobs, color):
         "JTMS": "#6a1b9a",
         "Service Public": "#000091",
         "ESS": "#5a8f3c",
+        "Remote EU": "#1f7a99",
     }
     html = f"""
     <div style="margin:2rem 0 1rem">
@@ -1261,6 +1368,8 @@ if __name__ == "__main__":
     all_jobs += search_jtms()
     all_jobs += search_service_public()
     all_jobs += search_ess()
+    all_jobs += search_remotive()
+    all_jobs += search_arbeitnow()
 
     before_loc_filter = len(all_jobs)
     filtered_jobs = []
