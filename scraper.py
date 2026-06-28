@@ -694,41 +694,27 @@ def debug_apec():
         "Content-Type": "application/json",
         "Accept": "application/json",
     }
-    body = {
-        "motsCles": "climat",
-        "page": 0,
-        "pageSize": 20,
-        "sortsType": "SCORE",
-        "typesContrat": [],
-        "lieux": [],
-        "fonctions": [],
-        "statutPoste": [],
-        "niveauxExperience": [],
-        "secteursActivite": [],
-        "typesConvention": [],
-        "typesTeletravail": [],
-    }
-    for url in (
-        "https://www.apec.fr/cms/webservices/rechercheOffre",
-        "https://www.apec.fr/cms/webservices/rechercheOffres",
-    ):
-        try:
-            r = requests.post(url, json=body, headers=headers, timeout=15)
-            print(f"DEBUG APEC POST {url} → HTTP {r.status_code}, len={len(r.text)}")
-            if r.status_code == 200:
-                data = r.json()
-                print("  TOP KEYS:", list(data.keys()) if isinstance(data, dict) else type(data))
-                results = data.get("resultats") or data.get("results") or data.get("offres") or []
-                print("  totalCount?:", data.get("totalCount"), "nbResultats?:", data.get("nbResultats"))
-                print("  NB RESULTS:", len(results))
-                if results:
-                    print("  RESULT[0] KEYS:", list(results[0].keys()))
-                    print("  RESULT[0]:", json.dumps(results[0], ensure_ascii=False)[:1200])
-                return
-            else:
-                print("  body[:300]:", r.text[:300])
-        except Exception as e:
-            print(f"  DEBUG APEC EXCEPTION {url}: {e}")
+    # Round 2 : on n'envoie que motsCles pour récupérer la liste complète des
+    # 34 champs valides du DTO via le message d'erreur 500, puis on construira
+    # un body correct.
+    body = {"motsCles": "climat"}
+    url = "https://www.apec.fr/cms/webservices/rechercheOffre"
+    try:
+        r = requests.post(url, json=body, headers=headers, timeout=15)
+        print(f"DEBUG APEC POST {url} → HTTP {r.status_code}, len={len(r.text)}")
+        if r.status_code == 200:
+            data = r.json()
+            print("  TOP KEYS:", list(data.keys()) if isinstance(data, dict) else type(data))
+            results = data.get("resultats") or data.get("results") or data.get("offres") or []
+            print("  totalCount?:", data.get("totalCount"), "nbResultats?:", data.get("nbResultats"))
+            print("  NB RESULTS:", len(results))
+            if results:
+                print("  RESULT[0] KEYS:", list(results[0].keys()))
+                print("  RESULT[0]:", json.dumps(results[0], ensure_ascii=False)[:1500])
+        else:
+            print("  FULL BODY:", r.text[:2500])
+    except Exception as e:
+        print(f"  DEBUG APEC EXCEPTION {url}: {e}")
 
 
 def search_remotive():
