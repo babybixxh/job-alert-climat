@@ -1450,13 +1450,18 @@ if __name__ == "__main__":
         for location in LOCATIONS:
             all_jobs += search_adzuna(keyword, location)
             all_jobs += search_france_travail(keyword, location)
-            all_jobs += search_hellowork(keyword, location)
             all_jobs += search_jooble(keyword, location)
+        # Hellowork désactivé : le parseur renvoie « 0 cartes » à chaque appel
+        # (structure HTML changée / rendue côté client). La fonction est gardée
+        # mais plus appelée pour ne pas gaspiller 45 requêtes/run. À réactiver
+        # si search_hellowork() est réparé.
         # Greenjob.fr abandonné : recherche par mot-clé non fonctionnelle côté site,
         # et contenu majoritairement stages/bénévolat hors profil.
 
     all_jobs += search_ademe()
-    all_jobs += search_wttj()
+    # WTTJ désactivé : l'API publique renvoie systématiquement HTTP 202 (défi
+    # anti-bot Cloudflare) → 0 offre. Fonction conservée pour réactivation
+    # éventuelle, mais plus appelée.
     all_jobs += search_adzuna_companies()
     all_jobs += search_jtms()
     all_jobs += search_service_public()
