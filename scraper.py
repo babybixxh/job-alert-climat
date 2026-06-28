@@ -258,12 +258,14 @@ def search_adzuna_companies():
                 continue
             results = data.get("results", [])
             print(f"  Adzuna entreprise '{label}' → {len(results)} brutes")
+            # Match par mot entier sur le NOM D'ENTREPRISE uniquement (pas le
+            # titre) : évite que « Sami » matche « Samir recherche nounou » ou
+            # qu'un cabinet de recrutement citant l'entreprise passe.
+            name_re = re.compile(r"\b" + re.escape(label.lower()) + r"\b")
             for job in results:
                 title = job.get("title", "N/A")
                 company = job.get("company", {}).get("display_name", "N/A")
-                # On ne garde que les offres où l'entreprise ciblée correspond
-                # vraiment (et pas un cabinet de recrutement qui cite son nom).
-                if label.lower() not in company.lower() and label.lower() not in title.lower():
+                if not name_re.search(company.lower()):
                     continue
                 if any(excl in title.lower() for excl in exclusions):
                     log_excluded(title, company, job.get("location", {}).get("display_name", ""),
@@ -697,24 +699,47 @@ def filter_jobs_with_ai(jobs):
     ]) if rejected_reasons else "Aucun rejet enregistré."
 
     jobs_text = "\n".join([
-        f"{i}. {job['title']} | {job['company']} | {job['location']}"
+        f"{i}. TITRE: {job['title']} | ENTREPRISE: {job['company']} | LIEU: {job['location']}"
+        + (f" | ENTREPRISE CIBLÉE: oui" if job.get("company_watch") else "")
+        + (f"\n   Description: {job.get('description', '')[:200]}" if job.get('description') else "")
         for i, job in enumerate(jobs)
     ])
 
-    prompt = f"""Tu es un assistant de recherche d'emploi. Voici le profil du candidat :
+    prompt = f"""Tu es un assistant de recherche d'emploi très sélectif. Voici le profil du candidat :
 {PROFILE}
 
-Offres récemment rejetées et raisons :
+Offres récemment rejetées par le candidat et raisons (apprends-en) :
 {reasons_text}
 
-Offres du jour :
+Offres du jour à évaluer :
 {jobs_text}
 
-Réponds UNIQUEMENT avec un JSON (sans texte avant ou après, sans backticks) :
-[{{"index": 0, "keep": true, "reason": "correspond au profil"}}, ...]
+RÈGLES DE DÉCISION (applique-les strictement) :
 
-Garde si : conseil climat, politiques publiques, RSE stratégique, chargé de mission climat.
-Rejette si : ressemble aux offres rejetées, terrain, technique, RH, finance, nucléaire, achats."""
+GARDE UNIQUEMENT si le poste porte VRAIMENT sur le climat / la durabilité / la RSE
+au niveau stratégie ou conseil, ET correspond à la séniorité du candidat (confirmé,
+pas junior). Exemples à garder : consultant·e climat/carbone/RSE, chargé·e de mission
+climat ou transition, expert·e politiques publiques climat, manager décarbonation,
+responsable RSE stratégique, chef·fe de projet bilan carbone / stratégie bas-carbone.
+
+REJETTE (keep=false) dans TOUS ces cas, MÊME si « ENTREPRISE CIBLÉE: oui » :
+- métiers tech/produit/data (developer, engineer, fullstack, software, data scientist, devops, product manager)
+- commercial / vente / sales / account executive / business developer / marketing
+- RH / paie / recrutement / office manager / assistant·e
+- finance / comptabilité / achats / appels d'offres
+- pédagogie / formation hors climat, support, ops génériques
+- postes terrain, techniciens, juniors, stages, alternances
+- tout poste sans lien explicite et central avec le climat/la durabilité
+- ressemble aux offres rejetées ci-dessus
+
+IMPORTANT : « ENTREPRISE CIBLÉE: oui » signifie seulement que l'entreprise est
+intéressante — le POSTE doit quand même passer les règles ci-dessus. Une offre
+de développeur ou de commercial chez une entreprise ciblée doit être REJETÉE.
+
+Dans le doute, REJETTE.
+
+Réponds UNIQUEMENT avec un JSON (sans texte avant/après, sans backticks) :
+[{{"index": 0, "keep": true, "reason": "consultant climat senior, correspond au profil"}}, ...]"""
 
     try:
         r = requests.post(
@@ -725,7 +750,7 @@ Rejette si : ressemble aux offres rejetées, terrain, technique, RH, finance, nu
             },
             json={
                 "model": "mistral-small-latest",
-                "max_tokens": 2000,
+                "max_tokens": 3000,
                 "messages": [{"role": "user", "content": prompt}],
                 "temperature": 0,
             },
@@ -888,9 +913,6 @@ def build_email(jobs, feedback_url, excluded_log=None):
     <hr style="border:1px solid #e0e0e0">
     """
 
-    body += section_html("Entreprises ciblées", "🏢", watchlist, "#0a5c54")
-    if watchlist and (marseille or paca or paris):
-        body += '<hr style="border:0.5px solid #e0e0e0;margin:1rem 0">'
     body += section_html("Marseille", "🔵", marseille, "#0f6e56")
     if marseille and paca:
         body += '<hr style="border:0.5px solid #e0e0e0;margin:1rem 0">'
@@ -898,6 +920,9 @@ def build_email(jobs, feedback_url, excluded_log=None):
     if (marseille or paca) and paris:
         body += '<hr style="border:0.5px solid #e0e0e0;margin:1rem 0">'
     body += section_html("Paris", "🔴", paris, "#993c1d")
+    if (marseille or paca or paris) and watchlist:
+        body += '<hr style="border:0.5px solid #e0e0e0;margin:1rem 0">'
+    body += section_html("Entreprises ciblées", "🏢", watchlist, "#0a5c54")
     body += excluded_section_html(excluded_log or [])
     body += "</body></html>"
     return body
