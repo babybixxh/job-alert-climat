@@ -685,46 +685,51 @@ SP_PACA_TEXT = [
 
 def search_remotive():
     """Remotive (remotive.com/remote-jobs/api) : API JSON publique sans clé,
-    offres 100% télétravail (souvent ouvertes Europe entière). Recherche par
-    mot-clé FR/EN via le paramètre ?search=."""
+    offres 100% télétravail (souvent ouvertes Europe entière). Le paramètre
+    ?search= ne filtre pas réellement côté serveur (mêmes résultats peu
+    importe le mot-clé) : on récupère donc le flux complet une seule fois et
+    on filtre nous-mêmes sur titre + description."""
     exclusions = get_exclusions()
     jobs = []
     seen_ids = set()
-    for kw in REMOTE_KEYWORDS:
-        try:
-            r = requests.get(
-                "https://remotive.com/api/remote-jobs",
-                params={"search": kw},
-                timeout=15,
-            )
-            if r.status_code != 200:
-                print(f"  Remotive '{kw}' → HTTP {r.status_code}")
+    keywords_lower = [kw.lower() for kw in REMOTE_KEYWORDS]
+    try:
+        r = requests.get(
+            "https://remotive.com/api/remote-jobs",
+            params={"limit": 200},
+            timeout=15,
+        )
+        if r.status_code != 200:
+            print(f"  Remotive → HTTP {r.status_code}")
+            return jobs
+        results = r.json().get("jobs", [])
+        print(f"  Remotive → {len(results)} offres récupérées")
+        for job in results:
+            job_id = str(job.get("id", ""))
+            if not job_id or job_id in seen_ids:
                 continue
-            results = r.json().get("jobs", [])
-            print(f"  Remotive '{kw}' → {len(results)} offres")
-            for job in results:
-                job_id = str(job.get("id", ""))
-                if not job_id or job_id in seen_ids:
-                    continue
-                seen_ids.add(job_id)
-                title = job.get("title", "")
-                if any(excl in title.lower() for excl in exclusions):
-                    log_excluded(title, job.get("company_name", "N/A"),
-                                 job.get("candidate_required_location", "Remote"),
-                                 "Remote EU", "mot-clé exclu")
-                    continue
-                description = job.get("description", "")
-                jobs.append({
-                    "id": job_id,
-                    "title": clean_text(title),
-                    "company": job.get("company_name", "N/A"),
-                    "location": job.get("candidate_required_location", "Remote"),
-                    "url": job.get("url", ""),
-                    "description": description[:150] + "..." if description else "",
-                    "source": "Remote EU",
-                })
-        except Exception as e:
-            print(f"  EXCEPTION Remotive '{kw}': {e}")
+            title = job.get("title", "")
+            description = job.get("description", "")
+            haystack = (title + " " + description).lower()
+            if not any(kw in haystack for kw in keywords_lower):
+                continue
+            seen_ids.add(job_id)
+            if any(excl in title.lower() for excl in exclusions):
+                log_excluded(title, job.get("company_name", "N/A"),
+                             job.get("candidate_required_location", "Remote"),
+                             "Remote EU", "mot-clé exclu")
+                continue
+            jobs.append({
+                "id": job_id,
+                "title": clean_text(title),
+                "company": job.get("company_name", "N/A"),
+                "location": job.get("candidate_required_location", "Remote"),
+                "url": job.get("url", ""),
+                "description": description[:150] + "..." if description else "",
+                "source": "Remote EU",
+            })
+    except Exception as e:
+        print(f"  EXCEPTION Remotive: {e}")
     print(f"  Remotive total → {len(jobs)} offres")
     return jobs
 
@@ -732,14 +737,14 @@ def search_remotive():
 def search_arbeitnow():
     """Arbeitnow (arbeitnow.com/api/job-board-api) : API JSON publique sans
     clé, fort accent Europe. Pas de paramètre de recherche : on filtre les
-    offres remote=true par mot-clé sur titre+tags, sur quelques pages
-    (les plus récentes)."""
+    offres remote=true par mot-clé sur titre+tags+description, sur un plus
+    grand nombre de pages pour augmenter la couverture."""
     exclusions = get_exclusions()
     jobs = []
     seen_slugs = set()
     keywords_lower = [kw.lower() for kw in REMOTE_KEYWORDS]
     try:
-        for page in range(1, 4):
+        for page in range(1, 11):
             r = requests.get(
                 "https://www.arbeitnow.com/api/job-board-api",
                 params={"page": page},
@@ -759,14 +764,15 @@ def search_arbeitnow():
                     continue
                 title = job.get("title", "")
                 tags_text = " ".join(job.get("tags", [])).lower()
-                if not any(kw in (title + " " + tags_text).lower() for kw in keywords_lower):
+                description = job.get("description", "")
+                haystack = (title + " " + tags_text + " " + description).lower()
+                if not any(kw in haystack for kw in keywords_lower):
                     continue
                 seen_slugs.add(slug)
                 if any(excl in title.lower() for excl in exclusions):
                     log_excluded(title, job.get("company_name", "N/A"),
                                  job.get("location", "Remote"), "Remote EU", "mot-clé exclu")
                     continue
-                description = job.get("description", "")
                 jobs.append({
                     "id": slug,
                     "title": clean_text(title),
