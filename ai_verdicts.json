@@ -398,5 +398,89 @@
   "copywriter|coalition technologies": {
     "keep": false,
     "reason": "poste de copywriter (marketing) malgré la localisation"
+  },
+  "product owner - ai fokus (m|w|d)|simplifier ag": {
+    "keep": false,
+    "reason": "métier tech/produit (Product Owner) sans lien climat"
+  },
+  "(senior) product manager growth (m/f/d)|1komma5˚": {
+    "keep": false,
+    "reason": "métier tech/produit (Product Manager) sans lien climat"
+  },
+  "sap solution architect (m/w/d) | deutschland | remote|pertemps erp": {
+    "keep": false,
+    "reason": "métier tech (SAP Solution Architect) sans lien climat"
+  },
+  "werkstudent social media & content marketing - (all genders) - 100% homeoffice|fino data services gmbh": {
+    "keep": false,
+    "reason": "stage/junior (Werkstudent) et sans lien climat"
+  },
+  "webmanager minijob (m/w/d)|kommunen für biologische vielafalt": {
+    "keep": false,
+    "reason": "poste terrain/technique (Webmanager) sans lien climat"
+  },
+  "fullstack / product engineer (f/m/d) for flutter & node.js (100% homeoffice)|memodio": {
+    "keep": false,
+    "reason": "métier tech/produit (Fullstack Engineer) sans lien climat"
+  },
+  "country manager uk (m/w/d)|syte gmbh": {
+    "keep": false,
+    "reason": "commercial (Country Manager) sans lien climat"
+  },
+  "cto office - associate (m/f/d)|1komma5˚": {
+    "keep": false,
+    "reason": "métier tech (CTO Office) sans lien climat"
+  },
+  "linux it-systemadministrator*in (m/w/d)|volentum deutschland gmbh": {
+    "keep": false,
+    "reason": "technique (IT-Systemadministrator) sans lien climat"
+  },
+  "technical customer success manager|nara gmbh": {
+    "keep": false,
+    "reason": "technique (Technical Customer Success) sans lien climat"
+  },
+  "teamlead qa (gn)|bikeleasing-service gmbh & co. kg": {
+    "keep": false,
+    "reason": "technique (Teamlead QA) sans lien climat"
+  },
+  "(remote) senior ai / knowledge graph engineer (m/f/d)|pinnipedia technologies gmbh": {
+    "keep": false,
+    "reason": "métier tech (AI Engineer) sans lien climat"
+  },
+  "geschäftsführung (m/w/d) im non-profit|lern-fair e.v.": {
+    "keep": false,
+    "reason": "RH/gestion (Geschäftsführung) sans lien climat"
+  },
+  "fellowship operations coordinator|climatebase": {
+    "keep": true,
+    "reason": "poste climat stratégique (Fellowship Operations Coordinator) en remote, correspond au profil"
+  },
+  "fellowship curriculum lead|climatebase": {
+    "keep": true,
+    "reason": "poste climat stratégique (Fellowship Curriculum Lead) en remote, correspond au profil"
+  },
+  "business development manager|syso": {
+    "keep": false,
+    "reason": "commercial (Business Development Manager) sans lien climat"
+  },
+  "senior software engineer - mobile (m/f/d)|1komma5°": {
+    "keep": false,
+    "reason": "métier tech (Software Engineer) sans lien climat"
+  },
+  "people and talent partner, europe|amber electric": {
+    "keep": false,
+    "reason": "RH (People and Talent Partner) sans lien climat"
+  },
+  "content marketing strategist|crux climate": {
+    "keep": false,
+    "reason": "marketing (Content Marketing Strategist) sans lien climat"
+  },
+  "senior software engineer i|energyhub": {
+    "keep": false,
+    "reason": "métier tech (Software Engineer) sans lien climat"
+  },
+  "product designer|levelten energy": {
+    "keep": false,
+    "reason": "métier tech/produit (Product Designer) sans lien climat"
   }
 }
