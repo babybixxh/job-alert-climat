@@ -699,16 +699,8 @@ def debug_ess_structure():
     try:
         r = requests.get("https://www.emploi-ess.fr/offres-d-emploi", headers=headers, timeout=15)
         print(f"DEBUG ESS status={r.status_code} len={len(r.text)}")
-        from bs4 import BeautifulSoup
-        soup = BeautifulSoup(r.text, "html.parser")
-        offer_links = [a for a in soup.find_all("a", href=True) if "/offre" in a["href"].lower()]
-        print(f"DEBUG ESS offer-like links: {len(offer_links)}")
-        for a in offer_links[:8]:
-            cont = a.find_parent(["article", "li", "div"]) or a.parent
-            print("LINK:", a.get("href"), "| TEXT:", a.get_text(strip=True)[:80])
-            print("PARENT CLASS:", cont.get("class") if cont else None)
-            print("PARENT TEXT:", cont.get_text(" ", strip=True)[:200] if cont else None)
-            print("---")
+        print("DEBUG ESS CHUNK 6000-22000:")
+        print(r.text[6000:22000])
     except Exception as e:
         print(f"DEBUG ESS EXCEPTION: {e}")
 
