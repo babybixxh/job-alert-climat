@@ -688,6 +688,49 @@ SP_PACA_TEXT = [
 ]
 
 
+def debug_apec():
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36",
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+    }
+    body = {
+        "motsCles": "climat",
+        "page": 0,
+        "pageSize": 20,
+        "sortsType": "SCORE",
+        "typesContrat": [],
+        "lieux": [],
+        "fonctions": [],
+        "statutPoste": [],
+        "niveauxExperience": [],
+        "secteursActivite": [],
+        "typesConvention": [],
+        "typesTeletravail": [],
+    }
+    for url in (
+        "https://www.apec.fr/cms/webservices/rechercheOffre",
+        "https://www.apec.fr/cms/webservices/rechercheOffres",
+    ):
+        try:
+            r = requests.post(url, json=body, headers=headers, timeout=15)
+            print(f"DEBUG APEC POST {url} → HTTP {r.status_code}, len={len(r.text)}")
+            if r.status_code == 200:
+                data = r.json()
+                print("  TOP KEYS:", list(data.keys()) if isinstance(data, dict) else type(data))
+                results = data.get("resultats") or data.get("results") or data.get("offres") or []
+                print("  totalCount?:", data.get("totalCount"), "nbResultats?:", data.get("nbResultats"))
+                print("  NB RESULTS:", len(results))
+                if results:
+                    print("  RESULT[0] KEYS:", list(results[0].keys()))
+                    print("  RESULT[0]:", json.dumps(results[0], ensure_ascii=False)[:1200])
+                return
+            else:
+                print("  body[:300]:", r.text[:300])
+        except Exception as e:
+            print(f"  DEBUG APEC EXCEPTION {url}: {e}")
+
+
 def search_remotive():
     """Remotive (remotive.com/remote-jobs/api) : API JSON publique sans clé,
     offres 100% télétravail (souvent ouvertes Europe entière). Le paramètre
@@ -1443,6 +1486,7 @@ def send_email(html_body, job_count):
 
 
 if __name__ == "__main__":
+    debug_apec()
     seen_ids = set(load_json(SEEN_FILE, []))
     print(f"{len(seen_ids)} offres déjà vues en mémoire")
 
