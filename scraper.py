@@ -689,20 +689,61 @@ def _sp_paca_location(job_url, card_text):
     return None
 
 
-def debug_ess_structure():
-    """DEBUG TEMPORAIRE : inspecte la structure HTML de emploi-ess.fr pour
-    préparer search_ess(). À supprimer une fois la fonction réelle écrite."""
+def search_ess():
+    """Scrape emploi-ess.fr (portail national de l'économie sociale et
+    solidaire / UDES) : recherche par mot-clé climat via le formulaire
+    GET ?c=0&l=0&m=<mot-clé> (c=secteur, l=région, m=mot-clé). Pas d'API,
+    structure HTML stable (div.bloc-offre fondoffre / offre-titre / offre-
+    localisation). Couverture nationale, le filtre géographique global
+    d'__main__ (is_location_excluded) retire les offres hors zone cible."""
+    exclusions = get_exclusions()
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36",
         "Accept-Language": "fr-FR",
     }
-    try:
-        r = requests.get("https://www.emploi-ess.fr/offres-d-emploi", headers=headers, timeout=15)
-        print(f"DEBUG ESS status={r.status_code} len={len(r.text)}")
-        print("DEBUG ESS CHUNK 6000-22000:")
-        print(r.text[6000:22000])
-    except Exception as e:
-        print(f"DEBUG ESS EXCEPTION: {e}")
+    jobs = []
+    seen_urls = set()
+    for kw in KEYWORDS:
+        try:
+            from bs4 import BeautifulSoup
+            url = "https://www.emploi-ess.fr/offres-d-emploi"
+            r = requests.get(url, params={"c": 0, "l": 0, "m": kw}, headers=headers, timeout=15)
+            if r.status_code != 200:
+                print(f"  ESS '{kw}' → HTTP {r.status_code}")
+                continue
+            soup = BeautifulSoup(r.text, "html.parser")
+            cards = soup.find_all("div", class_="bloc-offre")
+            print(f"  ESS '{kw}' → {len(cards)} offres")
+            for card in cards:
+                title_a = card.find("div", class_="offre-titre")
+                title_a = title_a.find("a") if title_a else None
+                if not title_a:
+                    continue
+                job_url = title_a.get("href", "")
+                if not job_url or job_url in seen_urls:
+                    continue
+                seen_urls.add(job_url)
+                title = title_a.get_text(strip=True)
+                if any(excl in title.lower() for excl in exclusions):
+                    log_excluded(title, "Employeur ESS", "France", "ESS", "mot-clé exclu")
+                    continue
+                loc_div = card.find("div", class_="offre-localisation")
+                location = loc_div.get_text(strip=True).replace("localisation :", "").strip() if loc_div else "France"
+                desc_div = card.find("div", class_="offre-descriptif")
+                description = desc_div.get_text(" ", strip=True) if desc_div else ""
+                jobs.append({
+                    "id": job_url,
+                    "title": clean_text(title),
+                    "company": "Employeur ESS",
+                    "location": location,
+                    "url": job_url,
+                    "description": description[:150] + "..." if description else "",
+                    "source": "ESS",
+                })
+        except Exception as e:
+            print(f"  EXCEPTION ESS '{kw}': {e}")
+    print(f"  ESS total → {len(jobs)} offres")
+    return jobs
 
 
 def search_service_public():
@@ -1078,6 +1119,7 @@ def section_html(title, emoji, jobs, color):
         "WTTJ": "#7a6500",
         "JTMS": "#6a1b9a",
         "Service Public": "#000091",
+        "ESS": "#5a8f3c",
     }
     html = f"""
     <div style="margin:2rem 0 1rem">
@@ -1218,7 +1260,7 @@ if __name__ == "__main__":
     all_jobs += search_adzuna_companies()
     all_jobs += search_jtms()
     all_jobs += search_service_public()
-    debug_ess_structure()
+    all_jobs += search_ess()
 
     before_loc_filter = len(all_jobs)
     filtered_jobs = []
