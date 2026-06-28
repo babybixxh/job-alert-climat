@@ -848,6 +848,12 @@ Réponds UNIQUEMENT avec un JSON (sans texte avant/après, sans backticks) :
     )
     text = r.json()["choices"][0]["message"]["content"].strip()
     text = re.sub(r"```json|```", "", text).strip()
+    # Mistral ajoute parfois du texte avant/après le tableau JSON (provoque
+    # « Extra data »/« Unterminated string ») : on isole le tableau lui-même.
+    start = text.find("[")
+    end = text.rfind("]")
+    if start != -1 and end != -1 and end > start:
+        text = text[start:end + 1]
     decisions = json.loads(text)
 
     kept = []
