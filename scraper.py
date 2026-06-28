@@ -70,6 +70,10 @@ SEEN_FILE = "seen_jobs.json"
 TODAY_FILE = "today_jobs.json"
 REJECTED_FILE = "rejected_keywords.json"
 REJECTED_REASONS_FILE = "rejected_reasons.json"
+# Cache des décisions du filtre IA (clé titre|entreprise → garder/rejeter).
+# Évite de réinterroger Mistral chaque jour sur des offres déjà tranchées.
+AI_VERDICTS_FILE = "ai_verdicts.json"
+AI_VERDICTS_MAX = 3000
 
 # Entreprises suivies en direct via l'API publique Welcome to the Jungle.
 # Clé = slug WTTJ (segment d'URL welcometothejungle.com/fr/companies/<slug>),
@@ -1106,11 +1110,12 @@ def search_wttj():
 MISTRAL_BATCH_SIZE = 25
 
 
-def _filter_jobs_batch(jobs, reasons_text):
+def _filter_jobs_batch(jobs, reasons_text, verdicts=None):
     """Filtre un lot d'offres via Mistral. Lève en cas d'échec (API ou JSON
     invalide) : à l'appelant de décider du repli, plutôt que de renvoyer le
     lot non filtré (ce qui spammerait l'utilisateur avec tout le bruit que
-    le filtre est censé éliminer)."""
+    le filtre est censé éliminer). Si `verdicts` est fourni, on y enregistre
+    la décision (garder/rejeter + raison) de chaque offre pour le cache."""
     mistral_key = os.environ["MISTRAL_API_KEY"]
     jobs_text = "\n".join([
         f"{i}. TITRE: {job['title']} | ENTREPRISE: {job['company']} | LIEU: {job['location']}"
@@ -1195,14 +1200,17 @@ Réponds UNIQUEMENT avec un JSON (sans texte avant/après, sans backticks) :
         idx = decision.get("index")
         if idx is None or idx >= len(jobs):
             continue
-        if decision.get("keep"):
-            kept.append(jobs[idx])
+        job = jobs[idx]
+        keep = bool(decision.get("keep"))
+        reason = decision.get('reason', '')
+        if verdicts is not None:
+            verdicts[ai_key(job)] = {"keep": keep, "reason": reason}
+        if keep:
+            kept.append(job)
         else:
-            excl_job = jobs[idx]
-            reason = decision.get('reason', '')
-            print(f"  IA exclu: {excl_job['title']} → {reason}")
-            log_excluded(excl_job['title'], excl_job['company'], excl_job.get('location', ''),
-                         excl_job.get('source', ''), f"IA: {reason}")
+            print(f"  IA exclu: {job['title']} → {reason}")
+            log_excluded(job['title'], job['company'], job.get('location', ''),
+                         job.get('source', ''), f"IA: {reason}")
     return kept
 
 
@@ -1220,20 +1228,49 @@ def filter_jobs_with_ai(jobs):
         for r in rejected_reasons[-30:]
     ]) if rejected_reasons else "Aucun rejet enregistré."
 
+    # Cache des verdicts : on ne réinterroge Mistral que sur les offres jamais
+    # jugées. Les déjà-tranchées sont rejouées depuis le cache (gratuit, et ça
+    # évite de saturer les rate limits / re-tronquer les réponses JSON).
+    verdicts = load_json(AI_VERDICTS_FILE, {})
+    kept = []
+    to_evaluate = []
+    for job in jobs:
+        cached = verdicts.get(ai_key(job))
+        if cached is None:
+            to_evaluate.append(job)
+        elif cached.get("keep"):
+            kept.append(job)
+        else:
+            log_excluded(job['title'], job['company'], job.get('location', ''),
+                         job.get('source', ''), f"IA (cache): {cached.get('reason', '')}")
+    print(f"  Cache IA : {len(jobs) - len(to_evaluate)} offre(s) déjà jugée(s), "
+          f"{len(to_evaluate)} à évaluer")
+
     # On découpe en lots : avec beaucoup de sources actives, le nombre
     # d'offres peut dépasser ce qu'un seul appel Mistral peut traiter sans
     # tronquer sa réponse JSON (cause vue en prod : "Unterminated string").
-    kept = []
-    for start in range(0, len(jobs), MISTRAL_BATCH_SIZE):
-        batch = jobs[start:start + MISTRAL_BATCH_SIZE]
+    for start in range(0, len(to_evaluate), MISTRAL_BATCH_SIZE):
+        batch = to_evaluate[start:start + MISTRAL_BATCH_SIZE]
         try:
-            kept += _filter_jobs_batch(batch, reasons_text)
+            kept += _filter_jobs_batch(batch, reasons_text, verdicts)
         except Exception as e:
             print(f"  EXCEPTION Mistral (lot {start}-{start+len(batch)}): {e}")
             print("  → lot écarté par sécurité (pas de filtre fiable = pas d'envoi non filtré)")
 
-    print(f"  Mistral: {len(kept)}/{len(jobs)} offres conservées")
+    # On borne le cache (dict ordonné par insertion : on garde les plus récents).
+    if len(verdicts) > AI_VERDICTS_MAX:
+        verdicts = dict(list(verdicts.items())[-AI_VERDICTS_MAX:])
+    save_json(AI_VERDICTS_FILE, verdicts)
+
+    print(f"  Mistral: {len(kept)}/{len(jobs)} offres conservées "
+          f"({len(to_evaluate)} réellement évaluées par l'IA)")
     return kept
+
+
+def ai_key(job):
+    """Clé de cache d'une offre pour le filtre IA et le suivi des déjà-vues :
+    titre + entreprise normalisés (même convention que mark_seen)."""
+    return f"{job['title'].lower().strip()}|{job['company'].lower().strip()}"
 
 
 def deduplicate(jobs):
@@ -1443,11 +1480,13 @@ if __name__ == "__main__":
     all_jobs = filtered_jobs
     print(f"\nLocalisations exclues : {before_loc_filter - len(all_jobs)} offre(s)")
 
-    print(f"\n{len(all_jobs)} offres brutes avant filtrage IA")
+    # Dédup AVANT l'IA : une même offre remontée par plusieurs sources/combos
+    # mot-clé×ville n'est ainsi évaluée qu'une fois par Mistral.
+    all_jobs = deduplicate(all_jobs)
+    print(f"\n{len(all_jobs)} offres uniques avant filtrage IA")
     all_jobs = filter_jobs_with_ai(all_jobs)
 
-    jobs = deduplicate(all_jobs)
-    jobs = mark_seen(jobs, seen_ids)
+    jobs = mark_seen(all_jobs, seen_ids)
 
     new_seen = seen_ids | {f"{j['title'].lower()}|{j['company'].lower()}" for j in jobs}
     save_json(SEEN_FILE, list(new_seen))
