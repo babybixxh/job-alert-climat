@@ -24,7 +24,7 @@
     "title": "Directeur de Projet Complexes Environnement F/H (CDI)",
     "company": "Brawo Impact",
     "location": "15ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/land/ad/5779063923?se=xt2qytpy8RG03p_b2NRIZw&utm_medium=api&utm_source=ae8a5ffa&v=B59E7B979BA4E57098521C39AD09BFD062BB3E2A",
+    "url": "https://www.adzuna.fr/land/ad/5779063923?se=uJ8JSdty8RGiVqWJe_bADg&utm_medium=api&utm_source=ae8a5ffa&v=B59E7B979BA4E57098521C39AD09BFD062BB3E2A",
     "description": "Brawo Impact est l'agence de recrutement de référence pour les professionnels et les organisations qui s'engagent en faveur de la transformation durab...",
     "source": "Adzuna",
     "is_new": false
@@ -118,5 +118,15 @@
     "description": "",
     "source": "ADEME",
     "is_new": false
+  },
+  {
+    "id": "https://jobs.makesense.org/fr/jobs/eqosphere-cheffe-de-projet-rse-economie-circulaire-dechets-et-anti-gaspillage-ANM4dmIGWYB8CuQpwqnA?source=search",
+    "title": "Chef(fe) de projet rse, économie circulaire, déchets & anti-gaspillage",
+    "company": "Eqosphere",
+    "location": "Marseille",
+    "url": "https://jobs.makesense.org/fr/jobs/eqosphere-cheffe-de-projet-rse-economie-circulaire-dechets-et-anti-gaspillage-ANM4dmIGWYB8CuQpwqnA?source=search",
+    "description": "",
+    "source": "JTMS",
+    "is_new": true
   }
 ]
