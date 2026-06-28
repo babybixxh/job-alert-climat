@@ -742,13 +742,24 @@ def debug_climatebase():
         r = requests.get("https://climatebase.org/jobs", headers=headers, timeout=15)
         print(f"DEBUG climatebase /jobs → HTTP {r.status_code}, len={len(r.text)}")
         text = r.text
-        for marker in ["__NEXT_DATA__", "supabase", "Supabase", "NEXT_PUBLIC", "script id=", "json"]:
-            idx = text.find(marker)
-            print(f"  marker '{marker}' found at {idx}")
-            if idx != -1:
-                print("    context:", text[max(0, idx-100):idx+300])
-        # dump a chunk near the middle to see what's there
-        print("MID CHUNK:", text[len(text)//2:len(text)//2+1500])
+        import json as _json
+        idx = text.find('id="__NEXT_DATA__"')
+        start = text.find(">", idx) + 1
+        end = text.find("</script>", start)
+        raw = text[start:end]
+        data = _json.loads(raw)
+        page_props = data.get("props", {}).get("pageProps", {})
+        print("PAGE PROPS KEYS:", list(page_props.keys()))
+        jobs = page_props.get("jobs", [])
+        print("NUM JOBS:", len(jobs))
+        if jobs:
+            print("JOB[0] KEYS:", list(jobs[0].keys()))
+            print("JOB[0]:", jobs[0])
+        employers = page_props.get("employers", page_props.get("employersById"))
+        print("EMPLOYERS TYPE:", type(employers))
+        if isinstance(employers, dict):
+            first_key = next(iter(employers))
+            print("EMPLOYER SAMPLE:", employers[first_key])
     except Exception as e:
         print(f"DEBUG EXCEPTION: {e}")
 
