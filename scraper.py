@@ -573,6 +573,7 @@ def search_jtms():
     seen_urls = set()
     for loc in JTMS_LOCATIONS:
         try:
+            from bs4 import BeautifulSoup
             url = f"https://jobs.makesense.org/fr/s/jobs/{loc}/all/cdi"
             r = requests.get(url, headers=headers, timeout=15)
             if r.status_code != 200:
