@@ -582,26 +582,27 @@ def search_jtms():
             soup = BeautifulSoup(r.text, "html.parser")
             links = soup.find_all("a", href=lambda h: h and "/fr/jobs/" in h and "/fiches-metiers/" not in h)
             print(f"  JTMS '{loc}' → {len(links)} liens d'offres trouvés")
-            for i, link in enumerate(links[:3]):
-                print(f"  JTMS DEBUG HTML [{loc}][{i}]: {str(link)[:600]}")
             for link in links:
                 href = link.get("href", "")
                 job_url = href if href.startswith("http") else "https://jobs.makesense.org" + href
                 if job_url in seen_urls:
                     continue
-                title = link.get_text(strip=True) or link.get("aria-label", "")
+                title_tag = link.find("h3", class_="job__title")
+                company_tag = link.find("span", class_="job__company")
+                title = title_tag.get_text(strip=True) if title_tag else ""
+                company = company_tag.get_text(strip=True) if company_tag else "N/A"
                 if not title or len(title) < 5:
                     continue
                 if not any(term in title.lower() for term in JTMS_CLIMATE_TERMS):
                     continue
                 seen_urls.add(job_url)
                 if any(excl in title.lower() for excl in exclusions):
-                    log_excluded(title, "N/A", loc, "JTMS", "mot-clé exclu")
+                    log_excluded(title, company, loc, "JTMS", "mot-clé exclu")
                     continue
                 jobs.append({
                     "id": job_url,
                     "title": clean_text(title),
-                    "company": "N/A",
+                    "company": clean_text(company),
                     "location": "France" if loc == "France" else loc.split("--")[0],
                     "url": job_url,
                     "description": "",
