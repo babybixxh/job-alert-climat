@@ -715,18 +715,17 @@ def debug_apec():
         except Exception as e:
             print(f"  DEBUG APEC EXCEPTION [{label}]: {e}")
 
-    # 1) champ invalide → liste complète des 34 champs valides du DTO.
-    post("field-list", {"motsCles": "climat", "zzz_invalid_field": 1})
-    # 2) body complet best-guess → on espère un 200 + le schéma des offres.
-    post("best-guess", {
+    base = {
         "motsCles": "climat",
         "fonctions": [], "lieux": [], "typesContrat": [], "typesConvention": [],
         "niveauxExperience": [], "secteursActivite": [], "statutPoste": [],
-        "typesTeletravail": [], "idsEtablissements": [],
-        "sortsType": "DATE",
-        "pagination": {"startIndex": 0, "range": 20},
+        "typesTeletravail": [], "idsEtablissement": [], "sorts": [],
         "activeFiltre": False,
-    })
+    }
+    # Deux formes de pagination : la bonne renvoie 200, l'autre révèle ses
+    # sous-champs valides via l'erreur.
+    post("pagination-A", {**base, "pagination": {"startIndex": 0, "range": 20}})
+    post("pagination-B", {**base, "pagination": {"page": 0, "nombreParPage": 20}})
 
 
 def search_remotive():
