@@ -28,6 +28,9 @@ LOCATIONS = ["Paris", "Marseille", "Aix-en-Provence", "Toulon", "Nice"]
 # distincte de l'agglomération toulonnaise, jugée hors zone par Arnaud).
 LOCATION_EXCLUSIONS = ["la garde"]
 
+# Employeurs à écarter systématiquement, quelle que soit la source.
+COMPANY_EXCLUSIONS = ["eqosphere"]
+
 EXCLUSIONS = [
     "stage", "alternance", "alternant", "alternan", "apprentissage", "apprenti",
     "intern", "junior", "en alternance", "en stage", "contrat pro",
@@ -149,6 +152,11 @@ def matches_location(value):
 def is_location_excluded(value):
     text = (value or "").lower()
     return any(term in text for term in LOCATION_EXCLUSIONS)
+
+
+def is_company_excluded(value):
+    text = (value or "").lower()
+    return any(term in text for term in COMPANY_EXCLUSIONS)
 
 
 def get_ft_token():
@@ -1058,6 +1066,10 @@ if __name__ == "__main__":
         if is_location_excluded(job.get("location", "")):
             log_excluded(job["title"], job["company"], job.get("location", ""),
                          job.get("source", ""), "localisation exclue")
+            continue
+        if is_company_excluded(job.get("company", "")):
+            log_excluded(job["title"], job["company"], job.get("location", ""),
+                         job.get("source", ""), "employeur exclu")
             continue
         filtered_jobs.append(job)
     all_jobs = filtered_jobs
