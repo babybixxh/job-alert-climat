@@ -1,5 +1,15 @@
 [
   {
+    "id": "5771623156",
+    "title": "Ingénieur Climat H/F",
+    "company": "GIO Recrutement Boulogne",
+    "location": "8ème Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/details/5771623156?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Au sein d'une équipe engagée, vous interviendrez sur des missions à forte valeur ajoutée, en audit comme en conseil. Vos missions sont les suivantes :...",
+    "source": "Adzuna",
+    "is_new": false
+  },
+  {
     "id": "5771517798",
     "title": "Ingénieur Climat H/F",
     "company": "GIO Recrutement",
@@ -30,16 +40,6 @@
     "is_new": false
   },
   {
-    "id": "5771623156",
-    "title": "Ingénieur Climat H/F",
-    "company": "GIO Recrutement Boulogne",
-    "location": "8ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/details/5771623156?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Au sein d'une équipe engagée, vous interviendrez sur des missions à forte valeur ajoutée, en audit comme en conseil. Vos missions sont les suivantes :...",
-    "source": "Adzuna",
-    "is_new": false
-  },
-  {
     "id": "210FBMF",
     "title": "Consultant Bilan Carbone (H/F)",
     "company": "BEST VALUE",
@@ -47,6 +47,16 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/210FBMF",
     "description": "Contexte\nBEST VALUE est une société à mission, dont l'objet est d'accompagner les organisations dans la structuration de démarches de durabilité créat...",
     "source": "France Travail",
+    "is_new": false
+  },
+  {
+    "id": "5777512761",
+    "title": "DIRECTEUR DE PROJETS – ENVIRONNEMENT RÈGLEMENTAIRE F/H",
+    "company": "EODD INGENIEURS CONSEILS",
+    "location": "Allauch, Marseille",
+    "url": "https://www.adzuna.fr/details/5777512761?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Dans le cadre du développement de notre activité, nous recherchons notre \" Directeur de Projets Règlementaire \" H/F. Le poste est ouvert sur toutes no...",
+    "source": "Adzuna",
     "is_new": false
   },
   {
@@ -90,21 +100,11 @@
     "is_new": false
   },
   {
-    "id": "5777512761",
-    "title": "DIRECTEUR DE PROJETS – ENVIRONNEMENT RÈGLEMENTAIRE F/H",
-    "company": "EODD INGENIEURS CONSEILS",
-    "location": "Allauch, Marseille",
-    "url": "https://www.adzuna.fr/details/5777512761?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Dans le cadre du développement de notre activité, nous recherchons notre \" Directeur de Projets Règlementaire \" H/F. Le poste est ouvert sur toutes no...",
-    "source": "Adzuna",
-    "is_new": false
-  },
-  {
     "id": "5772460669",
     "title": "Responsable de Projets ESG",
     "company": "Building Manager Recrutement",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/land/ad/5772460669?se=oFQ1Iy5z8RGiVqWJe_bADg&utm_medium=api&utm_source=ae8a5ffa&v=5576617EADDDE74F4889FEC47BDCC79CC067FC96",
+    "url": "https://www.adzuna.fr/land/ad/5772460669?se=Yo31-C5z8RG03p_b2NRIZw&utm_medium=api&utm_source=ae8a5ffa&v=5576617EADDDE74F4889FEC47BDCC79CC067FC96",
     "description": " Nouveau poste - AMO/MOD - Responsable de Projets ESG / Paris :  Notre client, acteur immobilier référent et intervenant sur des projets multiproduits...",
     "source": "Adzuna",
     "is_new": false
@@ -114,7 +114,7 @@
     "title": "Directeur de Projet Complexes Environnement F/H (CDI)",
     "company": "Brawo Impact",
     "location": "15ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/land/ad/5779063923?se=oFQ1Iy5z8RGiVqWJe_bADg&utm_medium=api&utm_source=ae8a5ffa&v=B59E7B979BA4E57098521C39AD09BFD062BB3E2A",
+    "url": "https://www.adzuna.fr/land/ad/5779063923?se=Yo31-C5z8RG03p_b2NRIZw&utm_medium=api&utm_source=ae8a5ffa&v=B59E7B979BA4E57098521C39AD09BFD062BB3E2A",
     "description": "Brawo Impact est l'agence de recrutement de référence pour les professionnels et les organisations qui s'engagent en faveur de la transformation durab...",
     "source": "Adzuna",
     "is_new": false
@@ -248,5 +248,257 @@
     "description": "The world's leading platform for climate careers. Accelerating climate solutions by building products, programs, and community to support the climate ",
     "source": "Remote EU",
     "is_new": false
+  },
+  {
+    "id": "178912334W",
+    "title": "Ingénieur Climat F/H",
+    "company": "GIO RECRUTEMENT",
+    "location": "Paris 08 - 75",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178912334W",
+    "description": "Au sein d'une équipe engagée, vous interviendrez sur des missions à forte valeur ajoutée, en audit comme en conseil.  Vos missions sont les suivantes :  Réaliser des bilans carbone sur les scopes 1, 2...",
+    "salary": "40 - 55 k€ brut annuel",
+    "date": "2026-06-19T22:34:07.000+0000",
+    "source": "APEC",
+    "is_new": true
+  },
+  {
+    "id": "178915088W",
+    "title": "Ingénieur Climat F/H",
+    "company": "Hellowork",
+    "location": "Paris 08 - 75",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178915088W",
+    "description": "Au sein d'une équipe engagée, vous interviendrez sur des missions à forte valeur ajoutée, en audit comme en conseil.   Vos missions sont les suivantes :   Réaliser des bilans carbone sur les scopes 1,...",
+    "salary": "40 - 55 k€ brut annuel",
+    "date": "2026-06-22T01:49:20.000+0000",
+    "source": "APEC",
+    "is_new": true
+  },
+  {
+    "id": "178908357W",
+    "title": "Chargé(e) de missions RSE - Environnement F/H",
+    "company": "Batibig",
+    "location": "Clichy - 92",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178908357W",
+    "description": "ans le cadre de vos fonctions, vous serez notamment en charge de :   Bilan Carbone    Analyse et suivi du Bilan Carbone : collecte des données & calcul (méthode BEGES) .    Mise en place et suivi du p...",
+    "salary": "36 - 40 k€ brut annuel",
+    "date": "2026-06-19T08:04:26.000+0000",
+    "source": "APEC",
+    "is_new": true
+  },
+  {
+    "id": "178919699W",
+    "title": "Chef.fe de projet en Transition Environnementale des Organisations F/H",
+    "company": "VIZEA",
+    "location": "Malakoff - 92",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178919699W",
+    "description": "Intégré.e à une équipe pluridisciplinaire et dynamique, sous la direction du responsable de l’entité Transition Environnementale des Organisations, vous aurez en charge les missions suivantes :  Vous ...",
+    "salary": "42 - 46 k€ brut annuel",
+    "date": "2026-06-22T08:45:20.000+0000",
+    "source": "APEC",
+    "is_new": true
+  },
+  {
+    "id": "178843922W",
+    "title": "Chef de projet environnement - AMO F/H",
+    "company": "METIGA",
+    "location": "Paris 03 - 75",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178843922W",
+    "description": "Au sein des équipes des équipes de notre client, leader français de l'ingénierie, votre rôle sera de :    Assurer et coordonner la production et le pilotage contractuel des missions qui vous seront co...",
+    "salary": "A partir de 35 k€ brut annuel",
+    "date": "2026-06-09T05:49:43.000+0000",
+    "source": "APEC",
+    "is_new": false
+  },
+  {
+    "id": "178918339W",
+    "title": "Chargé de Mission Décarbonation F/H",
+    "company": "Proaxian",
+    "location": "Bayonne - 64",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178918339W",
+    "description": "Rattaché(e) au Directeur développement technique et innovation, vous contribuerez à accompagner la démarche de décarbonation d'Etchart construction.  Vous travaillerez directement sur les sujets de co...",
+    "salary": "A négocier",
+    "date": "2026-06-22T04:21:09.000+0000",
+    "source": "APEC",
+    "is_new": true
+  },
+  {
+    "id": "178809515W",
+    "title": "RESPONSABLE RSE F/H",
+    "company": "GROUPE ETCHART",
+    "location": "Canéjan - 33",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178809515W",
+    "description": "Nos filiales du Groupe DL sont spécialisées en construction métallique, menuiseries et façades aluminium, étanchéité et vêture, construction bois.  Dans le cadre d'un renforcement de notre équipe, nou...",
+    "salary": "A négocier",
+    "date": "2026-06-03T05:46:34.000+0000",
+    "source": "APEC",
+    "is_new": true
+  },
+  {
+    "id": "178926686W",
+    "title": "Conseiller Transition Ecologique / Décarbonation F/H",
+    "company": "CHAMBRE DE COMMERCE D INDUSTRIE DE MAINE LOIRE",
+    "location": "Angers - 49",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178926686W",
+    "description": "Poste à pourvoir dès que possible et jusqu’au 31/12/2027 - Temps plein - Poste basé à Angers  Au sein du Pôle Mutations Economiques, vous assurez auprès de PME industrielles un accompagnement individu...",
+    "salary": "A négocier",
+    "date": "2026-06-23T07:40:40.000+0000",
+    "source": "APEC",
+    "is_new": true
+  },
+  {
+    "id": "178841687W",
+    "title": "Chef de projet environnement - AMO F/H",
+    "company": "Meteojob",
+    "location": "Paris 09 - 75",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178841687W",
+    "description": "Choisir MÉTIGA, c'est rejoindre une équipe passionnée par le défi de la transition écologique, qui agit pour sa carrière et pour le monde de demain.   MÉTIGA est une société à mission, spécialisée dan...",
+    "salary": "A négocier",
+    "date": "2026-06-09T01:28:09.000+0000",
+    "source": "APEC",
+    "is_new": true
+  },
+  {
+    "id": "178853558W",
+    "title": "Chargé.e de mission Transition écologique F/H",
+    "company": "COORDINATION DES ORGANISMES D'AIDE AUX CHOMEURS PAR L'EMPLOI PROVENCE ALPES COTE D'AZUR CORSE",
+    "location": "Marseille 01 - 13",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178853558W",
+    "description": "Rattaché·e à la déléguée régionale du Coorace PACA et intégré·e à l’équipe opérationnelle du projet inter-réseaux FTJ (Chantier École, COORACE PACA, Fédération des entreprises d’insertion), le·la char...",
+    "salary": "28 - 29 k€ brut annuel",
+    "date": "2026-06-10T14:24:29.000+0000",
+    "source": "APEC",
+    "is_new": false
+  },
+  {
+    "id": "178837800W",
+    "title": "Chargé.e Electrification et Transition écologique des territoires F/H",
+    "company": "ADEME",
+    "location": "Courbevoie - 92",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178837800W",
+    "description": "La Direction Régionale Ile de France de l'ADEME a pour objectif principal d'accompagner les collectivités et les entreprises des territoires - techniquement (conseil, outils et méthode) et financièrem...",
+    "salary": "A négocier",
+    "date": "2026-06-08T09:27:10.000+0000",
+    "source": "APEC",
+    "is_new": true
+  },
+  {
+    "id": "178868384W",
+    "title": "UN(E) CHARGE(E) DE MISSION PCAET F/H",
+    "company": "COMMUNAUTE D'AGGLOMERATION DE MORLAIX COMMUNAUTE",
+    "location": "Morlaix - 29",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178868384W",
+    "description": "Vos missions principales :   Préparer les outils de mise en œuvre du PCAET :  Décliner des supports de synthèse des actions du PCAET.  Contribuer à structurer la gouvernance et les outils de pilotage ...",
+    "salary": "A négocier",
+    "date": "2026-06-12T14:03:10.000+0000",
+    "source": "APEC",
+    "is_new": true
+  },
+  {
+    "id": "178950663W",
+    "title": "Chargé (e) de missions concertation transition énergétique F/H",
+    "company": "QUELIA",
+    "location": "Paris 09 - 75",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178950663W",
+    "description": "Vous souhaitez agir concrètement face à la crise climatique ?  Avec Quelia, l'agence de concertation dédiée à la transition écologique, engagez-vous sur le terrain auprès des acteurs du changement par...",
+    "salary": "A partir de 31 k€ brut annuel",
+    "date": "2026-06-26T14:18:01.000+0000",
+    "source": "APEC",
+    "is_new": true
+  },
+  {
+    "id": "178927882W",
+    "title": "Chargé de mission transition énergétique F/H",
+    "company": "Communauté de communes HAUT VAL DE SEVRE",
+    "location": "Saint-Maixent-l'École - 79",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178927882W",
+    "description": "La Communauté de communes Haut Val de Sèvre poursuit une politique ambitieuse en faveur de la transition écologique et énergétique. Dans ce contexte, nous recrutons un(e) Chargé(e) de mission Transiti...",
+    "salary": "26 - 40 k€ brut annuel",
+    "date": "2026-06-23T11:10:23.000+0000",
+    "source": "APEC",
+    "is_new": true
+  },
+  {
+    "id": "178829292W",
+    "title": "Chargé.e d'Affaires - Efficacité Energétique et Décarbonation F/H",
+    "company": "MANERGY",
+    "location": "Aix-en-Provence - 13",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178829292W",
+    "description": "En tant que Chargé(e) d'Affaires, vous interviendrez sur des missions complètes et variées, allant des études et audits énergétiques jusqu'au contrôle des performances, en passant par la maîtrise d'œu...",
+    "salary": "A négocier",
+    "date": "2026-06-11T10:59:28.000+0000",
+    "source": "APEC",
+    "is_new": false
+  },
+  {
+    "id": "178869160W",
+    "title": "Chargé d'Affaires CVC / Génie Climatique F/H",
+    "company": "LE BUREAU DES TALENTS",
+    "location": "Saint-Étienne-du-Rouvray - 76",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178869160W",
+    "description": "Véritable entrepreneur au sein de l'entreprise, vous êtes responsable du développement commercial, du pilotage opérationnel et de la rentabilité de vos affaires.  De la prospection à la réception des ...",
+    "salary": "30 - 42 k€ brut annuel",
+    "date": "2026-06-17T11:48:23.000+0000",
+    "source": "APEC",
+    "is_new": true
+  },
+  {
+    "id": "178852314W",
+    "title": "Responsable Développement Durable F/H",
+    "company": "PLAINE COMMUNE HABITAT",
+    "location": "Saint-Denis - 93",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178852314W",
+    "description": "Dans le cadre de sa stratégie \"Patrimoniale et Transition Écologique\", Plaine Commune Habitat engage une transformation ambitieuse vers la neutralité carbone à l’horizon 2050.  Le·la Responsable Dével...",
+    "salary": "40 - 50 k€ brut annuel",
+    "date": "2026-06-10T10:00:13.000+0000",
+    "source": "APEC",
+    "is_new": true
+  },
+  {
+    "id": "178825879W",
+    "title": "Responsable Développement durable (f-h) F/H",
+    "company": "SELESCOPE",
+    "location": "Paris 14 - 75",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178825879W",
+    "description": "Vous êtes rattaché(e) à la Directrice Développement Durable et Économie Circulaire. Vous accompagnez le secteur sur les enjeux liés au développement durable, intégrant transition alimentaire et écolog...",
+    "salary": "40 - 50 k€ brut annuel",
+    "date": "2026-06-05T10:01:39.000+0000",
+    "source": "APEC",
+    "is_new": true
+  },
+  {
+    "id": "178810311W",
+    "title": "Responsable du développement commercial de l'activité bâtiments durables F/H",
+    "company": "SOGREAH",
+    "location": "Saint-Ouen - 93",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178810311W",
+    "description": "Nos thématiques incluent la performance énergétique et bas carbone, la résilience climatique, l’économie circulaire, la garantie de performance, le bien-être et la qualité de l’air intérieur, ainsi qu...",
+    "salary": "A négocier",
+    "date": "2026-06-03T09:01:35.000+0000",
+    "source": "APEC",
+    "is_new": true
+  },
+  {
+    "id": "178919724W",
+    "title": "Responsable d'entité en Bâtiment Durable F/H",
+    "company": "VIZEA",
+    "location": "Malakoff - 92",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178919724W",
+    "description": "Rattaché.e au responsable du pôle Bâtiment durable, vous pilotez une entité et contribuez à son développement :  - Expertise technique : Vous animez l’expertise technique autour des sujets clés du bât...",
+    "salary": "46 - 50 k€ brut annuel",
+    "date": "2026-06-22T08:52:12.000+0000",
+    "source": "APEC",
+    "is_new": true
+  },
+  {
+    "id": "178919873W",
+    "title": "Responsable d’entité en Urbanisme Durable F/H",
+    "company": "VIZEA",
+    "location": "Malakoff - 92",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178919873W",
+    "description": "Rattaché.e au responsable du pôle Urbanisme durable, vous pilotez une entité et contribuez à son développement :  - Expertise technique : Vous animez l’expertise technique autour des sujets clés de l’...",
+    "salary": "46 - 50 k€ brut annuel",
+    "date": "2026-06-22T09:08:11.000+0000",
+    "source": "APEC",
+    "is_new": true
   }
 ]
