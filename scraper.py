@@ -546,6 +546,70 @@ def search_ademe():
         return []
 
 
+JTMS_LOCATIONS = ["France", "Paris--France", "Marseille--France"]
+
+# jobs.makesense.org agrège des milliers d'offres tous secteurs (solidarité,
+# santé, culture...) : pas de paramètre de recherche fiable connu côté URL,
+# donc on filtre nous-mêmes les titres sur ces racines climat/RSE après scraping.
+JTMS_CLIMATE_TERMS = (
+    "climat", "carbone", "carbon", "rse", "durab", "écolog", "ecolog",
+    "transition écolog", "transition energ", "décarbon", "decarbon",
+    "bas-carbone", "environnement", "biodiversité", "biodiversite",
+)
+
+
+def search_jtms():
+    """Scrape jobs.makesense.org (« Jobs that make sense »), plateforme
+    d'offres à impact recommandée pour élargir au-delà des entreprises déjà
+    suivies. Pas d'API publique documentée : on scrape les pages de
+    résultats par localisation et on filtre nous-mêmes sur des mots-clés
+    climat/RSE, le site n'ayant pas de paramètre de recherche fiable connu."""
+    exclusions = get_exclusions()
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36",
+        "Accept-Language": "fr-FR",
+    }
+    jobs = []
+    seen_urls = set()
+    for loc in JTMS_LOCATIONS:
+        try:
+            url = f"https://jobs.makesense.org/fr/s/jobs/{loc}/all/cdi"
+            r = requests.get(url, headers=headers, timeout=15)
+            if r.status_code != 200:
+                print(f"  JTMS '{loc}' → HTTP {r.status_code}")
+                continue
+            soup = BeautifulSoup(r.text, "html.parser")
+            links = soup.find_all("a", href=lambda h: h and "/fr/jobs/" in h and "/fiches-metiers/" not in h)
+            print(f"  JTMS '{loc}' → {len(links)} liens d'offres trouvés")
+            for link in links:
+                href = link.get("href", "")
+                job_url = href if href.startswith("http") else "https://jobs.makesense.org" + href
+                if job_url in seen_urls:
+                    continue
+                title = link.get_text(strip=True) or link.get("aria-label", "")
+                if not title or len(title) < 5:
+                    continue
+                if not any(term in title.lower() for term in JTMS_CLIMATE_TERMS):
+                    continue
+                seen_urls.add(job_url)
+                if any(excl in title.lower() for excl in exclusions):
+                    log_excluded(title, "N/A", loc, "JTMS", "mot-clé exclu")
+                    continue
+                jobs.append({
+                    "id": job_url,
+                    "title": clean_text(title),
+                    "company": "N/A",
+                    "location": "France" if loc == "France" else loc.split("--")[0],
+                    "url": job_url,
+                    "description": "",
+                    "source": "JTMS",
+                })
+        except Exception as e:
+            print(f"  EXCEPTION JTMS '{loc}': {e}")
+    print(f"  JTMS total → {len(jobs)} offres après filtre")
+    return jobs
+
+
 def _wttj_text(value):
     """Normalise un champ WTTJ qui peut être une chaîne, un dict localisé
     ({'fr': '...', 'en': '...'}) ou un dict {'name': '...'} en chaîne simple."""
@@ -822,6 +886,7 @@ def section_html(title, emoji, jobs, color):
         "Jooble": "#b56900",
         "ADEME": "#c04a00",
         "WTTJ": "#7a6500",
+        "JTMS": "#6a1b9a",
     }
     html = f"""
     <div style="margin:2rem 0 1rem">
@@ -960,6 +1025,7 @@ if __name__ == "__main__":
     all_jobs += search_ademe()
     all_jobs += search_wttj()
     all_jobs += search_adzuna_companies()
+    all_jobs += search_jtms()
 
     before_loc_filter = len(all_jobs)
     filtered_jobs = []
