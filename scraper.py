@@ -631,6 +631,96 @@ def search_jtms():
     return jobs
 
 
+# Mots-clés (slugs d'URL) testés sur Choisir le service public. On reste sur des
+# slugs simples ; le run debug confirmera lesquels renvoient des résultats.
+SP_KEYWORDS = [
+    "climat", "developpement-durable", "transition-ecologique",
+    "environnement", "rse", "energie",
+]
+
+# Termes de localisation PACA pour filtrer côté client (le « 13 » brut serait
+# trop bruyant, on s'en tient à des libellés nommés).
+SP_LOCATION_TERMS = (
+    "marseille", "aix-en-provence", "aix ", "toulon", "nice", "provence",
+    "paca", "bouches-du-rhône", "bouches-du-rhone", "var", "alpes-maritimes",
+    "vaucluse", "avignon", "télétravail", "teletravail",
+)
+
+
+def search_service_public():
+    """Scrape choisirleservicepublic.gouv.fr (ex-Place de l'emploi public /
+    BIEP) : offres des fonctions publiques d'État, territoriale et hospitalière.
+    Cible idéale pour les postes développement durable / transition en
+    collectivité (Région Sud, Métropole Aix-Marseille), agence ou établissement
+    public. Pas d'API publique simple : on scrape les pages de résultats
+    filtrées par mot-clé et on filtre nous-mêmes la localisation PACA côté
+    client. Run debug temporaire pour cartographier la structure HTML."""
+    exclusions = get_exclusions()
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36",
+        "Accept-Language": "fr-FR",
+    }
+    jobs = []
+    seen_urls = set()
+    for kw in SP_KEYWORDS:
+        try:
+            from bs4 import BeautifulSoup
+            url = f"https://choisirleservicepublic.gouv.fr/nos-offres/filtres/mot-cles/{kw}/"
+            r = requests.get(url, headers=headers, timeout=15)
+            if r.status_code != 200:
+                print(f"  ServicePublic '{kw}' → HTTP {r.status_code}")
+                continue
+            soup = BeautifulSoup(r.text, "html.parser")
+            all_links = soup.find_all("a", href=True)
+            # Liens d'offres = pas une page de filtre/dépubliée, contenant 'offre'.
+            offerish = [
+                a for a in all_links
+                if "offre" in a.get("href", "").lower()
+                and "/filtres/" not in a.get("href", "")
+                and "depubliee" not in a.get("href", "")
+                and "nos-offres/" != a.get("href", "").strip("/").lower() + "/"
+            ]
+            print(f"  ServicePublic '{kw}' → {len(all_links)} liens, {len(offerish)} 'offre-ish'")
+            # DEBUG temporaire : structure des cartes + IDs de localisation
+            for a in offerish[:5]:
+                print(f"  SP DEBUG OFFER: {a.get('href')} | txt={a.get_text(strip=True)[:50]}")
+            for i, a in enumerate(offerish[:3]):
+                cont = a.find_parent(["article", "li"]) or a.parent
+                print(f"  SP DEBUG CARD[{kw}][{i}]: {str(cont)[:600]}")
+            for a in [x for x in all_links if "localisation/" in x.get("href", "")][:15]:
+                print(f"  SP DEBUG LOC: {a.get('href')} | {a.get_text(strip=True)[:40]}")
+
+            for a in offerish:
+                href = a.get("href", "")
+                job_url = href if href.startswith("http") else "https://choisirleservicepublic.gouv.fr" + href
+                if job_url in seen_urls:
+                    continue
+                title = a.get_text(strip=True)
+                if not title or len(title) < 5:
+                    continue
+                cont = a.find_parent(["article", "li"]) or a.parent
+                card_text = cont.get_text(" ", strip=True).lower() if cont else ""
+                if not any(t in card_text for t in SP_LOCATION_TERMS):
+                    continue
+                seen_urls.add(job_url)
+                if any(excl in title.lower() for excl in exclusions):
+                    log_excluded(title, "Service public", "PACA", "Service Public", "mot-clé exclu")
+                    continue
+                jobs.append({
+                    "id": job_url,
+                    "title": clean_text(title),
+                    "company": "Fonction publique",
+                    "location": "PACA",
+                    "url": job_url,
+                    "description": "",
+                    "source": "Service Public",
+                })
+        except Exception as e:
+            print(f"  EXCEPTION ServicePublic '{kw}': {e}")
+    print(f"  ServicePublic total → {len(jobs)} offres après filtre")
+    return jobs
+
+
 def _wttj_text(value):
     """Normalise un champ WTTJ qui peut être une chaîne, un dict localisé
     ({'fr': '...', 'en': '...'}) ou un dict {'name': '...'} en chaîne simple."""
@@ -946,6 +1036,7 @@ def section_html(title, emoji, jobs, color):
         "ADEME": "#c04a00",
         "WTTJ": "#7a6500",
         "JTMS": "#6a1b9a",
+        "Service Public": "#000091",
     }
     html = f"""
     <div style="margin:2rem 0 1rem">
@@ -1085,6 +1176,7 @@ if __name__ == "__main__":
     all_jobs += search_wttj()
     all_jobs += search_adzuna_companies()
     all_jobs += search_jtms()
+    all_jobs += search_service_public()
 
     before_loc_filter = len(all_jobs)
     filtered_jobs = []
