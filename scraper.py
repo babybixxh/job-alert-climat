@@ -631,20 +631,43 @@ def search_jtms():
     return jobs
 
 
-# Mots-clés (slugs d'URL) testés sur Choisir le service public. On reste sur des
-# slugs simples ; le run debug confirmera lesquels renvoient des résultats.
+# Mots-clés (slugs d'URL) interrogés sur Choisir le service public.
 SP_KEYWORDS = [
     "climat", "developpement-durable", "transition-ecologique",
     "environnement", "rse", "energie",
 ]
 
-# Termes de localisation PACA pour filtrer côté client (le « 13 » brut serait
-# trop bruyant, on s'en tient à des libellés nommés).
-SP_LOCATION_TERMS = (
-    "marseille", "aix-en-provence", "aix ", "toulon", "nice", "provence",
-    "paca", "bouches-du-rhône", "bouches-du-rhone", "var", "alpes-maritimes",
-    "vaucluse", "avignon", "télétravail", "teletravail",
-)
+# Départements PACA → libellé. Les offres TERRITORIALES encodent le département
+# dans leur référence d'URL (« ...-reference-O0<dd>... », ex. O013 = Bouches-du-
+# Rhône) : filtre fiable, sans dépendre du texte de la carte.
+SP_PACA_DEPTS = {
+    "04": "Alpes-de-Haute-Provence", "05": "Hautes-Alpes",
+    "06": "Alpes-Maritimes (Nice)", "13": "Bouches-du-Rhône (Marseille)",
+    "83": "Var (Toulon)", "84": "Vaucluse (Avignon)",
+}
+
+# Pour les offres d'État (référence sans code département), on retombe sur une
+# détection par libellé dans le texte de la carte.
+SP_PACA_TEXT = [
+    ("marseille", "Marseille"), ("aix-en-provence", "Aix-en-Provence"),
+    ("toulon", "Toulon"), ("nice", "Nice"), ("avignon", "Avignon"),
+    ("bouches-du-rhône", "Bouches-du-Rhône"), ("bouches-du-rhone", "Bouches-du-Rhône"),
+    ("alpes-maritimes", "Alpes-Maritimes"), ("provence-alpes", "PACA"),
+    ("paca", "PACA"), ("télétravail", "Télétravail"), ("teletravail", "Télétravail"),
+]
+
+
+def _sp_paca_location(job_url, card_text):
+    """Renvoie un libellé de lieu PACA si l'offre est en PACA, sinon None.
+    1) offre territoriale : département lu dans la référence d'URL ;
+    2) offre d'État : libellé repéré dans le texte de la carte."""
+    m = re.search(r"reference-O0(\d{2})", job_url)
+    if m:
+        return SP_PACA_DEPTS.get(m.group(1))  # None si territoriale hors PACA
+    for term, label in SP_PACA_TEXT:
+        if term in card_text:
+            return label
+    return None
 
 
 def search_service_public():
@@ -652,9 +675,8 @@ def search_service_public():
     BIEP) : offres des fonctions publiques d'État, territoriale et hospitalière.
     Cible idéale pour les postes développement durable / transition en
     collectivité (Région Sud, Métropole Aix-Marseille), agence ou établissement
-    public. Pas d'API publique simple : on scrape les pages de résultats
-    filtrées par mot-clé et on filtre nous-mêmes la localisation PACA côté
-    client. Run debug temporaire pour cartographier la structure HTML."""
+    public. Pas d'API publique simple : on scrape les pages de résultats par
+    mot-clé et on ne garde que les offres localisées en PACA."""
     exclusions = get_exclusions()
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36",
@@ -671,26 +693,9 @@ def search_service_public():
                 print(f"  ServicePublic '{kw}' → HTTP {r.status_code}")
                 continue
             soup = BeautifulSoup(r.text, "html.parser")
-            all_links = soup.find_all("a", href=True)
-            # Liens d'offres = pas une page de filtre/dépubliée, contenant 'offre'.
-            offerish = [
-                a for a in all_links
-                if "offre" in a.get("href", "").lower()
-                and "/filtres/" not in a.get("href", "")
-                and "depubliee" not in a.get("href", "")
-                and "nos-offres/" != a.get("href", "").strip("/").lower() + "/"
-            ]
-            print(f"  ServicePublic '{kw}' → {len(all_links)} liens, {len(offerish)} 'offre-ish'")
-            # DEBUG temporaire : structure des cartes + IDs de localisation
-            for a in offerish[:5]:
-                print(f"  SP DEBUG OFFER: {a.get('href')} | txt={a.get_text(strip=True)[:50]}")
-            for i, a in enumerate(offerish[:3]):
-                cont = a.find_parent(["article", "li"]) or a.parent
-                print(f"  SP DEBUG CARD[{kw}][{i}]: {str(cont)[:600]}")
-            for a in [x for x in all_links if "localisation/" in x.get("href", "")][:15]:
-                print(f"  SP DEBUG LOC: {a.get('href')} | {a.get_text(strip=True)[:40]}")
-
-            for a in offerish:
+            offer_links = soup.find_all("a", href=lambda h: h and "/offre-emploi/" in h)
+            print(f"  ServicePublic '{kw}' → {len(offer_links)} offres")
+            for a in offer_links:
                 href = a.get("href", "")
                 job_url = href if href.startswith("http") else "https://choisirleservicepublic.gouv.fr" + href
                 if job_url in seen_urls:
@@ -700,24 +705,25 @@ def search_service_public():
                     continue
                 cont = a.find_parent(["article", "li"]) or a.parent
                 card_text = cont.get_text(" ", strip=True).lower() if cont else ""
-                if not any(t in card_text for t in SP_LOCATION_TERMS):
+                location = _sp_paca_location(job_url, card_text)
+                if not location:
                     continue
                 seen_urls.add(job_url)
                 if any(excl in title.lower() for excl in exclusions):
-                    log_excluded(title, "Service public", "PACA", "Service Public", "mot-clé exclu")
+                    log_excluded(title, "Fonction publique", location, "Service Public", "mot-clé exclu")
                     continue
                 jobs.append({
                     "id": job_url,
                     "title": clean_text(title),
                     "company": "Fonction publique",
-                    "location": "PACA",
+                    "location": location,
                     "url": job_url,
                     "description": "",
                     "source": "Service Public",
                 })
         except Exception as e:
             print(f"  EXCEPTION ServicePublic '{kw}': {e}")
-    print(f"  ServicePublic total → {len(jobs)} offres après filtre")
+    print(f"  ServicePublic total → {len(jobs)} offres PACA après filtre")
     return jobs
 
 
