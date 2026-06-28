@@ -23,6 +23,11 @@ KEYWORDS = [
 
 LOCATIONS = ["Paris", "Marseille", "Aix-en-Provence", "Toulon", "Nice"]
 
+# Communes trop excentrées à écarter même quand elles ressortent comme
+# "Toulon"/"Nice" dans les résultats bruts (ex: La Garde est une commune
+# distincte de l'agglomération toulonnaise, jugée hors zone par Arnaud).
+LOCATION_EXCLUSIONS = ["la garde"]
+
 EXCLUSIONS = [
     "stage", "alternance", "alternant", "alternan", "apprentissage", "apprenti",
     "intern", "junior", "en alternance", "en stage", "contrat pro",
@@ -139,6 +144,11 @@ def matches_location(value):
     text = (value or "").lower()
     allowed_terms = ["paris", "marseille", "aix", "aix-en-provence", "toulon", "nice", "remote", "télétravail", "teletravail", "france", "paca", "provence"]
     return any(term in text for term in allowed_terms)
+
+
+def is_location_excluded(value):
+    text = (value or "").lower()
+    return any(term in text for term in LOCATION_EXCLUSIONS)
 
 
 def get_ft_token():
@@ -819,6 +829,17 @@ if __name__ == "__main__":
 
     all_jobs += search_ademe()
     all_jobs += search_wttj()
+
+    before_loc_filter = len(all_jobs)
+    filtered_jobs = []
+    for job in all_jobs:
+        if is_location_excluded(job.get("location", "")):
+            log_excluded(job["title"], job["company"], job.get("location", ""),
+                         job.get("source", ""), "localisation exclue")
+            continue
+        filtered_jobs.append(job)
+    all_jobs = filtered_jobs
+    print(f"\nLocalisations exclues : {before_loc_filter - len(all_jobs)} offre(s)")
 
     print(f"\n{len(all_jobs)} offres brutes avant filtrage IA")
     all_jobs = filter_jobs_with_ai(all_jobs)
