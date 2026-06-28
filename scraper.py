@@ -3,6 +3,7 @@ import os
 import json
 import requests
 import re
+import time
 import urllib3
 from html import unescape
 from email.mime.multipart import MIMEMultipart
@@ -165,7 +166,15 @@ def is_company_excluded(value):
     return any(term in text for term in COMPANY_EXCLUSIONS)
 
 
+_FT_TOKEN_CACHE = {"token": "", "expires_at": 0}
+
+
 def get_ft_token():
+    # Le token FT est valide ~30 min : on le met en cache pour tout le run au lieu
+    # d'en redemander un par appel (45 requêtes OAuth/run), ce qui déclenchait le
+    # rate-limit FT (400/réponses vides intermittentes sur certaines communes).
+    if _FT_TOKEN_CACHE["token"] and time.time() < _FT_TOKEN_CACHE["expires_at"]:
+        return _FT_TOKEN_CACHE["token"]
     client_id = os.environ.get("FT_CLIENT_ID", "")
     client_secret = os.environ.get("FT_CLIENT_SECRET", "")
     if not client_id or not client_secret:
@@ -186,7 +195,11 @@ def get_ft_token():
         if r.status_code != 200:
             print(f"  FT token erreur {r.status_code}: {r.text[:300]}")
             return ""
-        return r.json().get("access_token", "")
+        payload = r.json()
+        token = payload.get("access_token", "")
+        _FT_TOKEN_CACHE["token"] = token
+        _FT_TOKEN_CACHE["expires_at"] = time.time() + payload.get("expires_in", 1500) - 60
+        return token
     except Exception as e:
         print(f"  EXCEPTION token FT: {e}")
         return ""
@@ -321,7 +334,9 @@ def search_france_travail(keyword, location):
             "Authorization": f"Bearer {token}",
             "Accept": "application/json",
         }, timeout=10)
-        r.raise_for_status()
+        if r.status_code not in (200, 206):
+            print(f"  FT '{keyword}' / '{location}' → HTTP {r.status_code}: {r.text[:300]}")
+            return []
         data = r.json()
         results = data.get("resultats", [])
         print(f"  FT '{keyword}' / '{location}' → {len(results)} brutes")
