@@ -19,6 +19,8 @@ KEYWORDS = [
     "décarbonation",
     "RSE climat",
     "politiques climatiques",
+    "responsable développement durable",
+    "chargé de mission développement durable",
 ]
 
 LOCATIONS = ["Paris", "Marseille", "Aix-en-Provence", "Toulon", "Nice"]
@@ -101,7 +103,11 @@ Il a 3 ans de conseil en transformation (Bartle) et 3 ans de conseil stratégie 
 Il cherche un poste de consultant climat senior, chargé de mission climat, ou expert politiques
 publiques climatiques à Marseille, en PACA ou full télétravail (ou Paris).
 Il veut travailler dans un cabinet conseil renommé, une agence publique (ADEME, Région, Métropole),
-ou une ONG/think tank influent. Il ne veut PAS de postes terrain, techniciens, nucléaire,
+ou une ONG/think tank influent. À Marseille et en PACA (sa zone prioritaire), il est aussi ouvert à
+des postes qualifiés de responsable/chargé de RSE ou de développement durable en entreprise, de chargé
+de mission développement durable / transition en collectivité ou établissement public, ou de coordination
+de projets environnement / économie circulaire en association ou dans l'ESS ; à Paris il vise en priorité
+le conseil et la stratégie climat. Il ne veut PAS de postes terrain, techniciens, nucléaire,
 achats, RH, finance, stages ou alternances.
 """
 
@@ -554,7 +560,10 @@ def search_ademe():
         return []
 
 
-JTMS_LOCATIONS = ["France", "Paris--France", "Marseille--France"]
+JTMS_LOCATIONS = [
+    "France", "Paris--France", "Marseille--France",
+    "Aix-en-Provence--France", "Toulon--France", "Nice--France",
+]
 
 # jobs.makesense.org agrège des milliers d'offres tous secteurs (solidarité,
 # santé, culture...) : pas de paramètre de recherche fiable connu côté URL,
@@ -792,6 +801,17 @@ au niveau stratégie ou conseil, ET correspond à la séniorité du candidat (co
 pas junior). Exemples à garder : consultant·e climat/carbone/RSE, chargé·e de mission
 climat ou transition, expert·e politiques publiques climat, manager décarbonation,
 responsable RSE stratégique, chef·fe de projet bilan carbone / stratégie bas-carbone.
+
+ADAPTATION SELON LE LIEU (applique-la avant de trancher) :
+- LIEU contenant Marseille, Aix, Toulon, Nice, PACA, Provence, Bouches-du-Rhône, ou en
+  télétravail : ÉLARGIS les critères « garde ». En plus du conseil/stratégie, garde aussi les
+  postes QUALIFIÉS (confirmé/senior, pas junior) de : responsable ou chargé·e de RSE /
+  développement durable EN ENTREPRISE ; chargé·e de mission développement durable / transition
+  écologique / climat / énergie en COLLECTIVITÉ ou ÉTABLISSEMENT PUBLIC (Région, Métropole,
+  ADEME, EPCI…) ; coordination ou chef·fe de projet environnement / économie circulaire /
+  transition en ASSOCIATION ou ESS. Les rejets absolus ci-dessous s'appliquent quand même.
+- LIEU à Paris / Île-de-France (hors télétravail) : reste STRICT — uniquement conseil /
+  stratégie climat senior comme décrit ci-dessus.
 
 REJETTE (keep=false) dans TOUS ces cas, MÊME si « ENTREPRISE CIBLÉE: oui » :
 - métiers tech/produit/data (developer, engineer, fullstack, software, data scientist, devops, product manager)
