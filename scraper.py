@@ -9,6 +9,7 @@ from html import unescape
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -1445,30 +1446,36 @@ if __name__ == "__main__":
     seen_ids = set(load_json(SEEN_FILE, []))
     print(f"{len(seen_ids)} offres déjà vues en mémoire")
 
-    all_jobs = []
+    # Toutes les recherches sont indépendantes (chacune renvoie une liste, le
+    # seul état partagé est EXCLUDED_LOG via log_excluded() dont .append est
+    # thread-safe sous CPython). On les lance donc en parallèle pour ne plus
+    # payer ~140 requêtes HTTP en série.
+    #
+    # Hellowork désactivé : parseur renvoie « 0 cartes » à chaque appel (HTML
+    # changé). Greenjob.fr abandonné (recherche mot-clé non fonctionnelle).
+    # WTTJ désactivé : HTTP 202 anti-bot Cloudflare → 0 offre. Les fonctions
+    # sont conservées mais plus appelées.
+    tasks = []
     for keyword in KEYWORDS:
         for location in LOCATIONS:
-            all_jobs += search_adzuna(keyword, location)
-            all_jobs += search_france_travail(keyword, location)
-            all_jobs += search_jooble(keyword, location)
-        # Hellowork désactivé : le parseur renvoie « 0 cartes » à chaque appel
-        # (structure HTML changée / rendue côté client). La fonction est gardée
-        # mais plus appelée pour ne pas gaspiller 45 requêtes/run. À réactiver
-        # si search_hellowork() est réparé.
-        # Greenjob.fr abandonné : recherche par mot-clé non fonctionnelle côté site,
-        # et contenu majoritairement stages/bénévolat hors profil.
+            tasks.append((search_adzuna, (keyword, location)))
+            tasks.append((search_france_travail, (keyword, location)))
+            tasks.append((search_jooble, (keyword, location)))
+    for fn in (search_ademe, search_adzuna_companies, search_jtms,
+               search_service_public, search_ess, search_remotive,
+               search_arbeitnow, search_climatebase):
+        tasks.append((fn, ()))
 
-    all_jobs += search_ademe()
-    # WTTJ désactivé : l'API publique renvoie systématiquement HTTP 202 (défi
-    # anti-bot Cloudflare) → 0 offre. Fonction conservée pour réactivation
-    # éventuelle, mais plus appelée.
-    all_jobs += search_adzuna_companies()
-    all_jobs += search_jtms()
-    all_jobs += search_service_public()
-    all_jobs += search_ess()
-    all_jobs += search_remotive()
-    all_jobs += search_arbeitnow()
-    all_jobs += search_climatebase()
+    all_jobs = []
+    with ThreadPoolExecutor(max_workers=6) as executor:
+        futures = [executor.submit(fn, *args) for fn, args in tasks]
+        # On collecte dans l'ordre de soumission : l'ordre de all_jobs reste
+        # déterministe (important pour le « premier gagne » de deduplicate()).
+        for (fn, _), future in zip(tasks, futures):
+            try:
+                all_jobs += future.result()
+            except Exception as e:
+                print(f"  EXCEPTION {getattr(fn, '__name__', fn)}: {e}")
 
     before_loc_filter = len(all_jobs)
     filtered_jobs = []
