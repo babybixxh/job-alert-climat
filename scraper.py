@@ -742,11 +742,13 @@ def debug_climatebase():
         r = requests.get("https://climatebase.org/jobs", headers=headers, timeout=15)
         print(f"DEBUG climatebase /jobs → HTTP {r.status_code}, len={len(r.text)}")
         text = r.text
-        for marker in ["algolia", "ALGOLIA", "api.climatebase", "appId", "apiKey", "/api/", "graphql"]:
+        for marker in ["__NEXT_DATA__", "supabase", "Supabase", "NEXT_PUBLIC", "script id=", "json"]:
             idx = text.find(marker)
             print(f"  marker '{marker}' found at {idx}")
             if idx != -1:
                 print("    context:", text[max(0, idx-100):idx+300])
+        # dump a chunk near the middle to see what's there
+        print("MID CHUNK:", text[len(text)//2:len(text)//2+1500])
     except Exception as e:
         print(f"DEBUG EXCEPTION: {e}")
 
