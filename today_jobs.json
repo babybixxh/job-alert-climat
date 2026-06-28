@@ -9,6 +9,7 @@
     "salary": "40 k€ – 55 k€",
     "date": "2026-06-21T11:27:41Z",
     "source": "Adzuna",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -21,6 +22,7 @@
     "salary": "40 k€ – 55 k€",
     "date": "2026-06-21T09:05:45Z",
     "source": "Adzuna",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -33,6 +35,7 @@
     "salary": "",
     "date": "2026-06-28T03:50:12Z",
     "source": "Adzuna",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -45,6 +48,7 @@
     "salary": "",
     "date": "2026-06-28T08:23:56Z",
     "source": "Adzuna",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -55,6 +59,7 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/210FBMF",
     "description": "Contexte\nBEST VALUE est une société à mission, dont l'objet est d'accompagner les organisations dans la structuration de démarches de durabilité créat...",
     "source": "France Travail",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -67,6 +72,7 @@
     "salary": "",
     "date": "2026-06-26T11:35:01Z",
     "source": "Adzuna",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -79,42 +85,7 @@
     "salary": "",
     "date": "2026-06-26T23:29:53Z",
     "source": "Adzuna",
-    "is_new": false
-  },
-  {
-    "id": "5778272873",
-    "title": "Chargée de mission coordination et suivi des projets métropolitains - COMMUNE D'AUBAGNE",
-    "company": "Fonction publique Territoriale",
-    "location": "Aubagne, Marseille",
-    "url": "https://www.adzuna.fr/details/5778272873?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots La Ville d'Aubagne, s'inscrit dans le territoire de la Métropole Aix-Marseille-Provence et porte des ambitions fortes en...",
-    "salary": "",
-    "date": "2026-06-26T23:27:17Z",
-    "source": "Adzuna",
-    "is_new": false
-  },
-  {
-    "id": "5778221427",
-    "title": "Chargée/Chargé de mission promotion et rayonnement du territoire",
-    "company": "Fonction publique Territoriale",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5778221427?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots La Métropole d'Aix-Marseille-Provence pilote des politiques publiques innovantes au service de ses habitants. Son action...",
-    "salary": "",
-    "date": "2026-06-26T23:10:29Z",
-    "source": "Adzuna",
-    "is_new": false
-  },
-  {
-    "id": "5774013772",
-    "title": "Cheffe / chef de projets circuits courts agroalimentaires",
-    "company": "Fonction publique Territoriale",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5774013772?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Poste rattaché à la Direction Agriculture et Alimentation Durable de la DGD Transition Environnementale Eau Culture et S...",
-    "salary": "",
-    "date": "2026-06-23T23:03:59Z",
-    "source": "Adzuna",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -122,11 +93,12 @@
     "title": "Responsable de Projets ESG",
     "company": "Building Manager Recrutement",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/land/ad/5772460669?se=5HgOmTBz8RG03p_b2NRIZw&utm_medium=api&utm_source=ae8a5ffa&v=5576617EADDDE74F4889FEC47BDCC79CC067FC96",
+    "url": "https://www.adzuna.fr/land/ad/5772460669?se=aE5uazFz8RG03p_b2NRIZw&utm_medium=api&utm_source=ae8a5ffa&v=5576617EADDDE74F4889FEC47BDCC79CC067FC96",
     "description": " Nouveau poste - AMO/MOD - Responsable de Projets ESG / Paris :  Notre client, acteur immobilier référent et intervenant sur des projets multiproduits...",
     "salary": "",
     "date": "2026-06-22T12:29:38Z",
     "source": "Adzuna",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -134,11 +106,12 @@
     "title": "Directeur de Projet Complexes Environnement F/H (CDI)",
     "company": "Brawo Impact",
     "location": "15ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/land/ad/5779063923?se=5HgOmTBz8RG03p_b2NRIZw&utm_medium=api&utm_source=ae8a5ffa&v=B59E7B979BA4E57098521C39AD09BFD062BB3E2A",
+    "url": "https://www.adzuna.fr/land/ad/5779063923?se=aE5uazFz8RG03p_b2NRIZw&utm_medium=api&utm_source=ae8a5ffa&v=B59E7B979BA4E57098521C39AD09BFD062BB3E2A",
     "description": "Brawo Impact est l'agence de recrutement de référence pour les professionnels et les organisations qui s'engagent en faveur de la transformation durab...",
     "salary": "",
     "date": "2026-06-27T15:56:11Z",
     "source": "Adzuna",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -149,6 +122,7 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/210BFKN",
     "description": "Depuis 2016, Ynergie accompagne les professionnels et les particuliers dans la réduction de leur consommation d'énergie et la décarbonation des sites ...",
     "source": "France Travail",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -159,6 +133,7 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/210FHFD",
     "description": "Au cœur des enjeux qui transforment le secteur du bâtiment, le/la Chargé(e) de mission contribuera à l'animation du réseau métiers régional et au suiv...",
     "source": "France Travail",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -171,6 +146,7 @@
     "salary": "",
     "date": "2026-06-26T13:34:13Z",
     "source": "Adzuna",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -181,6 +157,7 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/3941085",
     "description": "Rejoignez une entreprise engagée et tournée vers l'avenir !\nDans le cadre du développement de notre stratégie QSE et RSE, nous recrutons\n1 Chargé de m...",
     "source": "France Travail",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -191,6 +168,7 @@
     "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-electrification-et-transition-ecologique-des-territoires-f-h_4791.aspx",
     "description": "",
     "source": "ADEME",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -201,6 +179,7 @@
     "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-projet-europeen-sante-des-sols-formation-et-sensibilisation-f-h_4811.aspx",
     "description": "",
     "source": "ADEME",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -211,6 +190,7 @@
     "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-transition-ecologique-f-h_4796.aspx",
     "description": "",
     "source": "ADEME",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -221,6 +201,7 @@
     "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-chef-fe-de-projets-decarbonation-industrie-f-h_4808.aspx",
     "description": "",
     "source": "ADEME",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -231,6 +212,7 @@
     "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-adaptation-au-changement-climatique-f-h_4807.aspx",
     "description": "",
     "source": "ADEME",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -241,6 +223,7 @@
     "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-transition-ecologique-f-h_4806.aspx",
     "description": "",
     "source": "ADEME",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -251,6 +234,7 @@
     "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-chef-fe-de-projet-evaluation-du-programme-prodicee-f-h_4805.aspx",
     "description": "",
     "source": "ADEME",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -263,6 +247,7 @@
     "salary": "",
     "date": "2026-06-09T11:59:07.158Z",
     "source": "Remote EU",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -275,6 +260,7 @@
     "salary": "",
     "date": "2026-06-03T09:12:26.257Z",
     "source": "Remote EU",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -287,6 +273,7 @@
     "salary": "40 - 55 k€ brut annuel",
     "date": "2026-06-19T22:34:07.000+0000",
     "source": "APEC",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -299,6 +286,7 @@
     "salary": "40 - 55 k€ brut annuel",
     "date": "2026-06-22T01:49:20.000+0000",
     "source": "APEC",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -311,6 +299,7 @@
     "salary": "36 - 40 k€ brut annuel",
     "date": "2026-06-19T08:04:26.000+0000",
     "source": "APEC",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -323,6 +312,7 @@
     "salary": "42 - 46 k€ brut annuel",
     "date": "2026-06-22T08:45:20.000+0000",
     "source": "APEC",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -335,6 +325,7 @@
     "salary": "A partir de 35 k€ brut annuel",
     "date": "2026-06-09T05:49:43.000+0000",
     "source": "APEC",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -347,6 +338,7 @@
     "salary": "A négocier",
     "date": "2026-06-22T04:21:09.000+0000",
     "source": "APEC",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -359,6 +351,7 @@
     "salary": "A négocier",
     "date": "2026-06-03T05:46:34.000+0000",
     "source": "APEC",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -371,6 +364,7 @@
     "salary": "A négocier",
     "date": "2026-06-23T07:40:40.000+0000",
     "source": "APEC",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -383,6 +377,7 @@
     "salary": "A négocier",
     "date": "2026-06-09T01:28:09.000+0000",
     "source": "APEC",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -395,6 +390,7 @@
     "salary": "28 - 29 k€ brut annuel",
     "date": "2026-06-10T14:24:29.000+0000",
     "source": "APEC",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -407,6 +403,7 @@
     "salary": "A négocier",
     "date": "2026-06-08T09:27:10.000+0000",
     "source": "APEC",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -419,6 +416,7 @@
     "salary": "A négocier",
     "date": "2026-06-12T14:03:10.000+0000",
     "source": "APEC",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -431,6 +429,7 @@
     "salary": "A partir de 31 k€ brut annuel",
     "date": "2026-06-26T14:18:01.000+0000",
     "source": "APEC",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -443,6 +442,7 @@
     "salary": "26 - 40 k€ brut annuel",
     "date": "2026-06-23T11:10:23.000+0000",
     "source": "APEC",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -455,6 +455,7 @@
     "salary": "A négocier",
     "date": "2026-06-11T10:59:28.000+0000",
     "source": "APEC",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -467,6 +468,7 @@
     "salary": "30 - 42 k€ brut annuel",
     "date": "2026-06-17T11:48:23.000+0000",
     "source": "APEC",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -479,6 +481,7 @@
     "salary": "40 - 50 k€ brut annuel",
     "date": "2026-06-10T10:00:13.000+0000",
     "source": "APEC",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -491,6 +494,7 @@
     "salary": "40 - 50 k€ brut annuel",
     "date": "2026-06-05T10:01:39.000+0000",
     "source": "APEC",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -503,6 +507,7 @@
     "salary": "A négocier",
     "date": "2026-06-03T09:01:35.000+0000",
     "source": "APEC",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -515,6 +520,7 @@
     "salary": "46 - 50 k€ brut annuel",
     "date": "2026-06-22T08:52:12.000+0000",
     "source": "APEC",
+    "borderline": false,
     "is_new": false
   },
   {
@@ -527,6 +533,18 @@
     "salary": "46 - 50 k€ brut annuel",
     "date": "2026-06-22T09:08:11.000+0000",
     "source": "APEC",
+    "borderline": false,
     "is_new": false
+  },
+  {
+    "id": "sustainability-account-manager-mid-level-all-genders-berlin-330980",
+    "title": "Sustainability Account Manager - Mid Level (all genders)",
+    "company": "Code Gaia",
+    "location": "Berlin",
+    "url": "https://www.arbeitnow.com/jobs/companies/code-gaia/sustainability-account-manager-mid-level-all-genders-berlin-330980",
+    "description": "<h2>JOIN US</h2>\n<p>Bei Code Gaia zu arbeiten bedeutet, dass du an etwas sehr Wichtigem arbeitest: Der Transformation zu einer nachhaltigen Wirtschaft...",
+    "source": "Remote EU",
+    "borderline": true,
+    "is_new": true
   }
 ]

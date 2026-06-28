@@ -954,5 +954,130 @@
   "délégué(e) hospitalier(ère) en perfusion/nutrition f/h|had confort plus": {
     "keep": false,
     "reason": "délégué hospitalier (médical/commercial, hors climat)"
+  },
+  "staff software engineer, product (belo horizonte)|lawnstarter": {
+    "keep": false,
+    "reason": "métier tech/produit (Software Engineer) sans lien climat/durabilité",
+    "borderline": false
+  },
+  "staff software engineer, product (florianópolis)|lawnstarter": {
+    "keep": false,
+    "reason": "métier tech/produit (Software Engineer) sans lien climat/durabilité",
+    "borderline": false
+  },
+  "staff software engineer, product (porto alegre)|lawnstarter": {
+    "keep": false,
+    "reason": "métier tech/produit (Software Engineer) sans lien climat/durabilité",
+    "borderline": false
+  },
+  "staff software engineer, product (são paulo)|lawnstarter": {
+    "keep": false,
+    "reason": "métier tech/produit (Software Engineer) sans lien climat/durabilité",
+    "borderline": false
+  },
+  "customer operations & writing specialist|clerky, inc.": {
+    "keep": false,
+    "reason": "métier commercial/écriture sans lien climat/durabilité",
+    "borderline": false
+  },
+  "staff software engineer, product (campinas)|lawnstarter": {
+    "keep": false,
+    "reason": "métier tech/produit (Software Engineer) sans lien climat/durabilité",
+    "borderline": false
+  },
+  "(senior) paid social media manager (all genders)|mammaly": {
+    "keep": false,
+    "reason": "métier commercial/marketing sans lien climat/durabilité",
+    "borderline": false
+  },
+  "social media creatorin für family brand (teilzeit oder freelance, 100% remote und flexibel)|12minutes gmbh": {
+    "keep": false,
+    "reason": "métier commercial/marketing sans lien climat/durabilité",
+    "borderline": false
+  },
+  "brand associate (m/w/d)|nero gmbh": {
+    "keep": false,
+    "reason": "métier commercial/marketing sans lien climat/durabilité",
+    "borderline": false
+  },
+  "social media manager|ipanema ug (haftungsbeschränkt)": {
+    "keep": false,
+    "reason": "métier commercial/marketing sans lien climat/durabilité",
+    "borderline": false
+  },
+  "senior software engineer - mobile (m/f/d)|1komma5˚": {
+    "keep": false,
+    "reason": "métier tech/énergie (IoT) sans lien climat/stratégie conseil",
+    "borderline": false
+  },
+  "crm manager & hubspot consultant (w/m/d) | teilzeit 20-30h|emerve gmbh": {
+    "keep": false,
+    "reason": "métier commercial/CRM sans lien climat/durabilité",
+    "borderline": false
+  },
+  "sustainability account manager - mid level (all genders)|code gaia": {
+    "keep": true,
+    "reason": "Sustainability Account Manager - pourrait inclure stratégie climat, mais niveau mid-level et description floue",
+    "borderline": true
+  },
+  "senior software engineer full stack (all genders)|code gaia": {
+    "keep": false,
+    "reason": "métier tech/produit (Software Engineer) sans lien climat/durabilité",
+    "borderline": false
+  },
+  "staff ai backend engineer (f/m/d)|paretos gmbh": {
+    "keep": false,
+    "reason": "métier tech/data sans lien climat/durabilité",
+    "borderline": false
+  },
+  "werkstudent/in o. praktikant/in content creation, social media & ki (m/w/d) remote/hybrid|aurixus gmbh i digitalcheckin i scriptomat": {
+    "keep": false,
+    "reason": "stage/praktikum sans lien climat/durabilité",
+    "borderline": false
+  },
+  "senior consultant (m/w/d) bi|angeheuert gmbh personalberatung": {
+    "keep": false,
+    "reason": "métier tech/BI sans lien climat/durabilité",
+    "borderline": false
+  },
+  "(senior) iot cloud engineer (m/f/d)|1komma5˚": {
+    "keep": false,
+    "reason": "métier tech/IoT sans lien climat/stratégie conseil",
+    "borderline": false
+  },
+  "videoeditor und social media manager (remote)|machsdirselbst.solar": {
+    "keep": false,
+    "reason": "métier commercial/marketing sans lien climat/durabilité",
+    "borderline": false
+  },
+  "people manager & recruiting-maschine mit operations-dna|sichtbarerwerden gmbh": {
+    "keep": false,
+    "reason": "RH/recrutement sans lien climat/durabilité",
+    "borderline": false
+  },
+  "senior enterprise architect & it service management consultant (m/f/d) for our talent pool|sidekick network gmbh & co. kg": {
+    "keep": false,
+    "reason": "métier tech/IT sans lien climat/durabilité",
+    "borderline": false
+  },
+  "werkstudent customer support erneuerbare energien (m/w/d)|pluginenergy gmbh": {
+    "keep": false,
+    "reason": "stage/praktikum sans lien climat/durabilité",
+    "borderline": false
+  },
+  "product owner (m/f/d) digital products & ai|boardwise gmbh": {
+    "keep": false,
+    "reason": "métier tech/produit sans lien climat/durabilité",
+    "borderline": false
+  },
+  "(senior) systems engineer (solana) - remote germany/europe (m/f/d)|staking facilities gmbh": {
+    "keep": false,
+    "reason": "métier tech/blockchain sans lien climat/durabilité",
+    "borderline": false
+  },
+  "senior embedded solution architect (automotive) (m/w/x) freelance|requisimus holding gmbh": {
+    "keep": false,
+    "reason": "métier tech/automobile sans lien climat/durabilité",
+    "borderline": false
   }
 }
