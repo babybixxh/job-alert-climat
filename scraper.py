@@ -694,27 +694,39 @@ def debug_apec():
         "Content-Type": "application/json",
         "Accept": "application/json",
     }
-    # Round 2 : on n'envoie que motsCles pour récupérer la liste complète des
-    # 34 champs valides du DTO via le message d'erreur 500, puis on construira
-    # un body correct.
-    body = {"motsCles": "climat"}
     url = "https://www.apec.fr/cms/webservices/rechercheOffre"
-    try:
-        r = requests.post(url, json=body, headers=headers, timeout=15)
-        print(f"DEBUG APEC POST {url} → HTTP {r.status_code}, len={len(r.text)}")
-        if r.status_code == 200:
-            data = r.json()
-            print("  TOP KEYS:", list(data.keys()) if isinstance(data, dict) else type(data))
-            results = data.get("resultats") or data.get("results") or data.get("offres") or []
-            print("  totalCount?:", data.get("totalCount"), "nbResultats?:", data.get("nbResultats"))
-            print("  NB RESULTS:", len(results))
-            if results:
-                print("  RESULT[0] KEYS:", list(results[0].keys()))
-                print("  RESULT[0]:", json.dumps(results[0], ensure_ascii=False)[:1500])
-        else:
-            print("  FULL BODY:", r.text[:2500])
-    except Exception as e:
-        print(f"  DEBUG APEC EXCEPTION {url}: {e}")
+
+    def post(label, body):
+        try:
+            r = requests.post(url, json=body, headers=headers, timeout=15)
+            print(f"DEBUG APEC [{label}] → HTTP {r.status_code}, len={len(r.text)}")
+            if r.status_code == 200:
+                data = r.json()
+                print("  TOP KEYS:", list(data.keys()) if isinstance(data, dict) else type(data))
+                results = (data.get("resultats") or data.get("results")
+                           or data.get("offres") or data.get("listeOffre") or [])
+                print("  totalCount?:", data.get("totalCount"), "nbResultats?:", data.get("nbResultats"))
+                print("  NB RESULTS:", len(results))
+                if results:
+                    print("  RESULT[0] KEYS:", list(results[0].keys()))
+                    print("  RESULT[0]:", json.dumps(results[0], ensure_ascii=False)[:1800])
+            else:
+                print("  FULL BODY:", r.text[:3000])
+        except Exception as e:
+            print(f"  DEBUG APEC EXCEPTION [{label}]: {e}")
+
+    # 1) champ invalide → liste complète des 34 champs valides du DTO.
+    post("field-list", {"motsCles": "climat", "zzz_invalid_field": 1})
+    # 2) body complet best-guess → on espère un 200 + le schéma des offres.
+    post("best-guess", {
+        "motsCles": "climat",
+        "fonctions": [], "lieux": [], "typesContrat": [], "typesConvention": [],
+        "niveauxExperience": [], "secteursActivite": [], "statutPoste": [],
+        "typesTeletravail": [], "idsEtablissements": [],
+        "sortsType": "DATE",
+        "pagination": {"startIndex": 0, "range": 20},
+        "activeFiltre": False,
+    })
 
 
 def search_remotive():
