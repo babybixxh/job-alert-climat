@@ -90,8 +90,12 @@ WTTJ_COMPANIES = {
 WTTJ_CONTRACT_EXCLUDE = ("intern", "apprentice", "apprentiss", "stage", "vie", "vix")
 
 FT_COMMUNES = {
-    "Paris": "75056",
-    "Marseille": "13055",
+    # Paris et Marseille sont découpés en arrondissements dans le référentiel
+    # géographique de l'API FT : le code INSEE "ville entière" (75056/13055)
+    # n'y est pas reconnu comme code commune valide (HTTP 400). On utilise le
+    # code du 1er arrondissement, couvert ensuite par le rayon "distance".
+    "Paris": "75101",
+    "Marseille": "13201",
     "Aix-en-Provence": "13001",
     "Toulon": "83137",
     "Nice": "06088",
