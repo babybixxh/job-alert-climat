@@ -1,0 +1,402 @@
+{
+  "ingénieur climat h/f|gio recrutement boulogne": {
+    "keep": true,
+    "reason": "Titre 'Ingénieur Climat' avec missions en audit et conseil climat, correspond au profil senior conseil climat"
+  },
+  "chef de projet environnement - amo h/f|metiga": {
+    "keep": false,
+    "reason": "Poste AMO environnement sans précision sur stratégie/consulting climat, risque opérationnel"
+  },
+  "ingénieur climat h/f|gio recrutement": {
+    "keep": true,
+    "reason": "Titre 'Ingénieur Climat' avec missions en audit et conseil climat, correspond au profil senior"
+  },
+  "chef de projet senior/cheffe de projet senior|oasiis": {
+    "keep": false,
+    "reason": "Titre trop générique 'Chef de projet senior' sans mention explicite climat/RSE/stratégie bas-carbone"
+  },
+  "chargé de projet climat/rse - h/f|mgen": {
+    "keep": true,
+    "reason": "Poste 'Chargé de projet Climat/RSE' dans un groupe ESS, correspond au profil RSE stratégique en entreprise"
+  },
+  "chargé de projet climat - rse h/f|mgen": {
+    "keep": true,
+    "reason": "Poste 'Chargé de Projet Climat - RSE' avec suivi stratégie climat et reportings réglementaires, correspond au profil"
+  },
+  "coordonnateur logistique animation commerciale hf h/f (cdi)|marcopolo performance": {
+    "keep": false,
+    "reason": "Poste logistique/animation commerciale hors climat/durabilité"
+  },
+  "stagiaire immobilier durable h/f|cbre": {
+    "keep": false,
+    "reason": "Stage immobilier durable hors stratégie climat/consulting"
+  },
+  "coordinateur de région ile de france h/f|groupe alixio": {
+    "keep": false,
+    "reason": "Poste de coordination logistique sans lien climat/durabilité"
+  },
+  "consultant bilan carbone (h/f)|best value": {
+    "keep": true,
+    "reason": "Poste 'Consultant Bilan Carbone' avec accompagnement durabilité, correspond au profil conseil climat"
+  },
+  "directeur de projets – environnement règlementaire f/h|eodd ingenieurs conseils": {
+    "keep": true,
+    "reason": "Poste 'Directeur de Projets – Environnement Réglementaire' à Marseille avec expertise climat/réglementation, correspond au profil senior en PACA"
+  },
+  "consultant emploi h/f|groupe alixio": {
+    "keep": false,
+    "reason": "Poste 'Consultant Emploi' hors climat/durabilité"
+  },
+  "chef de projet transition écologique et énergétique (h/f) - syndicat des eaux d'ile-de-france|fonction publique territoriale": {
+    "keep": true,
+    "reason": "Poste 'Chef de projet transition écologique et énergétique' en collectivité (SEDIF), correspond au profil chargé de mission climat en fonction publique territoriale"
+  },
+  "ingénieur d'études réseaux de chaleur - paris|metiga": {
+    "keep": false,
+    "reason": "Poste 'Ingénieur d'études réseaux de chaleur' trop technique/opérationnel"
+  },
+  "chef de projet réseaux de chaleur h/f|métiga": {
+    "keep": false,
+    "reason": "Poste 'Chef de Projet Réseaux de Chaleur' trop technique/opérationnel"
+  },
+  "développeur label bas-carbone (forêt) f/h|forums talents handicap": {
+    "keep": false,
+    "reason": "Poste 'Développeur Label Bas-Carbone' trop technique (forêt) et junior (handicap) hors stratégie climat"
+  },
+  "chargé de communication - temps partiel 60% h/f|colas france": {
+    "keep": false,
+    "reason": "Poste communication hors stratégie climat/consulting"
+  },
+  "ingénieur développement data centers & infrastructures technologiques (h/f)|compagnie de phalsbourg": {
+    "keep": false,
+    "reason": "Poste ingénieur data centers hors climat/durabilité"
+  },
+  "assistante assistant direction espace public transition écologique h/f - ec21045|ville de champigny sur marne": {
+    "keep": false,
+    "reason": "Poste assistant·e direction espace public transition écologique trop junior et administratif"
+  },
+  "chargée de mission coordination et suivi des projets métropolitains - commune d'aubagne|fonction publique territoriale": {
+    "keep": true,
+    "reason": "Poste 'Chargée de mission coordination et suivi des projets métropolitains' à Aubagne (Marseille) avec transition écologique, correspond au profil chargé de mission climat en collectivité"
+  },
+  "ingenieur controle commande f/h|ing'europ": {
+    "keep": false,
+    "reason": "Poste 'INGENIEUR CONTROLE COMMANDE' technique hors climat/durabilité"
+  },
+  "chargée/chargé de mission promotion et rayonnement du territoire|fonction publique territoriale": {
+    "keep": true,
+    "reason": "Poste 'Chargée/Chargé de mission promotion et rayonnement du territoire' à Marseille avec politiques publiques innovantes (transition environnementale), correspond au profil chargé de mission climat en collectivité"
+  },
+  "cheffe / chef de projets circuits courts agroalimentaires|fonction publique territoriale": {
+    "keep": true,
+    "reason": "Poste 'Cheffe / chef de projets circuits courts agroalimentaires' à Marseille avec transition environnementale, correspond au profil coordination projets durabilité en collectivité"
+  },
+  "responsable de centre de formation f/h|cmar paca": {
+    "keep": false,
+    "reason": "Poste 'Responsable de Centre de Formation' hors climat/durabilité"
+  },
+  "développeur angular confirmé f/h|cityway": {
+    "keep": false,
+    "reason": "Poste développeur Angular technique hors climat/durabilité"
+  },
+  "chargé de projets - sites et sols pollues f/h|eodd ingenieurs conseils": {
+    "keep": false,
+    "reason": "poste terrain (sites et sols pollués) sans lien stratégique climat/RSE"
+  },
+  "metteur en route h/f|eurodia": {
+    "keep": false,
+    "reason": "poste technique (métier industriel) sans lien climat/stratégie"
+  },
+  "professeure / professeur de français histoire géographie|fonction publique territoriale": {
+    "keep": false,
+    "reason": "poste pédagogique (enseignement) hors climat"
+  },
+  "ingénieur epr2 f/h|volta executive": {
+    "keep": false,
+    "reason": "poste technique (nucléaire) et terrain"
+  },
+  "chef d'équipe maintenance industrielle f/h|veolia rvd - siège & csm": {
+    "keep": false,
+    "reason": "poste technique (maintenance industrielle) sans lien climat"
+  },
+  "chef d'équipe d'exploitation fh|veolia": {
+    "keep": false,
+    "reason": "poste technique (exploitation industrielle) sans lien climat"
+  },
+  "chef d'équipe maintenance industrielle h/f|veolia recyclage et valorisation des déchets": {
+    "keep": false,
+    "reason": "poste technique (maintenance industrielle) sans lien climat"
+  },
+  "responsable de projets esg|building manager recrutement": {
+    "keep": true,
+    "reason": "responsable projets ESG (stratégie climat/RSE) à Paris"
+  },
+  "ingénieur cvc f/h|akteo sas": {
+    "keep": false,
+    "reason": "poste technique (CVC) sans lien stratégique climat"
+  },
+  "responsable technique energie h/f|icf habitat": {
+    "keep": false,
+    "reason": "poste technique (énergie) sans lien stratégique climat"
+  },
+  "développeur fullstack c#/react (it)|sthree sas pour computer futures": {
+    "keep": false,
+    "reason": "poste IT (développeur) sans lien climat"
+  },
+  "directeur de projet complexes environnement f/h (cdi)|brawo impact": {
+    "keep": true,
+    "reason": "directeur de projet complexes environnement (stratégie climat) à Paris"
+  },
+  "juriste droit privé f/h|jimmy energy sas": {
+    "keep": false,
+    "reason": "poste technique (nucléaire) et juridique sans lien climat"
+  },
+  "ingénieur énergies renouvelables h/f (cdi)|inddigo": {
+    "keep": false,
+    "reason": "poste technique (énergies renouvelables) sans lien stratégique climat"
+  },
+  "ingénieur(e) ou expert(e) en décarbonation des procédés industrie (h/f)|ynergie": {
+    "keep": true,
+    "reason": "expert décarbonation des procédés industrie (stratégie climat) à Paris"
+  },
+  "ingénieur projet génie civil h/f|socotec": {
+    "keep": false,
+    "reason": "poste technique (génie civil) sans lien climat"
+  },
+  "chef d'équipe construction (h/f)|enoé": {
+    "keep": false,
+    "reason": "poste technique (construction) sans lien stratégique climat"
+  },
+  "chef de produit - meyreuil h/f|fareco": {
+    "keep": false,
+    "reason": "poste commercial (chef de produit) sans lien climat"
+  },
+  "chargé(e) de mission métiers, transition énergétique & innovation (h/f)|federation regionale du batiment paca": {
+    "keep": true,
+    "reason": "chargé de mission transition énergétique & innovation (collectivité) à Marseille"
+  },
+  "responsable activité automatisme (h/f)|adsearch": {
+    "keep": false,
+    "reason": "poste technique (automatisme) sans lien climat"
+  },
+  "ingénieur(e) d'études expérimenté(e) f/h - machines spéciales et systèmes mécaniques|csti groupe": {
+    "keep": false,
+    "reason": "poste technique (mécanique) sans lien climat"
+  },
+  "directeur commercial régional f/h|défense environnement services": {
+    "keep": false,
+    "reason": "poste commercial (directeur régional) sans lien climat"
+  },
+  "directeur commercial régional h/f|veolia energie et performance": {
+    "keep": false,
+    "reason": "poste commercial (directeur régional) sans lien climat"
+  },
+  "ingénieur(e) en développement galénique confirmé - nice f/h|consultys services": {
+    "keep": false,
+    "reason": "poste technique (pharmacie) sans lien climat"
+  },
+  "développeur label bas-carbone (forêt) f/h|edf": {
+    "keep": true,
+    "reason": "développeur label bas-carbone (stratégie climat) à Paris"
+  },
+  "consultant rh f/h|baker tilly strego sas": {
+    "keep": false,
+    "reason": "poste RH, hors critères"
+  },
+  "consultant rh h/f|bakertilly strego": {
+    "keep": false,
+    "reason": "poste RH, hors critères"
+  },
+  "développeur commercial professionnels - f/h|bprivesparis": {
+    "keep": false,
+    "reason": "poste commercial, hors critères"
+  },
+  "cdi - conseiller de vente 35h - galeries lafayette haussmann h/f|1590 swarovski france s.a.": {
+    "keep": false,
+    "reason": "poste commercial, hors critères"
+  },
+  "directeur projets certifications conseil immobilier durable (h/f)|g-on": {
+    "keep": false,
+    "reason": "poste immobilier durable, hors stratégie climat pure"
+  },
+  "ingénieur - chef de projet construction durable breeam, leed, hqe (h/f)|approach people recruitment sarl": {
+    "keep": false,
+    "reason": "poste technique BTP, hors stratégie climat"
+  },
+  "responsable qualité sécurité développement durable btp (h/f)|n/a": {
+    "keep": false,
+    "reason": "poste QSE/RSE BTP, hors stratégie climat senior"
+  },
+  "assistant chef de projet développement durable - h/f|n/a": {
+    "keep": false,
+    "reason": "poste assistant chef de projet DD, hors séniorité"
+  },
+  "chargé / chargée de mission développement durable (h/f)|federation francaise de l assurance": {
+    "keep": false,
+    "reason": "poste chargé de mission RSE en entreprise, hors stratégie climat senior"
+  },
+  "chargé / chargée de mission développement durable (h/f)|tetra pak & cie": {
+    "keep": false,
+    "reason": "poste chargé de mission RSE en entreprise, hors stratégie climat senior"
+  },
+  "chargé / chargée de mission développement durable et rse - responsabilité sociétale de l'entreprise (h/f)|institut de formation regional des indus": {
+    "keep": false,
+    "reason": "poste chargé de mission RSE en entreprise, hors stratégie climat senior"
+  },
+  "chargé de mission qse/rse f/h (h/f)|onet": {
+    "keep": true,
+    "reason": "chargé de mission QSE/RSE en entreprise PACA (Vitrolles), poste qualifié et pertinent"
+  },
+  "chargé de développement commercial dans le marché de l'art (h/f)|d2 estimation": {
+    "keep": false,
+    "reason": "poste commercial, hors critères"
+  },
+  "chargé de projet développement (h/f)|manpower": {
+    "keep": false,
+    "reason": "poste chargé de projet éolien, hors stratégie climat senior"
+  },
+  "chargé de projet éducation artistique et culturelle (h/f)|bibliotheque nationale de france": {
+    "keep": false,
+    "reason": "poste pédagogie hors climat, hors critères"
+  },
+  "chargé.e de mission electrification et transition écologique des territoires f/h|ademe": {
+    "keep": true,
+    "reason": "chargé de mission Electrification et Transition écologique des territoires (ADEME), poste stratégique climat"
+  },
+  "chargé(e) de projet européen - santé des sols - formation et sensibilisation f/h|ademe": {
+    "keep": true,
+    "reason": "chargé de projet européen - Santé des Sols (ADEME), poste stratégique climat"
+  },
+  "gestionnaire de dossiers de financement f/h|ademe": {
+    "keep": false,
+    "reason": "poste gestionnaire de dossiers de financement, hors stratégie climat"
+  },
+  "chargé.e de mission transition écologique f/h|ademe": {
+    "keep": true,
+    "reason": "chargé de mission transition écologique (ADEME), poste stratégique climat"
+  },
+  "chef.fe de projets décarbonation industrie f/h|ademe": {
+    "keep": true,
+    "reason": "chef de projets Décarbonation Industrie (ADEME), poste stratégique climat"
+  },
+  "chargé.e de mission adaptation au changement climatique f/h|ademe": {
+    "keep": true,
+    "reason": "chargé de mission adaptation au changement climatique (ADEME), poste stratégique climat"
+  },
+  "vsc - chargé·e de mission transition ecologique f/h|ademe": {
+    "keep": true,
+    "reason": "VSC - Chargé de mission Transition Ecologique (ADEME), poste stratégique climat"
+  },
+  "chef.fe de projet evaluation du programme prodicee f/h|ademe": {
+    "keep": true,
+    "reason": "chef de projet Evaluation du programme PRODICEE (ADEME), poste stratégique climat"
+  },
+  "responsable performance paie et administration du personnel|cci france": {
+    "keep": false,
+    "reason": "poste RH/paie, hors critères"
+  },
+  "assistant(e) appels d’offres h/f|cci france": {
+    "keep": false,
+    "reason": "poste assistant appels d'offres, hors critères"
+  },
+  "coordinateur pédagogique/coordinatrice pédagogique|cci france": {
+    "keep": false,
+    "reason": "poste de coordination pédagogique sans lien explicite avec le climat ou la durabilité"
+  },
+  "senior fullstack engineer - sweep h/f|sweep": {
+    "keep": false,
+    "reason": "métier tech (développeur fullstack) malgré l'entreprise ciblée"
+  },
+  "directeur financier externalisé à temps partagé (marseille)- f/h|smash": {
+    "keep": false,
+    "reason": "poste de directeur financier (finance/comptabilité) malgré la localisation"
+  },
+  "cdi - contrôleur.se de gestion - paris/marseille|la ruche développement": {
+    "keep": false,
+    "reason": "poste de contrôleur de gestion (finance) malgré la localisation"
+  },
+  "eco-animateur.rice terrain - sensibilisation au tri et à la prévention des déchets - marseille|terravox": {
+    "keep": false,
+    "reason": "poste terrain d'éco-animateur sans lien avec la stratégie ou le conseil"
+  },
+  "chargé.e opérationnel.le du campus regen school marseille|regen school": {
+    "keep": false,
+    "reason": "poste opérationnel de campus (hors stratégie climat/RSE malgré la localisation)"
+  },
+  "chargé.e de déploiement lycéens - cdi - marseille h/f|article 1": {
+    "keep": false,
+    "reason": "poste de déploiement éducatif (hors climat/stratégie malgré la localisation)"
+  },
+  "devenez acteur de la transition écologique des entreprises de votre territoire !|démarche verte": {
+    "keep": false,
+    "reason": "description trop vague, pas de lien explicite avec le climat ou la stratégie malgré la localisation"
+  },
+  "contrôleur/contrôleuse technique de génie climatique (h/f) - métropole nice côte d'azur|fonction publique": {
+    "keep": false,
+    "reason": "poste technique de contrôleur de génie climatique (terrain/technique malgré la localisation)"
+  },
+  "animateur environnemental lutte contre les moustiques (h/f) - sanary sur mer|fonction publique": {
+    "keep": false,
+    "reason": "poste terrain d'animateur environnemental (hors stratégie malgré la localisation)"
+  },
+  "un travailleur social referent ase (h/f) - conseil départemental du vaucluse|fonction publique": {
+    "keep": false,
+    "reason": "poste social (travailleur social) sans lien avec le climat malgré la localisation"
+  },
+  "directeur-trice général-e, en charge de l’incubateur, des opérations|employeur ess": {
+    "keep": false,
+    "reason": "poste de direction générale d'incubateur (hors climat/stratégie malgré l'ESS)"
+  },
+  "assistant.e de gestion locative|employeur ess": {
+    "keep": false,
+    "reason": "poste d'assistant de gestion locative (RH/gestion) malgré l'ESS"
+  },
+  "intervenant.e social.e|employeur ess": {
+    "keep": false,
+    "reason": "poste d'intervenant social (hors climat malgré l'ESS)"
+  },
+  "mid/senior ai cinematic video editor|everai": {
+    "keep": false,
+    "reason": "métier tech (éditeur vidéo IA) malgré la localisation"
+  },
+  "staff product engineer (são paulo)|lawnstarter": {
+    "keep": false,
+    "reason": "métier tech (développeur) avec localisation hors Europe"
+  },
+  "senior independent software developer|a.team": {
+    "keep": false,
+    "reason": "métier tech (développeur indépendant) malgré la localisation"
+  },
+  "office assistant|coalition technologies": {
+    "keep": false,
+    "reason": "poste administratif (assistant) malgré la localisation"
+  },
+  "quality assurance rater - german (germany)|telus digital": {
+    "keep": false,
+    "reason": "poste de qualité assurance (tech/data) malgré la localisation"
+  },
+  "inside sales contractor|credit wellness, llc": {
+    "keep": false,
+    "reason": "poste commercial (sales) malgré la localisation"
+  },
+  "online data analyst canada (french language)|telus digital": {
+    "keep": false,
+    "reason": "poste de data analyst (tech) malgré la localisation"
+  },
+  "online data analyst united states spanish speakers|telus digital": {
+    "keep": false,
+    "reason": "poste de data analyst (tech) malgré la localisation"
+  },
+  "online data analyst canada|telus digital": {
+    "keep": false,
+    "reason": "poste de data analyst (tech) malgré la localisation"
+  },
+  "freelance writer|iapwe": {
+    "keep": false,
+    "reason": "poste de rédacteur (hors climat malgré la localisation)"
+  },
+  "copywriter|coalition technologies": {
+    "keep": false,
+    "reason": "poste de copywriter (marketing) malgré la localisation"
+  }
+}
