@@ -135,6 +135,29 @@ def clean_text(value):
     return " ".join(value.split())
 
 
+def format_job_date(raw):
+    """Formate une date ISO (APEC, Climatebase, Adzuna…) en JJ/MM/AAAA.
+    Tolère les variantes de timezone : on ne lit que la partie AAAA-MM-JJ."""
+    m = re.match(r"(\d{4})-(\d{2})-(\d{2})", str(raw or ""))
+    return f"{m.group(3)}/{m.group(2)}/{m.group(1)}" if m else ""
+
+
+def format_salary_range(lo, hi):
+    """Formate une fourchette de salaire numérique annuel en « 40 k€ – 55 k€ ».
+    Renvoie '' si les valeurs ne sont pas exploitables (APEC fournit déjà un
+    libellé texte, donc n'utilise pas cette fonction)."""
+    def k(v):
+        try:
+            n = float(v)
+            return f"{round(n / 1000)} k€" if n >= 1000 else ""
+        except (TypeError, ValueError):
+            return ""
+    lo_s, hi_s = k(lo), k(hi)
+    if lo_s and hi_s and lo_s != hi_s:
+        return f"{lo_s} – {hi_s}"
+    return lo_s or hi_s
+
+
 def load_json(path, default):
     if os.path.exists(path):
         with open(path, "r") as f:
@@ -263,6 +286,8 @@ def search_adzuna(keyword, location):
                 "location": job.get("location", {}).get("display_name", location),
                 "url": job.get("redirect_url", ""),
                 "description": description[:150] + "..." if description else "",
+                "salary": format_salary_range(job.get("salary_min"), job.get("salary_max")),
+                "date": job.get("created", ""),
                 "source": "Adzuna",
             })
         return jobs
@@ -840,6 +865,8 @@ def search_climatebase():
                 "location": "Remote",
                 "url": f"https://climatebase.org/job/{slug}-{job_id}",
                 "description": job.get("employer_short_description", "")[:150],
+                "salary": format_salary_range(job.get("salary_from"), job.get("salary_to")),
+                "date": job.get("activation_date", ""),
                 "source": "Remote EU",
             })
     except Exception as e:
@@ -1397,6 +1424,16 @@ def section_html(title, emoji, jobs, color):
         sc = source_colors.get(source, "#888")
         badge_new = '<span style="font-size:11px;color:#fff;background:#e05c2a;padding:1px 8px;border-radius:10px;margin-left:8px">NOUVEAU</span>' if is_new else '<span style="font-size:11px;color:#888;background:#f0f0f0;padding:1px 8px;border-radius:10px;margin-left:8px">Déjà vu</span>'
         badge_source = f'<span style="font-size:11px;color:#fff;background:{sc};padding:1px 8px;border-radius:10px;margin-left:6px">{source}</span>'
+        meta_bits = []
+        if job.get("salary"):
+            meta_bits.append(f"💰 {job['salary']}")
+        date_str = format_job_date(job.get("date", ""))
+        if date_str:
+            meta_bits.append(f"🗓️ {date_str}")
+        meta_line = (
+            f'<p style="margin:0 0 5px 0;font-size:13px;color:#777">{" &nbsp;|&nbsp; ".join(meta_bits)}</p>'
+            if meta_bits else ""
+        )
         html += f"""
         <div style="margin-bottom:16px;padding:14px;border-left:4px solid {color};background:{'#fff8f5' if is_new else '#f9f9f9'};border-radius:4px">
             <h3 style="margin:0 0 6px 0">
@@ -1406,6 +1443,7 @@ def section_html(title, emoji, jobs, color):
             <p style="margin:0 0 5px 0;color:#555;font-size:14px">
                 🏢 <strong>{job['company']}</strong> &nbsp;|&nbsp; 📍 {job['location']}
             </p>
+            {meta_line}
             <p style="margin:0;font-size:13px;color:#777">{job['description']}</p>
         </div>
         """
