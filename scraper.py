@@ -470,6 +470,8 @@ def search_jooble(keyword, location):
         data = r.json()
         results = data.get("jobs", [])
         print(f"  Jooble '{keyword}' / '{location}' → {len(results)} brutes")
+        if results:
+            print("    DEBUG Jooble locs:", [clean_text(j.get("location", ""))[:25] for j in results[:8]])
         jobs = []
         for job in results[:10]:
             title = clean_text(job.get("title", "N/A"))
