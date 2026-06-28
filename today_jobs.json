@@ -100,13 +100,23 @@
     "is_new": false
   },
   {
-    "id": "210BFKN",
-    "title": "Ingénieur(e) ou Expert(e) en décarbonation des procédés industrie (H/F)",
-    "company": "YNERGIE",
-    "location": "75 - PARIS 09",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/210BFKN",
-    "description": "Depuis 2016, Ynergie accompagne les professionnels et les particuliers dans la réduction de leur consommation d'énergie et la décarbonation des sites ...",
-    "source": "France Travail",
+    "id": "5772460669",
+    "title": "Responsable de Projets ESG",
+    "company": "Building Manager Recrutement",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/land/ad/5772460669?se=fp2V3Pxy8RGiVqWJe_bADg&utm_medium=api&utm_source=ae8a5ffa&v=5576617EADDDE74F4889FEC47BDCC79CC067FC96",
+    "description": " Nouveau poste - AMO/MOD - Responsable de Projets ESG / Paris :  Notre client, acteur immobilier référent et intervenant sur des projets multiproduits...",
+    "source": "Adzuna",
+    "is_new": false
+  },
+  {
+    "id": "5779063923",
+    "title": "Directeur de Projet Complexes Environnement F/H (CDI)",
+    "company": "Brawo Impact",
+    "location": "15ème Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/land/ad/5779063923?se=fp2V3Pxy8RGiVqWJe_bADg&utm_medium=api&utm_source=ae8a5ffa&v=B59E7B979BA4E57098521C39AD09BFD062BB3E2A",
+    "description": "Brawo Impact est l'agence de recrutement de référence pour les professionnels et les organisations qui s'engagent en faveur de la transformation durab...",
+    "source": "Adzuna",
     "is_new": false
   },
   {
@@ -117,6 +127,26 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/210FHFD",
     "description": "Au cœur des enjeux qui transforment le secteur du bâtiment, le/la Chargé(e) de mission contribuera à l'animation du réseau métiers régional et au suiv...",
     "source": "France Travail",
+    "is_new": false
+  },
+  {
+    "id": "5778307119",
+    "title": "Développeur Label Bas-Carbone (forêt) F/H",
+    "company": "Forums Talents Handicap",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5778307119?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Qui sommes-nous ? OKLIMA, filiale du Groupe EDF, a pour mission de lutter activement contre le dérèglement climatique. OKLIMA développe des projets de...",
+    "source": "Adzuna",
+    "is_new": false
+  },
+  {
+    "id": "5777618006",
+    "title": "Développeur Label Bas-Carbone (forêt) F/H",
+    "company": "EDF",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5777618006?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "En tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recr...",
+    "source": "Adzuna",
     "is_new": false
   },
   {
@@ -198,5 +228,15 @@
     "description": "",
     "source": "ADEME",
     "is_new": false
+  },
+  {
+    "id": "https://jobs.makesense.org/fr/jobs/demarche-verte-devenez-acteur-de-la-transition-ecologique-des-entreprises-de-votre-territoire-5Yj7EH6CE0QTcFaLxxiY?source=search",
+    "title": "Devenez acteur de la transition écologique des entreprises de votre territoire !",
+    "company": "Démarche Verte",
+    "location": "Aix-en-Provence",
+    "url": "https://jobs.makesense.org/fr/jobs/demarche-verte-devenez-acteur-de-la-transition-ecologique-des-entreprises-de-votre-territoire-5Yj7EH6CE0QTcFaLxxiY?source=search",
+    "description": "",
+    "source": "JTMS",
+    "is_new": true
   }
 ]
