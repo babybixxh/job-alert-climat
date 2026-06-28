@@ -688,44 +688,63 @@ SP_PACA_TEXT = [
 ]
 
 
-def debug_apec():
+def search_apec():
+    """APEC (apec.fr) : LE portail des offres cadres en France, pile le profil
+    stratégie/conseil climat. API JSON interne, POST sur /cms/webservices/
+    rechercheOffre avec le DTO RechercheOffreCriteriaDto (pagination
+    {startIndex, range}). Les offres reviennent déjà formatées : intitule,
+    nomCommercial, lieuTexte, salaireTexte, texteOffre, datePublication."""
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36",
         "Content-Type": "application/json",
         "Accept": "application/json",
     }
+    exclusions = get_exclusions()
+    jobs = []
+    seen_ids = set()
     url = "https://www.apec.fr/cms/webservices/rechercheOffre"
-
-    def post(label, body):
+    for kw in KEYWORDS:
+        body = {
+            "motsCles": kw,
+            "fonctions": [], "lieux": [], "typesContrat": [], "typesConvention": [],
+            "niveauxExperience": [], "secteursActivite": [], "statutPoste": [],
+            "typesTeletravail": [], "idsEtablissement": [], "sorts": [],
+            "activeFiltre": False,
+            "pagination": {"startIndex": 0, "range": 20},
+        }
         try:
             r = requests.post(url, json=body, headers=headers, timeout=15)
-            print(f"DEBUG APEC [{label}] → HTTP {r.status_code}, len={len(r.text)}")
-            if r.status_code == 200:
-                data = r.json()
-                print("  TOP KEYS:", list(data.keys()) if isinstance(data, dict) else type(data))
-                results = (data.get("resultats") or data.get("results")
-                           or data.get("offres") or data.get("listeOffre") or [])
-                print("  totalCount?:", data.get("totalCount"), "nbResultats?:", data.get("nbResultats"))
-                print("  NB RESULTS:", len(results))
-                if results:
-                    print("  RESULT[0] KEYS:", list(results[0].keys()))
-                    print("  RESULT[0]:", json.dumps(results[0], ensure_ascii=False)[:1800])
-            else:
-                print("  FULL BODY:", r.text[:3000])
+            if r.status_code != 200:
+                print(f"  APEC '{kw}' → HTTP {r.status_code}")
+                continue
+            results = r.json().get("resultats", [])
+            print(f"  APEC '{kw}' → {len(results)} offres")
+            for job in results:
+                job_id = str(job.get("numeroOffre") or job.get("id") or "")
+                if not job_id or job_id in seen_ids:
+                    continue
+                seen_ids.add(job_id)
+                title = job.get("intitule", "")
+                if any(excl in title.lower() for excl in exclusions):
+                    log_excluded(title, job.get("nomCommercial", "N/A"),
+                                 job.get("lieuTexte", "France"), "APEC", "mot-clé exclu")
+                    continue
+                description = job.get("texteOffre", "")
+                jobs.append({
+                    "id": job_id,
+                    "title": clean_text(title),
+                    "company": job.get("nomCommercial", "N/A"),
+                    "location": job.get("lieuTexte", "France"),
+                    "url": f"https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/{job_id}",
+                    "description": (description[:200] + "...") if description else "",
+                    "salary": job.get("salaireTexte", ""),
+                    "date": job.get("datePublication", ""),
+                    "source": "APEC",
+                })
         except Exception as e:
-            print(f"  DEBUG APEC EXCEPTION [{label}]: {e}")
-
-    base = {
-        "motsCles": "climat",
-        "fonctions": [], "lieux": [], "typesContrat": [], "typesConvention": [],
-        "niveauxExperience": [], "secteursActivite": [], "statutPoste": [],
-        "typesTeletravail": [], "idsEtablissement": [], "sorts": [],
-        "activeFiltre": False,
-    }
-    # Deux formes de pagination : la bonne renvoie 200, l'autre révèle ses
-    # sous-champs valides via l'erreur.
-    post("pagination-A", {**base, "pagination": {"startIndex": 0, "range": 20}})
-    post("pagination-B", {**base, "pagination": {"page": 0, "nombreParPage": 20}})
+            print(f"  EXCEPTION APEC '{kw}': {e}")
+    print(f"  APEC total → {len(jobs)} offres")
+    return jobs
 
 
 def search_remotive():
@@ -1361,6 +1380,7 @@ def section_html(title, emoji, jobs, color):
         "Service Public": "#000091",
         "ESS": "#5a8f3c",
         "Remote EU": "#1f7a99",
+        "APEC": "#e2001a",
     }
     html = f"""
     <div style="margin:2rem 0 1rem">
@@ -1483,7 +1503,6 @@ def send_email(html_body, job_count):
 
 
 if __name__ == "__main__":
-    debug_apec()
     seen_ids = set(load_json(SEEN_FILE, []))
     print(f"{len(seen_ids)} offres déjà vues en mémoire")
 
@@ -1504,7 +1523,7 @@ if __name__ == "__main__":
             tasks.append((search_jooble, (keyword, location)))
     for fn in (search_ademe, search_adzuna_companies, search_jtms,
                search_service_public, search_ess, search_remotive,
-               search_arbeitnow, search_climatebase):
+               search_arbeitnow, search_climatebase, search_apec):
         tasks.append((fn, ()))
 
     all_jobs = []
