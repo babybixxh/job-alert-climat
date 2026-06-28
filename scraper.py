@@ -53,6 +53,31 @@ TODAY_FILE = "today_jobs.json"
 REJECTED_FILE = "rejected_keywords.json"
 REJECTED_REASONS_FILE = "rejected_reasons.json"
 
+# Entreprises suivies en direct via l'API publique Welcome to the Jungle.
+# Clé = slug WTTJ (segment d'URL welcometothejungle.com/fr/companies/<slug>),
+# valeur = libellé affiché. Les slugs sont des paris raisonnables : les logs CI
+# (« WTTJ <label> → N brutes ») révèlent ceux à corriger si une entreprise renvoie 0.
+WTTJ_COMPANIES = {
+    # Conseil climat / RSE
+    "carbone-4": "Carbone 4",
+    "utopies": "Utopies",
+    "bl-evolution": "BL évolution",
+    "i-care": "I Care",
+    "carbon-cutter": "Carbon Cutter",
+    "adaptation-s": "adaptation/s",
+    "cci-france": "CCI France",
+    # Logiciels de comptabilité carbone
+    "sami": "Sami",
+    "greenly": "Greenly",
+    "aktio": "Aktio",
+    "tennaxia": "Tennaxia",
+    "traace": "Traace",
+    "sweep": "Sweep",
+}
+
+# Types de contrat WTTJ à écarter (on veut CDI/CDD, pas stage/alternance/VIE).
+WTTJ_CONTRACT_EXCLUDE = ("intern", "apprentice", "apprentiss", "stage", "vie", "vix")
+
 FT_COMMUNES = {
     "Paris": "75056",
     "Marseille": "13055",
@@ -451,6 +476,97 @@ def search_ademe():
         return []
 
 
+def _wttj_text(value):
+    """Normalise un champ WTTJ qui peut être une chaîne, un dict localisé
+    ({'fr': '...', 'en': '...'}) ou un dict {'name': '...'} en chaîne simple."""
+    if isinstance(value, str):
+        return value
+    if isinstance(value, dict):
+        for key in ("fr", "fr-fr", "en", "name", "label", "value"):
+            if isinstance(value.get(key), str):
+                return value[key]
+    return ""
+
+
+def search_wttj():
+    """Récupère les offres directement chez les entreprises suivies via l'API
+    publique JSON de Welcome to the Jungle. Données structurées (titre, lieu,
+    contrat, URL) → aucun risque de remonter des liens « Careers page »."""
+    exclusions = get_exclusions()
+    headers = {
+        "User-Agent": "Mozilla/5.0",
+        "Accept": "application/json",
+        "Referer": "https://www.welcometothejungle.com/",
+        "Origin": "https://www.welcometothejungle.com",
+    }
+    jobs = []
+    for slug, label in WTTJ_COMPANIES.items():
+        try:
+            url = f"https://api.welcometothejungle.com/api/v1/organizations/{slug}/jobs"
+            r = requests.get(url, params={"page": 1, "per_page": 50}, headers=headers, timeout=12)
+            if r.status_code != 200:
+                print(f"  WTTJ {label} ({slug}) → HTTP {r.status_code} (slug à vérifier ?)")
+                continue
+            data = r.json()
+            if isinstance(data, list):
+                raw = data
+            else:
+                raw = data.get("jobs") or data.get("data") or []
+            print(f"  WTTJ {label} → {len(raw)} brutes")
+
+            for job in raw:
+                title = clean_text(_wttj_text(job.get("name") or job.get("title")))
+                if not title:
+                    continue
+
+                contract = _wttj_text(job.get("contract_type") or job.get("contract")).lower()
+                if any(bad in contract for bad in WTTJ_CONTRACT_EXCLUDE):
+                    log_excluded(title, label, "", "WTTJ", f"contrat {contract}")
+                    continue
+                if any(excl in title.lower() for excl in exclusions):
+                    log_excluded(title, label, "", "WTTJ", "mot-clé exclu")
+                    continue
+
+                offices = job.get("offices") or job.get("office") or []
+                if isinstance(offices, dict):
+                    offices = [offices]
+                office = offices[0] if offices else {}
+                city = _wttj_text(office.get("city") or office.get("name"))
+                country_raw = office.get("country_code") or office.get("country") or ""
+                if isinstance(country_raw, dict):
+                    country_raw = country_raw.get("code") or country_raw.get("name") or ""
+                country = str(country_raw).upper()
+                remote = _wttj_text(job.get("remote")).lower()
+                # On garde France + offres en télétravail ; on écarte un bureau
+                # explicitement étranger (sauf si remote).
+                if country and country not in ("FR", "FRANCE") and "remote" not in remote and not remote.startswith("full"):
+                    continue
+                location = city or ("Télétravail" if remote else "France")
+
+                job_slug = job.get("slug") or job.get("reference") or ""
+                job_url = (f"https://www.welcometothejungle.com/fr/companies/{slug}/jobs/{job_slug}"
+                           if job_slug else f"https://www.welcometothejungle.com/fr/companies/{slug}")
+
+                desc = clean_text(_wttj_text(job.get("profile") or job.get("description")))
+                if not desc:
+                    desc = " · ".join(p for p in [contract, city] if p)
+
+                jobs.append({
+                    "id": f"wttj-{slug}-{job_slug}",
+                    "title": title,
+                    "company": label,
+                    "location": location,
+                    "url": job_url,
+                    "description": desc[:150] + "..." if len(desc) > 150 else desc,
+                    "source": "WTTJ",
+                    "company_watch": True,
+                })
+        except Exception as e:
+            print(f"  EXCEPTION WTTJ {label}: {e}")
+    print(f"  WTTJ total → {len(jobs)} offres après filtre")
+    return jobs
+
+
 def filter_jobs_with_ai(jobs):
     mistral_key = os.environ.get("MISTRAL_API_KEY", "")
     if not mistral_key:
@@ -565,6 +681,7 @@ def section_html(title, emoji, jobs, color):
         "Hellowork": "#d95f02",
         "Jooble": "#b56900",
         "ADEME": "#c04a00",
+        "WTTJ": "#7a6500",
     }
     html = f"""
     <div style="margin:2rem 0 1rem">
@@ -632,7 +749,9 @@ def excluded_section_html(excluded_log):
 
 def build_email(jobs, feedback_url, excluded_log=None):
     today = datetime.now().strftime("%d/%m/%Y")
-    marseille, paca, paris = categorize(jobs)
+    watchlist = [j for j in jobs if j.get("company_watch")]
+    geo_jobs = [j for j in jobs if not j.get("company_watch")]
+    marseille, paca, paris = categorize(geo_jobs)
     total = len(jobs)
     new_total = sum(1 for j in jobs if j.get("is_new"))
 
@@ -647,13 +766,16 @@ def build_email(jobs, feedback_url, excluded_log=None):
     body = f"""
     <html><body style="font-family:Arial,sans-serif;max-width:700px;margin:auto;padding:20px">
     <h2 style="color:#2d6a4f">🌱 Alerte emploi climat — {today}</h2>
-    <p style="color:#555">{total} offre(s) dont <strong style="color:#e05c2a">{new_total} nouvelle(s)</strong> — Marseille ({len(marseille)}) · PACA ({len(paca)}) · Paris ({len(paris)})</p>
+    <p style="color:#555">{total} offre(s) dont <strong style="color:#e05c2a">{new_total} nouvelle(s)</strong> — Entreprises ciblées ({len(watchlist)}) · Marseille ({len(marseille)}) · PACA ({len(paca)}) · Paris ({len(paris)})</p>
     <a href="{feedback_url}" style="display:inline-block;margin:8px 0 16px;padding:10px 20px;background:#2d6a4f;color:#fff;border-radius:6px;text-decoration:none;font-size:14px">
         👎 Signaler des offres non pertinentes
     </a>
     <hr style="border:1px solid #e0e0e0">
     """
 
+    body += section_html("Entreprises ciblées", "🏢", watchlist, "#0a5c54")
+    if watchlist and (marseille or paca or paris):
+        body += '<hr style="border:0.5px solid #e0e0e0;margin:1rem 0">'
     body += section_html("Marseille", "🔵", marseille, "#0f6e56")
     if marseille and paca:
         body += '<hr style="border:0.5px solid #e0e0e0;margin:1rem 0">'
@@ -696,6 +818,7 @@ if __name__ == "__main__":
         # et contenu majoritairement stages/bénévolat hors profil.
 
     all_jobs += search_ademe()
+    all_jobs += search_wttj()
 
     print(f"\n{len(all_jobs)} offres brutes avant filtrage IA")
     all_jobs = filter_jobs_with_ai(all_jobs)
