@@ -1079,5 +1079,190 @@
     "keep": false,
     "reason": "métier tech/automobile sans lien climat/durabilité",
     "borderline": false
+  },
+  "responsable rse h/f|paragon france & roumanie": {
+    "keep": true,
+    "reason": "Responsable RSE senior à Paris, correspond au profil conseil/stratégie climat en entreprise",
+    "borderline": false
+  },
+  "ingénieur environnement f/h|innova solutions": {
+    "keep": false,
+    "reason": "Ingénieur environnement (poste technique, pas stratégie/conseil)",
+    "borderline": false
+  },
+  "conseiller « affaires générales » au cabinet de la pdg h/f|ird": {
+    "keep": false,
+    "reason": "Affaires générales (poste administratif, pas lié climat/développement durable)",
+    "borderline": false
+  },
+  "chef d'équipe d'exploitation fh h/f|veolia": {
+    "keep": false,
+    "reason": "Chef d'équipe exploitation (poste terrain/technique, pas stratégie climat)",
+    "borderline": false
+  },
+  "chef de projet réseaux de chaleur urbain f/h|akteo sas": {
+    "keep": true,
+    "reason": "Chef de projet réseaux de chaleur urbain (stratégie énergie/climat, senior)",
+    "borderline": false
+  },
+  "ingénieur énergétique sénior f/h|achil": {
+    "keep": true,
+    "reason": "Ingénieur énergétique senior (décarbonation/efficacité énergétique, stratégie climat)",
+    "borderline": false
+  },
+  "ingénieur planning primavera p6 f/h|akteo sas": {
+    "keep": false,
+    "reason": "Ingénieur planning nucléaire (poste technique, nucléaire rejeté)",
+    "borderline": false
+  },
+  "charge de mission developpement durable et energie|ministère des armées": {
+    "keep": true,
+    "reason": "Chargé de mission développement durable et énergie au Ministère des Armées (stratégie publique climat)",
+    "borderline": false
+  },
+  "ingénieur.e bâtiment durable f/h|ademe": {
+    "keep": true,
+    "reason": "Ingénieur bâtiment durable à l'ADEME (stratégie climat publique)",
+    "borderline": false
+  },
+  "staff sales engineer (remote, us)|renew home": {
+    "keep": false,
+    "reason": "Staff Sales Engineer (poste commercial, pas climat)",
+    "borderline": false
+  },
+  "senior technical program manager (remote, us)|renew home": {
+    "keep": false,
+    "reason": "Senior Technical Program Manager (poste tech/produit, pas climat)",
+    "borderline": false
+  },
+  "manager, market development (remote, us)|renew home": {
+    "keep": false,
+    "reason": "Manager Market Development (poste commercial, pas climat)",
+    "borderline": false
+  },
+  "senior technical implementation manager, vpp (remote, us)|renew home": {
+    "keep": false,
+    "reason": "Senior Technical Implementation Manager (poste tech, pas climat)",
+    "borderline": false
+  },
+  "engineering manager, infrastructure (remote, us)|renew home": {
+    "keep": false,
+    "reason": "Engineering Manager Infrastructure (poste tech, pas climat)",
+    "borderline": false
+  },
+  "product designer (6 month contract - remote, us)|renew home": {
+    "keep": false,
+    "reason": "Product Designer (poste tech/produit, pas climat)",
+    "borderline": false
+  },
+  "engineering manager, consumer (remote, us)|renew home": {
+    "keep": false,
+    "reason": "Engineering Manager Consumer (poste tech, pas climat)",
+    "borderline": false
+  },
+  "senior it project manager (contractor)|protera": {
+    "keep": false,
+    "reason": "Senior IT Project Manager (poste tech, pas climat)",
+    "borderline": false
+  },
+  "network operations engineer|protera": {
+    "keep": false,
+    "reason": "Network Operations Engineer (poste tech, pas climat)",
+    "borderline": false
+  },
+  "senior data engineer|ofload": {
+    "keep": false,
+    "reason": "Senior Data Engineer (poste tech/data, pas climat)",
+    "borderline": false
+  },
+  "data engineer|ofload": {
+    "keep": false,
+    "reason": "Data Engineer (poste tech/data, pas climat)",
+    "borderline": false
+  },
+  "people partner|ofload": {
+    "keep": false,
+    "reason": "People Partner (poste RH, pas climat)",
+    "borderline": false
+  },
+  "senior cloud systems engineer (multi-cloud)|protera": {
+    "keep": false,
+    "reason": "Senior Cloud Systems Engineer (poste tech, pas climat)",
+    "borderline": false
+  },
+  "sr. sap engineer - core|protera": {
+    "keep": false,
+    "reason": "Sr. SAP Engineer (poste tech, pas climat)",
+    "borderline": false
+  },
+  "sr. sap architect - product|protera": {
+    "keep": false,
+    "reason": "Sr. SAP Architect (poste tech, pas climat)",
+    "borderline": false
+  },
+  "cloud engineer|protera": {
+    "keep": false,
+    "reason": "Cloud Engineer (poste tech, pas climat)",
+    "borderline": false
+  },
+  "cybersecurity engineer|protera": {
+    "keep": false,
+    "reason": "métier tech/produit (Cybersecurity Engineer) - hors climat/stratégie",
+    "borderline": false
+  },
+  "operations and integration lead|transformations community": {
+    "keep": false,
+    "reason": "métier tech/produit (Operations and Integration Lead) - hors climat/stratégie",
+    "borderline": false
+  },
+  "senior mechanical systems engineer|skyven technologies": {
+    "keep": false,
+    "reason": "métier tech/produit (Senior Mechanical Systems Engineer) - hors climat/stratégie",
+    "borderline": false
+  },
+  "(climate tech) general interest|aquaria": {
+    "keep": false,
+    "reason": "métier tech/produit (Climate Tech) - hors climat/stratégie",
+    "borderline": false
+  },
+  "(climate tech) account executive|aquaria": {
+    "keep": false,
+    "reason": "commercial (Account Executive) - hors climat/stratégie",
+    "borderline": false
+  },
+  "charge d'affaires génie climatique f/h|meteojob": {
+    "keep": false,
+    "reason": "technicien terrain (Chargé d'affaires génie climatique) - hors stratégie/conseil",
+    "borderline": false
+  },
+  "auditeur confirmé f/h|hays france": {
+    "keep": false,
+    "reason": "audit financier/extra-financier - hors climat/stratégie",
+    "borderline": false
+  },
+  "ingénieur responsable d'affaires en maîtrise d'œuvre f/h|cabinet merlin": {
+    "keep": false,
+    "reason": "technicien/maîtrise d'œuvre (Ingénieur responsable d'affaires) - hors stratégie/conseil",
+    "borderline": false
+  },
+  "responsable d'affaires cvc f/h|equans": {
+    "keep": false,
+    "reason": "technicien/maîtrise d'œuvre (Responsable d'affaires CVC) - hors stratégie/conseil",
+    "borderline": false
+  },
+  "responsable de secteur - idf & nord-ouest f/h|wilo france": {
+    "keep": false,
+    "reason": "commercial (Responsable de Secteur) - hors climat/stratégie",
+    "borderline": false
+  },
+  "responsable développement durable f/h|hellowork": {
+    "keep": true,
+    "reason": "Responsable Développement Durable en entreprise - PACA (Toulouse) mais RSE stratégique possible",
+    "borderline": true
+  },
+  "responsable d'agence matériel de réemploi f/h|groupe klc": {
+    "keep": false,
+    "reason": "coordination réemploi (Responsable d'agence matériel) - hors climat/stratégie",
+    "borderline": false
   }
 }
