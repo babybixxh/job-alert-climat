@@ -1921,17 +1921,6 @@ def send_priority_alert(jobs):
 
 
 if __name__ == "__main__":
-    # Mode test ponctuel : vérifie le branchement de la notif temps réel
-    # (Telegram/Slack) en envoyant un message factice, puis s'arrête.
-    if os.environ.get("TEST_NOTIF"):
-        send_priority_alert([{
-            "title": "✅ Test de configuration — alerte climat",
-            "company": "job-alert-climat", "location": "—",
-            "url": "https://github.com/babybixxh/job-alert-climat",
-            "score": 100, "is_new": True,
-        }])
-        raise SystemExit(0)
-
     seen_ids = set(load_json(SEEN_FILE, []))
     print(f"{len(seen_ids)} offres déjà vues en mémoire")
     # Offres conservées hier (avant écrasement de TODAY_FILE) : sert à repérer
