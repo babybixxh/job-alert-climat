@@ -90,16 +90,19 @@ DEFAULT_KEPT_SCORE = 60
 # Boards Greenhouse d'entreprises climat suivies en direct (offres à la
 # source, avant les agrégateurs). Token = segment d'URL boards.greenhouse.io/
 # <token>. Surchargé par la variable d'env GREENHOUSE_BOARDS (CSV) si fournie.
-# Les logs CI (« Greenhouse <token> → N brutes / HTTP 404 ») révèlent les
-# tokens à corriger, comme pour WTTJ.
-GREENHOUSE_BOARDS_DEFAULT = [
-    "watershed", "sweep", "persefoni", "sylvera", "patch", "pachama",
-    "carbonchain", "planet", "electramedical",
-]
+#
+# Liste réduite aux seuls tokens confirmés VIVANTS par sondage CI : la plupart
+# des boîtes climat FR (Greenly, Sami, Deepki, Carbone 4…) ne sont PAS sur des
+# boards Greenhouse publics (404) et sont déjà couvertes via Adzuna-entreprises,
+# WTTJ et l'APEC. Ces boards-ci sont surtout US ; le filtre géographique ne
+# laisse passer que leurs rares postes FR/Europe/remote. Pour en ajouter,
+# poser le token dans le secret GREENHOUSE_BOARDS (séparés par des virgules).
+GREENHOUSE_BOARDS_DEFAULT = ["watershed", "patch", "carbonchain", "tomorrow"]
 
 # Entreprises climat suivies via l'API publique Lever (api.lever.co/v0/
-# postings/<company>). Même logique de réglage par les logs CI.
-LEVER_COMPANIES_DEFAULT = ["climeworks", "watershed", "commonwealthfusion"]
+# postings/<company>). Vide par défaut : aucun board climat FR/EU pertinent
+# trouvé sur Lever lors du sondage. À renseigner via le secret LEVER_COMPANIES.
+LEVER_COMPANIES_DEFAULT = []
 
 # Marqueurs d'offres US à écarter sur les boards internationaux (Greenhouse/
 # Lever/LinkedIn) : on ne garde que France / Europe / télétravail.
@@ -1899,54 +1902,7 @@ def send_priority_alert(jobs):
         print(f"  EXCEPTION notif prioritaire: {e}")
 
 
-def debug_boards():
-    """TEMPORAIRE : sonde des tokens Greenhouse/Lever candidats (entreprises
-    climat) pour repérer ceux qui répondent et combien d'offres FR/Europe ils
-    portent. À supprimer une fois la liste finale figée."""
-    gh = ["watershed", "watershedclimate", "sweep", "normative", "plana",
-          "sylvera", "persefoni", "patch", "pachama", "carbonchain", "climeworks",
-          "ecovadis", "cervest", "altruistiq", "supercritical", "tomorrow",
-          "vaayu", "deepki", "cozero", "emitwise", "minimum", "greenly", "sami",
-          "carbonfact", "terrascope", "sinai", "sustained", "spherics", "greenomy",
-          "coolset", "planetly", "flowcarbon", "isometric", "oxa", "twelve",
-          "charm", "runwild", "boomitra", "sweepnet", "planA", "plan-a"]
-    lever = ["climeworks", "watershed", "commonwealthfusion", "sylvera",
-             "persefoni", "pachama", "charm", "twelve", "normative", "deepki",
-             "ecovadis", "altruistiq", "supercritical", "cervest", "greenly"]
-    print("=== DEBUG GREENHOUSE ===")
-    for t in gh:
-        try:
-            r = requests.get(f"https://boards-api.greenhouse.io/v1/boards/{t}/jobs",
-                             params={"content": "true"}, timeout=12)
-            if r.status_code == 200:
-                jobs = r.json().get("jobs", [])
-                eu = [j for j in jobs if keep_international_location((j.get("location") or {}).get("name", ""))]
-                locs = list({(j.get("location") or {}).get("name", "") for j in eu})[:6]
-                print(f"  GH OK {t} → {len(jobs)} total, {len(eu)} FR/EU/remote | {locs}")
-            else:
-                print(f"  GH {t} → {r.status_code}")
-        except Exception as e:
-            print(f"  GH {t} ERR {repr(e)[:60]}")
-    print("=== DEBUG LEVER ===")
-    for c in lever:
-        try:
-            r = requests.get(f"https://api.lever.co/v0/postings/{c}",
-                             params={"mode": "json"}, timeout=12)
-            if r.status_code == 200:
-                jobs = r.json()
-                eu = [j for j in jobs if keep_international_location((j.get("categories") or {}).get("location", ""))]
-                locs = list({(j.get("categories") or {}).get("location", "") for j in eu})[:6]
-                print(f"  LV OK {c} → {len(jobs)} total, {len(eu)} FR/EU/remote | {locs}")
-            else:
-                print(f"  LV {c} → {r.status_code}")
-        except Exception as e:
-            print(f"  LV {c} ERR {repr(e)[:60]}")
-    raise SystemExit(0)
-
-
 if __name__ == "__main__":
-    if os.environ.get("DEBUG_BOARDS"):
-        debug_boards()
     seen_ids = set(load_json(SEEN_FILE, []))
     print(f"{len(seen_ids)} offres déjà vues en mémoire")
     # Offres conservées hier (avant écrasement de TODAY_FILE) : sert à repérer

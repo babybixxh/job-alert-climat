@@ -4,11 +4,6 @@ on:
   schedule:
     - cron: '0 5 * * *'
   workflow_dispatch:
-    inputs:
-      debug_boards:
-        description: "Sonder les tokens Greenhouse/Lever (1 = oui)"
-        required: false
-        default: ""
 
 jobs:
   run-scraper:
@@ -46,7 +41,6 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-          DEBUG_BOARDS: ${{ github.event.inputs.debug_boards }}
         run: python scraper.py
 
       - name: Sauvegarder fichiers
