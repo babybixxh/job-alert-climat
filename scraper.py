@@ -265,6 +265,21 @@ def normalize_title(title):
     return " ".join(sorted(tokens))
 
 
+# Marqueurs Paris / Île-de-France. Sert à la restriction temporaire : à Paris,
+# on ne retient une offre QUE si elle vient d'une entreprise suivie.
+PARIS_TERMS = [
+    "paris", "île-de-france", "ile-de-france", "idf", "la défense", "la defense",
+    "hauts-de-seine", "seine-saint-denis", "val-de-marne", "nanterre",
+    "boulogne-billancourt", "levallois", "issy-les-moulineaux", "montreuil",
+    "saint-denis", "courbevoie", "puteaux",
+]
+
+
+def is_paris_location(value):
+    text = (value or "").lower()
+    return any(term in text for term in PARIS_TERMS)
+
+
 def is_location_excluded(value):
     text = (value or "").lower()
     return any(term in text for term in LOCATION_EXCLUSIONS)
@@ -1815,7 +1830,10 @@ def build_email(jobs, feedback_url, excluded_log=None, disappeared=None, health_
     <html><body style="font-family:Arial,sans-serif;max-width:700px;margin:auto;padding:20px">
     <h2 style="color:#2d6a4f">🌱 Alerte emploi climat — {today}</h2>
     <p style="color:#555">{total} offre(s) dont <strong style="color:#e05c2a">{new_total} nouvelle(s)</strong> · meilleur score <strong style="color:#2d6a4f">{top_score}/100</strong></p>
-    <p style="color:#888;font-size:13px;margin-top:-4px">Entreprises ciblées ({len(watchlist)}) · Marseille ({len(marseille)}) · PACA ({len(paca)}) · Paris ({len(paris)})</p>
+    <p style="color:#888;font-size:13px;margin-top:-4px">Entreprises ciblées ({len(watchlist)}) · Marseille ({len(marseille)}) · PACA ({len(paca)}) · Hors PACA &amp; télétravail ({len(paris)})</p>
+    <div style="margin:10px 0;padding:10px 14px;background:#fff8e6;border:1px solid #f0d98a;border-radius:6px;font-size:13px;color:#7a5b00">
+        ℹ️ <strong>Paris en pause.</strong> Pour l'instant, les offres parisiennes ne sont retenues que si elles émanent des entreprises suivies ({", ".join(WTTJ_COMPANIES.values())}). Marseille, la PACA et le télétravail ne sont pas filtrés.
+    </div>
     <a href="{feedback_url}" style="display:inline-block;margin:8px 0 16px;padding:10px 20px;background:#2d6a4f;color:#fff;border-radius:6px;text-decoration:none;font-size:14px">
         👎 Signaler des offres non pertinentes
     </a>
@@ -1828,7 +1846,7 @@ def build_email(jobs, feedback_url, excluded_log=None, disappeared=None, health_
     body += section_html("Région PACA hors Marseille", "🟢", paca, "#3b6d11")
     if (marseille or paca) and paris:
         body += '<hr style="border:0.5px solid #e0e0e0;margin:1rem 0">'
-    body += section_html("Paris", "🔴", paris, "#993c1d")
+    body += section_html("Hors PACA &amp; télétravail", "🔴", paris, "#993c1d")
     if (marseille or paca or paris) and watchlist:
         body += '<hr style="border:0.5px solid #e0e0e0;margin:1rem 0">'
     body += section_html("Entreprises ciblées", "🏢", watchlist, "#0a5c54")
@@ -1924,6 +1942,12 @@ if __name__ == "__main__":
     tasks = []
     for keyword in KEYWORDS:
         for location in LOCATIONS:
+            # Paris (temporaire) : pas de recherche géographique — les offres
+            # parisiennes ne sont retenues que via les entreprises suivies, donc
+            # interroger Paris ne ferait que produire des résultats écartés (et
+            # gaspiller des requêtes, ce qui aggravait le rate-limit LinkedIn).
+            if location == "Paris":
+                continue
             tasks.append((search_adzuna, (keyword, location)))
             tasks.append((search_france_travail, (keyword, location)))
             tasks.append((search_linkedin, (keyword, location)))
@@ -1961,6 +1985,13 @@ if __name__ == "__main__":
         if is_company_excluded(job.get("company", "")):
             log_excluded(job["title"], job["company"], job.get("location", ""),
                          job.get("source", ""), "employeur exclu")
+            continue
+        # Restriction Paris (temporaire) : une offre parisienne n'est gardée que
+        # si elle vient d'une entreprise suivie. Marseille / PACA / télétravail
+        # ne sont pas concernés.
+        if is_paris_location(job.get("location", "")) and not job.get("company_watch"):
+            log_excluded(job["title"], job["company"], job.get("location", ""),
+                         job.get("source", ""), "Paris réservé aux entreprises suivies")
             continue
         filtered_jobs.append(job)
     all_jobs = filtered_jobs
