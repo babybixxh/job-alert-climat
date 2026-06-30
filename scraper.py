@@ -76,6 +76,42 @@ REJECTED_REASONS_FILE = "rejected_reasons.json"
 AI_VERDICTS_FILE = "ai_verdicts.json"
 AI_VERDICTS_MAX = 3000
 
+# Suivi de la santé des sources : pour chaque source, nombre de jours
+# consécutifs sans aucune offre brute (parseur potentiellement cassé).
+SOURCE_HEALTH_FILE = "source_health.json"
+SOURCE_HEALTH_ALERT = 3  # alerte à partir de 3 jours d'affilée à zéro
+
+# Score IA en dessous duquel une offre n'est PAS poussée en notif temps réel.
+PRIORITY_SCORE = 85
+# Score par défaut attribué à une offre gardée mais jugée avant l'ajout du
+# scoring (cache hérité sans champ "score").
+DEFAULT_KEPT_SCORE = 60
+
+# Boards Greenhouse d'entreprises climat suivies en direct (offres à la
+# source, avant les agrégateurs). Token = segment d'URL boards.greenhouse.io/
+# <token>. Surchargé par la variable d'env GREENHOUSE_BOARDS (CSV) si fournie.
+# Les logs CI (« Greenhouse <token> → N brutes / HTTP 404 ») révèlent les
+# tokens à corriger, comme pour WTTJ.
+GREENHOUSE_BOARDS_DEFAULT = [
+    "watershed", "sweep", "persefoni", "sylvera", "patch", "pachama",
+    "carbonchain", "planet", "electramedical",
+]
+
+# Entreprises climat suivies via l'API publique Lever (api.lever.co/v0/
+# postings/<company>). Même logique de réglage par les logs CI.
+LEVER_COMPANIES_DEFAULT = ["climeworks", "watershed", "commonwealthfusion"]
+
+# Marqueurs d'offres US à écarter sur les boards internationaux (Greenhouse/
+# Lever/LinkedIn) : on ne garde que France / Europe / télétravail.
+US_LOCATION_MARKERS = [
+    "united states", "usa", "u.s.", ", tx", ", ny", ", ca", ", fl", ", oh",
+    ", il", ", wa", ", ma", ", co", "remote - us", "remote, us", "remote (us",
+]
+EU_LOCATION_TERMS = [
+    "paris", "marseille", "aix", "toulon", "nice", "provence", "paca",
+    "france", "europe", "emea", "français",
+]
+
 # Entreprises suivies en direct via l'API publique Welcome to the Jungle.
 # Clé = slug WTTJ (segment d'URL welcometothejungle.com/fr/companies/<slug>),
 # valeur = libellé affiché. Les slugs sont des paris raisonnables : les logs CI
@@ -193,6 +229,37 @@ def matches_location(value):
     text = (value or "").lower()
     allowed_terms = ["paris", "marseille", "aix", "aix-en-provence", "toulon", "nice", "remote", "télétravail", "teletravail", "france", "paca", "provence"]
     return any(term in text for term in allowed_terms)
+
+
+def keep_international_location(value):
+    """Pour les boards internationaux (Greenhouse/Lever/LinkedIn) : ne garde
+    que France / Europe / télétravail, en écartant les offres clairement US.
+    Évite d'inonder l'alerte d'offres américaines non pertinentes."""
+    text = (value or "").lower()
+    if any(m in text for m in US_LOCATION_MARKERS) and not any(e in text for e in EU_LOCATION_TERMS):
+        return False
+    if any(e in text for e in EU_LOCATION_TERMS):
+        return True
+    return any(r in text for r in ["remote", "anywhere", "télétravail", "teletravail"])
+
+
+_TITLE_NOISE = re.compile(
+    r"\b(h/f|f/h|m/f|m/w|w/m|h-f|f-h|cdi|cdd|temps plein|full[- ]?time|"
+    r"freelance|alternance|stage)\b", re.IGNORECASE)
+
+
+def normalize_title(title):
+    """Normalise un intitulé pour la déduplication inter-sources : minuscules,
+    sans accents, sans mentions parasites (H/F, CDI…), sans ponctuation, mots
+    triés. « Consultant Climat (H/F) - CDI » et « climat consultant cdi »
+    produisent ainsi la même clé."""
+    import unicodedata
+    t = unicodedata.normalize("NFD", (title or "").lower())
+    t = "".join(c for c in t if unicodedata.category(c) != "Mn")
+    t = _TITLE_NOISE.sub(" ", t)
+    t = re.sub(r"[^a-z0-9 ]+", " ", t)
+    tokens = [w for w in t.split() if len(w) > 1]
+    return " ".join(sorted(tokens))
 
 
 def is_location_excluded(value):
@@ -929,6 +996,173 @@ def search_arbeitnow():
     return jobs
 
 
+def _greenhouse_boards():
+    env = os.environ.get("GREENHOUSE_BOARDS", "").strip()
+    if env:
+        return [b.strip() for b in env.split(",") if b.strip()]
+    return GREENHOUSE_BOARDS_DEFAULT
+
+
+def search_greenhouse():
+    """Boards Greenhouse des entreprises climat suivies : API JSON publique
+    sans clé (boards-api.greenhouse.io/v1/boards/<token>/jobs?content=true).
+    Offres récupérées À LA SOURCE, avant qu'elles n'arrivent sur les
+    agrégateurs. On ne garde que les postes France / Europe / télétravail ;
+    le filtre IA tranche ensuite la pertinence métier. Un token invalide
+    renvoie 404 (visible dans les logs CI, à corriger comme pour WTTJ)."""
+    exclusions = get_exclusions()
+    headers = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
+    jobs = []
+    for token in _greenhouse_boards():
+        try:
+            r = requests.get(
+                f"https://boards-api.greenhouse.io/v1/boards/{token}/jobs",
+                params={"content": "true"}, headers=headers, timeout=15)
+            if r.status_code != 200:
+                print(f"  Greenhouse {token} → HTTP {r.status_code} (token à vérifier ?)")
+                continue
+            results = r.json().get("jobs", [])
+            print(f"  Greenhouse {token} → {len(results)} brutes")
+            for job in results:
+                title = clean_text(job.get("title", ""))
+                if not title:
+                    continue
+                location = clean_text((job.get("location") or {}).get("name", ""))
+                if not keep_international_location(location):
+                    continue
+                if any(excl in title.lower() for excl in exclusions):
+                    log_excluded(title, token, location, "Greenhouse", "mot-clé exclu")
+                    continue
+                description = clean_text(job.get("content", ""))
+                jobs.append({
+                    "id": f"gh-{token}-{job.get('id', '')}",
+                    "title": title,
+                    "company": token.capitalize(),
+                    "location": location or "Remote",
+                    "url": job.get("absolute_url", ""),
+                    "description": description[:150] + "..." if description else "",
+                    "date": job.get("updated_at", ""),
+                    "source": "Greenhouse",
+                    "company_watch": True,
+                })
+        except Exception as e:
+            print(f"  EXCEPTION Greenhouse {token}: {e}")
+    print(f"  Greenhouse total → {len(jobs)} offres après filtre")
+    return jobs
+
+
+def _lever_companies():
+    env = os.environ.get("LEVER_COMPANIES", "").strip()
+    if env:
+        return [c.strip() for c in env.split(",") if c.strip()]
+    return LEVER_COMPANIES_DEFAULT
+
+
+def search_lever():
+    """Boards Lever des entreprises climat suivies : API JSON publique sans
+    clé (api.lever.co/v0/postings/<company>?mode=json). Même logique que
+    Greenhouse : offres à la source, filtrées France / Europe / télétravail."""
+    exclusions = get_exclusions()
+    headers = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
+    jobs = []
+    for company in _lever_companies():
+        try:
+            r = requests.get(
+                f"https://api.lever.co/v0/postings/{company}",
+                params={"mode": "json"}, headers=headers, timeout=15)
+            if r.status_code != 200:
+                print(f"  Lever {company} → HTTP {r.status_code} (slug à vérifier ?)")
+                continue
+            results = r.json()
+            print(f"  Lever {company} → {len(results)} brutes")
+            for job in results:
+                title = clean_text(job.get("text", ""))
+                if not title:
+                    continue
+                cats = job.get("categories") or {}
+                location = clean_text(cats.get("location", ""))
+                if not keep_international_location(location):
+                    continue
+                if any(excl in title.lower() for excl in exclusions):
+                    log_excluded(title, company, location, "Lever", "mot-clé exclu")
+                    continue
+                description = clean_text(job.get("descriptionPlain", ""))
+                created = job.get("createdAt")
+                date = ""
+                if isinstance(created, (int, float)):
+                    date = datetime.utcfromtimestamp(created / 1000).strftime("%Y-%m-%d")
+                jobs.append({
+                    "id": f"lever-{company}-{job.get('id', '')}",
+                    "title": title,
+                    "company": company.capitalize(),
+                    "location": location or "Remote",
+                    "url": job.get("hostedUrl", ""),
+                    "description": description[:150] + "..." if description else "",
+                    "date": date,
+                    "source": "Lever",
+                    "company_watch": True,
+                })
+        except Exception as e:
+            print(f"  EXCEPTION Lever {company}: {e}")
+    print(f"  Lever total → {len(jobs)} offres après filtre")
+    return jobs
+
+
+def search_linkedin(keyword, location):
+    """LinkedIn via l'API « jobs-guest » (sans authentification) utilisée par
+    le widget public d'offres. Fragile et soumise à l'anti-bot LinkedIn :
+    se désactive proprement (retour []) sur tout statut non-200. Conservée
+    car, quand elle répond, c'est la plus grosse source d'offres cadres."""
+    exclusions = get_exclusions()
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36",
+        "Accept-Language": "fr-FR",
+    }
+    try:
+        from bs4 import BeautifulSoup
+        url = "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search"
+        params = {
+            "keywords": keyword, "location": location,
+            "f_TPR": "r604800",  # postées dans les 7 derniers jours
+            "start": 0,
+        }
+        r = requests.get(url, params=params, headers=headers, timeout=15)
+        if r.status_code != 200:
+            print(f"  LinkedIn '{keyword}' / '{location}' → HTTP {r.status_code} (anti-bot ?)")
+            return []
+        soup = BeautifulSoup(r.text, "html.parser")
+        cards = soup.find_all("li")
+        print(f"  LinkedIn '{keyword}' / '{location}' → {len(cards)} cartes")
+        jobs = []
+        for card in cards:
+            title_el = card.find(class_=lambda c: c and "title" in str(c).lower())
+            link_el = card.find("a", href=True)
+            if not title_el or not link_el:
+                continue
+            title = clean_text(title_el.get_text(strip=True))
+            if not title or any(excl in title.lower() for excl in exclusions):
+                if title:
+                    log_excluded(title, "LinkedIn", location, "LinkedIn", "mot-clé exclu")
+                continue
+            company_el = card.find(class_=lambda c: c and "subtitle" in str(c).lower())
+            loc_el = card.find(class_=lambda c: c and "location" in str(c).lower())
+            href = link_el["href"].split("?")[0]
+            jobs.append({
+                "id": href,
+                "title": title,
+                "company": clean_text(company_el.get_text(strip=True)) if company_el else "N/A",
+                "location": clean_text(loc_el.get_text(strip=True)) if loc_el else location,
+                "url": href,
+                "description": "",
+                "source": "LinkedIn",
+            })
+        print(f"  LinkedIn '{keyword}' / '{location}' → {len(jobs)} après filtre")
+        return jobs
+    except Exception as e:
+        print(f"  EXCEPTION LinkedIn: {e}")
+        return []
+
+
 def _sp_paca_location(job_url, card_text):
     """Renvoie un libellé de lieu PACA si l'offre est en PACA, sinon None.
     1) offre territoriale : département lu dans la référence d'URL ;
@@ -1260,9 +1494,14 @@ sèchement : garde-les (keep=true) MAIS marque "borderline": true. Réserve
 borderline=false aux offres qui correspondent clairement et pleinement au
 profil. Les rejets absolus listés plus haut restent rejetés (keep=false).
 
+SCORE : pour chaque offre GARDÉE, donne aussi un "score" entier de 0 à 100
+mesurant l'adéquation au profil (100 = match parfait conseil/stratégie climat
+senior dans la zone cible ; 60-80 = bon match ; 40-60 = correct mais
+générique / borderline). Pour une offre rejetée, score = 0.
+
 Réponds UNIQUEMENT avec un JSON (sans texte avant/après, sans backticks).
-Chaque objet : index, keep (bool), borderline (bool), reason.
-[{{"index": 0, "keep": true, "borderline": false, "reason": "consultant climat senior, correspond au profil"}}, ...]"""
+Chaque objet : index, keep (bool), borderline (bool), score (int 0-100), reason.
+[{{"index": 0, "keep": true, "borderline": false, "score": 90, "reason": "consultant climat senior, correspond au profil"}}, ...]"""
 
     r = requests.post(
         "https://api.mistral.ai/v1/chat/completions",
@@ -1297,10 +1536,17 @@ Chaque objet : index, keep (bool), borderline (bool), reason.
         keep = bool(decision.get("keep"))
         borderline = bool(decision.get("borderline"))
         reason = decision.get('reason', '')
+        try:
+            score = int(decision.get("score", DEFAULT_KEPT_SCORE))
+        except (TypeError, ValueError):
+            score = DEFAULT_KEPT_SCORE
+        score = max(0, min(100, score))
         if verdicts is not None:
-            verdicts[ai_key(job)] = {"keep": keep, "reason": reason, "borderline": borderline}
+            verdicts[ai_key(job)] = {"keep": keep, "reason": reason,
+                                     "borderline": borderline, "score": score}
         if keep:
             job["borderline"] = borderline
+            job["score"] = score
             kept.append(job)
         else:
             print(f"  IA exclu: {job['title']} → {reason}")
@@ -1335,6 +1581,7 @@ def filter_jobs_with_ai(jobs):
             to_evaluate.append(job)
         elif cached.get("keep"):
             job["borderline"] = cached.get("borderline", False)
+            job["score"] = cached.get("score", DEFAULT_KEPT_SCORE)
             kept.append(job)
         else:
             log_excluded(job['title'], job['company'], job.get('location', ''),
@@ -1370,10 +1617,16 @@ def ai_key(job):
 
 
 def deduplicate(jobs):
+    """Dédup inter-sources tolérante : on compare des intitulés normalisés
+    (sans accents, sans H/F/CDI…, mots triés) et un nom d'entreprise réduit à
+    ses lettres, pour attraper la même offre repostée avec un libellé un peu
+    différent sur Adzuna / France Travail / APEC. « Premier vu gagne » (l'ordre
+    de all_jobs est déterministe)."""
     seen = set()
     unique = []
     for job in jobs:
-        key = (job["title"].lower().strip(), job["company"].lower().strip())
+        company_key = re.sub(r"[^a-z0-9]+", "", job["company"].lower())
+        key = (normalize_title(job["title"]), company_key)
         if key not in seen:
             seen.add(key)
             unique.append(job)
@@ -1403,6 +1656,9 @@ def categorize(jobs):
 def section_html(title, emoji, jobs, color):
     if not jobs:
         return ""
+    # Tri par score IA décroissant (les meilleures correspondances en haut),
+    # puis nouveautés avant déjà-vues à score égal.
+    jobs = sorted(jobs, key=lambda j: (j.get("score", DEFAULT_KEPT_SCORE), j.get("is_new", False)), reverse=True)
     new_count = sum(1 for j in jobs if j.get("is_new"))
     source_colors = {
         "Adzuna": "#4a90a4",
@@ -1417,6 +1673,9 @@ def section_html(title, emoji, jobs, color):
         "ESS": "#5a8f3c",
         "Remote EU": "#1f7a99",
         "APEC": "#e2001a",
+        "Greenhouse": "#1f8a5c",
+        "Lever": "#5a4fcf",
+        "LinkedIn": "#0a66c2",
     }
     html = f"""
     <div style="margin:2rem 0 1rem">
@@ -1436,6 +1695,8 @@ def section_html(title, emoji, jobs, color):
         badge_borderline = ('<span style="font-size:11px;color:#fff;background:#e0a800;padding:1px 8px;border-radius:10px;margin-left:6px">⚠️ À VÉRIFIER</span>'
                             if job.get("borderline") else '')
         meta_bits = []
+        if job.get("score") is not None:
+            meta_bits.append(f"🎯 {job['score']}/100")
         if job.get("salary"):
             meta_bits.append(f"💰 {job['salary']}")
         date_str = format_job_date(job.get("date", ""))
@@ -1495,13 +1756,49 @@ def excluded_section_html(excluded_log):
     """
 
 
-def build_email(jobs, feedback_url, excluded_log=None):
+def disappeared_section_html(disappeared):
+    """Offres présentes hier dans l'alerte mais absentes aujourd'hui (souvent
+    pourvues : signal d'un marché tendu sur le profil)."""
+    if not disappeared:
+        return ""
+    items = ""
+    for d in disappeared[:15]:
+        items += (f'<li style="margin-bottom:4px;font-size:13px;color:#777">'
+                  f'{d.get("title", "")} — <span style="color:#999">{d.get("company", "")}</span>'
+                  f'</li>')
+    return f"""
+    <details style="margin-top:1.5rem;padding:12px;background:#fbfbfb;border-radius:8px;border:0.5px solid #eee">
+        <summary style="cursor:pointer;font-size:13px;color:#888">
+            👋 {len(disappeared)} offre(s) d'hier ne sont plus en ligne aujourd'hui
+        </summary>
+        <ul style="margin:10px 0 0;padding-left:20px">{items}</ul>
+    </details>
+    """
+
+
+def health_footer_html(health_alerts):
+    """Avertit qu'une source ne remonte plus rien depuis plusieurs jours
+    (parseur probablement cassé, comme Hellowork/WTTJ avant désactivation)."""
+    if not health_alerts:
+        return ""
+    rows = "".join(f"<li style='font-size:13px;color:#a33'>⚠️ <strong>{s}</strong> : "
+                   f"{n} jours sans aucune offre — parseur à vérifier</li>"
+                   for s, n in health_alerts)
+    return f"""
+    <div style="margin-top:1.5rem;padding:12px;background:#fff6f6;border-radius:8px;border:0.5px solid #f0d0d0">
+        <ul style="margin:0;padding-left:20px">{rows}</ul>
+    </div>
+    """
+
+
+def build_email(jobs, feedback_url, excluded_log=None, disappeared=None, health_alerts=None):
     today = datetime.now().strftime("%d/%m/%Y")
     watchlist = [j for j in jobs if j.get("company_watch")]
     geo_jobs = [j for j in jobs if not j.get("company_watch")]
     marseille, paca, paris = categorize(geo_jobs)
     total = len(jobs)
     new_total = sum(1 for j in jobs if j.get("is_new"))
+    top_score = max((j.get("score", DEFAULT_KEPT_SCORE) for j in jobs), default=0)
 
     if not total:
         return f"""
@@ -1514,7 +1811,8 @@ def build_email(jobs, feedback_url, excluded_log=None):
     body = f"""
     <html><body style="font-family:Arial,sans-serif;max-width:700px;margin:auto;padding:20px">
     <h2 style="color:#2d6a4f">🌱 Alerte emploi climat — {today}</h2>
-    <p style="color:#555">{total} offre(s) dont <strong style="color:#e05c2a">{new_total} nouvelle(s)</strong> — Entreprises ciblées ({len(watchlist)}) · Marseille ({len(marseille)}) · PACA ({len(paca)}) · Paris ({len(paris)})</p>
+    <p style="color:#555">{total} offre(s) dont <strong style="color:#e05c2a">{new_total} nouvelle(s)</strong> · meilleur score <strong style="color:#2d6a4f">{top_score}/100</strong></p>
+    <p style="color:#888;font-size:13px;margin-top:-4px">Entreprises ciblées ({len(watchlist)}) · Marseille ({len(marseille)}) · PACA ({len(paca)}) · Paris ({len(paris)})</p>
     <a href="{feedback_url}" style="display:inline-block;margin:8px 0 16px;padding:10px 20px;background:#2d6a4f;color:#fff;border-radius:6px;text-decoration:none;font-size:14px">
         👎 Signaler des offres non pertinentes
     </a>
@@ -1531,7 +1829,9 @@ def build_email(jobs, feedback_url, excluded_log=None):
     if (marseille or paca or paris) and watchlist:
         body += '<hr style="border:0.5px solid #e0e0e0;margin:1rem 0">'
     body += section_html("Entreprises ciblées", "🏢", watchlist, "#0a5c54")
+    body += disappeared_section_html(disappeared or [])
     body += excluded_section_html(excluded_log or [])
+    body += health_footer_html(health_alerts or [])
     body += "</body></html>"
     return body
 
@@ -1551,9 +1851,60 @@ def send_email(html_body, job_count):
     print(f"Email envoyé avec {job_count} offres !")
 
 
+def update_source_health(raw_counts):
+    """Met à jour le compteur de jours consécutifs sans offre par source et
+    renvoie la liste des sources en alerte (≥ SOURCE_HEALTH_ALERT jours à
+    zéro). `raw_counts` = nb d'offres BRUTES par source sur ce run."""
+    health = load_json(SOURCE_HEALTH_FILE, {})
+    alerts = []
+    for source, count in raw_counts.items():
+        streak = 0 if count > 0 else health.get(source, 0) + 1
+        health[source] = streak
+        if streak >= SOURCE_HEALTH_ALERT:
+            alerts.append((source, streak))
+    save_json(SOURCE_HEALTH_FILE, health)
+    if alerts:
+        print(f"  Santé sources : {len(alerts)} source(s) en alerte → {alerts}")
+    return alerts
+
+
+def send_priority_alert(jobs):
+    """Pousse une notif temps réel (Telegram puis Slack en repli) pour les
+    nouvelles offres à très haut score. No-op silencieux si aucun secret de
+    notif n'est configuré."""
+    priority = [j for j in jobs
+                if j.get("is_new") and j.get("score", 0) >= PRIORITY_SCORE]
+    if not priority:
+        return
+    priority.sort(key=lambda j: j.get("score", 0), reverse=True)
+    lines = [f"🔥 {len(priority)} offre(s) climat à fort potentiel :"]
+    for j in priority[:10]:
+        lines.append(f"• [{j.get('score')}/100] {j['title']} — {j['company']} ({j['location']})\n{j['url']}")
+    text = "\n\n".join(lines)
+
+    tg_token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+    tg_chat = os.environ.get("TELEGRAM_CHAT_ID", "")
+    slack_url = os.environ.get("SLACK_WEBHOOK_URL", "")
+    try:
+        if tg_token and tg_chat:
+            r = requests.post(
+                f"https://api.telegram.org/bot{tg_token}/sendMessage",
+                json={"chat_id": tg_chat, "text": text, "disable_web_page_preview": True},
+                timeout=15)
+            print(f"  Notif Telegram → HTTP {r.status_code} ({len(priority)} offre(s))")
+        elif slack_url:
+            r = requests.post(slack_url, json={"text": text}, timeout=15)
+            print(f"  Notif Slack → HTTP {r.status_code} ({len(priority)} offre(s))")
+    except Exception as e:
+        print(f"  EXCEPTION notif prioritaire: {e}")
+
+
 if __name__ == "__main__":
     seen_ids = set(load_json(SEEN_FILE, []))
     print(f"{len(seen_ids)} offres déjà vues en mémoire")
+    # Offres conservées hier (avant écrasement de TODAY_FILE) : sert à repérer
+    # celles qui ont disparu aujourd'hui.
+    previous_jobs = load_json(TODAY_FILE, [])
 
     # Toutes les recherches sont indépendantes (chacune renvoie une liste, le
     # seul état partagé est EXCLUDED_LOG via log_excluded() dont .append est
@@ -1572,9 +1923,11 @@ if __name__ == "__main__":
         for location in LOCATIONS:
             tasks.append((search_adzuna, (keyword, location)))
             tasks.append((search_france_travail, (keyword, location)))
+            tasks.append((search_linkedin, (keyword, location)))
     for fn in (search_ademe, search_adzuna_companies, search_jtms,
                search_service_public, search_ess, search_remotive,
-               search_arbeitnow, search_climatebase, search_apec):
+               search_arbeitnow, search_climatebase, search_apec,
+               search_greenhouse, search_lever):
         tasks.append((fn, ()))
 
     all_jobs = []
@@ -1587,6 +1940,13 @@ if __name__ == "__main__":
                 all_jobs += future.result()
             except Exception as e:
                 print(f"  EXCEPTION {getattr(fn, '__name__', fn)}: {e}")
+
+    # Comptage brut par source (avant tout filtre) pour le suivi de santé :
+    # une source qui tombe à 0 plusieurs jours d'affilée a un parseur cassé.
+    raw_counts = {}
+    for j in all_jobs:
+        raw_counts[j.get("source", "?")] = raw_counts.get(j.get("source", "?"), 0) + 1
+    health_alerts = update_source_health(raw_counts)
 
     before_loc_filter = len(all_jobs)
     filtered_jobs = []
@@ -1611,6 +1971,11 @@ if __name__ == "__main__":
 
     jobs = mark_seen(all_jobs, seen_ids)
 
+    # Offres d'hier disparues aujourd'hui (clé titre|entreprise normalisée).
+    today_keys = {ai_key(j) for j in jobs}
+    disappeared = [p for p in previous_jobs if ai_key(p) not in today_keys]
+    print(f"\n{len(disappeared)} offre(s) d'hier disparue(s) aujourd'hui")
+
     new_seen = seen_ids | {f"{j['title'].lower()}|{j['company'].lower()}" for j in jobs}
     save_json(SEEN_FILE, list(new_seen))
     save_json(TODAY_FILE, jobs)
@@ -1626,5 +1991,6 @@ if __name__ == "__main__":
         sources_count[j.get("source", "?")] = sources_count.get(j.get("source", "?"), 0) + 1
     print(f"Répartition par source (offres conservées) : {sources_count}")
 
-    html = build_email(jobs, feedback_url, EXCLUDED_LOG)
+    html = build_email(jobs, feedback_url, EXCLUDED_LOG, disappeared, health_alerts)
     send_email(html, len(jobs))
+    send_priority_alert(jobs)

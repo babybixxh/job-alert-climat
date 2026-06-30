@@ -35,7 +35,11 @@ jobs:
           JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           GH_PAT: ${{ secrets.GH_PAT }}
-          GREENHOUSE_BOARDS: ""
+          GREENHOUSE_BOARDS: ${{ secrets.GREENHOUSE_BOARDS }}
+          LEVER_COMPANIES: ${{ secrets.LEVER_COMPANIES }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: python scraper.py
 
@@ -43,7 +47,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add seen_jobs.json today_jobs.json rejected_keywords.json rejected_reasons.json ai_verdicts.json || true
+          git add seen_jobs.json today_jobs.json rejected_keywords.json rejected_reasons.json ai_verdicts.json source_health.json || true
           git status
           git diff --staged --quiet || git commit -m "Update jobs data"
           git push origin main
