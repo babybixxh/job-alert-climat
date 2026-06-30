@@ -1264,5 +1264,443 @@
     "keep": false,
     "reason": "coordination réemploi (Responsable d'agence matériel) - hors climat/stratégie",
     "borderline": false
+  },
+  "responsable projets - avignon|melvan sas": {
+    "keep": false,
+    "reason": "Titre trop générique 'Responsable Projets' sans lien explicite climat/RSE/stratégie",
+    "borderline": false,
+    "score": 0
+  },
+  "chef·fe de projet rse|reform": {
+    "keep": true,
+    "reason": "Chef·fe de projet RSE à Marseille, poste qualifié senior en entreprise, correspond au profil",
+    "borderline": false,
+    "score": 85
+  },
+  "chargé d'affaires énergie - contrats de performances énergétiques (h/f)|syclef": {
+    "keep": false,
+    "reason": "Poste technique 'Chargé d'Affaires Énergie' sans lien stratégie climat/consulting",
+    "borderline": false,
+    "score": 0
+  },
+  "attache methodes h/f|edf": {
+    "keep": false,
+    "reason": "Poste administratif 'Attaché méthodes' chez EDF, hors stratégie climat",
+    "borderline": false,
+    "score": 0
+  },
+  "responsable administratif cee (h/f)|syclef": {
+    "keep": false,
+    "reason": "Poste technique 'Responsable Administratif CEE' sans lien stratégie climat",
+    "borderline": false,
+    "score": 0
+  },
+  "chargé.e d’affaires icpe et territoire|res": {
+    "keep": false,
+    "reason": "Poste technique 'Chargé d'Affaires ICPE' sans lien stratégie climat/consulting",
+    "borderline": false,
+    "score": 0
+  },
+  "chargé de mission géographique h/f|ird": {
+    "keep": false,
+    "reason": "Poste de recherche 'Chargé de mission géographique' sans lien stratégie climat/consulting",
+    "borderline": false,
+    "score": 0
+  },
+  "directeur métier environnement (h/f)|systra brasil": {
+    "keep": false,
+    "reason": "Poste technique 'Directeur Métier Environnement' en Brésil, hors zone cible et hors stratégie climat",
+    "borderline": false,
+    "score": 0
+  },
+  "responsable excellence opérationnelle hub h/f|imerys": {
+    "keep": false,
+    "reason": "Poste opérationnel 'Responsable Excellence Opérationnelle' sans lien stratégie climat",
+    "borderline": false,
+    "score": 0
+  },
+  "ecotoxicologue (f/h)|aroma-zone": {
+    "keep": false,
+    "reason": "Poste technique 'Ecotoxicologue' sans lien stratégie climat/consulting",
+    "borderline": false,
+    "score": 0
+  },
+  "responsable contrôle de gestion|cve (changeons notre vision de l'energie)": {
+    "keep": false,
+    "reason": "Poste financier 'Responsable Contrôle de Gestion' sans lien stratégie climat",
+    "borderline": false,
+    "score": 0
+  },
+  "multi-site operational excellence manager h/f|imerys": {
+    "keep": false,
+    "reason": "Poste opérationnel 'Operational Excellence Manager' sans lien stratégie climat",
+    "borderline": false,
+    "score": 0
+  },
+  "chargé de formation – aix-en-provence – cdi – f/h|develop'invest": {
+    "keep": false,
+    "reason": "Poste de formation 'Chargé de formation' sans lien stratégie climat",
+    "borderline": false,
+    "score": 0
+  },
+  "ingénieur cvc/plomberie bâtiments confirmé h/f|egis en france": {
+    "keep": false,
+    "reason": "Poste technique 'Ingénieur CVC/Plomberie' sans lien stratégie climat",
+    "borderline": false,
+    "score": 0
+  },
+  "assistant administratif du pôle accompagnement des territoires|fonction publique territoriale": {
+    "keep": true,
+    "reason": "Poste en établissement public régional (ARBE) à Marseille, chargé de mission développement durable/transition écologique",
+    "borderline": false,
+    "score": 75
+  },
+  "ecologue fauniste (h/f) lyon / marseille|systra brasil": {
+    "keep": false,
+    "reason": "Poste technique 'Ecologue Fauniste' sans lien stratégie climat/consulting",
+    "borderline": false,
+    "score": 0
+  },
+  "chef de projets - ecologue (h/f)|eodd ingénieurs conseils": {
+    "keep": true,
+    "reason": "Chef de projets écologue à Marseille, poste qualifié senior en conseil environnement",
+    "borderline": false,
+    "score": 80
+  },
+  "directeur general des services techniques - commune de salon-de-provence|fonction publique territoriale": {
+    "keep": false,
+    "reason": "Poste administratif 'Directeur General Des Services Techniques' sans lien stratégie climat",
+    "borderline": false,
+    "score": 0
+  },
+  "appui au management et stratégies rse f/h|enedis": {
+    "keep": true,
+    "reason": "Poste 'Appui au management et stratégies RSE' à Aix-en-Provence, RSE stratégique mais générique (borderline)",
+    "borderline": true,
+    "score": 65
+  },
+  "chef de projet mobilite f/h|ingérop": {
+    "keep": false,
+    "reason": "Poste technique 'Chef de projet mobilité' sans lien stratégie climat/consulting",
+    "borderline": false,
+    "score": 0
+  },
+  "directeur/trice d'agence - constructeur de maisons individuelles environnementales|natilia": {
+    "keep": false,
+    "reason": "Poste commercial 'Directeur d'agence' sans lien stratégie climat",
+    "borderline": false,
+    "score": 0
+  },
+  "directeur de projet / responsable activité ingénierie environnementale et écologique h/f|egis en france": {
+    "keep": true,
+    "reason": "Directeur de projet / Responsable ingénierie environnementale à Marseille, poste qualifié senior en conseil",
+    "borderline": false,
+    "score": 90
+  },
+  "amo foncier (f/h)|ikos group": {
+    "keep": false,
+    "reason": "Poste technique 'AMO Foncier' sans lien stratégie climat",
+    "borderline": false,
+    "score": 0
+  },
+  "garde-animateur/trice de la réserve naturelle régionale des gorges de daluis (06)|lpo provence-alpes-côte d'azur - paca": {
+    "keep": false,
+    "reason": "Poste terrain 'Garde-animateur' sans lien stratégie climat/consulting",
+    "borderline": false,
+    "score": 0
+  },
+  "consultant secteur public europe et france f/h|g.a.c. group (gac) france": {
+    "keep": true,
+    "reason": "Consultant Secteur Public Europe et France à Valbonne, poste qualifié senior en conseil stratégique",
+    "borderline": false,
+    "score": 70
+  },
+  "responsable d'études et de projets techniques - centre d'analyse , de recherche et de reporting opérationnel (f/h)|veolia": {
+    "keep": false,
+    "reason": "poste technique (études et projets) sans lien clair avec climat/stratégie",
+    "borderline": false,
+    "score": 0
+  },
+  "animateur qse f/h|razel-bec | fayat group": {
+    "keep": false,
+    "reason": "QSE générique, pas de focus climat/stratégie",
+    "borderline": false,
+    "score": 0
+  },
+  "chargé(e) d'ingénierie de projets|campus vert d'azur": {
+    "keep": false,
+    "reason": "ingénierie de projets sans mention climat/stratégie",
+    "borderline": false,
+    "score": 0
+  },
+  "responsable régional d'opérations paca|zeplug": {
+    "keep": false,
+    "reason": "responsable d'opérations (électromobilité) sans lien stratégique climat",
+    "borderline": false,
+    "score": 0
+  },
+  "responsable qhse h/f|l'usine nouvelle": {
+    "keep": false,
+    "reason": "QHSE générique, pas de focus climat/stratégie",
+    "borderline": false,
+    "score": 0
+  },
+  "consultant haccp en région paca, responsable qualité itinérant(e)|quality guard france": {
+    "keep": false,
+    "reason": "HACCP/qualité itinérant, pas climat/stratégie",
+    "borderline": false,
+    "score": 0
+  },
+  "chargé(e) de coordination hse confirmé - nice|consultys": {
+    "keep": false,
+    "reason": "coordination HSE générique, pas de focus climat/stratégie",
+    "borderline": false,
+    "score": 0
+  },
+  "chargé de mission santé (h/f)|région sud - provence-alpes-côte d'azur": {
+    "keep": false,
+    "reason": "chargé de mission santé (hors climat/environnement)",
+    "borderline": false,
+    "score": 0
+  },
+  "coordinateur sse zone sud senior h/f|parlym": {
+    "keep": true,
+    "reason": "coordinateur SSE en entreprise (Marseille), RSE générique mais lié à la durabilité",
+    "borderline": true,
+    "score": 50
+  },
+  "chef de projet réseaux de chaleur et de froid f/h|idex": {
+    "keep": true,
+    "reason": "chef de projet réseaux de chaleur/froid (Aix-en-Provence), lien énergie/climat stratégique",
+    "borderline": false,
+    "score": 75
+  },
+  "ev charging project manager|crossley scott": {
+    "keep": false,
+    "reason": "EV Charging Project Manager (technique, pas stratégie climat)",
+    "borderline": false,
+    "score": 0
+  },
+  "responsable du contrôle de gestion h/f|cve (changeons notre vision de l'energie)": {
+    "keep": false,
+    "reason": "contrôle de gestion (finance, hors climat)",
+    "borderline": false,
+    "score": 0
+  },
+  "responsable du développement sud est – comptes stratégiques publics et privés|groupe volta": {
+    "keep": false,
+    "reason": "responsable développement commercial (vente, hors climat)",
+    "borderline": false,
+    "score": 0
+  },
+  "ingénieur métrologue - nice h/f|consultys": {
+    "keep": false,
+    "reason": "ingénieur métrologue (technique, pas stratégie climat)",
+    "borderline": false,
+    "score": 0
+  },
+  "ingénieur automatisme - nice h/f|consultys": {
+    "keep": false,
+    "reason": "ingénieur automatisme (technique, pas stratégie climat)",
+    "borderline": false,
+    "score": 0
+  },
+  "chargé d'assurance de stérilité - nice h/f|consultys": {
+    "keep": false,
+    "reason": "assurance de stérilité (technique, pas climat)",
+    "borderline": false,
+    "score": 0
+  },
+  "chef - cheffe de projet ingénierie - nice h/f|consultys": {
+    "keep": false,
+    "reason": "chef de projet ingénierie (technique, pas stratégie climat)",
+    "borderline": false,
+    "score": 0
+  },
+  "chargé de contrôle qualité microbiologie confirmé- nice h/f|consultys": {
+    "keep": false,
+    "reason": "contrôle qualité microbiologie (technique, pas climat)",
+    "borderline": false,
+    "score": 0
+  },
+  "superviseur maintenance - nice h/f|consultys": {
+    "keep": false,
+    "reason": "superviseur maintenance (technique, pas stratégie climat)",
+    "borderline": false,
+    "score": 0
+  },
+  "ingénieur assurance qualité - nice h/f|consultys": {
+    "keep": false,
+    "reason": "ingénieur assurance qualité (technique, pas stratégie climat)",
+    "borderline": false,
+    "score": 0
+  },
+  "animateur hse h/f|seres technologies": {
+    "keep": false,
+    "reason": "animateur HSE (technique, pas stratégie climat)",
+    "borderline": false,
+    "score": 0
+  },
+  "animateur-trice qse h/f|geodis": {
+    "keep": false,
+    "reason": "animateur QSE (technique, pas stratégie climat)",
+    "borderline": false,
+    "score": 0
+  },
+  "marketing managerin für schnell wachsende fashion marke | remote m/w/d|ivyclip": {
+    "keep": false,
+    "reason": "marketing (hors climat)",
+    "borderline": false,
+    "score": 0
+  },
+  "engineering manager heartbeat ai (m/f/d)|1komma5˚": {
+    "keep": false,
+    "reason": "engineering manager (technique, pas stratégie climat)",
+    "borderline": false,
+    "score": 0
+  },
+  "specialist health & safety (m/w/d)|ruby gmbh": {
+    "keep": false,
+    "reason": "health & safety (technique, pas stratégie climat)",
+    "borderline": false,
+    "score": 0
+  },
+  "social media manager (m/w/d) teilzeit|hebamme isabelle": {
+    "keep": false,
+    "reason": "poste hors domaine (social media) et hors localisation",
+    "borderline": false,
+    "score": 0
+  },
+  "werkstudent social media marketing (w/m/d)|kintscher gbr": {
+    "keep": false,
+    "reason": "poste junior (werkstudent) et hors domaine (social media)",
+    "borderline": false,
+    "score": 0
+  },
+  "werkstudent founders associate - social media & recruiting (w/m/d)|kintscher gbr": {
+    "keep": false,
+    "reason": "poste junior (werkstudent) et hors domaine (social media/recrutement)",
+    "borderline": false,
+    "score": 0
+  },
+  "head of acquisition|ctg consulting gmbh": {
+    "keep": false,
+    "reason": "poste commercial (Head of Acquisition) et hors domaine",
+    "borderline": false,
+    "score": 0
+  },
+  "senior engineering manager, platform engineering & data systems|carbon mapper": {
+    "keep": false,
+    "reason": "poste tech (Senior Engineering Manager) et hors domaine",
+    "borderline": false,
+    "score": 0
+  },
+  "controller|reflective": {
+    "keep": false,
+    "reason": "poste finance (Controller) et hors domaine",
+    "borderline": false,
+    "score": 0
+  },
+  "sales training & enablement manager|voltus": {
+    "keep": false,
+    "reason": "poste commercial (Sales Training) et hors domaine",
+    "borderline": false,
+    "score": 0
+  },
+  "residential business development director|voltus": {
+    "keep": false,
+    "reason": "poste commercial (Business Development) et hors domaine",
+    "borderline": false,
+    "score": 0
+  },
+  "applied ai engineer|terawatt infrastructure": {
+    "keep": false,
+    "reason": "poste tech (Applied AI Engineer) et hors domaine",
+    "borderline": false,
+    "score": 0
+  },
+  "senior director of finance|savanna institute": {
+    "keep": false,
+    "reason": "poste finance (Senior Director of Finance) et hors domaine",
+    "borderline": false,
+    "score": 0
+  },
+  "strategic finance senior associate|planetary scale": {
+    "keep": false,
+    "reason": "poste finance (Strategic Finance Senior Associate) et hors domaine",
+    "borderline": false,
+    "score": 0
+  },
+  "senior software engineer, scientific computing|kobold metals": {
+    "keep": false,
+    "reason": "poste tech (Senior Software Engineer) et hors domaine",
+    "borderline": false,
+    "score": 0
+  },
+  "sales development representative - uk|autarc gmbh": {
+    "keep": false,
+    "reason": "poste commercial (Sales Development) et hors domaine",
+    "borderline": false,
+    "score": 0
+  },
+  "grant manager|global reporting initiative (gri)": {
+    "keep": false,
+    "reason": "poste technique (Grant Manager) et hors domaine (hors stratégie climat)",
+    "borderline": false,
+    "score": 0
+  },
+  "audience acquisition executive|climate action": {
+    "keep": false,
+    "reason": "poste commercial (Audience Acquisition) et hors domaine",
+    "borderline": false,
+    "score": 0
+  },
+  "executive assistant to ceo and cio - india|iix global": {
+    "keep": false,
+    "reason": "poste RH/assistanat (Executive Assistant) et hors domaine",
+    "borderline": false,
+    "score": 0
+  },
+  "executive assistant to ceo and cio|iix global": {
+    "keep": false,
+    "reason": "poste RH/assistanat (Executive Assistant) et hors domaine",
+    "borderline": false,
+    "score": 0
+  },
+  "développeur java angular f/h|shape it": {
+    "keep": false,
+    "reason": "poste tech (Développeur) et hors domaine",
+    "borderline": false,
+    "score": 0
+  },
+  "responsable qhse-rse f/h|horea conseil": {
+    "keep": true,
+    "reason": "Responsable QHSE-RSE en entreprise, hors localisation (Saulgé) mais pertinent sur le fond. Niveau senior mais pas clairement stratégique.",
+    "borderline": true,
+    "score": 50
+  },
+  "directeur d'agences f/h|michael page international france": {
+    "keep": false,
+    "reason": "poste commercial (Business Manager) et hors domaine",
+    "borderline": false,
+    "score": 0
+  },
+  "business manager bordeaux f/h|pmejob": {
+    "keep": false,
+    "reason": "poste commercial (Business Manager) et hors domaine",
+    "borderline": false,
+    "score": 0
+  },
+  "deputy program manager|tomorrow": {
+    "keep": false,
+    "reason": "poste tech/produit (Deputy Program Manager) et hors domaine",
+    "borderline": false,
+    "score": 0
+  },
+  "program manager|tomorrow": {
+    "keep": false,
+    "reason": "poste tech/produit (Program Manager) et hors domaine",
+    "borderline": false,
+    "score": 0
   }
 }

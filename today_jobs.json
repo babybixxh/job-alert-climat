@@ -1,42 +1,5 @@
 [
   {
-    "id": "5779641595",
-    "title": "Chargé de projet Climat/RSE - H/F",
-    "company": "MGEN",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5779641595?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Connaissez-vous le groupe MGEN ? * Un employeur de l'ESS qui réconcilie éthique et économie, solidarité et performance * Un acteur majeur en santé et ...",
-    "salary": "",
-    "date": "2026-06-28T03:50:12Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "is_new": false
-  },
-  {
-    "id": "5779896119",
-    "title": "Chargé de Projet Climat - RSE H/F",
-    "company": "MGEN",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5779896119?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Rattaché(e) à l'équipe RSE , vous jouerez un rôle clé dans le suivi de notre stratégie climat, la production de nos reportings réglementaires et l'ani...",
-    "salary": "",
-    "date": "2026-06-28T08:23:56Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "is_new": false
-  },
-  {
-    "id": "210FBMF",
-    "title": "Consultant Bilan Carbone (H/F)",
-    "company": "BEST VALUE",
-    "location": "92 - NEUILLY SUR SEINE",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/210FBMF",
-    "description": "Contexte\nBEST VALUE est une société à mission, dont l'objet est d'accompagner les organisations dans la structuration de démarches de durabilité créat...",
-    "source": "France Travail",
-    "borderline": false,
-    "is_new": false
-  },
-  {
     "id": "5777512761",
     "title": "DIRECTEUR DE PROJETS – ENVIRONNEMENT RÈGLEMENTAIRE F/H",
     "company": "EODD INGENIEURS CONSEILS",
@@ -47,19 +10,7 @@
     "date": "2026-06-26T11:35:01Z",
     "source": "Adzuna",
     "borderline": false,
-    "is_new": false
-  },
-  {
-    "id": "5778274478",
-    "title": "Chef de projet transition écologique et énergétique (h/f) - Syndicat des eaux d'Ile-de-France",
-    "company": "Fonction publique Territoriale",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5778274478?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Le service Protection de la Ressource et Qualité de l’Eau est chargé du pilotage des actions du SEDIF en matière de prés...",
-    "salary": "",
-    "date": "2026-06-26T23:29:53Z",
-    "source": "Adzuna",
-    "borderline": false,
+    "score": 60,
     "is_new": false
   },
   {
@@ -73,6 +24,7 @@
     "date": "2026-06-26T23:27:17Z",
     "source": "Adzuna",
     "borderline": false,
+    "score": 60,
     "is_new": false
   },
   {
@@ -86,43 +38,7 @@
     "date": "2026-06-26T23:10:29Z",
     "source": "Adzuna",
     "borderline": false,
-    "is_new": false
-  },
-  {
-    "id": "5772460669",
-    "title": "Responsable de Projets ESG",
-    "company": "Building Manager Recrutement",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/land/ad/5772460669?se=1t7WrJxz8RG03p_b2NRIZw&utm_medium=api&utm_source=ae8a5ffa&v=5576617EADDDE74F4889FEC47BDCC79CC067FC96",
-    "description": " Nouveau poste - AMO/MOD - Responsable de Projets ESG / Paris :  Notre client, acteur immobilier référent et intervenant sur des projets multiproduits...",
-    "salary": "",
-    "date": "2026-06-22T12:29:38Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "is_new": false
-  },
-  {
-    "id": "5779063923",
-    "title": "Directeur de Projet Complexes Environnement F/H (CDI)",
-    "company": "Brawo Impact",
-    "location": "15ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/land/ad/5779063923?se=1t7WrJxz8RG03p_b2NRIZw&utm_medium=api&utm_source=ae8a5ffa&v=B59E7B979BA4E57098521C39AD09BFD062BB3E2A",
-    "description": "Brawo Impact est l'agence de recrutement de référence pour les professionnels et les organisations qui s'engagent en faveur de la transformation durab...",
-    "salary": "",
-    "date": "2026-06-27T15:56:11Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "is_new": false
-  },
-  {
-    "id": "210BFKN",
-    "title": "Ingénieur(e) ou Expert(e) en décarbonation des procédés industrie (H/F)",
-    "company": "YNERGIE",
-    "location": "75 - PARIS 09",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/210BFKN",
-    "description": "Depuis 2016, Ynergie accompagne les professionnels et les particuliers dans la réduction de leur consommation d'énergie et la décarbonation des sites ...",
-    "source": "France Travail",
-    "borderline": false,
+    "score": 60,
     "is_new": false
   },
   {
@@ -134,19 +50,7 @@
     "description": "Au cœur des enjeux qui transforment le secteur du bâtiment, le/la Chargé(e) de mission contribuera à l'animation du réseau métiers régional et au suiv...",
     "source": "France Travail",
     "borderline": false,
-    "is_new": false
-  },
-  {
-    "id": "5777618006",
-    "title": "Développeur Label Bas-Carbone (forêt) F/H",
-    "company": "EDF",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5777618006?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "En tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recr...",
-    "salary": "",
-    "date": "2026-06-26T13:34:13Z",
-    "source": "Adzuna",
-    "borderline": false,
+    "score": 60,
     "is_new": false
   },
   {
@@ -158,6 +62,7 @@
     "description": "Rejoignez une entreprise engagée et tournée vers l'avenir !\nDans le cadre du développement de notre stratégie QSE et RSE, nous recrutons\n1 Chargé de m...",
     "source": "France Travail",
     "borderline": false,
+    "score": 60,
     "is_new": false
   },
   {
@@ -169,6 +74,7 @@
     "description": "",
     "source": "ADEME",
     "borderline": false,
+    "score": 60,
     "is_new": false
   },
   {
@@ -180,6 +86,7 @@
     "description": "",
     "source": "ADEME",
     "borderline": false,
+    "score": 60,
     "is_new": false
   },
   {
@@ -191,6 +98,7 @@
     "description": "",
     "source": "ADEME",
     "borderline": false,
+    "score": 60,
     "is_new": false
   },
   {
@@ -202,6 +110,7 @@
     "description": "",
     "source": "ADEME",
     "borderline": false,
+    "score": 60,
     "is_new": false
   },
   {
@@ -213,6 +122,7 @@
     "description": "",
     "source": "ADEME",
     "borderline": false,
+    "score": 60,
     "is_new": false
   },
   {
@@ -224,6 +134,7 @@
     "description": "",
     "source": "ADEME",
     "borderline": false,
+    "score": 60,
     "is_new": false
   },
   {
@@ -235,6 +146,7 @@
     "description": "<h2>JOIN US</h2>\n<p>Bei Code Gaia zu arbeiten bedeutet, dass du an etwas sehr Wichtigem arbeitest: Der Transformation zu einer nachhaltigen Wirtschaft...",
     "source": "Remote EU",
     "borderline": true,
+    "score": 60,
     "is_new": false
   },
   {
@@ -248,6 +160,7 @@
     "date": "2026-06-09T11:59:07.158Z",
     "source": "Remote EU",
     "borderline": false,
+    "score": 60,
     "is_new": false
   },
   {
@@ -261,32 +174,7 @@
     "date": "2026-06-03T09:12:26.257Z",
     "source": "Remote EU",
     "borderline": false,
-    "is_new": false
-  },
-  {
-    "id": "178912334W",
-    "title": "Ingénieur Climat F/H",
-    "company": "GIO RECRUTEMENT",
-    "location": "Paris 08 - 75",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178912334W",
-    "description": "Au sein d'une équipe engagée, vous interviendrez sur des missions à forte valeur ajoutée, en audit comme en conseil.  Vos missions sont les suivantes :  Réaliser des bilans carbone sur les scopes 1, 2...",
-    "salary": "40 - 55 k€ brut annuel",
-    "date": "2026-06-19T22:34:07.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "is_new": false
-  },
-  {
-    "id": "178915088W",
-    "title": "Ingénieur Climat F/H",
-    "company": "Hellowork",
-    "location": "Paris 08 - 75",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178915088W",
-    "description": "Au sein d'une équipe engagée, vous interviendrez sur des missions à forte valeur ajoutée, en audit comme en conseil.   Vos missions sont les suivantes :   Réaliser des bilans carbone sur les scopes 1,...",
-    "salary": "40 - 55 k€ brut annuel",
-    "date": "2026-06-22T01:49:20.000+0000",
-    "source": "APEC",
-    "borderline": false,
+    "score": 60,
     "is_new": false
   },
   {
@@ -300,6 +188,7 @@
     "date": "2026-06-19T08:04:26.000+0000",
     "source": "APEC",
     "borderline": false,
+    "score": 60,
     "is_new": false
   },
   {
@@ -313,19 +202,7 @@
     "date": "2026-06-22T08:45:20.000+0000",
     "source": "APEC",
     "borderline": false,
-    "is_new": false
-  },
-  {
-    "id": "178843922W",
-    "title": "Chef de projet environnement - AMO F/H",
-    "company": "METIGA",
-    "location": "Paris 03 - 75",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178843922W",
-    "description": "Au sein des équipes des équipes de notre client, leader français de l'ingénierie, votre rôle sera de :    Assurer et coordonner la production et le pilotage contractuel des missions qui vous seront co...",
-    "salary": "A partir de 35 k€ brut annuel",
-    "date": "2026-06-09T05:49:43.000+0000",
-    "source": "APEC",
-    "borderline": false,
+    "score": 60,
     "is_new": false
   },
   {
@@ -339,6 +216,7 @@
     "date": "2026-06-22T04:21:09.000+0000",
     "source": "APEC",
     "borderline": false,
+    "score": 60,
     "is_new": false
   },
   {
@@ -352,6 +230,7 @@
     "date": "2026-06-03T05:46:34.000+0000",
     "source": "APEC",
     "borderline": false,
+    "score": 60,
     "is_new": false
   },
   {
@@ -365,19 +244,7 @@
     "date": "2026-06-23T07:40:40.000+0000",
     "source": "APEC",
     "borderline": false,
-    "is_new": false
-  },
-  {
-    "id": "178841687W",
-    "title": "Chef de projet environnement - AMO F/H",
-    "company": "Meteojob",
-    "location": "Paris 09 - 75",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178841687W",
-    "description": "Choisir MÉTIGA, c'est rejoindre une équipe passionnée par le défi de la transition écologique, qui agit pour sa carrière et pour le monde de demain.   MÉTIGA est une société à mission, spécialisée dan...",
-    "salary": "A négocier",
-    "date": "2026-06-09T01:28:09.000+0000",
-    "source": "APEC",
-    "borderline": false,
+    "score": 60,
     "is_new": false
   },
   {
@@ -391,6 +258,7 @@
     "date": "2026-06-10T14:24:29.000+0000",
     "source": "APEC",
     "borderline": false,
+    "score": 60,
     "is_new": false
   },
   {
@@ -404,19 +272,7 @@
     "date": "2026-06-12T14:03:10.000+0000",
     "source": "APEC",
     "borderline": false,
-    "is_new": false
-  },
-  {
-    "id": "178950663W",
-    "title": "Chargé (e) de missions concertation transition énergétique F/H",
-    "company": "QUELIA",
-    "location": "Paris 09 - 75",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178950663W",
-    "description": "Vous souhaitez agir concrètement face à la crise climatique ?  Avec Quelia, l'agence de concertation dédiée à la transition écologique, engagez-vous sur le terrain auprès des acteurs du changement par...",
-    "salary": "A partir de 31 k€ brut annuel",
-    "date": "2026-06-26T14:18:01.000+0000",
-    "source": "APEC",
-    "borderline": false,
+    "score": 60,
     "is_new": false
   },
   {
@@ -430,6 +286,7 @@
     "date": "2026-06-23T11:10:23.000+0000",
     "source": "APEC",
     "borderline": false,
+    "score": 60,
     "is_new": false
   },
   {
@@ -443,6 +300,7 @@
     "date": "2026-06-11T10:59:28.000+0000",
     "source": "APEC",
     "borderline": false,
+    "score": 60,
     "is_new": false
   },
   {
@@ -456,134 +314,7 @@
     "date": "2026-06-17T11:48:23.000+0000",
     "source": "APEC",
     "borderline": false,
-    "is_new": false
-  },
-  {
-    "id": "178852314W",
-    "title": "Responsable Développement Durable F/H",
-    "company": "PLAINE COMMUNE HABITAT",
-    "location": "Saint-Denis - 93",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178852314W",
-    "description": "Dans le cadre de sa stratégie \"Patrimoniale et Transition Écologique\", Plaine Commune Habitat engage une transformation ambitieuse vers la neutralité carbone à l’horizon 2050.  Le·la Responsable Dével...",
-    "salary": "40 - 50 k€ brut annuel",
-    "date": "2026-06-10T10:00:13.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "is_new": false
-  },
-  {
-    "id": "178825879W",
-    "title": "Responsable Développement durable (f-h) F/H",
-    "company": "SELESCOPE",
-    "location": "Paris 14 - 75",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178825879W",
-    "description": "Vous êtes rattaché(e) à la Directrice Développement Durable et Économie Circulaire. Vous accompagnez le secteur sur les enjeux liés au développement durable, intégrant transition alimentaire et écolog...",
-    "salary": "40 - 50 k€ brut annuel",
-    "date": "2026-06-05T10:01:39.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "is_new": false
-  },
-  {
-    "id": "178810311W",
-    "title": "Responsable du développement commercial de l'activité bâtiments durables F/H",
-    "company": "SOGREAH",
-    "location": "Saint-Ouen - 93",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178810311W",
-    "description": "Nos thématiques incluent la performance énergétique et bas carbone, la résilience climatique, l’économie circulaire, la garantie de performance, le bien-être et la qualité de l’air intérieur, ainsi qu...",
-    "salary": "A négocier",
-    "date": "2026-06-03T09:01:35.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "is_new": false
-  },
-  {
-    "id": "178919724W",
-    "title": "Responsable d'entité en Bâtiment Durable F/H",
-    "company": "VIZEA",
-    "location": "Malakoff - 92",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178919724W",
-    "description": "Rattaché.e au responsable du pôle Bâtiment durable, vous pilotez une entité et contribuez à son développement :  - Expertise technique : Vous animez l’expertise technique autour des sujets clés du bât...",
-    "salary": "46 - 50 k€ brut annuel",
-    "date": "2026-06-22T08:52:12.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "is_new": false
-  },
-  {
-    "id": "178919873W",
-    "title": "Responsable d’entité en Urbanisme Durable F/H",
-    "company": "VIZEA",
-    "location": "Malakoff - 92",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178919873W",
-    "description": "Rattaché.e au responsable du pôle Urbanisme durable, vous pilotez une entité et contribuez à son développement :  - Expertise technique : Vous animez l’expertise technique autour des sujets clés de l’...",
-    "salary": "46 - 50 k€ brut annuel",
-    "date": "2026-06-22T09:08:11.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "is_new": false
-  },
-  {
-    "id": "5780923939",
-    "title": "Responsable RSE H/F",
-    "company": "Paragon France & Roumanie",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5780923939?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Qui sommes-nous ? : Le Groupe Paragon, leader mondial de la transformation des process métiers, de la communication client omnicanale et de l'identifi...",
-    "salary": "",
-    "date": "2026-06-29T09:04:45Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "is_new": true
-  },
-  {
-    "id": "5778928839",
-    "title": "Chef de Projet Réseaux de Chaleur Urbain F/H",
-    "company": "AKTEO SAS",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5778928839?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Dans le cadre d’un projet d’infrastructure énergétique d’envergure, nous recherchons un Chef de Projet pour piloter des opérations de transformation e...",
-    "salary": "43 k€ – 49 k€",
-    "date": "2026-06-27T11:32:57Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "is_new": true
-  },
-  {
-    "id": "5778927507",
-    "title": "Ingénieur énergétique sénior F/H",
-    "company": "Achil",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5778927507?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Au sein d’une équipe spécialisée, vous intervenez sur des projets d’efficacité énergétique et de décarbonation appliqués à des sites tertiaires et/ou ...",
-    "salary": "48 k€ – 56 k€",
-    "date": "2026-06-27T11:31:44Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "is_new": true
-  },
-  {
-    "id": "5779940264",
-    "title": "CHARGE DE MISSION DEVELOPPEMENT DURABLE ET ENERGIE",
-    "company": "Ministère des Armées",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5779940264?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Au sein de la MTEEDD, le titulaire du poste est rattaché au chef de la mission. Il contribue à l'élaboration et au suivi des documents stratégiques re...",
-    "salary": "",
-    "date": "2026-06-28T08:56:27Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "is_new": false
-  },
-  {
-    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-ingenieur-e-batiment-durable-f-h_4803.aspx",
-    "title": "Ingénieur.e Bâtiment Durable F/H",
-    "company": "ADEME",
-    "location": "France",
-    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-ingenieur-e-batiment-durable-f-h_4803.aspx",
-    "description": "",
-    "source": "ADEME",
-    "borderline": false,
+    "score": 60,
     "is_new": false
   },
   {
@@ -597,6 +328,163 @@
     "date": "2026-06-29T02:06:33.000+0000",
     "source": "APEC",
     "borderline": true,
+    "score": 60,
+    "is_new": false
+  },
+  {
+    "id": "178810311W",
+    "title": "Responsable du développement commercial de l'activité bâtiments durables F/H",
+    "company": "SOGREAH",
+    "location": "Saint-Ouen - 93",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178810311W",
+    "description": "Nos thématiques incluent la performance énergétique et bas carbone, la résilience climatique, l’économie circulaire, la garantie de performance, le bien-être et la qualité de l’air intérieur, ainsi qu...",
+    "salary": "A négocier",
+    "date": "2026-06-03T09:01:35.000+0000",
+    "source": "APEC",
+    "borderline": false,
+    "score": 60,
+    "is_new": false
+  },
+  {
+    "id": "178919724W",
+    "title": "Responsable d'entité en Bâtiment Durable F/H",
+    "company": "VIZEA",
+    "location": "Malakoff - 92",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178919724W",
+    "description": "Rattaché.e au responsable du pôle Bâtiment durable, vous pilotez une entité et contribuez à son développement :  - Expertise technique : Vous animez l’expertise technique autour des sujets clés du bât...",
+    "salary": "46 - 50 k€ brut annuel",
+    "date": "2026-06-22T08:52:12.000+0000",
+    "source": "APEC",
+    "borderline": false,
+    "score": 60,
+    "is_new": false
+  },
+  {
+    "id": "178919873W",
+    "title": "Responsable d’entité en Urbanisme Durable F/H",
+    "company": "VIZEA",
+    "location": "Malakoff - 92",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178919873W",
+    "description": "Rattaché.e au responsable du pôle Urbanisme durable, vous pilotez une entité et contribuez à son développement :  - Expertise technique : Vous animez l’expertise technique autour des sujets clés de l’...",
+    "salary": "46 - 50 k€ brut annuel",
+    "date": "2026-06-22T09:08:11.000+0000",
+    "source": "APEC",
+    "borderline": false,
+    "score": 60,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/chef%C2%B7fe-de-projet-rse-at-reform-4432244831",
+    "title": "Chef·fe de projet RSE",
+    "company": "REFORM",
+    "location": "Marseille et périphérie",
+    "url": "https://fr.linkedin.com/jobs/view/chef%C2%B7fe-de-projet-rse-at-reform-4432244831",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 85,
+    "is_new": true
+  },
+  {
+    "id": "5781447582",
+    "title": "Assistant administratif du pôle accompagnement des territoires",
+    "company": "Fonction publique Territoriale",
+    "location": "Marseille, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5781447582?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots Contexte professionnel L’ARBE est un établissement public de coopération environnementale. Cette agence publique régiona...",
+    "salary": "",
+    "date": "2026-06-29T23:25:52Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 75,
+    "is_new": true
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/chef-de-projets-ecologue-h-f-at-eodd-ing%C3%A9nieurs-conseils-4431229254",
+    "title": "CHEF DE PROJETS - ECOLOGUE (H/F)",
+    "company": "EODD ingénieurs conseils",
+    "location": "Marseille et périphérie",
+    "url": "https://fr.linkedin.com/jobs/view/chef-de-projets-ecologue-h-f-at-eodd-ing%C3%A9nieurs-conseils-4431229254",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 80,
+    "is_new": true
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/appui-au-management-et-strat%C3%A9gies-rse-f-h-at-enedis-4423388798",
+    "title": "Appui au management et stratégies RSE F/H",
+    "company": "Enedis",
+    "location": "Aix-en-Provence",
+    "url": "https://fr.linkedin.com/jobs/view/appui-au-management-et-strat%C3%A9gies-rse-f-h-at-enedis-4423388798",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": true,
+    "score": 65,
+    "is_new": true
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/directeur-de-projet-responsable-activit%C3%A9-ing%C3%A9nierie-environnementale-et-%C3%A9cologique-h-f-at-egis-en-france-4432454624",
+    "title": "Directeur de projet / Responsable activité ingénierie environnementale et écologique H/F",
+    "company": "Egis en France",
+    "location": "Marseille",
+    "url": "https://fr.linkedin.com/jobs/view/directeur-de-projet-responsable-activit%C3%A9-ing%C3%A9nierie-environnementale-et-%C3%A9cologique-h-f-at-egis-en-france-4432454624",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 90,
+    "is_new": true
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-secteur-public-europe-et-france-f-h-at-g-a-c-group-gac-france-4331040212",
+    "title": "Consultant Secteur Public Europe et France F/H",
+    "company": "G.A.C. Group (GAC) France",
+    "location": "Valbonne",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-secteur-public-europe-et-france-f-h-at-g-a-c-group-gac-france-4331040212",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 70,
+    "is_new": true
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/coordinateur-sse-zone-sud-senior-h-f-at-parlym-4429805925",
+    "title": "Coordinateur SSE Zone Sud Senior H/F",
+    "company": "Parlym",
+    "location": "Marseille",
+    "url": "https://fr.linkedin.com/jobs/view/coordinateur-sse-zone-sud-senior-h-f-at-parlym-4429805925",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": true,
+    "score": 50,
+    "is_new": true
+  },
+  {
+    "id": "5780521928",
+    "title": "Chef de projet réseaux de chaleur et de froid F/H",
+    "company": "Idex",
+    "location": "Aix en Provence Sud-Ouest, Aix-en-Provence",
+    "url": "https://www.adzuna.fr/details/5780521928?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Premier groupe français indépendant de services à l’énergie et à l'environnement, nous sommes présents sur l’ensemble de la chaîne de valeur énergétiq...",
+    "salary": "",
+    "date": "2026-06-28T22:57:20Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 75,
+    "is_new": true
+  },
+  {
+    "id": "178961586W",
+    "title": "Responsable QHSE-RSE F/H",
+    "company": "HOREA CONSEIL",
+    "location": "Saulgé - 86",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178961586W",
+    "description": "Dans un contexte de structuration et de montée en maturité des démarches Qualité, Sécurité et RSE, nous recrutons le futur(e) Responsable QHSE – RSE Groupe. Rattaché(e) directement au Président du Gro...",
+    "salary": "A partir de 36 k€ brut annuel",
+    "date": "2026-06-29T13:23:39.000+0000",
+    "source": "APEC",
+    "borderline": true,
+    "score": 50,
     "is_new": true
   }
 ]
