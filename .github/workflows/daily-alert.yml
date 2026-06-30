@@ -50,4 +50,4 @@ jobs:
           git add seen_jobs.json today_jobs.json rejected_keywords.json rejected_reasons.json ai_verdicts.json source_health.json || true
           git status
           git diff --staged --quiet || git commit -m "Update jobs data"
-          git push origin main
+          git push origin HEAD
