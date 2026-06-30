@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '0 5 * * *'
   workflow_dispatch:
+    inputs:
+      test_notif:
+        description: "Tester la notif temps réel (1 = oui)"
+        required: false
+        default: ""
 
 jobs:
   run-scraper:
@@ -41,6 +46,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           GITHUB_REPOSITORY: ${{ github.repository }}
+          TEST_NOTIF: ${{ github.event.inputs.test_notif }}
         run: python scraper.py
 
       - name: Sauvegarder fichiers
