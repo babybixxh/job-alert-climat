@@ -1899,7 +1899,54 @@ def send_priority_alert(jobs):
         print(f"  EXCEPTION notif prioritaire: {e}")
 
 
+def debug_boards():
+    """TEMPORAIRE : sonde des tokens Greenhouse/Lever candidats (entreprises
+    climat) pour repérer ceux qui répondent et combien d'offres FR/Europe ils
+    portent. À supprimer une fois la liste finale figée."""
+    gh = ["watershed", "watershedclimate", "sweep", "normative", "plana",
+          "sylvera", "persefoni", "patch", "pachama", "carbonchain", "climeworks",
+          "ecovadis", "cervest", "altruistiq", "supercritical", "tomorrow",
+          "vaayu", "deepki", "cozero", "emitwise", "minimum", "greenly", "sami",
+          "carbonfact", "terrascope", "sinai", "sustained", "spherics", "greenomy",
+          "coolset", "planetly", "flowcarbon", "isometric", "oxa", "twelve",
+          "charm", "runwild", "boomitra", "sweepnet", "planA", "plan-a"]
+    lever = ["climeworks", "watershed", "commonwealthfusion", "sylvera",
+             "persefoni", "pachama", "charm", "twelve", "normative", "deepki",
+             "ecovadis", "altruistiq", "supercritical", "cervest", "greenly"]
+    print("=== DEBUG GREENHOUSE ===")
+    for t in gh:
+        try:
+            r = requests.get(f"https://boards-api.greenhouse.io/v1/boards/{t}/jobs",
+                             params={"content": "true"}, timeout=12)
+            if r.status_code == 200:
+                jobs = r.json().get("jobs", [])
+                eu = [j for j in jobs if keep_international_location((j.get("location") or {}).get("name", ""))]
+                locs = list({(j.get("location") or {}).get("name", "") for j in eu})[:6]
+                print(f"  GH OK {t} → {len(jobs)} total, {len(eu)} FR/EU/remote | {locs}")
+            else:
+                print(f"  GH {t} → {r.status_code}")
+        except Exception as e:
+            print(f"  GH {t} ERR {repr(e)[:60]}")
+    print("=== DEBUG LEVER ===")
+    for c in lever:
+        try:
+            r = requests.get(f"https://api.lever.co/v0/postings/{c}",
+                             params={"mode": "json"}, timeout=12)
+            if r.status_code == 200:
+                jobs = r.json()
+                eu = [j for j in jobs if keep_international_location((j.get("categories") or {}).get("location", ""))]
+                locs = list({(j.get("categories") or {}).get("location", "") for j in eu})[:6]
+                print(f"  LV OK {c} → {len(jobs)} total, {len(eu)} FR/EU/remote | {locs}")
+            else:
+                print(f"  LV {c} → {r.status_code}")
+        except Exception as e:
+            print(f"  LV {c} ERR {repr(e)[:60]}")
+    raise SystemExit(0)
+
+
 if __name__ == "__main__":
+    if os.environ.get("DEBUG_BOARDS"):
+        debug_boards()
     seen_ids = set(load_json(SEEN_FILE, []))
     print(f"{len(seen_ids)} offres déjà vues en mémoire")
     # Offres conservées hier (avant écrasement de TODAY_FILE) : sert à repérer
