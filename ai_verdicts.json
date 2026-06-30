@@ -1264,5 +1264,165 @@
     "keep": false,
     "reason": "coordination réemploi (Responsable d'agence matériel) - hors climat/stratégie",
     "borderline": false
+  },
+  "manager transformation d'entreprise - cdi h/f|groupe alixio": {
+    "keep": false,
+    "reason": "poste de management général sans lien explicite avec le climat/stratégie climat",
+    "borderline": false
+  },
+  "consulting - manager senior transports & mobilités - digitalisation des processus métiers - interopérabilité si - cdi - paris (h/f)|talan": {
+    "keep": false,
+    "reason": "consulting transports/mobilités sans focus climat/stratégie bas-carbone",
+    "borderline": false
+  },
+  "assistant de direction espace public et  transition écologique (h/f)|mairie de champigny-sur-marne": {
+    "keep": false,
+    "reason": "assistant de direction (administratif) sans lien stratégique climat",
+    "borderline": false
+  },
+  "assistant administratif du pôle accompagnement des territoires|fonction publique territoriale": {
+    "keep": false,
+    "reason": "assistant administratif (hors stratégie climat) dans agence publique",
+    "borderline": false
+  },
+  "directeur general des services techniques - commune de salon-de-provence|fonction publique territoriale": {
+    "keep": false,
+    "reason": "DGS techniques (management opérationnel, pas stratégie climat)",
+    "borderline": false
+  },
+  "chargé de contrôle qualité des matières premières h/f|consultys": {
+    "keep": false,
+    "reason": "contrôle qualité matières premières (hors climat)",
+    "borderline": false
+  },
+  "chef de projet réseaux de chaleur et de froid f/h|idex": {
+    "keep": true,
+    "reason": "chef de projet réseaux de chaleur/froid (transition énergétique, PACA)",
+    "borderline": false
+  },
+  "responsable développement durable et rse - responsabilité sociétale de l'entreprise (h/f)|beming": {
+    "keep": true,
+    "reason": "responsable RSE/développement durable en entreprise (stratégie possible mais niveau non confirmé)",
+    "borderline": true
+  },
+  "expert développement durable f/h (h/f)|eiffage": {
+    "keep": true,
+    "reason": "expert développement durable (Eiffage Concessions, stratégie possible mais contexte PPP)",
+    "borderline": true
+  },
+  "marketing managerin für schnell wachsende fashion marke | remote m/w/d|ivyclip": {
+    "keep": false,
+    "reason": "marketing (hors climat)",
+    "borderline": false
+  },
+  "engineering manager heartbeat ai (m/f/d)|1komma5˚": {
+    "keep": false,
+    "reason": "engineering manager (tech, hors climat)",
+    "borderline": false
+  },
+  "specialist health & safety (m/w/d)|ruby gmbh": {
+    "keep": false,
+    "reason": "health & safety (hors climat)",
+    "borderline": false
+  },
+  "social media manager (m/w/d) teilzeit|hebamme isabelle": {
+    "keep": false,
+    "reason": "social media manager (hors climat)",
+    "borderline": false
+  },
+  "werkstudent social media marketing (w/m/d)|kintscher gbr": {
+    "keep": false,
+    "reason": "social media marketing (hors climat)",
+    "borderline": false
+  },
+  "werkstudent founders associate - social media & recruiting (w/m/d)|kintscher gbr": {
+    "keep": false,
+    "reason": "head of acquisition (commercial, hors climat)",
+    "borderline": false
+  },
+  "head of acquisition|ctg consulting gmbh": {
+    "keep": false,
+    "reason": "senior engineering manager (tech, hors climat)",
+    "borderline": false
+  },
+  "senior engineering manager, platform engineering & data systems|carbon mapper": {
+    "keep": false,
+    "reason": "controller (finance, hors climat)",
+    "borderline": false
+  },
+  "controller|reflective": {
+    "keep": false,
+    "reason": "sales training (commercial, hors climat)",
+    "borderline": false
+  },
+  "sales training & enablement manager|voltus": {
+    "keep": false,
+    "reason": "business development (commercial, hors climat)",
+    "borderline": false
+  },
+  "residential business development director|voltus": {
+    "keep": false,
+    "reason": "applied AI engineer (tech, hors climat)",
+    "borderline": false
+  },
+  "applied ai engineer|terawatt infrastructure": {
+    "keep": false,
+    "reason": "senior director finance (hors climat)",
+    "borderline": false
+  },
+  "senior director of finance|savanna institute": {
+    "keep": false,
+    "reason": "strategic finance (hors climat)",
+    "borderline": false
+  },
+  "strategic finance senior associate|planetary scale": {
+    "keep": false,
+    "reason": "senior software engineer (tech, hors climat)",
+    "borderline": false
+  },
+  "senior software engineer, scientific computing|kobold metals": {
+    "keep": false,
+    "reason": "sales development (commercial, hors climat)",
+    "borderline": false
+  },
+  "grant manager|global reporting initiative (gri)": {
+    "keep": true,
+    "reason": "Grant Manager chez GRI (Global Reporting Initiative) : poste stratégique en durabilité/reporting climat, niveau senior, télétravail",
+    "borderline": false
+  },
+  "audience acquisition executive|climate action": {
+    "keep": false,
+    "reason": "Audience Acquisition Executive chez Climate Action : poste commercial/marketing, hors climat/stratégie",
+    "borderline": false
+  },
+  "executive assistant to ceo and cio - india|iix global": {
+    "keep": false,
+    "reason": "Executive Assistant to CEO and CIO chez IIX Global : poste administratif RH, hors climat/stratégie",
+    "borderline": false
+  },
+  "executive assistant to ceo and cio|iix global": {
+    "keep": false,
+    "reason": "Executive Assistant to CEO and CIO chez IIX Global : poste administratif RH, hors climat/stratégie",
+    "borderline": false
+  },
+  "développeur java angular f/h|shape it": {
+    "keep": false,
+    "reason": "Développeur Java Angular chez SHAPE IT : poste tech, hors climat/stratégie",
+    "borderline": false
+  },
+  "responsable qhse-rse f/h|horea conseil": {
+    "keep": true,
+    "reason": "Responsable QHSE-RSE chez HOREA CONSEIL : poste RSE stratégique senior, hors PACA mais pertinent pour le profil",
+    "borderline": false
+  },
+  "directeur d'agences f/h|michael page international france": {
+    "keep": false,
+    "reason": "Directeur d'agences chez Michael Page : poste commercial/management général, hors climat/stratégie",
+    "borderline": false
+  },
+  "business manager bordeaux f/h|pmejob": {
+    "keep": false,
+    "reason": "Business Manager chez PMEJOB : poste commercial, hors climat/stratégie",
+    "borderline": false
   }
 }
