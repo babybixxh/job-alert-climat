@@ -1424,5 +1424,245 @@
     "keep": false,
     "reason": "Business Manager chez PMEJOB : poste commercial, hors climat/stratégie",
     "borderline": false
+  },
+  "consultant.e indépendant.e - lifesciences|bloomco": {
+    "keep": false,
+    "reason": "métier tech/produit (freelance indépendant en LifeSciences, hors climat)",
+    "borderline": false
+  },
+  "chargé de recherches h/f|alixio group": {
+    "keep": false,
+    "reason": "recrutement (chargé de recherches en recrutement, hors climat)",
+    "borderline": false
+  },
+  "référent qse et etudes h/f|demathieu bard": {
+    "keep": false,
+    "reason": "QSE/études (poste terrain/technique en construction, hors stratégie climat)",
+    "borderline": false
+  },
+  "consultant emploi h/f|alixio group": {
+    "keep": false,
+    "reason": "emploi (accompagnement professionnel, hors climat)",
+    "borderline": false
+  },
+  "chef de projet réseaux de chaleur f/h|metiga": {
+    "keep": false,
+    "reason": "chef de projet réseaux de chaleur (poste technique/terrain, hors stratégie conseil)",
+    "borderline": false
+  },
+  "un·e responsable de restaurant scolaire|mairie orvault|commune d orvault": {
+    "keep": false,
+    "reason": "restauration scolaire (hors climat)",
+    "borderline": false
+  },
+  "webmaster h/f - agence regionale pour la biodiversite et l'environnement (arpe-arb)|fonction publique territoriale": {
+    "keep": true,
+    "reason": "webmaster ARPE-ARB (poste administratif en environnement, borderline car hors stratégie climat mais lié à une agence publique environnementale)",
+    "borderline": true
+  },
+  "ingénieur confirmé en ouvrages portuaires et dragages h/f|suez": {
+    "keep": false,
+    "reason": "ingénieur ouvrages portuaires (poste technique/terrain, hors climat)",
+    "borderline": false
+  },
+  "chargé(e) mission agriculture& résilience territoriale #tdef2026 (h/f)|cc pays d'apt-luberon": {
+    "keep": true,
+    "reason": "chargé de mission agriculture & résilience territoriale (stratégie climat en collectivité, correspond au profil)",
+    "borderline": false
+  },
+  "responsable technique energie - f/h|icf habitat": {
+    "keep": false,
+    "reason": "responsable technique énergie (poste opérationnel en entreprise, hors stratégie climat)",
+    "borderline": false
+  },
+  "responsable d'activités h/f|engie": {
+    "keep": false,
+    "reason": "responsable d'activités maintenance (hors climat)",
+    "borderline": false
+  },
+  "responsable de site f/h|idex": {
+    "keep": false,
+    "reason": "responsable de site (poste opérationnel en énergie, hors stratégie climat)",
+    "borderline": false
+  },
+  "ingénieur chargé d’études - domaine de l'énergie et de l'industrie f/h|ceren - centre d’études et de recherches économiques sur l’énergie": {
+    "keep": true,
+    "reason": "ingénieur chargé d'études énergie (poste technique mais lié à l'énergie/climat, borderline car niveau junior/confirmé)",
+    "borderline": true
+  },
+  "assistant d'exploitation et de supervision h/f|tenergie": {
+    "keep": false,
+    "reason": "assistant d'exploitation énergies renouvelables (poste technique/terrain)",
+    "borderline": false
+  },
+  "chef d'équipe h/f|groupe nge": {
+    "keep": false,
+    "reason": "chef d'équipe (poste technique/terrain)",
+    "borderline": false
+  },
+  "chargé(e) de validation des procédés de nettoyage - région niçoise f/h|consultys services": {
+    "keep": false,
+    "reason": "chargé de validation procédés nettoyage (hors climat)",
+    "borderline": false
+  },
+  "chargé(e) d'assurance de stérilité - nice f/h|consultys services": {
+    "keep": false,
+    "reason": "chargé d'assurance de stérilité (hors climat)",
+    "borderline": false
+  },
+  "chargé(e) de contrôle qualité microbiologie confirmé- nice f/h|consultys services": {
+    "keep": false,
+    "reason": "chargé de contrôle qualité microbiologie (hors climat)",
+    "borderline": false
+  },
+  "ingénieur(e) support matières - région niçoise f/h|consultys services": {
+    "keep": false,
+    "reason": "ingénieur support matières (hors climat)",
+    "borderline": false
+  },
+  "ingénieur(e) ccit - mirage confirmé - nice f/h|consultys services": {
+    "keep": false,
+    "reason": "ingénieur CCIT (hors climat)",
+    "borderline": false
+  },
+  "ingénieur(e) assurance qualité - nice f/h|consultys services": {
+    "keep": false,
+    "reason": "ingénieur assurance qualité (hors climat)",
+    "borderline": false
+  },
+  "stagiaire bac4 – chargé de projet rse climat h/f|egis group": {
+    "keep": false,
+    "reason": "stagiaire RSE climat (poste junior)",
+    "borderline": false
+  },
+  "senior fullstack engineer freelance - sweep h/f|sweep": {
+    "keep": false,
+    "reason": "senior fullstack engineer (métier tech, hors climat)",
+    "borderline": false
+  },
+  "superviseur salle et cuisine h/f - 25h/semaine - marseille|café joyeux": {
+    "keep": false,
+    "reason": "superviseur salle et cuisine (hors climat)",
+    "borderline": false
+  },
+  "sap logistik consultant (m/w/d)|slenderiser gmbh": {
+    "keep": false,
+    "reason": "SAP Logistik Consultant (hors climat)",
+    "borderline": false
+  },
+  "trainees (m/w/x) als it- trainer/dozenten für microsoft zertifizierungskurse (m/w/x)|gfn gmbh": {
+    "keep": false,
+    "reason": "poste tech/pédagogie hors climat, hors stratégie",
+    "borderline": false
+  },
+  "marketing manager de|oktagon mma": {
+    "keep": false,
+    "reason": "poste commercial/marketing hors climat",
+    "borderline": false
+  },
+  "sea manager mit google-ads-erfahrung (m/w/d) - 100% remote|convact": {
+    "keep": false,
+    "reason": "poste commercial/marketing hors climat",
+    "borderline": false
+  },
+  "frontend software engineer|kobold metals": {
+    "keep": false,
+    "reason": "poste tech hors climat",
+    "borderline": false
+  },
+  "demand gen manager|afresh technologies": {
+    "keep": false,
+    "reason": "poste commercial/marketing hors climat",
+    "borderline": false
+  },
+  "project delivery lead|station a, inc.": {
+    "keep": false,
+    "reason": "poste tech hors climat",
+    "borderline": false
+  },
+  "chief revenue officer|arenko": {
+    "keep": false,
+    "reason": "poste tech/commercial hors climat",
+    "borderline": false
+  },
+  "software engineer (f/m/d) - berlin|cycle": {
+    "keep": false,
+    "reason": "poste tech hors climat",
+    "borderline": false
+  },
+  "senior frontend engineer (f/m/d)|cycle": {
+    "keep": false,
+    "reason": "poste tech hors climat",
+    "borderline": false
+  },
+  "head of product & innovation|vly": {
+    "keep": false,
+    "reason": "poste tech/produit hors climat",
+    "borderline": false
+  },
+  "expansion manager uk|fastned": {
+    "keep": false,
+    "reason": "poste commercial hors climat",
+    "borderline": false
+  },
+  "soc analyst|protera": {
+    "keep": false,
+    "reason": "poste tech hors climat",
+    "borderline": false
+  },
+  "senior/lead recruiter - infrastructure (australia)|fuse energy": {
+    "keep": false,
+    "reason": "poste tech/commercial hors climat",
+    "borderline": false
+  },
+  "senior performance marketing manager|fuse energy": {
+    "keep": false,
+    "reason": "poste commercial hors climat",
+    "borderline": false
+  },
+  "renewables lead|fuse energy": {
+    "keep": false,
+    "reason": "poste tech/commercial hors climat",
+    "borderline": false
+  },
+  "infrastructure development lead|fuse energy": {
+    "keep": false,
+    "reason": "poste tech hors climat",
+    "borderline": false
+  },
+  "data commercialisation lead|fuse energy": {
+    "keep": false,
+    "reason": "poste tech hors climat",
+    "borderline": false
+  },
+  "social media and content executive|climate action": {
+    "keep": false,
+    "reason": "poste tech/communication hors climat",
+    "borderline": false
+  },
+  "head of regulatory reporting|tandem": {
+    "keep": false,
+    "reason": "poste finance/bancaire hors climat",
+    "borderline": false
+  },
+  "chargé de mission stratégie climat et biodiversité f/h|mairie": {
+    "keep": true,
+    "reason": "chargé de mission stratégie climat et biodiversité en collectivité (Saint-Germain-en-Laye, hors Paris) - poste qualifié et stratégique",
+    "borderline": false
+  },
+  "chargé de mission risques industriels f/h|keolis sa": {
+    "keep": false,
+    "reason": "poste risques industriels hors climat/stratégie",
+    "borderline": false
+  },
+  "conseiller entreprises en développement durable, rse et energie f/h|chambre commerce et industrie la lozere": {
+    "keep": true,
+    "reason": "conseiller entreprises en développement durable/RSE/énergie en CCI (Mende, hors PACA) - poste qualifié mais localisation hors zone prioritaire et rôle moins stratégique que conseil",
+    "borderline": true
+  },
+  "chargé de mission «commercialisation-circuits courts» f/h|chambre dep d agriculture du vaucluse": {
+    "keep": false,
+    "reason": "poste agriculture/circuits courts hors climat/stratégie",
+    "borderline": false
   }
 }
