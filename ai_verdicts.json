@@ -1664,5 +1664,205 @@
     "keep": false,
     "reason": "poste agriculture/circuits courts hors climat/stratégie",
     "borderline": false
+  },
+  "expert bilan carbone (h/f)|loxam": {
+    "keep": false,
+    "reason": "poste technique (bilan carbone) sans dimension stratégique/consulting claire",
+    "borderline": false
+  },
+  "directeur / directrice de projets r&d|mbway vannes": {
+    "keep": false,
+    "reason": "alternance en communication, hors climat/stratégie",
+    "borderline": false
+  },
+  "conseiller en transition energétique et ecologique en santé h/f|apf france handicap - ile de france": {
+    "keep": false,
+    "reason": "poste sectoriel (santé) sans lien avec stratégie climat/RSE senior",
+    "borderline": false
+  },
+  "gestionnaire de contrats individuels|mbway laval": {
+    "keep": false,
+    "reason": "alternance en communication, hors climat/stratégie",
+    "borderline": false
+  },
+  "coffreur bancheur h/f|testnge": {
+    "keep": false,
+    "reason": "poste terrain (coffreur), rejeté par le candidat",
+    "borderline": false
+  },
+  "aide coffreur h/f|testnge": {
+    "keep": false,
+    "reason": "poste terrain (aide coffreur), rejeté par le candidat",
+    "borderline": false
+  },
+  "chef d'équipe gc h/f|testnge": {
+    "keep": false,
+    "reason": "poste terrain (chef d'équipe GC), rejeté par le candidat",
+    "borderline": false
+  },
+  "chef d'équipe propreté urbaine f/h|pizzorno environnement": {
+    "keep": false,
+    "reason": "poste terrain (chef d'équipe propreté), rejeté par le candidat",
+    "borderline": false
+  },
+  "directeur (h/f/x) ibis paris bercy village 12ème|ibis": {
+    "keep": false,
+    "reason": "poste commercial/marketing (hôtellerie), hors climat/stratégie",
+    "borderline": false
+  },
+  "coordinateur / coordinatrice de projet en éducation à l'environnement|mbway lyon": {
+    "keep": false,
+    "reason": "alternance en éducation environnement, hors stratégie/consulting senior",
+    "borderline": false
+  },
+  "ingénieur(e) métrologue - nice f/h|consultys services": {
+    "keep": false,
+    "reason": "poste technique (métrologue), hors climat/stratégie",
+    "borderline": false
+  },
+  "chargé(e) de coordination hse confirmé - nice f/h|consultys services": {
+    "keep": false,
+    "reason": "poste technique (HSE), hors stratégie climat/RSE senior",
+    "borderline": false
+  },
+  "superviseur maintenance - nice f/h|consultys services": {
+    "keep": false,
+    "reason": "poste technique (maintenance), hors climat/stratégie",
+    "borderline": false
+  },
+  "chef / cheffe de projet rse|mbway lyon": {
+    "keep": false,
+    "reason": "alternance en RSE, hors stratégie/consulting senior",
+    "borderline": false
+  },
+  "cdd- archive and samples handler - paris h/f|1590 swarovski france s.a.": {
+    "keep": false,
+    "reason": "poste administratif (archives), hors climat/stratégie",
+    "borderline": false
+  },
+  "chargé / chargée de mission développement durable et rse - responsabilité sociétale de l'entreprise|mbway lyon": {
+    "keep": false,
+    "reason": "alternance en RSE/QSSE, hors stratégie/consulting senior",
+    "borderline": false
+  },
+  "chargé / chargée de mission développement durable et rse - responsabilité sociétale de l'entreprise|mbway bordeaux": {
+    "keep": false,
+    "reason": "alternance en RSE/QHSE, hors stratégie/consulting senior",
+    "borderline": false
+  },
+  "chargé / chargée de mission développement durable et rse - responsabilité sociétale de l'entreprise (h/f)|groupe hospitalier les cheminots": {
+    "keep": false,
+    "reason": "alternance en RSE, hors stratégie/consulting senior",
+    "borderline": false
+  },
+  "gestionnaire énergie et transition écologique - commune de chateaurenard|fonction publique": {
+    "keep": true,
+    "reason": "chargé de mission énergie/transition écologique en collectivité (PACA), correspond au profil élargi",
+    "borderline": false
+  },
+  "communications manager|lemon.io": {
+    "keep": false,
+    "reason": "poste commercial/marketing (remote international), hors climat/stratégie",
+    "borderline": false
+  },
+  "(senior) online marketing manager - paid social (all genders)|mammaly": {
+    "keep": false,
+    "reason": "poste commercial/marketing (startup), hors climat/stratégie",
+    "borderline": false
+  },
+  "head of development - data-viz startup - b2b saas|vizzlo": {
+    "keep": false,
+    "reason": "poste tech (data-viz), hors climat/stratégie",
+    "borderline": false
+  },
+  "senior manager - mdm technology & governance (m/f/d)|evident europe gmbh": {
+    "keep": false,
+    "reason": "poste tech (MDM), hors climat/stratégie",
+    "borderline": false
+  },
+  "(area) sales manager b2b - west (m/w/d)|kugu home gmbh": {
+    "keep": false,
+    "reason": "poste commercial (immobilier), hors climat/stratégie",
+    "borderline": false
+  },
+  "staff applied scientist (distribution center solutions)|afresh technologies": {
+    "keep": false,
+    "reason": "poste tech (IA/data science), hors climat/stratégie",
+    "borderline": false
+  },
+  "staff applied scientist (distribution center)|afresh technologies": {
+    "keep": false,
+    "reason": "métier tech/produit (AI-driven platform) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "reality capture project manager (fixed-term contract, 17 months)|navvis": {
+    "keep": false,
+    "reason": "métier tech/produit (digital twins) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "office assistant|modo energy": {
+    "keep": false,
+    "reason": "métier tech/data analytics sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "customer success manager|smartwyre": {
+    "keep": false,
+    "reason": "commercial/vente (Customer Success Manager) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "staff deep learning engineer|hayden ai": {
+    "keep": false,
+    "reason": "métier tech/produit (Deep Learning Engineer) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "data engineer|span": {
+    "keep": false,
+    "reason": "métier tech/produit (Data Engineer) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "co-founder & ceo, ai that does the reasoning work of drug discovery|deep science ventures": {
+    "keep": false,
+    "reason": "métier tech/produit (AI drug discovery) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "senior account executive - new york|charge point": {
+    "keep": false,
+    "reason": "commercial/vente (Account Executive) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "marketing manager - europe|charge point": {
+    "keep": false,
+    "reason": "marketing sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "staff network engineer|archer": {
+    "keep": false,
+    "reason": "métier tech/produit (révolution transport urbain) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "conseiller en transition énergétique et écologique en santé f/h|association les salins de bregille": {
+    "keep": false,
+    "reason": "poste terrain/technique (transition énergétique en santé) hors stratégie/conseil",
+    "borderline": false
+  },
+  "technico-commercial / technico-commerciale f/h|o'sitoit": {
+    "keep": false,
+    "reason": "technico-commercial sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "business manager nantes f/h|pmejob": {
+    "keep": false,
+    "reason": "Business Manager (pôle commercial) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "directeur de cabinet f/h|hellowork": {
+    "keep": false,
+    "reason": "poste administratif (Directeur de Cabinet) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "charge de developpement f/h|iga ressources": {
+    "keep": false,
+    "reason": "poste administratif (Chargé de développement) sans lien explicite avec le climat/stratégie",
+    "borderline": false
   }
 }
