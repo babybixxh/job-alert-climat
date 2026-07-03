@@ -1864,5 +1864,285 @@
     "keep": false,
     "reason": "poste administratif (Chargé de développement) sans lien explicite avec le climat/stratégie",
     "borderline": false
+  },
+  "ingénieur d'études réseaux de chaleur - paris f/h|metiga": {
+    "keep": true,
+    "reason": "consultant climat senior, correspond au profil",
+    "borderline": false
+  },
+  "maçon vrd h/f|nge": {
+    "keep": false,
+    "reason": "technicien VRD, poste terrain",
+    "borderline": false
+  },
+  "ouvrier polyvalent tp h/f|nge": {
+    "keep": false,
+    "reason": "technicien TP, poste terrain",
+    "borderline": false
+  },
+  "ingénieur stratégie énergie & carbone - (h/f)|briks - recrutement immobilier et construction": {
+    "keep": true,
+    "reason": "ingénieur stratégie énergie & carbone, conseil senior",
+    "borderline": false
+  },
+  "chargé de validation de méthodes analytiques h/f|consultys": {
+    "keep": false,
+    "reason": "validation méthodes analytiques, hors climat/stratégie",
+    "borderline": false
+  },
+  "chef de projet procédés - uve csr & biomasse h/f|agence oriflam": {
+    "keep": false,
+    "reason": "chef de projet procédés, poste technique",
+    "borderline": false
+  },
+  "chargé d'assurance de stérilité - nice h/f|consultys": {
+    "keep": false,
+    "reason": "assurance stérilité, hors climat/stratégie",
+    "borderline": false
+  },
+  "chargé de contrôle qualité microbiologie confirmé- nice h/f|consultys": {
+    "keep": false,
+    "reason": "contrôle qualité microbiologie, hors climat/stratégie",
+    "borderline": false
+  },
+  "chef - cheffe de projet ingénierie - nice h/f|consultys": {
+    "keep": false,
+    "reason": "chef de projet ingénierie, hors climat/stratégie",
+    "borderline": false
+  },
+  "chargé de coordination hse confirmé - nice h/f|consultys": {
+    "keep": false,
+    "reason": "coordination HSE, hors climat/stratégie",
+    "borderline": false
+  },
+  "superviseur maintenance - nice h/f|consultys": {
+    "keep": false,
+    "reason": "superviseur maintenance, hors climat/stratégie",
+    "borderline": false
+  },
+  "ingénieur assurance qualité - nice h/f|consultys": {
+    "keep": false,
+    "reason": "ingénieur assurance qualité, hors climat/stratégie",
+    "borderline": false
+  },
+  "ingénieur(e) automatisme - nice|consultys": {
+    "keep": false,
+    "reason": "ingénieur automatisme, hors climat/stratégie",
+    "borderline": false
+  },
+  "chargé(e) de validation des procédés de nettoyage - région niçoise|consultys": {
+    "keep": false,
+    "reason": "validation procédés nettoyage, hors climat/stratégie",
+    "borderline": false
+  },
+  "chargé(e) de coordination hse confirmé - nice|consultys": {
+    "keep": false,
+    "reason": "coordination HSE, hors climat/stratégie",
+    "borderline": false
+  },
+  "superviseur maintenance - nice|consultys": {
+    "keep": false,
+    "reason": "superviseur maintenance, hors climat/stratégie",
+    "borderline": false
+  },
+  "energy manager - immobilier tertiaire h/f|alenta": {
+    "keep": true,
+    "reason": "energy manager immobilier tertiaire, poste stratégique climat",
+    "borderline": false
+  },
+  "consultant(e) commando python / vba|quanteam": {
+    "keep": false,
+    "reason": "développeur Python/VBA, hors climat/stratégie",
+    "borderline": false
+  },
+  "(h/f) préparateur de commande / emballeur|n/a": {
+    "keep": false,
+    "reason": "préparateur de commande, hors climat/stratégie",
+    "borderline": false
+  },
+  "volontaire service civique - economie circulaire et alimentation durable f/h|ademe": {
+    "keep": false,
+    "reason": "service civique, junior",
+    "borderline": false
+  },
+  "chargé.de mission  « réglementation h2 et développement h2 naturel » f/h|ademe": {
+    "keep": true,
+    "reason": "chargé de mission réglementation H2 et développement H2 naturel, poste stratégique climat",
+    "borderline": false
+  },
+  "juriste formation|cci france": {
+    "keep": false,
+    "reason": "juriste formation, hors climat/stratégie",
+    "borderline": false
+  },
+  "coordinateur (trice) du centre de ressources|cci france": {
+    "keep": true,
+    "reason": "coordinateur centre de ressources, poste RSE/développement durable en collectivité (borderline)",
+    "borderline": true
+  },
+  "business development manager - remote|severin travel gmbh": {
+    "keep": false,
+    "reason": "business development manager, commercial",
+    "borderline": false
+  },
+  "marketing allrounder (m/w/d) in teilzeit 20-25h|equusir germany gmbh": {
+    "keep": false,
+    "reason": "marketing, hors climat/stratégie",
+    "borderline": false
+  },
+  "commercial operations platform lead (gn)|bikeleasing-service gmbh & co. kg": {
+    "keep": false,
+    "reason": "poste commercial/opérations, hors climat/durabilité",
+    "borderline": false
+  },
+  "social media manager (m/w/d) | remote|rik james media gmbh": {
+    "keep": false,
+    "reason": "social media, hors climat/durabilité",
+    "borderline": false
+  },
+  "ki-marketing-manager (m/w/d) | remote|rik james media gmbh": {
+    "keep": false,
+    "reason": "marketing/KI, hors climat/durabilité",
+    "borderline": false
+  },
+  "(senior) network engineer / consultant (m/w/d) - 100% ho | netzwerk, automatisierung & ki|nscon network, security & consulting gmbh": {
+    "keep": false,
+    "reason": "ingénieur réseau/consultant tech, hors climat/durabilité",
+    "borderline": false
+  },
+  "sales manager ki (m/w/d) - verkaufe die zukunft, nicht nur ein produkt|berolina trading ug": {
+    "keep": false,
+    "reason": "sales/KI, hors climat/durabilité",
+    "borderline": false
+  },
+  "social media und community manager (all genders)|mammaly": {
+    "keep": false,
+    "reason": "social media/community, hors climat/durabilité",
+    "borderline": false
+  },
+  "freie ki-redakteur:in (journalist:in) für die disruptive ki-akademie|disruptive gmbh": {
+    "keep": false,
+    "reason": "rédaction/KI, hors climat/durabilité",
+    "borderline": false
+  },
+  "senior pr manager (m/w/d) – remote oder berlin|getpress": {
+    "keep": false,
+    "reason": "PR, hors climat/durabilité",
+    "borderline": false
+  },
+  "senior paid social manager (m/w/d)|sunlab gmbh": {
+    "keep": false,
+    "reason": "marketing digital, hors climat/durabilité",
+    "borderline": false
+  },
+  "communications and narrative director|adamant": {
+    "keep": true,
+    "reason": "ONG think tank climat (Canada), poste stratégique senior",
+    "borderline": false
+  },
+  "director, partner operations|haven energy": {
+    "keep": true,
+    "reason": "stratégie climat/énergie solaire, poste senior",
+    "borderline": false
+  },
+  "senior business development manager: new business|granular energy": {
+    "keep": true,
+    "reason": "stratégie climat/énergie, poste senior",
+    "borderline": false
+  },
+  "senior scientist, data assimilation for observing systems|reflective": {
+    "keep": false,
+    "reason": "scientifique data, hors climat/durabilité",
+    "borderline": false
+  },
+  "recruiter|levelten energy": {
+    "keep": false,
+    "reason": "recrutement, hors climat/durabilité",
+    "borderline": false
+  },
+  "strategic finance lead|afresh technologies": {
+    "keep": false,
+    "reason": "finance, hors climat/durabilité",
+    "borderline": false
+  },
+  "technical support engineer / field engineer|community energy labs": {
+    "keep": false,
+    "reason": "support technique, hors climat/durabilité",
+    "borderline": false
+  },
+  "senior product manager|greenflux": {
+    "keep": false,
+    "reason": "product manager tech, hors climat/durabilité",
+    "borderline": false
+  },
+  "salesforce developer (contract)|pvcase": {
+    "keep": false,
+    "reason": "développeur Salesforce, hors climat/durabilité",
+    "borderline": false
+  },
+  "mission control engineer|constellr": {
+    "keep": false,
+    "reason": "ingénieur spatial, hors climat/durabilité",
+    "borderline": false
+  },
+  "information technology manager - geospatial software engineering|international water management institute (iwmi)": {
+    "keep": false,
+    "reason": "IT géospatial, hors climat/durabilité",
+    "borderline": false
+  },
+  "graduate ai engineer|kaluza": {
+    "keep": false,
+    "reason": "AI engineer junior, hors climat/durabilité",
+    "borderline": false
+  },
+  "full stack developer (python + react + react native)|exponent energy": {
+    "keep": false,
+    "reason": "développeur fullstack, hors climat/durabilité",
+    "borderline": false
+  },
+  "chargé d'études cvc f/h|hellowork": {
+    "keep": false,
+    "reason": "chargé d'études CVC (génie climatique), poste technique",
+    "borderline": false
+  },
+  "chef de projet environnement - amo f/h|hellowork": {
+    "keep": true,
+    "reason": "chef de projet environnement (stratégie/AMO), poste qualifié mais potentiellement junior",
+    "borderline": true
+  },
+  "conseiller transition ecologique et energie f/h|services centraux dg": {
+    "keep": true,
+    "reason": "conseiller transition écologique (CCI), poste stratégique mais potentiellement administratif",
+    "borderline": true
+  },
+  "assistant de gestion -77 - climat systems - groupe igf f/h|groupe igf": {
+    "keep": false,
+    "reason": "poste technique (assistant de gestion) sans lien clair avec climat/stratégie, hors localisation cible",
+    "borderline": false
+  },
+  "chargé d'affaires génie climatique f/h|adsearch": {
+    "keep": false,
+    "reason": "poste technique (chargé d'affaires génie climatique) sans lien avec stratégie climat/RSE, hors localisation cible",
+    "borderline": false
+  },
+  "operation manager ccus décarbonation -oil &gas f/h|winsearch": {
+    "keep": false,
+    "reason": "poste technique (Operation Manager CCUS) lié à Oil & Gas, hors localisation cible et hors stratégie climat pure",
+    "borderline": false
+  },
+  "expert esg & sustainability f/h|deruaz conseil": {
+    "keep": true,
+    "reason": "poste ESG/Sustainability senior dans un groupe industriel, mais localisation Grenoble (hors PACA/Paris) et rôle moins centré climat pur que conseil stratégique",
+    "borderline": true
+  },
+  "responsable développement commercial - anglais courant f/h|michael page international france": {
+    "keep": false,
+    "reason": "poste commercial (Responsable Développement Commercial) sans lien avec climat/stratégie",
+    "borderline": false
+  },
+  "chargé d'affaires etanchéité f/h|asap tt": {
+    "keep": false,
+    "reason": "poste technique (Chargé d'affaires Étanchéité) sans lien avec climat/stratégie",
+    "borderline": false
   }
 }

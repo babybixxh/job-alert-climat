@@ -50,19 +50,6 @@
     "is_new": false
   },
   {
-    "id": "5778274478",
-    "title": "Chef de projet transition écologique et énergétique (h/f) - Syndicat des eaux d'Ile-de-France",
-    "company": "Fonction publique Territoriale",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5778274478?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Le service Protection de la Ressource et Qualité de l’Eau est chargé du pilotage des actions du SEDIF en matière de prés...",
-    "salary": "",
-    "date": "2026-06-26T23:29:53Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "is_new": false
-  },
-  {
     "id": "5781988423",
     "title": "Chargé (e) de missions concertation transition énergétique F/H",
     "company": "QUELIA",
@@ -71,19 +58,6 @@
     "description": "Vous souhaitez agir concrètement face à la crise climatique ? Avec Quelia, l'agence de concertation dédiée à la transition écologique, engagez-vous su...",
     "salary": "31 k€",
     "date": "2026-06-30T11:34:17Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "is_new": false
-  },
-  {
-    "id": "5778272873",
-    "title": "Chargée de mission coordination et suivi des projets métropolitains - COMMUNE D'AUBAGNE",
-    "company": "Fonction publique Territoriale",
-    "location": "Aubagne, Marseille",
-    "url": "https://www.adzuna.fr/details/5778272873?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots La Ville d'Aubagne, s'inscrit dans le territoire de la Métropole Aix-Marseille-Provence et porte des ambitions fortes en...",
-    "salary": "",
-    "date": "2026-06-26T23:27:17Z",
     "source": "Adzuna",
     "borderline": false,
     "is_new": false
@@ -102,6 +76,19 @@
     "is_new": false
   },
   {
+    "id": "5778221427",
+    "title": "Chargée/Chargé de mission promotion et rayonnement du territoire",
+    "company": "Fonction publique Territoriale",
+    "location": "Marseille, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5778221427?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots La Métropole d'Aix-Marseille-Provence pilote des politiques publiques innovantes au service de ses habitants. Son action...",
+    "salary": "",
+    "date": "2026-06-26T23:10:29Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "is_new": false
+  },
+  {
     "id": "210NFPN",
     "title": "Chargé(e) mission agriculture& résilience territoriale #TDEF2026 (H/F)",
     "company": "CC PAYS D'APT-LUBERON",
@@ -109,19 +96,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/210NFPN",
     "description": "Agriculture et adaptation au changement climatique\n Mettre en oeuvre et suivre les actions du Plan Climat en lien avec l'agriculture et l'adaptation a...",
     "source": "France Travail",
-    "borderline": false,
-    "is_new": false
-  },
-  {
-    "id": "5781812862",
-    "title": "Directeur de Projet Complexes Environnement F/H (CDI)",
-    "company": "Brawo Impact",
-    "location": "15ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/land/ad/5781812862?se=wIIpv-118RGUVcOgKLtGgA&utm_medium=api&utm_source=ae8a5ffa&v=C90D779B0335472EAA673EA4E6768E8CBF997CE1",
-    "description": "Brawo Impact est l'agence de recrutement de référence pour les professionnels et les organisations qui s'engagent en faveur de la transformation durab...",
-    "salary": "",
-    "date": "2026-06-30T07:27:25Z",
-    "source": "Adzuna",
     "borderline": false,
     "is_new": false
   },
@@ -231,17 +205,6 @@
     "is_new": false
   },
   {
-    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-transition-ecologique-f-h_4796.aspx",
-    "title": "Chargé.e de mission transition écologique F/H",
-    "company": "ADEME",
-    "location": "France",
-    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-transition-ecologique-f-h_4796.aspx",
-    "description": "",
-    "source": "ADEME",
-    "borderline": false,
-    "is_new": false
-  },
-  {
     "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-chef-fe-de-projets-decarbonation-industrie-f-h_4808.aspx",
     "title": "Chef.fe de projets Décarbonation Industrie F/H",
     "company": "ADEME",
@@ -282,6 +245,17 @@
     "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-chef-fe-de-projet-evaluation-du-programme-prodicee-f-h_4805.aspx",
     "description": "",
     "source": "ADEME",
+    "borderline": false,
+    "is_new": false
+  },
+  {
+    "id": "https://choisirleservicepublic.gouv.fr/offre-emploi/gestionnaire-nergie-et-transition-cologique---commune-de-chateaurenard-reference-O013260630001691/",
+    "title": "Gestionnaire Énergie et Transition Écologique - COMMUNE DE CHATEAURENARD",
+    "company": "Fonction publique",
+    "location": "Bouches-du-Rhône (Marseille)",
+    "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/gestionnaire-nergie-et-transition-cologique---commune-de-chateaurenard-reference-O013260630001691/",
+    "description": "",
+    "source": "Service Public",
     "borderline": false,
     "is_new": false
   },
@@ -375,14 +349,14 @@
     "is_new": false
   },
   {
-    "id": "178809515W",
-    "title": "RESPONSABLE RSE F/H",
-    "company": "GROUPE ETCHART",
-    "location": "Canéjan - 33",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178809515W",
-    "description": "Nos filiales du Groupe DL sont spécialisées en construction métallique, menuiseries et façades aluminium, étanchéité et vêture, construction bois.  Dans le cadre d'un renforcement de notre équipe, nou...",
-    "salary": "A négocier",
-    "date": "2026-06-03T05:46:34.000+0000",
+    "id": "178989712W",
+    "title": "Chef de projet environnement - AMO F/H",
+    "company": "METIGA",
+    "location": "Paris 03 - 75",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178989712W",
+    "description": "Au sein des équipes des équipes de notre client, leader français de l'ingénierie, votre rôle sera de :    Assurer et coordonner la production et le pilotage contractuel des missions qui vous seront co...",
+    "salary": "A partir de 35 k€ brut annuel",
+    "date": "2026-07-03T05:50:40.000+0000",
     "source": "APEC",
     "borderline": false,
     "is_new": false
@@ -414,14 +388,14 @@
     "is_new": false
   },
   {
-    "id": "178841687W",
+    "id": "178986555W",
     "title": "Chef de projet environnement - AMO F/H",
     "company": "Meteojob",
     "location": "Paris 09 - 75",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178841687W",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178986555W",
     "description": "Choisir MÉTIGA, c'est rejoindre une équipe passionnée par le défi de la transition écologique, qui agit pour sa carrière et pour le monde de demain.   MÉTIGA est une société à mission, spécialisée dan...",
     "salary": "A négocier",
-    "date": "2026-06-09T01:28:09.000+0000",
+    "date": "2026-07-03T02:04:03.000+0000",
     "source": "APEC",
     "borderline": false,
     "is_new": false
@@ -505,6 +479,19 @@
     "is_new": false
   },
   {
+    "id": "178869160W",
+    "title": "Chargé d'Affaires CVC / Génie Climatique F/H",
+    "company": "LE BUREAU DES TALENTS",
+    "location": "Saint-Étienne-du-Rouvray - 76",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178869160W",
+    "description": "Véritable entrepreneur au sein de l'entreprise, vous êtes responsable du développement commercial, du pilotage opérationnel et de la rentabilité de vos affaires.  De la prospection à la réception des ...",
+    "salary": "30 - 42 k€ brut annuel",
+    "date": "2026-06-17T11:48:23.000+0000",
+    "source": "APEC",
+    "borderline": false,
+    "is_new": false
+  },
+  {
     "id": "178852314W",
     "title": "Responsable Développement Durable F/H",
     "company": "PLAINE COMMUNE HABITAT",
@@ -583,14 +570,143 @@
     "is_new": false
   },
   {
-    "id": "https://choisirleservicepublic.gouv.fr/offre-emploi/gestionnaire-nergie-et-transition-cologique---commune-de-chateaurenard-reference-O013260630001691/",
-    "title": "Gestionnaire Énergie et Transition Écologique - COMMUNE DE CHATEAURENARD",
-    "company": "Fonction publique",
-    "location": "Bouches-du-Rhône (Marseille)",
-    "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/gestionnaire-nergie-et-transition-cologique---commune-de-chateaurenard-reference-O013260630001691/",
-    "description": "",
-    "source": "Service Public",
+    "id": "5785267211",
+    "title": "Ingénieur d'études réseaux de chaleur - Paris F/H",
+    "company": "METIGA",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5785267211?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Au sein d'un bureau d'études reconnu sur le marché du conseil et de l'ingénierie dans le domaine de l'environnement participant activement à la transi...",
+    "salary": "35 k€",
+    "date": "2026-07-02T11:34:13Z",
+    "source": "Adzuna",
     "borderline": false,
+    "is_new": true
+  },
+  {
+    "id": "5785302426",
+    "title": "Ingénieur stratégie Énergie & Carbone - (H/F)",
+    "company": "Briks - Recrutement immobilier et construction",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/land/ad/5785302426?se=vpeEm7Z28RGfPK6vtb8bDg&utm_medium=api&utm_source=ae8a5ffa&v=9B6D12F88727D62FD274174A241441F45A533AFB",
+    "description": "Descriptif de la société BRIKS est un cabinet de chasse de têtes spécialisé sur les profils de techniciens et de cadres travaillant dans les secteurs ...",
+    "salary": "",
+    "date": "2026-07-02T11:57:31Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "is_new": false
+  },
+  {
+    "id": "5785239987",
+    "title": "Energy Manager - immobilier tertiaire H/F",
+    "company": "ALENTA",
+    "location": "17ème Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/details/5785239987?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Rattaché(e) à la Direction environnementale, vous aurez en charge la gestion environnementale de plusieurs immeubles de bureaux en France tout en étan...",
+    "salary": "",
+    "date": "2026-07-02T11:28:19Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "is_new": true
+  },
+  {
+    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-de-mission-reglementation-h2-et-developpement-h2-naturel-f-h_4813.aspx",
+    "title": "Chargé.de mission  « Réglementation H2 et développement H2 naturel » F/H",
+    "company": "ADEME",
+    "location": "France",
+    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-de-mission-reglementation-h2-et-developpement-h2-naturel-f-h_4813.aspx",
+    "description": "",
+    "source": "ADEME",
+    "borderline": false,
+    "is_new": true
+  },
+  {
+    "id": "5785296763",
+    "title": "Coordinateur (trice) du Centre de Ressources",
+    "company": "CCI France",
+    "location": "Nice, Alpes-Maritimes",
+    "url": "https://www.adzuna.fr/land/ad/5785296763?se=gpLVn7Z28RGRjNS7zaxw5w&utm_medium=api&utm_source=ae8a5ffa&v=C552D31CA33E7B3B941D79107FAAACD0F3C18389",
+    "description": "La CCI Nice Côte d’Azur recherche son/sa coordinateur (trice) du Centre de Ressources Campus Sud des Métiers Rattaché (e) à la Direction de l’administ...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": true,
+    "is_new": true
+  },
+  {
+    "id": "74311700",
+    "title": "Communications and Narrative Director",
+    "company": "Adamant",
+    "location": "Remote",
+    "url": "https://climatebase.org/job/communications-and-narrative-director-74311700",
+    "description": "We Are Adamant.  A Canadian nonprofit built to win the economic argument for a clean economy and to break fossil fuel industry's influence over energy",
+    "salary": "6 k€ – 8 k€",
+    "date": "2026-07-03T08:04:07.527Z",
+    "source": "Remote EU",
+    "borderline": false,
+    "is_new": true
+  },
+  {
+    "id": "74318823",
+    "title": "Director, Partner Operations",
+    "company": "Haven Energy",
+    "location": "Remote",
+    "url": "https://climatebase.org/job/director-partner-operations-74318823",
+    "description": "Accelerating deployment of solar and storage to create a stable, climate-resilient electric grid.",
+    "salary": "",
+    "date": "2026-07-03T05:52:55.918Z",
+    "source": "Remote EU",
+    "borderline": false,
+    "is_new": true
+  },
+  {
+    "id": "74317727",
+    "title": "Senior Business Development Manager: new business",
+    "company": "Granular Energy",
+    "location": "Remote",
+    "url": "https://climatebase.org/job/senior-business-development-manager-new-business-74317727",
+    "description": "\"Empowering 24/7 clean energy trading with hourly certificates to drive sustainable electricity usage.\"",
+    "salary": "",
+    "date": "2026-07-03T04:32:10.990Z",
+    "source": "Remote EU",
+    "borderline": false,
+    "is_new": true
+  },
+  {
+    "id": "178987351W",
+    "title": "Chef de Projet Environnement - Amo F/H",
+    "company": "Hellowork",
+    "location": "Paris 03 - 75",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178987351W",
+    "description": "Au sein des équipes des équipes de notre client, leader français de l'ingénierie, votre rôle sera de :   Assurer et coordonner la production et le pilotage contractuel des missions qui vous seront con...",
+    "salary": "35 - 40 k€ brut annuel",
+    "date": "2026-07-03T03:23:28.000+0000",
+    "source": "APEC",
+    "borderline": true,
+    "is_new": true
+  },
+  {
+    "id": "178985544W",
+    "title": "Conseiller Transition Ecologique et Energie F/H",
+    "company": "SERVICES CENTRAUX DG",
+    "location": "Créteil - 94",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178985544W",
+    "description": "Au sein de la CCI Paris Ile-de-France, vous accompagnez les dirigeants dans la transition écologique de leur entreprise, identifiez leurs risques et besoins et proposez des solutions adaptées. Vous in...",
+    "salary": "38 - 40 k€ brut annuel",
+    "date": "2026-07-02T20:22:15.000+0000",
+    "source": "APEC",
+    "borderline": true,
+    "is_new": true
+  },
+  {
+    "id": "178984454W",
+    "title": "EXPERT ESG & SUSTAINABILITY F/H",
+    "company": "DERUAZ CONSEIL",
+    "location": "Grenoble - 38",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178984454W",
+    "description": "Rejoignez un groupe industriel centenaire qui fait de la soutenabilité un véritable levier de transformation, et contribuez à ancrer la démarche ESG au cœur de son réseau mondial.   EXPERT ESG & SUSTA...",
+    "salary": "55 - 65 k€ brut annuel",
+    "date": "2026-07-02T15:07:01.000+0000",
+    "source": "APEC",
+    "borderline": true,
     "is_new": true
   }
 ]
