@@ -2144,5 +2144,190 @@
     "keep": false,
     "reason": "poste technique (Chargé d'affaires Étanchéité) sans lien avec climat/stratégie",
     "borderline": false
+  },
+  "consultant référent transformation des fonctions finance (h/f)|seabird": {
+    "keep": false,
+    "reason": "poste hors climat (transformation finance) et hors stratégie climat",
+    "borderline": false
+  },
+  "juriste commande publique (h/f)|ville de marseille": {
+    "keep": false,
+    "reason": "poste administratif (juriste achats) sans lien climat",
+    "borderline": false
+  },
+  "chargé(e) de mission finances et administration - arsud - l'outil des arts et du spectacle|fonction publique territoriale": {
+    "keep": false,
+    "reason": "poste finances/administration sans lien climat",
+    "borderline": false
+  },
+  "adjoint au directeur général des services - commune de nice|fonction publique territoriale": {
+    "keep": false,
+    "reason": "poste administratif (DGS adjoint) sans lien climat",
+    "borderline": false
+  },
+  "responsable service maintenance electromecanique atelier h/f|eau d'azur": {
+    "keep": false,
+    "reason": "poste technique (maintenance) sans lien climat",
+    "borderline": false
+  },
+  "ingénieur etudes signalisation ferroviaire (h/f)|equans": {
+    "keep": false,
+    "reason": "poste technique (signalisation ferroviaire) sans lien climat",
+    "borderline": false
+  },
+  "chef de projets etudes signalisation ferroviaire (h/f)|equans": {
+    "keep": false,
+    "reason": "poste technique (signalisation ferroviaire) sans lien climat",
+    "borderline": false
+  },
+  "contrôleur de gestion f/h|irisolaris groupe": {
+    "keep": false,
+    "reason": "poste technique (contrôle de gestion) sans lien climat",
+    "borderline": false
+  },
+  "chef d'equipe h/f mecanuc|equans": {
+    "keep": false,
+    "reason": "poste technique (nucléaire) et terrain rejeté explicitement",
+    "borderline": false
+  },
+  "ingénieur supply chain f/h|bertin technologies": {
+    "keep": false,
+    "reason": "poste technique (supply chain) sans lien climat",
+    "borderline": false
+  },
+  "déménageur permis b f/h|hexvia": {
+    "keep": false,
+    "reason": "poste technique (déménageur) sans lien climat",
+    "borderline": false
+  },
+  "assistant administratif polyvalent f/h|hexvia": {
+    "keep": false,
+    "reason": "poste administratif (assistant) sans lien climat",
+    "borderline": false
+  },
+  "ingénieur métrologue - nice h/f|consultys": {
+    "keep": false,
+    "reason": "poste technique (métrologue) sans lien climat",
+    "borderline": false
+  },
+  "ingénieur automatisme - nice h/f|consultys": {
+    "keep": false,
+    "reason": "poste technique (automatisme) sans lien climat",
+    "borderline": false
+  },
+  "chef de programme*dta/sdd1|choisir le service public": {
+    "keep": false,
+    "reason": "poste technique (aviation civile) sans lien climat",
+    "borderline": false
+  },
+  "chargé.de mission  « réglementation hydrogène et développement hydrogène naturel » f/h|ademe": {
+    "keep": true,
+    "reason": "chargé de mission réglementation hydrogène et climat à l'ADEME (stratégie publique climat)",
+    "borderline": false
+  },
+  "enterprise account executive - english speaking|greenly": {
+    "keep": false,
+    "reason": "poste commercial (sales) sans lien climat",
+    "borderline": false
+  },
+  "sales development representative (sdr / bdr) french market|greenly": {
+    "keep": false,
+    "reason": "poste commercial (sales) sans lien climat",
+    "borderline": false
+  },
+  "global sales director freeze dry ingredients b2b and private label|gfic": {
+    "keep": false,
+    "reason": "poste technique (production industrielle) sans lien climat",
+    "borderline": false
+  },
+  "product manager - growth & discovery (m/f/d)|cuju": {
+    "keep": false,
+    "reason": "poste technique (product manager) sans lien climat",
+    "borderline": false
+  },
+  "projektleiter it/product owner 100% remote|der onlinesteuerberater": {
+    "keep": false,
+    "reason": "poste technique (IT) sans lien climat",
+    "borderline": false
+  },
+  "brand & web designer (w/m/d) - remote|severin travel gmbh": {
+    "keep": false,
+    "reason": "poste technique (design) sans lien climat",
+    "borderline": false
+  },
+  "content lead (m/w/d)|snipki": {
+    "keep": false,
+    "reason": "poste technique (content lead) sans lien climat",
+    "borderline": false
+  },
+  "operativer (software) einkauf - 100% remote (m/w/d)|digistore24": {
+    "keep": false,
+    "reason": "poste technique (achats) sans lien climat",
+    "borderline": false
+  },
+  "account executive (f/m/x) - uki, nordics & middle east|liveeo": {
+    "keep": false,
+    "reason": "poste commercial (sales) sans lien climat",
+    "borderline": false
+  },
+  "software engineer – device infrastructure (all genders)|gridx": {
+    "keep": false,
+    "reason": "métier tech (Software Engineer) - hors climat/stratégie",
+    "borderline": false
+  },
+  "customer solutions engineer|enode": {
+    "keep": false,
+    "reason": "métier tech (Customer Solutions Engineer) - hors climat/stratégie",
+    "borderline": false
+  },
+  "senior product manager|octopus energy": {
+    "keep": false,
+    "reason": "métier tech/produit (Senior Product Manager) - hors climat/stratégie",
+    "borderline": false
+  },
+  "product manager|octopus energy": {
+    "keep": false,
+    "reason": "métier tech/produit (Product Manager) - hors climat/stratégie",
+    "borderline": false
+  },
+  "gestor/a energético/a (remoto)|octopus energy": {
+    "keep": false,
+    "reason": "métier tech/produit (Gestor/a Energético/a) - hors climat/stratégie",
+    "borderline": false
+  },
+  "chief of staff|zero homes": {
+    "keep": false,
+    "reason": "métier tech/produit (Chief of Staff) - hors climat/stratégie",
+    "borderline": false
+  },
+  "ingénieur efficacité énergétique f/h|in quarto": {
+    "keep": false,
+    "reason": "poste terrain/technique (Ingénieur Efficacité Énergétique) - hors stratégie/conseil",
+    "borderline": false
+  },
+  "ingénieur études de prix cvc plb f/h|pmejob": {
+    "keep": false,
+    "reason": "poste technique (Ingénieur études de prix CVC) - hors climat/stratégie",
+    "borderline": false
+  },
+  "expert esg & sustainability f/h|cadremploi": {
+    "keep": true,
+    "reason": "Responsable ESG & Sustainability - poste stratégique en entreprise, mais localisation Grenoble (hors PACA/Paris) et entreprise non ciblée (cadremploi)",
+    "borderline": true
+  },
+  "hr business partner f/h|hcl technologies france": {
+    "keep": false,
+    "reason": "RH (HR Business Partner) - hors climat/stratégie",
+    "borderline": false
+  },
+  "responsable / manager opérationnel multi-sites f/h|la main verte": {
+    "keep": false,
+    "reason": "commercial/terrain (Responsable Opérationnel Multi-sites) - hors climat/stratégie",
+    "borderline": false
+  },
+  "commercial btob f/h|terramoka": {
+    "keep": false,
+    "reason": "commercial/terrain (Commercial BtoB) - hors climat/stratégie",
+    "borderline": false
   }
 }
