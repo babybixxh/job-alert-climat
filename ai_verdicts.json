@@ -2329,5 +2329,100 @@
     "keep": false,
     "reason": "commercial/terrain (Commercial BtoB) - hors climat/stratégie",
     "borderline": false
+  },
+  "chef de projet environnement - amo h/f|métiga": {
+    "keep": true,
+    "reason": "Chef de Projet Environnement - AMO : poste stratégique en conseil environnement (lien avec climat/durabilité), senior, en Île-de-France (critères stricts pour Paris)",
+    "borderline": false
+  },
+  "ingénieur irve f/h|new-e": {
+    "keep": false,
+    "reason": "Ingénieur IRVE : poste technique (audits, études de faisabilité), hors climat/stratégie",
+    "borderline": false
+  },
+  "cheffe / chef de service promotion et rayonnement du territoire|fonction publique territoriale": {
+    "keep": true,
+    "reason": "Chef de service promotion et rayonnement du territoire : poste en collectivité territoriale (Marseille), lié à politiques publiques innovantes (inclut transition écologique)",
+    "borderline": false
+  },
+  "juriste commande publique f/h|ville de marseille": {
+    "keep": false,
+    "reason": "Juriste Commande Publique : poste administratif (achats/marchés), hors climat/stratégie",
+    "borderline": false
+  },
+  "conseillère principale / conseiller principal d'éducation cfa|fonction publique territoriale": {
+    "keep": false,
+    "reason": "Conseiller principal d'éducation CFA : poste pédagogique/éducatif, hors climat/stratégie",
+    "borderline": false
+  },
+  "responsable maintenance multisites h/f|greenyellow france": {
+    "keep": false,
+    "reason": "Responsable Maintenance Multisites : poste technique (maintenance), hors climat/stratégie",
+    "borderline": false
+  },
+  "responsable maintenance h/f|idex": {
+    "keep": false,
+    "reason": "Responsable Maintenance : poste technique (maintenance), hors climat/stratégie",
+    "borderline": false
+  },
+  "ingénieur d'études sol f/h|enoe solaire": {
+    "keep": false,
+    "reason": "Ingénieur d'Études Sol : poste technique (solaire), hors climat/stratégie",
+    "borderline": false
+  },
+  "ingénieur(e) métrologue - nice|consultys": {
+    "keep": false,
+    "reason": "Ingénieur métrologue : poste technique (mesures), hors climat/stratégie",
+    "borderline": false
+  },
+  "it business analyst it risk - dora|peersgroup": {
+    "keep": false,
+    "reason": "IT Business Analyst IT Risk : poste technique (IT/finance), hors climat/stratégie",
+    "borderline": false
+  },
+  "charge.e de mission environnement et formation professionnelle à la pêche f/h|comité national des pêches maritimes et des élevages marins": {
+    "keep": false,
+    "reason": "Chargé·e de mission environnement et formation professionnelle à la pêche : poste sectoriel (pêche), hors stratégie climat/RSE",
+    "borderline": false
+  },
+  "animateur.rice pédagogique d'une aventure écologique et polaire|témoins polaires": {
+    "keep": false,
+    "reason": "Animateur·rice pédagogique : poste pédagogique/formation, hors climat/stratégie",
+    "borderline": false
+  },
+  "gestionnaire de contrat d'exploitation des installations chauffage, ventilation et climatisation (h/f)|fonction publique": {
+    "keep": false,
+    "reason": "Gestionnaire de contrat d'exploitation : poste technique (maintenance), hors climat/stratégie",
+    "borderline": false
+  },
+  "conducteur de projets maitrise energie et eau f/h - commune d'avignon|fonction publique": {
+    "keep": false,
+    "reason": "Conducteur de projets Maîtrise Énergie et Eau : poste technique (énergie/eau), hors stratégie climat",
+    "borderline": false
+  },
+  "software engineer - cloud platform|zero motorcycles": {
+    "keep": false,
+    "reason": "Software Engineer : poste technique (développement), hors climat/stratégie",
+    "borderline": false
+  },
+  "senior debt & revenue protection officer|centrica energy": {
+    "keep": false,
+    "reason": "Senior Debt & Revenue Protection Officer : poste financier/commercial, hors climat/stratégie",
+    "borderline": false
+  },
+  "angular frontend developer|eurofins": {
+    "keep": false,
+    "reason": "Angular Frontend Developer : poste technique (développement), hors climat/stratégie",
+    "borderline": false
+  },
+  "chef de mission audit f/h|momenti": {
+    "keep": false,
+    "reason": "Chef de mission Audit : poste technique (audit financier), hors climat/stratégie",
+    "borderline": false
+  },
+  "chargé d'affaires f/h|banque populaire rives de paris": {
+    "keep": false,
+    "reason": "Chargé d'affaires : poste commercial/vente, hors climat/stratégie",
+    "borderline": false
   }
 }
