@@ -2424,5 +2424,80 @@
     "keep": false,
     "reason": "Chargé d'affaires : poste commercial/vente, hors climat/stratégie",
     "borderline": false
+  },
+  "ingénieur agronome h/f|metiga": {
+    "keep": false,
+    "reason": "Titre trop générique (ingénieur agronome), pas de lien clair avec climat/RSE/stratégie",
+    "borderline": false
+  },
+  "chargée / chargé d'études performance de l'offre de transport|fonction publique territoriale": {
+    "keep": true,
+    "reason": "Chargé·e d'études performance de l'offre de transport dans une métropole (Aix-Marseille-Provence) : poste qualifié en collectivité publique lié à la transition écologique",
+    "borderline": false
+  },
+  "vous êtes chargé(e) d’affaires en électricité - contrôle ‑ commande ?|csti groupe": {
+    "keep": false,
+    "reason": "Poste technique (électricité/contrôle-commande), hors climat/stratégie",
+    "borderline": false
+  },
+  "manager sales representative development (sdr/bdr) - french market|greenly": {
+    "keep": false,
+    "reason": "Poste commercial (Sales Representative), hors climat/stratégie",
+    "borderline": false
+  },
+  "senior health copywriter (m/w/d) | 100 % remote | vollzeit | nature heart|nature heart gmbh & co kg": {
+    "keep": false,
+    "reason": "Poste technique (copywriter santé), hors climat/stratégie",
+    "borderline": false
+  },
+  "werkstudent ux/ui grafiker (m/w/d)|activate media gmbh": {
+    "keep": false,
+    "reason": "Poste junior (werkstudent UX/UI), hors climat/stratégie",
+    "borderline": false
+  },
+  "team leader|smec services pty limited": {
+    "keep": false,
+    "reason": "Poste technique (ingénierie durable), hors conseil/stratégie climat",
+    "borderline": false
+  },
+  "project development analyst|mission clean energy": {
+    "keep": false,
+    "reason": "Poste technique (analyste développement projets énergétiques), hors conseil/stratégie climat",
+    "borderline": false
+  },
+  "director or senior director of development, renewable energy|mission clean energy": {
+    "keep": false,
+    "reason": "Poste technique (Directeur développement énergies renouvelables), hors conseil/stratégie climat",
+    "borderline": false
+  },
+  "real estate acquisition & title associate or manager|mission clean energy": {
+    "keep": false,
+    "reason": "Poste technique (immobilier), hors climat/stratégie",
+    "borderline": false
+  },
+  "mission clean energy talent community|mission clean energy": {
+    "keep": false,
+    "reason": "Communauté de talents générique, hors poste précis",
+    "borderline": false
+  },
+  "renewable energy developer - director, manager, associate|mission clean energy": {
+    "keep": false,
+    "reason": "Poste technique (développeur énergies renouvelables), hors conseil/stratégie climat",
+    "borderline": false
+  },
+  "responsable commercial collectivités f/h|amo consultants": {
+    "keep": false,
+    "reason": "Poste commercial (responsable commercial collectivités), hors climat/stratégie",
+    "borderline": false
+  },
+  "responsable commercial - emballage papier f/h|michael page international france": {
+    "keep": false,
+    "reason": "Poste commercial (responsable commercial emballage), hors climat/stratégie",
+    "borderline": false
+  },
+  "business developer f/h|corhom": {
+    "keep": false,
+    "reason": "Poste commercial (business developer), hors climat/stratégie",
+    "borderline": false
   }
 }
