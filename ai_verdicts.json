@@ -2499,5 +2499,185 @@
     "keep": false,
     "reason": "Poste commercial (business developer), hors climat/stratégie",
     "borderline": false
+  },
+  "stagiaire rh/rse|groupe ifop": {
+    "keep": false,
+    "reason": "Stage RH/RSE, hors localisation Paris et hors stratégie climat",
+    "borderline": false
+  },
+  "coordonnateur sps à nice (h/f)|systra": {
+    "keep": false,
+    "reason": "Coordonnateur SPS (Sécurité et Protection de la Santé) - poste terrain/technique, hors climat/stratégie",
+    "borderline": false
+  },
+  "directeur/trice d'agence - constructeur de maisons individuelles environnementales|natilia": {
+    "keep": false,
+    "reason": "Directeur d'agence construction bois - hors stratégie climat, poste opérationnel",
+    "borderline": false
+  },
+  "ingénieur chargé d'études bâtimentaires (h/f) - département des alpes-maritimes|fonction publique territoriale": {
+    "keep": false,
+    "reason": "Ingénieur méthodes et énergies (bâtiment) - poste technique terrain, hors stratégie climat",
+    "borderline": false
+  },
+  "ingénieur méthodes et energies|idex": {
+    "keep": false,
+    "reason": "Ingénieur méthodes et énergies (bâtiment) - poste technique terrain, hors stratégie climat",
+    "borderline": false
+  },
+  "chargé de mission programme universitaire innovation (pui) (h/f)|ecole nat super creation industrielle": {
+    "keep": false,
+    "reason": "Chargé de mission programme universitaire innovation - hors climat/stratégie, poste administratif",
+    "borderline": false
+  },
+  "auditeur rse et relation clients (h/f)|ecocert": {
+    "keep": true,
+    "reason": "Auditeur RSE - poste qualifié en RSE, mais localisation France (pas PACA/Paris) et niveau non clairement senior",
+    "borderline": true
+  },
+  "business development manager yacht insurance (m/f/x)|sealogy gmbh": {
+    "keep": false,
+    "reason": "Business Development Manager (assurance yacht) - commercial, hors climat/stratégie",
+    "borderline": false
+  },
+  "product engineer*in / fullstack developer*in|myprotectify": {
+    "keep": false,
+    "reason": "Product Engineer / Fullstack Developer - poste tech, hors climat/stratégie",
+    "borderline": false
+  },
+  "ui/ux designer (m/w/d)|scael": {
+    "keep": false,
+    "reason": "UI/UX Designer - poste tech, hors climat/stratégie",
+    "borderline": false
+  },
+  "application support & qa specialist (m/w/d)|reos gmbh": {
+    "keep": false,
+    "reason": "Application Support & QA Specialist - poste tech, hors climat/stratégie",
+    "borderline": false
+  },
+  "staff product manager, machine learning|overstory": {
+    "keep": false,
+    "reason": "Staff Product Manager (Machine Learning) - poste tech/produit, hors stratégie climat",
+    "borderline": false
+  },
+  "senior forecasting and optimization engineer|energyhub": {
+    "keep": false,
+    "reason": "Senior Forecasting and Optimization Engineer - poste tech, hors stratégie climat",
+    "borderline": false
+  },
+  "data science engineer (f/m/d)|prewave": {
+    "keep": false,
+    "reason": "Data Science Engineer - poste tech, hors stratégie climat",
+    "borderline": false
+  },
+  "senior sales expert (f/m/x)|enspired": {
+    "keep": false,
+    "reason": "Senior Sales Expert - commercial, hors stratégie climat",
+    "borderline": false
+  },
+  "regulatory compliance manager|amber electric": {
+    "keep": false,
+    "reason": "Regulatory Compliance Manager - poste technique/reglementaire, hors stratégie climat",
+    "borderline": false
+  },
+  "full stack engineer|amber electric": {
+    "keep": false,
+    "reason": "Full Stack Engineer - poste tech, hors stratégie climat",
+    "borderline": false
+  },
+  "bess senior engineer|3e": {
+    "keep": false,
+    "reason": "BESS Senior Engineer - poste tech, hors stratégie climat",
+    "borderline": false
+  },
+  "data scientist|qwello": {
+    "keep": false,
+    "reason": "Data Scientist - poste tech, hors stratégie climat",
+    "borderline": false
+  },
+  "senior backend software engineer (python)|deepsea technologies": {
+    "keep": false,
+    "reason": "Senior BackEnd Software Engineer - poste tech, hors stratégie climat",
+    "borderline": false
+  },
+  "pv & bess engineer|3e": {
+    "keep": false,
+    "reason": "PV & BESS Engineer - poste tech, hors stratégie climat",
+    "borderline": false
+  },
+  "senior backend engineer|qwello": {
+    "keep": false,
+    "reason": "Senior Backend Engineer - poste tech, hors stratégie climat",
+    "borderline": false
+  },
+  "director, product|uplight": {
+    "keep": false,
+    "reason": "Director, Product - poste tech/produit, hors stratégie climat",
+    "borderline": false
+  },
+  "principal product manager|measurabl": {
+    "keep": false,
+    "reason": "Principal Product Manager - poste tech/produit, hors stratégie climat",
+    "borderline": false
+  },
+  "utility partnerships manager|blue forest": {
+    "keep": false,
+    "reason": "Utility Partnerships Manager - commercial, hors stratégie climat",
+    "borderline": false
+  },
+  "responsable qhse f/h|zz_confidentiel": {
+    "keep": false,
+    "reason": "Responsable QHSE : poste technique/opérationnel, pas stratégique climat/RSE",
+    "borderline": false
+  },
+  "chargé de mission adaptation au changement climatique f/h|st malo agglomération": {
+    "keep": false,
+    "reason": "Chargé de mission adaptation au changement climatique : poste terrain/collectivité locale, hors stratégie conseil senior",
+    "borderline": false
+  },
+  "assistant chargé d'affaires en génie climatique f/h|hellowork": {
+    "keep": false,
+    "reason": "Assistant Chargé d'Affaires en Génie Climatique : poste technique/terrain, junior, hors stratégie climat",
+    "borderline": false
+  },
+  "chargé d'affaires en cvc - plomberie f/h|hellowork": {
+    "keep": false,
+    "reason": "Chargé d'Affaires en CVC - Plomberie : poste technique/terrain, hors stratégie climat",
+    "borderline": false
+  },
+  "manager consultant décarbonation des mobilités f/h|hellowork": {
+    "keep": true,
+    "reason": "Manager Consultant Décarbonation des Mobilités : poste stratégique climat senior en conseil, correspond au profil",
+    "borderline": false
+  },
+  "juriste rse f/h|hellowork": {
+    "keep": false,
+    "reason": "Juriste RSE : poste juridique, pas stratégique climat/consulting",
+    "borderline": false
+  },
+  "conseiller développeur performance globale f/h|hellowork": {
+    "keep": false,
+    "reason": "Conseiller Développeur Performance Globale : poste technique/opérationnel, hors climat",
+    "borderline": false
+  },
+  "chargé de missions rse - forvis mazars en france f/h|hellowork": {
+    "keep": true,
+    "reason": "Chargé de Missions RSE : poste stratégique RSE senior en cabinet conseil renommé (Mazars), correspond au profil",
+    "borderline": false
+  },
+  "responsable commercial grands comptes emballages verre f/h|michael page international france": {
+    "keep": false,
+    "reason": "Responsable Commercial Grands Comptes : poste commercial, hors stratégie climat",
+    "borderline": false
+  },
+  "responsable contrat maintenance f/h|fed ingenierie": {
+    "keep": false,
+    "reason": "Responsable contrat Maintenance : poste technique/opérationnel, hors climat",
+    "borderline": false
+  },
+  "chargé de mission senior f/h|hays france": {
+    "keep": false,
+    "reason": "Chargé de mission senior (expertise comptable) : poste technique/opérationnel, hors climat",
+    "borderline": false
   }
 }
