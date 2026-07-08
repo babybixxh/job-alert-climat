@@ -16,6 +16,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 KEYWORDS = [
     "consultant climat",
     "consultant stratégie climat",
+    "consultant transition",
     "bilan carbone",
     "transition écologique",
     "chargé mission climat",
