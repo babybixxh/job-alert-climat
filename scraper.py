@@ -4,6 +4,7 @@ import json
 import requests
 import re
 import time
+import threading
 import urllib3
 from html import unescape
 from email.mime.multipart import MIMEMultipart
@@ -17,6 +18,8 @@ KEYWORDS = [
     "consultant climat",
     "consultant stratégie climat",
     "consultant transition",
+    "climate solutions consultant",
+    "carbon analyst",
     "bilan carbone",
     "transition écologique",
     "chargé mission climat",
@@ -77,6 +80,10 @@ REJECTED_REASONS_FILE = "rejected_reasons.json"
 # Évite de réinterroger Mistral chaque jour sur des offres déjà tranchées.
 AI_VERDICTS_FILE = "ai_verdicts.json"
 AI_VERDICTS_MAX = 3000
+# Version du prompt/règles IA. À incrémenter dès qu'on modifie le PROFILE ou les
+# règles de décision : les verdicts en cache d'une version antérieure sont alors
+# ré-évalués (sinon d'anciennes décisions périmées seraient rejouées).
+AI_PROMPT_VERSION = 2
 
 # Suivi de la santé des sources : pour chaque source, nombre de jours
 # consécutifs sans aucune offre brute (parseur potentiellement cassé).
@@ -133,13 +140,35 @@ WTTJ_COMPANIES = {
     "carbon-cutter": "Carbon Cutter",
     "adaptation-s": "adaptation/s",
     "cci-france": "CCI France",
-    # Logiciels de comptabilité carbone
+    # Plateformes de comptabilité carbone (SaaS)
     "sami": "Sami",
     "greenly": "Greenly",
     "aktio": "Aktio",
     "tennaxia": "Tennaxia",
     "traace": "Traace",
     "sweep": "Sweep",
+    "carbometrix": "Carbometrix",
+    "carbo": "Carbo",
+    "carbonfact": "Carbonfact",
+    "watershed": "Watershed",
+    "plan-a": "Plan A",
+    "normative": "Normative",
+    # Data ESG / CSRD
+    "ecovadis": "EcoVadis",
+    "deepki": "Deepki",
+    "greenomy": "Greenomy",
+    "position-green": "Position Green",
+    "coolset": "Coolset",
+    # Data climat « hard » : satellite, risque physique, adaptation
+    "kayrros": "Kayrros",
+    "axa-climate": "AXA Climate",
+    "descartes-underwriting": "Descartes Underwriting",
+    "callendar": "Callendar",
+    "namr": "namR",
+    "murmuration": "Murmuration",
+    # Énergie / industrie
+    "metron": "Metron",
+    "purecontrol": "Purecontrol",
 }
 
 # Types de contrat WTTJ à écarter (on veut CDI/CDD, pas stage/alternance/VIE).
@@ -168,8 +197,17 @@ ou une ONG/think tank influent. À Marseille et en PACA (sa zone prioritaire), i
 des postes qualifiés de responsable/chargé de RSE ou de développement durable en entreprise, de chargé
 de mission développement durable / transition en collectivité ou établissement public, ou de coordination
 de projets environnement / économie circulaire en association ou dans l'ESS ; à Paris il vise en priorité
-le conseil et la stratégie climat. Il ne veut PAS de postes terrain, techniciens, nucléaire,
-achats, RH, finance, stages ou alternances.
+le conseil et la stratégie climat.
+Il est aussi TRÈS intéressé par les éditeurs de logiciels de comptabilité carbone / plateformes
+data-climat & ESG (Sweep, Greenly, Sami, Traace, Carbometrix, Carbonfact, Watershed, Plan A,
+Normative, EcoVadis, Deepki, Kayrros, AXA Climate, Descartes, Metron…), où son profil ingénieur +
+conseil carbone se valorise sur des rôles hybrides produit/conseil/méthodo : Climate Solutions
+Consultant, Climate Expert, Carbon Analyst, Implementation / Onboarding Consultant, Solutions
+Engineer / Sales Engineer (avant-vente technique), Carbon Accounting Methodologist / Methodology
+Expert, Climate Risk Analyst, et à moyen terme Product Manager. Il code sur son temps libre
+(automatisations LLM), donc le côté « builder » technique est un atout, pas un frein.
+Il ne veut PAS de postes terrain, techniciens (maintenance/chantier), nucléaire,
+achats, RH, finance/comptabilité, stages ou alternances.
 """
 
 
@@ -1131,11 +1169,30 @@ def search_lever():
     return jobs
 
 
+# Temporisation LinkedIn : l'endpoint « jobs-guest » anonyme renvoie des
+# HTTP 429 quand on l'appelle trop vite en parallèle. On espace donc le DÉBUT
+# de chaque requête LinkedIn d'au moins LINKEDIN_MIN_INTERVAL secondes (les
+# autres sources continuent de tourner en parallèle pendant ce temps).
+_LINKEDIN_LOCK = threading.Lock()
+_LINKEDIN_LAST = [0.0]
+LINKEDIN_MIN_INTERVAL = 1.3
+
+
+def _linkedin_throttle():
+    with _LINKEDIN_LOCK:
+        wait = LINKEDIN_MIN_INTERVAL - (time.time() - _LINKEDIN_LAST[0])
+        if wait > 0:
+            time.sleep(wait)
+        _LINKEDIN_LAST[0] = time.time()
+
+
 def search_linkedin(keyword, location):
     """LinkedIn via l'API « jobs-guest » (sans authentification) utilisée par
     le widget public d'offres. Fragile et soumise à l'anti-bot LinkedIn :
     se désactive proprement (retour []) sur tout statut non-200. Conservée
-    car, quand elle répond, c'est la plus grosse source d'offres cadres."""
+    car, quand elle répond, c'est la plus grosse source d'offres cadres.
+    Les requêtes sont espacées (voir _linkedin_throttle) pour limiter les 429."""
+    _linkedin_throttle()
     exclusions = get_exclusions()
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36",
@@ -1494,21 +1551,31 @@ ADAPTATION SELON LE LIEU (applique-la avant de trancher) :
   ADEME, EPCI…) ; coordination ou chef·fe de projet environnement / économie circulaire /
   transition en ASSOCIATION ou ESS. Les rejets absolus ci-dessous s'appliquent quand même.
 - LIEU à Paris / Île-de-France (hors télétravail) : reste STRICT — uniquement conseil /
-  stratégie climat senior comme décrit ci-dessus.
+  stratégie climat senior, OU les rôles climate-tech décrits juste en dessous.
 
-REJETTE (keep=false) dans TOUS ces cas, MÊME si « ENTREPRISE CIBLÉE: oui » :
-- métiers tech/produit/data (developer, engineer, fullstack, software, data scientist, devops, product manager)
-- commercial / vente / sales / account executive / business developer / marketing
+CLIMATE-TECH / COMPTABILITÉ CARBONE (s'applique surtout aux ENTREPRISE CIBLÉE: oui,
+éditeurs de logiciels carbone / plateformes data-climat & ESG) : chez ces boîtes, GARDE
+(keep=true) les rôles HYBRIDES produit/conseil/méthodo qui valorisent son profil ingénieur +
+conseil carbone, même s'ils contiennent des mots « engineer », « product » ou « sales » :
+Climate Solutions Consultant, Climate Expert, Carbon/Climate Analyst, Implementation /
+Onboarding Consultant, Solutions Engineer / Sales Engineer (avant-vente TECHNIQUE),
+Carbon Accounting Methodologist / Methodology Expert, Climate Risk Analyst, Product Manager
+climat. Ces postes NE sont PAS à rejeter comme « tech » ou « commercial ».
+
+REJETTE (keep=false) dans TOUS ces cas :
+- dev logiciel pur (backend, frontend, fullstack, software engineer, data scientist/ML, devops, SRE)
+- commercial pur SANS dimension technique climat (account executive, SDR, business developer, marketing)
 - RH / paie / recrutement / office manager / assistant·e
 - finance / comptabilité / achats / appels d'offres
 - pédagogie / formation hors climat, support, ops génériques
-- postes terrain, techniciens, juniors, stages, alternances
+- postes terrain, techniciens (maintenance/chantier), juniors, stages, alternances
 - tout poste sans lien explicite et central avec le climat/la durabilité
 - ressemble aux offres rejetées ci-dessus
 
-IMPORTANT : « ENTREPRISE CIBLÉE: oui » signifie seulement que l'entreprise est
-intéressante — le POSTE doit quand même passer les règles ci-dessus. Une offre
-de développeur ou de commercial chez une entreprise ciblée doit être REJETÉE.
+IMPORTANT : « ENTREPRISE CIBLÉE: oui » signifie que l'entreprise est pile dans sa cible.
+Garde ses rôles conseil/stratégie ET ses rôles climate-tech hybrides ci-dessus. Mais un
+poste de DEV LOGICIEL PUR ou de COMMERCIAL PUR (sans dimension technique/méthodo climat),
+même chez une entreprise ciblée, reste REJETÉ.
 
 CAS LIMITES (« borderline ») : pour les postes RSE / développement durable
 génériques que tu hésiterais à rejeter (pertinents sur le fond mais sans
@@ -1566,7 +1633,8 @@ Chaque objet : index, keep (bool), borderline (bool), score (int 0-100), reason.
         score = max(0, min(100, score))
         if verdicts is not None:
             verdicts[ai_key(job)] = {"keep": keep, "reason": reason,
-                                     "borderline": borderline, "score": score}
+                                     "borderline": borderline, "score": score,
+                                     "v": AI_PROMPT_VERSION}
         if keep:
             job["borderline"] = borderline
             job["score"] = score
@@ -1600,7 +1668,8 @@ def filter_jobs_with_ai(jobs):
     to_evaluate = []
     for job in jobs:
         cached = verdicts.get(ai_key(job))
-        if cached is None:
+        if cached is None or cached.get("v") != AI_PROMPT_VERSION:
+            # Jamais jugée, ou jugée sous d'anciennes règles → (ré)évaluer.
             to_evaluate.append(job)
         elif cached.get("keep"):
             job["borderline"] = cached.get("borderline", False)
