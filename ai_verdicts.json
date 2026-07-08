@@ -3106,5 +3106,395 @@
     "reason": "poste agriculture/transformation sans lien climat/durabilité central",
     "borderline": false,
     "score": 0
+  },
+  "diagnostiqueur immobilier f/h|hypérion développement": {
+    "keep": false,
+    "reason": "hors lien climat/stratégie, poste terrain/technique",
+    "borderline": false,
+    "score": 0
+  },
+  "consultant transformation digitale h/f|thales": {
+    "keep": false,
+    "reason": "transformation digitale, hors climat/stratégie",
+    "borderline": false,
+    "score": 0
+  },
+  "senior consultant cloud / finops h/f|thales": {
+    "keep": false,
+    "reason": "Cloud/FinOps, hors climat/stratégie",
+    "borderline": false,
+    "score": 0
+  },
+  "senior change management consultant (m/f)|exakis nelite": {
+    "keep": false,
+    "reason": "Change Management, hors climat/stratégie",
+    "borderline": false,
+    "score": 0
+  },
+  "consultant sénior conduite au changement (h/f)|exakis nelite": {
+    "keep": false,
+    "reason": "conduite au changement, hors climat/stratégie",
+    "borderline": false,
+    "score": 0
+  },
+  "directeur de projets/programme (f/h)|urssaf caisse nationale": {
+    "keep": false,
+    "reason": "directeur de projets, hors climat/stratégie",
+    "borderline": false,
+    "score": 0
+  },
+  "key account manager consulting - clients banque - assurance h/f|wom": {
+    "keep": false,
+    "reason": "Key Account Manager, commercial",
+    "borderline": false,
+    "score": 0
+  },
+  "senior business manager - ingénieur d'affaires consulting - clients retail - luxe h/f|wom": {
+    "keep": false,
+    "reason": "Business Manager, commercial",
+    "borderline": false,
+    "score": 0
+  },
+  "senior talent acquisition manager - staffing & community h/f|wom": {
+    "keep": false,
+    "reason": "Talent Acquisition Manager, RH",
+    "borderline": false,
+    "score": 0
+  },
+  "consultant senior h/f|menway": {
+    "keep": false,
+    "reason": "développeur d'affaires, hors climat/stratégie",
+    "borderline": false,
+    "score": 0
+  },
+  "consultant senior/consultante senior|mind partners france": {
+    "keep": false,
+    "reason": "consultant senior générique, hors climat/stratégie",
+    "borderline": false,
+    "score": 0
+  },
+  "consultant manager f/h – conseil en transition environnementale et économique|persuaders rh": {
+    "keep": true,
+    "reason": "consultant manager transition environnementale et économique, Paris mais lien climat/stratégie",
+    "borderline": true,
+    "score": 65
+  },
+  "consultant senior - transition agroalimentaire (h/f)|transitions": {
+    "keep": true,
+    "reason": "consultant transition agroalimentaire, Paris mais lien climat/stratégie",
+    "borderline": true,
+    "score": 60
+  },
+  "business developer – intellectual property services|novagraaf": {
+    "keep": false,
+    "reason": "Business Developer, commercial",
+    "borderline": false,
+    "score": 0
+  },
+  "consultant 360 freelance|talent sourcing": {
+    "keep": false,
+    "reason": "consultant 360 freelance, hors climat/stratégie",
+    "borderline": false,
+    "score": 0
+  },
+  "développement commercial des collectivités et des territoires et ia f/h|docaposte": {
+    "keep": false,
+    "reason": "développement commercial collectivités, commercial",
+    "borderline": false,
+    "score": 0
+  },
+  "consultant, oil & gas|boston consulting group (bcg)": {
+    "keep": false,
+    "reason": "Oil & Gas, hors climat/stratégie",
+    "borderline": false,
+    "score": 0
+  },
+  "consultant.e senior.e/ amoa - pilotage it & coordination métier.|o2max": {
+    "keep": false,
+    "reason": "AMOA IT, hors climat/stratégie",
+    "borderline": false,
+    "score": 0
+  },
+  "consultant technique servicenow hrsd (f/h)|atos": {
+    "keep": false,
+    "reason": "consultant technique HRSD, hors climat/stratégie",
+    "borderline": false,
+    "score": 0
+  },
+  "change manager (h/f)|devoteam": {
+    "keep": false,
+    "reason": "Change Manager, hors climat/stratégie",
+    "borderline": false,
+    "score": 0
+  },
+  "consultante/consultant transformation digitale et ia|capgemini": {
+    "keep": false,
+    "reason": "transformation digitale et IA, hors climat/stratégie",
+    "borderline": false,
+    "score": 0
+  },
+  "consultant en transformation si/finance f/h|deloitte": {
+    "keep": false,
+    "reason": "transformation SI/Finance, hors climat/stratégie",
+    "borderline": false,
+    "score": 0
+  },
+  "cdi - support applicatif / formateur erp|ikivia": {
+    "keep": false,
+    "reason": "support applicatif/formateur, hors climat/stratégie",
+    "borderline": false,
+    "score": 0
+  },
+  "consultant amoa - h/f|l'usine nouvelle": {
+    "keep": false,
+    "reason": "AMOA, hors climat/stratégie",
+    "borderline": false,
+    "score": 0
+  },
+  "operational onboarding manager - france 🇫🇷|alan": {
+    "keep": false,
+    "reason": "Operational Onboarding Manager, hors climat/stratégie",
+    "borderline": false,
+    "score": 0
+  },
+  "consultant amoa - h/f|assystem": {
+    "keep": false,
+    "reason": "poste technique (AMOA) sans lien climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "responsable développement et talent|axa partners": {
+    "keep": false,
+    "reason": "poste RH/Talent sans lien climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "responsable du département pass-l.as f/h|la gazette des communes": {
+    "keep": false,
+    "reason": "poste administratif (département PASS-L.AS) sans lien climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "conseiller de clientèle des professionnels|société générale": {
+    "keep": false,
+    "reason": "poste commercial (conseiller clientèle) sans lien climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "ingénieur agronome (h/f)|métiga": {
+    "keep": false,
+    "reason": "poste technique (ingénieur agronome) sans lien climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "chef(fe) de projets run (h/f/x)|cityway": {
+    "keep": false,
+    "reason": "poste technique (chef de projets RUN) sans lien climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "chargé(e) de projet - freelance|face sud provence": {
+    "keep": false,
+    "reason": "poste associatif (chargé de projet) trop générique et non stratégique",
+    "borderline": false,
+    "score": 0
+  },
+  "responsable de boutique (h/f)|aubade paris": {
+    "keep": false,
+    "reason": "poste commercial (responsable de boutique) sans lien climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "directeur(rice) de groupe développement commercial h/f|groupe tf1": {
+    "keep": false,
+    "reason": "poste commercial (développement commercial) sans lien climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "business owner revenue management f/h|groupe tf1": {
+    "keep": false,
+    "reason": "poste commercial (Revenue Management) sans lien climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "chargé(e) de planification|spekty": {
+    "keep": false,
+    "reason": "poste technique (planification) sans lien climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "brand content & social media (h/f)|hello watt": {
+    "keep": false,
+    "reason": "poste marketing/communication sans lien climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "ingénieur(e) métrologue - nice|vulcain engineering group": {
+    "keep": false,
+    "reason": "poste technique (ingénieur métrologue) sans lien climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "superviseur maintenance - nice|vulcain engineering group": {
+    "keep": false,
+    "reason": "poste technique (maintenance) sans lien climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "ingénieur(e) assurance qualité - nice|vulcain engineering group": {
+    "keep": false,
+    "reason": "poste technique (assurance qualité) sans lien climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "chargé(e) d'assurance de stérilité - nice|vulcain engineering group": {
+    "keep": false,
+    "reason": "poste technique (stérilité) sans lien climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "chef/cheffe de projet ingénierie - nice|vulcain engineering group": {
+    "keep": false,
+    "reason": "poste technique (chef de projet ingénierie) sans lien climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "ingénieur(e) support matières - région niçoise|vulcain engineering group": {
+    "keep": false,
+    "reason": "poste technique (support matières) sans lien climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "chargé(e) de validation des procédés de nettoyage - région niçoise|vulcain engineering group": {
+    "keep": false,
+    "reason": "poste technique (validation procédés) sans lien climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "chargé(e) de contrôle qualité microbiologie confirmé- nice|vulcain engineering group": {
+    "keep": false,
+    "reason": "poste technique (contrôle qualité) sans lien climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "chargé(e) de coordination hse confirmé - nice|vulcain engineering group": {
+    "keep": false,
+    "reason": "poste technique (coordination HSE) sans lien climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "senior key account manager - compte stratégique (h/f/d)|adidas": {
+    "keep": false,
+    "reason": "poste commercial (Key Account Manager) sans lien climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "gestionnaire logistique|société générale": {
+    "keep": false,
+    "reason": "poste technique (logistique) sans lien climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "stagiaire – assistant responsable accessibilité|paris je t'aime": {
+    "keep": false,
+    "reason": "poste junior (stagiaire) sans lien climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "responsable produit enovia configuration ia (f/h)|dassault systèmes": {
+    "keep": false,
+    "reason": "poste technique (produit ENOVIA) sans lien climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "cdi - responsable hse - hermès maroquinerie sellerie - h/f|hermès": {
+    "keep": false,
+    "reason": "Responsable HSE : poste terrain/technique, pas stratégie climat",
+    "borderline": false,
+    "score": 0
+  },
+  "responsable sse groupe multi-sites h/f|lhh": {
+    "keep": false,
+    "reason": "Responsable SSE : poste terrain/technique, pas stratégie climat",
+    "borderline": false,
+    "score": 0
+  },
+  "consultant transition environnementale f/h|hellowork": {
+    "keep": true,
+    "reason": "Consultant Transition Environnementale : poste conseil climat stratégique à Paris",
+    "borderline": false,
+    "score": 85
+  },
+  "consultant-e en dématérialisation et transition digitale f/h|groupe serda": {
+    "keep": false,
+    "reason": "Consultant dématérialisation digitale : pas lié au climat/durabilité",
+    "borderline": false,
+    "score": 0
+  },
+  "cadre d'appui de transition f/h|adsearch": {
+    "keep": false,
+    "reason": "Cadre d'appui transition : poste terrain/coordination EHPAD, pas stratégie climat",
+    "borderline": false,
+    "score": 0
+  },
+  "responsable partenariats f/h|anonyme": {
+    "keep": false,
+    "reason": "Responsable Partenariats : commercial, pas lié au climat",
+    "borderline": false,
+    "score": 0
+  },
+  "consultant fonctionnel sap fico f/h|the hive company": {
+    "keep": false,
+    "reason": "Consultant fonctionnel SAP : tech/produit, pas climat",
+    "borderline": false,
+    "score": 0
+  },
+  "consultant fonctionnel sage x3 f/h|co-martin": {
+    "keep": false,
+    "reason": "Consultant fonctionnel Sage X3 : tech/produit, pas climat",
+    "borderline": false,
+    "score": 0
+  },
+  "consultant(e) bâtiment durable rev3 f/h|centre de deploiementde l'ecotransition dans les entreprises et les territoires": {
+    "keep": false,
+    "reason": "Consultant Bâtiment Durable : poste terrain/technique, pas stratégie climat senior",
+    "borderline": false,
+    "score": 0
+  },
+  "consultant consolidation f/h|robert walters france": {
+    "keep": false,
+    "reason": "Consultant consolidation : finance, pas climat",
+    "borderline": false,
+    "score": 0
+  },
+  "business manager division management de transition f/h|hellowork": {
+    "keep": false,
+    "reason": "Business Manager Management de Transition : commercial, pas climat",
+    "borderline": false,
+    "score": 0
+  },
+  "consultant senior tech m&a - f/h|kpmg sa": {
+    "keep": false,
+    "reason": "Consultant Tech M&A : finance/tech, pas climat",
+    "borderline": false,
+    "score": 0
+  },
+  "ingénieur d'affaires f/h|le bureau des talents": {
+    "keep": false,
+    "reason": "Ingénieur d'Affaires : commercial, pas climat",
+    "borderline": false,
+    "score": 0
+  },
+  "ingénieur.e efficacité énergétique - audits & modélisation f/h|metiga": {
+    "keep": false,
+    "reason": "Ingénieur Efficacité énergétique : poste terrain/technique, pas stratégie climat",
+    "borderline": false,
+    "score": 0
+  },
+  "chargé d'affaires f/h|hellowork": {
+    "keep": false,
+    "reason": "Chargé d'Affaires : commercial, pas climat",
+    "borderline": false,
+    "score": 0
   }
 }
