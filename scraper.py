@@ -59,7 +59,17 @@ EXCLUSIONS = [
     "opérateur", "opératrice", "agent de",
     "conducteur d'engins", "chauffeur",
     "acheteur", "achats", "procurement", "comptabilité", "comptable",
-    "amoa finance", "avant-vente", "présales",
+    # NB : « avant-vente »/« présales » ne sont plus exclus en dur — l'avant-vente
+    # TECHNIQUE chez les climate-tech (Solutions/Sales Engineer) est recherchée ;
+    # l'IA écarte l'avant-vente sans lien climat.
+    "amoa finance",
+    # Commercial / relation client purs et dev logiciel : jamais pertinents,
+    # même chez une entreprise suivie (garde déterministe, l'IA laissait
+    # parfois passer un SDR/BDR malgré les règles).
+    "sdr", "bdr", "sales representative", "account executive",
+    "business developer", "customer success",
+    "fullstack", "full stack", "full-stack", "frontend", "backend",
+    "software engineer", "devops",
     "recrutement", "chargé de recrutement", "ressources humaines",
     "nucléaire", "nucl", "hydraulique moe", "calcul mécanique",
     "aéronautique", "aeronautics", "vessel", "optique",
