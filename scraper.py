@@ -83,7 +83,7 @@ AI_VERDICTS_MAX = 3000
 # Version du prompt/règles IA. À incrémenter dès qu'on modifie le PROFILE ou les
 # règles de décision : les verdicts en cache d'une version antérieure sont alors
 # ré-évalués (sinon d'anciennes décisions périmées seraient rejouées).
-AI_PROMPT_VERSION = 3
+AI_PROMPT_VERSION = 4
 
 # Suivi de la santé des sources : pour chaque source, nombre de jours
 # consécutifs sans aucune offre brute (parseur potentiellement cassé).
@@ -166,6 +166,27 @@ WTTJ_COMPANIES = {
     "callendar": "Callendar",
     "namr": "namR",
     "murmuration": "Murmuration",
+    "finres": "Finres",
+    "resallience": "Resallience",
+    # Agro × climat : agtech carbone, transition agricole, agri-data
+    "soil-capital": "Soil Capital",
+    "rize-ag": "Rize",
+    "agreena": "Agreena",
+    "myeasycarbon": "MyEasyCarbon",
+    "carbon-maps": "Carbon Maps",
+    "itk": "ITK",
+    "sencrop": "Sencrop",
+    "weenat": "Weenat",
+    # Industriels agroalimentaires et coopératives (postes internes
+    # décarbonation/climat ; le filtre IA ne garde que les rôles climat)
+    "danone": "Danone",
+    "bel": "Bel",
+    "bonduelle": "Bonduelle",
+    "roquette": "Roquette",
+    "savencia": "Savencia",
+    "invivo": "InVivo",
+    "sodiaal": "Sodiaal",
+    "terrena": "Terrena",
     # Énergie / industrie
     "metron": "Metron",
     "purecontrol": "Purecontrol",
@@ -206,6 +227,12 @@ Consultant, Climate Expert, Carbon Analyst, Implementation / Onboarding Consulta
 Engineer / Sales Engineer (avant-vente technique), Carbon Accounting Methodologist / Methodology
 Expert, Climate Risk Analyst, et à moyen terme Product Manager. Il code sur son temps libre
 (automatisations LLM), donc le côté « builder » technique est un atout, pas un frein.
+Son SWEET SPOT : l'intersection AGRO × CLIMAT × DATA — carbon farming et MRV agricole
+(Soil Capital, Rize, Agreena, MyEasyCarbon), ACV alimentaire (Carbon Maps), agri-data
+(ITK, Sencrop, Weenat), adaptation et risque climatique physique (AXA Climate, Finres,
+Descartes, Resallience, Callendar), et les postes internes décarbonation / scope 3 / FLAG
+chez les industriels agroalimentaires et coopératives (Danone, Bel, Bonduelle, Roquette,
+Savencia, InVivo, Sodiaal, Terrena) : donne un score élevé à ces profils de poste.
 Il ne veut PAS de postes terrain, techniciens (maintenance/chantier), nucléaire,
 achats, RH, finance/comptabilité, stages ou alternances.
 """
