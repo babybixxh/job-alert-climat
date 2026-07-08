@@ -2679,5 +2679,275 @@
     "keep": false,
     "reason": "Chargé de mission senior (expertise comptable) : poste technique/opérationnel, hors climat",
     "borderline": false
+  },
+  "ingénieur climat f/h|gio recrutement boulogne": {
+    "keep": true,
+    "reason": "consultant climat senior, correspond au profil",
+    "borderline": false
+  },
+  "commercial b2b - solutions de gestion des déchets f/h|uptoo": {
+    "keep": false,
+    "reason": "poste commercial B2B, hors critères",
+    "borderline": false
+  },
+  "consultant conseil senior (h/f) – un accès direct aux directions financières du cac 40|goldman search": {
+    "keep": false,
+    "reason": "consultant senior mais hors climat/stratégie, cible CAC40 financier",
+    "borderline": false
+  },
+  "chef(fe) de projet marketing offres b2b (cdd) h/f|ecomaison": {
+    "keep": false,
+    "reason": "chef de projet marketing B2B, hors climat",
+    "borderline": false
+  },
+  "responsable d'affaires h/f|spie nucléaire": {
+    "keep": false,
+    "reason": "responsable d'affaires nucléaire, poste terrain/technique",
+    "borderline": false
+  },
+  "ingénieur(e) ccit - mirage confirmé - nice|consultys": {
+    "keep": false,
+    "reason": "ingénieur CCIT, poste technique hors climat/stratégie",
+    "borderline": false
+  },
+  "chef d'équipe h/f|nge": {
+    "keep": false,
+    "reason": "chef d'équipe, poste terrain/construction",
+    "borderline": false
+  },
+  "responsable communication|employeur ess": {
+    "keep": false,
+    "reason": "responsable communication, hors climat/stratégie",
+    "borderline": false
+  },
+  "engineering lead (m/w/d) enterprise software / fintech|beatvest": {
+    "keep": false,
+    "reason": "engineering lead fintech, hors climat",
+    "borderline": false
+  },
+  "social media manager (m/w/d)|rfm mediamix ag": {
+    "keep": false,
+    "reason": "social media manager, hors climat",
+    "borderline": false
+  },
+  "product engineer (m/w/d)|orbit": {
+    "keep": false,
+    "reason": "product engineer, hors climat",
+    "borderline": false
+  },
+  "salesforce technical consultant (all genders)|infotip service gmbh": {
+    "keep": false,
+    "reason": "salesforce consultant, hors climat",
+    "borderline": false
+  },
+  "application support & software tester (m/w/d)|reos gmbh": {
+    "keep": false,
+    "reason": "application support/tester, hors climat",
+    "borderline": false
+  },
+  "crm manager & hubspot consultant (w/m/d) | teilzeit 20h|emerve gmbh": {
+    "keep": false,
+    "reason": "CRM manager, hors climat",
+    "borderline": false
+  },
+  "senior software engineer, c&i|energyhub": {
+    "keep": false,
+    "reason": "senior software engineer, hors climat",
+    "borderline": false
+  },
+  "project analyst|scale microgrid solutions": {
+    "keep": false,
+    "reason": "project analyst, hors climat",
+    "borderline": false
+  },
+  "senior performance engineer|accure": {
+    "keep": false,
+    "reason": "senior performance engineer, hors climat",
+    "borderline": false
+  },
+  "process & project manager (f/m/x)|ionity": {
+    "keep": false,
+    "reason": "process & project manager, hors climat",
+    "borderline": false
+  },
+  "director strategy & innovation (f/m/x)|ionity": {
+    "keep": false,
+    "reason": "director strategy & innovation, hors climat",
+    "borderline": false
+  },
+  "global team lead software engineer|eternalsun spire": {
+    "keep": false,
+    "reason": "global team lead software engineer, hors climat",
+    "borderline": false
+  },
+  "don't see the right role?|hyfe  foods": {
+    "keep": false,
+    "reason": "poste non précisé, hors critères",
+    "borderline": false
+  },
+  "project manager|anza re": {
+    "keep": false,
+    "reason": "project manager, hors climat",
+    "borderline": false
+  },
+  "manager, proposals|lime": {
+    "keep": false,
+    "reason": "manager proposals, hors climat",
+    "borderline": false
+  },
+  "senior back-end developer (node/express.js)|worldly": {
+    "keep": false,
+    "reason": "senior back-end developer, hors climat",
+    "borderline": false
+  },
+  "account manager|worldly": {
+    "keep": false,
+    "reason": "account manager, hors climat",
+    "borderline": false
+  },
+  "public affairs manager|ecosia": {
+    "keep": true,
+    "reason": "Public Affairs Manager avec lien clair à la transition écologique (recherche de fonds pour plantation d'arbres), poste senior et stratégique, télétravail",
+    "borderline": false
+  },
+  "chief of staff|curbwaste": {
+    "keep": false,
+    "reason": "Chief of Staff : poste administratif/gouvernance interne sans lien explicite climat/durabilité",
+    "borderline": false
+  },
+  "sr. saas configuration specialist|resource innovations": {
+    "keep": false,
+    "reason": "Sr. SaaS Configuration Specialist : poste technique/commercial sans lien climat",
+    "borderline": false
+  },
+  "senior architect / senior designer|icon": {
+    "keep": false,
+    "reason": "Senior Architect / Senior Designer : poste technique/produit sans lien conseil/stratégie climat",
+    "borderline": false
+  },
+  "architect / designer|icon": {
+    "keep": false,
+    "reason": "Architect / Designer : poste technique/produit sans lien conseil/stratégie climat",
+    "borderline": false
+  },
+  "technical marketing manager|charge point": {
+    "keep": false,
+    "reason": "Technical Marketing Manager : poste commercial/marketing sans lien conseil/stratégie climat",
+    "borderline": false
+  },
+  "chargé de projet bilan carbone - environnement - neuilly sur seine f/h|hellowork": {
+    "keep": true,
+    "reason": "Chargé de Projet Bilan Carbone : poste stratégique climat senior, Paris mais télétravail possible (à confirmer)",
+    "borderline": false
+  },
+  "responsable transition écologique et innovation durable en santé f/h|ctre hospitalier general laennec": {
+    "keep": true,
+    "reason": "Responsable Transition Écologique et Innovation Durable en Santé : poste qualifié en collectivité (Quimper hors zone prioritaire mais stratégique climat)",
+    "borderline": false
+  },
+  "chargé d'expertises et solutions génie climatique - bordeaux f/h|hellowork": {
+    "keep": false,
+    "reason": "Chargé d'Expertises et Solutions Génie Climatique : poste technique/commercial sans lien conseil/stratégie climat",
+    "borderline": false
+  },
+  "chef de projet energie air climat - cu alençon f/h|hellowork": {
+    "keep": true,
+    "reason": "Chef de Projet Energie Air Climat : poste stratégique climat en collectivité (Alençon hors zone prioritaire mais stratégique climat)",
+    "borderline": false
+  },
+  "chargé·e d'affaires en génie climatique f/h|hellowork": {
+    "keep": false,
+    "reason": "Chargé·e d'Affaires en Génie Climatique : poste technique/commercial sans lien conseil/stratégie climat",
+    "borderline": false
+  },
+  "chargé d'affaires cvc - cdi - metz f/h|hellowork": {
+    "keep": false,
+    "reason": "Chargé d'Affaires CVC : poste technique/commercial sans lien conseil/stratégie climat",
+    "borderline": false
+  },
+  "ingénieur d'affaires en décarbonation f/h|hellowork": {
+    "keep": true,
+    "reason": "Ingénieur d'Affaires en Décarbonation : poste stratégique climat senior (Nantes hors zone prioritaire mais stratégique climat)",
+    "borderline": false
+  },
+  "consultant en decarbonation nice f/h|hellowork": {
+    "keep": true,
+    "reason": "Consultant en Decarbonation : poste conseil climat senior (Nice hors zone prioritaire mais stratégique climat)",
+    "borderline": false
+  },
+  "data analyst f/h|hellowork": {
+    "keep": false,
+    "reason": "Data Analyst : poste technique/data sans lien conseil/stratégie climat",
+    "borderline": false
+  },
+  "chargé de mission - durabilité esg rse & inclusion - senior f/h|hellowork": {
+    "keep": true,
+    "reason": "Chargé de Mission - Durabilité ESG RSE & Inclusion : poste RSE stratégique senior (Fontenay-sous-Bois hors zone prioritaire mais stratégique climat)",
+    "borderline": true
+  },
+  "ingénieur études cvc f/h|hellowork": {
+    "keep": false,
+    "reason": "Ingénieur Études CVC : poste technique sans lien conseil/stratégie climat",
+    "borderline": false
+  },
+  "consultant esg - rse - caen f/h|hellowork": {
+    "keep": true,
+    "reason": "Consultant ESG - RSE : poste conseil RSE stratégique senior (Caen hors zone prioritaire mais stratégique climat)",
+    "borderline": true
+  },
+  "technico-commercial sédentaire génie climatique f/h|hellowork": {
+    "keep": false,
+    "reason": "Technico-Commercial Sédentaire Génie Climatique : poste commercial sans lien conseil/stratégie climat",
+    "borderline": false
+  },
+  "chargé d'affaires génie climatique f/h|hellowork": {
+    "keep": false,
+    "reason": "Chargé d'Affaires Génie Climatique : poste technique/commercial sans lien conseil/stratégie climat",
+    "borderline": false
+  },
+  "chef de departement alimentaire f/h|talents plus": {
+    "keep": false,
+    "reason": "chef de departement alimentaire : poste opérationnel sans lien climat/durabilité",
+    "borderline": false
+  },
+  "responsable environnement et développement durable f/h|hellowork": {
+    "keep": true,
+    "reason": "Responsable Environnement et Développement Durable : poste RSE stratégique senior (Paris, correspond au profil)",
+    "borderline": true
+  },
+  "responsable energie et développement durable groupe f/h|hellowork": {
+    "keep": true,
+    "reason": "Responsable Energie et Développement Durable Groupe : poste RSE stratégique senior (Mulhouse hors zone prioritaire mais stratégique climat)",
+    "borderline": true
+  },
+  "responsable commercial et développement transport et mobilité durables f/h|hellowork": {
+    "keep": true,
+    "reason": "Responsable Commercial et Développement Transport et Mobilité Durables : poste stratégique climat senior (Paris, correspond au profil)",
+    "borderline": true
+  },
+  "ingénieur développement logiciel f/h|hellowork": {
+    "keep": false,
+    "reason": "Ingénieur Développement Logiciel : poste technique sans lien conseil/stratégie climat",
+    "borderline": false
+  },
+  "responsable développement & partenariat luxe f/h|hellowork": {
+    "keep": false,
+    "reason": "Poste hors climat/durabilité (luxe, partenariats, champagne), hors stratégie/consulting climat",
+    "borderline": false
+  },
+  "chargé de mission développement durable et performance extra-financière f/h|hellowork": {
+    "keep": false,
+    "reason": "Poste RSE en entreprise mais hors stratégie/consulting climat (performance extra-financière générique)",
+    "borderline": false
+  },
+  "directeur d'agence maîtrise d'oeuvre vrd f/h|pmejob": {
+    "keep": false,
+    "reason": "Poste technique (maîtrise d'œuvre VRD), management opérationnel, hors climat/durabilité",
+    "borderline": false
+  },
+  "chargé de projets agriculture - transformation durable f/h|hellowork": {
+    "keep": false,
+    "reason": "Poste agriculture durable mais hors climat/stratégie (transformation produit, pas bilan carbone ou stratégie bas-carbone)",
+    "borderline": false
   }
 }
