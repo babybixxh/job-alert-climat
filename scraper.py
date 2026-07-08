@@ -83,7 +83,7 @@ AI_VERDICTS_MAX = 3000
 # Version du prompt/règles IA. À incrémenter dès qu'on modifie le PROFILE ou les
 # règles de décision : les verdicts en cache d'une version antérieure sont alors
 # ré-évalués (sinon d'anciennes décisions périmées seraient rejouées).
-AI_PROMPT_VERSION = 2
+AI_PROMPT_VERSION = 3
 
 # Suivi de la santé des sources : pour chaque source, nombre de jours
 # consécutifs sans aucune offre brute (parseur potentiellement cassé).
@@ -1555,16 +1555,22 @@ ADAPTATION SELON LE LIEU (applique-la avant de trancher) :
 
 CLIMATE-TECH / COMPTABILITÉ CARBONE (s'applique surtout aux ENTREPRISE CIBLÉE: oui,
 éditeurs de logiciels carbone / plateformes data-climat & ESG) : chez ces boîtes, GARDE
-(keep=true) les rôles HYBRIDES produit/conseil/méthodo qui valorisent son profil ingénieur +
-conseil carbone, même s'ils contiennent des mots « engineer », « product » ou « sales » :
-Climate Solutions Consultant, Climate Expert, Carbon/Climate Analyst, Implementation /
-Onboarding Consultant, Solutions Engineer / Sales Engineer (avant-vente TECHNIQUE),
-Carbon Accounting Methodologist / Methodology Expert, Climate Risk Analyst, Product Manager
-climat. Ces postes NE sont PAS à rejeter comme « tech » ou « commercial ».
+(keep=true) UNIQUEMENT les rôles HYBRIDES conseil/produit/méthodo qui valorisent son profil
+ingénieur + conseil carbone. Liste FERMÉE des intitulés à garder :
+- Climate Solutions Consultant, Solutions Consultant, Climate Expert, Sustainability Consultant
+- Carbon Analyst, Climate Analyst, Climate Risk Analyst, ESG/Carbon Data Analyst
+- Implementation Consultant / Manager, Onboarding Consultant/Manager (déploiement de l'outil)
+- Solutions Engineer / Sales Engineer / Pre-Sales / Avant-vente (démos, réponses AO, TECHNIQUE)
+- Carbon Accounting Methodologist / Methodology Expert / Emission Factors
+- Product Manager climat/carbone
+Ces postes-là NE sont PAS à rejeter comme « tech » ou « commercial ».
 
-REJETTE (keep=false) dans TOUS ces cas :
-- dev logiciel pur (backend, frontend, fullstack, software engineer, data scientist/ML, devops, SRE)
-- commercial pur SANS dimension technique climat (account executive, SDR, business developer, marketing)
+REJETTE (keep=false), Y COMPRIS chez une ENTREPRISE CIBLÉE :
+- DEV LOGICIEL PUR : software / fullstack / backend / frontend / mobile engineer, data
+  scientist / ML / data engineer, devops, SRE, QA, architecte technique. (« engineer » seul
+  ≠ Solutions Engineer : si le poste consiste à écrire du code, on REJETTE.)
+- COMMERCIAL / RELATION CLIENT PURS : SDR, BDR, Sales/Account Representative, Account Executive,
+  Business Developer, Customer Success Manager, Account Manager, marketing, growth.
 - RH / paie / recrutement / office manager / assistant·e
 - finance / comptabilité / achats / appels d'offres
 - pédagogie / formation hors climat, support, ops génériques
@@ -1572,10 +1578,10 @@ REJETTE (keep=false) dans TOUS ces cas :
 - tout poste sans lien explicite et central avec le climat/la durabilité
 - ressemble aux offres rejetées ci-dessus
 
-IMPORTANT : « ENTREPRISE CIBLÉE: oui » signifie que l'entreprise est pile dans sa cible.
-Garde ses rôles conseil/stratégie ET ses rôles climate-tech hybrides ci-dessus. Mais un
-poste de DEV LOGICIEL PUR ou de COMMERCIAL PUR (sans dimension technique/méthodo climat),
-même chez une entreprise ciblée, reste REJETÉ.
+IMPORTANT : « ENTREPRISE CIBLÉE: oui » = entreprise pile dans sa cible, MAIS le poste doit
+être dans la liste FERMÉE climate-tech ci-dessus (ou conseil/stratégie climat). Un « Fullstack
+Engineer », un « SDR/BDR », un « Sales Representative » ou un « Customer Success » chez une
+entreprise ciblée = REJETÉ. En cas de doute sur un rôle climate-tech, garde-le mais borderline=true.
 
 CAS LIMITES (« borderline ») : pour les postes RSE / développement durable
 génériques que tu hésiterais à rejeter (pertinents sur le fond mais sans
