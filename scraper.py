@@ -15,6 +15,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 KEYWORDS = [
     "consultant climat",
+    "consultant stratégie climat",
     "bilan carbone",
     "transition écologique",
     "chargé mission climat",
@@ -83,6 +84,9 @@ SOURCE_HEALTH_ALERT = 3  # alerte à partir de 3 jours d'affilée à zéro
 
 # Score IA en dessous duquel une offre n'est PAS poussée en notif temps réel.
 PRIORITY_SCORE = 85
+# À Paris (hors entreprises suivies), score IA minimal pour retenir une offre :
+# ne garde que le conseil/stratégie senior bien noté, pas le RSE générique.
+PARIS_MIN_SCORE = 70
 # Score par défaut attribué à une offre gardée mais jugée avant l'ajout du
 # scoring (cache hérité sans champ "score").
 DEFAULT_KEPT_SCORE = 60
@@ -1832,7 +1836,7 @@ def build_email(jobs, feedback_url, excluded_log=None, disappeared=None, health_
     <p style="color:#555">{total} offre(s) dont <strong style="color:#e05c2a">{new_total} nouvelle(s)</strong> · meilleur score <strong style="color:#2d6a4f">{top_score}/100</strong></p>
     <p style="color:#888;font-size:13px;margin-top:-4px">Entreprises ciblées ({len(watchlist)}) · Marseille ({len(marseille)}) · PACA ({len(paca)}) · Hors PACA &amp; télétravail ({len(paris)})</p>
     <div style="margin:10px 0;padding:10px 14px;background:#fff8e6;border:1px solid #f0d98a;border-radius:6px;font-size:13px;color:#7a5b00">
-        ℹ️ <strong>Paris en pause.</strong> Pour l'instant, les offres parisiennes ne sont retenues que si elles émanent des entreprises suivies ({", ".join(WTTJ_COMPANIES.values())}). Marseille, la PACA et le télétravail ne sont pas filtrés.
+        ℹ️ <strong>Filtre Paris.</strong> À Paris, on ne retient que les postes conseil / stratégie climat senior bien notés (score ≥ {PARIS_MIN_SCORE}/100) — plus toutes les offres de tes entreprises suivies, quel que soit le poste. Marseille, la PACA et le télétravail ne sont pas filtrés.
     </div>
     <a href="{feedback_url}" style="display:inline-block;margin:8px 0 16px;padding:10px 20px;background:#2d6a4f;color:#fff;border-radius:6px;text-decoration:none;font-size:14px">
         👎 Signaler des offres non pertinentes
@@ -1942,12 +1946,6 @@ if __name__ == "__main__":
     tasks = []
     for keyword in KEYWORDS:
         for location in LOCATIONS:
-            # Paris (temporaire) : pas de recherche géographique — les offres
-            # parisiennes ne sont retenues que via les entreprises suivies, donc
-            # interroger Paris ne ferait que produire des résultats écartés (et
-            # gaspiller des requêtes, ce qui aggravait le rate-limit LinkedIn).
-            if location == "Paris":
-                continue
             tasks.append((search_adzuna, (keyword, location)))
             tasks.append((search_france_travail, (keyword, location)))
             tasks.append((search_linkedin, (keyword, location)))
@@ -1986,13 +1984,6 @@ if __name__ == "__main__":
             log_excluded(job["title"], job["company"], job.get("location", ""),
                          job.get("source", ""), "employeur exclu")
             continue
-        # Restriction Paris (temporaire) : une offre parisienne n'est gardée que
-        # si elle vient d'une entreprise suivie. Marseille / PACA / télétravail
-        # ne sont pas concernés.
-        if is_paris_location(job.get("location", "")) and not job.get("company_watch"):
-            log_excluded(job["title"], job["company"], job.get("location", ""),
-                         job.get("source", ""), "Paris réservé aux entreprises suivies")
-            continue
         filtered_jobs.append(job)
     all_jobs = filtered_jobs
     print(f"\nLocalisations exclues : {before_loc_filter - len(all_jobs)} offre(s)")
@@ -2002,6 +1993,22 @@ if __name__ == "__main__":
     all_jobs = deduplicate(all_jobs)
     print(f"\n{len(all_jobs)} offres uniques avant filtrage IA")
     all_jobs = filter_jobs_with_ai(all_jobs)
+
+    # Filtre Paris (combiné) : une offre parisienne hors entreprise suivie n'est
+    # gardée que si l'IA la juge conseil/stratégie senior à bon score
+    # (>= PARIS_MIN_SCORE) — pour attraper les postes type consultant senior sans
+    # laisser passer le bruit RSE générique. Entreprises suivies : tous postes.
+    # Marseille / PACA / télétravail : aucun filtre supplémentaire.
+    kept_after_paris = []
+    for job in all_jobs:
+        if (is_paris_location(job.get("location", "")) and not job.get("company_watch")
+                and job.get("score", 0) < PARIS_MIN_SCORE):
+            log_excluded(job["title"], job["company"], job.get("location", ""),
+                         job.get("source", ""),
+                         f"Paris hors entreprise suivie : score {job.get('score', 0)} < {PARIS_MIN_SCORE}")
+            continue
+        kept_after_paris.append(job)
+    all_jobs = kept_after_paris
 
     jobs = mark_seen(all_jobs, seen_ids)
 
