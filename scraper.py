@@ -1844,12 +1844,12 @@ def build_email(jobs, feedback_url, excluded_log=None, disappeared=None, health_
     if marseille and paca:
         body += '<hr style="border:0.5px solid #e0e0e0;margin:1rem 0">'
     body += section_html("Région PACA hors Marseille", "🟢", paca, "#3b6d11")
-    if (marseille or paca) and paris:
-        body += '<hr style="border:0.5px solid #e0e0e0;margin:1rem 0">'
-    body += section_html("Hors PACA &amp; télétravail", "🔴", paris, "#993c1d")
-    if (marseille or paca or paris) and watchlist:
+    if (marseille or paca) and watchlist:
         body += '<hr style="border:0.5px solid #e0e0e0;margin:1rem 0">'
     body += section_html("Entreprises ciblées", "🏢", watchlist, "#0a5c54")
+    if (marseille or paca or watchlist) and paris:
+        body += '<hr style="border:0.5px solid #e0e0e0;margin:1rem 0">'
+    body += section_html("Hors PACA &amp; télétravail", "🔴", paris, "#993c1d")
     body += disappeared_section_html(disappeared or [])
     body += excluded_section_html(excluded_log or [])
     body += health_footer_html(health_alerts or [])
