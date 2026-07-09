@@ -2949,5 +2949,180 @@
     "keep": false,
     "reason": "Poste agriculture durable mais hors climat/stratégie (transformation produit, pas bilan carbone ou stratégie bas-carbone)",
     "borderline": false
+  },
+  "chargé de relations locataires h/f (cdd 6 mois)|elogie-siemp": {
+    "keep": false,
+    "reason": "Poste RH/gestion locative (relations locataires) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "data analyst sur les métiers et leurs évolutions (f/h)|dares": {
+    "keep": false,
+    "reason": "Data analyst sans lien climat/stratégie",
+    "borderline": false
+  },
+  "ingénieur gnc & systèmes autonomes h/f|team.is": {
+    "keep": false,
+    "reason": "Ingénieur systèmes autonomes (tech) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "conseiller(ère) en transition énergétique et écologique en santé (h/f)|fondation léopold bellan - siège": {
+    "keep": true,
+    "reason": "Conseiller en transition énergétique et écologique en santé - poste à sens mais profil santé (borderline car pourrait être pertinent si lien climat fort)",
+    "borderline": true
+  },
+  "chargé.e de mission qualité de l?air|dreal": {
+    "keep": true,
+    "reason": "Chargé de mission qualité de l'air à Marseille (PACA) - poste qualifié en collectivité publique lié climat/environnement",
+    "borderline": false
+  },
+  "adjoint.e au chef du pôle foncier|dreal": {
+    "keep": false,
+    "reason": "Adjoint au chef de pôle foncier (infrastructure routière) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "product owner f/h|borea": {
+    "keep": false,
+    "reason": "Product owner (tech) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "un(e) chargé(e) de missions changement climatique|chambres d'agriculture france": {
+    "keep": true,
+    "reason": "Chargé de missions changement climatique chez Chambres d'Agriculture (Paris) - poste stratégique climat en établissement public",
+    "borderline": false
+  },
+  "responsable maintenance f/h|idex": {
+    "keep": false,
+    "reason": "Responsable maintenance (tech) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "ingénieur d'études et optimisation - data center h/f|ingelib": {
+    "keep": false,
+    "reason": "Ingénieur d'études data center (tech) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "chef de programme*dta/sdd1|ministère chargé des transports": {
+    "keep": true,
+    "reason": "Chef de programme DTA/SDD (Ministère des transports) - poste stratégique en politiques publiques climat",
+    "borderline": false
+  },
+  "gestionnaire pédagogique génie civil-développement durable (h/f)|cy cergy paris universite": {
+    "keep": false,
+    "reason": "Gestionnaire pédagogique (support) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "chargé(e) de coordination des missions et développement (h/f)|active-faraide": {
+    "keep": false,
+    "reason": "Chargé de coordination missions/développement (associatif générique) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "chef.fe de projet life co-pilot f/h|ademe": {
+    "keep": true,
+    "reason": "Chef de projet Life Co-Pilot (ADEME) - poste stratégique climat en agence publique",
+    "borderline": false
+  },
+  "co-responsable de communauté emmaüs h/f|employeur ess": {
+    "keep": false,
+    "reason": "Co-responsable de communauté (ESS) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "senior full-stack engineer (all genders)|lumiform": {
+    "keep": false,
+    "reason": "Senior Full-Stack Engineer (tech) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "freelance software engineer (full stack: node.js, react, typescript)|atmen solutions gmbh": {
+    "keep": false,
+    "reason": "Freelance Software Engineer (tech) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "senior ai architect & consultant (all genders)|mai group": {
+    "keep": false,
+    "reason": "Senior AI Architect (tech) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "copywriter corporate communications (gn) - 18 monate elternzeitvertretung mit option auf verlängerung|bikeleasing-service gmbh & co. kg": {
+    "keep": false,
+    "reason": "Copywriter (marketing) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "copywriter corporate communications (gn) - 18-month parental leave cover with an option to extend|bikeleasing-service gmbh & co. kg": {
+    "keep": false,
+    "reason": "Copywriter (marketing) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "werkstudent ux/ui design (m/w/d)|activate media gmbh": {
+    "keep": false,
+    "reason": "Werkstudent UX/UI (tech junior) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "project manager - 100% remote (m/w/d)|digistore24": {
+    "keep": false,
+    "reason": "Project Manager (tech) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "development manager|reactivate": {
+    "keep": false,
+    "reason": "Development Manager (énergie renouvelable mais commercial) sans lien stratégie climat",
+    "borderline": false
+  },
+  "commercial lead (nordics or western europe - remote)|energyhub": {
+    "keep": false,
+    "reason": "Commercial Lead (énergie mais vente) sans lien stratégie climat",
+    "borderline": false
+  },
+  "cyber security engineer and architect|renewable energy systems": {
+    "keep": false,
+    "reason": "Cyber Security Engineer (tech) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "implementation bess manager (f/m/x)|ionity": {
+    "keep": false,
+    "reason": "métier tech/produit (BESS Manager) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "sales director - emea|kaluza": {
+    "keep": false,
+    "reason": "commercial/sales sans lien climat/stratégie",
+    "borderline": false
+  },
+  "chargé d'études cvc f/h|le mercato de l emploi": {
+    "keep": false,
+    "reason": "technicien CVC sans lien climat/stratégie",
+    "borderline": false
+  },
+  "chiffreur froid f/h|hays france": {
+    "keep": false,
+    "reason": "technicien froid sans lien climat/stratégie",
+    "borderline": false
+  },
+  "conseiller(ère) en transition énergétique et écologique en santé f/h|fondation léopold bellan - siège": {
+    "keep": true,
+    "reason": "conseiller transition énergétique et écologique en santé, pertinent sur le fond mais niveau/poste à vérifier (borderline)",
+    "borderline": true
+  },
+  "responsable d'études en génie climatique - cvc f/h|hellowork": {
+    "keep": false,
+    "reason": "technicien génie climatique sans lien climat/stratégie",
+    "borderline": false
+  },
+  "chef de projet rse f/h|snfre-geosys-societe centrale des entreprises segex": {
+    "keep": true,
+    "reason": "Responsable d'Études en Climat et Ressources, poste qualifié en RSE/climat en PACA (Martigues)",
+    "borderline": false
+  },
+  "expert esg & sustainability f/h|alerys": {
+    "keep": true,
+    "reason": "Expert ESG & Sustainability, poste stratégique en RSE/ESG (Grenoble mais hors PACA/Paris, mais pertinent pour le profil)",
+    "borderline": false
+  },
+  "analyste plaidoyer - systemes alimentaires et crise climatique - france f/h|action contre la faim": {
+    "keep": true,
+    "reason": "Analyste plaidoyer systèmes alimentaires et crise climatique, pertinent sur le fond mais niveau/poste à vérifier (borderline)",
+    "borderline": true
+  },
+  "chargé d'affaires - f/h|banque populaire rives de paris": {
+    "keep": false,
+    "reason": "commercial/chargé d'affaires en banque sans lien climat/stratégie",
+    "borderline": false
   }
 }
