@@ -144,6 +144,7 @@ EU_LOCATION_TERMS = [
 WTTJ_COMPANIES = {
     # Conseil climat / RSE
     "carbone-4": "Carbone 4",
+    "quantis": "Quantis",
     "utopies": "Utopies",
     "bl-evolution": "BL évolution",
     "i-care": "I Care",
