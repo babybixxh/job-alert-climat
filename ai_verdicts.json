@@ -3124,5 +3124,280 @@
     "keep": false,
     "reason": "commercial/chargé d'affaires en banque sans lien climat/stratégie",
     "borderline": false
+  },
+  "chargé de mission transition écologique et stratégie carbone h/f|département de seine-saint-denis": {
+    "keep": true,
+    "reason": "Chargé de mission transition écologique et stratégie carbone en collectivité (Département Seine-Saint-Denis), poste stratégique et aligné avec le profil.",
+    "borderline": false
+  },
+  "chargé(e) de projet outil empreinte carbone de la dialyse f/h|choisir le service public": {
+    "keep": false,
+    "reason": "Poste technique (outil empreinte carbone) sans lien clair avec la stratégie ou le conseil.",
+    "borderline": false
+  },
+  "consultant conseil senior h/f|goldman search": {
+    "keep": true,
+    "reason": "Consultant conseil senior en stratégie, correspond au profil et à la séniorité.",
+    "borderline": false
+  },
+  "canalisateur h/f|nge": {
+    "keep": false,
+    "reason": "Poste terrain (canalisateur), rejeté par le candidat.",
+    "borderline": false
+  },
+  "électricien(ne) de spectacle – palais des sports (h/f) - commune de marseille|fonction publique territoriale": {
+    "keep": false,
+    "reason": "Poste technique (électricien de spectacle), rejeté par le candidat.",
+    "borderline": false
+  },
+  "^)canalisateur h/f|nge": {
+    "keep": false,
+    "reason": "Poste terrain (canalisateur), rejeté par le candidat.",
+    "borderline": false
+  },
+  "park11 - chargé d'opérations des parkings métropolitains (h/f)|fonction publique territoriale": {
+    "keep": false,
+    "reason": "Poste technique (chargé d'opérations parkings), hors climat/stratégie.",
+    "borderline": false
+  },
+  "sales formations professionnelles et supérieures - énergie h/f|enov": {
+    "keep": false,
+    "reason": "Poste commercial (sales formations énergie), rejeté par le candidat.",
+    "borderline": false
+  },
+  "responsable commercial services f/h|societe de constructions mecaniques et electriques de la croix d'argent": {
+    "keep": false,
+    "reason": "Poste commercial (responsable commercial), rejeté par le candidat.",
+    "borderline": false
+  },
+  "chargé d'études traitement des eaux expérimenté h/f|groupe nge": {
+    "keep": false,
+    "reason": "Poste technique (traitement des eaux), hors climat/stratégie.",
+    "borderline": false
+  },
+  "cheffe - chef de projet commercial h/f|engie": {
+    "keep": false,
+    "reason": "Poste commercial (chef de projet commercial), rejeté par le candidat.",
+    "borderline": false
+  },
+  "chargé de mission ingiénierie financière (h/f)|jobpublic": {
+    "keep": true,
+    "reason": "Chargé de mission ingénierie financière en collectivité (Métropole du Grand Paris), poste stratégique et aligné avec le profil.",
+    "borderline": false
+  },
+  "tier iii service desk engineer|unio digital": {
+    "keep": false,
+    "reason": "Poste technique (TIER III Service Desk), hors climat/stratégie et localisation non pertinente.",
+    "borderline": false
+  },
+  "freelance copywriter|coalition technologies": {
+    "keep": false,
+    "reason": "Poste technique (copywriter), hors climat/stratégie.",
+    "borderline": false
+  },
+  "remote office assistant|coalition technologies": {
+    "keep": false,
+    "reason": "Poste administratif (assistant), rejeté par le candidat.",
+    "borderline": false
+  },
+  "senior e-commerce marketer (meta, google, funnels, ki) | remote|berend heins gmbh": {
+    "keep": false,
+    "reason": "Poste technique (marketing digital), hors climat/stratégie.",
+    "borderline": false
+  },
+  "electrical engineer (m/f/d)|angeheuert gmbh personalberatung": {
+    "keep": false,
+    "reason": "Poste technique (ingénieur électrique), hors climat/stratégie.",
+    "borderline": false
+  },
+  "embedded software engineer (m/f/d)|angeheuert gmbh personalberatung": {
+    "keep": false,
+    "reason": "Poste technique (ingénieur logiciel embarqué), hors climat/stratégie.",
+    "borderline": false
+  },
+  "senior azure synapse specialist (m/f/d) (ref.nr.: 47205)|wavestone germany ag": {
+    "keep": false,
+    "reason": "Poste technique (data engineer), hors climat/stratégie.",
+    "borderline": false
+  },
+  "projekt manager - 100% remote (m/w/d)|digistore24": {
+    "keep": false,
+    "reason": "Poste technique (chef de projet), hors climat/stratégie.",
+    "borderline": false
+  },
+  "founding sales lead - all genders|kiresult": {
+    "keep": false,
+    "reason": "Poste commercial (sales lead), rejeté par le candidat.",
+    "borderline": false
+  },
+  "full stack engineer|nooxit gmbh": {
+    "keep": false,
+    "reason": "Poste technique (full stack engineer), hors climat/stratégie.",
+    "borderline": false
+  },
+  "nebenberuflicher job als assistenz im finanzbereich (m/w/d)|projekt 300": {
+    "keep": false,
+    "reason": "Poste administratif (assistant financier), rejeté par le candidat.",
+    "borderline": false
+  },
+  "digital twin & synthetic reality expert(ai community)|telus digital": {
+    "keep": false,
+    "reason": "Poste technique (digital twin), hors climat/stratégie.",
+    "borderline": false
+  },
+  "consultant social media advertising (m/w/d)|squadt gmbh": {
+    "keep": false,
+    "reason": "Poste technique (consultant social media), hors climat/stratégie.",
+    "borderline": false
+  },
+  "consultant sustainability services @ climate tech start-up (m/w/d) - 100% remote möglich|global changer": {
+    "keep": false,
+    "reason": "poste tech/produit (climate tech start-up) sans lien clair avec conseil/stratégie climat senior",
+    "borderline": false
+  },
+  "software engineer (all genders)|nfon": {
+    "keep": false,
+    "reason": "poste tech (software engineer) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "executive assistant (remote, gmt)|kobold metals": {
+    "keep": false,
+    "reason": "poste administratif (executive assistant) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "electrical engineer|carbon direct": {
+    "keep": false,
+    "reason": "poste tech (electrical engineer) sans lien clair avec conseil/stratégie climat senior",
+    "borderline": false
+  },
+  "people business partner (gtm)|pvcase": {
+    "keep": false,
+    "reason": "poste tech (UX/UI designer) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "videographer|fuse energy": {
+    "keep": false,
+    "reason": "poste tech/communication (videographer) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "social strategist|fuse energy": {
+    "keep": false,
+    "reason": "poste tech/communication (social strategist) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "senior product engineer|fuse energy": {
+    "keep": false,
+    "reason": "poste tech (product engineer) sans lien clair avec conseil/stratégie climat senior",
+    "borderline": false
+  },
+  "m&a + strategy associate|fuse energy": {
+    "keep": false,
+    "reason": "poste tech/stratégie (M&A) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "editor|fuse energy": {
+    "keep": false,
+    "reason": "poste tech/communication (editor) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "database reliability engineer|fuse energy": {
+    "keep": false,
+    "reason": "poste tech (database engineer) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "creator (x/linkedin)|fuse energy": {
+    "keep": false,
+    "reason": "poste tech/communication (creator) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "creator (ig/tiktok)|fuse energy": {
+    "keep": false,
+    "reason": "poste tech/communication (creator) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "creative producer|fuse energy": {
+    "keep": false,
+    "reason": "poste tech/communication (creative producer) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "market analyst|modo energy": {
+    "keep": false,
+    "reason": "poste tech/data (market analyst) sans lien clair avec conseil/stratégie climat senior",
+    "borderline": false
+  },
+  "growth associate|modo energy": {
+    "keep": false,
+    "reason": "poste tech/commercial (growth associate) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "customer success manager|modo energy": {
+    "keep": false,
+    "reason": "poste commercial (customer success) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "mid-level ux/ui designer (product & brand)|amber electric": {
+    "keep": false,
+    "reason": "poste tech (UX/UI designer) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "chef de projet énergie & carbone expérimenté f/h|hellowork": {
+    "keep": true,
+    "reason": "chef de projet énergie & carbone senior, poste stratégique en Île-de-France (correspond au profil conseil climat)",
+    "borderline": false
+  },
+  "responsable d'affaires décarbonation f/h|hellowork": {
+    "keep": true,
+    "reason": "responsable d'affaires décarbonation senior, poste stratégique en Montpellier (correspond au profil conseil climat)",
+    "borderline": false
+  },
+  "ingénieur décarbonation et efficacité énergétique f/h|hellowork": {
+    "keep": true,
+    "reason": "ingénieur décarbonation et efficacité énergétique senior, poste technique mais lié au climat (borderline mais gardé car expérience terrain pertinente)",
+    "borderline": false
+  },
+  "chef de projet confirmé energie et décarbonation f/h|hellowork": {
+    "keep": true,
+    "reason": "chef de projet confirmé énergie et décarbonation senior, poste stratégique en Lyon (correspond au profil conseil climat)",
+    "borderline": false
+  },
+  "ingénieur etudes et chiffrage - performance energétique et décarbonation f/h|hellowork": {
+    "keep": true,
+    "reason": "ingénieur études et chiffrage performance énergétique et décarbonation senior, poste technique mais lié au climat (borderline mais gardé car expérience terrain pertinente)",
+    "borderline": false
+  },
+  "chef de projet rse & qualité f/h|hellowork": {
+    "keep": true,
+    "reason": "chef de projet RSE & qualité senior, poste en Île-de-France (RSE stratégique mais pas explicitement climat - borderline)",
+    "borderline": true
+  },
+  "consultant pmo environnement & sustainability f/h|hellowork": {
+    "keep": true,
+    "reason": "consultant PMO environnement & sustainability senior, poste en Toulouse (RSE stratégique mais pas explicitement climat - borderline)",
+    "borderline": true
+  },
+  "conducteur génie climatique f/h|hellowork": {
+    "keep": false,
+    "reason": "poste terrain/technique (conduite d'équipes chantier) sans lien avec stratégie climat ou conseil",
+    "borderline": false
+  },
+  "responsable d'affaires - génie climatique f/h|hellowork": {
+    "keep": false,
+    "reason": "poste terrain/technique (responsable d'affaires génie climatique) sans lien avec stratégie climat ou conseil",
+    "borderline": false
+  },
+  "responsable du développement commercial de l'activité bâtiments durables f/h|hellowork": {
+    "keep": false,
+    "reason": "poste commercial (développement commercial) sans lien avec stratégie climat ou conseil",
+    "borderline": false
+  },
+  "responsable commercial réseaux bio & gms f/h|si bio": {
+    "keep": false,
+    "reason": "poste commercial (développement commercial) sans lien avec stratégie climat ou conseil",
+    "borderline": false
+  },
+  "charge de developpement commercial f/h|iga ressources": {
+    "keep": false,
+    "reason": "poste commercial (développement) sans lien avec stratégie climat ou conseil",
+    "borderline": false
   }
 }
