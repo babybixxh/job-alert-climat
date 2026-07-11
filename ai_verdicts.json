@@ -3399,5 +3399,200 @@
     "keep": false,
     "reason": "poste commercial (développement) sans lien avec stratégie climat ou conseil",
     "borderline": false
+  },
+  "manager cybersécurité - grc h/f|synetis": {
+    "keep": false,
+    "reason": "métier tech/produit (cybersécurité) sans lien climat",
+    "borderline": false
+  },
+  "gestionnaire transport (h/f)|interparfums": {
+    "keep": false,
+    "reason": "gestionnaire transport (logistique/achats) sans lien climat",
+    "borderline": false
+  },
+  "conseiller(ère) en transition énergétique et écologique en santé h/f|fondation léopold bellan - siège": {
+    "keep": true,
+    "reason": "conseiller en transition énergétique et écologique en santé (stratégie climat en secteur public)",
+    "borderline": false
+  },
+  "ingénieur cvc h/f|twenty one talents": {
+    "keep": false,
+    "reason": "ingénieur CVC (technique terrain) sans lien stratégie climat",
+    "borderline": false
+  },
+  "chef-fe du bureau connaissance et stratégie d'intervention (h/f) - sim|ministère de la justice": {
+    "keep": false,
+    "reason": "chef de bureau stratégie immobilière (hors climat/développement durable)",
+    "borderline": false
+  },
+  "ingénieur agronome f/h|metiga": {
+    "keep": false,
+    "reason": "ingénieur agronome (technique terrain) sans lien stratégie climat",
+    "borderline": false
+  },
+  "commercial itinérant (h/f)|harry hope": {
+    "keep": false,
+    "reason": "commercial itinérant (vente) sans lien climat",
+    "borderline": false
+  },
+  "electricien f/h|idex": {
+    "keep": false,
+    "reason": "électricien (technique terrain) sans lien stratégie climat",
+    "borderline": false
+  },
+  "ingénieur d'études sol|enoe solaire": {
+    "keep": false,
+    "reason": "ingénieur d'études solaire (technique terrain) sans lien stratégie climat",
+    "borderline": false
+  },
+  "charge(e) d’affaires electricite controle commande f/h|csti groupe": {
+    "keep": false,
+    "reason": "chargé d'affaires électricité (technique/opérations) sans lien stratégie climat",
+    "borderline": false
+  },
+  "ingénieur d’affaires / business developer f/h|alierys": {
+    "keep": false,
+    "reason": "business developer (commercial) sans lien climat",
+    "borderline": false
+  },
+  "fraiseur commande numerique – mazak ou hass 3 axes f/h|csti groupe": {
+    "keep": false,
+    "reason": "fraiseur (technique terrain) sans lien climat",
+    "borderline": false
+  },
+  "vous êtes chargé(e) d’affaires en électricité - contrôle ‑ commande ? f/h|csti groupe": {
+    "keep": false,
+    "reason": "chargé d'affaires électricité (technique/opérations) sans lien stratégie climat",
+    "borderline": false
+  },
+  "implementation lead (m/w/d)|orbit": {
+    "keep": false,
+    "reason": "logistique (hors climat) et localisation hors cible",
+    "borderline": false
+  },
+  "copywriter*in (m/w/d) - vollzeit/ remote|erschaffe dich neu": {
+    "keep": false,
+    "reason": "copywriter (marketing) sans lien climat",
+    "borderline": false
+  },
+  "sap senior co berater:in|pertemps erp": {
+    "keep": false,
+    "reason": "SAP consultant (tech/finance) sans lien climat",
+    "borderline": false
+  },
+  "senior accountant (m/w/d)|interlead gmbh": {
+    "keep": false,
+    "reason": "senior accountant (finance) sans lien climat",
+    "borderline": false
+  },
+  "release manager (m/f/d) - enterprise banking|xalt business consulting gmbh": {
+    "keep": false,
+    "reason": "release manager (tech) sans lien climat",
+    "borderline": false
+  },
+  "project manager cms benelux (w/m/d)|zetcom group": {
+    "keep": false,
+    "reason": "project manager CMS (tech) sans lien climat",
+    "borderline": false
+  },
+  "technical ai consultant (all genders)|aivisory": {
+    "keep": false,
+    "reason": "technical AI consultant (tech) sans lien climat",
+    "borderline": false
+  },
+  "strategist, natural capital|carbon direct": {
+    "keep": true,
+    "reason": "strategist natural capital (stratégie climat/décarbonation, remote)",
+    "borderline": false
+  },
+  "product designer, ordering|afresh technologies": {
+    "keep": false,
+    "reason": "product designer (tech) sans lien climat",
+    "borderline": false
+  },
+  "senior enterprise customer success manager - utility (all genders)|gridx": {
+    "keep": false,
+    "reason": "customer success manager (commercial) sans lien climat",
+    "borderline": false
+  },
+  "product data analyst (contract)|pvcase": {
+    "keep": false,
+    "reason": "product data analyst (tech) sans lien climat",
+    "borderline": false
+  },
+  "team lead digitalisation - europe (d/f/m)|ja solar": {
+    "keep": false,
+    "reason": "team lead digitalisation (tech) sans lien climat",
+    "borderline": false
+  },
+  "customer success manager:in im bereich saas (w/m/d) - remote|node energy": {
+    "keep": false,
+    "reason": "métier tech/produit (Customer Success Manager) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "corporate engagement officer|rmi": {
+    "keep": true,
+    "reason": "consultant climat senior, correspond au profil (ONG think tank influent)",
+    "borderline": false
+  },
+  "early career - policy principal - wholesale electricity markets - miso/spp|advanced energy economy": {
+    "keep": false,
+    "reason": "poste junior/policy (Early Career) sans lien avec la séniorité du candidat",
+    "borderline": false
+  },
+  "senior erp application engineer|lime": {
+    "keep": false,
+    "reason": "métier tech/produit (Product Engineer) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "product engineer|lumen energy": {
+    "keep": true,
+    "reason": "consultant climat senior, correspond au profil (stratégie bas-carbone)",
+    "borderline": false
+  },
+  "lead java software engineer|resource innovations": {
+    "keep": false,
+    "reason": "métier tech/produit (Lead Java Software Engineer) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "studio manager|lucid motors": {
+    "keep": false,
+    "reason": "métier tech/produit (Studio Manager) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "charge d'affaires génie climatique f/h|hellowork": {
+    "keep": false,
+    "reason": "poste terrain/technique (Chargé d'Affaires Génie Climatique) sans lien avec la stratégie/conseil",
+    "borderline": false
+  },
+  "process engineer lng f/h|aldebaran group": {
+    "keep": false,
+    "reason": "poste technique (Process Engineer LNG) sans lien avec le climat/stratégie",
+    "borderline": false
+  },
+  "chargé d'affaires f/h|hellowork": {
+    "keep": false,
+    "reason": "poste terrain/technique (Chargé d'Affaires Génie Climatique) sans lien avec la stratégie/conseil",
+    "borderline": false
+  },
+  "directeur d'agences f/h|meteojob": {
+    "keep": false,
+    "reason": "poste commercial/management (Directeur d'agences) sans lien avec le climat/stratégie",
+    "borderline": false
+  },
+  "directeur d'agences f/h|cadremploi": {
+    "keep": false,
+    "reason": "poste commercial/management (Directeur d'agences) sans lien avec le climat/stratégie",
+    "borderline": false
+  },
+  "responsable commercial construction f/h|attevio": {
+    "keep": false,
+    "reason": "poste commercial (Responsable Commercial) sans lien avec le climat/stratégie",
+    "borderline": false
+  },
+  "responsable rse f/h|réseau primever france": {
+    "keep": false,
+    "reason": "poste RSE générique en entreprise (Responsable RSE) sans preuve claire de niveau stratégie/conseil senior",
+    "borderline": false
   }
 }
