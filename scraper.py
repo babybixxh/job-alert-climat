@@ -67,7 +67,7 @@ EXCLUSIONS = [
     # même chez une entreprise suivie (garde déterministe, l'IA laissait
     # parfois passer un SDR/BDR malgré les règles).
     "sdr", "bdr", "sales representative", "account executive",
-    "business developer", "customer success",
+    "business developer",
     "fullstack", "full stack", "full-stack", "frontend", "backend",
     "software engineer", "devops",
     "recrutement", "chargé de recrutement", "ressources humaines",
@@ -93,7 +93,7 @@ AI_VERDICTS_MAX = 3000
 # Version du prompt/règles IA. À incrémenter dès qu'on modifie le PROFILE ou les
 # règles de décision : les verdicts en cache d'une version antérieure sont alors
 # ré-évalués (sinon d'anciennes décisions périmées seraient rejouées).
-AI_PROMPT_VERSION = 4
+AI_PROMPT_VERSION = 5
 
 # Suivi de la santé des sources : pour chaque source, nombre de jours
 # consécutifs sans aucune offre brute (parseur potentiellement cassé).
@@ -1598,6 +1598,7 @@ ingénieur + conseil carbone. Liste FERMÉE des intitulés à garder :
 - Climate Solutions Consultant, Solutions Consultant, Climate Expert, Sustainability Consultant
 - Carbon Analyst, Climate Analyst, Climate Risk Analyst, ESG/Carbon Data Analyst
 - Implementation Consultant / Manager, Onboarding Consultant/Manager (déploiement de l'outil)
+- Customer Success Manager (accompagnement client sur un produit climat/carbone)
 - Solutions Engineer / Sales Engineer / Pre-Sales / Avant-vente (démos, réponses AO, TECHNIQUE)
 - Carbon Accounting Methodologist / Methodology Expert / Emission Factors
 - Product Manager climat/carbone
@@ -1607,8 +1608,9 @@ REJETTE (keep=false), Y COMPRIS chez une ENTREPRISE CIBLÉE :
 - DEV LOGICIEL PUR : software / fullstack / backend / frontend / mobile engineer, data
   scientist / ML / data engineer, devops, SRE, QA, architecte technique. (« engineer » seul
   ≠ Solutions Engineer : si le poste consiste à écrire du code, on REJETTE.)
-- COMMERCIAL / RELATION CLIENT PURS : SDR, BDR, Sales/Account Representative, Account Executive,
-  Business Developer, Customer Success Manager, Account Manager, marketing, growth.
+- COMMERCIAL PUR : SDR, BDR, Sales/Account Representative, Account Executive,
+  Business Developer, Account Manager, marketing, growth. (Le Customer Success sur un
+  produit climat/carbone est GARDÉ, cf. liste ci-dessus.)
 - RH / paie / recrutement / office manager / assistant·e
 - finance / comptabilité / achats / appels d'offres
 - pédagogie / formation hors climat, support, ops génériques
@@ -1618,8 +1620,8 @@ REJETTE (keep=false), Y COMPRIS chez une ENTREPRISE CIBLÉE :
 
 IMPORTANT : « ENTREPRISE CIBLÉE: oui » = entreprise pile dans sa cible, MAIS le poste doit
 être dans la liste FERMÉE climate-tech ci-dessus (ou conseil/stratégie climat). Un « Fullstack
-Engineer », un « SDR/BDR », un « Sales Representative » ou un « Customer Success » chez une
-entreprise ciblée = REJETÉ. En cas de doute sur un rôle climate-tech, garde-le mais borderline=true.
+Engineer », un « SDR/BDR » ou un « Sales Representative » chez une entreprise ciblée = REJETÉ.
+En cas de doute sur un rôle climate-tech, garde-le mais borderline=true.
 
 CAS LIMITES (« borderline ») : pour les postes RSE / développement durable
 génériques que tu hésiterais à rejeter (pertinents sur le fond mais sans
