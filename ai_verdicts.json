@@ -3594,5 +3594,115 @@
     "keep": false,
     "reason": "poste RSE générique en entreprise (Responsable RSE) sans preuve claire de niveau stratégie/conseil senior",
     "borderline": false
+  },
+  "gestionnaire transport h/f|robert walters": {
+    "keep": false,
+    "reason": "métier technique (gestionnaire transport) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "h/f responsable d’un magasin et de sa ressourcerie en lien avec la transition écologique.|choisir le service public": {
+    "keep": false,
+    "reason": "poste terrain (responsable magasin) sans lien conseil/stratégie climat",
+    "borderline": false
+  },
+  "chef(fe) de projets run confirmé(e) f/h|cityway": {
+    "keep": false,
+    "reason": "poste technique (chef de projets RUN) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "head of environmental sustainability|thor companies": {
+    "keep": false,
+    "reason": "poste hybride (Head of Environmental Sustainability) mais contrat court (6 mois) et rôle opérationnel",
+    "borderline": false
+  },
+  "chef(fe) de projet – conseil en transition environnementale d’entreprises f/h|naldeo strategies publiques": {
+    "keep": true,
+    "reason": "consultant en transition environnementale d'entreprises, cabinet conseil renommé, Paris",
+    "borderline": false
+  },
+  "chargé de financements publics et cee f/h|modal group": {
+    "keep": false,
+    "reason": "poste technique (chargé de financements publics/CEE) sans lien stratégie climat",
+    "borderline": false
+  },
+  "chargé d'affaires électrotechnique f/h|olys engineering": {
+    "keep": false,
+    "reason": "poste technique (électrotechnique) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "ingénieur d'affaires - business developer h/f|alierys": {
+    "keep": false,
+    "reason": "poste commercial (business developer) sans lien climat/stratégie",
+    "borderline": false
+  },
+  "chef de projet esg et finance durable f/h h/f|n/a": {
+    "keep": false,
+    "reason": "poste finance (ESG et finance durable) sans lien stratégie climat",
+    "borderline": false
+  },
+  "staff software engineer, product (montevideo)|lawnstarter": {
+    "keep": false,
+    "reason": "poste tech (software engineer) hors sujet",
+    "borderline": false
+  },
+  "staff software engineer, product (mexico city)|lawnstarter": {
+    "keep": false,
+    "reason": "poste tech (software engineer) hors sujet",
+    "borderline": false
+  },
+  "staff product engineer (mexico city)|lawnstarter": {
+    "keep": false,
+    "reason": "poste tech (product engineer) hors sujet",
+    "borderline": false
+  },
+  "staff product engineer (montevideo)|lawnstarter": {
+    "keep": false,
+    "reason": "poste tech (product engineer) hors sujet",
+    "borderline": false
+  },
+  "staff product engineer (campinas)|lawnstarter": {
+    "keep": false,
+    "reason": "poste tech (product engineer) hors sujet",
+    "borderline": false
+  },
+  "staff product engineer (belo horizonte)|lawnstarter": {
+    "keep": false,
+    "reason": "poste tech (product engineer) hors sujet",
+    "borderline": false
+  },
+  "staff product engineer (florianópolis)|lawnstarter": {
+    "keep": false,
+    "reason": "poste tech (product engineer) hors sujet",
+    "borderline": false
+  },
+  "head of nature-based science|good carbon": {
+    "keep": true,
+    "reason": "poste senior en stratégie climat (nature-based solutions), télétravail",
+    "borderline": false
+  },
+  "employee experience coordinator/recruiter|hitachi energy": {
+    "keep": false,
+    "reason": "poste RH (Employee Experience Coordinator) sans lien climat",
+    "borderline": false
+  },
+  "consulting director, scientist|environmental resources management": {
+    "keep": true,
+    "reason": "directeur conseil en stratégie climat, cabinet renommé, télétravail",
+    "borderline": false
+  },
+  "hr operations & systems lead|wartsila": {
+    "keep": false,
+    "reason": "poste RH/ops (HR Operations) sans lien climat",
+    "borderline": false
+  },
+  "head of forest consulting|fastmarkets ltd": {
+    "keep": false,
+    "reason": "poste technique (forest consulting) sans lien stratégie climat",
+    "borderline": false
+  },
+  "chef de mission f/h|winsearch": {
+    "keep": false,
+    "reason": "poste comptabilité (expertise comptable) sans lien climat",
+    "borderline": false
   }
 }
