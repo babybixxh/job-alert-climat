@@ -3704,5 +3704,65 @@
     "keep": false,
     "reason": "poste comptabilité (expertise comptable) sans lien climat",
     "borderline": false
+  },
+  "consultant immobilier durable h/f|cbre group, inc.": {
+    "keep": false,
+    "reason": "poste tech/produit (immobilier durable mais sans lien explicite avec climat/stratégie senior)",
+    "borderline": false
+  },
+  "chef de projet performance energétque qualité environnementale bâtiments f/h|oasiis": {
+    "keep": false,
+    "reason": "poste technique (performance énergétique bâtiment, pas stratégie/consultant senior)",
+    "borderline": false
+  },
+  "dgt-treco3-bg - adjoint(e) au chef de bureau energie h/f|choisir le service public": {
+    "keep": false,
+    "reason": "poste administratif (adjoint au chef de bureau énergie, pas conseil/stratégie climat)",
+    "borderline": false
+  },
+  "responsable production eau potable nice littoral h/f|eau d'azur": {
+    "keep": false,
+    "reason": "poste technique (production eau potable, hors climat/stratégie)",
+    "borderline": false
+  },
+  "chef de projet conception et optimisation - data center h/f|ingelib": {
+    "keep": false,
+    "reason": "poste technique (data center, pas climat/stratégie senior)",
+    "borderline": false
+  },
+  "directeur technique f/h|elatos": {
+    "keep": false,
+    "reason": "poste technique (énergies vertes, pas stratégie/consultant senior)",
+    "borderline": false
+  },
+  "contrôleur technique de génie climatique (h/f) - métropole nice côte d'azur|fonction publique": {
+    "keep": false,
+    "reason": "poste technique (contrôleur génie climatique, hors stratégie/consultant senior)",
+    "borderline": false
+  },
+  "social media & content creatorin für zwei wachsende family-health-marken|12minutes gmbh": {
+    "keep": false,
+    "reason": "poste hors domaine (marketing/social media)",
+    "borderline": false
+  },
+  "head of creative campaigns (m/f/d - remote)|weflow": {
+    "keep": false,
+    "reason": "poste hors domaine (marketing/sales)",
+    "borderline": false
+  },
+  "customer success engineer|3e": {
+    "keep": false,
+    "reason": "poste tech/produit (digital solutions, hors climat/stratégie senior)",
+    "borderline": false
+  },
+  "in25172 - hr manager (locally recruited)|cimmyt (international maize and wheat improvement center)": {
+    "keep": false,
+    "reason": "poste RH (HR Manager, hors climat/stratégie)",
+    "borderline": false
+  },
+  "conseiller en transition énergétique et environnementale en santé f/h|hopital saint joseph saint luc": {
+    "keep": false,
+    "reason": "poste technique/pédagogie (transition énergétique santé, pas stratégie/consultant senior)",
+    "borderline": false
   }
 }
