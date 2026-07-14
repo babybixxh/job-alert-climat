@@ -3764,5 +3764,155 @@
     "keep": false,
     "reason": "poste technique/pédagogie (transition énergétique santé, pas stratégie/consultant senior)",
     "borderline": false
+  },
+  "enseignants-chercheur informatique et réseaux / pilote du cycle ingénieur (f/h)|excelia": {
+    "keep": false,
+    "reason": "pédagogie/formation hors climat, pas de lien avec stratégie ou conseil climat",
+    "borderline": false
+  },
+  "ingénieur d'études et optimisation - data center - h/f|ingelib": {
+    "keep": false,
+    "reason": "métier tech/ingénierie data center, pas de lien climat/stratégie",
+    "borderline": false
+  },
+  "hubspot crm consultant - sales, marketing & service hub (m/w/d)|itelligy - digital experts gmbh & co. kg": {
+    "keep": false,
+    "reason": "métier tech/commercial (CRM Consultant), pas de lien climat",
+    "borderline": false
+  },
+  "(senior) it operations engineer (gn)|bikeleasing-service gmbh & co. kg": {
+    "keep": false,
+    "reason": "métier tech/ops IT, pas de lien climat",
+    "borderline": false
+  },
+  "lead it operations engineer (gn)|bikeleasing-service gmbh & co. kg": {
+    "keep": false,
+    "reason": "métier tech/ops IT, pas de lien climat",
+    "borderline": false
+  },
+  "(lead/senior) technical product manager - platform engineering (m/f/d)|1komma5˚": {
+    "keep": false,
+    "reason": "métier tech/produit (Product Manager), pas de lien climat",
+    "borderline": false
+  },
+  "technical project manager heartbeat ai (m/f/d)|1komma5˚": {
+    "keep": false,
+    "reason": "métier tech/produit (Project Manager), pas de lien climat",
+    "borderline": false
+  },
+  "working student product designer (m/w/d)|1komma5˚": {
+    "keep": false,
+    "reason": "métier tech/design junior, pas de lien climat",
+    "borderline": false
+  },
+  "digital business consultant (m/f/x)|virtual identity ag": {
+    "keep": false,
+    "reason": "métier tech/commercial (Digital Business Consultant), pas de lien climat",
+    "borderline": false
+  },
+  "job als assistenz im finanzbereich (nebenberuflich) (m/w/d)|projekt 300": {
+    "keep": false,
+    "reason": "RH/finance, pas de lien climat",
+    "borderline": false
+  },
+  "senior attorney, public lands, wildlife, and oceans|earthjustice": {
+    "keep": true,
+    "reason": "poste stratégique climat (juridique environnement), correspond au profil",
+    "borderline": false
+  },
+  "head of development|greentown labs": {
+    "keep": true,
+    "reason": "poste stratégique climat (incubateur climat), correspond au profil",
+    "borderline": false
+  },
+  "software engineer|critical loop": {
+    "keep": false,
+    "reason": "métier tech (Software Engineer), pas de lien climat",
+    "borderline": false
+  },
+  "controller|afresh technologies": {
+    "keep": false,
+    "reason": "finance, pas de lien climat",
+    "borderline": false
+  },
+  "product manager ii|energyhub": {
+    "keep": false,
+    "reason": "métier tech/produit (Product Manager), pas de lien climat",
+    "borderline": false
+  },
+  "gtm founder's associate (all genders) | climatetech|carbmee": {
+    "keep": true,
+    "reason": "poste stratégique climat (GTM Founder's Associate climat), correspond au profil",
+    "borderline": false
+  },
+  "working student product designer (m/f/d)|1komma5°": {
+    "keep": false,
+    "reason": "métier tech/design junior, pas de lien climat",
+    "borderline": false
+  },
+  "senior software engineer - platform|choco": {
+    "keep": false,
+    "reason": "métier tech/produit (Software Engineer), pas de lien climat",
+    "borderline": false
+  },
+  "senior product designer (customer success) (f/m/x) - remote|refurbed": {
+    "keep": false,
+    "reason": "métier tech/design, pas de lien climat",
+    "borderline": false
+  },
+  "software engineering manager (eu)|amber electric": {
+    "keep": false,
+    "reason": "métier tech/produit (Software Engineering Manager), pas de lien climat",
+    "borderline": false
+  },
+  "product & design lead|qwello": {
+    "keep": false,
+    "reason": "métier tech/produit (Product & Design Lead), pas de lien climat",
+    "borderline": false
+  },
+  "senior associate, building electrification policy - carbon-free buildings program|rmi": {
+    "keep": true,
+    "reason": "poste stratégique climat (politiques publiques), correspond au profil",
+    "borderline": false
+  },
+  "sr. platform engineer, l3|citrine informatics": {
+    "keep": false,
+    "reason": "métier tech (Platform Engineer), pas de lien climat",
+    "borderline": false
+  },
+  "director of product management|measurabl": {
+    "keep": true,
+    "reason": "poste stratégique climat (RSE/performance durable), correspond au profil",
+    "borderline": false
+  },
+  "senior manager, underwriting|kettle": {
+    "keep": false,
+    "reason": "finance/assurance, pas de lien climat",
+    "borderline": false
+  },
+  "charge d'etude cvc f/h|harry hope": {
+    "keep": false,
+    "reason": "poste technique (CVC) sans lien clair avec stratégie climat/RSE",
+    "borderline": false
+  },
+  "chef de projet énergie & carbone expérimenté f/h|profila": {
+    "keep": true,
+    "reason": "chef de projet énergie & carbone senior, correspond au profil",
+    "borderline": false
+  },
+  "chargé d'affaires génie climatique - frigorifique f/h|hellowork": {
+    "keep": false,
+    "reason": "poste technique (génie climatique) sans lien clair avec stratégie climat/RSE",
+    "borderline": false
+  },
+  "chef d’équipe monteur électricien industriel f/h|o'sitoit": {
+    "keep": false,
+    "reason": "poste terrain opérationnel (monteur électricien) sans lien avec climat/RSE",
+    "borderline": false
+  },
+  "chef de projet rse f/h|hellowork": {
+    "keep": true,
+    "reason": "ingénieur climat et ressources senior en PACA, correspond au profil",
+    "borderline": false
   }
 }
