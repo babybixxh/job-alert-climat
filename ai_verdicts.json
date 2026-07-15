@@ -3914,5 +3914,160 @@
     "keep": true,
     "reason": "ingénieur climat et ressources senior en PACA, correspond au profil",
     "borderline": false
+  },
+  "stagiaire rse f/h|hosco": {
+    "keep": false,
+    "reason": "Stage RSE, hors localisation (Paris) et niveau junior",
+    "borderline": false
+  },
+  "directeur du numérique h/f - crous de nice-toulon|choisir le service public": {
+    "keep": false,
+    "reason": "Directeur du numérique, hors lien climat/stratégie et localisation Nice (hors PACA éligible)",
+    "borderline": false
+  },
+  "responsable technique - f/h|icf habitat": {
+    "keep": false,
+    "reason": "Responsable technique immobilier, hors lien climat/stratégie",
+    "borderline": false
+  },
+  "chargé(e) de validation de méthodes analytiques f/h|consultys services": {
+    "keep": false,
+    "reason": "Validation de méthodes analytiques, hors lien climat/stratégie",
+    "borderline": false
+  },
+  "ingénieur installation générale f/h|assystem": {
+    "keep": false,
+    "reason": "Ingénieur installation générale, hors lien climat/stratégie",
+    "borderline": false
+  },
+  "responsable opérationnel de flotte wagons f/h|modalis": {
+    "keep": false,
+    "reason": "Responsable opérationnel de flotte, hors lien climat/stratégie",
+    "borderline": false
+  },
+  "ingénieur études de prix gc industriel et bâtiment fonctionnel h/f|nge": {
+    "keep": false,
+    "reason": "Ingénieur études de prix, hors lien climat/stratégie",
+    "borderline": false
+  },
+  "performance marketer (m/w/d) - meta ads × ai × creative strategy | high-aov e-commerce|divinely": {
+    "keep": false,
+    "reason": "Performance Marketer, hors lien climat/stratégie",
+    "borderline": false
+  },
+  "principal governance, risk and compliance (grc) architect|simscale gmbh": {
+    "keep": false,
+    "reason": "Principal GRC Architect, hors lien climat/stratégie",
+    "borderline": false
+  },
+  "initiativbewerbung bau & infrastruktur (gn) | bauleiter, kalkulator, projektleiter|jiro consulting": {
+    "keep": false,
+    "reason": "Bauleiter/Projektleiter, hors lien climat/stratégie",
+    "borderline": false
+  },
+  "job als assistent im finanzbereich (für quereinsteiger) (m/w/d)|projekt 300": {
+    "keep": false,
+    "reason": "Assistant financier, hors lien climat/stratégie",
+    "borderline": false
+  },
+  "social media manager (m/w/d) | remote|rik james ventures gmbh": {
+    "keep": false,
+    "reason": "Social Media Manager, hors lien climat/stratégie",
+    "borderline": false
+  },
+  "ki-marketing-manager (m/w/d) | remote|rik james ventures gmbh": {
+    "keep": false,
+    "reason": "KI-Marketing-Manager, hors lien climat/stratégie",
+    "borderline": false
+  },
+  "business analyst wertpapierprojekte (m/w/d)|finwyz gmbh": {
+    "keep": false,
+    "reason": "Business Analyst Wertpapierprojekte, hors lien climat/stratégie",
+    "borderline": false
+  },
+  "staff applications engineer|antora energy": {
+    "keep": false,
+    "reason": "Staff Applications Engineer, hors lien climat/stratégie",
+    "borderline": false
+  },
+  "(senior) bess solutions engineer - australia|twaice": {
+    "keep": false,
+    "reason": "BESS Solutions Engineer, hors localisation (Australie) et lien climat technique (pas stratégie)",
+    "borderline": false
+  },
+  "customer programme manager|greyparrot": {
+    "keep": false,
+    "reason": "Customer Programme Manager, hors lien climat/stratégie",
+    "borderline": false
+  },
+  "senior client success manager|rystad energy": {
+    "keep": false,
+    "reason": "Senior Client Success Manager, hors lien climat/stratégie",
+    "borderline": false
+  },
+  "global pre-sales lead|kaluza": {
+    "keep": false,
+    "reason": "Global Pre-Sales Lead, hors lien climat/stratégie",
+    "borderline": false
+  },
+  "speculative job application - marketing team|climate x": {
+    "keep": false,
+    "reason": "Speculative Job Application - Marketing team, hors lien climat/stratégie",
+    "borderline": false
+  },
+  "senior associate, commodity market transformation - climate intelligence program|rmi": {
+    "keep": true,
+    "reason": "Senior Associate, Commodity Market Transformation - Climate Intelligence Program, poste senior en stratégie climat (télétravail)",
+    "borderline": false
+  },
+  "business development manager|spark power": {
+    "keep": false,
+    "reason": "Business Development Manager, hors lien climat/stratégie",
+    "borderline": false
+  },
+  "hers rater - multifamily green buildings (office-based)|sustainable comfort": {
+    "keep": false,
+    "reason": "HERS Rater, poste technique terrain (pas stratégie)",
+    "borderline": false
+  },
+  "vice president, global employment law|lime": {
+    "keep": false,
+    "reason": "Vice President, Global Employment Law, hors lien climat/stratégie",
+    "borderline": false
+  },
+  "erp application engineer (order to cash)|lime": {
+    "keep": false,
+    "reason": "ERP Application Engineer, hors lien climat/stratégie",
+    "borderline": false
+  },
+  "erp application engineer (netsuite scm)|lime": {
+    "keep": false,
+    "reason": "métier tech/produit (ERP Application Engineer), hors climat/durabilité",
+    "borderline": false
+  },
+  "ingénieur d'affaires - financements publics f/h|hellowork": {
+    "keep": false,
+    "reason": "commercial / développement d'activité (Ingénieur d'Affaires - Financements Publics), hors conseil/stratégie climat",
+    "borderline": false
+  },
+  "ingenieur d'etudes - décarbonation des procédés f/h|dalkia": {
+    "keep": false,
+    "reason": "poste terrain/technique (Ingénieur d'Études - Décarbonation des Procédés), hors stratégie/conseil senior",
+    "borderline": false
+  },
+  "responsable de projet décarbonation des procédés f/h|dalkia": {
+    "keep": false,
+    "reason": "poste terrain/technique (Responsable de Projet Décarbonation des Procédés), hors stratégie/conseil senior",
+    "borderline": false
+  },
+  "responsable de projet décarbonation des procédés f/h|hellowork": {
+    "keep": false,
+    "reason": "poste terrain/technique (Responsable de Projet Décarbonation des Procédés), hors stratégie/conseil senior",
+    "borderline": false
+  },
+  "ingenieur d'etudes - décarbonation des procédés f/h|hellowork": {
+    "keep": false,
+    "reason": "poste terrain/technique (Ingénieur d'Études - Décarbonation des Procédés), hors stratégie/conseil senior",
+    "borderline": false
   }
 }
