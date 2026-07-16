@@ -4069,5 +4069,195 @@
     "keep": false,
     "reason": "poste terrain/technique (Ingénieur d'Études - Décarbonation des Procédés), hors stratégie/conseil senior",
     "borderline": false
+  },
+  "maçon vrd h/f|testnge": {
+    "keep": false,
+    "reason": "poste technique terrain (maçon VRD), hors climat/stratégie",
+    "borderline": false
+  },
+  "chef.fe de projet bâtiment, énergie et décarbonation (h/f)|cedrus solutions": {
+    "keep": true,
+    "reason": "chef de projet énergie/décarbonation en startup engagée, correspond au profil conseil climat senior",
+    "borderline": false
+  },
+  "vendeur/se orsel - samedi+dimanche+lundi cdi h/f|les saisonniers": {
+    "keep": false,
+    "reason": "poste commercial (vendeur), hors climat/stratégie",
+    "borderline": false
+  },
+  "chef du pôle environnement et risques majeurs - commune de cabries|fonction publique": {
+    "keep": true,
+    "reason": "chef de pôle environnement et risques majeurs en collectivité (Bouches-du-Rhône), correspond au profil chargé de mission climat en collectivité",
+    "borderline": false
+  },
+  "un instructeur – accueil et orientation rsa (h/f) en contrat de projet|fonction publique": {
+    "keep": false,
+    "reason": "poste administratif (instructeur RSA), hors climat/stratégie",
+    "borderline": false
+  },
+  "recruiter (m/w/d) /promoter (m/w/d) für recruting - remote|alex - bürodienstleistung": {
+    "keep": false,
+    "reason": "poste RH (recruiter), hors climat/stratégie",
+    "borderline": false
+  },
+  "(senior) crm / lifecycle marketing manager (m/w/d)|alphapet ventures gmbh": {
+    "keep": false,
+    "reason": "poste marketing/commercial, hors climat/stratégie",
+    "borderline": false
+  },
+  "performance marketing manager / meta ads (m/w/d)|finanzklar gmbh": {
+    "keep": false,
+    "reason": "poste marketing/commercial, hors climat/stratégie",
+    "borderline": false
+  },
+  "media buyer / meta ads (m/w/d)|finanzklar gmbh": {
+    "keep": false,
+    "reason": "poste marketing/commercial, hors climat/stratégie",
+    "borderline": false
+  },
+  "social media marketing management for berlin’s music business event most wanted: music (freelance)|berlin music commission eg": {
+    "keep": false,
+    "reason": "poste marketing/communication, hors climat/stratégie",
+    "borderline": false
+  },
+  "senior performance marketing manager / media buyer native - taboola & outbrain (m/w/d)|vital growth ug (haftungsbeschränkt)": {
+    "keep": false,
+    "reason": "poste marketing/commercial, hors climat/stratégie",
+    "borderline": false
+  },
+  "senior shopify developer|beyondservice gmbh": {
+    "keep": false,
+    "reason": "poste tech (développeur), hors climat/stratégie",
+    "borderline": false
+  },
+  "senior performance marketing manager / media buyer meta (m/w/d)|vital growth ug (haftungsbeschränkt)": {
+    "keep": false,
+    "reason": "poste marketing/commercial, hors climat/stratégie",
+    "borderline": false
+  },
+  "one-year data assistant|earthjustice": {
+    "keep": false,
+    "reason": "poste technique (data assistant) chez ONG, hors stratégie/conseil",
+    "borderline": false
+  },
+  "software engineer|voltus": {
+    "keep": false,
+    "reason": "poste tech (ingénieur), hors climat/stratégie",
+    "borderline": false
+  },
+  "sales director (north america)|pvcase": {
+    "keep": false,
+    "reason": "poste commercial (sales), hors climat/stratégie",
+    "borderline": false
+  },
+  "data engineer (all genders)|gropyus": {
+    "keep": false,
+    "reason": "poste tech (data engineer), hors climat/stratégie",
+    "borderline": false
+  },
+  "social media manager|vexnovate ventures": {
+    "keep": false,
+    "reason": "poste marketing/communication, hors climat/stratégie",
+    "borderline": false
+  },
+  "qa specialist|vexnovate ventures": {
+    "keep": false,
+    "reason": "poste tech (QA specialist), hors climat/stratégie",
+    "borderline": false
+  },
+  "full-stack developer|vexnovate ventures": {
+    "keep": false,
+    "reason": "poste tech (développeur), hors climat/stratégie",
+    "borderline": false
+  },
+  "senior hr manager|vexnovate ventures": {
+    "keep": false,
+    "reason": "poste RH, hors climat/stratégie",
+    "borderline": false
+  },
+  "senior data analyst, geospatial|nextenergy group": {
+    "keep": false,
+    "reason": "poste tech (data analyst), hors climat/stratégie",
+    "borderline": false
+  },
+  "senior user researcher (customer journey)|backmarket": {
+    "keep": false,
+    "reason": "poste tech (user researcher), hors climat/stratégie",
+    "borderline": false
+  },
+  "business development representative north america (f/m/x)|liveeo": {
+    "keep": false,
+    "reason": "poste commercial (business development), hors climat/stratégie",
+    "borderline": false
+  },
+  "senior data engineer (f/m/d)|gropyus": {
+    "keep": false,
+    "reason": "poste tech (data engineer), hors climat/stratégie",
+    "borderline": false
+  },
+  "interim hr administrator (ftc)|smartwyre": {
+    "keep": false,
+    "reason": "Métier RH / office management (Interim HR Administrator)",
+    "borderline": false
+  },
+  "senior software quality engineer|skyspecs": {
+    "keep": false,
+    "reason": "Métier tech (Senior Software Quality Engineer)",
+    "borderline": false
+  },
+  "sr. program specialist, forestry|scs global services": {
+    "keep": true,
+    "reason": "Poste senior en foresterie et durabilité climatique (Sr. Program Specialist, Forestry)",
+    "borderline": false
+  },
+  "full stack tech lead - senior|mill": {
+    "keep": false,
+    "reason": "Métier tech (Full Stack Tech Lead)",
+    "borderline": false
+  },
+  "full cycle account executive (smb)|too good to go": {
+    "keep": false,
+    "reason": "Métier commercial (Full Cycle Account Executive)",
+    "borderline": false
+  },
+  "b2c marketing lead, north america|too good to go": {
+    "keep": false,
+    "reason": "Métier marketing (B2C Marketing Lead)",
+    "borderline": false
+  },
+  "directeur(trice) du pôle transition écologique, aménagement et habitat f/h|communaute de communes senlis sud oise": {
+    "keep": true,
+    "reason": "Poste senior en transition écologique et aménagement en collectivité (Directeur du Pôle Transition écologique)",
+    "borderline": false
+  },
+  "ingénieur procédés industriels – décarbonation f/h|kali group": {
+    "keep": false,
+    "reason": "Poste technique terrain (Ingénieur Procédés Industriels – Décarbonation)",
+    "borderline": false
+  },
+  "responsable de projets rse - climat laval (53) f/h|meteojob": {
+    "keep": true,
+    "reason": "Poste senior en RSE/climat en entreprise (Responsable de projets RSE - Climat)",
+    "borderline": false
+  },
+  "conseiller adaptation au changement climatique et transition f/h|chambre de metiers et de l'artisanat de region normandie": {
+    "keep": true,
+    "reason": "Poste senior en adaptation climatique et transition en collectivité (Conseiller adaptation au changement climatique)",
+    "borderline": false
+  },
+  "data owner rse - supply chain laval (53) f/h|lactalis gestion planification organisation": {
+    "keep": false,
+    "reason": "Métier data/tech (Data Owner RSE - Supply Chain)",
+    "borderline": false
+  },
+  "chargé d'affaires cvc - génie climatique f/h|eimi": {
+    "keep": false,
+    "reason": "Poste technique terrain (Chargé d'affaires génie climatique)",
+    "borderline": false
+  },
+  "business manager btob f/h|terramoka": {
+    "keep": false,
+    "reason": "Métier commercial terrain (Business Manager BtoB)",
+    "borderline": false
   }
 }
