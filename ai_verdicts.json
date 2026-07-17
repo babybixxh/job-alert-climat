@@ -4259,5 +4259,210 @@
     "keep": false,
     "reason": "Métier commercial terrain (Business Manager BtoB)",
     "borderline": false
+  },
+  "chargé de recherches - f/h|alixio group": {
+    "keep": false,
+    "reason": "poste RH/transformation sans lien climat/stratégie",
+    "borderline": false
+  },
+  "responsable de boutique - paris legendre - cdi 39h h/f|faguo": {
+    "keep": false,
+    "reason": "poste commercial/marketing sans lien climat",
+    "borderline": false
+  },
+  "h/f responsable d’un magasin et de sa ressourcerie en lien avec la transition écologique.|cnrs": {
+    "keep": false,
+    "reason": "poste magasin/ressourcerie sans lien stratégie climat",
+    "borderline": false
+  },
+  "commercial - financements publics - secteur agroalimentaire h/f|ilex environnement": {
+    "keep": false,
+    "reason": "poste commercial/financements publics sans lien stratégie climat",
+    "borderline": false
+  },
+  "chef de projet formation professionnelle & certifications de branche h/f|perfhomme": {
+    "keep": false,
+    "reason": "poste formation professionnelle sans lien climat",
+    "borderline": false
+  },
+  "expert.e sirh paie h/f|drhg-pôle sirh": {
+    "keep": false,
+    "reason": "poste SIRH/paye sans lien climat",
+    "borderline": false
+  },
+  "responsable certifications et évaluations h/f|teamis": {
+    "keep": false,
+    "reason": "poste certifications industrielle sans lien stratégie climat",
+    "borderline": false
+  },
+  "responsable certifications - bois h/f|teamis": {
+    "keep": false,
+    "reason": "poste certifications bois sans lien stratégie climat",
+    "borderline": false
+  },
+  "responsable certifications - matériaux construction h/f|teamis": {
+    "keep": false,
+    "reason": "poste certifications matériaux sans lien stratégie climat",
+    "borderline": false
+  },
+  "adjoint (e) au sous-directeur (trice) de l'inclusion scolaire - dgesco - men|choisir le service public": {
+    "keep": false,
+    "reason": "poste administratif/gouvernance sans lien climat",
+    "borderline": false
+  },
+  "chargé / chargée de mission développement durable et rse - respon (h/f)|compagnie de saint-gobain": {
+    "keep": true,
+    "reason": "responsable RSE stratégique en entreprise (Saint-Gobain), borderline car niveau senior mais RSE générique sans preuve de stratégie climat pure",
+    "borderline": true
+  },
+  "online data analyst canada (french language) (c)|telus digital": {
+    "keep": false,
+    "reason": "poste data analyst sans lien climat",
+    "borderline": false
+  },
+  "online kundendienst (customer service) der smantry app, full remote, minijob|smantry": {
+    "keep": false,
+    "reason": "poste commercial/marketing sans lien climat",
+    "borderline": false
+  },
+  "sales lead (w/m/d)|tecracer germany gmbh": {
+    "keep": false,
+    "reason": "poste commercial/vente sans lien climat",
+    "borderline": false
+  },
+  "senior sap business one berater (m/w/d): cloud-migration & zukunftsarchitektur|cloudiax ag": {
+    "keep": false,
+    "reason": "poste SAP/consultant technique sans lien climat",
+    "borderline": false
+  },
+  "seo specialist / revenue architect (m/w/d)|searchneedslove": {
+    "keep": false,
+    "reason": "poste SEO/marketing sans lien climat",
+    "borderline": false
+  },
+  "fachassistent digitalisierung und it-prozesse (m/w/d) 35.000 - 60.000 € jahresgehalt|syltax schlüter, yblagger & leitmeier steuerberater partgmbb": {
+    "keep": false,
+    "reason": "poste administratif/IT sans lien climat",
+    "borderline": false
+  },
+  "ai devops engineer / automation builder (m/w/d)|ecoturn gmbh": {
+    "keep": false,
+    "reason": "poste DevOps/engineer sans lien climat",
+    "borderline": false
+  },
+  "product owner & sales specialist (m/w/d)|seppmail deutschland gmbh": {
+    "keep": false,
+    "reason": "poste product owner/sales sans lien climat",
+    "borderline": false
+  },
+  "staff cpe engineer (remote)|kobold metals": {
+    "keep": false,
+    "reason": "poste software engineer sans lien climat",
+    "borderline": false
+  },
+  "senior software engineer|voltus": {
+    "keep": false,
+    "reason": "poste software engineer sans lien climat",
+    "borderline": false
+  },
+  "consultant, greenhouse gas inventory and policy|spark climate solutions": {
+    "keep": true,
+    "reason": "consultant climat senior (inventaire GES et politiques publiques), correspond au profil",
+    "borderline": false
+  },
+  "underwriter (home improvement loans)|tandem": {
+    "keep": false,
+    "reason": "poste commercial/finance sans lien climat",
+    "borderline": false
+  },
+  "senior project manager|energy vault": {
+    "keep": false,
+    "reason": "poste chef de projet énergie sans lien stratégie climat claire",
+    "borderline": false
+  },
+  "devops engineer|vexnovate ventures": {
+    "keep": false,
+    "reason": "poste DevOps/engineer sans lien climat",
+    "borderline": false
+  },
+  "director of product|amber electric": {
+    "keep": false,
+    "reason": "poste tech/produit (Director of Product) - hors climat/stratégie",
+    "borderline": false
+  },
+  "nature-based solution analyst (remote europe/ berlin)|good carbon": {
+    "keep": false,
+    "reason": "poste tech/analyse (Nature-based Solution Analyst) - hors climat/stratégie",
+    "borderline": false
+  },
+  "head of client advisory services (remote europe/ berlin)|good carbon": {
+    "keep": false,
+    "reason": "poste tech/conseil commercial (Head of Client Advisory Services) - hors climat/stratégie",
+    "borderline": false
+  },
+  "head of compute offtake|span": {
+    "keep": false,
+    "reason": "poste tech/commercial (Head of Compute Offtake) - hors climat/stratégie",
+    "borderline": false
+  },
+  "staff reliability engineer|form energy": {
+    "keep": false,
+    "reason": "poste tech/ingénierie (Staff Reliability Engineer) - hors climat/stratégie",
+    "borderline": false
+  },
+  "senior account executive|aurora solar": {
+    "keep": false,
+    "reason": "poste tech/commercial (Senior Account Executive) - hors climat/stratégie",
+    "borderline": false
+  },
+  "revops associate|standard fleet": {
+    "keep": false,
+    "reason": "poste tech/commercial (RevOps Associate) - hors climat/stratégie",
+    "borderline": false
+  },
+  "senior android / frontend developer (plovdiv, bulgaria)|cropx": {
+    "keep": false,
+    "reason": "poste tech/agricole (Senior Android / Frontend Developer) - hors climat/stratégie",
+    "borderline": false
+  },
+  "conseiller en transition écologique et énergétique en santé f/h|centre lutte contre le cancer": {
+    "keep": true,
+    "reason": "chargé de mission transition écologique et énergétique en santé - poste stratégique en collectivité/établissement public",
+    "borderline": false
+  },
+  "un(e) chargé(e) de missions changement climatique f/h|chambres d'agriculture france": {
+    "keep": true,
+    "reason": "chargé de missions changement climatique en lien avec stratégie publique - poste stratégique en institution publique",
+    "borderline": false
+  },
+  "chef de projet génie climatique (h/f) f/h|iziwork": {
+    "keep": false,
+    "reason": "chef de projet génie climatique (technique terrain) - hors stratégie/conseil",
+    "borderline": false
+  },
+  "cdd ingénieur procédés - énergie & décarbonation f/h|totalenergies": {
+    "keep": false,
+    "reason": "ingénieur procédés énergie/décarbonation (technique industriel) - hors stratégie/conseil",
+    "borderline": false
+  },
+  "ingénieur essais climatiques & vibratoires f/h|groupe lr technologies": {
+    "keep": false,
+    "reason": "ingénieur essais climatiques (technique terrain) - hors stratégie/conseil",
+    "borderline": false
+  },
+  "dessinateur bureau d'études  électricité & génie climatique f/h|adequat aubagne": {
+    "keep": false,
+    "reason": "dessinateur bureau d'études (technique) - hors stratégie/conseil",
+    "borderline": false
+  },
+  "responsable d'agence lyon f/h|terx": {
+    "keep": false,
+    "reason": "responsable d'agence (management commercial) - hors climat/stratégie",
+    "borderline": false
+  },
+  "commercial / futur directeur d’agence f/h|trio travail temporaire": {
+    "keep": false,
+    "reason": "commercial/directeur d'agence (vente) - hors climat/stratégie",
+    "borderline": false
   }
 }
