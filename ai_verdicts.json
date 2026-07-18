@@ -4464,5 +4464,205 @@
     "keep": false,
     "reason": "commercial/directeur d'agence (vente) - hors climat/stratégie",
     "borderline": false
+  },
+  "csr project manager h/f|avril": {
+    "keep": true,
+    "reason": "poste de CSR Project Manager en lien avec la responsabilité et l'innovation, correspond au profil conseil climat/RSE senior",
+    "borderline": false
+  },
+  "consultant senior restructuration et stratégie sociale h/f|alixio group": {
+    "keep": false,
+    "reason": "consultant senior en restructuration sociale (pas climat/stratégie environnementale)",
+    "borderline": false
+  },
+  "consultant senior en restructuration et stratégie sociale - f/h|alixia support": {
+    "keep": false,
+    "reason": "consultant senior en restructuration sociale (pas climat/stratégie environnementale)",
+    "borderline": false
+  },
+  "commercial b2b - solutions de gestion des déchets h/f (cdi)|uptoo": {
+    "keep": false,
+    "reason": "commercial B2B déchets (hors climat/stratégie)",
+    "borderline": false
+  },
+  "ouvrier polyvalent tp h/f|testnge": {
+    "keep": false,
+    "reason": "poste terrain technicien (rejet absolu)",
+    "borderline": false
+  },
+  "ingénieur méthodes h/f|séché environnement": {
+    "keep": false,
+    "reason": "ingénieur méthodes (hors climat/stratégie)",
+    "borderline": false
+  },
+  "responsable certifications - matériaux construction h/f|team.is": {
+    "keep": false,
+    "reason": "responsable certifications matériaux (hors climat/stratégie)",
+    "borderline": false
+  },
+  "responsable certifications et évaluations h/f|team.is": {
+    "keep": false,
+    "reason": "responsable certifications et évaluations (hors climat/stratégie)",
+    "borderline": false
+  },
+  "responsable certifications - bois h/f|team.is": {
+    "keep": false,
+    "reason": "responsable certifications bois (hors climat/stratégie)",
+    "borderline": false
+  },
+  "responsable commercial energie|rozo": {
+    "keep": false,
+    "reason": "responsable commercial énergie (hors climat/stratégie)",
+    "borderline": false
+  },
+  "fraiseur commande numerique – mazak ou hass 3 axes (h/f)|csti groupe": {
+    "keep": false,
+    "reason": "poste terrain technicien (rejet absolu)",
+    "borderline": false
+  },
+  "chargé(e) d'ordonnancement et coordination industrielle confirmé(e) f/h|csti groupe": {
+    "keep": false,
+    "reason": "ordonnancement industriel (hors climat/stratégie)",
+    "borderline": false
+  },
+  "canalisateur h/f|groupe nge": {
+    "keep": false,
+    "reason": "poste terrain technicien (rejet absolu)",
+    "borderline": false
+  },
+  "chef de projet procédés - uve, csr & biomasse f/h|agence oriflam": {
+    "keep": false,
+    "reason": "chef de projet procédés UVE/biomasse (technique, pas stratégie climat)",
+    "borderline": false
+  },
+  "responsable d'activité électricité industrielle h/f|spie industrie": {
+    "keep": false,
+    "reason": "responsable activité électricité industrielle (hors climat/stratégie)",
+    "borderline": false
+  },
+  "chargé de mission distinctions honorifiques (h/f)|prefecture de departement yvelines": {
+    "keep": false,
+    "reason": "chargé de mission distinctions honorifiques (administratif, pas climat)",
+    "borderline": false
+  },
+  "head of marketing & communications|garden3d": {
+    "keep": false,
+    "reason": "head of marketing & communications (hors climat/stratégie)",
+    "borderline": false
+  },
+  "business development manager ( m/w/d)- süddeutschland|rain for rent international": {
+    "keep": false,
+    "reason": "business development manager (hors climat/stratégie)",
+    "borderline": false
+  },
+  "werkstudent:in film & festival operations (remote)|miralot": {
+    "keep": false,
+    "reason": "stage/alternance (rejet absolu)",
+    "borderline": false
+  },
+  "product owner (m/w/d)|interlead gmbh": {
+    "keep": false,
+    "reason": "product owner (tech/produit, hors climat)",
+    "borderline": false
+  },
+  "crm transformation lead (gn)|bikeleasing-service gmbh & co. kg": {
+    "keep": false,
+    "reason": "CRM transformation lead (tech/produit, hors climat)",
+    "borderline": false
+  },
+  "projektmanager:in & pmo (m/w/d)|team passerelle": {
+    "keep": false,
+    "reason": "projetmanager PMO (tech/produit, hors climat)",
+    "borderline": false
+  },
+  "produktmanager (m/w/d) mobility|angeheuert gmbh personalberatung": {
+    "keep": false,
+    "reason": "produitmanager mobilité (tech/produit, hors climat)",
+    "borderline": false
+  },
+  "research scientist|carbon mapper": {
+    "keep": true,
+    "reason": "research scientist climat (recherche climat, correspond au profil)",
+    "borderline": false
+  },
+  "one-year direct response assistant|earthjustice": {
+    "keep": false,
+    "reason": "assistant marketing (hors climat/stratégie)",
+    "borderline": false
+  },
+  "lead solutions engineer, integrations|afresh technologies": {
+    "keep": false,
+    "reason": "métier tech/produit (Lead Solutions Engineer) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "technical program manager - platform integrations|energyhub": {
+    "keep": false,
+    "reason": "métier tech/produit (Technical Program Manager) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "senior front end developer|deepsea technologies": {
+    "keep": false,
+    "reason": "métier tech/produit (Senior Front End Developer) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "freelance senior performance marketing manager (m/f/d)|integrity next": {
+    "keep": false,
+    "reason": "métier commercial/marketing (Performance Marketing Manager) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "customer service advisor (zero carbon living)|ovo energy": {
+    "keep": false,
+    "reason": "métier support/pédagogie (Customer Service Advisor) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "senior architect (all genders) - technical design development|gropyus": {
+    "keep": false,
+    "reason": "métier tech/produit (Senior Architect) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "project finance associate|renewable properties": {
+    "keep": false,
+    "reason": "métier finance (Project Finance Associate) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "digital storytelling sr. associate, communications and marketing|the aspen institute": {
+    "keep": true,
+    "reason": "ONG/think tank influent (Aspen Institute) avec lien climat, mais poste communication/marketing (borderline)",
+    "borderline": true
+  },
+  "assistant director|the aspen institute": {
+    "keep": true,
+    "reason": "ONG/think tank influent (Aspen Institute) avec lien climat, poste stratégique senior (Assistant Director)",
+    "borderline": false
+  },
+  "senior software engineer, core services|lime": {
+    "keep": false,
+    "reason": "métier tech/produit (Senior Software Engineer) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "legal operations & solutions lead|lime": {
+    "keep": false,
+    "reason": "métier juridique/opérations (Legal Operations) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "deputy regional head, government relations, latin america|lime": {
+    "keep": false,
+    "reason": "métier relations publiques (Government Relations) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "senior data engineer|icon": {
+    "keep": false,
+    "reason": "métier tech/produit (Senior Data Engineer) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "chargé de projet d.d. - r.s.e. f/h|universite paris viii.paris vincenn": {
+    "keep": true,
+    "reason": "chargé de projet DD/RSE en collectivité (Université Paris VIII), poste qualifié senior avec lien climat",
+    "borderline": false
+  },
+  "animateur(trice) régional(e) \"solutions fondées sur la nature\" f/h|agence regionale de la biodiversite de bourgogne-franche-comte": {
+    "keep": true,
+    "reason": "animateur régional solutions fondées sur la nature en collectivité (Bourgogne-Franche-Comté), poste qualifié senior avec lien climat",
+    "borderline": false
   }
 }
