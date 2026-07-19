@@ -4664,5 +4664,90 @@
     "keep": true,
     "reason": "animateur régional solutions fondées sur la nature en collectivité (Bourgogne-Franche-Comté), poste qualifié senior avec lien climat",
     "borderline": false
+  },
+  "ingénieur de recherche en transition des systèmes alimentaires (h/f)|cnrs": {
+    "keep": true,
+    "reason": "Poste de recherche en transition des systèmes alimentaires aligné sur les enjeux climat/durabilité, niveau ingénieur senior, entreprise ciblée (CNRS)",
+    "borderline": false
+  },
+  "ingénieur devops h/f|nexton": {
+    "keep": false,
+    "reason": "Métier tech (DevOps) incompatible avec le profil",
+    "borderline": false
+  },
+  "contrôleur/contrôleuse de gestion|opéra national de paris": {
+    "keep": false,
+    "reason": "Contrôleur de gestion, hors climat/stratégie",
+    "borderline": false
+  },
+  "chargé·e d'affaires et du développement en sciences économiques - f/h|université aix-marseille": {
+    "keep": false,
+    "reason": "Chargé d'affaires en sciences économiques, hors climat/stratégie",
+    "borderline": false
+  },
+  "chargé d’étude en géomatique/modélisation des données f/h|safege": {
+    "keep": false,
+    "reason": "Géomatique/modélisation des données, hors climat/stratégie",
+    "borderline": false
+  },
+  "chargé(e) de mission recherche, evaluation et projets transversaux|choisir le service public": {
+    "keep": true,
+    "reason": "Chargé de mission recherche/évaluation en IEP Aix, lien possible avec politiques publiques climat mais description trop générique (borderline)",
+    "borderline": true
+  },
+  "ingénieur développement logiciel f/h|assystem": {
+    "keep": false,
+    "reason": "Développement logiciel, hors climat/stratégie",
+    "borderline": false
+  },
+  "chargé(e) de trésorerie & financement|enoe energie": {
+    "keep": false,
+    "reason": "Trésorerie/finance, hors climat/stratégie",
+    "borderline": false
+  },
+  "chargé(e) d'études électrotechniques f/h|csti groupe": {
+    "keep": false,
+    "reason": "Études électrotechniques, hors climat/stratégie",
+    "borderline": false
+  },
+  "chargé(e) d'ordonnancement et coordination industrielle confirmé(e) h/f|csti groupe": {
+    "keep": false,
+    "reason": "Ordonnancement industriel, hors climat/stratégie",
+    "borderline": false
+  },
+  "ingénieur environnement icpe h/f|ortec group": {
+    "keep": false,
+    "reason": "Ingénieur environnement ICPE (technique terrain), hors stratégie/conseil",
+    "borderline": false
+  },
+  "dsrt - adjoint(e) au responsable de l'unité conseil aux territoires (uct) h/f|choisir le service public": {
+    "keep": true,
+    "reason": "Adjoint au responsable conseil aux territoires (ANAH) = poste stratégique climat/politiques publiques",
+    "borderline": false
+  },
+  "werkstudent/in (w/m/d) supply chain coordination and support|leadership & sustainability": {
+    "keep": false,
+    "reason": "Stage/alternance en supply chain, hors séniorité",
+    "borderline": false
+  },
+  "associate director/director, project development|wunder capital": {
+    "keep": true,
+    "reason": "Associate Director en développement de projets solaires = stratégie climat senior (télétravail)",
+    "borderline": false
+  },
+  "associate project manager, project development|wunder capital": {
+    "keep": true,
+    "reason": "Associate Project Manager en développement de projets solaires = stratégie climat senior (télétravail)",
+    "borderline": false
+  },
+  "climate tech - sales development representative dach (m/f/d)|global changer": {
+    "keep": true,
+    "reason": "Sales Development Representative pour Climate Tech = stratégie climat senior (télétravail)",
+    "borderline": false
+  },
+  "responsable de secteur btob - 69 - réseau pro outillage / bâtiment f/h|delassalle & partners - connecting values": {
+    "keep": false,
+    "reason": "Responsable secteur BtoB commercial, hors climat/stratégie",
+    "borderline": false
   }
 }
