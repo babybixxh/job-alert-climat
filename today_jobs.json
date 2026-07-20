@@ -13,6 +13,19 @@
     "is_new": false
   },
   {
+    "id": "5806522682",
+    "title": "Ingénieur de recherche en transition des systèmes alimentaires (H/F)",
+    "company": "CNRS",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5806522682?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots Missions : Au sein de l’UMR PjSE, vous serez chargé d’étudier la transition écologique des systèmes alimentaires, avec e...",
+    "salary": "",
+    "date": "2026-07-18T23:53:04Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "is_new": false
+  },
+  {
     "id": "4743240",
     "title": "Conseiller(ère) en Transition Énergétique et Écologique en Santé (H/F)",
     "company": "Fondation Léopold Bellan - Siège",
@@ -54,17 +67,6 @@
     "location": "75 - PARIS",
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/210ZQJQ",
     "description": "Fondée en 2023, Cedrus est une startup engagée qui repense la rénovation énergétique et la décarbonation à grande échelle.\n\nÀ la croisée de l'énergie,...",
-    "source": "France Travail",
-    "borderline": false,
-    "is_new": false
-  },
-  {
-    "id": "210BFKN",
-    "title": "Ingénieur(e) ou Expert(e) en décarbonation des procédés industrie (H/F)",
-    "company": "YNERGIE",
-    "location": "75 - PARIS 09",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/210BFKN",
-    "description": "Depuis 2016, Ynergie accompagne les professionnels et les particuliers dans la réduction de leur consommation d'énergie et la décarbonation des sites ...",
     "source": "France Travail",
     "borderline": false,
     "is_new": false
@@ -193,17 +195,6 @@
     "is_new": false
   },
   {
-    "id": "https://choisirleservicepublic.gouv.fr/offre-emploi/chef-du-ple-environnement-et-risques-majeurs---commune-de-cabries-reference-O013260708002189/",
-    "title": "CHEF DU PÔLE ENVIRONNEMENT ET RISQUES MAJEURS - COMMUNE DE CABRIES",
-    "company": "Fonction publique",
-    "location": "Bouches-du-Rhône (Marseille)",
-    "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/chef-du-ple-environnement-et-risques-majeurs---commune-de-cabries-reference-O013260708002189/",
-    "description": "",
-    "source": "Service Public",
-    "borderline": false,
-    "is_new": false
-  },
-  {
     "id": "https://choisirleservicepublic.gouv.fr/offre-emploi/gestionnaire-nergie-et-transition-cologique---commune-de-chateaurenard-reference-O013260630001691/",
     "title": "Gestionnaire Énergie et Transition Écologique - COMMUNE DE CHATEAURENARD",
     "company": "Fonction publique",
@@ -236,6 +227,32 @@
     "description": "The world's leading platform for climate careers. Accelerating climate solutions by building products, programs, and community to support the climate ",
     "salary": "",
     "date": "2026-06-03T09:12:26.257Z",
+    "source": "Remote EU",
+    "borderline": false,
+    "is_new": false
+  },
+  {
+    "id": "61424615",
+    "title": "Associate Director/Director, Project Development",
+    "company": "Wunder Capital",
+    "location": "Remote",
+    "url": "https://climatebase.org/job/associate-director-director-project-development-61424615",
+    "description": "Accelerating solar energy adoption to combat climate change.",
+    "salary": "",
+    "date": "2026-07-19T04:06:45.114Z",
+    "source": "Remote EU",
+    "borderline": false,
+    "is_new": false
+  },
+  {
+    "id": "48167916",
+    "title": "Associate Project Manager, Project Development",
+    "company": "Wunder Capital",
+    "location": "Remote",
+    "url": "https://climatebase.org/job/associate-project-manager-project-development-48167916",
+    "description": "Accelerating solar energy adoption to combat climate change.",
+    "salary": "",
+    "date": "2026-07-19T04:06:45.114Z",
     "source": "Remote EU",
     "borderline": false,
     "is_new": false
@@ -340,6 +357,19 @@
     "description": "Poste à pourvoir dès que possible et jusqu’au 31/12/2027 - Temps plein - Poste basé à Angers  Au sein du Pôle Mutations Economiques, vous assurez auprès de PME industrielles un accompagnement individu...",
     "salary": "A négocier",
     "date": "2026-06-23T07:40:40.000+0000",
+    "source": "APEC",
+    "borderline": false,
+    "is_new": false
+  },
+  {
+    "id": "178961586W",
+    "title": "Responsable QHSE-RSE F/H",
+    "company": "HOREA CONSEIL",
+    "location": "Saulgé - 86",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/178961586W",
+    "description": "Dans un contexte de structuration et de montée en maturité des démarches Qualité, Sécurité et RSE, nous recrutons le futur(e) Responsable QHSE – RSE Groupe. Rattaché(e) directement au Président du Gro...",
+    "salary": "A partir de 36 k€ brut annuel",
+    "date": "2026-06-29T13:23:39.000+0000",
     "source": "APEC",
     "borderline": false,
     "is_new": false
@@ -592,80 +622,15 @@
     "is_new": false
   },
   {
-    "id": "5806522682",
-    "title": "Ingénieur de recherche en transition des systèmes alimentaires (H/F)",
-    "company": "CNRS",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5806522682?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Missions : Au sein de l’UMR PjSE, vous serez chargé d’étudier la transition écologique des systèmes alimentaires, avec e...",
-    "salary": "",
-    "date": "2026-07-18T23:53:04Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "is_new": true
-  },
-  {
-    "id": "5806559949",
-    "title": "Chargé(e) de mission Recherche, Evaluation et Projets transversaux",
-    "company": "Choisir le Service Public",
-    "location": "Aix en Provence Sud-Ouest, Aix-en-Provence",
-    "url": "https://www.adzuna.fr/details/5806559949?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Informations générales Organisme de rattachement Institut d'Etudes Politiques d'Aix en Provence Référence 2026-2354823 Date de début de diffusion 17/0...",
-    "salary": "",
-    "date": "2026-07-19T00:07:45Z",
-    "source": "Adzuna",
-    "borderline": true,
-    "is_new": true
-  },
-  {
-    "id": "5806465552",
-    "title": "DSRT - Adjoint(e) au responsable de l'unité conseil aux territoires (UCT) H/F",
-    "company": "Choisir le Service Public",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5806465552?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Informations générales Organisme de rattachement Agence Nationale de l'Habitat (ANAH) Référence 2026-2239517 Date de début de diffusion 17/07/2026 Dat...",
-    "salary": "",
-    "date": "2026-07-18T23:42:51Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "is_new": true
-  },
-  {
-    "id": "61424615",
-    "title": "Associate Director/Director, Project Development",
-    "company": "Wunder Capital",
-    "location": "Remote",
-    "url": "https://climatebase.org/job/associate-director-director-project-development-61424615",
-    "description": "Accelerating solar energy adoption to combat climate change.",
-    "salary": "",
-    "date": "2026-07-19T04:06:45.114Z",
-    "source": "Remote EU",
-    "borderline": false,
-    "is_new": true
-  },
-  {
-    "id": "48167916",
-    "title": "Associate Project Manager, Project Development",
-    "company": "Wunder Capital",
-    "location": "Remote",
-    "url": "https://climatebase.org/job/associate-project-manager-project-development-48167916",
-    "description": "Accelerating solar energy adoption to combat climate change.",
-    "salary": "",
-    "date": "2026-07-19T04:06:45.114Z",
-    "source": "Remote EU",
-    "borderline": false,
-    "is_new": true
-  },
-  {
-    "id": "74812711",
-    "title": "Climate Tech - Sales Development Representative DACH (m/f/d)",
-    "company": "Global Changer",
-    "location": "Remote",
-    "url": "https://climatebase.org/job/climate-tech-sales-development-representative-dach-m-f-d-74812711",
-    "description": "Efficient platform guiding B2B to swift Net-Zero emissions with automated data solutions.",
-    "salary": "",
-    "date": "2026-07-18T14:20:35.989Z",
-    "source": "Remote EU",
+    "id": "179073128W",
+    "title": "Chargé de mission Climat, GEMAPI et Biodiversité F/H",
+    "company": "CC BIEVRE ISERE",
+    "location": "Saint-Étienne-de-Saint-Geoirs - 38",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179073128W",
+    "description": "Vous animez et évaluez le Plan Climat Air Energie Territorial (PCAET) 2021-2026 :  Vous initiez et pilotez la révision du PCAET, en lien avec la révision du PLUi ;.  Vous assurez l’animation via les i...",
+    "salary": "28 - 48 k€ brut annuel",
+    "date": "2026-07-20T07:48:39.000+0000",
+    "source": "APEC",
     "borderline": false,
     "is_new": true
   }

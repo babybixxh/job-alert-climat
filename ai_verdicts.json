@@ -4749,5 +4749,40 @@
     "keep": false,
     "reason": "Responsable secteur BtoB commercial, hors climat/stratégie",
     "borderline": false
+  },
+  "director ai platform & products (m/w/d)|ldb gruppe": {
+    "keep": false,
+    "reason": "métier tech/produit/data (AI Platform & Products) - hors climat/durabilité",
+    "borderline": false
+  },
+  "werkstudent (m/w/d) marketing & e-commerce (remote)|aylashes": {
+    "keep": false,
+    "reason": "marketing/commercial - hors climat/durabilité",
+    "borderline": false
+  },
+  "influencer marketing manager (m/w/d)|heilborn marketing": {
+    "keep": false,
+    "reason": "marketing/influenceur - hors climat/durabilité",
+    "borderline": false
+  },
+  "document control and records specialist|oklo": {
+    "keep": false,
+    "reason": "tech/nuclear (fission) - hors climat/durabilité",
+    "borderline": false
+  },
+  "advisory services graduate (multiple locations)|aecom": {
+    "keep": false,
+    "reason": "poste junior (graduate) - hors séniorité",
+    "borderline": false
+  },
+  "chargé de mission climat, gemapi et biodiversité f/h|cc bievre isere": {
+    "keep": true,
+    "reason": "chargé de mission climat/transition en collectivité (PCAET) - correspond au profil et localisation PACA éligible",
+    "borderline": false
+  },
+  "chargé d'affaires maintenance f/h|eimi": {
+    "keep": false,
+    "reason": "technique/maintenance - hors climat/durabilité",
+    "borderline": false
   }
 }
