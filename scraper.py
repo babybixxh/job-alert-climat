@@ -27,7 +27,6 @@ KEYWORDS = [
     "transition écologique",
     "chargé mission climat",
     "décarbonation",
-    "RSE climat",
     "politiques climatiques",
     "responsable développement durable",
     "chargé de mission développement durable",
@@ -39,7 +38,7 @@ LOCATIONS = ["Paris", "Marseille", "Aix-en-Provence", "Toulon", "Nice"]
 # l'utilisateur lit l'anglais et le français, donc on couvre les deux.
 REMOTE_KEYWORDS = [
     "climate", "sustainability", "carbon", "ESG", "decarbonization",
-    "climat", "durable", "carbone", "RSE",
+    "climat", "durable", "carbone",
     # Axe risque physique / adaptation / agri-climat (surtout offres remote EN)
     "climate risk", "physical risk", "adaptation", "resilience",
     "nature-based", "natural capital", "catastrophe", "cat model",
@@ -88,8 +87,8 @@ EXCLUSIONS = [
     "ingénieur mécanique", "projeteur",
     "paysagiste", "paysager", "espaces verts",
     # Recentrage sur climat-risque/adaptation/agri (demandé) : on écarte les
-    # domaines connexes non ciblés. NB : « RSE » n'est PAS exclu ici (cœur du
-    # repli PACA d'Arnaud) — voir discussion.
+    # domaines connexes non ciblés. (« RSE » est traité à part via is_rse_title,
+    # en mot entier, pour ne pas bloquer par erreur « diverse », « traverse »…)
     "qhse", "compliance", "conformité",
     "efficacité énergétique", "energy efficiency",
     "hydrogène", "hydrogen", "batterie", "battery",
@@ -107,7 +106,7 @@ AI_VERDICTS_MAX = 3000
 # Version du prompt/règles IA. À incrémenter dès qu'on modifie le PROFILE ou les
 # règles de décision : les verdicts en cache d'une version antérieure sont alors
 # ré-évalués (sinon d'anciennes décisions périmées seraient rejouées).
-AI_PROMPT_VERSION = 6
+AI_PROMPT_VERSION = 7
 
 # Suivi de la santé des sources : pour chaque source, nombre de jours
 # consécutifs sans aucune offre brute (parseur potentiellement cassé).
@@ -287,10 +286,13 @@ Il cherche un poste de consultant climat senior, chargé de mission climat, ou e
 publiques climatiques à Marseille, en PACA ou full télétravail (ou Paris).
 Il veut travailler dans un cabinet conseil renommé, une agence publique (ADEME, Région, Métropole),
 ou une ONG/think tank influent. À Marseille et en PACA (sa zone prioritaire), il est aussi ouvert à
-des postes qualifiés de responsable/chargé de RSE ou de développement durable en entreprise, de chargé
+des postes qualifiés de développement durable / transition écologique en entreprise, de chargé
 de mission développement durable / transition en collectivité ou établissement public, ou de coordination
 de projets environnement / économie circulaire en association ou dans l'ESS ; à Paris il vise en priorité
 le conseil et la stratégie climat.
+IMPORTANT : il ne veut PLUS de postes de RSE générique (responsable/chargé RSE, responsabilité
+sociétale) — ces offres sont déjà écartées en amont ; concentre-toi sur climat/carbone,
+risque physique/adaptation et agri-climat.
 Il est aussi TRÈS intéressé par les éditeurs de logiciels de comptabilité carbone / plateformes
 data-climat & ESG (Sweep, Greenly, Sami, Traace, Carbometrix, Carbonfact, Watershed, Plan A,
 Normative, EcoVadis, Deepki, Kayrros, AXA Climate, Descartes, Metron…), où son profil ingénieur +
@@ -439,6 +441,16 @@ def is_remote_location(value):
     text = (value or "").lower()
     return any(term in text for term in
               ["remote", "télétravail", "teletravail", "anywhere", "full remote"])
+
+
+# Détection RSE en MOT ENTIER (recentrage : Arnaud exclut désormais la RSE
+# générique). Évite les faux positifs des sous-chaînes (« diverse », « traverse »).
+_RSE_RE = re.compile(r"\brse\b|responsabilit[ée]\s+soci[ée]tale|responsabilit[ée]\s+sociale",
+                     re.IGNORECASE)
+
+
+def is_rse_title(title):
+    return bool(_RSE_RE.search(title or ""))
 
 
 # Seuil « salaire élevé » (en k€) pour la sous-section dédiée de l'email.
@@ -1674,17 +1686,18 @@ Offres du jour à évaluer :
 
 RÈGLES DE DÉCISION (applique-les strictement) :
 
-GARDE UNIQUEMENT si le poste porte VRAIMENT sur le climat / la durabilité / la RSE
-au niveau stratégie ou conseil, ET correspond à la séniorité du candidat (confirmé,
-pas junior). Exemples à garder : consultant·e climat/carbone/RSE, chargé·e de mission
+GARDE UNIQUEMENT si le poste porte VRAIMENT sur le climat / la durabilité au niveau
+stratégie ou conseil, ET correspond à la séniorité du candidat (confirmé,
+pas junior). Exemples à garder : consultant·e climat/carbone, chargé·e de mission
 climat ou transition, expert·e politiques publiques climat, manager décarbonation,
-responsable RSE stratégique, chef·fe de projet bilan carbone / stratégie bas-carbone.
+chef·fe de projet bilan carbone / stratégie bas-carbone.
+NB : la RSE générique est déjà écartée en amont — ne « repêche » pas un poste RSE.
 
 ADAPTATION SELON LE LIEU (applique-la avant de trancher) :
 - LIEU contenant Marseille, Aix, Toulon, Nice, PACA, Provence, Bouches-du-Rhône, ou en
   télétravail : ÉLARGIS les critères « garde ». En plus du conseil/stratégie, garde aussi les
-  postes QUALIFIÉS (confirmé/senior, pas junior) de : responsable ou chargé·e de RSE /
-  développement durable EN ENTREPRISE ; chargé·e de mission développement durable / transition
+  postes QUALIFIÉS (confirmé/senior, pas junior) de : développement durable EN ENTREPRISE ;
+  chargé·e de mission développement durable / transition
   écologique / climat / énergie en COLLECTIVITÉ ou ÉTABLISSEMENT PUBLIC (Région, Métropole,
   ADEME, EPCI…) ; coordination ou chef·fe de projet environnement / économie circulaire /
   transition en ASSOCIATION ou ESS. Les rejets absolus ci-dessous s'appliquent quand même.
@@ -2210,6 +2223,12 @@ if __name__ == "__main__":
         if is_company_excluded(job.get("company", "")):
             log_excluded(job["title"], job["company"], job.get("location", ""),
                          job.get("source", ""), "employeur exclu")
+            continue
+        # Recentrage : on écarte la RSE générique (mot entier), partout, y
+        # compris chez une entreprise suivie.
+        if is_rse_title(job.get("title", "")):
+            log_excluded(job["title"], job["company"], job.get("location", ""),
+                         job.get("source", ""), "RSE exclu (recentrage risque/adaptation)")
             continue
         filtered_jobs.append(job)
     all_jobs = filtered_jobs
