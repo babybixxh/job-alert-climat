@@ -20,6 +20,9 @@ KEYWORDS = [
     "consultant transition",
     "climate solutions consultant",
     "carbon analyst",
+    "risque climatique",
+    "adaptation climatique",
+    "climate risk analyst",
     "bilan carbone",
     "transition écologique",
     "chargé mission climat",
@@ -37,6 +40,10 @@ LOCATIONS = ["Paris", "Marseille", "Aix-en-Provence", "Toulon", "Nice"]
 REMOTE_KEYWORDS = [
     "climate", "sustainability", "carbon", "ESG", "decarbonization",
     "climat", "durable", "carbone", "RSE",
+    # Axe risque physique / adaptation / agri-climat (surtout offres remote EN)
+    "climate risk", "physical risk", "adaptation", "resilience",
+    "nature-based", "natural capital", "catastrophe", "cat model",
+    "parametric", "agtech", "climate modelling", "climate modeling", "TCFD",
 ]
 
 # Communes trop excentrées à écarter même quand elles ressortent comme
@@ -80,6 +87,13 @@ EXCLUSIONS = [
     "ingénieur travaux", "ingénieur calcul", "ingénieur hydraulique",
     "ingénieur mécanique", "projeteur",
     "paysagiste", "paysager", "espaces verts",
+    # Recentrage sur climat-risque/adaptation/agri (demandé) : on écarte les
+    # domaines connexes non ciblés. NB : « RSE » n'est PAS exclu ici (cœur du
+    # repli PACA d'Arnaud) — voir discussion.
+    "qhse", "compliance", "conformité",
+    "efficacité énergétique", "energy efficiency",
+    "hydrogène", "hydrogen", "batterie", "battery",
+    "solaire", "solar", "photovoltaïque", "photovoltaique",
 ]
 
 SEEN_FILE = "seen_jobs.json"
@@ -93,7 +107,7 @@ AI_VERDICTS_MAX = 3000
 # Version du prompt/règles IA. À incrémenter dès qu'on modifie le PROFILE ou les
 # règles de décision : les verdicts en cache d'une version antérieure sont alors
 # ré-évalués (sinon d'anciennes décisions périmées seraient rejouées).
-AI_PROMPT_VERSION = 5
+AI_PROMPT_VERSION = 6
 
 # Suivi de la santé des sources : pour chaque source, nombre de jours
 # consécutifs sans aucune offre brute (parseur potentiellement cassé).
@@ -164,6 +178,11 @@ WTTJ_COMPANIES = {
     "watershed": "Watershed",
     "plan-a": "Plan A",
     "normative": "Normative",
+    "isometric": "Isometric",
+    "nelson": "Nelson",
+    "persefoni": "Persefoni",
+    "sinai": "Sinai Technologies",
+    "carbonchain": "CarbonChain",
     # Data ESG / CSRD
     "ecovadis": "EcoVadis",
     "deepki": "Deepki",
@@ -179,6 +198,41 @@ WTTJ_COMPANIES = {
     "murmuration": "Murmuration",
     "finres": "Finres",
     "resallience": "Resallience",
+    # Assurance / réassurance / risque physique (beaucoup d'anglophones UK/US :
+    # remonteront surtout en remote ou pas du tout via nos sources FR)
+    "howden": "Howden",
+    "marsh-mclennan": "Marsh McLennan",
+    "aon": "Aon",
+    "wtw": "WTW",
+    "guy-carpenter": "Guy Carpenter",
+    "scor": "SCOR",
+    "swiss-re": "Swiss Re",
+    "munich-re": "Munich Re",
+    "jupiter-intelligence": "Jupiter Intelligence",
+    "cervest": "Cervest",
+    "climate-x": "Climate X",
+    "mitiga-solutions": "Mitiga Solutions",
+    "xdi": "XDI",
+    "sust-global": "Sust Global",
+    "kettle": "Kettle",
+    "iceye": "ICEYE",
+    "moodys-rms": "Moody's RMS",
+    "fathom": "Fathom",
+    "riskthinking-ai": "riskthinking.AI",
+    # Institutions / think tanks / standards (publient surtout sur leurs sites)
+    "eea": "European Environment Agency",
+    "i4ce": "I4CE",
+    "climate-bonds-initiative": "Climate Bonds Initiative",
+    "wri": "WRI",
+    "climate-analytics": "Climate Analytics",
+    "iddri": "IDDRI",
+    "carbon-tracker": "Carbon Tracker",
+    "2dii": "2 Investing Initiative",
+    "climateworks": "ClimateWorks",
+    "cadmus": "Cadmus",
+    "icf": "ICF",
+    "wsp": "WSP",
+    "ramboll": "Ramboll",
     # Agro × climat : agtech carbone, transition agricole, agri-data
     "soil-capital": "Soil Capital",
     "rize-ag": "Rize",
@@ -188,6 +242,13 @@ WTTJ_COMPANIES = {
     "itk": "ITK",
     "sencrop": "Sencrop",
     "weenat": "Weenat",
+    "carbonfarm": "CarbonFarm",
+    "klim": "Klim",
+    "boomitra": "Boomitra",
+    "regrow": "Regrow",
+    "cropin": "Cropin",
+    "aqysta": "aQysta",
+    "perennial": "Perennial",
     # Industriels agroalimentaires et coopératives (postes internes
     # décarbonation/climat ; le filtre IA ne garde que les rôles climat)
     "danone": "Danone",
@@ -238,12 +299,25 @@ Consultant, Climate Expert, Carbon Analyst, Implementation / Onboarding Consulta
 Engineer / Sales Engineer (avant-vente technique), Carbon Accounting Methodologist / Methodology
 Expert, Climate Risk Analyst, et à moyen terme Product Manager. Il code sur son temps libre
 (automatisations LLM), donc le côté « builder » technique est un atout, pas un frein.
-Son SWEET SPOT : l'intersection AGRO × CLIMAT × DATA — carbon farming et MRV agricole
-(Soil Capital, Rize, Agreena, MyEasyCarbon), ACV alimentaire (Carbon Maps), agri-data
-(ITK, Sencrop, Weenat), adaptation et risque climatique physique (AXA Climate, Finres,
-Descartes, Resallience, Callendar), et les postes internes décarbonation / scope 3 / FLAG
-chez les industriels agroalimentaires et coopératives (Danone, Bel, Bonduelle, Roquette,
-Savencia, InVivo, Sodiaal, Terrena) : donne un score élevé à ces profils de poste.
+Son SWEET SPOT (score le PLUS élevé) : l'intersection AGRO × CLIMAT × DATA et le
+RISQUE CLIMATIQUE PHYSIQUE / ADAPTATION :
+- carbon farming et MRV agricole (Soil Capital, Rize, Agreena, MyEasyCarbon, Klim,
+  Boomitra, Regrow, Perennial), ACV alimentaire (Carbon Maps), agri-data (ITK, Sencrop, Weenat) ;
+- risque climatique physique, adaptation, résilience, catastrophe / cat modelling,
+  assurance paramétrique, nature-based solutions, natural capital (AXA Climate, Finres,
+  Descartes, Resallience, Callendar, Cervest, Jupiter, Climate X, Mitiga, XDI, ICEYE,
+  Moody's RMS, Fathom, réassureurs) ;
+- postes internes décarbonation / scope 3 / FLAG chez les industriels agroalimentaires et
+  coopératives (Danone, Bel, Bonduelle, Roquette, Savencia, InVivo, Sodiaal, Terrena) ;
+- think tanks / standards climat (I4CE, IDDRI, WRI, Climate Analytics, Carbon Tracker,
+  Climate Bonds Initiative).
+Intitulés très recherchés : Climate Risk Analyst, Physical Climate Risk, Climate Adaptation /
+Adaptation Specialist, Resilience Analyst, Nature-based Solutions, Natural Capital, Climate Data
+Analyst, Climate Modelling, Catastrophe / Cat Modelling, Parametric Insurance, TCFD, Climate
+Scenario Analysis, Agri Climate Specialist, Climate Product Manager.
+Compétences qui font mouche (bonus de score si présentes) : GHG Protocol, SBTi, ACT, Bilan
+Carbone, CSRD, GIS/SIG, Python, scénarios climatiques (RCP/IPCC), downscaling, hazard modelling,
+vulnerability assessment. Donne un score élevé aux postes de cette zone.
 Il ne veut PAS de postes terrain, techniciens (maintenance/chantier), nucléaire,
 achats, RH, finance/comptabilité, stages ou alternances.
 """
