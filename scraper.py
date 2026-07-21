@@ -435,6 +435,32 @@ def is_paris_location(value):
     return any(term in text for term in PARIS_TERMS)
 
 
+def is_remote_location(value):
+    text = (value or "").lower()
+    return any(term in text for term in
+              ["remote", "télétravail", "teletravail", "anywhere", "full remote"])
+
+
+# Seuil « salaire élevé » (en k€) pour la sous-section dédiée de l'email.
+HIGH_SALARY_K = 55
+
+
+def salary_max_k(value):
+    """Extrait le plus haut montant annuel d'un libellé de salaire, en k€.
+    Gère « 40 k€ – 55 k€ » (suffixe k) et « 45 000 - 55 000 € » (montant plein).
+    Renvoie None si rien d'exploitable."""
+    if not value:
+        return None
+    t = str(value).lower().replace("\xa0", " ").replace(" ", " ")
+    vals = [int(x) for x in re.findall(r"(\d{2,3})\s*k", t)]
+    for x in re.findall(r"\d[\d ]{3,}\d", t):
+        n = int(x.replace(" ", ""))
+        if n >= 1000:
+            vals.append(round(n / 1000))
+    vals = [v for v in vals if 15 <= v <= 500]
+    return max(vals) if vals else None
+
+
 def is_location_excluded(value):
     text = (value or "").lower()
     return any(term in text for term in LOCATION_EXCLUSIONS)
@@ -2043,7 +2069,18 @@ def build_email(jobs, feedback_url, excluded_log=None, disappeared=None, health_
     body += section_html("Entreprises ciblées", "🏢", watchlist, "#0a5c54")
     if (marseille or paca or watchlist) and paris:
         body += '<hr style="border:0.5px solid #e0e0e0;margin:1rem 0">'
-    body += section_html("Hors PACA &amp; télétravail", "🔴", paris, "#993c1d")
+    # Section « Hors PACA » découpée en sous-catégories : télétravail, salaire
+    # élevé, puis le reste (Paris & autres villes). Buckets exclusifs, dans cet
+    # ordre de priorité (une offre remote bien payée va dans Télétravail).
+    remote_jobs = [j for j in paris if is_remote_location(j.get("location", ""))]
+    used = {id(j) for j in remote_jobs}
+    high_sal = [j for j in paris if id(j) not in used
+                and (salary_max_k(j.get("salary", "")) or 0) >= HIGH_SALARY_K]
+    used |= {id(j) for j in high_sal}
+    autres = [j for j in paris if id(j) not in used]
+    body += section_html("Télétravail / Remote", "🏠", remote_jobs, "#1f7a99")
+    body += section_html(f"Salaire élevé (≥ {HIGH_SALARY_K} k€)", "💰", high_sal, "#7a5b00")
+    body += section_html("Autres — Paris &amp; France", "🔴", autres, "#993c1d")
     body += disappeared_section_html(disappeared or [])
     body += excluded_section_html(excluded_log or [])
     body += health_footer_html(health_alerts or [])
