@@ -4784,5 +4784,150 @@
     "keep": false,
     "reason": "technique/maintenance - hors climat/durabilité",
     "borderline": false
+  },
+  "conducteur/trice poids lourd - métropole aix-marseille-provence (cadre de vie)|fonction publique territoriale": {
+    "keep": false,
+    "reason": "poste technique terrain (conducteur poids lourd), hors climat/stratégie",
+    "borderline": false
+  },
+  "cfo - leveur de fonds|venturix": {
+    "keep": false,
+    "reason": "CFO / levée de fonds, hors climat/stratégie",
+    "borderline": false
+  },
+  "responsable ingéniérie d'offres h/f|spie industrie": {
+    "keep": false,
+    "reason": "responsable ingénierie d'offres technique, hors climat/stratégie",
+    "borderline": false
+  },
+  "préparateur d'essais / magasinier h/f|spie industrie": {
+    "keep": false,
+    "reason": "préparateur d'essais / magasinier, poste technique terrain, hors climat/stratégie",
+    "borderline": false
+  },
+  "juriste m/a et financement h/f|tenergie": {
+    "keep": false,
+    "reason": "juriste M&A et financement, hors climat/stratégie",
+    "borderline": false
+  },
+  "mitarbeiter (m/w/d) in verwaltung - administration (m/w/d) 25h/w|unaice gmbh": {
+    "keep": false,
+    "reason": "administration / gestion, hors climat/stratégie",
+    "borderline": false
+  },
+  "projektingenieur wegerecht & genehmigungsmanagement (all genders)|accenture": {
+    "keep": false,
+    "reason": "projektingenieur (ingénierie technique), hors climat/stratégie",
+    "borderline": false
+  },
+  "fullstack softwareentwickler (m/w/d)|tecfox gmbh": {
+    "keep": false,
+    "reason": "développeur fullstack, hors climat/stratégie",
+    "borderline": false
+  },
+  "creative strategist (m/w/d) - 100% remote % freelance - 35h+/woche & t|time to hire": {
+    "keep": false,
+    "reason": "creative strategist (marketing), hors climat/stratégie",
+    "borderline": false
+  },
+  "werkstudent/in (w/m/d) supply chain coordination and support|leadership advantage gmbh / leadership & sustainability karin ekberg gmbh": {
+    "keep": false,
+    "reason": "werkstudent supply chain, junior/stage, hors climat/stratégie",
+    "borderline": false
+  },
+  "recruiting specialist (all genders) - befristet auf 14 monate|jakala germany gmbh": {
+    "keep": false,
+    "reason": "recruiting specialist, hors climat/stratégie",
+    "borderline": false
+  },
+  "product designer|transect": {
+    "keep": false,
+    "reason": "product designer (tech), hors climat/stratégie",
+    "borderline": false
+  },
+  "field coordinator|pur projet": {
+    "keep": false,
+    "reason": "field coordinator (terrain), hors climat/stratégie",
+    "borderline": false
+  },
+  "commissioning manager|enlight renewable energy": {
+    "keep": false,
+    "reason": "commissioning manager (technique), hors climat/stratégie",
+    "borderline": false
+  },
+  "product manager - acquisition (f/m/x) - remote|refurbed": {
+    "keep": false,
+    "reason": "product manager (tech), hors climat/stratégie",
+    "borderline": false
+  },
+  "early career - policy principal - dmee|advanced energy economy": {
+    "keep": true,
+    "reason": "policy principal (stratégie climat/énergie, remote, correspond au profil)",
+    "borderline": false
+  },
+  "chief operating officer|blue forest": {
+    "keep": false,
+    "reason": "COO (finance/opérations), hors climat/stratégie",
+    "borderline": false
+  },
+  "software engineer - (connect platform)|enode": {
+    "keep": false,
+    "reason": "software engineer (tech), hors climat/stratégie",
+    "borderline": false
+  },
+  "senior software engineer - (connect platform)|enode": {
+    "keep": false,
+    "reason": "senior software engineer (tech), hors climat/stratégie",
+    "borderline": false
+  },
+  "product owner, integrated business planning|scout motors": {
+    "keep": false,
+    "reason": "product owner (tech), hors climat/stratégie",
+    "borderline": false
+  },
+  "principal, solutions architect|scout motors": {
+    "keep": false,
+    "reason": "solutions architect (tech), hors climat/stratégie",
+    "borderline": false
+  },
+  "campus project lead|sb energy devco (us) inc.": {
+    "keep": false,
+    "reason": "campus project lead (énergie renouvelable mais rôle opérationnel, hors stratégie/conseil)",
+    "borderline": false
+  },
+  "consultant efficacité énergie & environnement f/h|teeo": {
+    "keep": true,
+    "reason": "consultant efficacité énergie & environnement (stratégie climat, Bordeaux mais éligible PACA/remote)",
+    "borderline": false
+  },
+  "responsable missions transversales ? hsqe et données patrimoniales f/h|université de lille - direction générale déléguée à la transition ecologique, à l'immobilier et à la logistique (teil)": {
+    "keep": true,
+    "reason": "responsable missions transversales HSQE et données patrimoniales (lien climat mais rôle mixte, borderline)",
+    "borderline": true
+  },
+  "commercial - financements publics - secteur agroalimentaire f/h|hellowork": {
+    "keep": false,
+    "reason": "commercial financements publics (vente), hors climat/stratégie",
+    "borderline": false
+  },
+  "chargé d'affaires cvc màbdc f/h|hellowork": {
+    "keep": false,
+    "reason": "poste technique (CVC) sans lien clair avec climat/stratégie/durabilité",
+    "borderline": false
+  },
+  "ingénieur procédés industriels - décarbonation f/h|hellowork": {
+    "keep": false,
+    "reason": "poste technique (procédés industriels) sans lien clair avec climat/stratégie/durabilité",
+    "borderline": false
+  },
+  "responsable d'exploitation f/h|opensourcing.fr-opensourcing-open-sourcing": {
+    "keep": false,
+    "reason": "poste opérationnel (exploitation) sans lien clair avec climat/stratégie/durabilité",
+    "borderline": false
+  },
+  "responsable transformation durable, qse, rse f/h|ega électricités, ingénierie &amp; applications": {
+    "keep": true,
+    "reason": "poste RSE/transition durable en entreprise, pertinent sur le fond mais niveau de stratégie non clairement confirmé (à vérifier en entretien)",
+    "borderline": true
   }
 }
