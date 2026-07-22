@@ -4929,5 +4929,140 @@
     "keep": true,
     "reason": "poste RSE/transition durable en entreprise, pertinent sur le fond mais niveau de stratégie non clairement confirmé (à vérifier en entretien)",
     "borderline": true
+  },
+  "cdi - chef de projets santé sécurité au travail / rse (h/f)|hermes": {
+    "keep": false,
+    "reason": "poste transverse RH/RSE sans lien clair avec la stratégie climat ou le conseil",
+    "borderline": false
+  },
+  "chargé·e de projet transition écologique et bas carbone h/f|aorif-ush île-de-france": {
+    "keep": true,
+    "reason": "chargé·e de projet transition écologique et bas carbone en collectivité (Île-de-France), poste qualifié et stratégique",
+    "borderline": false
+  },
+  "enseignant chercheur informatique réseaux & pilote cycle ingénieur f/h|association d'enseignement technique superieur dite esaip": {
+    "keep": false,
+    "reason": "poste d'enseignement/recherche en informatique, hors climat/durabilité",
+    "borderline": false
+  },
+  "chargé / chargée de mission agriculture durable (h/f)|cc pays d'apt-luberon": {
+    "keep": true,
+    "reason": "chargé·e de mission agriculture durable et adaptation climatique en collectivité (PACA), poste qualifié et stratégique",
+    "borderline": false
+  },
+  "administrateur systèmes & réseaux - référent technique h/f h/f|spie ics": {
+    "keep": false,
+    "reason": "administrateur systèmes & réseaux, poste technique hors climat/durabilité",
+    "borderline": false
+  },
+  "administrateur/administratrice systèmes & réseaux h/f|spie ics": {
+    "keep": false,
+    "reason": "administrateur systèmes & réseaux, poste technique hors climat/durabilité",
+    "borderline": false
+  },
+  "magasinier (h/f)|actual nice 689": {
+    "keep": false,
+    "reason": "magasinier, poste technique/terrain hors climat/durabilité",
+    "borderline": false
+  },
+  "ingénieur environnement icpe f/h|ortec group": {
+    "keep": false,
+    "reason": "ingénieur environnement ICPE, poste technique/terrain hors stratégie conseil",
+    "borderline": false
+  },
+  "adjoint(e) au chef(fe) du service de l'accueil et de l'hébergement (h/f)|choisir le service public": {
+    "keep": false,
+    "reason": "adjoint·e au chef de service administratif, hors climat/durabilité",
+    "borderline": false
+  },
+  "dsrt - responsable de l'unité appui aux territoires|choisir le service public": {
+    "keep": false,
+    "reason": "responsable unité appui aux territoires (ANAH), poste administratif hors stratégie climat",
+    "borderline": false
+  },
+  "ingénieur - chef de projet construction durable (h/f)|approach people recruitment sarl": {
+    "keep": false,
+    "reason": "ingénieur chef de projet construction durable, poste technique/terrain hors conseil stratégique",
+    "borderline": false
+  },
+  "chargé.e de mission transports & logistique durables f/h|ademe": {
+    "keep": true,
+    "reason": "chargé·e de mission transports & logistique durables à l'ADEME, poste stratégique et qualifié",
+    "borderline": false
+  },
+  "tech & ai specialist (marketing agency)|agencro": {
+    "keep": false,
+    "reason": "tech & AI specialist, poste technique hors climat/durabilité",
+    "borderline": false
+  },
+  "head of direct response & cro (senior)|agencro": {
+    "keep": false,
+    "reason": "head of direct response, poste commercial/marketing hors climat/durabilité",
+    "borderline": false
+  },
+  "hr generalist|nextcloud": {
+    "keep": false,
+    "reason": "HR generalist, poste RH hors climat/durabilité",
+    "borderline": false
+  },
+  "sustainability consultant @ climate tech start-up (m/w/d) - 100% remote möglich|global changer": {
+    "keep": true,
+    "reason": "sustainability consultant en climate tech start-up, poste stratégique et qualifié (télétravail possible)",
+    "borderline": false
+  },
+  "project development manager|antora energy": {
+    "keep": false,
+    "reason": "project development manager, poste technique hors climat/durabilité",
+    "borderline": false
+  },
+  "senior solutions consultant|choco": {
+    "keep": false,
+    "reason": "senior solutions consultant, poste commercial/marketing hors climat/durabilité",
+    "borderline": false
+  },
+  "senior backend engineer (f/m/x) - remote|refurbed": {
+    "keep": false,
+    "reason": "senior backend engineer, poste technique hors climat/durabilité",
+    "borderline": false
+  },
+  "senior fullstack software engineer (f/m/d)|prewave": {
+    "keep": false,
+    "reason": "senior fullstack software engineer, poste technique hors climat/durabilité",
+    "borderline": false
+  },
+  "program manager|uplight": {
+    "keep": false,
+    "reason": "program manager, poste technique hors climat/durabilité",
+    "borderline": false
+  },
+  "accounts payable specialist|recycle track systems": {
+    "keep": false,
+    "reason": "accounts payable specialist, poste finance hors climat/durabilité",
+    "borderline": false
+  },
+  "credit manager|blue forest": {
+    "keep": false,
+    "reason": "credit manager, poste finance hors climat/durabilité",
+    "borderline": false
+  },
+  "senior security engineer|lime": {
+    "keep": false,
+    "reason": "senior security engineer, poste technique hors climat/durabilité",
+    "borderline": false
+  },
+  "market analyst|base power company": {
+    "keep": false,
+    "reason": "market analyst, poste technique hors climat/durabilité",
+    "borderline": false
+  },
+  "staff technical product manager-workshop operations|scout motors": {
+    "keep": false,
+    "reason": "poste tech/produit (Technical Product Manager) sans lien explicite avec le climat/stratégie",
+    "borderline": false
+  },
+  "senior partner manager|too good to go": {
+    "keep": false,
+    "reason": "poste commercial/sales (Partner Manager) sans lien explicite avec le climat/stratégie",
+    "borderline": false
   }
 }
