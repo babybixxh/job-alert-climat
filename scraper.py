@@ -1257,6 +1257,72 @@ def _greenhouse_boards():
     return GREENHOUSE_BOARDS_DEFAULT
 
 
+def search_reliefweb():
+    """ReliefWeb (api.reliefweb.int) : job board ONU / humanitaire / développement,
+    riche en postes climat-adaptation d'organisations internationales (PNUD, UNEP,
+    GCF, GCA…). API JSON publique, un simple `appname` requis. On filtre par
+    mots-clés climat côté requête ; le filtre IA + le plafond de séniorité
+    tranchent ensuite la pertinence. Offres mondiales (Arnaud est ouvert à
+    l'expatriation pour ces institutions)."""
+    # L'API v2 de ReliefWeb exige un appname APPROUVÉ (demande gratuite auprès de
+    # ReliefWeb). Sans le secret RELIEFWEB_APPNAME, la source reste désactivée.
+    appname = os.environ.get("RELIEFWEB_APPNAME", "")
+    if not appname:
+        print("  ReliefWeb: RELIEFWEB_APPNAME absent, source désactivée")
+        return []
+    exclusions = get_exclusions()
+    jobs = []
+    try:
+        r = requests.post(
+            "https://api.reliefweb.int/v2/jobs",
+            params={"appname": appname},
+            json={
+                "limit": 60,
+                "query": {
+                    "value": "climate adaptation carbon resilience mitigation decarbonisation \"climate change\" \"climate finance\"",
+                    "operator": "OR",
+                    "fields": ["title", "body"],
+                },
+                "fields": {"include": ["title", "url", "source.name", "country.name",
+                                       "city.name", "date.created"]},
+                "sort": ["date.created:desc"],
+            },
+            timeout=20,
+        )
+        if r.status_code != 200:
+            print(f"  ReliefWeb → HTTP {r.status_code}")
+            return jobs
+        data = r.json().get("data", [])
+        print(f"  ReliefWeb → {len(data)} offres récupérées")
+        for item in data:
+            f = item.get("fields", {})
+            title = clean_text(f.get("title", ""))
+            if not title:
+                continue
+            source = (f.get("source") or [{}])[0].get("name", "N/A")
+            if any(excl in title.lower() for excl in exclusions):
+                log_excluded(title, source, "", "ReliefWeb", "mot-clé exclu")
+                continue
+            countries = [c.get("name", "") for c in (f.get("country") or []) if c.get("name")]
+            cities = [c.get("name", "") for c in (f.get("city") or []) if c.get("name")]
+            loc_bits = ([cities[0]] if cities else []) + ([countries[0]] if countries else [])
+            location = ", ".join(loc_bits) or "International"
+            jobs.append({
+                "id": f.get("url", str(item.get("id", ""))),
+                "title": title,
+                "company": clean_text(source),
+                "location": location,
+                "url": f.get("url", ""),
+                "description": "",
+                "date": (f.get("date") or {}).get("created", "")[:10],
+                "source": "ReliefWeb",
+            })
+    except Exception as e:
+        print(f"  EXCEPTION ReliefWeb: {e}")
+    print(f"  ReliefWeb total → {len(jobs)} offres")
+    return jobs
+
+
 def search_greenhouse():
     """Boards Greenhouse des entreprises climat suivies : API JSON publique
     sans clé (boards-api.greenhouse.io/v1/boards/<token>/jobs?content=true).
@@ -1970,6 +2036,7 @@ def section_html(title, emoji, jobs, color):
         "Greenhouse": "#1f8a5c",
         "Lever": "#5a4fcf",
         "LinkedIn": "#0a66c2",
+        "ReliefWeb": "#c8102e",
     }
     html = f"""
     <div style="margin:2rem 0 1rem">
@@ -2235,7 +2302,7 @@ if __name__ == "__main__":
     for fn in (search_ademe, search_adzuna_companies, search_jtms,
                search_service_public, search_ess, search_remotive,
                search_arbeitnow, search_climatebase, search_apec,
-               search_greenhouse, search_lever):
+               search_greenhouse, search_lever, search_reliefweb):
         tasks.append((fn, ()))
 
     all_jobs = []
