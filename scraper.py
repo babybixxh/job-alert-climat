@@ -1264,12 +1264,11 @@ def search_reliefweb():
     mots-clés climat côté requête ; le filtre IA + le plafond de séniorité
     tranchent ensuite la pertinence. Offres mondiales (Arnaud est ouvert à
     l'expatriation pour ces institutions)."""
-    # L'API v2 de ReliefWeb exige un appname APPROUVÉ (demande gratuite auprès de
-    # ReliefWeb). Sans le secret RELIEFWEB_APPNAME, la source reste désactivée.
-    appname = os.environ.get("RELIEFWEB_APPNAME", "")
-    if not appname:
-        print("  ReliefWeb: RELIEFWEB_APPNAME absent, source désactivée")
-        return []
+    # L'API v2 de ReliefWeb demande un `appname` (libre, pour le tracking ; cf.
+    # leurs conditions « anyone can use the API »). On en fixe un par défaut ;
+    # surchargé par le secret RELIEFWEB_APPNAME si besoin. NB : « apidoc » est
+    # réservé et renvoie 403 — il faut un nom quelconque distinct.
+    appname = os.environ.get("RELIEFWEB_APPNAME", "") or "job-alert-climat-babybixxh"
     exclusions = get_exclusions()
     jobs = []
     try:
