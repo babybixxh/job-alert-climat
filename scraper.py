@@ -2273,7 +2273,38 @@ def send_priority_alert(jobs):
         print(f"  EXCEPTION notif prioritaire: {e}")
 
 
+def debug_rwrss():
+    """TEMPORAIRE : teste les flux RSS ReliefWeb (l'API v2 exige un appname
+    approuvé). À supprimer ensuite."""
+    ua = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36",
+          "Accept": "application/rss+xml, application/xml, text/xml, */*"}
+    urls = [
+        "https://reliefweb.int/jobs/rss.xml",
+        "https://reliefweb.int/jobs/rss.xml?search=climate",
+        "https://reliefweb.int/updates/rss.xml?primary_type=Job",
+        "https://reliefweb.int/jobs?search=climate",
+    ]
+    for u in urls:
+        try:
+            r = requests.get(u, headers=ua, timeout=20)
+            t = r.text
+            n_items = t.count("<item")
+            print(f"  RWRSS {u} → HTTP {r.status_code} len={len(t)} items={n_items}")
+            if n_items:
+                import re as _re
+                titles = _re.findall(r"<title>(.*?)</title>", t)[1:4]
+                for ti in titles:
+                    print("     -", ti[:80])
+            else:
+                print("     head:", t[:160].replace("\n", " "))
+        except Exception as e:
+            print(f"  RWRSS {u}: ERR {repr(e)[:90]}")
+    raise SystemExit(0)
+
+
 if __name__ == "__main__":
+    if os.environ.get("DEBUG_RWRSS"):
+        debug_rwrss()
     seen_ids = set(load_json(SEEN_FILE, []))
     print(f"{len(seen_ids)} offres déjà vues en mémoire")
     # Offres conservées hier (avant écrasement de TODAY_FILE) : sert à repérer
