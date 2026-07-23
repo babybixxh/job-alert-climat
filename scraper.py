@@ -1264,11 +1264,13 @@ def search_reliefweb():
     mots-clés climat côté requête ; le filtre IA + le plafond de séniorité
     tranchent ensuite la pertinence. Offres mondiales (Arnaud est ouvert à
     l'expatriation pour ces institutions)."""
-    # L'API v2 de ReliefWeb exige un appname APPROUVÉ (demande gratuite auprès de
-    # ReliefWeb). Sans le secret RELIEFWEB_APPNAME, la source reste désactivée.
+    # L'API v2 de ReliefWeb exige un `appname` APPROUVÉ (403 sinon : leur page
+    # d'aide « anyone can use it » est périmée). Il se demande par email à
+    # feedback@reliefweb.int. Sans le secret RELIEFWEB_APPNAME, on saute la
+    # source (le RSS/site est bloqué Cloudflare 202, pas d'alternative).
     appname = os.environ.get("RELIEFWEB_APPNAME", "")
     if not appname:
-        print("  ReliefWeb: RELIEFWEB_APPNAME absent, source désactivée")
+        print("  ReliefWeb: RELIEFWEB_APPNAME absent → source désactivée")
         return []
     exclusions = get_exclusions()
     jobs = []

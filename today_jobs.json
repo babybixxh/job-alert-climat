@@ -9,7 +9,7 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 85,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "https://fr.linkedin.com/jobs/view/consultant-%E2%80%93-energy-utilities-low-carbon-solutions-at-sia-4441631675",
@@ -21,7 +21,7 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 80,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "https://fr.linkedin.com/jobs/view/consultant-e-senior-energie-at-colombus-consulting-4366860952",
@@ -33,7 +33,7 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 85,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "https://fr.linkedin.com/jobs/view/responsable-d%C3%A9carbonation-et-performance-%C3%A9nerg%C3%A9tique-at-solve-recrutement-4440685525",
@@ -45,7 +45,7 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 75,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "https://fr.linkedin.com/jobs/view/expert-senior-adaptation-au-changement-climatique-et-r%C3%A9silience-urbaine-h-f-at-suez-4443505420",
@@ -57,7 +57,7 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 95,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "https://fr.linkedin.com/jobs/view/consultant-manager-f-h-%E2%80%93-conseil-en-transition-environnementale-et-%C3%A9conomique-at-persuaders-rh-4441037658",
@@ -81,7 +81,7 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 70,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-h-f-at-magellan-consulting-4443380800",
@@ -93,7 +93,7 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 85,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-mission-%C3%A9conomie-des-%C3%A9nergies-renouvelables-at-cre-commission-de-r%C3%A9gulation-de-l-%C3%A9nergie-4433327029",
@@ -105,7 +105,7 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 70,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "https://fr.linkedin.com/jobs/view/manager-energy-utilities-marseille-at-sia-4441642389",
@@ -117,7 +117,7 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 80,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "https://fr.linkedin.com/jobs/view/environmental-law-and-governance-specialist-at-un-environment-programme-4443174960",
@@ -129,31 +129,7 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 85,
-    "is_new": true
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/energy-modeler-and-technology-analyst-at-oecd-ocde-4443124823",
-    "title": "Energy Modeler and Technology Analyst",
-    "company": "OECD-OCDE",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/energy-modeler-and-technology-analyst-at-oecd-ocde-4443124823",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
-    "is_new": true
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-d%C3%A9carbonation-du-num%C3%A9rique-h-f-at-davidson-consulting-4183122301",
-    "title": "Consultant Senior Décarbonation du Numérique (H/F)",
-    "company": "Davidson consulting",
-    "location": "Île-de-France, France",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-d%C3%A9carbonation-du-num%C3%A9rique-h-f-at-davidson-consulting-4183122301",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 70,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-energy-management-et-outils-at-cve-changing-visions-of-energy-4434033988",
@@ -165,7 +141,7 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 75,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5811058550",
@@ -179,7 +155,7 @@
     "source": "Adzuna",
     "borderline": false,
     "score": 85,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5811907228",
@@ -193,7 +169,7 @@
     "source": "Adzuna",
     "borderline": false,
     "score": 85,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5806045319",
@@ -207,7 +183,7 @@
     "source": "Adzuna",
     "borderline": false,
     "score": 85,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5811447535",
@@ -221,7 +197,7 @@
     "source": "Adzuna",
     "borderline": false,
     "score": 75,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5809221254",
@@ -235,7 +211,7 @@
     "source": "Adzuna",
     "borderline": false,
     "score": 70,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "210NFPN",
@@ -247,7 +223,7 @@
     "source": "France Travail",
     "borderline": false,
     "score": 75,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "https://fr.linkedin.com/jobs/view/consultant-risques-esg-secteur-financier-f-h-at-pwc-france-4442986780",
@@ -259,7 +235,7 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 85,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "https://fr.linkedin.com/jobs/view/esg-advisor-at-arendt-medernach-4442664755",
@@ -271,7 +247,7 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 80,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5806037423",
@@ -285,7 +261,31 @@
     "source": "Adzuna",
     "borderline": true,
     "score": 50,
-    "is_new": true
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-d%E2%80%99%C3%A9tudes-%C3%A9nerg%C3%A9tiques-h-f-aix-en-provence-at-agitem-4443517905",
+    "title": "Ingénieur.e d’études énergétiques H/F - Aix-en-Provence",
+    "company": "AGITEM",
+    "location": "Aix-en-Provence",
+    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-d%E2%80%99%C3%A9tudes-%C3%A9nerg%C3%A9tiques-h-f-aix-en-provence-at-agitem-4443517905",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": true,
+    "score": 45,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-d-%C3%A9tude-environnement-aix-en-provence-at-agitem-4443532573",
+    "title": "Ingénieur d'étude environnement - Aix-en-Provence",
+    "company": "AGITEM",
+    "location": "Aix-en-Provence",
+    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-d-%C3%A9tude-environnement-aix-en-provence-at-agitem-4443532573",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": true,
+    "score": 40,
+    "is_new": false
   },
   {
     "id": "5810743680",
@@ -299,31 +299,7 @@
     "source": "Adzuna",
     "borderline": true,
     "score": 50,
-    "is_new": true
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-d%E2%80%99%C3%A9tudes-%C3%A9nerg%C3%A9tiques-h-f-aix-en-provence-at-agitem-4443517905",
-    "title": "Ingénieur.e d’études énergétiques H/F - Aix-en-Provence",
-    "company": "AGITEM",
-    "location": "Aix-en-Provence",
-    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-d%E2%80%99%C3%A9tudes-%C3%A9nerg%C3%A9tiques-h-f-aix-en-provence-at-agitem-4443517905",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": true,
-    "score": 45,
-    "is_new": true
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-d-%C3%A9tude-environnement-aix-en-provence-at-agitem-4443532573",
-    "title": "Ingénieur d'étude environnement - Aix-en-Provence",
-    "company": "AGITEM",
-    "location": "Aix-en-Provence",
-    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-d-%C3%A9tude-environnement-aix-en-provence-at-agitem-4443532573",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": true,
-    "score": 40,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "210BFKN",
@@ -338,6 +314,18 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/energy-modeler-and-technology-analyst-at-oecd-ocde-4443124823",
+    "title": "Energy Modeler and Technology Analyst",
+    "company": "OECD-OCDE",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/energy-modeler-and-technology-analyst-at-oecd-ocde-4443124823",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
     "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-transports-logistique-durables-f-h_4658.aspx",
     "title": "Chargé.e de mission transports & logistique durables F/H",
     "company": "ADEME",
@@ -347,7 +335,7 @@
     "source": "ADEME",
     "borderline": false,
     "score": 85,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-chef-fe-de-projets-decarbonation-industrie-f-h_4808.aspx",
@@ -397,7 +385,7 @@
     "company_watch": true,
     "borderline": false,
     "score": 75,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "https://choisirleservicepublic.gouv.fr/offre-emploi/chef-du-ple-environnement-et-risques-majeurs---commune-de-cabries-reference-O013260708002189/",
@@ -409,7 +397,7 @@
     "source": "Service Public",
     "borderline": false,
     "score": 85,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "https://choisirleservicepublic.gouv.fr/offre-emploi/conducteur-de-projets-maitrise-energie-et-eau-fh---commune-d-avignon-reference-O084260701002017/",
@@ -421,7 +409,7 @@
     "source": "Service Public",
     "borderline": false,
     "score": 80,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "consultant-sustainability-services-at-climate-tech-start-up-100-remote-moglich-berlin-321391",
@@ -433,7 +421,7 @@
     "source": "Remote EU",
     "borderline": false,
     "score": 70,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "73595607",
@@ -461,7 +449,7 @@
     "source": "Remote EU",
     "borderline": false,
     "score": 60,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "178995565W",
@@ -503,7 +491,7 @@
     "source": "APEC",
     "borderline": true,
     "score": 50,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "178960114W",
@@ -517,7 +505,7 @@
     "source": "APEC",
     "borderline": true,
     "score": 50,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "179100430W",
@@ -531,7 +519,7 @@
     "source": "APEC",
     "borderline": true,
     "score": 50,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "179122236W",
@@ -545,7 +533,7 @@
     "source": "APEC",
     "borderline": true,
     "score": 50,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "178967976W",
@@ -573,7 +561,7 @@
     "source": "APEC",
     "borderline": true,
     "score": 45,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "179103906W",
@@ -587,7 +575,7 @@
     "source": "APEC",
     "borderline": false,
     "score": 95,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "178983494W",
@@ -601,7 +589,7 @@
     "source": "APEC",
     "borderline": false,
     "score": 85,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "179073128W",
@@ -615,7 +603,7 @@
     "source": "APEC",
     "borderline": false,
     "score": 75,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "179116098W",
@@ -643,7 +631,7 @@
     "source": "APEC",
     "borderline": false,
     "score": 75,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "gh-tomorrow-7776130003",
@@ -671,6 +659,30 @@
     "company_watch": true,
     "borderline": false,
     "score": 85,
+    "is_new": false
+  },
+  {
+    "id": "210ZQJQ",
+    "title": "Chef.fe de projet Bâtiment, Énergie et Décarbonation (H/F)",
+    "company": "CEDRUS SOLUTIONS",
+    "location": "75 - PARIS",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/210ZQJQ",
+    "description": "Fondée en 2023, Cedrus est une startup engagée qui repense la rénovation énergétique et la décarbonation à grande échelle.\n\nÀ la croisée de l'énergie,...",
+    "source": "France Travail",
+    "borderline": false,
+    "score": 85,
+    "is_new": true
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-ou-expert-e-en-d%C3%A9carbonation-des-proc%C3%A9d%C3%A9s-industriels-h-f-at-ynergie-4440115451",
+    "title": "Ingénieur(e) ou Expert(e) en décarbonation des procédés industriels (H/F)",
+    "company": "Ynergie",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-ou-expert-e-en-d%C3%A9carbonation-des-proc%C3%A9d%C3%A9s-industriels-h-f-at-ynergie-4440115451",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
     "is_new": false
   }
 ]

@@ -4825,10 +4825,10 @@
   },
   "it process and methodology manager|alithya": {
     "keep": false,
-    "reason": "IT Process and Methodology Manager : hors scope climat/durabilité",
+    "reason": "Titre IT générique sans lien climat/stratégie",
     "borderline": false,
     "score": 0,
-    "v": 4
+    "v": 8
   },
   "consultant(e) paie|ava6": {
     "keep": false,
@@ -5168,10 +5168,10 @@
   },
   "référent mécanicien h/f|bonduelle": {
     "keep": false,
-    "reason": "poste technique terrain (mécanicien) sans lien climat/stratégie",
+    "reason": "Référent Mécanicien : poste technique terrain (maintenance). Entreprise ciblée (Bonduelle) mais hors scope climat.",
     "borderline": false,
     "score": 0,
-    "v": 4
+    "v": 8
   },
   "mécanicien expérimenté h/f|bonduelle": {
     "keep": false,
@@ -8004,6 +8004,300 @@
   "consultant en audit social f/h|voluntae": {
     "keep": false,
     "reason": "Consultant en Audit Social (hors climat/transition écologique)",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "change manager en projets industriels (h/f)|virbac": {
+    "keep": false,
+    "reason": "Titre générique 'Change Manager' sans lien explicite climat/stratégie bas-carbone",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "chef de projet/cheffe de projet (cdi ou freelance)|univet": {
+    "keep": false,
+    "reason": "Titre générique 'Chef de projet' sans précision climat/transition écologique",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "expert en gestion d'entreprise h/f|gcl - l'innovation dans l'accompagnement des entreprises": {
+    "keep": false,
+    "reason": "Titre générique 'Expert gestion d'entreprise' sans lien climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "chargé/e mission développement de offre de formation tout au long de la vie|université côte d’azur": {
+    "keep": false,
+    "reason": "Titre formation générique sans lien climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "rev ops business analyst|malt": {
+    "keep": false,
+    "reason": "Titre 'Rev Ops Business Analyst' sans lien climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "business analyst front office|global market solutions": {
+    "keep": false,
+    "reason": "Titre 'Business Analyst Front Office' sans lien climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "business analyst front office confirmé (h/f)|meritis | b corp™": {
+    "keep": false,
+    "reason": "Titre 'Business Analyst Front Office' sans lien climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "business analyst cash management|capgemini": {
+    "keep": false,
+    "reason": "Titre 'Business Analyst Cash Management' sans lien climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "business analyst services (f/h)- fr876670|morgan philips group": {
+    "keep": false,
+    "reason": "Titre 'Business Analyst Services' sans lien climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "business growth analyst (madrid based)|fever": {
+    "keep": false,
+    "reason": "Titre 'Business Growth Analyst' sans lien climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "business analyst f/h|selescope": {
+    "keep": false,
+    "reason": "Titre 'Business Analyst' sans lien climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "business analyst technique (h/f)|1g-link": {
+    "keep": false,
+    "reason": "Titre 'Business Analyst Technique' sans lien climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "safety assessor|l'oréal": {
+    "keep": false,
+    "reason": "Titre 'SAFETY ASSESSOR' sans lien climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "cdi - référent résilience numérique (h/f)|hermès": {
+    "keep": false,
+    "reason": "Titre 'Référent résilience numérique' sans lien climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "safety assessor|station f": {
+    "keep": false,
+    "reason": "Titre 'SAFETY ASSESSOR' sans lien climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "chargé(e) développement outils crise h/f|asnr - autorité de sûreté nucléaire et de radioprotection": {
+    "keep": false,
+    "reason": "Titre 'Chargé développement outils crise' sans lien climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "expert gestion de crise et anticipation (f/h)|axa en france": {
+    "keep": false,
+    "reason": "Titre 'Expert gestion de crise' sans lien climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "cdi - expert surete groupe h/f|hermès": {
+    "keep": false,
+    "reason": "Titre 'EXPERT SURETE GROUPE' sans lien climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "ai ux researcher (f/h)|thales": {
+    "keep": false,
+    "reason": "Titre 'AI UX Researcher' sans lien climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "chargé développement produit destination h/f|ponant": {
+    "keep": false,
+    "reason": "Titre 'Chargé Développement Produit Destination' sans lien climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "navigateur h/f|armée de l’air et de l’espace": {
+    "keep": false,
+    "reason": "Titre 'Navigateur' sans lien climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "auditeur bio en productions agricoles - dpt 84 (h/f)|groupe ecocert": {
+    "keep": false,
+    "reason": "Titre 'Auditeur Bio' sans lien climat/stratégie ou conseil/stratégie senior",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "animateur territorial|cfa rap paca": {
+    "keep": false,
+    "reason": "Titre 'Animateur territorial' sans lien climat/stratégie senior",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "chef(fe) de secteur gms - nice|la vie™": {
+    "keep": false,
+    "reason": "Titre 'Chef de Secteur GMS' sans lien climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "chef.fe de projet bâtiment, énergie et décarbonation (h/f)|cedrus solutions": {
+    "keep": true,
+    "reason": "Poste de chef de projet en décarbonation du bâtiment, aligné sur la stratégie climat et la décarbonation à grande échelle. Correspond à la séniorité et au domaine cible (énergie/décarbonation). Localisation Paris compatible avec les critères.",
+    "borderline": false,
+    "score": 85,
+    "v": 8
+  },
+  "chef de projet ops|ecair": {
+    "keep": false,
+    "reason": "Titre trop générique ('Ops') sans lien explicite avec le climat ou la durabilité. Pas de preuve de contenu stratégique ou conseil.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "responsable département performance environnementale h/f|dalkia": {
+    "keep": false,
+    "reason": "Responsable département performance environnementale : titre trop générique (RSE implicite). Pas de précision sur le contenu climat/stratégie bas-carbone.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "ingénieur(e) ou expert(e) en décarbonation des procédés industriels (h/f)|ynergie": {
+    "keep": true,
+    "reason": "Ingénieur expert en décarbonation des procédés industriels : aligné sur la décarbonation industrielle (scope 1/2/3) et la stratégie bas-carbone. Séniorité confirmée. Localisation Paris compatible.",
+    "borderline": false,
+    "score": 75,
+    "v": 8
+  },
+  "responsable offres stockage (bess) h/f|imagreen": {
+    "keep": false,
+    "reason": "Responsable Offres Stockage (BESS) : hors scope climat/stratégie. Lié à l'énergie mais pas à la décarbonation ou au carbone.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "ingénieur.e généraliste|rhône energies": {
+    "keep": false,
+    "reason": "Ingénieur généraliste : titre trop générique sans lien avec le climat ou la durabilité. Localisation Fos-sur-Mer (PACA) mais pas de pertinence stratégique.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "chef de projet avant-vente (oil&gas) f/h|groupe adf": {
+    "keep": false,
+    "reason": "Chef de projet avant-vente oil&gas : hors scope climat. Commercial pur (avant-vente) sans lien avec la stratégie ou le conseil climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "gestionnaire de paie & administration du personnel h/f|dalkia electrotechnics": {
+    "keep": false,
+    "reason": "Gestionnaire de paie : hors scope climat. RH/finance pur.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "responsable d'exploitation logistique h/f|amoé - executive search, conseil et recrutement": {
+    "keep": false,
+    "reason": "Responsable d'Exploitation Logistique : hors scope climat. Ops générique.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "channel manager|oodrive": {
+    "keep": false,
+    "reason": "Channel Manager : commercial pur (marketing). Hors scope climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "responsable hse h/f|cbre france": {
+    "keep": false,
+    "reason": "Responsable HSE : titre générique (Hygiène Sécurité Environnement). Pas de preuve de contenu climat/stratégie.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "conseiller de vente h/f- cdi 28h - villeneuve loubet|c&a": {
+    "keep": false,
+    "reason": "Conseiller de Vente : commercial pur. Hors scope climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "chargé de projets - sites et sols pollues h/f|eodd ingénieurs conseils": {
+    "keep": false,
+    "reason": "Chargé de projets sites et sols pollués : hors scope climat. Technique terrain (diagnostic/remédiation).",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "agent polyvalent de surveillance du domaine public et des marchés h/f|ville de saint-tropez": {
+    "keep": false,
+    "reason": "Agent polyvalent de surveillance : poste terrain administratif. Hors scope climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "responsable sécurité et environnement (f/h)|terrena": {
+    "keep": false,
+    "reason": "Responsable Sécurité et Environnement : titre générique (RSE implicite). Pas de précision sur le contenu climat/stratégie. Séniorité trop élevée (5-10 ans) et hors scope.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "ingénieur r&d nutrition porcs et autres espèces (f/h) ©|terrena": {
+    "keep": false,
+    "reason": "Ingénieur R&D Nutrition : hors scope climat. Recherche appliquée non liée à la décarbonation ou au carbone.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "contrôleur de gestion (f/h) ©|terrena": {
+    "keep": false,
+    "reason": "Contrôleur de Gestion : finance/comptabilité. Hors scope climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "performance marketing manager (m/w/d)- remote|elegance-hair gmbh": {
+    "keep": false,
+    "reason": "Performance Marketing Manager : commercial/marketing pur. Hors scope climat.",
     "borderline": false,
     "score": 0,
     "v": 8
