@@ -2164,34 +2164,7 @@ def send_priority_alert(jobs):
         print(f"  EXCEPTION notif prioritaire: {e}")
 
 
-def debug_crea():
-    """TEMPORAIRE : identifie le système d'offres du CREA (energyandcleanair.org)
-    pour brancher la source. À supprimer ensuite."""
-    ua = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36"}
-    for url in ["https://energyandcleanair.org/jobs/",
-                "https://energyandcleanair.org/wp-json/wp/v2/jobs?per_page=50",
-                "https://energyandcleanair.org/wp-json/"]:
-        try:
-            r = requests.get(url, headers=ua, timeout=20)
-            print(f"\n=== {url} → HTTP {r.status_code} len={len(r.text)} ===")
-            t = r.text
-            for marker in ["workable", "recruitee", "teamtailor", "ashby", "personio",
-                           "greenhouse", "lever", "homerun", "smartrecruiters", "notion",
-                           "airtable", "bamboohr", "jobsoid", "jobvite", "wp-json", "application/json"]:
-                if marker in t.lower():
-                    print(f"   MARQUEUR: {marker}")
-            for m in re.findall(r'https?://[^\s"\'<>]+', t):
-                if any(k in m.lower() for k in ["api", "workable", "recruitee", "teamtailor",
-                                                "ashby", "personio", "wp-json", "jobs", ".json"]):
-                    print("   URL:", m[:140])
-        except Exception as e:
-            print(f"  EXCEPTION {url}: {e}")
-    raise SystemExit(0)
-
-
 if __name__ == "__main__":
-    if os.environ.get("DEBUG_CREA"):
-        debug_crea()
     seen_ids = set(load_json(SEEN_FILE, []))
     print(f"{len(seen_ids)} offres déjà vues en mémoire")
     # Offres conservées hier (avant écrasement de TODAY_FILE) : sert à repérer
