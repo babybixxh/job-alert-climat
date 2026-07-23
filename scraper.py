@@ -23,6 +23,8 @@ KEYWORDS = [
     "risque climatique",
     "adaptation climatique",
     "climate risk analyst",
+    "adaptation specialist",
+    "climate finance",
     "bilan carbone",
     "transition écologique",
     "chargé mission climat",
@@ -43,6 +45,9 @@ REMOTE_KEYWORDS = [
     "climate risk", "physical risk", "adaptation", "resilience",
     "nature-based", "natural capital", "catastrophe", "cat model",
     "parametric", "agtech", "climate modelling", "climate modeling", "TCFD",
+    # Organisations internationales / think tanks (intitulés fréquents)
+    "climate change specialist", "climate finance", "programme officer",
+    "policy analyst", "research analyst", "readiness", "mrv", "climate investment",
 ]
 
 # Communes trop excentrées à écarter même quand elles ressortent comme
@@ -106,7 +111,7 @@ AI_VERDICTS_MAX = 3000
 # Version du prompt/règles IA. À incrémenter dès qu'on modifie le PROFILE ou les
 # règles de décision : les verdicts en cache d'une version antérieure sont alors
 # ré-évalués (sinon d'anciennes décisions périmées seraient rejouées).
-AI_PROMPT_VERSION = 7
+AI_PROMPT_VERSION = 8
 
 # Suivi de la santé des sources : pour chaque source, nombre de jours
 # consécutifs sans aucune offre brute (parseur potentiellement cassé).
@@ -218,7 +223,8 @@ WTTJ_COMPANIES = {
     "moodys-rms": "Moody's RMS",
     "fathom": "Fathom",
     "riskthinking-ai": "riskthinking.AI",
-    # Institutions / think tanks / standards (publient surtout sur leurs sites)
+    # Institutions / think tanks / standards (publient surtout sur leurs sites
+    # ou des job boards ONU spécialisés → couverture partielle via nos sources)
     "eea": "European Environment Agency",
     "i4ce": "I4CE",
     "climate-bonds-initiative": "Climate Bonds Initiative",
@@ -232,6 +238,21 @@ WTTJ_COMPANIES = {
     "icf": "ICF",
     "wsp": "WSP",
     "ramboll": "Ramboll",
+    "cdp": "CDP",
+    "climate-policy-initiative": "Climate Policy Initiative",
+    # Organisations internationales / bailleurs (expatriation possible ; AFD,
+    # BEI et CDP peuvent aussi publier en France)
+    "green-climate-fund": "Green Climate Fund",
+    "unep": "UNEP",
+    "unep-fi": "UNEP FI",
+    "undp": "UNDP",
+    "world-bank": "World Bank",
+    "eib": "European Investment Bank",
+    "afd": "AFD",
+    "giz": "GIZ",
+    "adaptation-fund": "Adaptation Fund",
+    "ndc-partnership": "NDC Partnership",
+    "global-center-adaptation": "Global Center on Adaptation",
     # Agro × climat : agtech carbone, transition agricole, agri-data
     "soil-capital": "Soil Capital",
     "rize-ag": "Rize",
@@ -293,6 +314,15 @@ le conseil et la stratégie climat.
 IMPORTANT : il ne veut PLUS de postes de RSE générique (responsable/chargé RSE, responsabilité
 sociétale) — ces offres sont déjà écartées en amont ; concentre-toi sur climat/carbone,
 risque physique/adaptation et agri-climat.
+NIVEAU / SÉNIORITÉ (filtre décisif) : il vise la fourchette Associate → Manager / Responsable /
+Chargé·e senior / Consultant·e / Officer / Specialist / Advisor / Analyst. REJETTE les postes
+trop hauts (Head of, Director, Chief, Principal, Lead, VP, Partner) et ceux exigeant 10+ ans
+d'expérience ou un doctorat/PhD requis — hors de portée. Ne rejette pas pour autant les postes
+« confirmés » : c'est le haut du panier (direction) et l'exigence 10+ ans/PhD qu'on écarte.
+Il est OUVERT à l'EXPATRIATION pour les grandes institutions climat internationales (ONU/UNEP/
+PNUD, Green Climate Fund, Agence européenne pour l'environnement, Global Center on Adaptation,
+Banque mondiale, BEI, AFD, GIZ, think tanks WRI/I4CE/IDDRI/Climate Analytics) : ne pénalise pas
+ces offres sur le seul critère géographique.
 Il est aussi TRÈS intéressé par les éditeurs de logiciels de comptabilité carbone / plateformes
 data-climat & ESG (Sweep, Greenly, Sami, Traace, Carbometrix, Carbonfact, Watershed, Plan A,
 Normative, EcoVadis, Deepki, Kayrros, AXA Climate, Descartes, Metron…), où son profil ingénieur +
@@ -451,6 +481,19 @@ _RSE_RE = re.compile(r"\brse\b|responsabilit[ée]\s+soci[ée]tale|responsabilit[
 
 def is_rse_title(title):
     return bool(_RSE_RE.search(title or ""))
+
+
+# Plafond de séniorité : Arnaud vise la fourchette Associate → Manager/Responsable.
+# On écarte au titre les postes trop hauts (Head/Director/Chief/Principal/Lead/VP).
+# Mot entier pour ne pas attraper « directorate », « leadership », etc.
+_OVERSENIOR_RE = re.compile(
+    r"\b(head of|chief|principal|managing director|director|directeur|directrice|"
+    r"vice[- ]?president|vice[- ]?président|vp|partner|associé principal|lead)\b",
+    re.IGNORECASE)
+
+
+def is_over_senior_title(title):
+    return bool(_OVERSENIOR_RE.search(title or ""))
 
 
 # Seuil « salaire élevé » (en k€) pour la sous-section dédiée de l'email.
@@ -2229,6 +2272,12 @@ if __name__ == "__main__":
         if is_rse_title(job.get("title", "")):
             log_excluded(job["title"], job["company"], job.get("location", ""),
                          job.get("source", ""), "RSE exclu (recentrage risque/adaptation)")
+            continue
+        # Plafond de séniorité : postes trop hauts (Head/Director/Chief/Lead…)
+        # hors de portée → écartés au titre.
+        if is_over_senior_title(job.get("title", "")):
+            log_excluded(job["title"], job["company"], job.get("location", ""),
+                         job.get("source", ""), "trop senior (Head/Director/Chief/Lead)")
             continue
         filtered_jobs.append(job)
     all_jobs = filtered_jobs
