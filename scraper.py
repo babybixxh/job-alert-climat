@@ -1264,12 +1264,18 @@ def search_reliefweb():
     mots-clés climat côté requête ; le filtre IA + le plafond de séniorité
     tranchent ensuite la pertinence. Offres mondiales (Arnaud est ouvert à
     l'expatriation pour ces institutions)."""
+    # L'API v2 de ReliefWeb exige un appname APPROUVÉ (demande gratuite auprès de
+    # ReliefWeb). Sans le secret RELIEFWEB_APPNAME, la source reste désactivée.
+    appname = os.environ.get("RELIEFWEB_APPNAME", "")
+    if not appname:
+        print("  ReliefWeb: RELIEFWEB_APPNAME absent, source désactivée")
+        return []
     exclusions = get_exclusions()
     jobs = []
     try:
         r = requests.post(
-            "https://api.reliefweb.int/v1/jobs",
-            params={"appname": "job-alert-climat"},
+            "https://api.reliefweb.int/v2/jobs",
+            params={"appname": appname},
             json={
                 "limit": 60,
                 "query": {
@@ -2268,45 +2274,7 @@ def send_priority_alert(jobs):
         print(f"  EXCEPTION notif prioritaire: {e}")
 
 
-def debug_reliefweb():
-    """TEMPORAIRE : trouve la bonne forme d'appel de l'API ReliefWeb (410 sur
-    le POST v1 initial). À supprimer une fois la source stabilisée."""
-    import json as _json
-    variants = [
-        ("GET v1 apidoc", "get", "https://api.reliefweb.int/v1/jobs",
-         {"appname": "apidoc", "limit": 3, "query[value]": "climate"}, None),
-        ("GET v1 domain", "get", "https://api.reliefweb.int/v1/jobs",
-         {"appname": "jobalert.example.org", "limit": 3, "query[value]": "climate"}, None),
-        ("POST v1 apidoc", "post", "https://api.reliefweb.int/v1/jobs?appname=apidoc",
-         None, {"limit": 3, "query": {"value": "climate"}}),
-        ("GET v1 profile", "get", "https://api.reliefweb.int/v1/jobs",
-         {"appname": "apidoc", "limit": 3, "profile": "list", "query[value]": "climate"}, None),
-        ("GET v2 apidoc", "get", "https://api.reliefweb.int/v2/jobs",
-         {"appname": "apidoc", "limit": 3, "query[value]": "climate"}, None),
-    ]
-    for name, meth, url, params, body in variants:
-        try:
-            if meth == "get":
-                r = requests.get(url, params=params, timeout=20)
-            else:
-                r = requests.post(url, json=body, timeout=20,
-                                  headers={"Content-Type": "application/json"})
-            print(f"  RW {name}: HTTP {r.status_code} len={len(r.text)}")
-            if r.status_code == 200:
-                d = r.json()
-                print(f"     count={d.get('count')} total={d.get('totalCount')}")
-                for it in d.get("data", [])[:2]:
-                    print("     -", str(it.get("fields", {}).get("title", "?"))[:70])
-            else:
-                print("     body:", r.text[:160].replace("\n", " "))
-        except Exception as e:
-            print(f"  RW {name}: ERR {repr(e)[:90]}")
-    raise SystemExit(0)
-
-
 if __name__ == "__main__":
-    if os.environ.get("DEBUG_RW"):
-        debug_reliefweb()
     seen_ids = set(load_json(SEEN_FILE, []))
     print(f"{len(seen_ids)} offres déjà vues en mémoire")
     # Offres conservées hier (avant écrasement de TODAY_FILE) : sert à repérer

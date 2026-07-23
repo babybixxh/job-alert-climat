@@ -4,11 +4,6 @@ on:
   schedule:
     - cron: '0 5 * * *'
   workflow_dispatch:
-    inputs:
-      debug_rw:
-        description: "Sonder l'API ReliefWeb (1 = oui)"
-        required: false
-        default: ""
 
 jobs:
   run-scraper:
@@ -46,7 +41,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-          DEBUG_RW: ${{ github.event.inputs.debug_rw }}
+          RELIEFWEB_APPNAME: ${{ secrets.RELIEFWEB_APPNAME }}
         run: python scraper.py
 
       - name: Sauvegarder fichiers
