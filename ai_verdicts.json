@@ -5064,5 +5064,235 @@
     "keep": false,
     "reason": "poste commercial/sales (Partner Manager) sans lien explicite avec le climat/stratégie",
     "borderline": false
+  },
+  "chargé de rse f/h|cityone": {
+    "keep": true,
+    "reason": "Chargé de RSE senior à Paris, correspond au profil conseil/stratégie RSE en entreprise",
+    "borderline": false
+  },
+  "conseiller de vente - 21h - paris h/f|faguo": {
+    "keep": false,
+    "reason": "poste commercial/vente",
+    "borderline": false
+  },
+  "directeur / directrice de la transition ecologique|bras droit des dirigeants": {
+    "keep": true,
+    "reason": "Directeur transition écologique à Nice, poste qualifié en stratégie climat en collectivité/PME",
+    "borderline": false
+  },
+  "ingénieur/e commercial/e – f/h|alterea": {
+    "keep": false,
+    "reason": "poste commercial/vente",
+    "borderline": false
+  },
+  "ingénieur agronome (h/f)|metiga": {
+    "keep": false,
+    "reason": "poste technique terrain (agronomie) sans lien stratégie climat",
+    "borderline": false
+  },
+  "rédacteur marchés publics crous nice - toulon|choisir le service public": {
+    "keep": false,
+    "reason": "poste administratif (marchés publics) sans lien climat",
+    "borderline": false
+  },
+  "chef de projet senior - réseaux de chaleur & géothermie h/f|sb partners": {
+    "keep": false,
+    "reason": "poste technique terrain (réseaux de chaleur) sans lien stratégie conseil",
+    "borderline": false
+  },
+  "manager be génie mécanique|solve recrutement": {
+    "keep": false,
+    "reason": "poste technique terrain (génie mécanique) sans lien stratégie climat",
+    "borderline": false
+  },
+  "head of talent and culture - hr f/h|calogena": {
+    "keep": false,
+    "reason": "poste RH sans lien climat",
+    "borderline": false
+  },
+  "cdi - chef de projet calculs transformateurs de tension (h/f)|ge vernova": {
+    "keep": false,
+    "reason": "poste technique terrain (calculs) sans lien stratégie climat",
+    "borderline": false
+  },
+  "gestionnaire sav f/h|edf solutions solaires": {
+    "keep": false,
+    "reason": "poste technique terrain (SAV solaire) sans lien stratégie climat",
+    "borderline": false
+  },
+  "chef/cheffe de projet ingénierie - nice f/h|consultys services": {
+    "keep": false,
+    "reason": "poste technique terrain (ingénierie) sans lien stratégie climat",
+    "borderline": false
+  },
+  "chargé / chargée de projet développement durable (h/f)|approach people recruitment sarl": {
+    "keep": true,
+    "reason": "Chargé de projet construction durable à Puteaux, pertinent mais niveau incertain (borderline)",
+    "borderline": true
+  },
+  "eco-animateur.rice terrain - sensibilisation au tri et à la prévention des déchets - marseille - cdi|terravox": {
+    "keep": false,
+    "reason": "poste terrain (éco-animateur) sans lien stratégie",
+    "borderline": false
+  },
+  "working student social media – danish market (m/f/d)|koro handels gmbh": {
+    "keep": false,
+    "reason": "poste junior/stage social media sans lien climat",
+    "borderline": false
+  },
+  "grafikdesigner/-in (m/w/d)|e-whisper agency ug (haftungsbeschränkt)": {
+    "keep": false,
+    "reason": "poste technique/graphisme sans lien climat",
+    "borderline": false
+  },
+  "crm & e-mail marketing manager/-in (m/w/d)|e-whisper agency ug (haftungsbeschränkt)": {
+    "keep": false,
+    "reason": "poste technique/marketing sans lien climat",
+    "borderline": false
+  },
+  "werkstudent ki-entwicklung|energy matters gmbh": {
+    "keep": false,
+    "reason": "poste junior/stage technique sans lien climat",
+    "borderline": false
+  },
+  "lead engineer vertical transportation (m/w/d)|buro happold": {
+    "keep": false,
+    "reason": "poste technique terrain (ascenseurs) sans lien stratégie climat",
+    "borderline": false
+  },
+  "legal assistant, general counsel|earthjustice": {
+    "keep": true,
+    "reason": "Legal Assistant climat à distance, poste stratégique ONG climat",
+    "borderline": false
+  },
+  "design systems engineer|ambrook": {
+    "keep": false,
+    "reason": "poste technique/data sans lien stratégie climat",
+    "borderline": false
+  },
+  "senior network systems engineer|electric hydrogen": {
+    "keep": false,
+    "reason": "poste technique/engineering sans lien stratégie climat",
+    "borderline": false
+  },
+  "ot cyber and compliance manager|renewable energy systems": {
+    "keep": false,
+    "reason": "poste technique/compliance sans lien stratégie climat",
+    "borderline": false
+  },
+  "director - commercial and digital|global reporting initiative (gri)": {
+    "keep": true,
+    "reason": "Director commercial et digital RSE à distance, poste stratégique ONG climat",
+    "borderline": false
+  },
+  "agricultural lead hungary (all genders)|klim": {
+    "keep": false,
+    "reason": "poste technique/agricole sans lien stratégie conseil climat",
+    "borderline": false
+  },
+  "react frontend developer|3e": {
+    "keep": false,
+    "reason": "métier tech/produit (developer frontend) sans lien climat",
+    "borderline": false
+  },
+  "consultor de sistemas bess y fv|3e": {
+    "keep": false,
+    "reason": "métier tech/produit (systèmes BESS/FV) sans lien climat",
+    "borderline": false
+  },
+  "talent sourcer|fuse energy": {
+    "keep": false,
+    "reason": "poste commercial (Talent Sourcer) sans lien climat",
+    "borderline": false
+  },
+  "renewable energy infrastructure development lead - australia|fuse energy": {
+    "keep": false,
+    "reason": "poste commercial (Business Development) sans lien climat",
+    "borderline": false
+  },
+  "founding gpu engineer|fuse energy": {
+    "keep": false,
+    "reason": "métier tech/produit (GPU Engineer) sans lien climat",
+    "borderline": false
+  },
+  "data center development lead - australia|fuse energy": {
+    "keep": false,
+    "reason": "poste commercial (Data Center Development Lead) sans lien climat",
+    "borderline": false
+  },
+  "ai inference engineer|fuse energy": {
+    "keep": false,
+    "reason": "métier tech/produit (AI Inference Engineer) sans lien climat",
+    "borderline": false
+  },
+  "drone pilot and client support specialist|perceptual robotics": {
+    "keep": false,
+    "reason": "poste terrain (pilote de drone) sans lien conseil/stratégie",
+    "borderline": false
+  },
+  "business development manager, dach|perceptual robotics": {
+    "keep": false,
+    "reason": "poste commercial (Business Development Manager) sans lien climat",
+    "borderline": false
+  },
+  "chargé de mission rse f/h|proaxian": {
+    "keep": true,
+    "reason": "chargé de mission RSE en entreprise (Montoir-de-Bretagne), hors PACA mais RSE stratégique - borderline car localisation non prioritaire",
+    "borderline": true
+  },
+  "chargé de mission \" bouge ton réseau\" f/h|ass reg organismes hlm champ ardenne": {
+    "keep": false,
+    "reason": "poste administratif/gouvernance interne sans lien climat ou stratégie",
+    "borderline": false
+  },
+  "chargé.de mission ' réglementation h2 et développement h2 naturel ' f/h|ademe": {
+    "keep": true,
+    "reason": "chargé de mission réglementation H2 et développement H2 naturel à l'ADEME (Angers), poste stratégique climat public",
+    "borderline": false
+  },
+  "chargé d'affaires maintenance cvc f/h|adsearch": {
+    "keep": false,
+    "reason": "poste terrain/technique (maintenance CVC) sans lien conseil/stratégie",
+    "borderline": false
+  },
+  "chargé de missions rse f/h|vulcania": {
+    "keep": true,
+    "reason": "chargé de missions RSE en entreprise (Vulcania), hors PACA mais RSE stratégique - borderline car localisation non prioritaire",
+    "borderline": true
+  },
+  "responsable des relations sociales f/h|keolis sa": {
+    "keep": false,
+    "reason": "poste RH (relations sociales) sans lien climat",
+    "borderline": false
+  },
+  "responsable qualité environnement et développement durable f/h|ulbert et sautreuil": {
+    "keep": true,
+    "reason": "responsable QEDD en entreprise (Vitré), hors PACA mais RSE stratégique - borderline car localisation non prioritaire",
+    "borderline": true
+  },
+  "responsable qualité environnement et développement durable f/h|hellowork": {
+    "keep": true,
+    "reason": "responsable QEDD en entreprise (Vitré), hors PACA mais RSE stratégique - borderline car localisation non prioritaire",
+    "borderline": true
+  },
+  "responsable qualité et environnement développement durable f/h|cadremploi": {
+    "keep": true,
+    "reason": "responsable QEDD en entreprise (Rennes), hors PACA mais RSE stratégique - borderline car localisation non prioritaire",
+    "borderline": true
+  },
+  "responsable developpement commercial et partenariats distribution f/h|ass francais certific forest pefc france": {
+    "keep": false,
+    "reason": "poste commercial (développement commercial) sans lien climat",
+    "borderline": false
+  },
+  "responsable de production en centre de contacts f/h|meteojob": {
+    "keep": false,
+    "reason": "poste opérationnel (production) sans lien conseil/stratégie",
+    "borderline": false
+  },
+  "consultant en audit social f/h|voluntae": {
+    "keep": false,
+    "reason": "poste RH (audit social) sans lien climat",
+    "borderline": false
   }
 }
