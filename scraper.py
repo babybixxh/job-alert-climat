@@ -1264,11 +1264,14 @@ def search_reliefweb():
     mots-clés climat côté requête ; le filtre IA + le plafond de séniorité
     tranchent ensuite la pertinence. Offres mondiales (Arnaud est ouvert à
     l'expatriation pour ces institutions)."""
-    # L'API v2 de ReliefWeb demande un `appname` (libre, pour le tracking ; cf.
-    # leurs conditions « anyone can use the API »). On en fixe un par défaut ;
-    # surchargé par le secret RELIEFWEB_APPNAME si besoin. NB : « apidoc » est
-    # réservé et renvoie 403 — il faut un nom quelconque distinct.
-    appname = os.environ.get("RELIEFWEB_APPNAME", "") or "job-alert-climat-babybixxh"
+    # L'API v2 de ReliefWeb exige un `appname` APPROUVÉ (403 sinon : leur page
+    # d'aide « anyone can use it » est périmée). Il se demande par email à
+    # feedback@reliefweb.int. Sans le secret RELIEFWEB_APPNAME, on saute la
+    # source (le RSS/site est bloqué Cloudflare 202, pas d'alternative).
+    appname = os.environ.get("RELIEFWEB_APPNAME", "")
+    if not appname:
+        print("  ReliefWeb: RELIEFWEB_APPNAME absent → source désactivée")
+        return []
     exclusions = get_exclusions()
     jobs = []
     try:
@@ -2273,38 +2276,7 @@ def send_priority_alert(jobs):
         print(f"  EXCEPTION notif prioritaire: {e}")
 
 
-def debug_rwrss():
-    """TEMPORAIRE : teste les flux RSS ReliefWeb (l'API v2 exige un appname
-    approuvé). À supprimer ensuite."""
-    ua = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36",
-          "Accept": "application/rss+xml, application/xml, text/xml, */*"}
-    urls = [
-        "https://reliefweb.int/jobs/rss.xml",
-        "https://reliefweb.int/jobs/rss.xml?search=climate",
-        "https://reliefweb.int/updates/rss.xml?primary_type=Job",
-        "https://reliefweb.int/jobs?search=climate",
-    ]
-    for u in urls:
-        try:
-            r = requests.get(u, headers=ua, timeout=20)
-            t = r.text
-            n_items = t.count("<item")
-            print(f"  RWRSS {u} → HTTP {r.status_code} len={len(t)} items={n_items}")
-            if n_items:
-                import re as _re
-                titles = _re.findall(r"<title>(.*?)</title>", t)[1:4]
-                for ti in titles:
-                    print("     -", ti[:80])
-            else:
-                print("     head:", t[:160].replace("\n", " "))
-        except Exception as e:
-            print(f"  RWRSS {u}: ERR {repr(e)[:90]}")
-    raise SystemExit(0)
-
-
 if __name__ == "__main__":
-    if os.environ.get("DEBUG_RWRSS"):
-        debug_rwrss()
     seen_ids = set(load_json(SEEN_FILE, []))
     print(f"{len(seen_ids)} offres déjà vues en mémoire")
     # Offres conservées hier (avant écrasement de TODAY_FILE) : sert à repérer

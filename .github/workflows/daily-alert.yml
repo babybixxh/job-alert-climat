@@ -4,11 +4,6 @@ on:
   schedule:
     - cron: '0 5 * * *'
   workflow_dispatch:
-    inputs:
-      debug_rwrss:
-        description: "Sonder les flux RSS ReliefWeb (1 = oui)"
-        required: false
-        default: ""
 
 jobs:
   run-scraper:
@@ -47,7 +42,6 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           GITHUB_REPOSITORY: ${{ github.repository }}
           RELIEFWEB_APPNAME: ${{ secrets.RELIEFWEB_APPNAME }}
-          DEBUG_RWRSS: ${{ github.event.inputs.debug_rwrss }}
         run: python scraper.py
 
       - name: Sauvegarder fichiers
