@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '0 5 * * *'
   workflow_dispatch:
+    inputs:
+      debug_crea:
+        description: "Sonder le système d'offres du CREA (1 = oui)"
+        required: false
+        default: ""
 
 jobs:
   run-scraper:
@@ -41,6 +46,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           GITHUB_REPOSITORY: ${{ github.repository }}
+          DEBUG_CREA: ${{ github.event.inputs.debug_crea }}
         run: python scraper.py
 
       - name: Sauvegarder fichiers
