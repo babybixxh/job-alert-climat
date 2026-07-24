@@ -473,6 +473,13 @@ def is_remote_location(value):
               ["remote", "télétravail", "teletravail", "anywhere", "full remote"])
 
 
+def _is_us_location(value):
+    """Vrai si le libellé de lieu est aux États-Unis (ex. « New York, NY, US »,
+    « United States », « Texas, US »). Sert à écarter les « remote » US-only."""
+    t = (value or "").lower()
+    return ", us" in t or "united states" in t or t.strip() in ("us", "usa")
+
+
 # Détection RSE en MOT ENTIER (recentrage : Arnaud exclut désormais la RSE
 # générique). Évite les faux positifs des sous-chaînes (« diverse », « traverse »).
 _RSE_RE = re.compile(r"\brse\b|responsabilit[ée]\s+soci[ée]tale|responsabilit[ée]\s+sociale",
@@ -1149,7 +1156,9 @@ def search_climatebase():
     pas besoin de filtrer par mot-clé climat (tout le board l'est déjà). La
     page intègre les offres en SSR dans un <script id="__NEXT_DATA__"> JSON
     (pas besoin de navigateur headless). On ne garde que les offres avec
-    remote_preferences contenant 'Remote'."""
+    remote_preferences contenant 'Remote', ET on écarte les « remote » dont le
+    champ `locations` est 100 % américain (remote US-only, inutile pour Arnaud) :
+    on garde le remote mondial (locations vide) ou avec au moins un lieu non-US."""
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36",
     }
@@ -1174,16 +1183,24 @@ def search_climatebase():
             if not job_id:
                 continue
             title = job.get("title", "")
+            employer = job.get("name_of_employer", "N/A")
+            locs = job.get("locations") or []
+            # Écarte le remote US-only : lieux tous américains. On garde le
+            # remote mondial (locs vide) ou avec au moins un lieu non-US.
+            non_us = [l for l in locs if not _is_us_location(l)]
+            if locs and not non_us:
+                log_excluded(title, employer, ", ".join(locs)[:40],
+                             "Remote EU", "remote US-only")
+                continue
             if any(excl in title.lower() for excl in exclusions):
-                log_excluded(title, job.get("name_of_employer", "N/A"),
-                             "Remote", "Remote EU", "mot-clé exclu")
+                log_excluded(title, employer, "Remote", "Remote EU", "mot-clé exclu")
                 continue
             slug = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
             jobs.append({
                 "id": job_id,
                 "title": clean_text(title),
-                "company": job.get("name_of_employer", "N/A"),
-                "location": "Remote",
+                "company": employer,
+                "location": non_us[0] if non_us else "Remote",
                 "url": f"https://climatebase.org/job/{slug}-{job_id}",
                 "description": job.get("employer_short_description", "")[:150],
                 "salary": format_salary_range(job.get("salary_from"), job.get("salary_to")),
@@ -2276,40 +2293,7 @@ def send_priority_alert(jobs):
         print(f"  EXCEPTION notif prioritaire: {e}")
 
 
-def debug_climatebase():
-    """TEMPORAIRE : dump la structure d'une offre Climatebase pour repérer le
-    champ de restriction géographique (remote US-only vs monde). À supprimer."""
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36"}
-    try:
-        r = requests.get("https://climatebase.org/jobs", headers=headers, timeout=20)
-        print(f"  CB status {r.status_code} len={len(r.text)}")
-        text = r.text
-        idx = text.find('id="__NEXT_DATA__"')
-        start = text.find(">", idx) + 1
-        end = text.find("</script>", start)
-        data = json.loads(text[start:end])
-        raw = data.get("props", {}).get("pageProps", {}).get("jobs", [])
-        print(f"  CB jobs={len(raw)}")
-        if raw:
-            print("  CLÉS:", sorted(raw[0].keys()))
-        loc_keys = set()
-        for job in raw:
-            for k, v in job.items():
-                if any(t in k.lower() for t in ["location", "country", "region", "remote", "elig", "timezone", "geo", "place"]):
-                    loc_keys.add(k)
-        print("  CHAMPS GÉO:", sorted(loc_keys))
-        for job in raw[:6]:
-            rp = job.get("remote_preferences")
-            info = {k: job.get(k) for k in sorted(loc_keys)}
-            print(f"   • {str(job.get('title'))[:45]!r:47} | {info}")
-    except Exception as e:
-        print(f"  EXCEPTION CB debug: {e}")
-    raise SystemExit(0)
-
-
 if __name__ == "__main__":
-    if os.environ.get("DEBUG_CB"):
-        debug_climatebase()
     seen_ids = set(load_json(SEEN_FILE, []))
     print(f"{len(seen_ids)} offres déjà vues en mémoire")
     # Offres conservées hier (avant écrasement de TODAY_FILE) : sert à repérer
