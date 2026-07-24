@@ -2276,7 +2276,40 @@ def send_priority_alert(jobs):
         print(f"  EXCEPTION notif prioritaire: {e}")
 
 
+def debug_climatebase():
+    """TEMPORAIRE : dump la structure d'une offre Climatebase pour repérer le
+    champ de restriction géographique (remote US-only vs monde). À supprimer."""
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36"}
+    try:
+        r = requests.get("https://climatebase.org/jobs", headers=headers, timeout=20)
+        print(f"  CB status {r.status_code} len={len(r.text)}")
+        text = r.text
+        idx = text.find('id="__NEXT_DATA__"')
+        start = text.find(">", idx) + 1
+        end = text.find("</script>", start)
+        data = json.loads(text[start:end])
+        raw = data.get("props", {}).get("pageProps", {}).get("jobs", [])
+        print(f"  CB jobs={len(raw)}")
+        if raw:
+            print("  CLÉS:", sorted(raw[0].keys()))
+        loc_keys = set()
+        for job in raw:
+            for k, v in job.items():
+                if any(t in k.lower() for t in ["location", "country", "region", "remote", "elig", "timezone", "geo", "place"]):
+                    loc_keys.add(k)
+        print("  CHAMPS GÉO:", sorted(loc_keys))
+        for job in raw[:6]:
+            rp = job.get("remote_preferences")
+            info = {k: job.get(k) for k in sorted(loc_keys)}
+            print(f"   • {str(job.get('title'))[:45]!r:47} | {info}")
+    except Exception as e:
+        print(f"  EXCEPTION CB debug: {e}")
+    raise SystemExit(0)
+
+
 if __name__ == "__main__":
+    if os.environ.get("DEBUG_CB"):
+        debug_climatebase()
     seen_ids = set(load_json(SEEN_FILE, []))
     print(f"{len(seen_ids)} offres déjà vues en mémoire")
     # Offres conservées hier (avant écrasement de TODAY_FILE) : sert à repérer
