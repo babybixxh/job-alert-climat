@@ -2390,7 +2390,39 @@ def send_priority_alert(jobs):
         print(f"  EXCEPTION notif prioritaire: {e}")
 
 
+def debug_ats():
+    """TEMPORAIRE : identifie l'ATS de l'IEA et du GCF. À supprimer ensuite."""
+    ua = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36",
+          "Accept": "text/html,application/json,*/*"}
+    print("=== Pages carrières ===")
+    for u in ["https://jobs.iea.org/", "https://jobs.greenclimate.fund/",
+              "https://www.iea.org/about/jobs", "https://greenclimate.fund/about/employment"]:
+        try:
+            r = requests.get(u, headers=ua, timeout=20)
+            t = r.text.lower()
+            marks = [m for m in ["smartrecruiters", "taleo", "successfactors", "workday",
+                                 "greenhouse", "lever", "oracle", "icims", "brassring",
+                                 "inspira", "jobvite", "avature", "cornerstone", "sap",
+                                 "wp-json", "__next_data__"] if m in t]
+            print(f"  {u} → HTTP {r.status_code} len={len(r.text)} | {marks}")
+        except Exception as e:
+            print(f"  {u} → ERR {repr(e)[:80]}")
+    print("=== SmartRecruiters IDs candidats ===")
+    for cid in ["IEA", "InternationalEnergyAgency", "IEAorg", "GreenClimateFund",
+                "GCF", "IRENA1", "IRENAAbuDhabi"]:
+        try:
+            r = requests.get(f"https://api.smartrecruiters.com/v1/companies/{cid}/postings",
+                             params={"limit": 5}, timeout=15)
+            n = len(r.json().get("content", [])) if r.status_code == 200 else 0
+            print(f"  SR {cid} → HTTP {r.status_code} postings={n}")
+        except Exception as e:
+            print(f"  SR {cid} → ERR {repr(e)[:70]}")
+    raise SystemExit(0)
+
+
 if __name__ == "__main__":
+    if os.environ.get("DEBUG_ATS"):
+        debug_ats()
     seen_ids = set(load_json(SEEN_FILE, []))
     print(f"{len(seen_ids)} offres déjà vues en mémoire")
     # Offres conservées hier (avant écrasement de TODAY_FILE) : sert à repérer
