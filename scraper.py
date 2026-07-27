@@ -25,6 +25,7 @@ KEYWORDS = [
     "climate risk analyst",
     "adaptation specialist",
     "climate finance",
+    "energy analyst",
     "bilan carbone",
     "transition écologique",
     "chargé mission climat",
@@ -48,6 +49,9 @@ REMOTE_KEYWORDS = [
     # Organisations internationales / think tanks (intitulés fréquents)
     "climate change specialist", "climate finance", "programme officer",
     "policy analyst", "research analyst", "readiness", "mrv", "climate investment",
+    # Modélisation énergie/climat & analyse quantitative
+    "energy analyst", "energy model", "scenario analysis", "research associate",
+    "modelling analyst", "climate economist", "quantitative analyst",
 ]
 
 # Communes trop excentrées à écarter même quand elles ressortent comme
@@ -111,7 +115,7 @@ AI_VERDICTS_MAX = 3000
 # Version du prompt/règles IA. À incrémenter dès qu'on modifie le PROFILE ou les
 # règles de décision : les verdicts en cache d'une version antérieure sont alors
 # ré-évalués (sinon d'anciennes décisions périmées seraient rejouées).
-AI_PROMPT_VERSION = 8
+AI_PROMPT_VERSION = 9
 
 # Suivi de la santé des sources : pour chaque source, nombre de jours
 # consécutifs sans aucune offre brute (parseur potentiellement cassé).
@@ -240,8 +244,17 @@ WTTJ_COMPANIES = {
     "ramboll": "Ramboll",
     "cdp": "CDP",
     "climate-policy-initiative": "Climate Policy Initiative",
-    # Organisations internationales / bailleurs (expatriation possible ; AFD,
-    # BEI et CDP peuvent aussi publier en France)
+    "bruegel": "Bruegel",
+    "ember": "Ember",
+    "rmi": "Rocky Mountain Institute",
+    "e3g": "E3G",
+    "agora-energiewende": "Agora Energiewende",
+    "crea": "CREA",
+    "odi": "ODI",
+    "chatham-house": "Chatham House",
+    "jrc": "Joint Research Centre",
+    # Organisations internationales / intergouvernementales / bailleurs
+    # (expatriation possible ; AFD, BEI, Proparco peuvent aussi publier en France)
     "green-climate-fund": "Green Climate Fund",
     "unep": "UNEP",
     "unep-fi": "UNEP FI",
@@ -253,6 +266,19 @@ WTTJ_COMPANIES = {
     "adaptation-fund": "Adaptation Fund",
     "ndc-partnership": "NDC Partnership",
     "global-center-adaptation": "Global Center on Adaptation",
+    "iea": "IEA",
+    "oecd": "OECD",
+    "irena": "IRENA",
+    "ipcc": "IPCC",
+    "unfccc": "UNFCCC",
+    "imf": "IMF",
+    "itf-oecd": "International Transport Forum",
+    "fao": "FAO",
+    "ebrd": "EBRD",
+    "kfw": "KfW",
+    "proparco": "Proparco",
+    "gef": "Global Environment Facility",
+    "cif": "Climate Investment Funds",
     # Agro × climat : agtech carbone, transition agricole, agri-data
     "soil-capital": "Soil Capital",
     "rize-ag": "Rize",
@@ -348,8 +374,12 @@ Adaptation Specialist, Resilience Analyst, Nature-based Solutions, Natural Capit
 Analyst, Climate Modelling, Catastrophe / Cat Modelling, Parametric Insurance, TCFD, Climate
 Scenario Analysis, Agri Climate Specialist, Climate Product Manager.
 Compétences qui font mouche (bonus de score si présentes) : GHG Protocol, SBTi, ACT, Bilan
-Carbone, CSRD, GIS/SIG, Python, scénarios climatiques (RCP/IPCC), downscaling, hazard modelling,
-vulnerability assessment. Donne un score élevé aux postes de cette zone.
+Carbone, CSRD, GIS/SIG, Python, R, modélisation / modelling, analyse quantitative, scenario
+analysis, energy model (TIMES, Vensim), économétrie / econometric, forecasting, scénarios
+climatiques (RCP/IPCC), downscaling, hazard modelling, vulnerability assessment. Il vise aussi
+les postes d'analyste/modélisateur énergie-climat (Energy Analyst, Energy Modeler, Scenario
+Analyst, Quantitative Analyst, Research Associate, Climate Economist) dans les agences (IEA,
+OECD, IRENA…) et think tanks. Donne un score élevé aux postes de cette zone.
 Il ne veut PAS de postes terrain, techniciens (maintenance/chantier), nucléaire,
 achats, RH, finance/comptabilité, stages ou alternances.
 """
@@ -495,7 +525,8 @@ def is_rse_title(title):
 # Mot entier pour ne pas attraper « directorate », « leadership », etc.
 _OVERSENIOR_RE = re.compile(
     r"\b(head of|chief|principal|managing director|director|directeur|directrice|"
-    r"vice[- ]?president|vice[- ]?président|vp|partner|associé principal|lead)\b",
+    r"vice[- ]?president|vice[- ]?président|vp|partner|associé principal|lead|"
+    r"senior manager)\b",
     re.IGNORECASE)
 
 
