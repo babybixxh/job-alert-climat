@@ -1321,7 +1321,10 @@
   },
   "technico-commercial systèmes incendie f/h|md skills": {
     "keep": false,
-    "reason": "technico-commercial (hors climat)"
+    "reason": "Technico-commercial systèmes incendie : poste commercial terrain sans lien climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
   },
   "délégué(e) hospitalier(ère) en perfusion/nutrition f/h|had confort plus": {
     "keep": false,
@@ -2835,10 +2838,10 @@
   },
   "supervisor|rehlko": {
     "keep": false,
-    "reason": "hors lien climat (supervisor)",
+    "reason": "supervisor, hors climat/durabilité",
     "borderline": false,
     "score": 0,
-    "v": 4
+    "v": 8
   },
   "mécanicien hélicoptères b1.3 f/h - mission sur genève - daher|aerocontact.com": {
     "keep": false,
@@ -4269,10 +4272,10 @@
   },
   "consultant en gestion du changement projets erp h/f|talan - france": {
     "keep": false,
-    "reason": "Consultant en gestion du changement projets ERP chez Talan : pas de lien avec le climat ou la durabilité.",
+    "reason": "gestion du changement ERP, hors climat/durabilité",
     "borderline": false,
     "score": 0,
-    "v": 4
+    "v": 8
   },
   "business analyst finance de marché|finexia": {
     "keep": false,
@@ -9891,6 +9894,314 @@
   "responsable commercial collectivités f/h|amo consultants": {
     "keep": false,
     "reason": "Poste commercial pur (hors cible climat)",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "senior project manager, data center expansion – france|verda": {
+    "keep": false,
+    "reason": "hors domaine climat/durabilité, poste technique (data center) sans lien stratégique",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "consultant logistique – mission|matches - executive search & management de transition": {
+    "keep": false,
+    "reason": "logistique, hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "cdi - ems - support de gestion des processus / business process management support f/h|stmicroelectronics france": {
+    "keep": false,
+    "reason": "support processus / BPM, hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "consultant fonctionnel médical - f/h|groupe softway medical": {
+    "keep": false,
+    "reason": "consultant fonctionnel médical, hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "business analyst – fonds semi-liquides (h/f)|taleo consulting": {
+    "keep": false,
+    "reason": "business analyst finance, hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "architecte solutions data & ia (h/f)|klanik": {
+    "keep": false,
+    "reason": "architecte solutions data & IA, hors climat/durabilité (même si data)",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "manager risk banking h/f|accenture france": {
+    "keep": false,
+    "reason": "risk banking, hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "stagiaire en risque de marché & modélisation bancaire (h/f)|deloitte": {
+    "keep": false,
+    "reason": "stagiaire risque marché, hors séniorité et domaine",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "senior consultant - risk & resilience|mckinsey & company": {
+    "keep": false,
+    "reason": "Manager Risk & Resilience chez McKinsey (niveau Head of, hors fourchette séniorité cible)",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "expert investissement responsable et indicateurs esg h/f|cnp assurances": {
+    "keep": false,
+    "reason": "expert investissement responsable ESG, hors climat/carbone pur (approche finance)",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "consultant grc confirmé - (h/f)|airbus protect": {
+    "keep": false,
+    "reason": "consultant GRC confirmé, hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "client success specialist - sustainability solutions|iss stoxx sustainability": {
+    "keep": false,
+    "reason": "Client Success Specialist (Sustainability Solutions) chez ISS STOXX, rôle commercial pur (pas hybride conseil/produit)",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "chargé de mission « bilan bas-carbone et mobilités durables », chef de projet odrive|ministère de la justice": {
+    "keep": true,
+    "reason": "chargé de mission bilan bas-carbone et mobilités durables en collectivité (Ministère de la Justice), poste qualifié en climat/transition, niveau senior",
+    "borderline": false,
+    "score": 75,
+    "v": 8
+  },
+  "chargé de formation h/f|alixio group": {
+    "keep": false,
+    "reason": "chargé de formation, hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "responsable de pôle maître d'oeuvre en hydraulique urbaine h/f|suez": {
+    "keep": false,
+    "reason": "maître d'œuvre hydraulique urbaine, hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "ingénieur conduite d'opérations de bâtiments (h/f) - département des alpes-maritimes|fonction publique territoriale": {
+    "keep": false,
+    "reason": "ingénieur conduite d'opérations bâtiments, poste technique terrain",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "employé d'immeubles - f/h|icf habitat": {
+    "keep": false,
+    "reason": "employé d'immeubles, poste technique",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "coordinateur technique nsss f/h|edf": {
+    "keep": false,
+    "reason": "coordinateur technique NSSS, hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "juriste|spie ics": {
+    "keep": false,
+    "reason": "juriste, hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "chef de projet en urbanisme h/f|altereo": {
+    "keep": false,
+    "reason": "chef de projet urbanisme, hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "coordinateur.rice data finance f/h|ademe": {
+    "keep": true,
+    "reason": "coordinateur data finance à l'ADEME (France), poste qualifié en transition écologique/finance durable, niveau senior",
+    "borderline": false,
+    "score": 80,
+    "v": 8
+  },
+  "formateur petite enfance/formatrice petite enfance|cci france": {
+    "keep": false,
+    "reason": "formateur petite enfance, hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "marsh aime les avocats h/f|marsh mclennan companies": {
+    "keep": false,
+    "reason": "poste RH/commercial pour avocats, hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "gestionnaire vie du contrat|marsh mclennan": {
+    "keep": false,
+    "reason": "Gestionnaire vie du contrat : poste administratif/financier sans lien climat ou stratégie.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "charge de clientele senior grm (global risk management)|marsh mclennan": {
+    "keep": false,
+    "reason": "Chargé de clientèle senior GRM : rôle commercial pur (assurance/risque) sans lien climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "gestionnaire d'immeubles - f/h|icf habitat": {
+    "keep": false,
+    "reason": "Gestionnaire d'immeubles : poste technique/administratif sans lien climat ou stratégie.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "regional industry manager, infrastructure, europe|world bank group": {
+    "keep": false,
+    "reason": "Regional Industry Manager, Infrastructure : poste opérationnel/stratégique sectoriel (infrastructure) sans focus climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "electromécanicien mécanicien h/f|bonduelle": {
+    "keep": false,
+    "reason": "Electromécanicien : poste technique terrain sans lien climat ou stratégie.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "chef de secteur compiegne (h/f)|groupe savencia": {
+    "keep": false,
+    "reason": "Chef de secteur : poste commercial pur (agroalimentaire) sans lien climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "vendeur conseil f/h|terrena": {
+    "keep": false,
+    "reason": "Vendeur Conseil : poste commercial terrain sans lien climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "senior implementation manager (hospital) (m/w/d)|recare deutschland gmbh": {
+    "keep": false,
+    "reason": "Senior Implementation Manager (HealthTech) : poste technique/opérationnel sans lien climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "senior qa manager - fully remote|softgames": {
+    "keep": false,
+    "reason": "Senior QA Manager : poste technique pur (jeux vidéo) sans lien climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "produktmanager (m/w/d) in hamburg oder remote|demv systems gmbh": {
+    "keep": false,
+    "reason": "Produktmanager (assurance) : poste commercial/produit sans focus climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "senior business analyst (credit technology)|icap energy as": {
+    "keep": false,
+    "reason": "Senior Business Analyst (énergie) : poste financier/opérationnel sans lien climat stratégique.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "ingénieur essais référent vibrations et climatiques f/h|hellowork": {
+    "keep": false,
+    "reason": "Ingénieur essais : poste technique terrain sans lien climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "gb energies - ingenieur be génie climatique f/h|g.b.": {
+    "keep": false,
+    "reason": "Ingénieur génie climatique : poste technique opérationnel sans lien climat stratégique.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "trade finance - guarantees analyst f/h|proaxian": {
+    "keep": false,
+    "reason": "Trade finance analyst : poste financier/comptable sans lien climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "ingénieur géologue risques naturels f/h|cadremploi": {
+    "keep": false,
+    "reason": "Ingénieur géologue risques naturels : poste technique terrain sans lien climat stratégique ou conseil.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "chargé de mission \" bouge ton réseau\" f/h|ass reg organismes hlm champ ardenne": {
+    "keep": true,
+    "reason": "Chargé de mission 'bouge ton réseau' : poste en collectivité avec focus énergie/climat, mais niveau junior/opérationnel (pas stratégie senior).",
+    "borderline": true,
+    "score": 50,
+    "v": 8
+  },
+  "technico commercial itinérant fabricant climatisation sud idf f/h|anthropy thermo conseils": {
+    "keep": false,
+    "reason": "Technico-commercial climatisation : poste commercial terrain sans lien climat stratégique.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "responsable commercial grands comptes emballages verre f/h|michael page international france": {
+    "keep": false,
+    "reason": "Responsable commercial emballages : poste commercial pur sans lien climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "chargé d'affaires en santé - f/h|le cabrh": {
+    "keep": false,
+    "reason": "Chargé d'affaires santé : poste commercial sans lien climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "chargé de mission senior f/h|hays france": {
+    "keep": false,
+    "reason": "Chargé de mission senior (expertise comptable) : poste administratif/financier sans lien climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 8
+  },
+  "chargé d'affaires industrie électrique f/h|hellowork": {
+    "keep": false,
+    "reason": "Chargé d'affaires industrie électrique : poste commercial/opérationnel sans lien climat stratégique.",
     "borderline": false,
     "score": 0,
     "v": 8
