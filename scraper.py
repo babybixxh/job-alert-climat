@@ -148,6 +148,12 @@ GREENHOUSE_BOARDS_DEFAULT = ["watershed", "patch", "carbonchain", "tomorrow"]
 # trouvé sur Lever lors du sondage. À renseigner via le secret LEVER_COMPANIES.
 LEVER_COMPANIES_DEFAULT = []
 
+# Organisations utilisant SmartRecruiters comme ATS (API publique des offres :
+# api.smartrecruiters.com/v1/companies/<id>/postings). id = segment d'URL
+# jobs.smartrecruiters.com/<id>. Surchargé par le secret SMARTRECRUITERS_COMPANIES.
+# Les logs CI (« SmartRecruiters <id> → N / HTTP 404 ») révèlent les id à corriger.
+SMARTRECRUITERS_COMPANIES_DEFAULT = ["OECD", "IEA", "IRENA"]
+
 # Marqueurs d'offres US à écarter sur les boards internationaux (Greenhouse/
 # Lever/LinkedIn) : on ne garde que France / Europe / télétravail.
 US_LOCATION_MARKERS = [
@@ -1305,6 +1311,65 @@ def _greenhouse_boards():
     return GREENHOUSE_BOARDS_DEFAULT
 
 
+def _smartrecruiters_companies():
+    env = os.environ.get("SMARTRECRUITERS_COMPANIES", "").strip()
+    if env:
+        return [c.strip() for c in env.split(",") if c.strip()]
+    return SMARTRECRUITERS_COMPANIES_DEFAULT
+
+
+def search_smartrecruiters():
+    """SmartRecruiters : API publique des offres (postings) des organisations
+    qui l'utilisent comme ATS — notamment l'OCDE, et potentiellement d'autres
+    agences (IEA, IRENA…). Sans clé. On ne garde que France / Europe / remote
+    (les postes US-remote sont écartés) ; l'IA + le plafond de séniorité
+    tranchent la pertinence. Un id invalide renvoie 404 (visible dans les logs)."""
+    exclusions = get_exclusions()
+    headers = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
+    jobs = []
+    for company in _smartrecruiters_companies():
+        try:
+            r = requests.get(
+                f"https://api.smartrecruiters.com/v1/companies/{company}/postings",
+                params={"limit": 100}, headers=headers, timeout=15)
+            if r.status_code != 200:
+                print(f"  SmartRecruiters {company} → HTTP {r.status_code} (id à vérifier ?)")
+                continue
+            results = r.json().get("content", [])
+            print(f"  SmartRecruiters {company} → {len(results)} brutes")
+            for job in results:
+                title = clean_text(job.get("name", ""))
+                if not title:
+                    continue
+                loc = job.get("location") or {}
+                remote = bool(loc.get("remote"))
+                location = ", ".join([p for p in (loc.get("city"), loc.get("region"),
+                                                  loc.get("country")) if p])
+                if remote:
+                    location = f"{location} (Remote)".strip() if location else "Remote"
+                if not keep_international_location(location):
+                    continue
+                if any(excl in title.lower() for excl in exclusions):
+                    log_excluded(title, company, location, "SmartRecruiters", "mot-clé exclu")
+                    continue
+                pid = job.get("id", "")
+                jobs.append({
+                    "id": f"sr-{company}-{pid}",
+                    "title": title,
+                    "company": company,
+                    "location": location or "Remote",
+                    "url": f"https://jobs.smartrecruiters.com/{company}/{pid}",
+                    "description": "",
+                    "date": (job.get("releasedDate") or "")[:10],
+                    "source": "SmartRecruiters",
+                    "company_watch": True,
+                })
+        except Exception as e:
+            print(f"  EXCEPTION SmartRecruiters {company}: {e}")
+    print(f"  SmartRecruiters total → {len(jobs)} offres après filtre")
+    return jobs
+
+
 def search_reliefweb():
     """ReliefWeb (api.reliefweb.int) : job board ONU / humanitaire / développement,
     riche en postes climat-adaptation d'organisations internationales (PNUD, UNEP,
@@ -2087,6 +2152,7 @@ def section_html(title, emoji, jobs, color):
         "Lever": "#5a4fcf",
         "LinkedIn": "#0a66c2",
         "ReliefWeb": "#c8102e",
+        "SmartRecruiters": "#00b6b0",
     }
     html = f"""
     <div style="margin:2rem 0 1rem">
@@ -2352,7 +2418,8 @@ if __name__ == "__main__":
     for fn in (search_ademe, search_adzuna_companies, search_jtms,
                search_service_public, search_ess, search_remotive,
                search_arbeitnow, search_climatebase, search_apec,
-               search_greenhouse, search_lever, search_reliefweb):
+               search_greenhouse, search_lever, search_reliefweb,
+               search_smartrecruiters):
         tasks.append((fn, ()))
 
     all_jobs = []
