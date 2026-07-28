@@ -724,11 +724,11 @@
     "v": 9
   },
   "chef de projet environnement - amo f/h|metiga": {
-    "keep": true,
-    "reason": "Chef de projet environnement en AMO (Paris) : poste qualifié en transition écologique, niveau senior. Correspond à la stratégie publique/collectivité.",
+    "keep": false,
+    "reason": "Chef de projet environnement AMO - poste technique opérationnel (pilotage contractuel), pas conseil/stratégie.",
     "borderline": false,
-    "score": 75,
-    "v": 8
+    "score": 0,
+    "v": 9
   },
   "ref gt cscm chef du service environnement construction f/ f/h|cimem": {
     "keep": false,
@@ -1748,9 +1748,10 @@
   },
   "ingénieur cvc/plomberie bâtiments confirmé h/f|egis en france": {
     "keep": false,
-    "reason": "Poste technique 'Ingénieur CVC/Plomberie' sans lien stratégie climat",
+    "reason": "hors domaine climat/durabilité (CVC/plomberie technique)",
     "borderline": false,
-    "score": 0
+    "score": 0,
+    "v": 9
   },
   "assistant administratif du pôle accompagnement des territoires|fonction publique territoriale": {
     "keep": true,
@@ -2272,10 +2273,10 @@
   },
   "ingénieur projet environnement ferroviaire h/f- 13|ortec group": {
     "keep": false,
-    "reason": "hors domaine climat/stratégie, poste technique ferroviaire",
+    "reason": "hors domaine climat/durabilité (environnement ferroviaire technique)",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "responsable administratif & financier (h/f)|lpo provence-alpes-côte d'azur - paca": {
     "keep": false,
@@ -2341,10 +2342,10 @@
   },
   "chef de secteur h/f|ortec group": {
     "keep": false,
-    "reason": "Titre 'Chef de secteur' ne correspond pas au climat/stratégie/durabilité",
+    "reason": "hors domaine climat/durabilité (chef de secteur)",
     "borderline": false,
     "score": 0,
-    "v": 4
+    "v": 9
   },
   "commercial - ingrédients naturels & bio|robertet group": {
     "keep": false,
@@ -2362,10 +2363,10 @@
   },
   "ingénieur d'études réseaux de chaleur - paris f/h|metiga": {
     "keep": false,
-    "reason": "Titre 'Ingénieur d'études réseaux de chaleur' hors stratégie climat pure et hors zone cible",
+    "reason": "Ingénieur réseaux de chaleur - poste technique opérationnel, pas conseil/stratégie climat.",
     "borderline": false,
     "score": 0,
-    "v": 4
+    "v": 9
   },
   "commercial b2b - solutions de gestion des déchets f/h|uptoo": {
     "keep": false,
@@ -2586,10 +2587,10 @@
   },
   "responsable de secteur - en formation|ecolab": {
     "keep": false,
-    "reason": "Responsable de Secteur - Formation (hors climat)",
+    "reason": "hors domaine climat/durabilité (responsable secteur)",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "responsable qhse|manpower france": {
     "keep": true,
@@ -3047,17 +3048,17 @@
   },
   "gestionnaire de contrat d'exploitation des installations chauffage, ventilation et climatisation (h/f)|fonction publique": {
     "keep": false,
-    "reason": "Gestionnaire de contrat technique (maintenance) sans lien avec climat.",
+    "reason": "Poste de gestionnaire de contrat exploitation CVAC, hors climat/durabilité",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "conducteur de projets maitrise energie et eau f/h - commune d'avignon|fonction publique": {
     "keep": true,
-    "reason": "Conducteur de projets maîtrise énergie et eau en collectivité (Avignon). Poste qualifié en transition écologique en collectivité, proche de ses critères.",
+    "reason": "Poste de conducteur de projets maîtrise énergie et eau en collectivité (Avignon/PACA), correspond à la zone et au niveau senior",
     "borderline": false,
-    "score": 80,
-    "v": 8
+    "score": 70,
+    "v": 9
   },
   "gestionnaire énergie et transition écologique - commune de chateaurenard|fonction publique": {
     "keep": false,
@@ -3848,10 +3849,10 @@
   },
   "consultant, oil & gas|boston consulting group (bcg)": {
     "keep": false,
-    "reason": "Consultant Oil & Gas hors scope climat/stratégie.",
+    "reason": "Oil & Gas hors climat (sauf si lien explicite non visible)",
     "borderline": false,
     "score": 0,
-    "v": 4
+    "v": 9
   },
   "consultant.e senior.e/ amoa - pilotage it & coordination métier.|o2max": {
     "keep": false,
@@ -5476,10 +5477,10 @@
   },
   "consultant senior energie (h/f)|magellan consulting": {
     "keep": true,
-    "reason": "Consultant senior énergie à Paris, correspond au profil conseil/stratégie climat.",
+    "reason": "Consultant Senior Energie (H/F) chez Magellan Consulting (Paris) - énergie/climat stratégique",
     "borderline": false,
-    "score": 85,
-    "v": 8
+    "score": 80,
+    "v": 9
   },
   "chargé(e) de mission économie des énergies renouvelables|commission de régulation de l'énergie": {
     "keep": true,
@@ -5553,17 +5554,17 @@
   },
   "customer operations manager de|streem energy": {
     "keep": false,
-    "reason": "Customer Operations manager, pas de lien climat.",
+    "reason": "Customer Operations Manager DE hors climat/durabilité",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "consultant manager en consolidation - paris h/f|forvis mazars en france": {
     "keep": false,
-    "reason": "Consolidation financière, pas de lien climat.",
+    "reason": "Consultant Manager en Consolidation (finance) hors climat/durabilité",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "manager sap sales - f/h|pwc france": {
     "keep": false,
@@ -5581,10 +5582,10 @@
   },
   "environmental law and governance specialist|un environment programme": {
     "keep": true,
-    "reason": "Spécialiste en droit environnemental et gouvernance climat à l'ONU, correspond au profil senior conseil/stratégie climat.",
+    "reason": "Environmental Law and Governance Specialist (UNEP Paris) - poste climat international stratégique",
     "borderline": false,
-    "score": 85,
-    "v": 8
+    "score": 95,
+    "v": 9
   },
   "recruitment consultant|matches - executive search & management de transition": {
     "keep": false,
@@ -5714,10 +5715,10 @@
   },
   "architecte solutions ia|capgemini": {
     "keep": false,
-    "reason": "Architecte solutions IA - hors domaine climat/stratégie",
+    "reason": "Architecte solutions IA (tech pur) hors climat/durabilité",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "consultant intégrateur de solutions d'impression (h/f)|konica minolta business solutions france": {
     "keep": false,
@@ -6028,11 +6029,11 @@
     "v": 9
   },
   "chef·fe de projet r&d biodiversité & connectivité écologique|arp astrance": {
-    "keep": false,
-    "reason": "Chef de projet R&D biodiversité, hors climat/carbone, hors séniorité cible.",
-    "borderline": false,
-    "score": 0,
-    "v": 8
+    "keep": true,
+    "reason": "Chef·fe de projet R&D Biodiversité & Connectivité Écologique : lien environnement mais pas explicitement climat/risque physique. Stratégie possible mais générique.",
+    "borderline": true,
+    "score": 50,
+    "v": 9
   },
   "program coordinator - youth empowerment|multiple": {
     "keep": false,
@@ -6085,10 +6086,10 @@
   },
   "consultant expérimenté en risque de marché & modélisation bancaire f/h|deloitte": {
     "keep": false,
-    "reason": "Consultant risque de marché & modélisation bancaire, hors climat/carbone, hors séniorité cible.",
+    "reason": "Consultant Expérimenté en risque de marché : finance bancaire, pas climat/risque physique.",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "quantitative risk analyst|engie - international supply & energy management": {
     "keep": false,
@@ -6169,17 +6170,17 @@
   },
   "adjoint d'animation h/f|ville de saint-tropez": {
     "keep": false,
-    "reason": "Adjoint d'animation, hors climat/carbone, hors séniorité cible.",
+    "reason": "Adjoint d'animation : poste administratif/terrain, hors scope.",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "charge d'etudes solutions h/f cagnes-sur-mer (06)|sonepar france": {
     "keep": false,
-    "reason": "Chargé d'études solutions (distribution), hors climat/carbone, hors séniorité cible.",
+    "reason": "Chargé d'Études Solutions : poste commercial/achats, hors scope.",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "cdi - responsable d'etudes d'actuariat n1 h/f|generali france": {
     "keep": false,
@@ -6190,10 +6191,10 @@
   },
   "global equities and commodity derivatives - secondary market sales assistant|master derivatives": {
     "keep": false,
-    "reason": "hors domaine climat/durabilité, poste financier/commercial pur",
+    "reason": "hors domaine climat/durabilité",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "rejoignez la lpo paca comme responsable administratif & financier (h/f) cdi – cadre au forfait jours|lpo provence-alpes-côte d'azur - paca": {
     "keep": false,
@@ -6260,10 +6261,10 @@
   },
   "consultant senior en transformation d'entreprise - paris - cdi - f/h|alixio change management & organisation": {
     "keep": false,
-    "reason": "transformation d'entreprise générique, hors climat/stratégie",
+    "reason": "hors domaine climat/durabilité (transformation d'entreprise générique)",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "ingénieur qualité iso 14001 h/f|oreca": {
     "keep": false,
@@ -6862,10 +6863,10 @@
   },
   "contrôle de gestion expenses l&h stagiaire|scor gie informatique": {
     "keep": false,
-    "reason": "Contrôle de gestion stagiaire : poste junior/finance, hors climat.",
+    "reason": "hors domaine climat/durabilité (contrôle de gestion)",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "gardien d'immeubles gq h/f|icf habitat": {
     "keep": false,
@@ -6932,10 +6933,10 @@
   },
   "responsable flux stockage h/f|bonduelle": {
     "keep": false,
-    "reason": "Poste logistique/flux (non climat), hors stratégie décarbonation",
+    "reason": "Poste de responsable flux/stockage, hors climat/durabilité",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "contrôleur qualité saisonnier h/f|bonduelle": {
     "keep": false,
@@ -7016,10 +7017,10 @@
   },
   "chef du pôle environnement et risques majeurs - commune de cabries|fonction publique": {
     "keep": true,
-    "reason": "Chef du pôle environnement et risques majeurs en collectivité (Bouches-du-Rhône). Poste stratégique climat/adaptation en collectivité publique, aligné avec son profil.",
+    "reason": "Poste de chef du pôle environnement et risques majeurs en collectivité (Marseille/PACA), correspond à la zone et au niveau senior",
     "borderline": false,
-    "score": 85,
-    "v": 8
+    "score": 75,
+    "v": 9
   },
   "co-responsable de communauté emmaüs h/f|employeur ess": {
     "keep": false,
@@ -7205,10 +7206,10 @@
   },
   "rrh f/h|randstad professional": {
     "keep": false,
-    "reason": "RRH (Ressources Humaines), hors scope.",
+    "reason": "RRH (Ressources Humaines) - hors scope climat/durabilité.",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "rrh f/h|hellowork": {
     "keep": false,
@@ -7478,10 +7479,10 @@
   },
   "manager du risque assurantiel f/h|mairie": {
     "keep": false,
-    "reason": "Risque assurantiel (hors climat), poste administratif.",
+    "reason": "Manager risque assurantiel - hors climat, focus assurance classique.",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "conseiller adaptation au changement climatique et transition f/h|chambre de metiers et de l'artisanat de region normandie": {
     "keep": false,
@@ -8017,10 +8018,10 @@
   },
   "consultant en audit social f/h|voluntae": {
     "keep": false,
-    "reason": "Consultant en Audit Social (hors climat/transition écologique)",
+    "reason": "Consultant audit social - RSE générique, hors climat/stratégie.",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "change manager en projets industriels (h/f)|virbac": {
     "keep": false,
@@ -8038,10 +8039,10 @@
   },
   "expert en gestion d'entreprise h/f|gcl - l'innovation dans l'accompagnement des entreprises": {
     "keep": false,
-    "reason": "Titre générique 'Expert gestion d'entreprise' sans lien climat/stratégie",
+    "reason": "Expert en gestion d'entreprise hors climat/durabilité",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "chargé/e mission développement de offre de formation tout au long de la vie|université côte d’azur": {
     "keep": false,
@@ -8108,10 +8109,10 @@
   },
   "safety assessor|l'oréal": {
     "keep": false,
-    "reason": "Titre 'SAFETY ASSESSOR' sans lien climat/stratégie",
+    "reason": "SAFETY ASSESSOR : sécurité produit, hors scope.",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "cdi - référent résilience numérique (h/f)|hermès": {
     "keep": false,
@@ -8122,17 +8123,17 @@
   },
   "safety assessor|station f": {
     "keep": false,
-    "reason": "Titre 'SAFETY ASSESSOR' sans lien climat/stratégie",
+    "reason": "SAFETY ASSESSOR : sécurité produit, hors scope.",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "chargé(e) développement outils crise h/f|asnr - autorité de sûreté nucléaire et de radioprotection": {
     "keep": false,
-    "reason": "Titre 'Chargé développement outils crise' sans lien climat/stratégie",
+    "reason": "Chargé(e) Développement Outils Crise : nucléaire/sûreté, hors scope.",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "expert gestion de crise et anticipation (f/h)|axa en france": {
     "keep": false,
@@ -8143,10 +8144,10 @@
   },
   "cdi - expert surete groupe h/f|hermès": {
     "keep": false,
-    "reason": "Titre 'EXPERT SURETE GROUPE' sans lien climat/stratégie",
+    "reason": "EXPERT SURETE GROUPE : sûreté industrielle, hors scope.",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "ai ux researcher (f/h)|thales": {
     "keep": false,
@@ -8185,10 +8186,10 @@
   },
   "chef(fe) de secteur gms - nice|la vie™": {
     "keep": false,
-    "reason": "Titre 'Chef de Secteur GMS' sans lien climat/stratégie",
+    "reason": "hors domaine climat/durabilité (chef de secteur)",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "chef.fe de projet bâtiment, énergie et décarbonation (h/f)|cedrus solutions": {
     "keep": false,
@@ -9775,6 +9776,587 @@
   "chef(fe) de l’unité du secrétariat de la coordination|oecd": {
     "keep": false,
     "reason": "poste de direction (chef de l'unité) — niveau trop élevé",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "contract manager h/f|paprec": {
+    "keep": false,
+    "reason": "Poste de Contract Manager hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chef(fe) de projets icpe|ginger": {
+    "keep": false,
+    "reason": "ICPE (Installations Classées) hors stratégie climat/conseil",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "consultante/consultant sustainable futures|capgemini invent": {
+    "keep": true,
+    "reason": "Consultant Sustainable Futures chez Capgemini Invent (Paris) - conseil stratégie climat senior",
+    "borderline": false,
+    "score": 75,
+    "v": 9
+  },
+  "consultant sénior en stratégie et transformation - secteur energie h/f|inetum": {
+    "keep": true,
+    "reason": "Consultant sénior en stratégie et transformation - secteur Energie (Paris) - énergie/climat stratégique",
+    "borderline": false,
+    "score": 70,
+    "v": 9
+  },
+  "manager en energie et utilities f/h|pwc france": {
+    "keep": true,
+    "reason": "Manager en Energie et Utilities (Neuilly-sur-Seine) - énergie/climat stratégique",
+    "borderline": false,
+    "score": 65,
+    "v": 9
+  },
+  "charge de mission attractivite du territoire h/f|golfe de saint-tropez": {
+    "keep": false,
+    "reason": "Chargé de mission attractivité du territoire hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé de développement pilotage stratégique h/f|crédit agricole provence côte d'azur": {
+    "keep": false,
+    "reason": "Chargé de développement pilotage stratégique (Crédit Agricole) hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "consultant fonctionnel plm 3dx|sociacom": {
+    "keep": false,
+    "reason": "Consultant fonctionnel PLM 3DX hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "manager sap finance - f/h|pwc france": {
+    "keep": false,
+    "reason": "Manager SAP Finance (finance) hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "manager sap manufacturing - f/h|pwc france": {
+    "keep": false,
+    "reason": "Manager SAP Manufacturing (industrie) hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "business analyst – fonds semi-liquides (h/f)|taleo consulting": {
+    "keep": false,
+    "reason": "Business Analyst fonds semi-liquides (finance) hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "business analyst credit risk|capgemini": {
+    "keep": false,
+    "reason": "Business Analyst Credit Risk (finance) hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "business analyst aml/ctf – cash management - h/f|synchrone fr": {
+    "keep": false,
+    "reason": "Business Analyst AML/CTF (finance) hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "business analyst risque de crédit - h/f|synchrone fr": {
+    "keep": false,
+    "reason": "Business Analyst Risque de Crédit (finance) hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "business analyst efront (fia)|global market solutions": {
+    "keep": false,
+    "reason": "Business Analyst eFront (finance) hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "business analyst (h/f)|it mates": {
+    "keep": false,
+    "reason": "Business Analyst (générique) hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "business analyst salesforce (h/f)|scalian": {
+    "keep": false,
+    "reason": "Business Analyst Salesforce (IT) hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "architecte solutions data & ia (h/f)|klanik": {
+    "keep": false,
+    "reason": "Architecte Solutions Data & IA (tech pur) hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "architecte solution|sii group canada": {
+    "keep": false,
+    "reason": "Titre trop générique (Architecte Solution) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "analyste certificats d'economies d'energie h/f/x|totalenergies": {
+    "keep": false,
+    "reason": "Analyste Certificats d'Économies d'Énergie : poste technique et sectoriel (énergie), pas stratégique climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "data analyst – power markets m/f – paris|groupe qair": {
+    "keep": false,
+    "reason": "Data Analyst – Power Markets : analyse de marchés énergétiques, pas de lien direct avec climat/risque physique.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "data analyst risques esg|qolibris": {
+    "keep": false,
+    "reason": "Data Analyst Risques ESG : ESG générique, pas de focus climat/risque physique ou adaptation.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "analyste financement de projets et transactions - f/h - cdi - paris ou avignon|q energy": {
+    "keep": false,
+    "reason": "Analyste financement de projets et transactions : finance pure, pas de lien climat/stratégie.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "consolideur h/f|bourbon": {
+    "keep": false,
+    "reason": "Consolideur : finance/comptabilité, hors scope.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "approvisionneur f/h|vinci energies": {
+    "keep": false,
+    "reason": "Approvisionneur : logistique/achats, hors scope.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "assistant de gestion mobilité et stationnement h/f|aéroports de la côte d’azur": {
+    "keep": false,
+    "reason": "Assistant de Gestion Mobilité et Stationnement : poste opérationnel, pas stratégique climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "stagiaire en risque de marché & modélisation bancaire (h/f)|deloitte": {
+    "keep": false,
+    "reason": "Stagiaire en risque de marché : junior et hors climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chef de projet icpe risques industriels (h/f) - ref 6104-li|rethic": {
+    "keep": false,
+    "reason": "Chef de Projet ICPE risques industriels : technicien/terrain, pas stratégique climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "conseiller en prévention des risques professionnels|msa provence azur": {
+    "keep": false,
+    "reason": "Conseiller en Prévention des Risques Professionnels : santé/sécurité au travail, pas climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "assistant(e) de prévention chargé(e) des risques professionnels (h/f)|ville de sainte-maxime": {
+    "keep": false,
+    "reason": "Assistant(e) de prévention chargé(e) des risques professionnels : administratif/terrain, pas climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur de recherche – sciences sociales des risques climatiques et des territoires|école normale supérieure de lyon": {
+    "keep": true,
+    "reason": "Ingénieur de recherche – Sciences sociales des risques climatiques et des territoires : correspond au profil (risque climatique, adaptation, recherche). Niveau senior.",
+    "borderline": false,
+    "score": 75,
+    "v": 9
+  },
+  "business analyst banque|hn services": {
+    "keep": false,
+    "reason": "Business Analyst Banque : finance pure, hors scope.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "analyste risque h/f|crédit agricole leasing & factoring": {
+    "keep": false,
+    "reason": "Analyste Risque : risque bancaire, pas climat/risque physique.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "analyste grc - rédacteur pki (monaco)|free-work": {
+    "keep": false,
+    "reason": "Analyste GRC - Rédacteur PKI : cybersécurité, hors scope.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "🌐 security & legal specialist - customer care|alan": {
+    "keep": false,
+    "reason": "Security & Legal Specialist : juridique/cybersécurité, hors scope.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "client success specialist - sustainability solutions|iss stoxx sustainability": {
+    "keep": false,
+    "reason": "hors domaine climat/durabilité (finance ESG index)",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "renewable energy analyst|tangaaza energy": {
+    "keep": false,
+    "reason": "hors domaine climat/durabilité (énergie renouvelable, pas stratégie climat)",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur efficacité energétique & commissioning h/f|acorus": {
+    "keep": false,
+    "reason": "hors domaine climat/durabilité (efficacité énergétique technique)",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur qualification produit - énergie h/f|viveris": {
+    "keep": false,
+    "reason": "hors domaine climat/durabilité (qualification produit énergie)",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé de formation – paris – cdi – f/h|develop'invest": {
+    "keep": false,
+    "reason": "hors domaine climat/durabilité (formation générique)",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingenieur environnement (h/f)|lesaffre": {
+    "keep": false,
+    "reason": "hors domaine climat/durabilité (environnement industriel)",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "consultant(e) / senior consultant(e) / manager – epm, consolidation & fp&a|youmanio": {
+    "keep": false,
+    "reason": "hors domaine climat/durabilité (FP&A, finance)",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "responsable opérationnel foncier (h/f) marseille (13)|systra": {
+    "keep": false,
+    "reason": "hors domaine climat/durabilité (foncier, mobilité durable mais pas stratégie climat)",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "cdd : responsable rh f/h|la société du canal de provence": {
+    "keep": false,
+    "reason": "hors domaine climat/durabilité (RH)",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé(e) de projet énergie & bâtiment (h/f)|citron®": {
+    "keep": false,
+    "reason": "hors domaine climat/durabilité (énergie/bâtiment technique)",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "expert energie - europe du sud (f/h) - cdi|unibail-rodamco-westfield": {
+    "keep": false,
+    "reason": "hors domaine climat/durabilité (expert énergie immobilier)",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "responsable developpement h/f|groupe pierreval": {
+    "keep": false,
+    "reason": "hors domaine climat/durabilité (développement immobilier)",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "responsable offres f/h|cap ingelec": {
+    "keep": false,
+    "reason": "hors domaine climat/durabilité (offres techniques)",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "un(e) charge(e) de mission evenementiel/culture (h/f)|mairie de villepreux": {
+    "keep": false,
+    "reason": "hors domaine climat/durabilité (événementiel)",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé de mission scientifique (h/f)|institut gustave roussy": {
+    "keep": false,
+    "reason": "hors domaine climat/durabilité (recherche médicale)",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "responsable des opérations et du développement de la marketplace|hilti group": {
+    "keep": false,
+    "reason": "hors domaine climat/durabilité (marketplace)",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "pharmacien/pharmacienne formateur/formatrice|cci france": {
+    "keep": false,
+    "reason": "hors domaine climat/durabilité (formation pharmacie)",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "contrôle de gestion it stagiaire|scor gie informatique": {
+    "keep": false,
+    "reason": "Poste de contrôle de gestion IT, hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "mécanicien h/f|bonduelle": {
+    "keep": false,
+    "reason": "Poste de mécanicien, hors climat/durabilité et terrain/technique",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "electromécanicien h/f|bonduelle": {
+    "keep": false,
+    "reason": "Poste d'électromécanicien, hors climat/durabilité et terrain/technique",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chef d'equipe h/f|bonduelle": {
+    "keep": false,
+    "reason": "Poste de chef d'équipe en production, hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chef de secteur macon (h/f)|groupe savencia": {
+    "keep": false,
+    "reason": "Poste commercial (chef de secteur), hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "responsable logistique usine f/h|invivo": {
+    "keep": false,
+    "reason": "Poste de responsable logistique usine, hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "electromécanicien(ne) f/h|invivo": {
+    "keep": false,
+    "reason": "Poste d'électromécanicien, hors climat/durabilité et terrain/technique",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "gestionnaire paie et adp f/h|sodiaal": {
+    "keep": false,
+    "reason": "Poste de gestionnaire paie, hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "senior data scientist (m/f/x)|makersite gmbh": {
+    "keep": false,
+    "reason": "Poste de Data Scientist pur, hors climate-tech hybride",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "mitarbeiter (m/w/d) administration, immobilienmanagement & akquise - teilzeit|schüür consulting": {
+    "keep": false,
+    "reason": "Poste administratif en immobilier, hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "(senior) qa engineer - ai-driven testing (m/f/d)|1komma5˚": {
+    "keep": false,
+    "reason": "Poste de QA Engineer, hors climate-tech hybride",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "finanzbuchhalter / accountant - buchhaltung & reporting - 100% remote -|hurra.com": {
+    "keep": false,
+    "reason": "Poste de comptabilité, hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "growth marketing manager (gtm engineer)|supercritical": {
+    "keep": false,
+    "reason": "Poste de Growth Marketing, hors climate-tech hybride",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "virtual design and construction (vdc) consultant|navvis": {
+    "keep": false,
+    "reason": "Poste de consultant VDC, hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "reality capture consultant|navvis": {
+    "keep": false,
+    "reason": "Poste de consultant Reality Capture, hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "quality assurance (qa) specialist|vexnovate ventures": {
+    "keep": false,
+    "reason": "Poste de QA Specialist, hors climate-tech hybride",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "product manager|klir": {
+    "keep": false,
+    "reason": "Poste de Product Manager hors climat/carbone",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "onboarding success manager|klir": {
+    "keep": false,
+    "reason": "Poste de Onboarding Success Manager hors climate-tech hybride",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "enterprise environmental customer success manager|encamp": {
+    "keep": false,
+    "reason": "Poste de Customer Success Manager hors climate-tech hybride",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "cbam consultant|isometric": {
+    "keep": true,
+    "reason": "Poste de CBAM Consultant (climat/carbone réglementaire), correspond au profil senior et au domaine",
+    "borderline": false,
+    "score": 85,
+    "v": 9
+  },
+  "sustainability ai consultant - us|pulsora, inc.": {
+    "keep": false,
+    "reason": "Poste de Sustainability AI Consultant hors climat/carbone pur",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "technico-commercial / chargé d'affaires f/h|progeclim services": {
+    "keep": false,
+    "reason": "Poste technique terrain (rélevés sur site, travaux CVCD) sans lien stratégique climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "data analyst - cib f/h|natixis": {
+    "keep": false,
+    "reason": "Data Analyst CIB (finance) - hors climat, rôle technique pur.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "project manager officer f/h|dalkia": {
+    "keep": false,
+    "reason": "Project Manager Officer (Dalkia) - poste opérationnel en gestion de projets techniques.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé d'affaires cvc f/h|nova talent": {
+    "keep": false,
+    "reason": "Chargé d'affaires CVC - poste technique terrain (chantier) sans lien stratégique climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "responsable commercial (produits structurés) f/h|fed finance": {
+    "keep": false,
+    "reason": "Responsable commercial produits structurés - finance pure, hors climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "sales specialist cloud f/h|groupe talents handicap": {
+    "keep": false,
+    "reason": "Sales Specialist Cloud - commercial pur (hors produit climat/carbone).",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé d'affaires professionnels expérimenté f/h|fed finance": {
+    "keep": false,
+    "reason": "Chargé d'affaires bancaire - finance pure, hors climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé de mission transition écologique f/h|cnam": {
+    "keep": true,
+    "reason": "Chargé de mission transition écologique (CNAM) - poste en collectivité publique, mais rôle administratif/gouvernance santé environnementale (peu stratégique climat).",
+    "borderline": true,
+    "score": 50,
+    "v": 9
+  },
+  "chargé d'affaires maintenance cvc f/h|le moniteur emploi": {
+    "keep": false,
+    "reason": "Chargé d'affaires maintenance CVC - poste technique terrain.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "responsable de production centre de relation client f/h|ageelink": {
+    "keep": false,
+    "reason": "Responsable de production centre de relation client - hors climat, rôle opérationnel RH/management.",
     "borderline": false,
     "score": 0,
     "v": 9
