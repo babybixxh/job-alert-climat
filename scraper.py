@@ -115,7 +115,7 @@ AI_VERDICTS_MAX = 3000
 # Version du prompt/règles IA. À incrémenter dès qu'on modifie le PROFILE ou les
 # règles de décision : les verdicts en cache d'une version antérieure sont alors
 # ré-évalués (sinon d'anciennes décisions périmées seraient rejouées).
-AI_PROMPT_VERSION = 9
+AI_PROMPT_VERSION = 10
 
 # Suivi de la santé des sources : pour chaque source, nombre de jours
 # consécutifs sans aucune offre brute (parseur potentiellement cassé).
@@ -1949,7 +1949,13 @@ REJETTE (keep=false), Y COMPRIS chez une ENTREPRISE CIBLÉE :
   Business Developer, Account Manager, marketing, growth. (Le Customer Success sur un
   produit climat/carbone est GARDÉ, cf. liste ci-dessus.)
 - RH / paie / recrutement / office manager / assistant·e
-- finance / comptabilité / achats / appels d'offres
+- finance / comptabilité / contrôle de gestion / achats / appels d'offres. INCLUT les
+  intitulés « data finance », « chef·fe de projet finance / data finance », « pilotage
+  financier », « ingénierie financière » : ce sont des FONCTIONS SUPPORT financières, PAS
+  du climat, MÊME quand le titre contient « data » ou « chef·fe de projet » et MÊME dans
+  une agence publique cible (ADEME, Région…). La marque de l'employeur ne repêche jamais
+  une fonction support. (La finance CLIMAT explicite — finance carbone, green bonds,
+  finance climat — reste évaluable, mais « data finance » générique = REJET.)
 - pédagogie / formation hors climat, support, ops génériques
 - postes terrain, techniciens (maintenance/chantier), juniors, stages, alternances
 - tout poste sans lien explicite et central avec le climat/la durabilité
@@ -1959,6 +1965,13 @@ IMPORTANT : « ENTREPRISE CIBLÉE: oui » = entreprise pile dans sa cible, MAIS 
 être dans la liste FERMÉE climate-tech ci-dessus (ou conseil/stratégie climat). Un « Fullstack
 Engineer », un « SDR/BDR » ou un « Sales Representative » chez une entreprise ciblée = REJETÉ.
 En cas de doute sur un rôle climate-tech, garde-le mais borderline=true.
+
+MÊME LOGIQUE POUR LES AGENCES PUBLIQUES CIBLES (ADEME, Région, Métropole, EPCI…) : l'employeur
+prestigieux ne rescape PAS une fonction support (finance, data finance, contrôle de gestion,
+achats, RH, DSI/informatique interne, juridique). Le poste n'est gardé QUE s'il porte
+EXPLICITEMENT sur le climat / la transition / la stratégie bas-carbone. Sans contenu climat
+explicite dans l'intitulé, un poste d'agence cible = REJET (keep=false, score=0), quel que soit
+le niveau « chef·fe de projet » affiché.
 
 CAS LIMITES (« borderline ») : pour les postes RSE / développement durable
 génériques que tu hésiterais à rejeter (pertinents sur le fond mais sans
