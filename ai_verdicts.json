@@ -4311,10 +4311,10 @@
   },
   "business analyst – data & analytics|whize": {
     "keep": false,
-    "reason": "Business Analyst – Data & Analytics : hors climat/durabilité",
+    "reason": "Titre trop générique (Business Analyst – Data & Analytics) sans lien explicite avec le climat ou la durabilité.",
     "borderline": false,
     "score": 0,
-    "v": 3
+    "v": 9
   },
   "business analyst erp|mindset": {
     "keep": false,
@@ -12770,6 +12770,349 @@
     "reason": "Poste de Policy Analyst dans une institution internationale (OECD) avec un focus sur des enjeux socio-économiques larges. Bien que non strictement 'climat', l'OCDE travaille sur des politiques publiques liées à la transition écologique et à la durabilité. Le niveau senior (confirmé) correspond à la séniorité visée. Score ajusté car hors climat pur mais pertinent pour un profil stratégie publique.",
     "borderline": false,
     "score": 75,
+    "v": 9
+  },
+  "consultant senior / manager data scientist data & ia strategy, risk & trustworthy ai analyst f/h|deloitte": {
+    "keep": false,
+    "reason": "Titre trop générique (Data & IA Strategy, Risk & Trustworthy AI) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "consultant risk data analyst / data scientist f/h|deloitte": {
+    "keep": false,
+    "reason": "Titre trop générique (Risk Data Analyst) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "consultant - analytics engineer|leonar": {
+    "keep": false,
+    "reason": "Titre trop générique (Analytics Engineer) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "consultant technique msbi|whize": {
+    "keep": false,
+    "reason": "Titre trop générique (Consultant Technique MSBI) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "learning & adoption specialist (12 month ftc)|kaluza": {
+    "keep": false,
+    "reason": "Titre trop générique (Learning & Adoption Specialist) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur cvc - h/f|neo2": {
+    "keep": false,
+    "reason": "Titre trop générique (Ingénieur CVC) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur étude de conception cvc - h/f|neo2": {
+    "keep": false,
+    "reason": "Titre trop générique (Ingénieur étude de conception CVC) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "wpm – management de work packages et support aux bids et captures (h/f)|thales": {
+    "keep": false,
+    "reason": "Titre trop générique (WPM – Management de Work Packages) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "#digital campus - solution & data architect (d/f/m)|airbus helicopters": {
+    "keep": false,
+    "reason": "Titre trop générique (Solution & Data Architect) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "référent qse et etudes h/f|l'usine nouvelle": {
+    "keep": false,
+    "reason": "Titre trop générique (Référent QSE et Etudes) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "analyste risques (f/h) - pilotage de l’icaap et de la cartographie des risques|crédit mutuel alliance fédérale": {
+    "keep": false,
+    "reason": "Titre trop générique (Analyste risques) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "project controller - contrôleur de gestion (f/h)|amentum": {
+    "keep": false,
+    "reason": "Titre trop générique (Project Controller) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "business analyst - agile - energy & utilities - île-de-france h/f|n/a": {
+    "keep": false,
+    "reason": "Titre trop générique (Business Analyst - Agile) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "energy execution manager, europe|prologis": {
+    "keep": false,
+    "reason": "Titre trop générique (Energy Execution Manager) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur efficacité energétique cee (f-h-x)|bureau veritas": {
+    "keep": false,
+    "reason": "Titre trop générique (Ingénieur Efficacité Energétique CEE) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "energy & bess business manager|prosolia energy": {
+    "keep": false,
+    "reason": "Titre trop générique (Energy & BESS Business Manager) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur.e d'exploitation|res": {
+    "keep": false,
+    "reason": "Titre trop générique (Ingénieur.e d'Exploitation) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "analyste soc n2/n3|aman protect": {
+    "keep": false,
+    "reason": "Titre trop générique (Analyste SOC) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "economiste de la construction|vertical sea": {
+    "keep": false,
+    "reason": "Titre trop générique (Economiste de la construction) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé-e de projet transition écologique juste, droits humains et travail h/f (cdi)|mercato de l'emploi": {
+    "keep": false,
+    "reason": "Titre trop générique (Chargé-e de projet Transition écologique juste) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "jardinier en entretien extérieur - paris (h/f)|les jardins de gally": {
+    "keep": false,
+    "reason": "Titre trop générique (Jardinier en entretien extérieur) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingenieur charge d’etudes geotechnique f/h|la société du canal de provence": {
+    "keep": false,
+    "reason": "Titre trop générique (INGENIEUR CHARGE D’ETUDES GEOTECHNIQUE) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "conseiller immobilier h/f|century 21 france": {
+    "keep": false,
+    "reason": "Titre trop générique (Conseiller immobilier) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur référent sécurité opérationnelle h/f|irisolaris groupe": {
+    "keep": false,
+    "reason": "Titre trop générique (Ingénieur Référent Sécurité Opérationnelle) sans lien explicite avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "createur de contenus h/f|proman france": {
+    "keep": false,
+    "reason": "Créateur de contenus : hors scope climat/stratégie, rôle non technique ou conseil",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "conseiller commercial immobilier neuf (h/f)|uptoo": {
+    "keep": false,
+    "reason": "Conseiller commercial immobilier : hors scope climat/stratégie, rôle commercial pur",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "assistant technique h/f|provence métropole logement": {
+    "keep": false,
+    "reason": "Assistant technique : hors scope climat/stratégie, rôle opérationnel non stratégique",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "conseiller immobilier transaction salarié|le recruteur immobilier®": {
+    "keep": false,
+    "reason": "Conseiller immobilier transaction : hors scope climat/stratégie, rôle commercial pur",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "négociateur transaction h/f|citya immobilier": {
+    "keep": false,
+    "reason": "Négociateur transaction : hors scope climat/stratégie, rôle commercial pur",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "gestionnaire de scolarité mercasto (f/h)|université psl": {
+    "keep": false,
+    "reason": "Gestionnaire de scolarité : hors scope climat/stratégie, rôle administratif",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "titre assistant.e de direction - f/h - cdd 18 mois|citeo": {
+    "keep": false,
+    "reason": "Assistant de direction : hors scope climat/stratégie, rôle administratif",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chef(fe) de projet communication & trade marketing|voltalis": {
+    "keep": false,
+    "reason": "Chef de projet communication & trade marketing : hors scope climat/stratégie, rôle marketing",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur infrastructure & services it f/h|calogena": {
+    "keep": false,
+    "reason": "Ingénieur infrastructure IT : hors scope climat/stratégie, rôle technique pur",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "responsable raccordement & stockage hta/htb (h/f)|enoé": {
+    "keep": false,
+    "reason": "Responsable raccordement & stockage énergies renouvelables : hors scope climat/stratégie, rôle technique opérationnel",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur / ingénieure planification & opc ferroviaire|l'usine nouvelle": {
+    "keep": false,
+    "reason": "Ingénieur planification ferroviaire : hors scope climat/stratégie, rôle technique opérationnel",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "cdd - conseiller de vente 35h - gare de l'est h/f|1590 swarovski france s.a.": {
+    "keep": false,
+    "reason": "Conseiller de vente : hors scope climat/stratégie, rôle commercial pur",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "conseiller commercial assurance (h/f/x)|groupe pasteur mutualité": {
+    "keep": false,
+    "reason": "Conseiller commercial assurance : hors scope climat/stratégie, rôle commercial pur",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "commercial terrain b2b (h/f) - itinérant 06|plus que pro": {
+    "keep": false,
+    "reason": "Commercial terrain B2B : hors scope climat/stratégie, rôle commercial pur",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur thermicien h/f h/f|apave formation guyane": {
+    "keep": false,
+    "reason": "Ingénieur thermicien : hors scope climat/stratégie, rôle technique pur",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chef(fe) de projets entrepreneuriat|cci france": {
+    "keep": false,
+    "reason": "Chef de projets entrepreneuriat : hors scope climat/stratégie, rôle générique",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé(e) d’indemnisation maritime et transport (h/f)|howden": {
+    "keep": false,
+    "reason": "Chargé d'indemnisation maritime : hors scope climat/stratégie, rôle technique assurance",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "agronomy product manager|weenat": {
+    "keep": true,
+    "reason": "Agronomy Product Manager chez Weenat (climate-tech ciblée) : rôle hybride produit/conseil climat-agri, correspond au sweet spot agro×climat×data",
+    "borderline": false,
+    "score": 95,
+    "v": 9
+  },
+  "conseiller laitier f/h - cdd basé à saint-flour|sodiaal": {
+    "keep": false,
+    "reason": "Conseiller laitier : hors scope climat/stratégie, rôle technique agricole non stratégique",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "cro & direct response strategist (senior)|agencro": {
+    "keep": false,
+    "reason": "CRO & Direct Response Strategist : hors scope climat/stratégie, rôle marketing digital",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chef de culture f/h|graines & compétences": {
+    "keep": false,
+    "reason": "Chef de culture : hors scope climat/stratégie, rôle technique agricole",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "conseiller expérimentation et développement de la filière châtaigne f/h|chambre d'agriculture auvergne-rhône-alpes": {
+    "keep": false,
+    "reason": "Conseiller expérimentation filière châtaigne : hors scope climat/stratégie, rôle technique agricole",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "charge d'etude cvc f/h|hellowork": {
+    "keep": false,
+    "reason": "Chargé d'étude CVC : hors scope climat/stratégie, rôle technique bâtiment",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé.e de mission – concours thématiques f/h|construction21 france": {
+    "keep": true,
+    "reason": "Chargé de mission concours thématiques (Construction21) : développement durable mais rôle générique, niveau incertain (borderline)",
+    "borderline": true,
+    "score": 50,
+    "v": 9
+  },
+  "ingénieur commercial f/h|co-efficience": {
+    "keep": false,
+    "reason": "Ingénieur commercial : hors scope climat/stratégie, rôle commercial pur",
+    "borderline": false,
+    "score": 0,
     "v": 9
   }
 }
