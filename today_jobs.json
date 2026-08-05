@@ -24,6 +24,18 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/responsable-du-p%C3%B4le-gestion-des-risques-de-catastrophes-f-h-x-at-croix-rouge-fran%C3%A7aise-4417089027",
+    "title": "Responsable du Pôle Gestion des Risques de Catastrophes F/H/X",
+    "company": "Croix-Rouge française",
+    "location": "Montrouge",
+    "url": "https://fr.linkedin.com/jobs/view/responsable-du-p%C3%B4le-gestion-des-risques-de-catastrophes-f-h-x-at-croix-rouge-fran%C3%A7aise-4417089027",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
     "id": "https://fr.linkedin.com/jobs/view/product-strategist-at-searoutes-4446825387",
     "title": "Product Strategist",
     "company": "Searoutes",
@@ -48,63 +60,39 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-conduite-du-changement-f-h-at-onepoint-4329056731",
-    "title": "Consultant Conduite du changement F/H",
-    "company": "Onepoint",
-    "location": "Aix-en-Provence",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-conduite-du-changement-f-h-at-onepoint-4329056731",
+    "id": "https://fr.linkedin.com/jobs/view/consultant-e-senior-manager-strat%C3%A9gie-innovation-secteurs-energies-industrie-at-impulse-partners-a-fast-lane-for-innovation-4444570075",
+    "title": "Consultant.e Senior / Manager Stratégie & Innovation [Secteurs Energies & Industrie]",
+    "company": "IMPULSE PARTNERS - A FAST LANE FOR INNOVATION",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-e-senior-manager-strat%C3%A9gie-innovation-secteurs-energies-industrie-at-impulse-partners-a-fast-lane-for-innovation-4444570075",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
-    "score": 70,
+    "score": 90,
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/implementation-consultant-m-f-d-at-sofico-4446753548",
-    "title": "Implementation Consultant (m/f/d)",
-    "company": "SOFICO",
-    "location": "Avignon",
-    "url": "https://fr.linkedin.com/jobs/view/implementation-consultant-m-f-d-at-sofico-4446753548",
+    "id": "https://fr.linkedin.com/jobs/view/energy-data-analyst-h-f-at-effy-4447292721",
+    "title": "Energy Data Analyst (H/F)",
+    "company": "Effy",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/energy-data-analyst-h-f-at-effy-4447292721",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 80,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/specialist-sustainability-at-sibelco-group-4429383625",
+    "title": "Specialist Sustainability",
+    "company": "Sibelco Group",
+    "location": "Compiègne",
+    "url": "https://fr.linkedin.com/jobs/view/specialist-sustainability-at-sibelco-group-4429383625",
     "description": "",
     "source": "LinkedIn",
     "borderline": true,
-    "score": 50,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/esg-advisor-at-skykapital-4447292709",
-    "title": "ESG Advisor",
-    "company": "SKYKAPITAL EUROPE",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/esg-advisor-at-skykapital-4447292709",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/hbce-esg-climate-and-nature-risk-manager-f-m-d-at-hsbc-4446058722",
-    "title": "HBCE ESG Climate and Nature Risk Manager (f/m/d)",
-    "company": "HSBC",
-    "location": "Courbevoie",
-    "url": "https://fr.linkedin.com/jobs/view/hbce-esg-climate-and-nature-risk-manager-f-m-d-at-hsbc-4446058722",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/analyste-%C2%AB-interconnexions-et-r%C3%A9glementation-europ%C3%A9enne-%C2%BB-at-cre-commission-de-r%C3%A9gulation-de-l-%C3%A9nergie-4430724502",
-    "title": "Analyste « interconnexions et réglementation européenne »",
-    "company": "Commission de régulation de l'énergie",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/analyste-%C2%AB-interconnexions-et-r%C3%A9glementation-europ%C3%A9enne-%C2%BB-at-cre-commission-de-r%C3%A9gulation-de-l-%C3%A9nergie-4430724502",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
+    "score": 60,
     "is_new": false
   },
   {
@@ -122,15 +110,17 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/specialist-sustainability-at-sibelco-group-4429383625",
-    "title": "Specialist Sustainability",
-    "company": "Sibelco Group",
-    "location": "Compiègne",
-    "url": "https://fr.linkedin.com/jobs/view/specialist-sustainability-at-sibelco-group-4429383625",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": true,
-    "score": 60,
+    "id": "5826675902",
+    "title": "Aide-soignant/Aux Puer Centre d'appui à la protection de l'enfance ASTERYA F/H",
+    "company": "Fonction publique Hospitalière",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5826675902?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots Accueillir et accompagner les enfants confiés à l’Aide Sociale à l’Enfance Accueillir les enfants et adolescents confiés...",
+    "salary": "",
+    "date": "2026-08-03T17:26:11Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 85,
     "is_new": false
   },
   {
@@ -158,27 +148,15 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/analyste-risques-cdd-12-mois-h-f-at-cnp-assurances-4446313049",
-    "title": "ANALYSTE RISQUES CDD - 12 mois H/F",
-    "company": "CNP Assurances",
-    "location": "Issy-les-Moulineaux",
-    "url": "https://fr.linkedin.com/jobs/view/analyste-risques-cdd-12-mois-h-f-at-cnp-assurances-4446313049",
+    "id": "https://fr.linkedin.com/jobs/view/consultant-conduite-du-changement-f-h-at-onepoint-4329056731",
+    "title": "Consultant Conduite du changement F/H",
+    "company": "Onepoint",
+    "location": "Aix-en-Provence",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-conduite-du-changement-f-h-at-onepoint-4329056731",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "211XZCW",
-    "title": "Energy Data Analyst (H/F)",
-    "company": "EFFY",
-    "location": "75 - PARIS",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/211XZCW",
-    "description": "Poste à pourvoir à partir de janvier 2027\n\nEffy est le spécialiste de l'efficience énergétique depuis 2008.\n\nNous aidons les propriétaires à rendre le...",
-    "source": "France Travail",
-    "borderline": false,
-    "score": 80,
+    "score": 70,
     "is_new": false
   },
   {
@@ -206,6 +184,20 @@
     "is_new": false
   },
   {
+    "id": "5825769689",
+    "title": "Cheffe / Chef de projet systèmes d'informations des déchets",
+    "company": "Fonction publique Territoriale",
+    "location": "Marseille, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5825769689?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots La Métropole d'Aix-Marseille-Provence pilote des politiques publiques innovantes au service de ses habitants. Son action...",
+    "salary": "",
+    "date": "2026-08-02T17:24:21Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
     "id": "5819686200",
     "title": "Chargé(e) de Mission Métiers, Transition Énergétique & Innovation F/H",
     "company": "FEDERATION REGIONALE DU BATIMENT PACA",
@@ -217,20 +209,6 @@
     "source": "Adzuna",
     "borderline": true,
     "score": 50,
-    "is_new": false
-  },
-  {
-    "id": "5818436216",
-    "title": "Chargé de mission filières énergies de demain (H/F) - CONSEIL REGIONAL PROVENCE-ALPES-COTE D'AZUR",
-    "company": "Fonction publique Territoriale",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5818436216?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Sous la responsabilité du chef de service, et en étroite coordination avec le chef de service adjoint et les autres char...",
-    "salary": "",
-    "date": "2026-07-28T17:32:17Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "score": 75,
     "is_new": false
   },
   {
@@ -358,20 +336,6 @@
     "is_new": false
   },
   {
-    "id": "179114113W",
-    "title": "Ingénieur Climat F/H",
-    "company": "Hellowork",
-    "location": "Paris 08 - 75",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179114113W",
-    "description": "Au sein d'une équipe engagée, vous interviendrez sur des missions à forte valeur ajoutée, en audit comme en conseil.   Vos missions sont les suivantes :   Réaliser des bilans carbone sur les scopes 1,...",
-    "salary": "40 - 55 k€ brut annuel",
-    "date": "2026-07-13T18:45:26.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
     "id": "179195971W",
     "title": "Chargé de mission mobilité durable F/H",
     "company": "Actu environnement",
@@ -386,6 +350,20 @@
     "is_new": false
   },
   {
+    "id": "179189110W",
+    "title": "Consultant Manager – Conseil en transition environnementale et économique F/H",
+    "company": "PERSUADERS Recrutement",
+    "location": "Paris 01 - 75",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179189110W",
+    "description": "Rattaché(e) à un Partner, vous pilotez des missions de transformation à forts enjeux, du cadrage stratégique au déploiement opérationnel, en interface directe avec les directions générales, RSE, Achat...",
+    "salary": "A négocier",
+    "date": "2026-08-04T09:52:26.000+0000",
+    "source": "APEC",
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
     "id": "178885753W",
     "title": "Consultant(e) Bâtiment Durable REV3 F/H",
     "company": "CENTRE DE DEPLOIEMENTDE L'ECOTRANSITION DANS LES ENTREPRISES ET LES TERRITOIRES",
@@ -396,6 +374,20 @@
     "date": "2026-07-21T07:10:35.000+0000",
     "source": "APEC",
     "borderline": false,
+    "score": 60,
+    "is_new": false
+  },
+  {
+    "id": "179226317W",
+    "title": "Data Analyst Air, Climat, Energie F/H",
+    "company": "jobs_that_makesense",
+    "location": "Schiltigheim - 67",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179226317W",
+    "description": "Atmo Grand Est pilote l’Observatoire Climat-Air-Énergie du Grand Est et produit des inventaires territoriaux qui constituent une référence pour les collectivités, l'État et les acteurs locaux. La miss...",
+    "salary": "35 - 40 k€ brut annuel",
+    "date": "2026-08-04T01:16:11.000+0000",
+    "source": "APEC",
+    "borderline": true,
     "score": 60,
     "is_new": false
   },
@@ -610,20 +602,6 @@
     "is_new": false
   },
   {
-    "id": "179132809W",
-    "title": "Chargé de projet D.D. - R.S.E. F/H",
-    "company": "UNIVERSITE PARIS VIII.PARIS VINCENN",
-    "location": "Aubervilliers - 93",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179132809W",
-    "description": "La publication en juin 2023 du plan climat-biodiversité et transition écologique du Ministère de l'enseignement supérieur et de la recherche se traduit notamment par l'obligation pour l'ensemble des é...",
-    "salary": "A partir de 25 k€ brut annuel",
-    "date": "2026-07-17T09:29:07.000+0000",
-    "source": "APEC",
-    "borderline": true,
-    "score": 45,
-    "is_new": false
-  },
-  {
     "id": "179073128W",
     "title": "Chargé de mission Climat, GEMAPI et Biodiversité F/H",
     "company": "CC BIEVRE ISERE",
@@ -635,6 +613,20 @@
     "source": "APEC",
     "borderline": false,
     "score": 90,
+    "is_new": false
+  },
+  {
+    "id": "179224997W",
+    "title": "Chargé·e de mission- Accompagnement de maîtres d’ouvrage professionnels F/H",
+    "company": "AGENCE LOCALE DE L'ENERGIE ET DU CLIMAT GRAND LYON",
+    "location": "Villeurbanne - 69",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179224997W",
+    "description": "Poste :  Vous intégrerez le pôle « Accompagner les stratégies et les réalisations des maîtres d’ouvrage professionnels » AMP qui a pour vocation :   de qualifier les besoins des maîtres d’ouvrage publ...",
+    "salary": "39 - 44 k€ brut annuel",
+    "date": "2026-08-03T14:52:41.000+0000",
+    "source": "APEC",
+    "borderline": true,
+    "score": 50,
     "is_new": false
   },
   {
@@ -876,82 +868,15 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/expert-atlassian-h-f-at-matawan-services-4447501496",
-    "title": "Expert Atlassian H/F",
-    "company": "Matawan Services",
-    "location": "Alpes-Maritimes",
-    "url": "https://fr.linkedin.com/jobs/view/expert-atlassian-h-f-at-matawan-services-4447501496",
+    "id": "https://fr.linkedin.com/jobs/view/develop-projects-and-cooperation-pathways-at-institute-for-energy-transition-sustainability-iets-4446294271",
+    "title": "Develop projects and cooperation pathways",
+    "company": "Institute for Energy Transition & Sustainability (IETS)",
+    "location": "US",
+    "url": "https://fr.linkedin.com/jobs/view/develop-projects-and-cooperation-pathways-at-institute-for-energy-transition-sustainability-iets-4446294271",
     "description": "",
     "source": "LinkedIn",
-    "borderline": false,
-    "score": 95,
-    "is_new": true
-  },
-  {
-    "id": "5826675902",
-    "title": "Aide-soignant/Aux Puer Centre d'appui à la protection de l'enfance ASTERYA F/H",
-    "company": "Fonction publique Hospitalière",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5826675902?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Accueillir et accompagner les enfants confiés à l’Aide Sociale à l’Enfance Accueillir les enfants et adolescents confiés...",
-    "salary": "",
-    "date": "2026-08-03T17:26:11Z",
-    "source": "Adzuna",
     "borderline": false,
     "score": 85,
-    "is_new": true
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/responsable-du-p%C3%B4le-gestion-des-risques-de-catastrophes-f-h-x-at-croix-rouge-fran%C3%A7aise-4417089027",
-    "title": "Responsable du Pôle Gestion des Risques de Catastrophes F/H/X",
-    "company": "Croix-Rouge française",
-    "location": "Montrouge",
-    "url": "https://fr.linkedin.com/jobs/view/responsable-du-p%C3%B4le-gestion-des-risques-de-catastrophes-f-h-x-at-croix-rouge-fran%C3%A7aise-4417089027",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
-    "is_new": true
-  },
-  {
-    "id": "5797977552",
-    "title": "Europe Customer Quality Specialist H/F",
-    "company": "ROQUETTE FRERES",
-    "location": "Béthune-Est, Béthune",
-    "url": "https://www.adzuna.fr/details/5797977552?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Roquetteis a family-owned global leader in plant-based ingredients and a leading provider of pharmaceutical excipients. Want to help us make a differe...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "borderline": false,
-    "score": 75,
-    "is_new": true
-  },
-  {
-    "id": "179226317W",
-    "title": "Data Analyst Air, Climat, Energie F/H",
-    "company": "jobs_that_makesense",
-    "location": "Schiltigheim - 67",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179226317W",
-    "description": "Atmo Grand Est pilote l’Observatoire Climat-Air-Énergie du Grand Est et produit des inventaires territoriaux qui constituent une référence pour les collectivités, l'État et les acteurs locaux. La miss...",
-    "salary": "35 - 40 k€ brut annuel",
-    "date": "2026-08-04T01:16:11.000+0000",
-    "source": "APEC",
-    "borderline": true,
-    "score": 60,
-    "is_new": true
-  },
-  {
-    "id": "179224997W",
-    "title": "Chargé·e de mission- Accompagnement de maîtres d’ouvrage professionnels F/H",
-    "company": "AGENCE LOCALE DE L'ENERGIE ET DU CLIMAT GRAND LYON",
-    "location": "Villeurbanne - 69",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179224997W",
-    "description": "Poste :  Vous intégrerez le pôle « Accompagner les stratégies et les réalisations des maîtres d’ouvrage professionnels » AMP qui a pour vocation :   de qualifier les besoins des maîtres d’ouvrage publ...",
-    "salary": "39 - 44 k€ brut annuel",
-    "date": "2026-08-03T14:52:41.000+0000",
-    "source": "APEC",
-    "borderline": true,
-    "score": 50,
     "is_new": true
   }
 ]
