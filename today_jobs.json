@@ -36,18 +36,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/product-strategist-at-searoutes-4446825387",
-    "title": "Product Strategist",
-    "company": "Searoutes",
-    "location": "Marseille",
-    "url": "https://fr.linkedin.com/jobs/view/product-strategist-at-searoutes-4446825387",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-environnementale-h-f-at-segula-technologies-4439009843",
     "title": "Chargé de mission Environnementale H/F",
     "company": "SEGULA Technologies",
@@ -69,6 +57,42 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 90,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/implementation-consultant-m-f-d-at-sofico-4446753548",
+    "title": "Implementation Consultant (m/f/d)",
+    "company": "SOFICO",
+    "location": "Avignon",
+    "url": "https://fr.linkedin.com/jobs/view/implementation-consultant-m-f-d-at-sofico-4446753548",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": true,
+    "score": 50,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/expert-atlassian-h-f-at-matawan-services-4447501496",
+    "title": "Expert Atlassian H/F",
+    "company": "Matawan Services",
+    "location": "Alpes-Maritimes",
+    "url": "https://fr.linkedin.com/jobs/view/expert-atlassian-h-f-at-matawan-services-4447501496",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 95,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/develop-projects-and-cooperation-pathways-at-institute-for-energy-transition-sustainability-iets-4446294271",
+    "title": "Develop projects and cooperation pathways",
+    "company": "Institute for Energy Transition & Sustainability (IETS)",
+    "location": "US",
+    "url": "https://fr.linkedin.com/jobs/view/develop-projects-and-cooperation-pathways-at-institute-for-energy-transition-sustainability-iets-4446294271",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 85,
     "is_new": false
   },
   {
@@ -124,6 +148,18 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-politique-publique-transition-ecologique-f-h-at-d%C3%A9partement-de-l-essonne-4447161963",
+    "title": "CHARGÉ DE MISSION POLITIQUE PUBLIQUE - TRANSITION ECOLOGIQUE (F/H)",
+    "company": "Département de l'Essonne",
+    "location": "Évry-Courcouronnes",
+    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-politique-publique-transition-ecologique-f-h-at-d%C3%A9partement-de-l-essonne-4447161963",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 90,
+    "is_new": false
+  },
+  {
     "id": "211WYQL",
     "title": "Chargé-e de mission Adaptation au Changement Climatique (H/F)",
     "company": "CONFEDERATION GENERALE DES PETITES ET MO",
@@ -148,39 +184,15 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-conduite-du-changement-f-h-at-onepoint-4329056731",
-    "title": "Consultant Conduite du changement F/H",
-    "company": "Onepoint",
-    "location": "Aix-en-Provence",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-conduite-du-changement-f-h-at-onepoint-4329056731",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 70,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-projet-%C3%A9nergie-at-migso-pcubed-4445090713",
-    "title": "Consultant projet énergie",
-    "company": "MIGSO-PCUBED",
-    "location": "Marseille",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-projet-%C3%A9nergie-at-migso-pcubed-4445090713",
+    "id": "https://fr.linkedin.com/jobs/view/analyste-%C2%AB-interconnexions-et-r%C3%A9glementation-europ%C3%A9enne-%C2%BB-at-cre-commission-de-r%C3%A9gulation-de-l-%C3%A9nergie-4430724502",
+    "title": "Analyste « interconnexions et réglementation européenne »",
+    "company": "Commission de régulation de l'énergie",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/analyste-%C2%AB-interconnexions-et-r%C3%A9glementation-europ%C3%A9enne-%C2%BB-at-cre-commission-de-r%C3%A9gulation-de-l-%C3%A9nergie-4430724502",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
     "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-politique-publique-transition-ecologique-f-h-at-d%C3%A9partement-de-l-essonne-4447161963",
-    "title": "CHARGÉ DE MISSION POLITIQUE PUBLIQUE - TRANSITION ECOLOGIQUE (F/H)",
-    "company": "Département de l'Essonne",
-    "location": "Évry-Courcouronnes",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-politique-publique-transition-ecologique-f-h-at-d%C3%A9partement-de-l-essonne-4447161963",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 90,
     "is_new": false
   },
   {
@@ -195,20 +207,6 @@
     "source": "Adzuna",
     "borderline": false,
     "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "5819686200",
-    "title": "Chargé(e) de Mission Métiers, Transition Énergétique & Innovation F/H",
-    "company": "FEDERATION REGIONALE DU BATIMENT PACA",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5819686200?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Dans un secteur du bâtiment en pleine mutation, vous rejoindrez un pôle technique de deux personnes pour contribuer à l'animation du réseau métiers ré...",
-    "salary": "32 k€",
-    "date": "2026-07-29T12:33:56Z",
-    "source": "Adzuna",
-    "borderline": true,
-    "score": 50,
     "is_new": false
   },
   {
@@ -284,6 +282,19 @@
     "is_new": false
   },
   {
+    "id": "5819857074",
+    "title": "Bras droit CEO u002F CEO Right Hand - Paris",
+    "company": "Carbometrix",
+    "location": "18ème Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/details/5819857074?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "This role is two-fold, You will have the opportunity to contribute across all the organization, As the founders’ right hand, supporting them on strate...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
     "id": "5819880184",
     "title": "Consultant expérimenté Business Resilience & Supply Chain Risks (H/F)",
     "company": "Marsh McLennan",
@@ -333,6 +344,19 @@
     "company_watch": true,
     "borderline": false,
     "score": 95,
+    "is_new": false
+  },
+  {
+    "id": "5797977552",
+    "title": "Europe Customer Quality Specialist H/F",
+    "company": "ROQUETTE FRERES",
+    "location": "Béthune-Est, Béthune",
+    "url": "https://www.adzuna.fr/details/5797977552?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Roquetteis a family-owned global leader in plant-based ingredients and a leading provider of pharmaceutical excipients. Want to help us make a differe...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": false,
+    "score": 75,
     "is_new": false
   },
   {
@@ -868,13 +892,87 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/develop-projects-and-cooperation-pathways-at-institute-for-energy-transition-sustainability-iets-4446294271",
-    "title": "Develop projects and cooperation pathways",
-    "company": "Institute for Energy Transition & Sustainability (IETS)",
-    "location": "US",
-    "url": "https://fr.linkedin.com/jobs/view/develop-projects-and-cooperation-pathways-at-institute-for-energy-transition-sustainability-iets-4446294271",
+    "id": "https://fr.linkedin.com/jobs/view/responsable-du-service-prospective-expertise-et-projets-direction-de-la-nature-en-ville-h-f-at-ville-de-marseille-4449455341",
+    "title": "Responsable du Service Prospective, Expertise et Projets Direction de la Nature en Ville (H/F)",
+    "company": "Ville de Marseille",
+    "location": "Marseille",
+    "url": "https://fr.linkedin.com/jobs/view/responsable-du-service-prospective-expertise-et-projets-direction-de-la-nature-en-ville-h-f-at-ville-de-marseille-4449455341",
     "description": "",
     "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
+    "is_new": true
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/electricity-grids-and-security-analyst-at-oecd-ocde-4448227105",
+    "title": "Electricity Grids and Security Analyst",
+    "company": "OECD-OCDE",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/electricity-grids-and-security-analyst-at-oecd-ocde-4448227105",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 85,
+    "is_new": true
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/operations-data-mvp-owner-climate-tech-startup-at-thermosphr-4447265688",
+    "title": "Operations & Data/MVP Owner | Climate Tech Startup",
+    "company": "Thermosphr",
+    "location": "Ville de Paris",
+    "url": "https://fr.linkedin.com/jobs/view/operations-data-mvp-owner-climate-tech-startup-at-thermosphr-4447265688",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
+    "is_new": true
+  },
+  {
+    "id": "210FHFD",
+    "title": "Chargé(e) de Mission Métiers, Transition Énergétique & Innovation (H/F)",
+    "company": "FEDERATION REGIONALE DU BATIMENT PACA",
+    "location": "13 - MARSEILLE 09",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/210FHFD",
+    "description": "Au cœur des enjeux qui transforment le secteur du bâtiment, le/la Chargé(e) de mission contribuera à l'animation du réseau métiers régional et au suiv...",
+    "source": "France Travail",
+    "borderline": true,
+    "score": 50,
+    "is_new": false
+  },
+  {
+    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-transition-ecologique-economie-circulaire-f-h_4838.aspx",
+    "title": "VSC Transition écologique économie circulaire F/H",
+    "company": "ADEME",
+    "location": "France",
+    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-transition-ecologique-economie-circulaire-f-h_4838.aspx",
+    "description": "",
+    "source": "ADEME",
+    "borderline": false,
+    "score": 70,
+    "is_new": true
+  },
+  {
+    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-transition-energetique-f-h_4837.aspx",
+    "title": "Chargé.e de mission Transition Energétique F/H",
+    "company": "ADEME",
+    "location": "France",
+    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-transition-energetique-f-h_4837.aspx",
+    "description": "",
+    "source": "ADEME",
+    "borderline": false,
+    "score": 75,
+    "is_new": true
+  },
+  {
+    "id": "179233799W",
+    "title": "Chargé de Mission Agronomie/Sol F/H",
+    "company": "CHAMBRE REGIONALE D'AGRICULTURE OCCITANIE",
+    "location": "Castanet-Tolosan - 31",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179233799W",
+    "description": "Les enjeux autour de la préservation de la qualité des sols mais aussi de l’amélioration de leur fertilité n’ont jamais été aussi prégnants. Notamment en Occitanie où l’adaptation au changement climat...",
+    "salary": "A partir de 36 k€ brut annuel",
+    "date": "2026-08-05T07:50:36.000+0000",
+    "source": "APEC",
     "borderline": false,
     "score": 85,
     "is_new": true
