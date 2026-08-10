@@ -5200,10 +5200,10 @@
   },
   "mécanicien expérimenté h/f|bonduelle": {
     "keep": false,
-    "reason": "poste technique terrain (mécanicien) sans lien climat/stratégie",
+    "reason": "Mécanicien industriel (Bonduelle) : poste technique terrain.",
     "borderline": false,
     "score": 0,
-    "v": 4
+    "v": 9
   },
   "conducteur de machines saisonnier h/f|bonduelle": {
     "keep": false,
@@ -5627,10 +5627,10 @@
   },
   "consultant en transformation digitale – projets & agilité h/f|devoteam": {
     "keep": false,
-    "reason": "Transformation digitale générique, pas de lien climat.",
+    "reason": "Consultant transformation digitale/projets & agilité : pas de lien climat ou stratégie bas-carbone.",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "consultant en management/consultante en management|oresys": {
     "keep": false,
@@ -15864,6 +15864,167 @@
     "reason": "Poste de chargé·e de mission décarbonation industrie agroalimentaire & prospective — correspond au profil (stratégie climat, scope 3, agroalimentaire) et localisation Angers (hors PACA mais acceptable pour un poste industriel ciblé).",
     "borderline": false,
     "score": 85,
+    "v": 9
+  },
+  "responsable project management office f/h|thales": {
+    "keep": false,
+    "reason": "Poste de management de projet transverse (PMO) sans lien explicite avec le climat ou la stratégie.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "consultant or project leader, people & organization|boston consulting group (bcg)": {
+    "keep": false,
+    "reason": "Consultant en transformation organisationnelle (People & Organization) sans focus climat/stratégie bas-carbone.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "cdi - chef de projet conduite du changement et formation outils fonction finance (h/f)|hermès": {
+    "keep": false,
+    "reason": "Chef de projet conduite du changement et formation outils finance : hors scope climat/transition.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé de mission cession|ccr - caisse centrale de réassurance": {
+    "keep": true,
+    "reason": "Chargé de mission cession chez CCR (Caisse Centrale de Réassurance) : lien direct avec gestion des risques climatiques extrêmes et réassurance, domaine d'intérêt (risque physique/adaptation). Poste senior en Île-de-France.",
+    "borderline": false,
+    "score": 85,
+    "v": 9
+  },
+  "chef de projet f/h|immobilière 3f": {
+    "keep": false,
+    "reason": "Chef de projet aménagement immobilier : hors scope climat/transition écologique.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "consultant(e) grc confirmé(e)|cyblex consulting": {
+    "keep": false,
+    "reason": "Consultant GRC confirmé : Gouvernance, Risques, Conformité générique sans focus climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé d'étude de prix cfo/cfa h/f|alveor": {
+    "keep": false,
+    "reason": "Chargé d'étude de prix CFO/CFA : finance/comptabilité pure.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "responsable de boutique - paris legendre - cdi 39h h/f|faguo": {
+    "keep": false,
+    "reason": "Responsable de boutique retail : hors scope climat/transition.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "data manager bilan carbone (h/f) - commune de marseille|fonction publique territoriale": {
+    "keep": true,
+    "reason": "Data manager bilan carbone à la Commune de Marseille : poste qualifié en collectivité territoriale avec focus carbone (GHG Protocol), localisé à Marseille. Poste administratif mais technique et stratégique pour la transition.",
+    "borderline": false,
+    "score": 75,
+    "v": 9
+  },
+  "dgt-treco3-jdsp - adjoint(e) au chef du bureau h/f|choisir le service public": {
+    "keep": false,
+    "reason": "Adjoint au chef de bureau administratif (Direction générale du Trésor) : poste de gouvernance interne sans lien climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "conseiller héritage h/f|premier ministre": {
+    "keep": false,
+    "reason": "Conseiller héritage (Premier Ministre) : hors scope climat/transition.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé(e) de projets - sg-cap-021 h/f|choisir le service public": {
+    "keep": false,
+    "reason": "Chargé de projets (Direction générale des entreprises) : poste administratif générique.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chef-fe de projets d'aménagement de l'espace - commune de marseille|fonction publique territoriale": {
+    "keep": true,
+    "reason": "Chef de projet aménagement de l'espace à la Commune de Marseille : poste en collectivité territoriale avec lien possible à la transition écologique (mobilité, espace public), mais description générique. À garder car localisé à Marseille et potentiellement stratégique.",
+    "borderline": false,
+    "score": 65,
+    "v": 9
+  },
+  "coordinateur d'exploitation h/f|pizzorno environnement": {
+    "keep": false,
+    "reason": "Coordinateur d'exploitation (déchet) : poste terrain/technique.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "product manager - owner - energies et utilities h/f|mc2i": {
+    "keep": false,
+    "reason": "Product Manager Energies et Utilities : hors scope climat/carbone (énergie générique).",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "senior product designer - act - sweep h/f|sweep": {
+    "keep": true,
+    "reason": "Senior Product Designer chez Sweep (entreprise ciblée) : rôle hybride produit/conseil avec focus climat (plateforme carbone). Poste senior en télétravail partiel (Hérault/Occitanie).",
+    "borderline": false,
+    "score": 95,
+    "v": 9
+  },
+  "senior product marketing manager - deepki h/f|deepki": {
+    "keep": true,
+    "reason": "Senior Product Marketing Manager chez Deepki (entreprise ciblée) : rôle hybride marketing/produit pour plateforme data-climat (immobilier). Poste senior en Île-de-France.",
+    "borderline": false,
+    "score": 90,
+    "v": 9
+  },
+  "conseiller sinistre dommage aux biens - advocacy|marsh mclennan": {
+    "keep": true,
+    "reason": "Conseiller Sinistre Dommage aux Biens - Advocacy chez Marsh McLennan (entreprise ciblée) : lien avec gestion des risques climatiques (catastrophes naturelles) et assurance. Poste senior en France.",
+    "borderline": false,
+    "score": 80,
+    "v": 9
+  },
+  "gestionnaire production - cdd h/f|wtw": {
+    "keep": false,
+    "reason": "Gestionnaire production (WTW) : finance/assurance pure sans focus climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "senior signalling design engineer|hitachi energy": {
+    "keep": false,
+    "reason": "Ingénieur signalisation énergétique (HITACHI ENERGY) : hors scope climat/stratégie.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "road logistics pricing specialist f/h|kuehne+nagel": {
+    "keep": false,
+    "reason": "Spécialiste tarification logistique (KUEHNE+NAGEL) : transport/finance.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ai adoption specialist f/h|everience": {
+    "keep": false,
+    "reason": "Spécialiste adoption IA (EVERIENCE) : hors scope climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "technico-commercial / technico-commerciale f/h|o'sitoit": {
+    "keep": false,
+    "reason": "Technico-commercial (O'SITOIT) : commercial pur.",
+    "borderline": false,
+    "score": 0,
     "v": 9
   }
 }

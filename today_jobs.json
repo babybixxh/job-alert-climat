@@ -96,18 +96,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-conduite-du-changement-h-f-at-bartle-4445883887",
-    "title": "Consultant Senior Conduite du Changement H/F",
-    "company": "Bartle",
-    "location": "Ville de Paris",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-conduite-du-changement-h-f-at-bartle-4445883887",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/consultant-senior-d%C3%A9carbonation-du-num%C3%A9rique-h-f-at-davidson-consulting-4183122301",
     "title": "Consultant Senior Décarbonation du Numérique (H/F)",
     "company": "Davidson consulting",
@@ -141,6 +129,20 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 75,
+    "is_new": false
+  },
+  {
+    "id": "5833593496",
+    "title": "Chef.fe de projet adaptation des bâtiments publics aux vagues de chaleur",
+    "company": "Actee",
+    "location": "8ème Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/details/5833593496?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Le Pôle Centre de Ressources Au sein du programme ACTEE, le Pôle Centre de Ressources assure la production, la structuration et la diffusion de connai...",
+    "salary": "",
+    "date": "2026-08-08T17:21:58Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 85,
     "is_new": false
   },
   {
@@ -230,20 +232,6 @@
     "is_new": false
   },
   {
-    "id": "5825769689",
-    "title": "Cheffe / Chef de projet systèmes d'informations des déchets",
-    "company": "Fonction publique Territoriale",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5825769689?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots La Métropole d'Aix-Marseille-Provence pilote des politiques publiques innovantes au service de ses habitants. Son action...",
-    "salary": "",
-    "date": "2026-08-02T17:24:21Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
     "id": "5830346215",
     "title": "Ingénieur agronome F/H",
     "company": "METIGA",
@@ -309,6 +297,20 @@
     "source": "France Travail",
     "borderline": true,
     "score": 50,
+    "is_new": false
+  },
+  {
+    "id": "5833573391",
+    "title": "Responsable du Service Prospective, Expertise et Projets Direction de la Nature en Ville (H/F)",
+    "company": "Fonction publique Territoriale",
+    "location": "Marseille, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5833573391?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots Au sein de la Direction Générale Adjointe Ville au Quotidien (DGAVAQ), et plus particulièrement de la Direction de la Na...",
+    "salary": "",
+    "date": "2026-08-08T17:05:06Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 75,
     "is_new": false
   },
   {
@@ -500,20 +502,6 @@
     "is_new": false
   },
   {
-    "id": "179173091W",
-    "title": "Consultant Energie et Chargé de mission monitoring F/H",
-    "company": "jobs_that_makesense",
-    "location": "Chambéry - 73",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179173091W",
-    "description": "Vous souhaitez intégrer une équipe d’ingénieurs dynamique, soudée et engagée de manière concrète dans la lutte contre le réchauffement climatique ? Rejoignez-nous !   Description de l’entreprise  SMAR...",
-    "salary": "35 - 35 k€ brut annuel",
-    "date": "2026-07-24T01:40:14.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
     "id": "179189110W",
     "title": "Consultant Manager – Conseil en transition environnementale et économique F/H",
     "company": "PERSUADERS Recrutement",
@@ -654,20 +642,6 @@
     "is_new": false
   },
   {
-    "id": "179086383W",
-    "title": "Chef de Projet Énergie & Carbone Expérimenté F/H",
-    "company": "Hellowork",
-    "location": "Boulogne-Billancourt - 92",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179086383W",
-    "description": "Nous recherchons pour notre client un bureau d'études, un Chef de projet énergie et carbone H/F expérimenté.    Missions :   - Définir et piloter des stratégies de décarbonation et de valorisation éne...",
-    "salary": "40 - 50 k€ brut annuel",
-    "date": "2026-07-09T20:52:41.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
     "id": "179208083W",
     "title": "Chef de projet carbone F/H",
     "company": "SIAAP (Service Public de l'Assainissement Francilien)",
@@ -676,6 +650,20 @@
     "description": "Intégrée au sein de la Direction déléguée en charge de l'Innovation, de la Stratégie et de l'Environnement (DISE), la Direction Environnement (DE) est garante de la définition et du déploiement de la ...",
     "salary": "A négocier",
     "date": "2026-07-30T21:26:05.000+0000",
+    "source": "APEC",
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
+    "id": "179173091W",
+    "title": "Consultant Energie et Chargé de mission monitoring F/H",
+    "company": "jobs_that_makesense",
+    "location": "Chambéry - 73",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179173091W",
+    "description": "Vous souhaitez intégrer une équipe d’ingénieurs dynamique, soudée et engagée de manière concrète dans la lutte contre le réchauffement climatique ? Rejoignez-nous !   Description de l’entreprise  SMAR...",
+    "salary": "35 - 35 k€ brut annuel",
+    "date": "2026-07-24T01:40:14.000+0000",
     "source": "APEC",
     "borderline": false,
     "score": 75,
@@ -847,6 +835,20 @@
     "source": "APEC",
     "borderline": false,
     "score": 75,
+    "is_new": false
+  },
+  {
+    "id": "179175319W",
+    "title": "Chargé·e de Mission Décarbonation Industrie Agro-Alimentaire & Prospective F/H",
+    "company": "Hellowork",
+    "location": "Angers - 49",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179175319W",
+    "description": "Nous vous proposons de rejoindre le Service Décarbonation Industrie et Hydrogène dont l'objectif principal est d'accompagner les politiques publiques (Programmation Pluriannuelle de l'Energie - PPE, S...",
+    "salary": "A négocier",
+    "date": "2026-07-24T06:58:36.000+0000",
+    "source": "APEC",
+    "borderline": false,
+    "score": 85,
     "is_new": false
   },
   {
@@ -1060,45 +1062,84 @@
     "is_new": false
   },
   {
-    "id": "5833593496",
-    "title": "Chef.fe de projet adaptation des bâtiments publics aux vagues de chaleur",
-    "company": "Actee",
-    "location": "8ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/details/5833593496?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Le Pôle Centre de Ressources Au sein du programme ACTEE, le Pôle Centre de Ressources assure la production, la structuration et la diffusion de connai...",
+    "id": "5827664120",
+    "title": "Chargé de mission cession",
+    "company": "CCR - Caisse Centrale de Réassurance",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5827664120?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "CCR protège l’assurabilité dans ses missions de réassurance face aux risques extrêmes, en permettant aux Français de rester assurés même en cas de car...",
     "salary": "",
-    "date": "2026-08-08T17:21:58Z",
+    "date": "2026-08-04T12:34:22Z",
     "source": "Adzuna",
     "borderline": false,
     "score": 85,
     "is_new": true
   },
   {
-    "id": "5833573391",
-    "title": "Responsable du Service Prospective, Expertise et Projets Direction de la Nature en Ville (H/F)",
+    "id": "5834787256",
+    "title": "Data manager bilan carbone (h/f) - COMMUNE DE MARSEILLE",
     "company": "Fonction publique Territoriale",
     "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5833573391?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Au sein de la Direction Générale Adjointe Ville au Quotidien (DGAVAQ), et plus particulièrement de la Direction de la Na...",
+    "url": "https://www.adzuna.fr/details/5834787256?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots Marseille, ville d'arts et d'histoire, 1er Port de France, labellisée French Tech s'engage dans une nouvelle dynamique d...",
     "salary": "",
-    "date": "2026-08-08T17:05:06Z",
+    "date": "2026-08-09T17:33:15Z",
     "source": "Adzuna",
     "borderline": false,
     "score": 75,
     "is_new": true
   },
   {
-    "id": "179175319W",
-    "title": "Chargé·e de Mission Décarbonation Industrie Agro-Alimentaire & Prospective F/H",
-    "company": "Hellowork",
-    "location": "Angers - 49",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179175319W",
-    "description": "Nous vous proposons de rejoindre le Service Décarbonation Industrie et Hydrogène dont l'objectif principal est d'accompagner les politiques publiques (Programmation Pluriannuelle de l'Energie - PPE, S...",
-    "salary": "A négocier",
-    "date": "2026-07-24T06:58:36.000+0000",
-    "source": "APEC",
+    "id": "5834760611",
+    "title": "Chef-fe de projets d'aménagement de l'Espace - COMMUNE DE MARSEILLE",
+    "company": "Fonction publique Territoriale",
+    "location": "Marseille, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5834760611?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots Au sein de la Mission Aménagement et Projets de l’Espace Public de la Direction de la Transition Ecologique et des Mobil...",
+    "salary": "",
+    "date": "2026-08-09T17:25:36Z",
+    "source": "Adzuna",
     "borderline": false,
-    "score": 85,
+    "score": 65,
+    "is_new": true
+  },
+  {
+    "id": "5835126189",
+    "title": "Senior Product Designer - Act - Sweep H/F",
+    "company": "Sweep",
+    "location": "Hérault, Occitanie",
+    "url": "https://www.adzuna.fr/details/5835126189?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Sweep is hiring aSenior Product Designertasked to make Sweep an outstanding experience for our users, and a real driver of change for our planet. The ...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": false,
+    "score": 95,
+    "is_new": true
+  },
+  {
+    "id": "5835126322",
+    "title": "Senior Product Marketing Manager - Deepki H/F",
+    "company": "Deepki",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5835126322?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Its comprehensive platform enables Real Estate stakeholders to manage risk through data-driven insights, improve the financial performance of their as...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": false,
+    "score": 90,
+    "is_new": true
+  },
+  {
+    "id": "5819858770",
+    "title": "Conseiller Sinistre Dommage aux Biens - Advocacy",
+    "company": "Marsh McLennan",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5819858770?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Company: Description: Le département Dommages Aux Biens & Pertes d’Exploitation recherche un ou une candidat(e), avec 3 années d'expérience minimum, p...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": false,
+    "score": 80,
     "is_new": true
   }
 ]
