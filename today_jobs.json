@@ -36,6 +36,18 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-d%C3%A9carbonation-du-num%C3%A9rique-h-f-at-davidson-consulting-4183122301",
+    "title": "Consultant Senior Décarbonation du Numérique (H/F)",
+    "company": "Davidson consulting",
+    "location": "Île-de-France, France",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-d%C3%A9carbonation-du-num%C3%A9rique-h-f-at-davidson-consulting-4183122301",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 70,
+    "is_new": false
+  },
+  {
     "id": "https://fr.linkedin.com/jobs/view/responsable-du-service-prospective-expertise-et-projets-direction-de-la-nature-en-ville-h-f-at-ville-de-marseille-4449455341",
     "title": "Responsable du Service Prospective, Expertise et Projets Direction de la Nature en Ville (H/F)",
     "company": "Ville de Marseille",
@@ -45,18 +57,6 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-icpe-environnement-confirm%C3%A9-f-h-x-at-bureau-veritas-4450268148",
-    "title": "Consultant ICPE Environnement confirmé (F-H-X)",
-    "company": "Bureau Veritas",
-    "location": "Aix-en-Provence",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-icpe-environnement-confirm%C3%A9-f-h-x-at-bureau-veritas-4450268148",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
     "is_new": false
   },
   {
@@ -96,18 +96,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-d%C3%A9carbonation-du-num%C3%A9rique-h-f-at-davidson-consulting-4183122301",
-    "title": "Consultant Senior Décarbonation du Numérique (H/F)",
-    "company": "Davidson consulting",
-    "location": "Île-de-France, France",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-d%C3%A9carbonation-du-num%C3%A9rique-h-f-at-davidson-consulting-4183122301",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 70,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-environnement-h-f-at-innova-solutions-4437238897",
     "title": "Ingénieur Environnement H/F",
     "company": "Innova Solutions",
@@ -120,15 +108,29 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/responsable-du-p%C3%B4le-gestion-des-risques-de-catastrophes-f-h-x-at-croix-rouge-fran%C3%A7aise-4417089027",
-    "title": "Responsable du Pôle Gestion des Risques de Catastrophes F/H/X",
-    "company": "Croix-Rouge française",
-    "location": "Montrouge",
-    "url": "https://fr.linkedin.com/jobs/view/responsable-du-p%C3%B4le-gestion-des-risques-de-catastrophes-f-h-x-at-croix-rouge-fran%C3%A7aise-4417089027",
+    "id": "5827664120",
+    "title": "Chargé de mission cession",
+    "company": "CCR - Caisse Centrale de Réassurance",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5827664120?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "CCR protège l’assurabilité dans ses missions de réassurance face aux risques extrêmes, en permettant aux Français de rester assurés même en cas de car...",
+    "salary": "",
+    "date": "2026-08-04T12:34:22Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 85,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-icpe-environnement-confirm%C3%A9-f-h-x-at-bureau-veritas-4450268148",
+    "title": "Consultant ICPE Environnement confirmé (F-H-X)",
+    "company": "Bureau Veritas",
+    "location": "Aix-en-Provence",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-icpe-environnement-confirm%C3%A9-f-h-x-at-bureau-veritas-4450268148",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
-    "score": 75,
+    "score": 85,
     "is_new": false
   },
   {
@@ -143,32 +145,6 @@
     "source": "Adzuna",
     "borderline": false,
     "score": 85,
-    "is_new": false
-  },
-  {
-    "id": "5826675902",
-    "title": "Aide-soignant/Aux Puer Centre d'appui à la protection de l'enfance ASTERYA F/H",
-    "company": "Fonction publique Hospitalière",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5826675902?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Accueillir et accompagner les enfants confiés à l’Aide Sociale à l’Enfance Accueillir les enfants et adolescents confiés...",
-    "salary": "",
-    "date": "2026-08-03T17:26:11Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-politique-publique-transition-ecologique-f-h-at-d%C3%A9partement-de-l-essonne-4447161963",
-    "title": "CHARGÉ DE MISSION POLITIQUE PUBLIQUE - TRANSITION ECOLOGIQUE (F/H)",
-    "company": "Département de l'Essonne",
-    "location": "Évry-Courcouronnes",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-politique-publique-transition-ecologique-f-h-at-d%C3%A9partement-de-l-essonne-4447161963",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 90,
     "is_new": false
   },
   {
@@ -208,18 +184,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/electricity-grids-and-security-analyst-at-oecd-ocde-4448227105",
-    "title": "Electricity Grids and Security Analyst",
-    "company": "OECD-OCDE",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/electricity-grids-and-security-analyst-at-oecd-ocde-4448227105",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-mod%C3%A9lisation-et-optimisation-%C3%A9nerg%C3%A9tique-at-tandem-les-deeptech-4450285959",
     "title": "Ingénieur modélisation et optimisation énergétique",
     "company": "Tandem - Les Deeptech",
@@ -229,6 +193,34 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 85,
+    "is_new": false
+  },
+  {
+    "id": "5834787256",
+    "title": "Data manager bilan carbone (h/f) - COMMUNE DE MARSEILLE",
+    "company": "Fonction publique Territoriale",
+    "location": "Marseille, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5834787256?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots Marseille, ville d'arts et d'histoire, 1er Port de France, labellisée French Tech s'engage dans une nouvelle dynamique d...",
+    "salary": "",
+    "date": "2026-08-09T17:33:15Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
+    "id": "5834760611",
+    "title": "Chef-fe de projets d'aménagement de l'Espace - COMMUNE DE MARSEILLE",
+    "company": "Fonction publique Territoriale",
+    "location": "Marseille, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5834760611?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots Au sein de la Mission Aménagement et Projets de l’Espace Public de la Direction de la Transition Ecologique et des Mobil...",
+    "salary": "",
+    "date": "2026-08-09T17:25:36Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 65,
     "is_new": false
   },
   {
@@ -271,20 +263,6 @@
     "source": "Adzuna",
     "borderline": false,
     "score": 95,
-    "is_new": false
-  },
-  {
-    "id": "5827926165",
-    "title": "Chef de service adjoint SECAME (emploi, compétences et accompagnement des mutations économiques)",
-    "company": "Choisir le Service Public",
-    "location": "Allauch, Marseille",
-    "url": "https://www.adzuna.fr/details/5827926165?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Informations générales Organisme de rattachement DREETS PACA Référence 2026-2373518 Date de début de diffusion 03/08/2026 Date de parution 03/08/2026 ...",
-    "salary": "",
-    "date": "2026-08-04T17:13:56Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "score": 65,
     "is_new": false
   },
   {
@@ -423,6 +401,32 @@
     "is_new": false
   },
   {
+    "id": "5835126189",
+    "title": "Senior Product Designer - Act - Sweep H/F",
+    "company": "Sweep",
+    "location": "Hérault, Occitanie",
+    "url": "https://www.adzuna.fr/details/5835126189?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Sweep is hiring aSenior Product Designertasked to make Sweep an outstanding experience for our users, and a real driver of change for our planet. The ...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": false,
+    "score": 95,
+    "is_new": false
+  },
+  {
+    "id": "5835126322",
+    "title": "Senior Product Marketing Manager - Deepki H/F",
+    "company": "Deepki",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5835126322?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Its comprehensive platform enables Real Estate stakeholders to manage risk through data-driven insights, improve the financial performance of their as...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": false,
+    "score": 90,
+    "is_new": false
+  },
+  {
     "id": "5832356633",
     "title": "Key Account Manager",
     "company": "Deepki",
@@ -462,6 +466,19 @@
     "is_new": false
   },
   {
+    "id": "5819858770",
+    "title": "Conseiller Sinistre Dommage aux Biens - Advocacy",
+    "company": "Marsh McLennan",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5819858770?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Company: Description: Le département Dommages Aux Biens & Pertes d’Exploitation recherche un ou une candidat(e), avec 3 années d'expérience minimum, p...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": false,
+    "score": 80,
+    "is_new": false
+  },
+  {
     "id": "5814461218",
     "title": "Regional Industry Manager, Infrastructure, Europe",
     "company": "World Bank Group",
@@ -485,6 +502,18 @@
     "company_watch": true,
     "borderline": false,
     "score": 95,
+    "is_new": false
+  },
+  {
+    "id": "https://choisirleservicepublic.gouv.fr/offre-emploi/gestionnaire-nergie-et-transition-cologique---commune-de-chateaurenard-reference-O013260630001691/",
+    "title": "Gestionnaire Énergie et Transition Écologique - COMMUNE DE CHATEAURENARD",
+    "company": "Fonction publique",
+    "location": "Bouches-du-Rhône (Marseille)",
+    "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/gestionnaire-nergie-et-transition-cologique---commune-de-chateaurenard-reference-O013260630001691/",
+    "description": "",
+    "source": "Service Public",
+    "borderline": false,
+    "score": 70,
     "is_new": false
   },
   {
@@ -824,20 +853,6 @@
     "is_new": false
   },
   {
-    "id": "179116098W",
-    "title": "Responsable d'affaires décarbonation F/H",
-    "company": "EFFEKTIV",
-    "location": "Montpellier - 34",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179116098W",
-    "description": "Description  Dans ce cadre, elle recrute un Responsables d'affaires décarbonation H/F pour contribuer activement à l'élargissement de sa clientèle d'abord sur le territoire France puis Europe.   Missi...",
-    "salary": "45 - 70 k€ brut annuel",
-    "date": "2026-07-21T13:09:10.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
     "id": "179175319W",
     "title": "Chargé·e de Mission Décarbonation Industrie Agro-Alimentaire & Prospective F/H",
     "company": "Hellowork",
@@ -1062,84 +1077,52 @@
     "is_new": false
   },
   {
-    "id": "5827664120",
-    "title": "Chargé de mission cession",
-    "company": "CCR - Caisse Centrale de Réassurance",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5827664120?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "CCR protège l’assurabilité dans ses missions de réassurance face aux risques extrêmes, en permettant aux Français de rester assurés même en cas de car...",
-    "salary": "",
-    "date": "2026-08-04T12:34:22Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "score": 85,
-    "is_new": true
-  },
-  {
-    "id": "5834787256",
-    "title": "Data manager bilan carbone (h/f) - COMMUNE DE MARSEILLE",
-    "company": "Fonction publique Territoriale",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5834787256?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Marseille, ville d'arts et d'histoire, 1er Port de France, labellisée French Tech s'engage dans une nouvelle dynamique d...",
-    "salary": "",
-    "date": "2026-08-09T17:33:15Z",
-    "source": "Adzuna",
+    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-d-affaires-efficacit%C3%A9-energ%C3%A9tique-d%C3%A9carbonation-at-manergy-4452184496",
+    "title": "Chargé.e d'Affaires - Efficacité Energétique & Décarbonation",
+    "company": "MANERGY",
+    "location": "Aix-en-Provence",
+    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-d-affaires-efficacit%C3%A9-energ%C3%A9tique-d%C3%A9carbonation-at-manergy-4452184496",
+    "description": "",
+    "source": "LinkedIn",
     "borderline": false,
     "score": 75,
     "is_new": true
   },
   {
-    "id": "5834760611",
-    "title": "Chef-fe de projets d'aménagement de l'Espace - COMMUNE DE MARSEILLE",
-    "company": "Fonction publique Territoriale",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5834760611?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Au sein de la Mission Aménagement et Projets de l’Espace Public de la Direction de la Transition Ecologique et des Mobil...",
-    "salary": "",
-    "date": "2026-08-09T17:25:36Z",
-    "source": "Adzuna",
+    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-d-affaires-transition-energ%C3%A9tique-territoires-r%C3%A9seaux-de-chaleur-at-manergy-4452192449",
+    "title": "Chargé.e d'Affaires - Transition Energétique Territoires/Réseaux de Chaleur",
+    "company": "MANERGY",
+    "location": "Aix-en-Provence",
+    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-d-affaires-transition-energ%C3%A9tique-territoires-r%C3%A9seaux-de-chaleur-at-manergy-4452192449",
+    "description": "",
+    "source": "LinkedIn",
     "borderline": false,
-    "score": 65,
+    "score": 70,
     "is_new": true
   },
   {
-    "id": "5835126189",
-    "title": "Senior Product Designer - Act - Sweep H/F",
-    "company": "Sweep",
-    "location": "Hérault, Occitanie",
-    "url": "https://www.adzuna.fr/details/5835126189?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Sweep is hiring aSenior Product Designertasked to make Sweep an outstanding experience for our users, and a real driver of change for our planet. The ...",
-    "source": "Adzuna",
-    "company_watch": true,
+    "id": "https://fr.linkedin.com/jobs/view/chef-de-projet-transition-agricole-et-alimentaire-h-f-at-d%C3%A9partement-de-l-essonne-4451434003",
+    "title": "CHEF DE PROJET TRANSITION AGRICOLE ET ALIMENTAIRE (H/F)",
+    "company": "Département de l'Essonne",
+    "location": "Évry-Courcouronnes",
+    "url": "https://fr.linkedin.com/jobs/view/chef-de-projet-transition-agricole-et-alimentaire-h-f-at-d%C3%A9partement-de-l-essonne-4451434003",
+    "description": "",
+    "source": "LinkedIn",
     "borderline": false,
-    "score": 95,
+    "score": 85,
     "is_new": true
   },
   {
-    "id": "5835126322",
-    "title": "Senior Product Marketing Manager - Deepki H/F",
+    "id": "5836176323",
+    "title": "Key Account Manager - Deepki H/F",
     "company": "Deepki",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5835126322?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Its comprehensive platform enables Real Estate stakeholders to manage risk through data-driven insights, improve the financial performance of their as...",
+    "url": "https://www.adzuna.fr/details/5836176323?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "About Deepki Founded in 2014, Deepki is the most trusted sustainability SaaS solution for sustainability in the real estate sector. Its comprehensive ...",
     "source": "Adzuna",
     "company_watch": true,
     "borderline": false,
-    "score": 90,
-    "is_new": true
-  },
-  {
-    "id": "5819858770",
-    "title": "Conseiller Sinistre Dommage aux Biens - Advocacy",
-    "company": "Marsh McLennan",
-    "location": "France",
-    "url": "https://www.adzuna.fr/details/5819858770?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Company: Description: Le département Dommages Aux Biens & Pertes d’Exploitation recherche un ou une candidat(e), avec 3 années d'expérience minimum, p...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "borderline": false,
-    "score": 80,
+    "score": 85,
     "is_new": true
   }
 ]
