@@ -4972,10 +4972,10 @@
   },
   "responsable d'equipe logistique (h/f)|amazon": {
     "keep": false,
-    "reason": "Poste terrain/logistique, hors climat/stratégie",
+    "reason": "Responsable équipe logistique (Amazon), hors climat/durabilité",
     "borderline": false,
     "score": 0,
-    "v": 3
+    "v": 9
   },
   "chargé.e de consignation - h/f|neo2": {
     "keep": false,
@@ -5462,10 +5462,10 @@
   },
   "consultant.e senior - energie|colombus consulting": {
     "keep": true,
-    "reason": "Consultant senior énergie à Paris, correspond au profil conseil/stratégie climat.",
+    "reason": "Consultant Senior Energie (conseil énergie/climat), proche du scope mais générique énergie (pas spécifiquement carbone/risque physique)",
     "borderline": false,
-    "score": 85,
-    "v": 8
+    "score": 75,
+    "v": 9
   },
   "responsable décarbonation et performance énergétique|solve recrutement": {
     "keep": true,
@@ -16313,6 +16313,398 @@
   "chargé d’animation et référent du centre ressources f/h|gpso": {
     "keep": false,
     "reason": "Poste pédagogie/animation hors stratégie climat senior.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "conseiller en transition écologique h/f|chambre de commerce et d’industrie de région paris ile-de-france": {
+    "keep": false,
+    "reason": "Titre générique 'transition écologique' sans précision climat/carbone, risque RSE générique",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chef de produit genie climatique h/f - marseille|sonepar france": {
+    "keep": false,
+    "reason": "Chef de produit génie climatique (bâtiment), hors scope climat/agri/data ou conseil stratégique",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "référent(e) valorisation|sonergia": {
+    "keep": false,
+    "reason": "Référent valorisation (énergie?), sans lien explicite climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "paca - ingénieur(e) génie des procédés|ayes - management & technology consulting": {
+    "keep": false,
+    "reason": "Ingénieur génie des procédés (industrie), hors conseil climat/stratégie ou agri-climat",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "economiste de la construction|sol conseil": {
+    "keep": false,
+    "reason": "Économiste de la construction (bâtiment), hors scope climat/stratégie ou agri-climat",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "senior consultant à manager - technology strategy & transformation - cto advisory et green it f/h|ey": {
+    "keep": false,
+    "reason": "Green IT / CTO Advisory (transformation digitale), hors scope climat/stratégie ou agri-climat",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "consultant senior en énergie - secteur gaz - h/f|yélé consulting": {
+    "keep": false,
+    "reason": "Consultant énergie (secteur gaz), hors scope climat/stratégie ou agri-climat",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "senior consultant - it strategy & architecture d'entreprise (h/f)|devoteam digital impulse": {
+    "keep": false,
+    "reason": "IT Strategy & Architecture (transformation digitale), hors scope climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur d'affaires grand-sud h/f|tenergie": {
+    "keep": false,
+    "reason": "Ingénieur d'affaires (énergie), hors conseil climat/stratégie ou agri-climat",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "clinical project manager (fixed contract - cdd 12 months)|european society of cardiology": {
+    "keep": false,
+    "reason": "Clinical project manager (santé), hors scope climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "consultant transformation rh - core hr|free-work": {
+    "keep": false,
+    "reason": "Transformation RH (core HR), hors scope climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "consultant(e) gta (f/h)|act-on hris": {
+    "keep": false,
+    "reason": "Consultant GTA (RH/IS), hors scope climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chef de projet transformation si h/f|edl": {
+    "keep": false,
+    "reason": "Chef de projet transformation SI, hors scope climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "pmo gouvernance, innovation & ia - h/f @exalt provence|exalt": {
+    "keep": false,
+    "reason": "PMO Gouvernance & IA, hors scope climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "référent technique ssp en industrie h/f|abo erg environnement": {
+    "keep": false,
+    "reason": "Référent technique SSP (industrie), hors conseil climat/stratégie ou agri-climat",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "senior business manager|tmc": {
+    "keep": false,
+    "reason": "Senior Business Manager (commercial), hors scope climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "contrôleur f&b|hospitaliti": {
+    "keep": false,
+    "reason": "Contrôleur F&B (hôtellerie), hors scope climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé d’animation et référent du centre ressources (h/f)|grand paris seine ouest (gpso)": {
+    "keep": false,
+    "reason": "Chargé d'animation (gouvernance), hors scope climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur hvac cvc (h/f)|davidson consulting": {
+    "keep": false,
+    "reason": "Ingénieur HVAC (bâtiment), hors conseil climat/stratégie ou agri-climat",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "mediateur participation citoyenne h/f|association paje | pasteur avenir jeunesse": {
+    "keep": false,
+    "reason": "Médiateur participation citoyenne (social), hors scope climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "analyste risques sur opérations de marché commodities|société générale": {
+    "keep": false,
+    "reason": "Analyste risques marchés commodities (finance), hors scope climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "spécialiste maitrise de la végétation, référent faune|groupe sncf": {
+    "keep": false,
+    "reason": "Spécialiste maîtrise végétation (SNCF), hors conseil climat/stratégie ou agri-climat",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "educateur specialise h/f - grasse|association montjoye": {
+    "keep": false,
+    "reason": "Éducateur spécialisé (social), hors scope climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "gestionnaire clientèle patrimoniale - nice malaussena|caisse d'epargne cote d'azur": {
+    "keep": false,
+    "reason": "Gestionnaire clientèle patrimoniale (banque), hors scope climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "gestionnaire clientèle patrimoniale (h/f) - juan les pins|caisse d'epargne cote d'azur": {
+    "keep": false,
+    "reason": "Poste en finance/comptabilité (gestion patrimoniale), hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "project manager (h/f)|technip energies": {
+    "keep": false,
+    "reason": "Project Manager générique en énergie (Technip Energies), sans lien explicite climat/stratégie bas-carbone",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "gestionnaire technique h/f|bnp paribas real estate": {
+    "keep": false,
+    "reason": "Gestionnaire technique immobilier (BNP Paribas Real Estate), hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "bénévolat - je contribue à la mise en place d'un festival du livre écologique|jeveuxaider.gouv.fr": {
+    "keep": false,
+    "reason": "Bénévolat non rémunéré, hors stratégie climat",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "conseiller adie 3- paris (75) f/h|adie": {
+    "keep": false,
+    "reason": "Conseiller ADIE (microcrédit), hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur.e thermicien.ne experimenté.e f/h|metiga": {
+    "keep": false,
+    "reason": "Ingénieur thermicien (METIGA), poste technique terrain, hors conseil/stratégie climat",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur d'études réseaux de chaleur urbain/biomasse f/h|metiga": {
+    "keep": false,
+    "reason": "Ingénieur réseaux de chaleur (METIGA), poste technique terrain, hors conseil/stratégie climat",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "mechanical design engineer|westinghouse electric company": {
+    "keep": false,
+    "reason": "Mechanical Design Engineer (Westinghouse), hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "assistant d’agence (h/f)|emploiauto": {
+    "keep": false,
+    "reason": "Assistant d'agence (Emploiauto), hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "assistant logistique transport (h/f)|technip energies": {
+    "keep": false,
+    "reason": "Assistant logistique (Technip Energies), hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "commercial(e) & event planner|chateau de cremat": {
+    "keep": false,
+    "reason": "Commercial & Event Planner (Château de Crémat), hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé de mission f/h|département du val d'oise": {
+    "keep": false,
+    "reason": "Chargé de mission (Département du Val d'Oise), poste administratif sans lien climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "responsable technique - f/h|icf habitat": {
+    "keep": false,
+    "reason": "Responsable technique immobilier (ICF Habitat), hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "responsable commercial f/h|delta rail": {
+    "keep": false,
+    "reason": "Responsable commercial (Delta Rail), hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "cdi - responsable de la performance en production (h/f)|naval group": {
+    "keep": false,
+    "reason": "Responsable performance production (Naval Group), hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "network & security architecture manager transition manager h/f|devoteam france": {
+    "keep": false,
+    "reason": "Network & Security Architecture Manager (Devoteam), hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur - chef de projet construction durable (h/f)|approach people recruitment sarl": {
+    "keep": false,
+    "reason": "Ingénieur chef de projet construction durable (Approach People), poste technique terrain, hors conseil/stratégie climat",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chef de projet patrimoine durable (h/f)|fair echo advisory sas": {
+    "keep": false,
+    "reason": "Chef de projet patrimoine durable (Fair Echo Advisory), RSE générique en immobilier, hors stratégie climat",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "responsable methode (h/f)|groupe hospitalier de la riviera française": {
+    "keep": false,
+    "reason": "Responsable méthode (Groupe Hospitalier), hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "stagiaire en chefferie de cabinet - septembre 6 mois|cci france": {
+    "keep": false,
+    "reason": "Stagiaire en chefferie de cabinet (CCI France), hors climat/durabilité et junior",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "senior product designer - act h/f|sweep": {
+    "keep": true,
+    "reason": "Senior Product Designer chez Sweep (climate-tech), rôle hybride produit/conseil avec impact climat. Intitulé borderline mais correspond à la cible climate-tech (keep=true)",
+    "borderline": false,
+    "score": 85,
+    "v": 9
+  },
+  "hrbp - relations sociales - h/f|deepki": {
+    "keep": false,
+    "reason": "HRBP (Deepki), poste RH, hors climat/durabilité",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé de compte indemnisation transport cdi h/f|wtw": {
+    "keep": false,
+    "reason": "Contrôleur qualité (Bonduelle), poste technique terrain, hors climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "legal counsel / contract manager (m/w/d) - energierecht|feld.energy gmbh": {
+    "keep": false,
+    "reason": "Poste juridique (Legal Counsel) sans lien avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "forward deployed engineer - emea|gitlab": {
+    "keep": false,
+    "reason": "Développeur DevSecOps sans lien avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "senior python developer (w/m/d) - remote|node energy": {
+    "keep": false,
+    "reason": "Développeur Python pur sans lien avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "senior payroll accountant|lime": {
+    "keep": false,
+    "reason": "Comptabilité (payroll) sans lien avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "analyste crédit retail lod1 f/h|hellowork": {
+    "keep": false,
+    "reason": "Analyse crédit sans lien avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur de production f/h|shape it": {
+    "keep": false,
+    "reason": "Ingénierie de production sans lien avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "resp. contrôle gestion -pôle \"mass transit\"- 93-la-plaine-saint-denis f/h|keolis sa": {
+    "keep": false,
+    "reason": "Contrôle de gestion sans lien avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "statisticien(ne) - prix et parités de pouvoir d’achat|oecd": {
+    "keep": false,
+    "reason": "Statisticien sans lien avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "statistician – prices and purchasing power parities|oecd": {
+    "keep": false,
+    "reason": "Statisticien sans lien avec le climat ou la durabilité.",
     "borderline": false,
     "score": 0,
     "v": 9
