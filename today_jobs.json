@@ -60,15 +60,39 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/responsable-du-service-prospective-expertise-et-projets-direction-de-la-nature-en-ville-h-f-at-ville-de-marseille-4449455341",
-    "title": "Responsable du Service Prospective, Expertise et Projets Direction de la Nature en Ville (H/F)",
-    "company": "Ville de Marseille",
-    "location": "Marseille",
-    "url": "https://fr.linkedin.com/jobs/view/responsable-du-service-prospective-expertise-et-projets-direction-de-la-nature-en-ville-h-f-at-ville-de-marseille-4449455341",
+    "id": "https://fr.linkedin.com/jobs/view/consultant-e-senior-energie-at-colombus-consulting-4366860952",
+    "title": "Consultant.e Senior - Energie",
+    "company": "Colombus Consulting",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-e-senior-energie-at-colombus-consulting-4366860952",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
     "score": 75,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-h-f-at-magellan-consulting-4453158087",
+    "title": "Consultant Senior Energie (H/F)",
+    "company": "Magellan Consulting",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-h-f-at-magellan-consulting-4453158087",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 80,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-mission-%C3%A9conomie-des-%C3%A9nergies-renouvelables-at-cre-commission-de-r%C3%A9gulation-de-l-%C3%A9nergie-4433327029",
+    "title": "Chargé(e) de mission économie des énergies renouvelables",
+    "company": "Commission de régulation de l'énergie",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-mission-%C3%A9conomie-des-%C3%A9nergies-renouvelables-at-cre-commission-de-r%C3%A9gulation-de-l-%C3%A9nergie-4433327029",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 80,
     "is_new": false
   },
   {
@@ -96,27 +120,15 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-icpe-environnement-confirm%C3%A9-f-h-x-at-bureau-veritas-4450268148",
-    "title": "Consultant ICPE Environnement confirmé (F-H-X)",
-    "company": "Bureau Veritas",
-    "location": "Aix-en-Provence",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-icpe-environnement-confirm%C3%A9-f-h-x-at-bureau-veritas-4450268148",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-mission-%C3%A9conomie-des-%C3%A9nergies-renouvelables-at-cre-commission-de-r%C3%A9gulation-de-l-%C3%A9nergie-4433327029",
-    "title": "Chargé(e) de mission économie des énergies renouvelables",
-    "company": "Commission de régulation de l'énergie",
+    "id": "https://fr.linkedin.com/jobs/view/esg-advisor-at-arendt-medernach-4442664755",
+    "title": "ESG Advisor",
+    "company": "Arendt & Medernach",
     "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-mission-%C3%A9conomie-des-%C3%A9nergies-renouvelables-at-cre-commission-de-r%C3%A9gulation-de-l-%C3%A9nergie-4433327029",
+    "url": "https://fr.linkedin.com/jobs/view/esg-advisor-at-arendt-medernach-4442664755",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
-    "score": 80,
+    "score": 90,
     "is_new": false
   },
   {
@@ -129,6 +141,32 @@
     "source": "LinkedIn",
     "borderline": true,
     "score": 50,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-icpe-environnement-confirm%C3%A9-f-h-x-at-bureau-veritas-4450268148",
+    "title": "Consultant ICPE Environnement confirmé (F-H-X)",
+    "company": "Bureau Veritas",
+    "location": "Aix-en-Provence",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-icpe-environnement-confirm%C3%A9-f-h-x-at-bureau-veritas-4450268148",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 85,
+    "is_new": false
+  },
+  {
+    "id": "5839124655",
+    "title": "Chargé·e de Projet Transition Écologique et Bas Carbone H/F",
+    "company": "Aorif-Ush Île-De-France",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5839124655?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Le pôle Performance Patrimoniale et Observation recherche un.e chargé.e de projet Transition écologique et bas carbone pour renforcer son équipe. Ce p...",
+    "salary": "33 k€ – 37 k€",
+    "date": "2026-08-13T02:29:57Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 70,
     "is_new": false
   },
   {
@@ -182,6 +220,32 @@
     "is_new": false
   },
   {
+    "id": "5838467422",
+    "title": "E T Consultant",
+    "company": "World Bank Group",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5838467422?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "E T Consultant Job : req37997 Organization: World Bank Sector: Other Grade: EC2 Term Duration: 1 year 0 months Recruitment Type: Local Recruitment Loc...",
+    "salary": "",
+    "date": "2026-08-12T17:23:10Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 80,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/regional-industry-manager-infrastructure-europe-req37823-at-ifc-international-finance-corporation-4443705223",
+    "title": "Regional Industry Manager, Infrastructure, Europe - req37823",
+    "company": "IFC - International Finance Corporation",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/regional-industry-manager-infrastructure-europe-req37823-at-ifc-international-finance-corporation-4443705223",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 85,
+    "is_new": false
+  },
+  {
     "id": "211XZCW",
     "title": "Energy Data Analyst (H/F)",
     "company": "EFFY",
@@ -217,18 +281,6 @@
     "source": "Adzuna",
     "borderline": false,
     "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/chef-de-projet-transition-agricole-et-alimentaire-h-f-at-d%C3%A9partement-de-l-essonne-4451434003",
-    "title": "CHEF DE PROJET TRANSITION AGRICOLE ET ALIMENTAIRE (H/F)",
-    "company": "Département de l'Essonne",
-    "location": "Évry-Courcouronnes",
-    "url": "https://fr.linkedin.com/jobs/view/chef-de-projet-transition-agricole-et-alimentaire-h-f-at-d%C3%A9partement-de-l-essonne-4451434003",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
     "is_new": false
   },
   {
@@ -271,20 +323,6 @@
     "source": "Adzuna",
     "borderline": true,
     "score": 70,
-    "is_new": false
-  },
-  {
-    "id": "5830635937",
-    "title": "Consultant senior Industrie - Energie et carbone (CDI) - HF",
-    "company": "GreenFlex",
-    "location": "9ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/details/5830635937?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "GreenFlex accompagne depuis plus de 15 ans ses clients industriels sur leur performance carbone et énergie, avec une approche intégrée allant de la st...",
-    "salary": "",
-    "date": "2026-08-06T17:24:48Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "score": 95,
     "is_new": false
   },
   {
@@ -423,19 +461,6 @@
     "is_new": false
   },
   {
-    "id": "5836176323",
-    "title": "Key Account Manager - Deepki H/F",
-    "company": "Deepki",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5836176323?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "About Deepki Founded in 2014, Deepki is the most trusted sustainability SaaS solution for sustainability in the real estate sector. Its comprehensive ...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
     "id": "5832356633",
     "title": "Key Account Manager",
     "company": "Deepki",
@@ -498,19 +523,6 @@
     "company_watch": true,
     "borderline": false,
     "score": 85,
-    "is_new": false
-  },
-  {
-    "id": "5823835291",
-    "title": "Agronomy Product Manager",
-    "company": "Weenat",
-    "location": "Nantes, Loire-Atlantique",
-    "url": "https://www.adzuna.fr/details/5823835291?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "ET SI TU ETAIS LE PROCHAIN À REJOINDRE L’AVENTURE WEENAT ? Weenat fournit aux agriculteurs des solutions mobiles, connectées et simples à utiliser ! G...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "borderline": false,
-    "score": 95,
     "is_new": false
   },
   {
@@ -635,20 +647,6 @@
     "source": "APEC",
     "borderline": false,
     "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "179103906W",
-    "title": "Chef de Projets en Stratégie Climat F/H",
-    "company": "Hellowork",
-    "location": "Nantes - 44",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179103906W",
-    "description": "Notre agence Stratégie Climat, composée d'une dizaine de collaborateurs, se consacre à soutenir spécifiquement la transition écologique, à l'échelle territoriale et organisationnelle. Nous proposons à...",
-    "salary": "A négocier",
-    "date": "2026-07-13T07:43:45.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "score": 95,
     "is_new": false
   },
   {
@@ -1072,28 +1070,82 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-e-senior-energie-at-colombus-consulting-4366860952",
-    "title": "Consultant.e Senior - Energie",
-    "company": "Colombus Consulting",
+    "id": "https://fr.linkedin.com/jobs/view/senior-energy-data-officers-at-oecd-ocde-4452724853",
+    "title": "Senior Energy Data Officers",
+    "company": "OECD-OCDE",
     "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-e-senior-energie-at-colombus-consulting-4366860952",
+    "url": "https://fr.linkedin.com/jobs/view/senior-energy-data-officers-at-oecd-ocde-4452724853",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
-    "score": 75,
-    "is_new": false
+    "score": 95,
+    "is_new": true
   },
   {
-    "id": "5835126189",
-    "title": "Senior Product Designer - Act H/F",
-    "company": "Sweep",
-    "location": "Hérault, Occitanie",
-    "url": "https://www.adzuna.fr/details/5835126189?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Sweep is hiring aSenior Product Designertasked to make Sweep an outstanding experience for our users, and a real driver of change for our planet. The ...",
+    "id": "https://fr.linkedin.com/jobs/view/senior-product-designer-at-metroscope-4449368737",
+    "title": "Senior Product Designer",
+    "company": "Metroscope",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/senior-product-designer-at-metroscope-4449368737",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 90,
+    "is_new": true
+  },
+  {
+    "id": "5808499019",
+    "title": "Conseiller Spécialisé Grands Projets",
+    "company": "Marsh McLennan",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5808499019?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Company: Marsh Description: Contexte & mission générale Dans un contexte de montée en puissance des investissements en infrastructures (mobilités, fer...",
     "source": "Adzuna",
     "company_watch": true,
     "borderline": false,
     "score": 85,
+    "is_new": true
+  },
+  {
+    "id": "sr-OECD-744000143144759",
+    "title": "Senior Energy Data Officers",
+    "company": "OECD",
+    "location": "Paris, Île-de-France Region, fr",
+    "url": "https://jobs.smartrecruiters.com/OECD/744000143144759",
+    "description": "",
+    "date": "2026-08-12",
+    "source": "SmartRecruiters",
+    "company_watch": true,
+    "borderline": false,
+    "score": 85,
+    "is_new": true
+  },
+  {
+    "id": "sr-OECD-744000143056984",
+    "title": "Analyste des politiques - Forum mondial de la science",
+    "company": "OECD",
+    "location": "Paris, Île-de-France Region, fr",
+    "url": "https://jobs.smartrecruiters.com/OECD/744000143056984",
+    "description": "",
+    "date": "2026-08-12",
+    "source": "SmartRecruiters",
+    "company_watch": true,
+    "borderline": false,
+    "score": 75,
+    "is_new": true
+  },
+  {
+    "id": "sr-OECD-744000143056820",
+    "title": "Policy Analyst - Global Science Forum",
+    "company": "OECD",
+    "location": "Paris, Île-de-France Region, fr",
+    "url": "https://jobs.smartrecruiters.com/OECD/744000143056820",
+    "description": "",
+    "date": "2026-08-12",
+    "source": "SmartRecruiters",
+    "company_watch": true,
+    "borderline": false,
+    "score": 70,
     "is_new": true
   }
 ]
