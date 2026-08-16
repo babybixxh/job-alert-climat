@@ -2710,10 +2710,10 @@
   },
   "gestion de projet innovant & communication / événementiel – fanlab f/h|marine nationale": {
     "keep": false,
-    "reason": "Gestion de projet innovant & Communication : hors scope climat/durabilité",
+    "reason": "Gestion de projet innovant & Communication/Événementiel : pas de lien climat.",
     "borderline": false,
     "score": 0,
-    "v": 4
+    "v": 9
   },
   "ingénieur méthodes et energies|idex": {
     "keep": false,
@@ -6069,10 +6069,10 @@
   },
   "climaticien (h/f)|asap.work": {
     "keep": false,
-    "reason": "Poste de technicien climatisation (maintenance/dépannage), hors stratégie/conseil, hors séniorité cible.",
+    "reason": "Climaticien (maintenance climatisation) : poste terrain/technique, pas stratégique.",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "coordonnateur.rice de projet recherche – eur implanteus|avignon université": {
     "keep": false,
@@ -7119,38 +7119,38 @@
   },
   "consultor de sistemas bess y fv|3e": {
     "keep": false,
-    "reason": "hors domaine climat/stratégie (ingénierie solaire)",
+    "reason": "Titre 'Consultor de sistemas BESS y FV' = ingénierie technique pure (batteries/photovoltaïque), pas conseil climat/stratégie.",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "talent sourcer|fuse energy": {
     "keep": false,
-    "reason": "hors domaine climat/stratégie (recrutement)",
+    "reason": "Titre 'Talent Sourcer' = RH/commercial pur, hors cible.",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "senior product engineer|fuse energy": {
     "keep": false,
-    "reason": "hors domaine climat/stratégie (ingénierie produit)",
+    "reason": "Titre 'Senior Product Engineer' = dev pur (code), hors cible.",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "founding gpu engineer|fuse energy": {
     "keep": false,
-    "reason": "hors domaine climat/stratégie (ingénierie GPU)",
+    "reason": "Titre 'Founding GPU Engineer' = dev pur (code), hors cible.",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "ai inference engineer|fuse energy": {
     "keep": false,
-    "reason": "hors domaine climat/stratégie (ingénierie IA)",
+    "reason": "Titre 'AI Inference Engineer' = dev pur (code), hors cible.",
     "borderline": false,
     "score": 0,
-    "v": 8
+    "v": 9
   },
   "drone pilot and client support specialist|perceptual robotics": {
     "keep": false,
@@ -17907,6 +17907,230 @@
   "chargee/charge de clientele particuliers f/h|crédit mutuel océan": {
     "keep": false,
     "reason": "Poste commercial (chargé de clientèle) sans lien climat",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "pmo recette & change|vestrala": {
+    "keep": false,
+    "reason": "Titre PMO Recette & Change : pas de lien climat/durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé de contentieux h/f|elogie-siemp": {
+    "keep": false,
+    "reason": "Chargé de contentieux : pas de lien climat/durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé·e des événements f/h - ville de paris|fonction publique territoriale": {
+    "keep": false,
+    "reason": "Chargé·e des événements : pas de lien climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingenieur gtb senior f/h|b-hive engineering": {
+    "keep": false,
+    "reason": "Ingénieur GTB senior : technique, pas climat/stratégie.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "expert hvac h/f|insiema": {
+    "keep": false,
+    "reason": "Expert HVAC : technique, pas climat/stratégie.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "analyste senior forecast & intelligence marché h/f|ponant": {
+    "keep": false,
+    "reason": "Analyste Senior Forecast & Intelligence Marché : pas de lien climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "group treasury expert (m/f)|cma cgm": {
+    "keep": false,
+    "reason": "Group Treasury Expert : finance, pas climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur éco-conception – gestion des terres excavées (h/f)|exoceth consulting": {
+    "keep": false,
+    "reason": "Ingénieur Éco-conception (terres excavées) : niche technique, pas climat/stratégie.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "consultant en restructuration et stratégie sociale - f/h|alixia support": {
+    "keep": false,
+    "reason": "Consultant en restructuration et stratégie sociale : pas climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "conseiller de vente technique h/f|cadif caoutchouc": {
+    "keep": false,
+    "reason": "Conseiller de vente technique : commercial, pas climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur bim h/f|bee engineering": {
+    "keep": false,
+    "reason": "Ingénieur BIM : technique, pas climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "vendeur polyvalent (h/f)|bio c' bon & so.bio": {
+    "keep": false,
+    "reason": "Vendeur polyvalent : commercial, pas climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "regional financial controller|cma cgm": {
+    "keep": false,
+    "reason": "Regional Financial Controller : finance, pas climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "pipefitter – plastics specialist – m/f|boccard": {
+    "keep": false,
+    "reason": "Pipefitter : poste terrain/technique, pas climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "développeur c# .net (h/f)|amiltone": {
+    "keep": false,
+    "reason": "Développeur C# .NET : dev pur, pas climate-tech hybride.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "responsable partenariats et referent·e mobilite f/h - ville de paris|fonction publique territoriale": {
+    "keep": false,
+    "reason": "Responsable Partenariats et Référent Mobilité : pas climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur.e hydroélectrique scada (h/f)|tractebel": {
+    "keep": false,
+    "reason": "Ingénieur hydroélectrique Scada : technique, pas climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "service engineer|rehlko": {
+    "keep": false,
+    "reason": "Service engineer : technique, pas climate-tech hybride.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé / chargée de mission energie et plan climat|caisse des dépôts et consignations": {
+    "keep": true,
+    "reason": "Chargé·e de mission Energie et Plan Climat à la Caisse des Dépôts : poste stratégique climat en institution publique, niveau senior.",
+    "borderline": false,
+    "score": 85,
+    "v": 9
+  },
+  "fluid catalytic cracking (fcc) - technology engineer (f/m)|axens": {
+    "keep": false,
+    "reason": "Technology Engineer (FCC) : technique industriel, pas climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "grid manager，utility-scale energy storage (bess)|catl": {
+    "keep": false,
+    "reason": "Grid Manager (BESS) : énergie, pas climat/stratégie.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur commercial h/f (cdi)|uptoo": {
+    "keep": false,
+    "reason": "Ingénieur Commercial : commercial pur, pas climate-tech.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé / chargée de mission développement durable - agenda 21 (h/f)|n/a": {
+    "keep": true,
+    "reason": "Chargé·e de mission développement durable - Agenda 21 : RSE générique mais en collectivité (Paris), niveau senior. Borderline car pas explicitement climat/stratégie.",
+    "borderline": true,
+    "score": 50,
+    "v": 9
+  },
+  "chef de projet communication marketing insight developpement durable f/h|jcdecaux": {
+    "keep": false,
+    "reason": "Titre et description centrés sur communication/marketing insight, pas de lien clair avec climat/stratégie ou conseil.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "responsable technique - cdi h/f|wtw": {
+    "keep": false,
+    "reason": "Titre générique 'Responsable Technique' sans lien explicite avec climat/stratégie ou conseil. Description incomplète mais semble hors cible.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chef(fe) de projets bâtiments industriels h/f|wsp france": {
+    "keep": false,
+    "reason": "Titre et description centrés sur ingénierie bâtiment/industriel, pas de lien clair avec climat/stratégie ou conseil.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "assistant adv saisonnier f/h|invivo": {
+    "keep": false,
+    "reason": "Titre 'Assistant Adv Saisonnier' trop junior et hors cible (agricole mais pas climat/stratégie).",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "open application|supercritical": {
+    "keep": true,
+    "reason": "Entreprise ciblée (Supercritical) dans carbon removal, mais poste générique 'Open Application'. Score basé sur l'alignement sectoriel (climat/agri) et l'expatriation possible. Intitulé non précisé, donc score modéré.",
+    "borderline": false,
+    "score": 75,
+    "v": 9
+  },
+  "hpc network engineer|fuse energy": {
+    "keep": false,
+    "reason": "Titre 'HPC Network Engineer' = dev pur (code), hors cible.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "charge d'affaires genie climatique f/h|inflexion": {
+    "keep": false,
+    "reason": "Titre 'Chargé d'affaires génie climatique' = technique terrain (CVC), pas conseil/stratégie climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur électronique hardware senior f/h|pmejob": {
+    "keep": false,
+    "reason": "Titre 'Ingénieur Électronique Hardware Senior' = dev pur (code), hors cible.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur cvc expérimenté f/h|groupe betem": {
+    "keep": false,
+    "reason": "Titre 'Ingénieur CVC Expérimenté' = technique terrain (Guyane), pas conseil/stratégie climat.",
     "borderline": false,
     "score": 0,
     "v": 9
