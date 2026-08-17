@@ -24,6 +24,18 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-e-senior-energie-at-colombus-consulting-4366860952",
+    "title": "Consultant.e Senior - Energie",
+    "company": "Colombus Consulting",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-e-senior-energie-at-colombus-consulting-4366860952",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
     "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-d-affaires-efficacit%C3%A9-energ%C3%A9tique-d%C3%A9carbonation-at-manergy-4452184496",
     "title": "Chargé.e d'Affaires - Efficacité Energétique & Décarbonation",
     "company": "MANERGY",
@@ -45,18 +57,6 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 70,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-e-senior-energie-at-colombus-consulting-4366860952",
-    "title": "Consultant.e Senior - Energie",
-    "company": "Colombus Consulting",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-e-senior-energie-at-colombus-consulting-4366860952",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
     "is_new": false
   },
   {
@@ -96,27 +96,15 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/product-owner-energy-environment-at-attributes-4454552090",
-    "title": "Product Owner Energy & Environment",
-    "company": "Attributes",
-    "location": "Ville de Paris",
-    "url": "https://fr.linkedin.com/jobs/view/product-owner-energy-environment-at-attributes-4454552090",
+    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-durabilit%C3%A9-at-jlb-expertises-4453673824",
+    "title": "Chargé de mission durabilité",
+    "company": "JLB Expertises",
+    "location": "Marseille",
+    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-durabilit%C3%A9-at-jlb-expertises-4453673824",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/senior-energy-data-officers-at-oecd-ocde-4452724853",
-    "title": "Senior Energy Data Officers",
-    "company": "OECD-OCDE",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/senior-energy-data-officers-at-oecd-ocde-4452724853",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 95,
+    "score": 65,
     "is_new": false
   },
   {
@@ -129,6 +117,18 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 90,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/senior-energy-data-officers-at-oecd-ocde-4452724853",
+    "title": "Senior Energy Data Officers",
+    "company": "OECD-OCDE",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/senior-energy-data-officers-at-oecd-ocde-4452724853",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 95,
     "is_new": false
   },
   {
@@ -156,6 +156,20 @@
     "is_new": false
   },
   {
+    "id": "5839124655",
+    "title": "Chargé·e de Projet Transition Écologique et Bas Carbone H/F",
+    "company": "Aorif-Ush Île-De-France",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5839124655?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Le pôle Performance Patrimoniale et Observation recherche un.e chargé.e de projet Transition écologique et bas carbone pour renforcer son équipe. Ce p...",
+    "salary": "33 k€ – 37 k€",
+    "date": "2026-08-13T02:29:57Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 70,
+    "is_new": false
+  },
+  {
     "id": "211WYQL",
     "title": "Chargé-e de mission Adaptation au Changement Climatique (H/F)",
     "company": "CONFEDERATION GENERALE DES PETITES ET MO",
@@ -165,18 +179,6 @@
     "source": "France Travail",
     "borderline": false,
     "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/candidature-spontan%C3%A9e-sud-est-at-onepoint-4405135385",
-    "title": "Candidature Spontanée Sud-Est",
-    "company": "Onepoint",
-    "location": "Aix-en-Provence",
-    "url": "https://fr.linkedin.com/jobs/view/candidature-spontan%C3%A9e-sud-est-at-onepoint-4405135385",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": true,
-    "score": 50,
     "is_new": false
   },
   {
@@ -192,15 +194,15 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-durabilit%C3%A9-at-jlb-expertises-4453673824",
-    "title": "Chargé de mission durabilité",
-    "company": "JLB Expertises",
-    "location": "Marseille",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-durabilit%C3%A9-at-jlb-expertises-4453673824",
+    "id": "https://fr.linkedin.com/jobs/view/candidature-spontan%C3%A9e-sud-est-at-onepoint-4405135385",
+    "title": "Candidature Spontanée Sud-Est",
+    "company": "Onepoint",
+    "location": "Aix-en-Provence",
+    "url": "https://fr.linkedin.com/jobs/view/candidature-spontan%C3%A9e-sud-est-at-onepoint-4405135385",
     "description": "",
     "source": "LinkedIn",
-    "borderline": false,
-    "score": 65,
+    "borderline": true,
+    "score": 50,
     "is_new": false
   },
   {
@@ -249,20 +251,6 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 85,
-    "is_new": false
-  },
-  {
-    "id": "5834760611",
-    "title": "Chef-fe de projets d'aménagement de l'Espace - COMMUNE DE MARSEILLE",
-    "company": "Fonction publique Territoriale",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5834760611?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Au sein de la Mission Aménagement et Projets de l’Espace Public de la Direction de la Transition Ecologique et des Mobil...",
-    "salary": "",
-    "date": "2026-08-09T17:25:36Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "score": 65,
     "is_new": false
   },
   {
@@ -399,6 +387,19 @@
     "is_new": false
   },
   {
+    "id": "5819857074",
+    "title": "Bras droit CEO u002F CEO Right Hand - Paris",
+    "company": "Carbometrix",
+    "location": "18ème Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/details/5819857074?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "This role is two-fold, You will have the opportunity to contribute across all the organization, As the founders’ right hand, supporting them on strate...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
     "id": "5832356633",
     "title": "Key Account Manager",
     "company": "Deepki",
@@ -487,6 +488,19 @@
     "company_watch": true,
     "borderline": false,
     "score": 70,
+    "is_new": false
+  },
+  {
+    "id": "5823835291",
+    "title": "Agronomy Product Manager",
+    "company": "Weenat",
+    "location": "Nantes, Loire-Atlantique",
+    "url": "https://www.adzuna.fr/details/5823835291?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "ET SI TU ETAIS LE PROCHAIN À REJOINDRE L’AVENTURE WEENAT ? Weenat fournit aux agriculteurs des solutions mobiles, connectées et simples à utiliser ! G...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": false,
+    "score": 95,
     "is_new": false
   },
   {
@@ -588,20 +602,6 @@
     "is_new": false
   },
   {
-    "id": "179127279W",
-    "title": "Animateur(trice) régional(e) \"Solutions fondées sur la nature\" F/H",
-    "company": "AGENCE REGIONALE DE LA BIODIVERSITE DE BOURGOGNE-FRANCHE-COMTE",
-    "location": "Besançon - 25",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179127279W",
-    "description": "Missions :   Approfondir la mobilisation des acteurs régionaux en faveur de l’adaptation au changement climatique par la nature,.  Soutenir l’émergence et la mise en œuvre de projets concrets SfN , en...",
-    "salary": "A négocier",
-    "date": "2026-07-17T14:53:57.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
     "id": "179157888W",
     "title": "Chargé de mission Patrimoine & Marchés Publics F/H",
     "company": "EMPLOI PUBLIC",
@@ -613,6 +613,20 @@
     "source": "APEC",
     "borderline": false,
     "score": 70,
+    "is_new": false
+  },
+  {
+    "id": "179073128W",
+    "title": "Chargé de mission Climat, GEMAPI et Biodiversité F/H",
+    "company": "CC BIEVRE ISERE",
+    "location": "Saint-Étienne-de-Saint-Geoirs - 38",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179073128W",
+    "description": "Vous animez et évaluez le Plan Climat Air Energie Territorial (PCAET) 2021-2026 :  Vous initiez et pilotez la révision du PCAET, en lien avec la révision du PLUi ;.  Vous assurez l’animation via les i...",
+    "salary": "28 - 48 k€ brut annuel",
+    "date": "2026-07-20T07:48:39.000+0000",
+    "source": "APEC",
+    "borderline": false,
+    "score": 90,
     "is_new": false
   },
   {
@@ -739,34 +753,6 @@
     "source": "APEC",
     "borderline": false,
     "score": 80,
-    "is_new": false
-  },
-  {
-    "id": "179132809W",
-    "title": "Chargé de projet D.D. - R.S.E. F/H",
-    "company": "UNIVERSITE PARIS VIII.PARIS VINCENN",
-    "location": "Aubervilliers - 93",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179132809W",
-    "description": "La publication en juin 2023 du plan climat-biodiversité et transition écologique du Ministère de l'enseignement supérieur et de la recherche se traduit notamment par l'obligation pour l'ensemble des é...",
-    "salary": "A partir de 25 k€ brut annuel",
-    "date": "2026-07-17T09:29:07.000+0000",
-    "source": "APEC",
-    "borderline": true,
-    "score": 45,
-    "is_new": false
-  },
-  {
-    "id": "179073128W",
-    "title": "Chargé de mission Climat, GEMAPI et Biodiversité F/H",
-    "company": "CC BIEVRE ISERE",
-    "location": "Saint-Étienne-de-Saint-Geoirs - 38",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179073128W",
-    "description": "Vous animez et évaluez le Plan Climat Air Energie Territorial (PCAET) 2021-2026 :  Vous initiez et pilotez la révision du PCAET, en lien avec la révision du PLUi ;.  Vous assurez l’animation via les i...",
-    "salary": "28 - 48 k€ brut annuel",
-    "date": "2026-07-20T07:48:39.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "score": 90,
     "is_new": false
   },
   {
@@ -1064,31 +1050,31 @@
     "is_new": false
   },
   {
-    "id": "5842837244",
-    "title": "Chargé / Chargée de mission Energie et Plan Climat",
-    "company": "Caisse des Dépôts et Consignations",
+    "id": "5844289207",
+    "title": "Client Success Specialist - Sustainability Solutions",
+    "company": "ISS STOXX",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5842837244?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Description de la Caisse des Dépôts Au sein de la Direction du Réseau et des Territoires qui pilote les directions régionales, le département appui au...",
+    "url": "https://www.adzuna.fr/details/5844289207?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Let’s be BrilliantTogether We are seeking a Client Success Specialist to join our Paris team in helping our clients in France and Southern Europe maxi...",
     "salary": "",
-    "date": "2026-08-15T09:32:36Z",
+    "date": "2026-08-16T17:07:49Z",
     "source": "Adzuna",
     "borderline": false,
-    "score": 85,
+    "score": 75,
     "is_new": true
   },
   {
-    "id": "48721010",
-    "title": "Open Application",
-    "company": "Supercritical",
-    "location": "London, England, GB",
-    "url": "https://climatebase.org/job/open-application-48721010",
-    "description": "Scaling carbon removal to gigatonne levels for a sustainable, low-carbon future.",
+    "id": "5844727120",
+    "title": "Group Environmental Transition Analyst CDI H/F",
+    "company": "Unibail Management",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5844727120?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Au sein de l'équipe Groupe Ingénierie immobilière et Énergie (six personnes) et sous la responsabilité du Senior Energy & Environnement Manager, vous ...",
     "salary": "",
-    "date": "2026-08-16T04:11:13.655Z",
-    "source": "Remote EU",
+    "date": "2026-08-17T02:16:14Z",
+    "source": "Adzuna",
     "borderline": false,
-    "score": 75,
+    "score": 85,
     "is_new": true
   }
 ]

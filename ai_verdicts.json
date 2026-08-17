@@ -170,7 +170,10 @@
   },
   "responsable technique energie h/f|icf habitat": {
     "keep": false,
-    "reason": "poste technique (énergie) sans lien stratégique climat"
+    "reason": "Responsable Technique Energie (bâtiment), hors cible climat/stratégie (pas de scope 3/FLAG)",
+    "borderline": false,
+    "score": 0,
+    "v": 9
   },
   "développeur fullstack c#/react (it)|sthree sas pour computer futures": {
     "keep": false,
@@ -1654,8 +1657,10 @@
   },
   "ingénieur responsable d'affaires en maîtrise d'œuvre f/h|cabinet merlin": {
     "keep": false,
-    "reason": "technicien/maîtrise d'œuvre (Ingénieur responsable d'affaires) - hors stratégie/conseil",
-    "borderline": false
+    "reason": "Poste hors climat/durabilité (maîtrise d'œuvre génie civil), même si senior. Rejeté car hors scope.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
   },
   "responsable d'affaires cvc f/h|equans": {
     "keep": false,
@@ -18131,6 +18136,195 @@
   "ingénieur cvc expérimenté f/h|groupe betem": {
     "keep": false,
     "reason": "Titre 'Ingénieur CVC Expérimenté' = technique terrain (Guyane), pas conseil/stratégie climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "project manager|cognite": {
+    "keep": false,
+    "reason": "Titre trop générique, pas de lien clair avec climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "consultant confirmé cloud (h/f)|cns communications": {
+    "keep": false,
+    "reason": "Consultant Cloud, hors cible climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé de projet erp flux interventions h/f|ortec group": {
+    "keep": false,
+    "reason": "ERP Flux Interventions, hors cible climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "responsable commercial rénovation de l'habitat|avenir rénovations": {
+    "keep": false,
+    "reason": "Commercial rénovation habitat, hors cible climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "attache technico-commercial - cannes h/f|groupe barillet": {
+    "keep": false,
+    "reason": "Technico-commercial, hors cible climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "cdd - analyste risques de credit h/f|agence française de développement afd": {
+    "keep": false,
+    "reason": "Analyste Risques de Crédit, hors cible climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "analyste reporting risque (h/f)|groupe bpce": {
+    "keep": false,
+    "reason": "Analyste Reporting Risque, hors cible climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "rapporteur(e) - contrat court h/f|choisir le service public": {
+    "keep": false,
+    "reason": "Rapporteur administratif, hors cible climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "consultant mbse (h/f)|groupe sii": {
+    "keep": false,
+    "reason": "Consultant MBSE, hors cible climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "client success specialist - sustainability solutions|iss stoxx": {
+    "keep": true,
+    "reason": "Client Success Specialist - Sustainability Solutions : rôle hybride conseil/produit climat, cible pertinente",
+    "borderline": false,
+    "score": 75,
+    "v": 9
+  },
+  "chargé d'études ftth (h/f)|davidson consulting": {
+    "keep": false,
+    "reason": "Chargé d'études FTTH, hors cible climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "manager d'équipe réseaux électriques f/h|enedis": {
+    "keep": false,
+    "reason": "Manager Réseaux Électriques, hors cible climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "responsable de division evènements et culture (h/f) - commune de marseille|fonction publique territoriale": {
+    "keep": false,
+    "reason": "Responsable Événements et Culture, hors cible climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "group environmental transition analyst cdi h/f|unibail management": {
+    "keep": true,
+    "reason": "Group Environmental Transition Analyst : poste stratégique climat en entreprise, niveau senior",
+    "borderline": false,
+    "score": 85,
+    "v": 9
+  },
+  "chef de projet|geomines": {
+    "keep": false,
+    "reason": "Chef de projet (géomines), hors cible climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "délégué/e - délégation du vaucluse h/f|secours catholique-caritas france": {
+    "keep": false,
+    "reason": "Délégué associatif, hors cible climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "responsable de site - f/h|icf habitat": {
+    "keep": false,
+    "reason": "Responsable de site (logement), hors cible climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "animateur production & performance f/h|invivo": {
+    "keep": false,
+    "reason": "Animateur Production & Performance, hors cible climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ai controls solutions engineer (hvac systems)|phaidra": {
+    "keep": false,
+    "reason": "AI Controls Engineer, hors cible climat/stratégie (code pur)",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "state manager (wa & sa)|brighte": {
+    "keep": false,
+    "reason": "State Manager (commercial), hors cible climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "consultant technique erp sage x3 f/h|hellowork": {
+    "keep": false,
+    "reason": "Consultant Technique ERP, hors cible climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé d'affaires cfo/cfa f/h|metiga": {
+    "keep": false,
+    "reason": "Chargé d'affaires CFO/CFA, hors cible climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chef de projet résilience des installations hydrauliques f/h|orano": {
+    "keep": false,
+    "reason": "Chef de Projet Résilience (nucléaire), hors cible climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "data engineer gcp f/h|cadremploi": {
+    "keep": false,
+    "reason": "Data Engineer, hors cible climat/stratégie (code pur)",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "responsable d'affaires infrastructures hydrauliques & génie civil f/h|cabinet merlin": {
+    "keep": false,
+    "reason": "Poste hors climat/durabilité (infrastructures hydrauliques & génie civil), même si senior. Rejeté car hors scope.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "responsable r&d et developpement durable f/h|handicap job": {
+    "keep": false,
+    "reason": "Poste RSE générique (développement durable) sans lien explicite avec climat/stratégie bas-carbone. Rejeté même si senior.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé de comptes assurances collectives f/h|wexecutive": {
+    "keep": false,
+    "reason": "Poste commercial pur (assurances collectives) sans lien climat/durabilité. Rejeté.",
     "borderline": false,
     "score": 0,
     "v": 9
