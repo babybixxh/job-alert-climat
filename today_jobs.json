@@ -12,18 +12,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/energy-modeler-and-technology-analyst-at-oecd-ocde-4443124823",
-    "title": "Energy Modeler and Technology Analyst",
-    "company": "OECD-OCDE",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/energy-modeler-and-technology-analyst-at-oecd-ocde-4443124823",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 95,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/consultant-e-senior-energie-at-colombus-consulting-4366860952",
     "title": "Consultant.e Senior - Energie",
     "company": "Colombus Consulting",
@@ -33,30 +21,6 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-d-affaires-efficacit%C3%A9-energ%C3%A9tique-d%C3%A9carbonation-at-manergy-4452184496",
-    "title": "Chargé.e d'Affaires - Efficacité Energétique & Décarbonation",
-    "company": "MANERGY",
-    "location": "Aix-en-Provence",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-d-affaires-efficacit%C3%A9-energ%C3%A9tique-d%C3%A9carbonation-at-manergy-4452184496",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-d-affaires-transition-energ%C3%A9tique-territoires-r%C3%A9seaux-de-chaleur-at-manergy-4452192449",
-    "title": "Chargé.e d'Affaires - Transition Energétique Territoires/Réseaux de Chaleur",
-    "company": "MANERGY",
-    "location": "Aix-en-Provence",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-d-affaires-transition-energ%C3%A9tique-territoires-r%C3%A9seaux-de-chaleur-at-manergy-4452192449",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 70,
     "is_new": false
   },
   {
@@ -96,27 +60,15 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-durabilit%C3%A9-at-jlb-expertises-4453673824",
-    "title": "Chargé de mission durabilité",
-    "company": "JLB Expertises",
-    "location": "Marseille",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-durabilit%C3%A9-at-jlb-expertises-4453673824",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 65,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/esg-advisor-at-arendt-medernach-4442664755",
-    "title": "ESG Advisor",
-    "company": "Arendt & Medernach",
+    "id": "https://fr.linkedin.com/jobs/view/energy-modeler-and-technology-analyst-at-oecd-ocde-4443124823",
+    "title": "Energy Modeler and Technology Analyst",
+    "company": "OECD-OCDE",
     "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/esg-advisor-at-arendt-medernach-4442664755",
+    "url": "https://fr.linkedin.com/jobs/view/energy-modeler-and-technology-analyst-at-oecd-ocde-4443124823",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
-    "score": 90,
+    "score": 95,
     "is_new": false
   },
   {
@@ -132,6 +84,18 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/candidature-spontan%C3%A9e-sud-est-at-onepoint-4405135385",
+    "title": "Candidature Spontanée Sud-Est",
+    "company": "Onepoint",
+    "location": "Aix-en-Provence",
+    "url": "https://fr.linkedin.com/jobs/view/candidature-spontan%C3%A9e-sud-est-at-onepoint-4405135385",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": true,
+    "score": 50,
+    "is_new": false
+  },
+  {
     "id": "https://fr.linkedin.com/jobs/view/product-manager-greenit-finops-at-station-f-4452969888",
     "title": "PRODUCT MANAGER GREENIT & FINOPS",
     "company": "STATION F",
@@ -141,6 +105,20 @@
     "source": "LinkedIn",
     "borderline": true,
     "score": 75,
+    "is_new": false
+  },
+  {
+    "id": "5844983040",
+    "title": "Ingénieur de recherche – Sciences sociales des risques climatiques et des territoires",
+    "company": "ECOLE NORMALE SUPERIEURE",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5844983040?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Département ou service de la structure : Centre Maurice Halbwachs (CNRS, EHESS, ENS, INRAE), 48, Boulevard Jourdan, 75014 Paris Catégorie/Corps : A – ...",
+    "salary": "",
+    "date": "2026-08-17T09:31:52Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 85,
     "is_new": false
   },
   {
@@ -156,6 +134,18 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/expert-technique-d%C3%A9chets-dangereux-h-f-at-ortec-group-4452483412",
+    "title": "Expert Technique Déchets Dangereux H/F",
+    "company": "Ortec Group",
+    "location": "Aix-en-Provence",
+    "url": "https://fr.linkedin.com/jobs/view/expert-technique-d%C3%A9chets-dangereux-h-f-at-ortec-group-4452483412",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
     "id": "5839124655",
     "title": "Chargé·e de Projet Transition Écologique et Bas Carbone H/F",
     "company": "Aorif-Ush Île-De-France",
@@ -167,6 +157,18 @@
     "source": "Adzuna",
     "borderline": false,
     "score": 70,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/sub-saharan-africa-program-coordinator-%E2%80%93-temporary-at-oecd-ocde-4444367807",
+    "title": "Sub-Saharan Africa Program Coordinator – Temporary",
+    "company": "OECD-OCDE",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/sub-saharan-africa-program-coordinator-%E2%80%93-temporary-at-oecd-ocde-4444367807",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 90,
     "is_new": false
   },
   {
@@ -194,15 +196,29 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/candidature-spontan%C3%A9e-sud-est-at-onepoint-4405135385",
-    "title": "Candidature Spontanée Sud-Est",
-    "company": "Onepoint",
-    "location": "Aix-en-Provence",
-    "url": "https://fr.linkedin.com/jobs/view/candidature-spontan%C3%A9e-sud-est-at-onepoint-4405135385",
+    "id": "5844289207",
+    "title": "Client Success Specialist - Sustainability Solutions",
+    "company": "ISS STOXX",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5844289207?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Let’s be BrilliantTogether We are seeking a Client Success Specialist to join our Paris team in helping our clients in France and Southern Europe maxi...",
+    "salary": "",
+    "date": "2026-08-16T17:07:49Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/esg-advisor-at-arendt-medernach-4442664755",
+    "title": "ESG Advisor",
+    "company": "Arendt & Medernach",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/esg-advisor-at-arendt-medernach-4442664755",
     "description": "",
     "source": "LinkedIn",
-    "borderline": true,
-    "score": 50,
+    "borderline": false,
+    "score": 90,
     "is_new": false
   },
   {
@@ -218,18 +234,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/sub-saharan-africa-program-coordinator-%E2%80%93-temporary-at-oecd-ocde-4444367807",
-    "title": "Sub-Saharan Africa Program Coordinator – Temporary",
-    "company": "OECD-OCDE",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/sub-saharan-africa-program-coordinator-%E2%80%93-temporary-at-oecd-ocde-4444367807",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 90,
-    "is_new": false
-  },
-  {
     "id": "211XZCW",
     "title": "Energy Data Analyst (H/F)",
     "company": "EFFY",
@@ -239,18 +243,6 @@
     "source": "France Travail",
     "borderline": false,
     "score": 80,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/chef-de-projet-transition-agricole-et-alimentaire-h-f-at-d%C3%A9partement-de-l-essonne-4451434003",
-    "title": "CHEF DE PROJET TRANSITION AGRICOLE ET ALIMENTAIRE (H/F)",
-    "company": "Département de l'Essonne",
-    "location": "Évry-Courcouronnes",
-    "url": "https://fr.linkedin.com/jobs/view/chef-de-projet-transition-agricole-et-alimentaire-h-f-at-d%C3%A9partement-de-l-essonne-4451434003",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
     "is_new": false
   },
   {
@@ -275,18 +267,6 @@
     "source": "France Travail",
     "borderline": true,
     "score": 55,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/expert-technique-d%C3%A9chets-dangereux-h-f-at-ortec-group-4452483412",
-    "title": "Expert Technique Déchets Dangereux H/F",
-    "company": "Ortec Group",
-    "location": "Aix-en-Provence",
-    "url": "https://fr.linkedin.com/jobs/view/expert-technique-d%C3%A9chets-dangereux-h-f-at-ortec-group-4452483412",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
     "is_new": false
   },
   {
@@ -400,6 +380,19 @@
     "is_new": false
   },
   {
+    "id": "5836176323",
+    "title": "Key Account Manager - Deepki H/F",
+    "company": "Deepki",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5836176323?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "About Deepki Founded in 2014, Deepki is the most trusted sustainability SaaS solution for sustainability in the real estate sector. Its comprehensive ...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": false,
+    "score": 85,
+    "is_new": false
+  },
+  {
     "id": "5832356633",
     "title": "Key Account Manager",
     "company": "Deepki",
@@ -478,19 +471,6 @@
     "is_new": false
   },
   {
-    "id": "5829676180",
-    "title": "Assistant / Assistante de vie H/F",
-    "company": "AFD UNA 73",
-    "location": "Savoie, Auvergne-Rhône-Alpes",
-    "url": "https://www.adzuna.fr/details/5829676180?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Description de l'offre: Envie de donner du sens à votre métier en rejoignant une association à but non lucratif ? Venez intégrer une équipe engagée et...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "borderline": false,
-    "score": 70,
-    "is_new": false
-  },
-  {
     "id": "5823835291",
     "title": "Agronomy Product Manager",
     "company": "Weenat",
@@ -501,6 +481,20 @@
     "company_watch": true,
     "borderline": false,
     "score": 95,
+    "is_new": false
+  },
+  {
+    "id": "48721010",
+    "title": "Open Application",
+    "company": "Supercritical",
+    "location": "London, England, GB",
+    "url": "https://climatebase.org/job/open-application-48721010",
+    "description": "Scaling carbon removal to gigatonne levels for a sustainable, low-carbon future.",
+    "salary": "",
+    "date": "2026-08-18T04:21:56.925Z",
+    "source": "Remote EU",
+    "borderline": false,
+    "score": 75,
     "is_new": false
   },
   {
@@ -515,6 +509,20 @@
     "source": "APEC",
     "borderline": false,
     "score": 60,
+    "is_new": false
+  },
+  {
+    "id": "179173091W",
+    "title": "Consultant Energie et Chargé de mission monitoring F/H",
+    "company": "jobs_that_makesense",
+    "location": "Chambéry - 73",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179173091W",
+    "description": "Vous souhaitez intégrer une équipe d’ingénieurs dynamique, soudée et engagée de manière concrète dans la lutte contre le réchauffement climatique ? Rejoignez-nous !   Description de l’entreprise  SMAR...",
+    "salary": "35 - 35 k€ brut annuel",
+    "date": "2026-07-24T01:40:14.000+0000",
+    "source": "APEC",
+    "borderline": false,
+    "score": 75,
     "is_new": false
   },
   {
@@ -616,20 +624,6 @@
     "is_new": false
   },
   {
-    "id": "179073128W",
-    "title": "Chargé de mission Climat, GEMAPI et Biodiversité F/H",
-    "company": "CC BIEVRE ISERE",
-    "location": "Saint-Étienne-de-Saint-Geoirs - 38",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179073128W",
-    "description": "Vous animez et évaluez le Plan Climat Air Energie Territorial (PCAET) 2021-2026 :  Vous initiez et pilotez la révision du PCAET, en lien avec la révision du PLUi ;.  Vous assurez l’animation via les i...",
-    "salary": "28 - 48 k€ brut annuel",
-    "date": "2026-07-20T07:48:39.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "score": 90,
-    "is_new": false
-  },
-  {
     "id": "179201562W",
     "title": "Chef de projet Énergie & Carbone expérimenté F/H",
     "company": "Profila",
@@ -652,20 +646,6 @@
     "description": "Intégrée au sein de la Direction déléguée en charge de l'Innovation, de la Stratégie et de l'Environnement (DISE), la Direction Environnement (DE) est garante de la définition et du déploiement de la ...",
     "salary": "A négocier",
     "date": "2026-07-30T21:26:05.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "179173091W",
-    "title": "Consultant Energie et Chargé de mission monitoring F/H",
-    "company": "jobs_that_makesense",
-    "location": "Chambéry - 73",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179173091W",
-    "description": "Vous souhaitez intégrer une équipe d’ingénieurs dynamique, soudée et engagée de manière concrète dans la lutte contre le réchauffement climatique ? Rejoignez-nous !   Description de l’entreprise  SMAR...",
-    "salary": "35 - 35 k€ brut annuel",
-    "date": "2026-07-24T01:40:14.000+0000",
     "source": "APEC",
     "borderline": false,
     "score": 75,
@@ -753,6 +733,20 @@
     "source": "APEC",
     "borderline": false,
     "score": 80,
+    "is_new": false
+  },
+  {
+    "id": "179073128W",
+    "title": "Chargé de mission Climat, GEMAPI et Biodiversité F/H",
+    "company": "CC BIEVRE ISERE",
+    "location": "Saint-Étienne-de-Saint-Geoirs - 38",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179073128W",
+    "description": "Vous animez et évaluez le Plan Climat Air Energie Territorial (PCAET) 2021-2026 :  Vous initiez et pilotez la révision du PCAET, en lien avec la révision du PLUi ;.  Vous assurez l’animation via les i...",
+    "salary": "28 - 48 k€ brut annuel",
+    "date": "2026-07-20T07:48:39.000+0000",
+    "source": "APEC",
+    "borderline": false,
+    "score": 90,
     "is_new": false
   },
   {
@@ -1022,57 +1016,111 @@
     "is_new": false
   },
   {
-    "id": "sr-OECD-744000136026454",
-    "title": "Analyste des politiques - Réformes et des partenariats pour l’impact sur le développement, unité Examens de l’aide",
-    "company": "OECD",
-    "location": "Paris, Île-de-France Region, fr",
-    "url": "https://jobs.smartrecruiters.com/OECD/744000136026454",
+    "id": "https://fr.linkedin.com/jobs/view/climate-services-specialist-h-f-at-suez-4455319521",
+    "title": "Climate Services Specialist (H/F)",
+    "company": "SUEZ",
+    "location": "Nanterre",
+    "url": "https://fr.linkedin.com/jobs/view/climate-services-specialist-h-f-at-suez-4455319521",
     "description": "",
-    "date": "2026-07-06",
-    "source": "SmartRecruiters",
-    "company_watch": true,
+    "source": "LinkedIn",
     "borderline": false,
-    "score": 65,
-    "is_new": false
+    "score": 90,
+    "is_new": true
   },
   {
-    "id": "sr-OECD-744000136026514",
-    "title": "Policy Analyst - Peer Reviews, Reforms and Partnerships for Development Impact",
-    "company": "OECD",
-    "location": "Paris, Île-de-France Region, fr",
-    "url": "https://jobs.smartrecruiters.com/OECD/744000136026514",
-    "description": "",
-    "date": "2026-07-06",
-    "source": "SmartRecruiters",
-    "company_watch": true,
-    "borderline": false,
-    "score": 65,
-    "is_new": false
-  },
-  {
-    "id": "5844289207",
-    "title": "Client Success Specialist - Sustainability Solutions",
-    "company": "ISS STOXX",
+    "id": "5841933055",
+    "title": "Chargé de projet « partage des données de gestion du réseau Natura 2000 » (F/H)",
+    "company": "MNHN",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5844289207?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Let’s be BrilliantTogether We are seeking a Client Success Specialist to join our Paris team in helping our clients in France and Southern Europe maxi...",
+    "url": "https://www.adzuna.fr/details/5841933055?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots DESCRIPTION DES MISSIONS Au sein de l’équipe « Espaces et partenariats », vous aurez pour objectif principal la préfigur...",
     "salary": "",
-    "date": "2026-08-16T17:07:49Z",
+    "date": "2026-08-14T17:22:16Z",
     "source": "Adzuna",
     "borderline": false,
     "score": 75,
     "is_new": true
   },
   {
-    "id": "5844727120",
-    "title": "Group Environmental Transition Analyst CDI H/F",
-    "company": "Unibail Management",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5844727120?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Au sein de l'équipe Groupe Ingénierie immobilière et Énergie (six personnes) et sous la responsabilité du Senior Energy & Environnement Manager, vous ...",
+    "id": "75807421",
+    "title": "Call for Experts: Climatebase Fellowship",
+    "company": "Climatebase",
+    "location": "Remote",
+    "url": "https://climatebase.org/job/call-for-experts-climatebase-fellowship-75807421",
+    "description": "The world's leading platform for climate careers. Accelerating climate solutions by building products, programs, and community to support the climate ",
     "salary": "",
-    "date": "2026-08-17T02:16:14Z",
-    "source": "Adzuna",
+    "date": "2026-08-17T22:28:57.875Z",
+    "source": "Remote EU",
+    "borderline": false,
+    "score": 75,
+    "is_new": true
+  },
+  {
+    "id": "75812440",
+    "title": "Staff Data Scientist - Wildfire",
+    "company": "Overstory",
+    "location": "Canada",
+    "url": "https://climatebase.org/job/staff-data-scientist-wildfire-75812440",
+    "description": "AI climate-tech startup using remote-sensing to prevent wildfires and power outages for the largest electric utilities in the US",
+    "salary": "",
+    "date": "2026-08-18T04:11:30.756Z",
+    "source": "Remote EU",
+    "borderline": false,
+    "score": 85,
+    "is_new": true
+  },
+  {
+    "id": "75812412",
+    "title": "Communities and Social Performance Specialist",
+    "company": "KoBold Metals",
+    "location": "Remote",
+    "url": "https://climatebase.org/job/communities-and-social-performance-specialist-75812412",
+    "description": "Leveraging AI to drive electrification and combat climate change.",
+    "salary": "",
+    "date": "2026-08-18T04:11:30.756Z",
+    "source": "Remote EU",
+    "borderline": false,
+    "score": 70,
+    "is_new": true
+  },
+  {
+    "id": "75813988",
+    "title": "Freelancers carbon spontaneous application",
+    "company": "PUR Projet",
+    "location": "Remote",
+    "url": "https://climatebase.org/job/freelancers-carbon-spontaneous-application-75813988",
+    "description": "Empowering companies to restore ecosystems via agroforestry and sustainable resource management.",
+    "salary": "",
+    "date": "2026-08-18T04:28:40.195Z",
+    "source": "Remote EU",
+    "borderline": false,
+    "score": 80,
+    "is_new": true
+  },
+  {
+    "id": "179274602W",
+    "title": "Consultant(e) Chef(fe) de projet - conseil en transition environnementale... F/H",
+    "company": "Actu environnement",
+    "location": "Mérignac - 16",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179274602W",
+    "description": "L'une des activités de Naldeo, dont la devise est « L'excellence technique au service du climat », consiste à accompagner des entreprises dans la transition environnementale de leurs activités. Le Pôl...",
+    "salary": "A partir de 45 k€ brut annuel",
+    "date": "2026-08-18T00:59:18.000+0000",
+    "source": "APEC",
+    "borderline": false,
+    "score": 95,
+    "is_new": true
+  },
+  {
+    "id": "179274603W",
+    "title": "Chargé détudes spécialisé stratégie agricole F/H",
+    "company": "Actu environnement",
+    "location": "Courbevoie - 92",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179274603W",
+    "description": "Rejoignez l’Agence de l’eau Seine-Normandie et contribuez concrètement à la préservation de l’eau, de la biodiversité et à l’adaptation au changement climatique !  Établissement public de l’État sous ...",
+    "salary": "A partir de 34 k€ brut annuel",
+    "date": "2026-08-18T00:59:28.000+0000",
+    "source": "APEC",
     "borderline": false,
     "score": 85,
     "is_new": true
