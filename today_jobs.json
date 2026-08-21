@@ -12,11 +12,23 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-adaptation-des-b%C3%A2timents-publics-aux-vagues-de-chaleur-at-actee-fnccr-4452940148",
-    "title": "Chef.fe de projet adaptation des bâtiments publics aux vagues de chaleur",
-    "company": "ACTEE (FNCCR)",
+    "id": "https://fr.linkedin.com/jobs/view/expert-senior-adaptation-au-changement-climatique-et-r%C3%A9silience-urbaine-h-f-at-suez-4456755607",
+    "title": "Expert senior Adaptation au changement climatique et résilience urbaine - H/F",
+    "company": "SUEZ",
+    "location": "Nanterre",
+    "url": "https://fr.linkedin.com/jobs/view/expert-senior-adaptation-au-changement-climatique-et-r%C3%A9silience-urbaine-h-f-at-suez-4456755607",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 95,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/conseiller-technique-en-%C3%A9nergie-environnement-et-sobri%C3%A9t%C3%A9-h-f-at-association-hovia-4456167928",
+    "title": "Conseiller technique en énergie, environnement et sobriété (H/F)",
+    "company": "Association HOVIA",
     "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-adaptation-des-b%C3%A2timents-publics-aux-vagues-de-chaleur-at-actee-fnccr-4452940148",
+    "url": "https://fr.linkedin.com/jobs/view/conseiller-technique-en-%C3%A9nergie-environnement-et-sobri%C3%A9t%C3%A9-h-f-at-association-hovia-4456167928",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
@@ -24,15 +36,15 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/energy-modeler-and-technology-analyst-at-oecd-ocde-4443124823",
-    "title": "Energy Modeler and Technology Analyst",
-    "company": "OECD-OCDE",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/energy-modeler-and-technology-analyst-at-oecd-ocde-4443124823",
+    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-environnement-at-mairie-de-la-croix-valmer-4456084655",
+    "title": "Chargé de mission Environnement",
+    "company": "Mairie de La Croix Valmer",
+    "location": "La Croix-Valmer",
+    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-environnement-at-mairie-de-la-croix-valmer-4456084655",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
-    "score": 95,
+    "score": 70,
     "is_new": false
   },
   {
@@ -84,42 +96,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-environnement-h-f-at-astridsen-4443920883",
-    "title": "Ingénieur Environnement H/F",
-    "company": "ASTRIDSEN",
-    "location": "Marseille",
-    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-environnement-h-f-at-astridsen-4443920883",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": true,
-    "score": 50,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/product-manager-greenit-finops-at-station-f-4452969888",
-    "title": "PRODUCT MANAGER GREENIT & FINOPS",
-    "company": "STATION F",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/product-manager-greenit-finops-at-station-f-4452969888",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": true,
-    "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "211WYQL",
-    "title": "Chargé-e de mission Adaptation au Changement Climatique (H/F)",
-    "company": "CONFEDERATION GENERALE DES PETITES ET MO",
-    "location": "13 - MARSEILLE",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/211WYQL",
-    "description": "Les Entrepreneurs Sud (ex-CPME Sud) porte le projet Cap Climat, ayant pour but de sensibiliser et accompagner les TPE-PME de la région Sud-Provence-Al...",
-    "source": "France Travail",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/candidature-spontan%C3%A9e-sud-est-at-onepoint-4405135385",
     "title": "Candidature Spontanée Sud-Est",
     "company": "Onepoint",
@@ -141,6 +117,18 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 90,
+    "is_new": false
+  },
+  {
+    "id": "211WYQL",
+    "title": "Chargé-e de mission Adaptation au Changement Climatique (H/F)",
+    "company": "CONFEDERATION GENERALE DES PETITES ET MO",
+    "location": "13 - MARSEILLE",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/211WYQL",
+    "description": "Les Entrepreneurs Sud (ex-CPME Sud) porte le projet Cap Climat, ayant pour but de sensibiliser et accompagner les TPE-PME de la région Sud-Provence-Al...",
+    "source": "France Travail",
+    "borderline": false,
+    "score": 75,
     "is_new": false
   },
   {
@@ -170,6 +158,18 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-ou-expert-e-en-d%C3%A9carbonation-des-proc%C3%A9d%C3%A9s-industriels-h-f-at-ynergie-4453447109",
+    "title": "Ingénieur(e) ou Expert(e) en décarbonation des procédés industriels (H/F)",
+    "company": "Ynergie",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-ou-expert-e-en-d%C3%A9carbonation-des-proc%C3%A9d%C3%A9s-industriels-h-f-at-ynergie-4453447109",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 85,
+    "is_new": false
+  },
+  {
     "id": "210FHFD",
     "title": "Chargé(e) de Mission Métiers, Transition Énergétique & Innovation (H/F)",
     "company": "FEDERATION REGIONALE DU BATIMENT PACA",
@@ -182,6 +182,18 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-strat%C3%A9gie-et-affaires-publiques-at-bsc-4454067450",
+    "title": "Consultant senior, stratégie et affaires publiques",
+    "company": "BSC",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-strat%C3%A9gie-et-affaires-publiques-at-bsc-4454067450",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 70,
+    "is_new": false
+  },
+  {
     "id": "5788141",
     "title": "Responsable du développement des projets agricoles et territoriaux (H/F)",
     "company": "OMEVA",
@@ -191,18 +203,6 @@
     "source": "France Travail",
     "borderline": true,
     "score": 55,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-mission-d%C3%A9veloppement-foncier-habitat-et-bifurcation-%C3%A9cologique-%E2%80%93-urbanisme-et-am%C3%A9nagement-h-f-at-ville-de-trappes-4452824396",
-    "title": "Chargé.e de Mission- Développement foncier, habitat et bifurcation écologique – Urbanisme et Aménagement - (H/F)",
-    "company": "Ville de Trappes",
-    "location": "Trappes",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-mission-d%C3%A9veloppement-foncier-habitat-et-bifurcation-%C3%A9cologique-%E2%80%93-urbanisme-et-am%C3%A9nagement-h-f-at-ville-de-trappes-4452824396",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": true,
-    "score": 40,
     "is_new": false
   },
   {
@@ -355,12 +355,12 @@
     "is_new": false
   },
   {
-    "id": "5808499019",
-    "title": "Conseiller Spécialisé Grands Projets",
+    "id": "5848449145",
+    "title": "Business Impact Manager (Practice Manager), 6 month FTC - Paris",
     "company": "Marsh McLennan",
     "location": "France",
-    "url": "https://www.adzuna.fr/details/5808499019?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Company: Marsh Description: Contexte & mission générale Dans un contexte de montée en puissance des investissements en infrastructures (mobilités, fer...",
+    "url": "https://www.adzuna.fr/details/5848449145?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Company: Oliver Wyman Description: Oliver Wyman, a Marsh (NYSE: MRSH) business, is a management consulting firm driven by deep industry insight, bold ...",
     "source": "Adzuna",
     "company_watch": true,
     "borderline": false,
@@ -426,20 +426,6 @@
     "description": "The world's leading platform for climate careers. Accelerating climate solutions by building products, programs, and community to support the climate ",
     "salary": "",
     "date": "2026-08-17T22:28:57.875Z",
-    "source": "Remote EU",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "48721010",
-    "title": "Open Application",
-    "company": "Supercritical",
-    "location": "London, England, GB",
-    "url": "https://climatebase.org/job/open-application-48721010",
-    "description": "Scaling carbon removal to gigatonne levels for a sustainable, low-carbon future.",
-    "salary": "",
-    "date": "2026-08-20T04:20:47.099Z",
     "source": "Remote EU",
     "borderline": false,
     "score": 75,
@@ -558,20 +544,6 @@
     "is_new": false
   },
   {
-    "id": "179157888W",
-    "title": "Chargé de mission Patrimoine & Marchés Publics F/H",
-    "company": "EMPLOI PUBLIC",
-    "location": "Nanterre - 92",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179157888W",
-    "description": "L'Agence de l'eau Seine-Normandie œuvre chaque jour pour la préservation de la ressource en eau, la protection de la biodiversité et l'adaptation au changement climatique.  Établissement public de l'É...",
-    "salary": "A négocier",
-    "date": "2026-07-22T01:35:06.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "score": 70,
-    "is_new": false
-  },
-  {
     "id": "179283479W",
     "title": "Chef de projet Énergie & Carbone expérimenté F/H",
     "company": "Profila",
@@ -684,20 +656,6 @@
     "is_new": false
   },
   {
-    "id": "179194887W",
-    "title": "Chargé de mission mobilité durable F/H",
-    "company": "AGENCE LOCALE DE L ENERGIE ET DU CLIMAT DU DEPARTEMENT DE LA LOIRE",
-    "location": "Saint-Étienne - 42",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179194887W",
-    "description": "Le poste vise à accompagner les territoires dans leurs projets de mobilité, à produire des analyses territoriales et données d’aide à la décision, à animer des démarches opérationnelles et à intégrer ...",
-    "salary": "A partir de 32 k€ brut annuel",
-    "date": "2026-07-28T15:47:29.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "score": 65,
-    "is_new": false
-  },
-  {
     "id": "179254915W",
     "title": "Responsable d'affaires décarbonation F/H",
     "company": "EFFEKTIV",
@@ -723,6 +681,20 @@
     "source": "APEC",
     "borderline": false,
     "score": 85,
+    "is_new": false
+  },
+  {
+    "id": "179194887W",
+    "title": "Chargé de mission mobilité durable F/H",
+    "company": "AGENCE LOCALE DE L ENERGIE ET DU CLIMAT DU DEPARTEMENT DE LA LOIRE",
+    "location": "Saint-Étienne - 42",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179194887W",
+    "description": "Le poste vise à accompagner les territoires dans leurs projets de mobilité, à produire des analyses territoriales et données d’aide à la décision, à animer des démarches opérationnelles et à intégrer ...",
+    "salary": "A partir de 32 k€ brut annuel",
+    "date": "2026-07-28T15:47:29.000+0000",
+    "source": "APEC",
+    "borderline": false,
+    "score": 65,
     "is_new": false
   },
   {
@@ -950,11 +922,23 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/conseiller-technique-en-%C3%A9nergie-environnement-et-sobri%C3%A9t%C3%A9-h-f-at-association-hovia-4456167928",
-    "title": "Conseiller technique en énergie, environnement et sobriété (H/F)",
-    "company": "Association HOVIA",
+    "id": "https://fr.linkedin.com/jobs/view/senior-programme-management-officer-at-un-environment-programme-4456497286",
+    "title": "SENIOR PROGRAMME MANAGEMENT OFFICER",
+    "company": "UN Environment Programme",
+    "location": "Ville de Paris",
+    "url": "https://fr.linkedin.com/jobs/view/senior-programme-management-officer-at-un-environment-programme-4456497286",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 95,
+    "is_new": true
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/senior-analyst-at-s-p-global-4454474165",
+    "title": "Senior Analyst",
+    "company": "S&P Global",
     "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/conseiller-technique-en-%C3%A9nergie-environnement-et-sobri%C3%A9t%C3%A9-h-f-at-association-hovia-4456167928",
+    "url": "https://fr.linkedin.com/jobs/view/senior-analyst-at-s-p-global-4454474165",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
@@ -962,78 +946,39 @@
     "is_new": true
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-environnement-at-mairie-de-la-croix-valmer-4455440043",
-    "title": "Chargé de mission Environnement",
-    "company": "Mairie de La Croix Valmer",
-    "location": "La Croix-Valmer",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-environnement-at-mairie-de-la-croix-valmer-4455440043",
+    "id": "https://fr.linkedin.com/jobs/view/data-scientist-%E2%80%93-energy-optimization-at-darwin-partners-4454527910",
+    "title": "Data Scientist – Energy optimization",
+    "company": "Darwin Partners",
+    "location": "Ville de Paris",
+    "url": "https://fr.linkedin.com/jobs/view/data-scientist-%E2%80%93-energy-optimization-at-darwin-partners-4454527910",
     "description": "",
     "source": "LinkedIn",
-    "borderline": false,
-    "score": 70,
-    "is_new": true
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/chef-de-projet-environnement-at-s%C3%A9gic-ing%C3%A9nierie-4456326244",
-    "title": "Chef de projet Environnement",
-    "company": "SÉGIC Ingénierie",
-    "location": "Nice",
-    "url": "https://fr.linkedin.com/jobs/view/chef-de-projet-environnement-at-s%C3%A9gic-ing%C3%A9nierie-4456326244",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 65,
-    "is_new": true
-  },
-  {
-    "id": "5848081839",
-    "title": "Chargé/Chargée de Mission DLA 13 F/H",
-    "company": "FRANCE ACTIVE PROVENCE-ALPES-COTE D'AZUR",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5848081839?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Rejoignez celles et ceux qui font grandir les projets d'utilité sociale. Chez France Active Provence-Alpes-Côte d'Azur, nous croyons qu'une autre écon...",
-    "salary": "35 k€ – 37 k€",
-    "date": "2026-08-19T12:44:46Z",
-    "source": "Adzuna",
-    "borderline": true,
-    "score": 50,
-    "is_new": true
-  },
-  {
-    "id": "5848344038",
-    "title": "CDI - Energy Manager Senior - Paris",
-    "company": "Carb0n",
-    "location": "8ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/details/5848344038?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Au sein d’une équipe de 10 personnes , vos activités principales seront les suivantes : I. En phase d’avant-projet - conseil : Assurer la récupération...",
-    "salary": "45 k€ – 55 k€",
-    "date": "2026-08-19T17:11:44Z",
-    "source": "Adzuna",
     "borderline": false,
     "score": 75,
     "is_new": true
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-ou-expert-e-en-d%C3%A9carbonation-des-proc%C3%A9d%C3%A9s-industriels-h-f-at-ynergie-4453447109",
-    "title": "Ingénieur(e) ou Expert(e) en décarbonation des procédés industriels (H/F)",
-    "company": "Ynergie",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-ou-expert-e-en-d%C3%A9carbonation-des-proc%C3%A9d%C3%A9s-industriels-h-f-at-ynergie-4453447109",
+    "id": "https://fr.linkedin.com/jobs/view/product-manager-circular-chemicals-packaging-europe-at-cyclone-4456313904",
+    "title": "Product Manager | Circular Chemicals & Packaging | Europe",
+    "company": "Cyclone",
+    "location": "Paris et périphérie",
+    "url": "https://fr.linkedin.com/jobs/view/product-manager-circular-chemicals-packaging-europe-at-cyclone-4456313904",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
-    "score": 85,
-    "is_new": false
+    "score": 80,
+    "is_new": true
   },
   {
-    "id": "5848449145",
-    "title": "Business Impact Manager (Practice Manager), 6 month FTC - Paris",
-    "company": "Marsh McLennan",
-    "location": "France",
-    "url": "https://www.adzuna.fr/details/5848449145?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Company: Oliver Wyman Description: Oliver Wyman, a Marsh (NYSE: MRSH) business, is a management consulting firm driven by deep industry insight, bold ...",
-    "source": "Adzuna",
-    "company_watch": true,
+    "id": "75918592",
+    "title": "Geospatial Data Engineer - Customer & AI Solutions",
+    "company": "VIDA.place GmbH",
+    "location": "Munich, BY, DE",
+    "url": "https://climatebase.org/job/geospatial-data-engineer-customer-ai-solutions-75918592",
+    "description": "Empower companies to track their climate impact globally.",
+    "salary": "",
+    "date": "2026-08-21T04:36:04.075Z",
+    "source": "Remote EU",
     "borderline": false,
     "score": 85,
     "is_new": true
