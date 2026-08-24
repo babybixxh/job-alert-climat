@@ -115,7 +115,7 @@ AI_VERDICTS_MAX = 3000
 # Version du prompt/règles IA. À incrémenter dès qu'on modifie le PROFILE ou les
 # règles de décision : les verdicts en cache d'une version antérieure sont alors
 # ré-évalués (sinon d'anciennes décisions périmées seraient rejouées).
-AI_PROMPT_VERSION = 9
+AI_PROMPT_VERSION = 10
 
 # Suivi de la santé des sources : pour chaque source, nombre de jours
 # consécutifs sans aucune offre brute (parseur potentiellement cassé).
@@ -343,9 +343,13 @@ des postes qualifiés de développement durable / transition écologique en entr
 de mission développement durable / transition en collectivité ou établissement public, ou de coordination
 de projets environnement / économie circulaire en association ou dans l'ESS ; à Paris il vise en priorité
 le conseil et la stratégie climat.
-IMPORTANT : il ne veut PLUS de postes de RSE générique (responsable/chargé RSE, responsabilité
-sociétale) — ces offres sont déjà écartées en amont ; concentre-toi sur climat/carbone,
-risque physique/adaptation et agri-climat.
+IMPORTANT : il ne veut PLUS de postes de RSE GÉNÉRIQUE (RSE de reporting/compliance sans
+dimension climat). EN REVANCHE, il VEUT les postes internes en entreprise à forte dominante
+CLIMAT / DÉCARBONATION, quel que soit le secteur (industrie, logistique, retail…) et y compris
+à Paris : responsable/chargé·e décarbonation, responsable RSE & décarbonation, responsable
+environnement & climat, chef·fe de projet bilan carbone / scope 3 / trajectoire SBTi / bas-carbone.
+Garde-les (bon score) : c'est un débouché clé pour son profil. Seule la RSE sans aucun angle
+climat/carbone est à rejeter.
 NIVEAU / SÉNIORITÉ (filtre décisif) : il vise la fourchette Associate → Manager / Responsable /
 Chargé·e senior / Consultant·e / Officer / Specialist / Advisor / Analyst. REJETTE les postes
 trop hauts (Head of, Director, Chief, Principal, Lead, VP, Partner) et ceux exigeant 10+ ans
@@ -516,14 +520,27 @@ def _is_us_location(value):
     return ", us" in t or "united states" in t or t.strip() in ("us", "usa")
 
 
-# Détection RSE en MOT ENTIER (recentrage : Arnaud exclut désormais la RSE
-# générique). Évite les faux positifs des sous-chaînes (« diverse », « traverse »).
+# Détection RSE en MOT ENTIER (recentrage : Arnaud exclut la RSE GÉNÉRIQUE).
+# Évite les faux positifs des sous-chaînes (« diverse », « traverse »).
 _RSE_RE = re.compile(r"\brse\b|responsabilit[ée]\s+soci[ée]tale|responsabilit[ée]\s+sociale",
                      re.IGNORECASE)
 
+# Signal climat/décarbonation : si présent dans un titre « RSE », on NE l'exclut
+# PAS (ex. « Responsable RSE & Décarbonation » = pertinent). Seule la RSE sans
+# dimension climat est écartée.
+_CLIMATE_SIGNAL_RE = re.compile(
+    r"climat|carbone|carbon|d[ée]carb|bas.?carbone|net.?z[ée]ro|"
+    r"[ée]mission|scope\s*3|bilan carbone|sbti|ges\b|"
+    r"transition\s+(?:[ée]nerg|[ée]colog)|greenhouse gas",
+    re.IGNORECASE)
+
 
 def is_rse_title(title):
-    return bool(_RSE_RE.search(title or ""))
+    t = title or ""
+    if not _RSE_RE.search(t):
+        return False
+    # RSE présent : on n'exclut QUE si aucun signal climat/décarbonation.
+    return not _CLIMATE_SIGNAL_RE.search(t)
 
 
 # Plafond de séniorité : Arnaud vise la fourchette Associate → Manager/Responsable.
@@ -1925,8 +1942,10 @@ ADAPTATION SELON LE LIEU (applique-la avant de trancher) :
   écologique / climat / énergie en COLLECTIVITÉ ou ÉTABLISSEMENT PUBLIC (Région, Métropole,
   ADEME, EPCI…) ; coordination ou chef·fe de projet environnement / économie circulaire /
   transition en ASSOCIATION ou ESS. Les rejets absolus ci-dessous s'appliquent quand même.
-- LIEU à Paris / Île-de-France (hors télétravail) : reste STRICT — uniquement conseil /
-  stratégie climat senior, OU les rôles climate-tech décrits juste en dessous.
+- LIEU à Paris / Île-de-France (hors télétravail) : reste sélectif — conseil / stratégie
+  climat senior, OU les rôles climate-tech décrits juste en dessous, OU les postes INTERNES
+  à forte dominante décarbonation / climat en entreprise (responsable décarbonation, RSE &
+  décarbonation, environnement & climat, scope 3 / bilan carbone). Pas la RSE générique.
 
 CLIMATE-TECH / COMPTABILITÉ CARBONE (s'applique surtout aux ENTREPRISE CIBLÉE: oui,
 éditeurs de logiciels carbone / plateformes data-climat & ESG) : chez ces boîtes, GARDE
