@@ -1,14 +1,26 @@
 [
   {
-    "id": "https://fr.linkedin.com/jobs/view/climate-services-specialist-h-f-at-suez-4455319521",
-    "title": "Climate Services Specialist (H/F)",
-    "company": "SUEZ",
-    "location": "Nanterre",
-    "url": "https://fr.linkedin.com/jobs/view/climate-services-specialist-h-f-at-suez-4455319521",
+    "id": "https://fr.linkedin.com/jobs/view/environmental-and-social-consultant-managing-consultant-for-sustainable-finance-at-ramboll-4457351669",
+    "title": "Environmental and Social Consultant/Managing Consultant for Sustainable Finance",
+    "company": "Ramboll",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/environmental-and-social-consultant-managing-consultant-for-sustainable-finance-at-ramboll-4457351669",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
-    "score": 90,
+    "score": 85,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-ou-expert-e-en-d%C3%A9carbonation-des-proc%C3%A9d%C3%A9s-industriels-h-f-at-ynergie-4453447109",
+    "title": "Ingénieur(e) ou Expert(e) en décarbonation des procédés industriels (H/F)",
+    "company": "Ynergie",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-ou-expert-e-en-d%C3%A9carbonation-des-proc%C3%A9d%C3%A9s-industriels-h-f-at-ynergie-4453447109",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 85,
     "is_new": false
   },
   {
@@ -24,6 +36,18 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-environnemental-social-en-financement-durable-at-ramboll-4457344743",
+    "title": "Consultant Environnemental & Social en Financement Durable",
+    "company": "Ramboll",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-environnemental-social-en-financement-durable-at-ramboll-4457344743",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 80,
+    "is_new": false
+  },
+  {
     "id": "https://fr.linkedin.com/jobs/view/solutions-engineer-energy-forecasts-products-at-dnv-4454664216",
     "title": "Solutions Engineer - Energy Forecasts Products",
     "company": "DNV",
@@ -33,54 +57,6 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/conseiller-technique-en-%C3%A9nergie-environnement-et-sobri%C3%A9t%C3%A9-h-f-at-association-hovia-4456167928",
-    "title": "Conseiller technique en énergie, environnement et sobriété (H/F)",
-    "company": "Association HOVIA",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/conseiller-technique-en-%C3%A9nergie-environnement-et-sobri%C3%A9t%C3%A9-h-f-at-association-hovia-4456167928",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/senior-programme-management-officer-at-un-environment-programme-4456497286",
-    "title": "SENIOR PROGRAMME MANAGEMENT OFFICER",
-    "company": "UN Environment Programme",
-    "location": "Ville de Paris",
-    "url": "https://fr.linkedin.com/jobs/view/senior-programme-management-officer-at-un-environment-programme-4456497286",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 95,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/environmental-and-social-consultant-managing-consultant-for-sustainable-finance-at-ramboll-4457351669",
-    "title": "Environmental and Social Consultant/Managing Consultant for Sustainable Finance",
-    "company": "Ramboll",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/environmental-and-social-consultant-managing-consultant-for-sustainable-finance-at-ramboll-4457351669",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-environnemental-social-en-financement-durable-at-ramboll-4457339701",
-    "title": "Consultant Environnemental & Social en Financement Durable",
-    "company": "Ramboll",
-    "location": "Aix-en-Provence",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-environnemental-social-en-financement-durable-at-ramboll-4457339701",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 80,
     "is_new": false
   },
   {
@@ -108,15 +84,15 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/consulting-manager-conseil-energie-industrie-paris-h-f-at-talan-france-4397271336",
-    "title": "Consulting - Manager Conseil - Energie & Industrie - Paris (H/F)",
-    "company": "Talan - France",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/consulting-manager-conseil-energie-industrie-paris-h-f-at-talan-france-4397271336",
+    "id": "https://fr.linkedin.com/jobs/view/climate-services-specialist-h-f-at-suez-4455319521",
+    "title": "Climate Services Specialist (H/F)",
+    "company": "SUEZ",
+    "location": "Nanterre",
+    "url": "https://fr.linkedin.com/jobs/view/climate-services-specialist-h-f-at-suez-4455319521",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
-    "score": 85,
+    "score": 90,
     "is_new": false
   },
   {
@@ -132,6 +108,18 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/senior-programme-management-officer-at-un-environment-programme-4456497286",
+    "title": "SENIOR PROGRAMME MANAGEMENT OFFICER",
+    "company": "UN Environment Programme",
+    "location": "Ville de Paris",
+    "url": "https://fr.linkedin.com/jobs/view/senior-programme-management-officer-at-un-environment-programme-4456497286",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 95,
+    "is_new": false
+  },
+  {
     "id": "https://fr.linkedin.com/jobs/view/energy-data-analyst-h-f-at-effy-4447292721",
     "title": "Energy Data Analyst (H/F)",
     "company": "Effy",
@@ -141,18 +129,6 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 80,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-ou-expert-e-en-d%C3%A9carbonation-des-proc%C3%A9d%C3%A9s-industriels-h-f-at-ynergie-4453447109",
-    "title": "Ingénieur(e) ou Expert(e) en décarbonation des procédés industriels (H/F)",
-    "company": "Ynergie",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-ou-expert-e-en-d%C3%A9carbonation-des-proc%C3%A9d%C3%A9s-industriels-h-f-at-ynergie-4453447109",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
     "is_new": false
   },
   {
@@ -194,17 +170,15 @@
     "is_new": false
   },
   {
-    "id": "5844289207",
-    "title": "Client Success Specialist - Sustainability Solutions",
-    "company": "ISS STOXX",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5844289207?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Let’s be BrilliantTogether We are seeking a Client Success Specialist to join our Paris team in helping our clients in France and Southern Europe maxi...",
-    "salary": "",
-    "date": "2026-08-16T17:07:49Z",
-    "source": "Adzuna",
+    "id": "https://fr.linkedin.com/jobs/view/conseiller-technique-en-%C3%A9nergie-environnement-et-sobri%C3%A9t%C3%A9-h-f-at-association-hovia-4456167928",
+    "title": "Conseiller technique en énergie, environnement et sobriété (H/F)",
+    "company": "Association HOVIA",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/conseiller-technique-en-%C3%A9nergie-environnement-et-sobri%C3%A9t%C3%A9-h-f-at-association-hovia-4456167928",
+    "description": "",
+    "source": "LinkedIn",
     "borderline": false,
-    "score": 75,
+    "score": 85,
     "is_new": false
   },
   {
@@ -231,18 +205,6 @@
     "source": "Adzuna",
     "borderline": false,
     "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "210FHFD",
-    "title": "Chargé(e) de Mission Métiers, Transition Énergétique & Innovation (H/F)",
-    "company": "FEDERATION REGIONALE DU BATIMENT PACA",
-    "location": "13 - MARSEILLE 09",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/210FHFD",
-    "description": "Au cœur des enjeux qui transforment le secteur du bâtiment, le/la Chargé(e) de mission contribuera à l'animation du réseau métiers régional et au suiv...",
-    "source": "France Travail",
-    "borderline": true,
-    "score": 50,
     "is_new": false
   },
   {
@@ -367,6 +329,19 @@
     "is_new": false
   },
   {
+    "id": "5832356633",
+    "title": "Key Account Manager",
+    "company": "Deepki",
+    "location": "11ème Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/details/5832356633?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "About Deepki Founded in 2014, Deepki is the most trusted sustainability SaaS solution for sustainability in the real estate sector. Its comprehensive ...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
     "id": "5831058763",
     "title": "Senior Product Marketing Manager",
     "company": "Deepki",
@@ -481,20 +456,6 @@
     "source": "APEC",
     "borderline": false,
     "score": 60,
-    "is_new": false
-  },
-  {
-    "id": "179173091W",
-    "title": "Consultant Energie et Chargé de mission monitoring F/H",
-    "company": "jobs_that_makesense",
-    "location": "Chambéry - 73",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179173091W",
-    "description": "Vous souhaitez intégrer une équipe d’ingénieurs dynamique, soudée et engagée de manière concrète dans la lutte contre le réchauffement climatique ? Rejoignez-nous !   Description de l’entreprise  SMAR...",
-    "salary": "35 - 35 k€ brut annuel",
-    "date": "2026-07-24T01:40:14.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "score": 75,
     "is_new": false
   },
   {
@@ -680,20 +641,6 @@
     "is_new": false
   },
   {
-    "id": "179175319W",
-    "title": "Chargé·e de Mission Décarbonation Industrie Agro-Alimentaire & Prospective F/H",
-    "company": "Hellowork",
-    "location": "Angers - 49",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179175319W",
-    "description": "Nous vous proposons de rejoindre le Service Décarbonation Industrie et Hydrogène dont l'objectif principal est d'accompagner les politiques publiques (Programmation Pluriannuelle de l'Energie - PPE, S...",
-    "salary": "A négocier",
-    "date": "2026-07-24T06:58:36.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
     "id": "179194887W",
     "title": "Chargé de mission mobilité durable F/H",
     "company": "AGENCE LOCALE DE L ENERGIE ET DU CLIMAT DU DEPARTEMENT DE LA LOIRE",
@@ -778,34 +725,6 @@
     "is_new": false
   },
   {
-    "id": "sr-OECD-744000142830485",
-    "title": "Economistes",
-    "company": "OECD",
-    "location": "Paris, Île-de-France Region, fr",
-    "url": "https://jobs.smartrecruiters.com/OECD/744000142830485",
-    "description": "",
-    "date": "2026-08-11",
-    "source": "SmartRecruiters",
-    "company_watch": true,
-    "borderline": false,
-    "score": 70,
-    "is_new": false
-  },
-  {
-    "id": "sr-OECD-744000142831450",
-    "title": "Economists",
-    "company": "OECD",
-    "location": "Paris, Île-de-France Region, fr",
-    "url": "https://jobs.smartrecruiters.com/OECD/744000142831450",
-    "description": "",
-    "date": "2026-08-11",
-    "source": "SmartRecruiters",
-    "company_watch": true,
-    "borderline": false,
-    "score": 70,
-    "is_new": false
-  },
-  {
     "id": "sr-OECD-744000140968972",
     "title": "Chercheur/chercheuse en politiques publiques (Économie) – Économie numérique",
     "company": "OECD",
@@ -834,20 +753,6 @@
     "is_new": false
   },
   {
-    "id": "sr-OECD-744000140927349",
-    "title": "Policy Advisor – Trade Union Advisory Committee to the OECD - Temporary Assignment",
-    "company": "OECD",
-    "location": "Paris, Île-de-France Region, fr",
-    "url": "https://jobs.smartrecruiters.com/OECD/744000140927349",
-    "description": "",
-    "date": "2026-07-31",
-    "source": "SmartRecruiters",
-    "company_watch": true,
-    "borderline": false,
-    "score": 80,
-    "is_new": false
-  },
-  {
     "id": "sr-OECD-744000140894082",
     "title": "Analyste des politiques – Santé, emploi, compétences et affaires sociales",
     "company": "OECD",
@@ -869,20 +774,6 @@
     "url": "https://jobs.smartrecruiters.com/OECD/744000140893729",
     "description": "",
     "date": "2026-07-31",
-    "source": "SmartRecruiters",
-    "company_watch": true,
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "sr-OECD-744000139646969",
-    "title": "Sub-Saharan Africa Program Coordinator – Temporary",
-    "company": "OECD",
-    "location": "Paris, Île-de-France Region, fr",
-    "url": "https://jobs.smartrecruiters.com/OECD/744000139646969",
-    "description": "",
-    "date": "2026-07-24",
     "source": "SmartRecruiters",
     "company_watch": true,
     "borderline": false,
@@ -932,30 +823,40 @@
     "is_new": false
   },
   {
-    "id": "5836176323",
-    "title": "Key Account Manager H/F",
-    "company": "Deepki",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5836176323?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "About Deepki Founded in 2014, Deepki is the most trusted sustainability SaaS solution for sustainability in the real estate sector. Its comprehensive ...",
-    "source": "Adzuna",
-    "company_watch": true,
+    "id": "210FHFD",
+    "title": "Chargé(e) de Mission Métiers, Transition Énergétique & Innovation (H/F)",
+    "company": "FEDERATION REGIONALE DU BATIMENT PACA",
+    "location": "13 - MARSEILLE 09",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/210FHFD",
+    "description": "Au cœur des enjeux qui transforment le secteur du bâtiment, le/la Chargé(e) de mission contribuera à l'animation du réseau métiers régional et au suiv...",
+    "source": "France Travail",
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/policy-and-regulatory-analyst-at-entrust-4429599503",
+    "title": "Policy and Regulatory Analyst",
+    "company": "Entrust",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/policy-and-regulatory-analyst-at-entrust-4429599503",
+    "description": "",
+    "source": "LinkedIn",
     "borderline": false,
     "score": 85,
     "is_new": true
   },
   {
-    "id": "49810225",
-    "title": "General Role",
-    "company": "Spark Climate Solutions",
-    "location": "Remote",
-    "url": "https://climatebase.org/job/general-role-49810225",
-    "description": "Innovative nonprofit mitigating climate risk through methane reduction and Earth systems management.",
-    "salary": "",
-    "date": "2026-08-23T04:05:15.926Z",
-    "source": "Remote EU",
+    "id": "5838532576",
+    "title": "Oliver Wyman - Entry-Level Consultant - Paris",
+    "company": "Marsh McLennan",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5838532576?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Company: Oliver Wyman Description: WHO WE ARE Oliver Wyman is a global leader in management consulting that combines deep industry knowledge with spec...",
+    "source": "Adzuna",
+    "company_watch": true,
     "borderline": false,
-    "score": 70,
+    "score": 90,
     "is_new": true
   }
 ]

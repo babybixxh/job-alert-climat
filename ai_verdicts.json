@@ -1,186 +1,4 @@
 {
-  "ingénieur - chef de projet construction durable breeam, leed, hqe (h/f)|approach people recruitment sarl": {
-    "keep": false,
-    "reason": "Poste construction durable (BREEAM/LEED) sans lien climat/stratégie",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "responsable qualité sécurité développement durable btp (h/f)|n/a": {
-    "keep": false,
-    "reason": "poste QSE/RSE BTP, hors stratégie climat senior"
-  },
-  "assistant chef de projet développement durable - h/f|n/a": {
-    "keep": false,
-    "reason": "Poste en Île-de-France hors télétravail, rôle administratif/gouvernance sans lien climat stratégique",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "chargé / chargée de mission développement durable (h/f)|federation francaise de l assurance": {
-    "keep": false,
-    "reason": "Titre 'Chargé de mission développement durable' = RSE générique (pas climat/carbone stratégique).",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "chargé / chargée de mission développement durable (h/f)|tetra pak & cie": {
-    "keep": false,
-    "reason": "Titre 'Chargé de mission développement durable' = RSE générique (pas climat/carbone stratégique).",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "chargé / chargée de mission développement durable et rse - responsabilité sociétale de l'entreprise (h/f)|institut de formation regional des indus": {
-    "keep": true,
-    "reason": "Chargé de mission RSE en institut de formation, pertinent mais générique (borderline)",
-    "borderline": true,
-    "score": 55,
-    "v": 3
-  },
-  "chargé de mission qse/rse f/h (h/f)|onet": {
-    "keep": true,
-    "reason": "Poste en PACA (Vitrolles) mais QSE/RSE générique sans preuve de niveau senior stratégique",
-    "borderline": true,
-    "score": 50,
-    "v": 4
-  },
-  "chargé de développement commercial dans le marché de l'art (h/f)|d2 estimation": {
-    "keep": false,
-    "reason": "Poste commercial marché de l'art sans lien climat",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "chargé de projet développement (h/f)|manpower": {
-    "keep": false,
-    "reason": "Chargé de projet développement : poste technique opérationnel (éolien), hors conseil climat.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "chargé de projet éducation artistique et culturelle (h/f)|bibliotheque nationale de france": {
-    "keep": false,
-    "reason": "Chargé de projet éducation artistique : hors climat/stratégie.",
-    "borderline": false,
-    "score": 0,
-    "v": 8
-  },
-  "chargé.e de mission electrification et transition écologique des territoires f/h|ademe": {
-    "keep": true,
-    "reason": "chargé de mission Electrification et Transition écologique des territoires (ADEME), poste stratégique climat"
-  },
-  "chargé(e) de projet européen - santé des sols - formation et sensibilisation f/h|ademe": {
-    "keep": true,
-    "reason": "chargé de projet européen santé des sols (transition écologique, ADEME)",
-    "borderline": false,
-    "score": 75,
-    "v": 4
-  },
-  "gestionnaire de dossiers de financement f/h|ademe": {
-    "keep": false,
-    "reason": "Poste administratif de gestion de dossiers de financement, pas de lien direct avec le conseil climat ou la stratégie.",
-    "borderline": false,
-    "score": 0,
-    "v": 8
-  },
-  "chargé.e de mission transition écologique f/h|ademe": {
-    "keep": true,
-    "reason": "chargé de mission transition écologique (ADEME), poste stratégique climat"
-  },
-  "chef.fe de projets décarbonation industrie f/h|ademe": {
-    "keep": true,
-    "reason": "Chef de projet décarbonation industrie chez ADEME : poste stratégique climat en agence publique, niveau senior.",
-    "borderline": false,
-    "score": 85,
-    "v": 8
-  },
-  "chargé.e de mission adaptation au changement climatique f/h|ademe": {
-    "keep": true,
-    "reason": "Chargé de mission adaptation au changement climatique chez ADEME : poste climat pur en agence publique, niveau senior.",
-    "borderline": false,
-    "score": 90,
-    "v": 8
-  },
-  "vsc - chargé·e de mission transition ecologique f/h|ademe": {
-    "keep": false,
-    "reason": "VSC (Volontaire Service Civique) : poste junior, pas de niveau senior.",
-    "borderline": false,
-    "score": 0,
-    "v": 8
-  },
-  "chef.fe de projet evaluation du programme prodicee f/h|ademe": {
-    "keep": true,
-    "reason": "chef de projet évaluation programme PRODICEE (ADEME, transition écologique)",
-    "borderline": false,
-    "score": 70,
-    "v": 4
-  },
-  "responsable performance paie et administration du personnel|cci france": {
-    "keep": false,
-    "reason": "poste RH/paie, hors critères"
-  },
-  "assistant(e) appels d’offres h/f|cci france": {
-    "keep": false,
-    "reason": "Assistant appels d'offres : poste administratif, hors cible",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "coordinateur pédagogique/coordinatrice pédagogique|cci france": {
-    "keep": false,
-    "reason": "poste de coordination pédagogique sans lien explicite avec le climat ou la durabilité"
-  },
-  "senior fullstack engineer - sweep h/f|sweep": {
-    "keep": false,
-    "reason": "métier tech (développeur fullstack) malgré l'entreprise ciblée"
-  },
-  "directeur financier externalisé à temps partagé (marseille)- f/h|smash": {
-    "keep": false,
-    "reason": "poste finance/comptabilité (DAF externalisé) sans lien climat/stratégie",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "cdi - contrôleur.se de gestion - paris/marseille|la ruche développement": {
-    "keep": false,
-    "reason": "Poste contrôle de gestion sans lien climat",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "eco-animateur.rice terrain - sensibilisation au tri et à la prévention des déchets - marseille|terravox": {
-    "keep": false,
-    "reason": "poste terrain pédagogique (éco-animateur) sans lien stratégie climat",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "chargé.e opérationnel.le du campus regen school marseille|regen school": {
-    "keep": false,
-    "reason": "Poste opérationnel ESS sans lien climat/stratégie",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "chargé.e de déploiement lycéens - cdi - marseille h/f|article 1": {
-    "keep": false,
-    "reason": "poste de déploiement éducatif (hors climat/stratégie malgré la localisation)"
-  },
-  "devenez acteur de la transition écologique des entreprises de votre territoire !|démarche verte": {
-    "keep": false,
-    "reason": "description trop vague sans lien clair avec climat/stratégie",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "contrôleur/contrôleuse technique de génie climatique (h/f) - métropole nice côte d'azur|fonction publique": {
-    "keep": false,
-    "reason": "poste technique (contrôleur génie climatique) sans lien stratégie climat",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
   "animateur environnemental lutte contre les moustiques (h/f) - sanary sur mer|fonction publique": {
     "keep": false,
     "reason": "poste terrain (animation environnementale) sans lien stratégie climat",
@@ -20614,6 +20432,209 @@
   "responsable développement commercial automobile f/h|wink": {
     "keep": false,
     "reason": "Poste commercial pur (responsable développement commercial) sans lien avec le climat ou la stratégie.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "architecte applicatif azure f/h|orange business": {
+    "keep": false,
+    "reason": "Poste technique (Architecte Applicatif Azure) sans lien climat/durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chef de projet plm / pdm - transformation & data produits|salve.lab": {
+    "keep": false,
+    "reason": "Poste technique (PLM/PDM) sans lien climat/durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "expert qara & product evangelist md (h/f)(h/f)|requirement yogi": {
+    "keep": false,
+    "reason": "Poste technique (Product Evangelist) sans lien climat/durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "cdd - analyste quantitatif risques financiers (h/f)|lbp am": {
+    "keep": false,
+    "reason": "Analyste risques financiers (finance durable, mais hors climat/carbone physique).",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur de recherche en mécanique des sols (h/f)|cerema": {
+    "keep": false,
+    "reason": "Poste technique (mécanique des sols) sans lien climat/durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "senior data analyst - risk & collections h/f|octopus energy": {
+    "keep": false,
+    "reason": "Data Analyst risques financiers (hors climat/carbone physique).",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "change manager si / consultant conduite du changement - h/f|free-work": {
+    "keep": false,
+    "reason": "Consultant conduite du changement SI (hors climat/durabilité).",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "leadership trainer (m/f)|cma cgm": {
+    "keep": false,
+    "reason": "Leadership Trainer (RH, hors climat/durabilité).",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "growth marketing manager 360° h/f|team.is": {
+    "keep": false,
+    "reason": "Growth Marketing Manager (marketing pur, hors climat/carbone).",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "assistante assistant direction espace public transition écologique h/f - ec21045|ville de champigny sur marne": {
+    "keep": false,
+    "reason": "Assistant·e direction espace public transition écologique (poste administratif, hors stratégie climat).",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur(e) ou expert(e) en décarbonation des procédés industrie (h/f)|ynergie": {
+    "keep": false,
+    "reason": "Ingénieur décarbonation procédés (industrie, hors conseil/stratégie climat).",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé(e) de mission métiers, transition énergétique & innovation (h/f)|federation regionale du batiment paca": {
+    "keep": true,
+    "reason": "Chargé·e de mission transition énergétique & innovation en PACA (collectivité). Poste qualifié en transition écologique, niveau senior.",
+    "borderline": false,
+    "score": 75,
+    "v": 9
+  },
+  "responsable activité automatisme (h/f)|adsearch": {
+    "keep": false,
+    "reason": "Responsable activité automatisme (technique, hors climat/durabilité).",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "policy and regulatory analyst|entrust": {
+    "keep": true,
+    "reason": "Policy and Regulatory Analyst (stratégie/politiques publiques climat, Paris).",
+    "borderline": false,
+    "score": 85,
+    "v": 9
+  },
+  "oliver wyman - entry-level consultant - paris|marsh mclennan": {
+    "keep": true,
+    "reason": "Entry-Level Consultant (Oliver Wyman, Marsh McLennan) — cabinet conseil renommé, stratégie climat.",
+    "borderline": false,
+    "score": 90,
+    "v": 9
+  },
+  "stagiaire business resilience & supply chain risk hf|marsh mclennan": {
+    "keep": false,
+    "reason": "Stagiaire (hors niveau senior).",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "oracle technical architect|intelance": {
+    "keep": false,
+    "reason": "Oracle Technical Architect (technique pur, hors climat).",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "solution architect (all genders)|contabo": {
+    "keep": false,
+    "reason": "Solution Architect (technique pur, hors climat).",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "total rewards specialist professional|hitachi energy": {
+    "keep": false,
+    "reason": "Total Rewards Specialist (RH/finance, hors climat).",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "consultant chef de projet amo / exploitation & maintenance f/h|groupe egis / groupegis / egis group": {
+    "keep": false,
+    "reason": "Consultant AMO exploitation & maintenance (technique, hors stratégie climat).",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "responsable étude de prix f/h|harry hope": {
+    "keep": false,
+    "reason": "Responsable étude de prix (technique, hors climat).",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "office manager f/h|jobs_that_makesense": {
+    "keep": false,
+    "reason": "Office Manager (RH, hors climat).",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "data analytics engineer - - cdi f/h|tekkit (carrevolutis)": {
+    "keep": false,
+    "reason": "Data Analytics Engineer (technique pur, hors climat).",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "ingénieur écologue généraliste f/h|groupe egis / groupegis / egis group": {
+    "keep": false,
+    "reason": "Ingénieur écologue (technique, hors stratégie climat).",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "technico-commercial sédentaire f/h|axia": {
+    "keep": false,
+    "reason": "Technico-commercial (commercial pur, hors climat).",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "automaticien f/h|hellowork": {
+    "keep": false,
+    "reason": "Poste technique (automaticien) sans lien avec le climat ou la stratégie, hors cible.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "responsable développement commercial f/h|total talent group, s.l.n.e.": {
+    "keep": false,
+    "reason": "Poste commercial pur (Responsable Développement Commercial) sans lien avec le climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé d'affaires - f/h|banque populaire rives de paris": {
+    "keep": false,
+    "reason": "Poste bancaire (Chargé d'affaires) sans lien avec le climat ou la durabilité.",
+    "borderline": false,
+    "score": 0,
+    "v": 9
+  },
+  "chargé(e) de mission f/h|mairie": {
+    "keep": false,
+    "reason": "Poste administratif/gouvernance (animation territoriale) sans lien avec le climat ou la stratégie.",
     "borderline": false,
     "score": 0,
     "v": 9
