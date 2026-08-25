@@ -314,6 +314,49 @@ WTTJ_COMPANIES = {
     # Énergie / industrie
     "metron": "Metron",
     "purecontrol": "Purecontrol",
+    # Système des Nations Unies (complément)
+    "unido": "UNIDO",
+    "ifad": "IFAD",
+    "wmo": "World Meteorological Organization",
+    "unitar": "UNITAR",
+    "unece": "UNECE",
+    "un-desa": "UN DESA",
+    # Banques de développement / institutions financières (complément)
+    "ifc": "IFC",
+    "afdb": "African Development Bank",
+    "adb": "Asian Development Bank",
+    "idb": "Inter-American Development Bank",
+    "ndb": "New Development Bank",
+    "aiib": "AIIB",
+    "bii": "British International Investment",
+    # Institutions européennes (complément)
+    "european-commission": "European Commission",
+    "eca": "European Court of Auditors",
+    "eurostat": "Eurostat",
+    "acer": "ACER",
+    # Think tanks / instituts de recherche (complément)
+    "newclimate-institute": "NewClimate Institute",
+    "wuppertal-institute": "Wuppertal Institute",
+    "ieefa": "IEEFA",
+    "transport-environment": "Transport & Environment",
+    "wwf": "WWF",
+    "pik": "Potsdam Institute",
+    "grantham-lse": "Grantham Research Institute",
+    "oxford-smith-school": "Oxford Smith School",
+    "iisd": "IISD",
+    "sei": "Stockholm Environment Institute",
+    "cisl": "Cambridge Institute for Sustainability Leadership",
+    "iiasa": "IIASA",
+    "watttime": "WattTime",
+    "climate-trace": "Climate TRACE",
+    # France — organismes publics & agences (complément ; ADEME a sa propre source)
+    "france-strategie": "France Stratégie",
+    "cerema": "CEREMA",
+    "caisse-des-depots": "Caisse des Dépôts",
+    "banque-de-france": "Banque de France",
+    "terra-nova": "Terra Nova",
+    "shift-project": "The Shift Project",
+    "meteo-france": "Météo-France",
 }
 
 # Types de contrat WTTJ à écarter (on veut CDI/CDD, pas stage/alternance/VIE).
