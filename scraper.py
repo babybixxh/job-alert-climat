@@ -2452,38 +2452,7 @@ def send_priority_alert(jobs):
         print(f"  EXCEPTION notif prioritaire: {e}")
 
 
-def debug_unjobs():
-    """TEMPORAIRE : sonde les flux UNjobs.org (RSS) pour brancher la source."""
-    ua = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36",
-          "Accept": "application/rss+xml, application/xml, text/xml, text/html, */*"}
-    urls = [
-        "https://unjobs.org/new.rss",
-        "https://unjobs.org/themes/climate-change",
-        "https://unjobs.org/themes/climate-change/rss",
-        "https://unjobs.org/tags/climate-change/rss",
-        "https://unjobs.org/search/climate/rss",
-        "https://unjobs.org/duty_stations/paris-france/rss",
-    ]
-    for u in urls:
-        try:
-            r = requests.get(u, headers=ua, timeout=20)
-            t = r.text
-            n = t.count("<item")
-            print(f"  UNJOBS {u} → HTTP {r.status_code} len={len(t)} items={n}")
-            if n:
-                titles = re.findall(r"<title>(.*?)</title>", t)[1:4]
-                for ti in titles:
-                    print("     -", ti[:80])
-            else:
-                print("     head:", t[:140].replace("\n", " "))
-        except Exception as e:
-            print(f"  UNJOBS {u}: ERR {repr(e)[:80]}")
-    raise SystemExit(0)
-
-
 if __name__ == "__main__":
-    if os.environ.get("DEBUG_UNJOBS"):
-        debug_unjobs()
     seen_ids = set(load_json(SEEN_FILE, []))
     print(f"{len(seen_ids)} offres déjà vues en mémoire")
     # Offres conservées hier (avant écrasement de TODAY_FILE) : sert à repérer
