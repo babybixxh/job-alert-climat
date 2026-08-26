@@ -2452,7 +2452,40 @@ def send_priority_alert(jobs):
         print(f"  EXCEPTION notif prioritaire: {e}")
 
 
+def debug_unjobs2():
+    """TEMPORAIRE : dump la structure HTML de la page climat UNjobs pour parser."""
+    from bs4 import BeautifulSoup
+    ua = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36",
+          "Accept-Language": "en"}
+    for url in ["https://unjobs.org/themes/climate-change",
+                "https://unjobs.org/duty_stations/paris-france"]:
+        try:
+            r = requests.get(url, headers=ua, timeout=20)
+            print(f"\n=== {url} → HTTP {r.status_code} len={len(r.text)} ===")
+            soup = BeautifulSoup(r.text, "html.parser")
+            links = soup.find_all("a", href=True)
+            from collections import Counter
+            pref = Counter()
+            for a in links:
+                h = a["href"]
+                seg = "/" + h.split("/")[1] if h.startswith("/") and len(h.split("/")) > 1 else h[:20]
+                pref[seg] += 1
+            print("  préfixes de liens:", dict(pref.most_common(12)))
+            vac = [a for a in links if "/vacancies/" in a["href"]]
+            print(f"  liens /vacancies/: {len(vac)}")
+            for a in vac[:6]:
+                parent = a.find_parent(["li", "div", "article"])
+                ptxt = parent.get_text(" ", strip=True)[:120] if parent else ""
+                print(f"    href={a['href'][:60]} | txt={a.get_text(strip=True)[:50]!r}")
+                print(f"       parent: {ptxt!r}")
+        except Exception as e:
+            print(f"  {url}: ERR {repr(e)[:90]}")
+    raise SystemExit(0)
+
+
 if __name__ == "__main__":
+    if os.environ.get("DEBUG_UNJOBS2"):
+        debug_unjobs2()
     seen_ids = set(load_json(SEEN_FILE, []))
     print(f"{len(seen_ids)} offres déjà vues en mémoire")
     # Offres conservées hier (avant écrasement de TODAY_FILE) : sert à repérer
