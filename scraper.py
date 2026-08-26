@@ -72,7 +72,7 @@ EXCLUSIONS = [
     "électromécanicien", "electro mec",
     "technicien", "technicienne", "technician",
     "opérateur", "opératrice", "agent de",
-    "conducteur d'engins", "chauffeur",
+    "conducteur d'engins", "chauffeur", "canaliseur",
     "acheteur", "achats", "procurement", "comptabilité", "comptable",
     # NB : « avant-vente »/« présales » ne sont plus exclus en dur — l'avant-vente
     # TECHNIQUE chez les climate-tech (Solutions/Sales Engineer) est recherchée ;
@@ -102,6 +102,9 @@ EXCLUSIONS = [
     "efficacité énergétique", "energy efficiency",
     "hydrogène", "hydrogen", "batterie", "battery",
     "solaire", "solar", "photovoltaïque", "photovoltaique",
+    # Communication / marketing digital (hors cible)
+    "communication", "community manager", "social media",
+    "content manager", "digital marketing", "brand ",
 ]
 
 SEEN_FILE = "seen_jobs.json"
@@ -1371,6 +1374,77 @@ def _greenhouse_boards():
     return GREENHOUSE_BOARDS_DEFAULT
 
 
+# Thèmes UNjobs à scraper. Racines de titres jugées pertinentes (le reste =
+# postes de terrain/coordination humanitaire, écartés avant l'IA pour limiter
+# le bruit et la charge Mistral).
+UNJOBS_THEMES = ["climate-change", "environment", "renewable-energy"]
+UNJOBS_TITLE_TERMS = (
+    "climate", "climat", "energy", "énerg", "carbon", "carbone", "policy",
+    "politique", "analyst", "analyste", "adaptation", "mitigation", "economist",
+    "économiste", "environment", "environnement", "sustainab", "durable",
+    "decarbon", "décarbon", "emission", "émission", "resilience", "résilience",
+    "modell", "modélis", "specialist", "spécialiste", "officer", "research",
+    "recherche", "finance",
+)
+
+
+def search_unjobs():
+    """UNjobs.org (agrégateur d'offres ONU / institutions / banques de dev).
+    Les flux RSS sont discontinués (HTTP 410) → on scrape les pages thématiques
+    HTML. Offres mondiales (Arnaud est ouvert à l'expatriation pour ces
+    institutions) ; l'IA + le plafond de séniorité + les exclusions tranchent.
+    FRAGILE (parseur HTML) : surveillé par le suivi de santé des sources."""
+    from bs4 import BeautifulSoup
+    exclusions = get_exclusions()
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36",
+               "Accept-Language": "en,fr"}
+    jobs = []
+    seen = set()
+    for theme in UNJOBS_THEMES:
+        try:
+            r = requests.get(f"https://unjobs.org/themes/{theme}", headers=headers, timeout=20)
+            if r.status_code != 200:
+                print(f"  UNjobs '{theme}' → HTTP {r.status_code}")
+                continue
+            soup = BeautifulSoup(r.text, "html.parser")
+            vac = soup.find_all("a", href=lambda h: h and "/vacancies/" in h)
+            print(f"  UNjobs '{theme}' → {len(vac)} liens d'offres")
+            for a in vac:
+                url = a["href"]
+                if url in seen:
+                    continue
+                seen.add(url)
+                title = clean_text(a.get_text(" ", strip=True))
+                if not title or len(title) < 6:
+                    continue
+                low = title.lower()
+                # Pré-filtre pertinence (le titre inclut souvent le lieu).
+                if not any(t in low for t in UNJOBS_TITLE_TERMS):
+                    continue
+                if any(excl in low for excl in exclusions):
+                    log_excluded(title[:80], "UNjobs", "", "UNjobs", "mot-clé exclu")
+                    continue
+                if any(t in low for t in ("remote", "home based", "home-based", "télétravail", "teletravail")):
+                    location = "Remote"
+                elif any(t in low for t in EU_LOCATION_TERMS):
+                    location = "Europe"
+                else:
+                    location = "International"
+                jobs.append({
+                    "id": url,
+                    "title": title[:120],
+                    "company": "UNjobs (ONU/institutions)",
+                    "location": location,
+                    "url": url,
+                    "description": "",
+                    "source": "UNjobs",
+                })
+        except Exception as e:
+            print(f"  EXCEPTION UNjobs '{theme}': {e}")
+    print(f"  UNjobs total → {len(jobs)} offres après pré-filtre")
+    return jobs
+
+
 def _smartrecruiters_companies():
     env = os.environ.get("SMARTRECRUITERS_COMPANIES", "").strip()
     if env:
@@ -2190,75 +2264,87 @@ def categorize(jobs):
     return marseille, paca, paris
 
 
+SOURCE_COLORS = {
+    "Adzuna": "#4a90a4", "France Travail": "#003189", "Greenjob.fr": "#2d8a4e",
+    "Hellowork": "#d95f02", "Jooble": "#b56900", "ADEME": "#c04a00",
+    "WTTJ": "#7a6500", "JTMS": "#6a1b9a", "Service Public": "#000091",
+    "ESS": "#5a8f3c", "Remote EU": "#1f7a99", "APEC": "#e2001a",
+    "Greenhouse": "#1f8a5c", "Lever": "#5a4fcf", "LinkedIn": "#0a66c2",
+    "ReliefWeb": "#c8102e", "SmartRecruiters": "#00b6b0", "UNjobs": "#009edb",
+}
+
+
+def _score_color(score):
+    """Couleur du badge de score selon la note (vert = top, ambre = moyen)."""
+    if score >= 85:
+        return "#0f8a4f"
+    if score >= 70:
+        return "#2f7fa6"
+    if score >= 55:
+        return "#c98a00"
+    return "#8a8f8c"
+
+
+def _pill(text, bg, fg="#ffffff"):
+    return (f'<span style="display:inline-block;font-size:11px;line-height:1;'
+            f'color:{fg};background:{bg};padding:4px 9px;border-radius:20px;'
+            f'margin:0 5px 5px 0;white-space:nowrap;font-weight:600">{text}</span>')
+
+
 def section_html(title, emoji, jobs, color):
     if not jobs:
         return ""
-    # Tri par score IA décroissant (les meilleures correspondances en haut),
+    # Tri par score IA décroissant (meilleures correspondances en haut),
     # puis nouveautés avant déjà-vues à score égal.
     jobs = sorted(jobs, key=lambda j: (j.get("score", DEFAULT_KEPT_SCORE), j.get("is_new", False)), reverse=True)
     new_count = sum(1 for j in jobs if j.get("is_new"))
-    source_colors = {
-        "Adzuna": "#4a90a4",
-        "France Travail": "#003189",
-        "Greenjob.fr": "#2d8a4e",
-        "Hellowork": "#d95f02",
-        "Jooble": "#b56900",
-        "ADEME": "#c04a00",
-        "WTTJ": "#7a6500",
-        "JTMS": "#6a1b9a",
-        "Service Public": "#000091",
-        "ESS": "#5a8f3c",
-        "Remote EU": "#1f7a99",
-        "APEC": "#e2001a",
-        "Greenhouse": "#1f8a5c",
-        "Lever": "#5a4fcf",
-        "LinkedIn": "#0a66c2",
-        "ReliefWeb": "#c8102e",
-        "SmartRecruiters": "#00b6b0",
-    }
+    new_chip = (f'<span style="font-size:12px;color:#fff;background:#e05c2a;'
+                f'padding:3px 10px;border-radius:20px;margin-left:8px;font-weight:600">'
+                f'🆕 {new_count}</span>') if new_count else ""
     html = f"""
-    <div style="margin:2rem 0 1rem">
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:1rem">
-            <span style="font-size:20px">{emoji}</span>
-            <h2 style="margin:0;font-size:17px;font-weight:500;color:{color}">{title}</h2>
-            <span style="font-size:13px;color:#888;background:#f0f0f0;padding:2px 10px;border-radius:20px">{len(jobs)} offre(s)</span>
-            {f'<span style="font-size:13px;color:#fff;background:#e05c2a;padding:2px 10px;border-radius:20px">🆕 {new_count} nouvelle(s)</span>' if new_count else ''}
-        </div>
+    <div style="margin:28px 0 10px">
+        <span style="font-size:16px;font-weight:700;color:{color}">{emoji}&nbsp;{title}</span>
+        <span style="font-size:12px;color:#6a756e;background:#eef2ef;padding:3px 10px;border-radius:20px;margin-left:8px;font-weight:600">{len(jobs)}</span>
+        {new_chip}
+    </div>
     """
     for job in jobs:
         is_new = job.get("is_new", True)
         source = job.get("source", "")
-        sc = source_colors.get(source, "#888")
-        badge_new = '<span style="font-size:11px;color:#fff;background:#e05c2a;padding:1px 8px;border-radius:10px;margin-left:8px">NOUVEAU</span>' if is_new else '<span style="font-size:11px;color:#888;background:#f0f0f0;padding:1px 8px;border-radius:10px;margin-left:8px">Déjà vu</span>'
-        badge_source = f'<span style="font-size:11px;color:#fff;background:{sc};padding:1px 8px;border-radius:10px;margin-left:6px">{source}</span>'
-        badge_borderline = ('<span style="font-size:11px;color:#fff;background:#e0a800;padding:1px 8px;border-radius:10px;margin-left:6px">⚠️ À VÉRIFIER</span>'
-                            if job.get("borderline") else '')
-        meta_bits = []
-        if job.get("score") is not None:
-            meta_bits.append(f"🎯 {job['score']}/100")
+        sc = SOURCE_COLORS.get(source, "#8a8f8c")
+        score = job.get("score")
+
+        badges = ""
+        if is_new:
+            badges += _pill("NOUVEAU", "#e05c2a")
+        if job.get("borderline"):
+            badges += _pill("⚠️ À VÉRIFIER", "#d99000")
+        badges += _pill(source, sc) if source else ""
+
+        meta = ""
+        if score is not None:
+            meta += _pill(f"🎯 {score}/100", _score_color(score))
         if job.get("salary"):
-            meta_bits.append(f"💰 {job['salary']}")
+            meta += _pill(f"💰 {job['salary']}", "#e8efe9", "#2d6a4f")
         date_str = format_job_date(job.get("date", ""))
         if date_str:
-            meta_bits.append(f"🗓️ {date_str}")
-        meta_line = (
-            f'<p style="margin:0 0 5px 0;font-size:13px;color:#777">{" &nbsp;|&nbsp; ".join(meta_bits)}</p>'
-            if meta_bits else ""
-        )
+            meta += _pill(f"🗓️ {date_str}", "#eef2ef", "#5a6b60")
+
+        desc = (f'<div style="margin-top:8px;font-size:13px;color:#7a857e;line-height:1.45">{job["description"]}</div>'
+                if job.get("description") else "")
+        bg = "#fffaf6" if is_new else "#ffffff"
+
         html += f"""
-        <div style="margin-bottom:16px;padding:14px;border-left:4px solid {color};background:{'#fff8f5' if is_new else '#f9f9f9'};border-radius:4px">
-            <h3 style="margin:0 0 6px 0">
-                <a href="{job['url']}" style="color:{color};text-decoration:none">{job['title']}</a>
-                {badge_new}{badge_source}{badge_borderline}
-            </h3>
-            <p style="margin:0 0 5px 0;color:#555;font-size:14px">
-                🏢 <strong>{job['company']}</strong> &nbsp;|&nbsp; 📍 {job['location']}
-            </p>
-            {meta_line}
-            <p style="margin:0;font-size:13px;color:#777">{job['description']}</p>
-        </div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:separate;margin:0 0 12px">
+      <tr><td style="padding:15px 16px;background:{bg};border:1px solid #e8ece9;border-left:4px solid {color};border-radius:8px">
+        <div style="margin-bottom:8px">{badges}</div>
+        <a href="{job['url']}" style="font-size:15px;font-weight:600;color:#16281f;text-decoration:none;line-height:1.35">{job['title']}</a>
+        <div style="margin-top:7px;color:#54615a;font-size:13.5px">🏢&nbsp;<strong>{job['company']}</strong> &nbsp;·&nbsp; 📍&nbsp;{job['location']}</div>
+        <div style="margin-top:9px">{meta}</div>
+        {desc}
+      </td></tr>
+    </table>
         """
-    html += "</div>"
     return html
 
 
@@ -2339,37 +2425,54 @@ def build_email(jobs, feedback_url, excluded_log=None, disappeared=None, health_
     new_total = sum(1 for j in jobs if j.get("is_new"))
     top_score = max((j.get("score", DEFAULT_KEPT_SCORE) for j in jobs), default=0)
 
+    font = ("-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,"
+            "sans-serif")
+
     if not total:
         return f"""
-        <html><body style="font-family:Arial,sans-serif;max-width:700px;margin:auto;padding:20px">
-        <h2 style="color:#2d6a4f">🌱 Alerte emploi climat — {today}</h2>
-        <p>Aucune nouvelle offre trouvée aujourd'hui.</p>
-        </body></html>
+        <body style="margin:0;padding:24px 12px;background:#eef1ee;font-family:{font}">
+        <div style="max-width:660px;margin:auto;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.08)">
+          <div style="background:linear-gradient(135deg,#0f6e56,#2d8a4e);padding:24px 22px;color:#fff">
+            <div style="font-size:20px;font-weight:700">🌱 Alerte emploi climat</div>
+            <div style="font-size:13px;opacity:.9;margin-top:4px">{today}</div>
+          </div>
+          <div style="padding:22px;color:#54615a;font-size:14px">Aucune nouvelle offre trouvée aujourd'hui. 🌤️</div>
+        </div></body>
         """
 
+    def chip(label, value, bg="rgba(255,255,255,.16)"):
+        return (f'<td style="padding:0 5px"><div style="background:{bg};border-radius:10px;'
+                f'padding:9px 12px;text-align:center"><div style="font-size:19px;font-weight:700;'
+                f'color:#fff;line-height:1">{value}</div><div style="font-size:10.5px;color:#eafff4;'
+                f'margin-top:3px;text-transform:uppercase;letter-spacing:.4px">{label}</div></div></td>')
+
+    stats = (chip("offres", total)
+             + chip("nouvelles", new_total, "rgba(224,92,42,.85)")
+             + chip("top score", f"{top_score}"))
+
     body = f"""
-    <html><body style="font-family:Arial,sans-serif;max-width:700px;margin:auto;padding:20px">
-    <h2 style="color:#2d6a4f">🌱 Alerte emploi climat — {today}</h2>
-    <p style="color:#555">{total} offre(s) dont <strong style="color:#e05c2a">{new_total} nouvelle(s)</strong> · meilleur score <strong style="color:#2d6a4f">{top_score}/100</strong></p>
-    <p style="color:#888;font-size:13px;margin-top:-4px">Entreprises ciblées ({len(watchlist)}) · Marseille ({len(marseille)}) · PACA ({len(paca)}) · Hors PACA &amp; télétravail ({len(paris)})</p>
-    <div style="margin:10px 0;padding:10px 14px;background:#fff8e6;border:1px solid #f0d98a;border-radius:6px;font-size:13px;color:#7a5b00">
-        ℹ️ <strong>Filtre Paris.</strong> À Paris, on ne retient que les postes conseil / stratégie climat senior bien notés (score ≥ {PARIS_MIN_SCORE}/100) — plus toutes les offres de tes entreprises suivies, quel que soit le poste. Marseille, la PACA et le télétravail ne sont pas filtrés.
-    </div>
-    <a href="{feedback_url}" style="display:inline-block;margin:8px 0 16px;padding:10px 20px;background:#2d6a4f;color:#fff;border-radius:6px;text-decoration:none;font-size:14px">
-        👎 Signaler des offres non pertinentes
-    </a>
-    <hr style="border:1px solid #e0e0e0">
+    <body style="margin:0;padding:24px 12px;background:#eef1ee;font-family:{font}">
+    <div style="max-width:660px;margin:auto;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.08)">
+      <div style="background:linear-gradient(135deg,#0f6e56,#2d8a4e);padding:22px 22px 20px;color:#fff">
+        <div style="font-size:21px;font-weight:700;letter-spacing:.2px">🌱 Alerte emploi climat</div>
+        <div style="font-size:13px;opacity:.9;margin:4px 0 16px">{today}</div>
+        <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;table-layout:fixed"><tr>{stats}</tr></table>
+      </div>
+      <div style="padding:18px 20px 26px">
+        <div style="font-size:12.5px;color:#6a756e;margin-bottom:12px">
+          🎯 {len(watchlist)} ciblées &nbsp;·&nbsp; 🔵 Marseille {len(marseille)} &nbsp;·&nbsp; 🟢 PACA {len(paca)} &nbsp;·&nbsp; 🏠 Hors-PACA/remote {len(paris)}
+        </div>
+        <div style="margin:0 0 14px;padding:11px 14px;background:#fff8e6;border:1px solid #f0d98a;border-radius:8px;font-size:12.5px;color:#7a5b00;line-height:1.5">
+          ℹ️ <strong>Filtre Paris</strong> — on n'y retient que le conseil/stratégie climat senior bien noté (score ≥ {PARIS_MIN_SCORE}) et toutes les offres de tes entreprises suivies. Marseille, PACA et télétravail ne sont pas filtrés.
+        </div>
+        <a href="{feedback_url}" style="display:inline-block;padding:9px 18px;background:#2d6a4f;color:#fff;border-radius:8px;text-decoration:none;font-size:13px;font-weight:600">
+            👎 Signaler des offres non pertinentes
+        </a>
     """
 
     body += section_html("Marseille", "🔵", marseille, "#0f6e56")
-    if marseille and paca:
-        body += '<hr style="border:0.5px solid #e0e0e0;margin:1rem 0">'
     body += section_html("Région PACA hors Marseille", "🟢", paca, "#3b6d11")
-    if (marseille or paca) and watchlist:
-        body += '<hr style="border:0.5px solid #e0e0e0;margin:1rem 0">'
     body += section_html("Entreprises ciblées", "🏢", watchlist, "#0a5c54")
-    if (marseille or paca or watchlist) and paris:
-        body += '<hr style="border:0.5px solid #e0e0e0;margin:1rem 0">'
     # Section « Hors PACA » découpée en sous-catégories : télétravail, salaire
     # élevé, puis le reste (Paris & autres villes). Buckets exclusifs, dans cet
     # ordre de priorité (une offre remote bien payée va dans Télétravail).
@@ -2385,7 +2488,13 @@ def build_email(jobs, feedback_url, excluded_log=None, disappeared=None, health_
     body += disappeared_section_html(disappeared or [])
     body += excluded_section_html(excluded_log or [])
     body += health_footer_html(health_alerts or [])
-    body += "</body></html>"
+    body += """
+      </div>
+      <div style="text-align:center;padding:16px;font-size:11px;color:#9aa39d">
+        Alerte générée automatiquement · trié par score d'adéquation
+      </div>
+    </div></body>
+    """
     return body
 
 
@@ -2481,7 +2590,7 @@ if __name__ == "__main__":
                search_service_public, search_ess, search_remotive,
                search_arbeitnow, search_climatebase, search_apec,
                search_greenhouse, search_lever, search_reliefweb,
-               search_smartrecruiters):
+               search_smartrecruiters, search_unjobs):
         tasks.append((fn, ()))
 
     all_jobs = []
