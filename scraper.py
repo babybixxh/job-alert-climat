@@ -72,7 +72,7 @@ EXCLUSIONS = [
     "électromécanicien", "electro mec",
     "technicien", "technicienne", "technician",
     "opérateur", "opératrice", "agent de",
-    "conducteur d'engins", "chauffeur",
+    "conducteur d'engins", "chauffeur", "canaliseur",
     "acheteur", "achats", "procurement", "comptabilité", "comptable",
     # NB : « avant-vente »/« présales » ne sont plus exclus en dur — l'avant-vente
     # TECHNIQUE chez les climate-tech (Solutions/Sales Engineer) est recherchée ;
@@ -102,6 +102,9 @@ EXCLUSIONS = [
     "efficacité énergétique", "energy efficiency",
     "hydrogène", "hydrogen", "batterie", "battery",
     "solaire", "solar", "photovoltaïque", "photovoltaique",
+    # Communication / marketing digital (hors cible)
+    "communication", "community manager", "social media",
+    "content manager", "digital marketing", "brand ",
 ]
 
 SEEN_FILE = "seen_jobs.json"
@@ -1371,6 +1374,77 @@ def _greenhouse_boards():
     return GREENHOUSE_BOARDS_DEFAULT
 
 
+# Thèmes UNjobs à scraper. Racines de titres jugées pertinentes (le reste =
+# postes de terrain/coordination humanitaire, écartés avant l'IA pour limiter
+# le bruit et la charge Mistral).
+UNJOBS_THEMES = ["climate-change", "environment", "renewable-energy"]
+UNJOBS_TITLE_TERMS = (
+    "climate", "climat", "energy", "énerg", "carbon", "carbone", "policy",
+    "politique", "analyst", "analyste", "adaptation", "mitigation", "economist",
+    "économiste", "environment", "environnement", "sustainab", "durable",
+    "decarbon", "décarbon", "emission", "émission", "resilience", "résilience",
+    "modell", "modélis", "specialist", "spécialiste", "officer", "research",
+    "recherche", "finance",
+)
+
+
+def search_unjobs():
+    """UNjobs.org (agrégateur d'offres ONU / institutions / banques de dev).
+    Les flux RSS sont discontinués (HTTP 410) → on scrape les pages thématiques
+    HTML. Offres mondiales (Arnaud est ouvert à l'expatriation pour ces
+    institutions) ; l'IA + le plafond de séniorité + les exclusions tranchent.
+    FRAGILE (parseur HTML) : surveillé par le suivi de santé des sources."""
+    from bs4 import BeautifulSoup
+    exclusions = get_exclusions()
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36",
+               "Accept-Language": "en,fr"}
+    jobs = []
+    seen = set()
+    for theme in UNJOBS_THEMES:
+        try:
+            r = requests.get(f"https://unjobs.org/themes/{theme}", headers=headers, timeout=20)
+            if r.status_code != 200:
+                print(f"  UNjobs '{theme}' → HTTP {r.status_code}")
+                continue
+            soup = BeautifulSoup(r.text, "html.parser")
+            vac = soup.find_all("a", href=lambda h: h and "/vacancies/" in h)
+            print(f"  UNjobs '{theme}' → {len(vac)} liens d'offres")
+            for a in vac:
+                url = a["href"]
+                if url in seen:
+                    continue
+                seen.add(url)
+                title = clean_text(a.get_text(" ", strip=True))
+                if not title or len(title) < 6:
+                    continue
+                low = title.lower()
+                # Pré-filtre pertinence (le titre inclut souvent le lieu).
+                if not any(t in low for t in UNJOBS_TITLE_TERMS):
+                    continue
+                if any(excl in low for excl in exclusions):
+                    log_excluded(title[:80], "UNjobs", "", "UNjobs", "mot-clé exclu")
+                    continue
+                if any(t in low for t in ("remote", "home based", "home-based", "télétravail", "teletravail")):
+                    location = "Remote"
+                elif any(t in low for t in EU_LOCATION_TERMS):
+                    location = "Europe"
+                else:
+                    location = "International"
+                jobs.append({
+                    "id": url,
+                    "title": title[:120],
+                    "company": "UNjobs (ONU/institutions)",
+                    "location": location,
+                    "url": url,
+                    "description": "",
+                    "source": "UNjobs",
+                })
+        except Exception as e:
+            print(f"  EXCEPTION UNjobs '{theme}': {e}")
+    print(f"  UNjobs total → {len(jobs)} offres après pré-filtre")
+    return jobs
+
+
 def _smartrecruiters_companies():
     env = os.environ.get("SMARTRECRUITERS_COMPANIES", "").strip()
     if env:
@@ -2215,6 +2289,7 @@ def section_html(title, emoji, jobs, color):
         "LinkedIn": "#0a66c2",
         "ReliefWeb": "#c8102e",
         "SmartRecruiters": "#00b6b0",
+        "UNjobs": "#009edb",
     }
     html = f"""
     <div style="margin:2rem 0 1rem">
@@ -2452,40 +2527,7 @@ def send_priority_alert(jobs):
         print(f"  EXCEPTION notif prioritaire: {e}")
 
 
-def debug_unjobs2():
-    """TEMPORAIRE : dump la structure HTML de la page climat UNjobs pour parser."""
-    from bs4 import BeautifulSoup
-    ua = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36",
-          "Accept-Language": "en"}
-    for url in ["https://unjobs.org/themes/climate-change",
-                "https://unjobs.org/duty_stations/paris-france"]:
-        try:
-            r = requests.get(url, headers=ua, timeout=20)
-            print(f"\n=== {url} → HTTP {r.status_code} len={len(r.text)} ===")
-            soup = BeautifulSoup(r.text, "html.parser")
-            links = soup.find_all("a", href=True)
-            from collections import Counter
-            pref = Counter()
-            for a in links:
-                h = a["href"]
-                seg = "/" + h.split("/")[1] if h.startswith("/") and len(h.split("/")) > 1 else h[:20]
-                pref[seg] += 1
-            print("  préfixes de liens:", dict(pref.most_common(12)))
-            vac = [a for a in links if "/vacancies/" in a["href"]]
-            print(f"  liens /vacancies/: {len(vac)}")
-            for a in vac[:6]:
-                parent = a.find_parent(["li", "div", "article"])
-                ptxt = parent.get_text(" ", strip=True)[:120] if parent else ""
-                print(f"    href={a['href'][:60]} | txt={a.get_text(strip=True)[:50]!r}")
-                print(f"       parent: {ptxt!r}")
-        except Exception as e:
-            print(f"  {url}: ERR {repr(e)[:90]}")
-    raise SystemExit(0)
-
-
 if __name__ == "__main__":
-    if os.environ.get("DEBUG_UNJOBS2"):
-        debug_unjobs2()
     seen_ids = set(load_json(SEEN_FILE, []))
     print(f"{len(seen_ids)} offres déjà vues en mémoire")
     # Offres conservées hier (avant écrasement de TODAY_FILE) : sert à repérer
@@ -2514,7 +2556,7 @@ if __name__ == "__main__":
                search_service_public, search_ess, search_remotive,
                search_arbeitnow, search_climatebase, search_apec,
                search_greenhouse, search_lever, search_reliefweb,
-               search_smartrecruiters):
+               search_smartrecruiters, search_unjobs):
         tasks.append((fn, ()))
 
     all_jobs = []
