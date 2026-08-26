@@ -1,29 +1,5 @@
 [
   {
-    "id": "https://fr.linkedin.com/jobs/view/expert-senior-adaptation-au-changement-climatique-et-r%C3%A9silience-urbaine-h-f-at-suez-4456755607",
-    "title": "Expert senior Adaptation au changement climatique et résilience urbaine - H/F",
-    "company": "SUEZ",
-    "location": "Nanterre",
-    "url": "https://fr.linkedin.com/jobs/view/expert-senior-adaptation-au-changement-climatique-et-r%C3%A9silience-urbaine-h-f-at-suez-4456755607",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 90,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/solutions-engineer-energy-forecasts-products-at-dnv-4454664216",
-    "title": "Solutions Engineer - Energy Forecasts Products",
-    "company": "DNV",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/solutions-engineer-energy-forecasts-products-at-dnv-4454664216",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/energy-manager-senior-at-carb0n-4458233489",
     "title": "Energy Manager Senior",
     "company": "Carb0n",
@@ -33,30 +9,6 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 80,
-    "is_new": true
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/conseiller-technique-en-%C3%A9nergie-environnement-et-sobri%C3%A9t%C3%A9-h-f-at-association-hovia-4456167928",
-    "title": "Conseiller technique en énergie, environnement et sobriété (H/F)",
-    "company": "Association HOVIA",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/conseiller-technique-en-%C3%A9nergie-environnement-et-sobri%C3%A9t%C3%A9-h-f-at-association-hovia-4456167928",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/senior-programme-management-officer-at-un-environment-programme-4456497286",
-    "title": "SENIOR PROGRAMME MANAGEMENT OFFICER",
-    "company": "UN Environment Programme",
-    "location": "Ville de Paris",
-    "url": "https://fr.linkedin.com/jobs/view/senior-programme-management-officer-at-un-environment-programme-4456497286",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 95,
     "is_new": false
   },
   {
@@ -72,15 +24,51 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-environnemental-social-en-financement-durable-at-ramboll-4457339701",
+    "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-ou-expert-e-en-d%C3%A9carbonation-des-proc%C3%A9d%C3%A9s-industriels-h-f-at-ynergie-4453447109",
+    "title": "Ingénieur(e) ou Expert(e) en décarbonation des procédés industriels (H/F)",
+    "company": "Ynergie",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-ou-expert-e-en-d%C3%A9carbonation-des-proc%C3%A9d%C3%A9s-industriels-h-f-at-ynergie-4453447109",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 95,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/expert-senior-adaptation-au-changement-climatique-et-r%C3%A9silience-urbaine-h-f-at-suez-4456755607",
+    "title": "Expert senior Adaptation au changement climatique et résilience urbaine - H/F",
+    "company": "SUEZ",
+    "location": "Nanterre",
+    "url": "https://fr.linkedin.com/jobs/view/expert-senior-adaptation-au-changement-climatique-et-r%C3%A9silience-urbaine-h-f-at-suez-4456755607",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 90,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-environnemental-social-en-financement-durable-at-ramboll-4457344743",
     "title": "Consultant Environnemental & Social en Financement Durable",
     "company": "Ramboll",
-    "location": "Aix-en-Provence",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-environnemental-social-en-financement-durable-at-ramboll-4457339701",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-environnemental-social-en-financement-durable-at-ramboll-4457344743",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
     "score": 70,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/solutions-engineer-energy-forecasts-products-at-dnv-4454664216",
+    "title": "Solutions Engineer - Energy Forecasts Products",
+    "company": "DNV",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/solutions-engineer-energy-forecasts-products-at-dnv-4454664216",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 85,
     "is_new": false
   },
   {
@@ -108,18 +96,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/chef-de-projet-%C3%A9nergie-h-f-at-la-gazette-des-communes-4452807390",
-    "title": "Chef de projet énergie H/F",
-    "company": "La Gazette des Communes",
-    "location": "La Bocca",
-    "url": "https://fr.linkedin.com/jobs/view/chef-de-projet-%C3%A9nergie-h-f-at-la-gazette-des-communes-4452807390",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": true,
-    "score": 50,
-    "is_new": true
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-environnementale-h-f-at-segula-technologies-4439009843",
     "title": "Chargé de mission Environnementale H/F",
     "company": "SEGULA Technologies",
@@ -129,6 +105,18 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 70,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/client-success-specialist-sustainability-solutions-at-iss-stoxx-sustainability-4447575773",
+    "title": "Client Success Specialist - Sustainability Solutions",
+    "company": "ISS STOXX Sustainability",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/client-success-specialist-sustainability-solutions-at-iss-stoxx-sustainability-4447575773",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 85,
     "is_new": false
   },
   {
@@ -144,30 +132,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/cheffe-chef-de-projets-environnement-r%C3%A9glementaire-at-artelia-4446303588",
-    "title": "Cheffe / Chef de projets Environnement Réglementaire",
-    "company": "Artelia",
-    "location": "Marseille",
-    "url": "https://fr.linkedin.com/jobs/view/cheffe-chef-de-projets-environnement-r%C3%A9glementaire-at-artelia-4446303588",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
-    "is_new": true
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-ou-expert-e-en-d%C3%A9carbonation-des-proc%C3%A9d%C3%A9s-industriels-h-f-at-ynergie-4453447109",
-    "title": "Ingénieur(e) ou Expert(e) en décarbonation des procédés industriels (H/F)",
-    "company": "Ynergie",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-ou-expert-e-en-d%C3%A9carbonation-des-proc%C3%A9d%C3%A9s-industriels-h-f-at-ynergie-4453447109",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 95,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-environnement-h-f-at-innova-solutions-4437238897",
     "title": "Ingénieur Environnement H/F",
     "company": "Innova Solutions",
@@ -180,41 +144,15 @@
     "is_new": false
   },
   {
-    "id": "5851139578",
-    "title": "Chargé-e de mission en environnement et partenariats scientifiques",
-    "company": "Choisir le Service Public",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5851139578?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Informations générales Organisme de rattachement Institut National de Recherche pour l'Agriculture, l'Alimentation et l'Environnement (INRAE) Référenc...",
-    "salary": "",
-    "date": "2026-08-21T17:13:30Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/client-success-specialist-sustainability-solutions-at-iss-stoxx-sustainability-4447575773",
-    "title": "Client Success Specialist - Sustainability Solutions",
-    "company": "ISS STOXX Sustainability",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/client-success-specialist-sustainability-solutions-at-iss-stoxx-sustainability-4447575773",
+    "id": "https://fr.linkedin.com/jobs/view/senior-programme-management-officer-at-un-environment-programme-4456497286",
+    "title": "SENIOR PROGRAMME MANAGEMENT OFFICER",
+    "company": "UN Environment Programme",
+    "location": "Ville de Paris",
+    "url": "https://fr.linkedin.com/jobs/view/senior-programme-management-officer-at-un-environment-programme-4456497286",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
-    "score": 85,
-    "is_new": true
-  },
-  {
-    "id": "211WYQL",
-    "title": "Chargé-e de mission Adaptation au Changement Climatique (H/F)",
-    "company": "CONFEDERATION GENERALE DES PETITES ET MO",
-    "location": "13 - MARSEILLE",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/211WYQL",
-    "description": "Les Entrepreneurs Sud (ex-CPME Sud) porte le projet Cap Climat, ayant pour but de sensibiliser et accompagner les TPE-PME de la région Sud-Provence-Al...",
-    "source": "France Travail",
-    "borderline": false,
-    "score": 75,
+    "score": 95,
     "is_new": false
   },
   {
@@ -230,30 +168,16 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-performance-environnementale-groupe-f-h-at-knds-france-4433974880",
-    "title": "Chargé de performance environnementale groupe F/H",
-    "company": "KNDS France",
-    "location": "Versailles",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-performance-environnementale-groupe-f-h-at-knds-france-4433974880",
+    "id": "https://fr.linkedin.com/jobs/view/conseiller-technique-en-%C3%A9nergie-environnement-et-sobri%C3%A9t%C3%A9-h-f-at-association-hovia-4456167928",
+    "title": "Conseiller technique en énergie, environnement et sobriété (H/F)",
+    "company": "Association HOVIA",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/conseiller-technique-en-%C3%A9nergie-environnement-et-sobri%C3%A9t%C3%A9-h-f-at-association-hovia-4456167928",
     "description": "",
     "source": "LinkedIn",
-    "borderline": true,
-    "score": 65,
-    "is_new": false
-  },
-  {
-    "id": "5846556690",
-    "title": "Conseiller(ère) en Transition Énergétique et Écologique en Santé H/F",
-    "company": "Fondation Léopold Bellan - Siège",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5846556690?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Conseiller(ère) en Transition Énergétique et Écologique en Santé H/F x2wj0t6aip Description du poste Vous cherchez un poste qui a du sens ? Mettez vot...",
-    "salary": "",
-    "date": "2026-08-18T12:34:22Z",
-    "source": "Adzuna",
     "borderline": false,
     "score": 75,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5850921507",
@@ -279,7 +203,7 @@
     "source": "France Travail",
     "borderline": false,
     "score": 65,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "4247216",
@@ -291,21 +215,7 @@
     "source": "France Travail",
     "borderline": true,
     "score": 50,
-    "is_new": true
-  },
-  {
-    "id": "5852585469",
-    "title": "Responsable de Service Animation et Vie Associative (H/F) - COMMUNE DE MARSEILLE",
-    "company": "Fonction publique Territoriale",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5852585469?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Marseille, deuxième ville de France, est une ville vibrante, profondément attachée à sa culture, et un territoire d’exce...",
-    "salary": "",
-    "date": "2026-08-22T17:26:37Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "score": 60,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5850886758",
@@ -320,34 +230,6 @@
     "borderline": false,
     "score": 70,
     "is_new": false
-  },
-  {
-    "id": "5849547508",
-    "title": "Sustainability Manager",
-    "company": "Verdant Search",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5849547508?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "An international, real estate investment management business is seeking a Sustainability Manager be based in their Paris office. Reporting into the He...",
-    "salary": "",
-    "date": "2026-08-20T12:42:15Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "score": 75,
-    "is_new": true
-  },
-  {
-    "id": "5850277755",
-    "title": "Ingénieur Confirmé Électricité CFO - CFA - Chef de Projet H/F",
-    "company": "Work & You",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5850277755?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "çamatchentrenous Excellence technique sur des projets d'exception à fort impact environnemental Culture de la pluridisciplinarité et de l'expertise Pa...",
-    "salary": "56 k€ – 70 k€",
-    "date": "2026-08-21T02:28:19Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "score": 85,
-    "is_new": true
   },
   {
     "id": "210BFKN",
@@ -373,7 +255,7 @@
     "source": "Adzuna",
     "borderline": true,
     "score": 55,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5851800217",
@@ -387,7 +269,7 @@
     "source": "Adzuna",
     "borderline": false,
     "score": 80,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "https://fr.linkedin.com/jobs/view/juriste-droit-public-energie-%C2%A0-at-jimmy-4447028530",
@@ -399,7 +281,7 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 70,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-transition-energetique-economie-circulaire-f-h_4841.aspx",
@@ -411,7 +293,7 @@
     "source": "ADEME",
     "borderline": false,
     "score": 85,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-transition-energetique-f-h_4837.aspx",
@@ -477,19 +359,6 @@
     "is_new": false
   },
   {
-    "id": "5854232015",
-    "title": "Consultant Environnement – Chef de projet expérimenté dans le domaine des Data Centres",
-    "company": "Ramboll",
-    "location": "Bouches-du-Rhône, Provence-Alpes-Côte d'Azur",
-    "url": "https://www.adzuna.fr/details/5854232015?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Description du poste Êtes-vous enthousiaste à l'idée d’accompagner la réalisation de projets de développement dans les secteurs des Data Centers, de l...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "borderline": false,
-    "score": 85,
-    "is_new": true
-  },
-  {
     "id": "5823835291",
     "title": "Agronomy Product Manager",
     "company": "Weenat",
@@ -517,20 +386,6 @@
     "is_new": false
   },
   {
-    "id": "76039561",
-    "title": "Senior BE Developer",
-    "company": "eAgronom",
-    "location": "Tallinn, Harju County, EE",
-    "url": "https://climatebase.org/job/senior-be-developer-76039561",
-    "description": "\"Empowering 1,500 farmers to adopt carbon-capturing agricultural practices.\"",
-    "salary": "",
-    "date": "2026-08-25T05:17:44.197Z",
-    "source": "Remote EU",
-    "borderline": false,
-    "score": 95,
-    "is_new": true
-  },
-  {
     "id": "179269160W",
     "title": "Business Manager Nantes F/H",
     "company": "PMEJOB",
@@ -542,7 +397,7 @@
     "source": "APEC",
     "borderline": true,
     "score": 50,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "179272277W",
@@ -556,7 +411,7 @@
     "source": "APEC",
     "borderline": false,
     "score": 70,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "179189110W",
@@ -584,7 +439,7 @@
     "source": "APEC",
     "borderline": false,
     "score": 75,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "179274602W",
@@ -654,7 +509,7 @@
     "source": "APEC",
     "borderline": false,
     "score": 85,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "179283479W",
@@ -696,7 +551,7 @@
     "source": "APEC",
     "borderline": true,
     "score": 70,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "179234478W",
@@ -710,7 +565,7 @@
     "source": "APEC",
     "borderline": true,
     "score": 65,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "179282252W",
@@ -724,7 +579,7 @@
     "source": "APEC",
     "borderline": true,
     "score": 60,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "179193019W",
@@ -780,7 +635,7 @@
     "source": "APEC",
     "borderline": false,
     "score": 85,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "178940421W",
@@ -808,7 +663,7 @@
     "source": "APEC",
     "borderline": false,
     "score": 80,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "179287534W",
@@ -850,7 +705,7 @@
     "source": "APEC",
     "borderline": false,
     "score": 70,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "179252485W",
@@ -864,7 +719,7 @@
     "source": "APEC",
     "borderline": false,
     "score": 70,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "179194887W",
@@ -934,7 +789,7 @@
     "company_watch": true,
     "borderline": false,
     "score": 75,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "sr-OECD-744000141302924",
@@ -948,7 +803,7 @@
     "company_watch": true,
     "borderline": false,
     "score": 75,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "sr-OECD-744000139021269",
@@ -963,5 +818,160 @@
     "borderline": false,
     "score": 85,
     "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/chef-de-projets-d%C3%A9carbonation-innovation-h-f-4450347608",
+    "title": "Chef de Projets Décarbonation & Innovation (H/F).",
+    "company": "Société de services et solutions de mobilité B2B",
+    "location": "Île-de-France, France",
+    "url": "https://fr.linkedin.com/jobs/view/chef-de-projets-d%C3%A9carbonation-innovation-h-f-4450347608",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 85,
+    "is_new": true
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/product-manager-greenit-finops-at-station-f-4457483418",
+    "title": "PRODUCT MANAGER GREENIT & FINOPS",
+    "company": "STATION F",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/product-manager-greenit-finops-at-station-f-4457483418",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 85,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/electricity-grids-and-security-analyst-at-oecd-ocde-4448227105",
+    "title": "Electricity Grids and Security Analyst",
+    "company": "OECD-OCDE",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/electricity-grids-and-security-analyst-at-oecd-ocde-4448227105",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 95,
+    "is_new": false
+  },
+  {
+    "id": "5856119220",
+    "title": "Chef de Projet Ecoconception Paris 75 H/F",
+    "company": "SYSTRA",
+    "location": "15ème Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/details/5856119220?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Contexte: La Direction Conseil, Aménagement et Territoires (CAT) est la business unit de SYSTRA France en charge des solutions de mobilité et d'aménag...",
+    "salary": "",
+    "date": "2026-08-26T02:34:10Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 85,
+    "is_new": true
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/product-manager-circular-chemicals-packaging-europe-at-cyclone-4456313904",
+    "title": "Product Manager | Circular Chemicals & Packaging | Europe",
+    "company": "Cyclone",
+    "location": "Paris et périphérie",
+    "url": "https://fr.linkedin.com/jobs/view/product-manager-circular-chemicals-packaging-europe-at-cyclone-4456313904",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
+    "id": "5854809602",
+    "title": "Chef de Projet Efficacité Energétique Sénior H/F",
+    "company": "Puzzle Recrutement",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5854809602?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vous souhaitez vous engager dans la transformation des modèles énergétiques et contribuer activement à la transition écologique ? Rejoignez une struct...",
+    "salary": "45 k€ – 57 k€",
+    "date": "2026-08-25T02:33:57Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 80,
+    "is_new": true
+  },
+  {
+    "id": "5849542914",
+    "title": "Chargé/Chargée de Mission DLA 13 F/H",
+    "company": "FRANCE ACTIVE PROVENCE-ALPES-COTE D'AZUR",
+    "location": "Marseille, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5849542914?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Rejoignez celles et ceux qui font grandir les projets d'utilité sociale. Chez France Active Provence-Alpes-Côte d'Azur, nous croyons qu'une autre écon...",
+    "salary": "26 k€ – 28 k€",
+    "date": "2026-08-20T12:39:30Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 70,
+    "is_new": false
+  },
+  {
+    "id": "212WTZZ",
+    "title": "Référent pôle transition écologique (H/F)",
+    "company": "N/A",
+    "location": "13 - VITROLLES",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/212WTZZ",
+    "description": "Relevez le défi de la transition écologique avec nous !\nDevenez le/la Référent(e) Transition Écologique du Centre Social Les Salyens !\nVous avez l'âme...",
+    "source": "France Travail",
+    "borderline": true,
+    "score": 50,
+    "is_new": true
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/%F0%9F%9A%A8-nous-recrutons-%21-charg%C3%A9-e-de-mission-%E2%80%93-fili%C3%A8res-urgentes-intensives-at-agence-r%C3%A9gionale-de-sant%C3%A9-provence-alpes-c%C3%B4te-d-azur-ars-paca-4458766481",
+    "title": "🚨 Nous recrutons ! Chargé(e) de mission – Filières Urgentes & Intensives",
+    "company": "Agence régionale de santé - Provence-Alpes-Côte-d'Azur ( ARS Paca )",
+    "location": "Marseille",
+    "url": "https://fr.linkedin.com/jobs/view/%F0%9F%9A%A8-nous-recrutons-%21-charg%C3%A9-e-de-mission-%E2%80%93-fili%C3%A8res-urgentes-intensives-at-agence-r%C3%A9gionale-de-sant%C3%A9-provence-alpes-c%C3%B4te-d-azur-ars-paca-4458766481",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
+    "is_new": true
+  },
+  {
+    "id": "5855081851",
+    "title": "Chef d'Equipe (H/F)",
+    "company": "Bonduelle",
+    "location": "Landes, Nouvelle-Aquitaine",
+    "url": "https://www.adzuna.fr/details/5855081851?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Bonduelle, est uneentreprise agro-alimentaire française, présente à l'international. Depuis à Renescure (Nord de la France), berceau historique de l'e...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": false,
+    "score": 85,
+    "is_new": true
+  },
+  {
+    "id": "179305954W",
+    "title": "Chef de Projet Stratégie Climat - Pcaet F/H",
+    "company": "Hellowork",
+    "location": "Nantes - 44",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179305954W",
+    "description": "Notre agence Stratégie Climat, composée d'une dizaine de collaborateurs, se consacre à soutenir spécifiquement la transition écologique, à l'échelle territoriale et organisationnelle. Nous proposons à...",
+    "salary": "A négocier",
+    "date": "2026-08-25T06:30:13.000+0000",
+    "source": "APEC",
+    "borderline": false,
+    "score": 95,
+    "is_new": true
+  },
+  {
+    "id": "sr-OECD-744000145452529",
+    "title": "Chargé(e)s principaux(ales) de gestion de données énergétiques",
+    "company": "OECD",
+    "location": "Paris, Île-de-France Region, fr",
+    "url": "https://jobs.smartrecruiters.com/OECD/744000145452529",
+    "description": "",
+    "date": "2026-08-25",
+    "source": "SmartRecruiters",
+    "company_watch": true,
+    "borderline": false,
+    "score": 85,
+    "is_new": true
   }
 ]
