@@ -108,6 +108,18 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-environnement-at-mairie-de-la-croix-valmer-4459702195",
+    "title": "Chargé de mission Environnement",
+    "company": "Mairie de La Croix Valmer",
+    "location": "La Croix-Valmer",
+    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-environnement-at-mairie-de-la-croix-valmer-4459702195",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 70,
+    "is_new": false
+  },
+  {
     "id": "https://fr.linkedin.com/jobs/view/consultant-manager-f-h-%E2%80%93-conseil-en-transition-environnementale-et-%C3%A9conomique-at-persuaders-rh-4458089955",
     "title": "Consultant Manager F/H – Conseil en transition environnementale et économique",
     "company": "PERSUADERS RH",
@@ -144,42 +156,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-durabilit%C3%A9-at-jlb-expertises-4460366041",
-    "title": "Chargé de mission durabilité",
-    "company": "JLB Expertises",
-    "location": "Marseille",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-durabilit%C3%A9-at-jlb-expertises-4460366041",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/responsable-%C3%A9tudes-strat%C3%A9giques-et-ccus-f-h-at-grdf-4459182923",
-    "title": "Responsable études stratégiques et CCUS F/H",
-    "company": "GRDF",
-    "location": "Saint-Denis",
-    "url": "https://fr.linkedin.com/jobs/view/responsable-%C3%A9tudes-strat%C3%A9giques-et-ccus-f-h-at-grdf-4459182923",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/chef-de-projets-d%C3%A9carbonation-innovation-h-f-4450347608",
-    "title": "Chef de Projets Décarbonation & Innovation (H/F).",
-    "company": "Société de services et solutions de mobilité B2B",
-    "location": "Île-de-France, France",
-    "url": "https://fr.linkedin.com/jobs/view/chef-de-projets-d%C3%A9carbonation-innovation-h-f-4450347608",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/analyste-confirm%C3%A9-e-at-lita-4458637956",
     "title": "Analyste confirmé.e",
     "company": "Lita",
@@ -192,18 +168,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/product-manager-greenit-finops-at-station-f-4457483418",
-    "title": "PRODUCT MANAGER GREENIT & FINOPS",
-    "company": "STATION F",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/product-manager-greenit-finops-at-station-f-4457483418",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/accompagnement-de-projets-rse-mobilit%C3%A9-durable-et-plans-d%E2%80%99actions-bas-carbone-at-inrae-4460365561",
     "title": "Accompagnement de projets RSE : Mobilité durable et Plans d’actions Bas Carbone",
     "company": "INRAE",
@@ -213,6 +177,18 @@
     "source": "LinkedIn",
     "borderline": true,
     "score": 50,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-durabilit%C3%A9-at-jlb-expertises-4460366041",
+    "title": "Chargé de mission durabilité",
+    "company": "JLB Expertises",
+    "location": "Marseille",
+    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-durabilit%C3%A9-at-jlb-expertises-4460366041",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
     "is_new": false
   },
   {
@@ -240,15 +216,17 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/%F0%9F%9A%A8-nous-recrutons-%21-charg%C3%A9-e-de-mission-%E2%80%93-fili%C3%A8res-urgentes-intensives-at-agence-r%C3%A9gionale-de-sant%C3%A9-provence-alpes-c%C3%B4te-d-azur-ars-paca-4458766481",
-    "title": "🚨 Nous recrutons ! Chargé(e) de mission – Filières Urgentes & Intensives",
-    "company": "Agence régionale de santé - Provence-Alpes-Côte-d'Azur ( ARS Paca )",
-    "location": "Marseille",
-    "url": "https://fr.linkedin.com/jobs/view/%F0%9F%9A%A8-nous-recrutons-%21-charg%C3%A9-e-de-mission-%E2%80%93-fili%C3%A8res-urgentes-intensives-at-agence-r%C3%A9gionale-de-sant%C3%A9-provence-alpes-c%C3%B4te-d-azur-ars-paca-4458766481",
-    "description": "",
-    "source": "LinkedIn",
+    "id": "5856119220",
+    "title": "Chef de Projet Ecoconception Paris 75 H/F",
+    "company": "SYSTRA",
+    "location": "15ème Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/details/5856119220?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Contexte: La Direction Conseil, Aménagement et Territoires (CAT) est la business unit de SYSTRA France en charge des solutions de mobilité et d'aménag...",
+    "salary": "",
+    "date": "2026-08-26T02:34:10Z",
+    "source": "Adzuna",
     "borderline": false,
-    "score": 75,
+    "score": 85,
     "is_new": false
   },
   {
@@ -264,15 +242,41 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/client-success-specialist-sustainability-solutions-at-iss-stoxx-sustainability-4447575773",
-    "title": "Client Success Specialist - Sustainability Solutions",
-    "company": "ISS STOXX Sustainability",
+    "id": "5853695351",
+    "title": "Chargé de mission Projet Alimentaire Territorial (h/f) - Communauté de communes Alpes d'Azur",
+    "company": "Fonction publique Territoriale",
+    "location": "Puget-Théniers, Nice",
+    "url": "https://www.adzuna.fr/details/5853695351?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots Créée au 1er janvier 2014, la Communauté de Communes Alpes d’Azur (CCAA) rassemble 34 communes des vallées du Var, du Ci...",
+    "salary": "",
+    "date": "2026-08-23T17:14:52Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 85,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-france-at-boston-consulting-group-bcg-4457973133",
+    "title": "Consultant, France",
+    "company": "Boston Consulting Group (BCG)",
     "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/client-success-specialist-sustainability-solutions-at-iss-stoxx-sustainability-4447575773",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-france-at-boston-consulting-group-bcg-4457973133",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
-    "score": 85,
+    "score": 95,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/%F0%9F%9A%A8-nous-recrutons-%21-charg%C3%A9-e-de-mission-%E2%80%93-fili%C3%A8res-urgentes-intensives-at-agence-r%C3%A9gionale-de-sant%C3%A9-provence-alpes-c%C3%B4te-d-azur-ars-paca-4458766481",
+    "title": "🚨 Nous recrutons ! Chargé(e) de mission – Filières Urgentes & Intensives",
+    "company": "Agence régionale de santé - Provence-Alpes-Côte-d'Azur ( ARS Paca )",
+    "location": "Marseille",
+    "url": "https://fr.linkedin.com/jobs/view/%F0%9F%9A%A8-nous-recrutons-%21-charg%C3%A9-e-de-mission-%E2%80%93-fili%C3%A8res-urgentes-intensives-at-agence-r%C3%A9gionale-de-sant%C3%A9-provence-alpes-c%C3%B4te-d-azur-ars-paca-4458766481",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
     "is_new": false
   },
   {
@@ -326,6 +330,20 @@
     "is_new": false
   },
   {
+    "id": "5858135683",
+    "title": "Ingénieur d'études réseaux de chaleur - Paris",
+    "company": "METIGA",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5858135683?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Au sein d'un bureau d'études reconnu sur le marché du conseil et de l'ingénierie dans le domaine de l'environnement participant activement à la transi...",
+    "salary": "",
+    "date": "2026-08-27T12:37:55Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 70,
+    "is_new": false
+  },
+  {
     "id": "5858135681",
     "title": "Chef de projet réseaux de chaleur",
     "company": "METIGA",
@@ -364,18 +382,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-transition-environnementale-et-planification-territoriale-paris-at-scet-groupe-scet-htc-4423140783",
-    "title": "Chef.fe de projet Transition environnementale et Planification territoriale - Paris",
-    "company": "SCET | Groupe SCET HTC",
-    "location": "Ville de Paris",
-    "url": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-transition-environnementale-et-planification-territoriale-paris-at-scet-groupe-scet-htc-4423140783",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 80,
-    "is_new": false
-  },
-  {
     "id": "212WTZZ",
     "title": "Référent pôle transition écologique (H/F)",
     "company": "N/A",
@@ -402,15 +408,15 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-mission-mon-accompagnateur-r%C3%A9nov-mar-h-f-at-anah-4446613441",
-    "title": "Chargé(e) de mission Mon Accompagnateur Rénov' (MAR) H/F",
-    "company": "Anah",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-mission-mon-accompagnateur-r%C3%A9nov-mar-h-f-at-anah-4446613441",
+    "id": "https://fr.linkedin.com/jobs/view/chef-de-projets-d%C3%A9carbonation-innovation-h-f-4450347608",
+    "title": "Chef de Projets Décarbonation & Innovation (H/F).",
+    "company": "Société de services et solutions de mobilité B2B",
+    "location": "Île-de-France, France",
+    "url": "https://fr.linkedin.com/jobs/view/chef-de-projets-d%C3%A9carbonation-innovation-h-f-4450347608",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
-    "score": 80,
+    "score": 85,
     "is_new": false
   },
   {
@@ -423,6 +429,18 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 85,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/responsable-%C3%A9tudes-strat%C3%A9giques-et-ccus-f-h-at-grdf-4459182923",
+    "title": "Responsable études stratégiques et CCUS F/H",
+    "company": "GRDF",
+    "location": "Saint-Denis",
+    "url": "https://fr.linkedin.com/jobs/view/responsable-%C3%A9tudes-strat%C3%A9giques-et-ccus-f-h-at-grdf-4459182923",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
     "is_new": false
   },
   {
@@ -674,20 +692,6 @@
     "is_new": false
   },
   {
-    "id": "179205839W",
-    "title": "Chargé·e de mission Adaptation au Changement Climatique F/H",
-    "company": "CONFEDERATION GENERALE DES PETITES ET MOYENNES ENTREPRISES PROVENCE ALPES COTE D'AZUR",
-    "location": "Marseille 01 - 13",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179205839W",
-    "description": "Missions principales   Cartographie et analyse des besoins . Déployer et analyser un sondage régional pour identifier les vulnérabilités et besoins des TPE-PME face aux risques climatiques.  Alimenter...",
-    "salary": "26 - 30 k€ brut annuel",
-    "date": "2026-07-30T12:48:07.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "score": 95,
-    "is_new": false
-  },
-  {
     "id": "179233799W",
     "title": "Chargé de Mission Agronomie/Sol F/H",
     "company": "CHAMBRE REGIONALE D'AGRICULTURE OCCITANIE",
@@ -741,20 +745,6 @@
     "source": "APEC",
     "borderline": false,
     "score": 95,
-    "is_new": false
-  },
-  {
-    "id": "179208083W",
-    "title": "Chef de projet carbone F/H",
-    "company": "SIAAP (Service Public de l'Assainissement Francilien)",
-    "location": "Paris 12 - 75",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179208083W",
-    "description": "Intégrée au sein de la Direction déléguée en charge de l'Innovation, de la Stratégie et de l'Environnement (DISE), la Direction Environnement (DE) est garante de la définition et du déploiement de la ...",
-    "salary": "A négocier",
-    "date": "2026-07-30T21:26:05.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "score": 90,
     "is_new": false
   },
   {
@@ -954,6 +944,20 @@
     "is_new": false
   },
   {
+    "id": "gh-tomorrow-7776130003",
+    "title": "Deputy Program Manager",
+    "company": "Tomorrow",
+    "location": "Remote",
+    "url": "https://boards.greenhouse.io/tomorrow/jobs/7776130003?gh_jid=7776130003",
+    "description": "<p><em>Tomorrow.io is a leading weather intelligence and climate resilience platform helping organizations and governments make better decisions in a ...",
+    "date": "2026-08-21T09:27:58-04:00",
+    "source": "Greenhouse",
+    "company_watch": true,
+    "borderline": false,
+    "score": 95,
+    "is_new": false
+  },
+  {
     "id": "sr-OECD-744000145452529",
     "title": "Chargé(e)s principaux(ales) de gestion de données énergétiques",
     "company": "OECD",
@@ -1088,56 +1092,134 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-france-at-boston-consulting-group-bcg-4457973133",
-    "title": "Consultant, France",
-    "company": "Boston Consulting Group (BCG)",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-france-at-boston-consulting-group-bcg-4457973133",
+    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-d%C3%A9carbonation-du-num%C3%A9rique-h-f-at-davidson-consulting-4183122301",
+    "title": "Consultant Senior Décarbonation du Numérique (H/F)",
+    "company": "Davidson consulting",
+    "location": "Île-de-France, France",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-d%C3%A9carbonation-du-num%C3%A9rique-h-f-at-davidson-consulting-4183122301",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
-    "score": 95,
+    "score": 85,
     "is_new": false
   },
   {
-    "id": "5858135683",
-    "title": "Ingénieur d'études réseaux de chaleur - Paris",
-    "company": "METIGA",
+    "id": "https://fr.linkedin.com/jobs/view/senior-consultant-%C3%A0-manager-technology-strategy-transformation-cto-advisory-et-green-it-f-h-at-ey-4401677170",
+    "title": "Senior Consultant à Manager - Technology Strategy & Transformation - CTO Advisory et Green IT F/H",
+    "company": "EY",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/senior-consultant-%C3%A0-manager-technology-strategy-transformation-cto-advisory-et-green-it-f-h-at-ey-4401677170",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
+    "is_new": true
+  },
+  {
+    "id": "5861722375",
+    "title": "Consultant Sénior en Energie H/F",
+    "company": "EPSA",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5858135683?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Au sein d'un bureau d'études reconnu sur le marché du conseil et de l'ingénierie dans le domaine de l'environnement participant activement à la transi...",
+    "url": "https://www.adzuna.fr/details/5861722375?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Au sein de notre Business Line Energy Performance, OMNEGY est une société de conseil en achat d'énergie et économie d'énergie accompagnant les entrepr...",
     "salary": "",
-    "date": "2026-08-27T12:37:55Z",
+    "date": "2026-08-30T02:42:53Z",
     "source": "Adzuna",
     "borderline": false,
     "score": 70,
-    "is_new": false
+    "is_new": true
   },
   {
-    "id": "5832356633",
-    "title": "Account Manager",
-    "company": "Deepki",
-    "location": "11ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/details/5832356633?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "About Deepki Founded in 2014, Deepki is the most trusted sustainability SaaS solution for sustainability in the real estate sector. Its comprehensive ...",
+    "id": "5861226980",
+    "title": "Conseiller Transition énergétique et écologique en santé (CTEES)-AP-HP GHU Nord F/H",
+    "company": "Ap-Hp",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5861226980?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Informations générales Entité de rattachement du publieur Situé à Paris (10è arrondissement), l'hôpital Lariboisière Fernand-Widal est un hôpital de p...",
+    "salary": "",
+    "date": "2026-08-29T17:22:55Z",
     "source": "Adzuna",
-    "company_watch": true,
     "borderline": false,
     "score": 85,
     "is_new": true
   },
   {
-    "id": "gh-tomorrow-7776130003",
-    "title": "Deputy Program Manager",
-    "company": "Tomorrow",
-    "location": "Remote",
-    "url": "https://boards.greenhouse.io/tomorrow/jobs/7776130003?gh_jid=7776130003",
-    "description": "<p><em>Tomorrow.io is a leading weather intelligence and climate resilience platform helping organizations and governments make better decisions in a ...",
-    "date": "2026-08-21T09:27:58-04:00",
-    "source": "Greenhouse",
+    "id": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-transition-environnementale-et-planification-territoriale-paris-at-scet-groupe-scet-htc-4423140783",
+    "title": "Chef.fe de projet Transition environnementale et Planification territoriale - Paris",
+    "company": "SCET | Groupe SCET HTC",
+    "location": "Ville de Paris",
+    "url": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-transition-environnementale-et-planification-territoriale-paris-at-scet-groupe-scet-htc-4423140783",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
+    "id": "5861722995",
+    "title": "Chef de Projet Senior - Réseaux de Chaleur & Géothermie H/F",
+    "company": "SB Partners",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5861722995?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Dans un contexte de forte croissance de l'activité, nous recherchons un Chef de Projet Senior capable d'intervenir sur des projets techniques à forte ...",
+    "salary": "50 k€ – 65 k€",
+    "date": "2026-08-30T02:43:00Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 70,
+    "is_new": true
+  },
+  {
+    "id": "5861721793",
+    "title": "Account Manager H/F",
+    "company": "Deepki",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5861721793?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "About Deepki Founded in 2014, Deepki is the most trusted sustainability SaaS solution for sustainability in the real estate sector. Its comprehensive ...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": false,
+    "score": 80,
+    "is_new": true
+  },
+  {
+    "id": "5835725601",
+    "title": "Oliver Wyman - Associate - F&R - Paris",
+    "company": "Marsh McLennan",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5835725601?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Description: Associate - Finance & Risk Practice - Paris ____ WHO WE ARE Oliver Wyman is a global leader in management consulting. With a staff of ove...",
+    "source": "Adzuna",
     "company_watch": true,
     "borderline": false,
     "score": 95,
-    "is_new": false
+    "is_new": true
+  },
+  {
+    "id": "5861223090",
+    "title": "E T Consultant - Investment",
+    "company": "World Bank Group",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5861223090?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "E T Consultant - Investment Job : req38162 Organization: IFC Sector: Investment Grade: EC1 Term Duration: 1 year 0 months Recruitment Type: Local Recr...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": false,
+    "score": 90,
+    "is_new": true
+  },
+  {
+    "id": "179293563W",
+    "title": "Consultant Chef de projet AMO / Exploitation & Maintenance F/H",
+    "company": "GROUPE EGIS / GROUPEGIS / EGIS GROUP",
+    "location": "Montreuil - 93",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179293563W",
+    "description": "Au sein de l'activité Conseil, le pôle Performance des Existants et Transition œuvre chaque jour à maintenir la performance des bâtiments et des infrastructures en intégrant les grands enjeux climatiq...",
+    "salary": "A négocier",
+    "date": "2026-08-21T14:55:04.000+0000",
+    "source": "APEC",
+    "borderline": false,
+    "score": 90,
+    "is_new": true
   }
 ]
