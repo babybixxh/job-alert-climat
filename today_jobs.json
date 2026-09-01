@@ -1,17 +1,5 @@
 [
   {
-    "id": "https://fr.linkedin.com/jobs/view/energy-manager-senior-at-carb0n-4458233489",
-    "title": "Energy Manager Senior",
-    "company": "Carb0n",
-    "location": "Ville de Paris",
-    "url": "https://fr.linkedin.com/jobs/view/energy-manager-senior-at-carb0n-4458233489",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 80,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/consultant-senior-d%C3%A9carbonation-du-num%C3%A9rique-h-f-at-davidson-consulting-4183122301",
     "title": "Consultant Senior Décarbonation du Numérique (H/F)",
     "company": "Davidson consulting",
@@ -84,15 +72,51 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-environnement-at-mairie-de-la-croix-valmer-4459702195",
-    "title": "Chargé de mission Environnement",
-    "company": "Mairie de La Croix Valmer",
-    "location": "La Croix-Valmer",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-environnement-at-mairie-de-la-croix-valmer-4459702195",
+    "id": "https://fr.linkedin.com/jobs/view/senior-consultant-%C3%A0-manager-technology-strategy-transformation-cto-advisory-et-green-it-f-h-at-ey-4401677170",
+    "title": "Senior Consultant à Manager - Technology Strategy & Transformation - CTO Advisory et Green IT F/H",
+    "company": "EY",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/senior-consultant-%C3%A0-manager-technology-strategy-transformation-cto-advisory-et-green-it-f-h-at-ey-4401677170",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
-    "score": 70,
+    "score": 75,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-manager-f-h-%E2%80%93-conseil-en-transition-environnementale-et-%C3%A9conomique-at-persuaders-rh-4458089955",
+    "title": "Consultant Manager F/H – Conseil en transition environnementale et économique",
+    "company": "PERSUADERS RH",
+    "location": "Ville de Paris",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-manager-f-h-%E2%80%93-conseil-en-transition-environnementale-et-%C3%A9conomique-at-persuaders-rh-4458089955",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 80,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/manager-energy-utilities-marseille-at-sia-4459315951",
+    "title": "Manager - Energy & Utilities - Marseille",
+    "company": "Sia",
+    "location": "Marseille",
+    "url": "https://fr.linkedin.com/jobs/view/manager-energy-utilities-marseille-at-sia-4459315951",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 85,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/programme-management-officer-at-un-environment-programme-4461054893",
+    "title": "PROGRAMME MANAGEMENT OFFICER",
+    "company": "UN Environment Programme",
+    "location": "Ville de Paris",
+    "url": "https://fr.linkedin.com/jobs/view/programme-management-officer-at-un-environment-programme-4461054893",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 95,
     "is_new": false
   },
   {
@@ -120,35 +144,11 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/chef-de-projets-d%C3%A9carbonation-innovation-h-f-4450347608",
-    "title": "Chef de Projets Décarbonation & Innovation (H/F).",
-    "company": "Société de services et solutions de mobilité B2B",
-    "location": "Île-de-France, France",
-    "url": "https://fr.linkedin.com/jobs/view/chef-de-projets-d%C3%A9carbonation-innovation-h-f-4450347608",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/chef-de-projet-adaptation-au-changement-climatique-et-r%C3%A9silience-urbaine-h-f-at-suez-4459687063",
     "title": "Chef de projet Adaptation au changement climatique et résilience urbaine - H/F",
     "company": "SUEZ",
     "location": "Nanterre",
     "url": "https://fr.linkedin.com/jobs/view/chef-de-projet-adaptation-au-changement-climatique-et-r%C3%A9silience-urbaine-h-f-at-suez-4459687063",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/manager-energy-utilities-marseille-at-sia-4459315951",
-    "title": "Manager - Energy & Utilities - Marseille",
-    "company": "Sia",
-    "location": "Marseille",
-    "url": "https://fr.linkedin.com/jobs/view/manager-energy-utilities-marseille-at-sia-4459315951",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
@@ -180,18 +180,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/accompagnement-de-projets-rse-mobilit%C3%A9-durable-et-plans-d%E2%80%99actions-bas-carbone-at-inrae-4460365561",
-    "title": "Accompagnement de projets RSE : Mobilité durable et Plans d’actions Bas Carbone",
-    "company": "INRAE",
-    "location": "Avignon",
-    "url": "https://fr.linkedin.com/jobs/view/accompagnement-de-projets-rse-mobilit%C3%A9-durable-et-plans-d%E2%80%99actions-bas-carbone-at-inrae-4460365561",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": true,
-    "score": 50,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-mission-pr%C3%A9vention-risque-inondation-f-h-at-s-you-france-4458404811",
     "title": "Chargé.e de mission prévention risque inondation F/H",
     "company": "S&you France",
@@ -216,6 +204,18 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/accompagnement-de-projets-rse-mobilit%C3%A9-durable-et-plans-d%E2%80%99actions-bas-carbone-at-inrae-4460365561",
+    "title": "Accompagnement de projets RSE : Mobilité durable et Plans d’actions Bas Carbone",
+    "company": "INRAE",
+    "location": "Avignon",
+    "url": "https://fr.linkedin.com/jobs/view/accompagnement-de-projets-rse-mobilit%C3%A9-durable-et-plans-d%E2%80%99actions-bas-carbone-at-inrae-4460365561",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": true,
+    "score": 50,
+    "is_new": false
+  },
+  {
     "id": "https://fr.linkedin.com/jobs/view/product-manager-greenit-finops-at-station-f-4457483418",
     "title": "PRODUCT MANAGER GREENIT & FINOPS",
     "company": "STATION F",
@@ -228,15 +228,15 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-france-at-boston-consulting-group-bcg-4457973133",
-    "title": "Consultant, France",
-    "company": "Boston Consulting Group (BCG)",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-france-at-boston-consulting-group-bcg-4457973133",
+    "id": "https://fr.linkedin.com/jobs/view/chef-de-projets-d%C3%A9carbonation-innovation-h-f-4450347608",
+    "title": "Chef de Projets Décarbonation & Innovation (H/F).",
+    "company": "Société de services et solutions de mobilité B2B",
+    "location": "Île-de-France, France",
+    "url": "https://fr.linkedin.com/jobs/view/chef-de-projets-d%C3%A9carbonation-innovation-h-f-4450347608",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
-    "score": 95,
+    "score": 85,
     "is_new": false
   },
   {
@@ -247,6 +247,18 @@
     "url": "https://fr.linkedin.com/jobs/view/%F0%9F%9A%A8-nous-recrutons-%21-charg%C3%A9-e-de-mission-%E2%80%93-fili%C3%A8res-urgentes-intensives-at-agence-r%C3%A9gionale-de-sant%C3%A9-provence-alpes-c%C3%B4te-d-azur-ars-paca-4458766481",
     "description": "",
     "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
+    "id": "211XZCW",
+    "title": "Energy Data Analyst (H/F)",
+    "company": "EFFY",
+    "location": "75 - PARIS",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/211XZCW",
+    "description": "Poste à pourvoir à partir de janvier 2027\n\nEffy est le spécialiste de l'efficience énergétique depuis 2008.\n\nNous aidons les propriétaires à rendre le...",
+    "source": "France Travail",
     "borderline": false,
     "score": 75,
     "is_new": false
@@ -344,30 +356,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-transition-environnementale-et-planification-territoriale-paris-at-scet-groupe-scet-htc-4423140783",
-    "title": "Chef.fe de projet Transition environnementale et Planification territoriale - Paris",
-    "company": "SCET | Groupe SCET HTC",
-    "location": "Ville de Paris",
-    "url": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-transition-environnementale-et-planification-territoriale-paris-at-scet-groupe-scet-htc-4423140783",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-manager-f-h-%E2%80%93-conseil-en-transition-environnementale-et-%C3%A9conomique-at-persuaders-rh-4458089955",
-    "title": "Consultant Manager F/H – Conseil en transition environnementale et économique",
-    "company": "PERSUADERS RH",
-    "location": "Ville de Paris",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-manager-f-h-%E2%80%93-conseil-en-transition-environnementale-et-%C3%A9conomique-at-persuaders-rh-4458089955",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 80,
-    "is_new": false
-  },
-  {
     "id": "212WTZZ",
     "title": "Référent pôle transition écologique (H/F)",
     "company": "N/A",
@@ -380,15 +368,55 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/responsable-de-mission-amo-marseille-cdi-f-h-at-arep-4456877975",
-    "title": "Responsable de mission AMO - Marseille (CDI) - F/H",
-    "company": "AREP",
-    "location": "Marseille",
-    "url": "https://fr.linkedin.com/jobs/view/responsable-de-mission-amo-marseille-cdi-f-h-at-arep-4456877975",
+    "id": "5859755163",
+    "title": "Chargé de mission environnement et biodiversité (h/f) - Métropole Nice Côte d'Azur",
+    "company": "Fonction publique Territoriale",
+    "location": "Nice, Alpes-Maritimes",
+    "url": "https://www.adzuna.fr/details/5859755163?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots La Direction Générale Adjointe Aménagement et Développement Durables met en œuvre une politique globale d'aménagement, d...",
+    "salary": "",
+    "date": "2026-08-28T17:15:55Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 70,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-mission-mon-accompagnateur-r%C3%A9nov-mar-h-f-at-anah-4446613441",
+    "title": "Chargé(e) de mission Mon Accompagnateur Rénov' (MAR) H/F",
+    "company": "Anah",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-mission-mon-accompagnateur-r%C3%A9nov-mar-h-f-at-anah-4446613441",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
-    "score": 85,
+    "score": 80,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-transition-environnementale-et-planification-territoriale-paris-at-scet-groupe-scet-htc-4423140783",
+    "title": "Chef.fe de projet Transition environnementale et Planification territoriale - Paris",
+    "company": "SCET | Groupe SCET HTC",
+    "location": "Ville de Paris",
+    "url": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-transition-environnementale-et-planification-territoriale-paris-at-scet-groupe-scet-htc-4423140783",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
+    "id": "5855269397",
+    "title": "Responsable Energy Management System (EMS) H/F",
+    "company": "GROUPE IDEC E.N.R",
+    "location": "8ème Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/details/5855269397?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Dans le cadre du développement de ses activités, GROUPE IDEC E.N.R., filiale du GROUPE IDEC spécialisée dans la performance énergétique, la décarbonat...",
+    "salary": "50 k€ – 70 k€",
+    "date": "2026-08-25T12:39:51Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 75,
     "is_new": false
   },
   {
@@ -505,7 +533,7 @@
     "title": "Account Manager H/F",
     "company": "Deepki",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5861721793?utm_medium=api&utm_source=ae8a5ffa",
+    "url": "https://www.adzuna.fr/land/ad/5861721793?se=NBv2beql8RG2srOgge7pvg&utm_medium=api&utm_source=ae8a5ffa&v=44615C8FFD8F77CD627950A82CCBEA051CAC4F5B",
     "description": "About Deepki Founded in 2014, Deepki is the most trusted sustainability SaaS solution for sustainability in the real estate sector. Its comprehensive ...",
     "source": "Adzuna",
     "company_watch": true,
@@ -920,7 +948,7 @@
     "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179287534W",
     "description": "Sous l'autorité d'un responsable de pôle, au sein d'une équipe d'ingénieurs et de chargés d'études, le Chef de Projet prend en charge le volet conception d'installations CVCD Plomberie des projets att...",
     "salary": "40 - 65 k€ brut annuel",
-    "date": "2026-08-26T16:58:20.000+0000",
+    "date": "2026-08-31T16:18:31.000+0000",
     "source": "APEC",
     "borderline": false,
     "score": 80,
@@ -1117,28 +1145,29 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/programme-management-officer-at-un-environment-programme-4461054893",
-    "title": "PROGRAMME MANAGEMENT OFFICER",
-    "company": "UN Environment Programme",
-    "location": "Ville de Paris",
-    "url": "https://fr.linkedin.com/jobs/view/programme-management-officer-at-un-environment-programme-4461054893",
+    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-thematique-economie-circulaire-f-h_4772.aspx",
+    "title": "VSC - Chargé.e de mission thématique Economie Circulaire F/H",
+    "company": "ADEME",
+    "location": "France",
+    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-thematique-economie-circulaire-f-h_4772.aspx",
     "description": "",
-    "source": "LinkedIn",
+    "source": "ADEME",
     "borderline": false,
-    "score": 95,
+    "score": 85,
     "is_new": true
   },
   {
-    "id": "5862627118",
-    "title": "Responsable Qualité Produit Process CDI H/F",
-    "company": "Savencia",
-    "location": "Meslay-du-Maine, Laval",
-    "url": "https://www.adzuna.fr/details/5862627118?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Rejoins l'aventure du site de Meslay-du-Maine, des Fromageries Perreault ! Acteur clé sur le marché international des fromages à pâtes pressées et à p...",
-    "source": "Adzuna",
-    "company_watch": true,
+    "id": "179300446W",
+    "title": "Conseiller en transition écologique - Plan de mobilité F/H",
+    "company": "SERVICES CENTRAUX DG",
+    "location": "Cergy - 95",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179300446W",
+    "description": "Au sein de la CCI du Val d'Oise, le poste de conseiller en transition écologique F/H a pour mission d'informer et d'accompagner les TPE, PME, commerces du Val d'Oise dans la mise en place d'approches ...",
+    "salary": "35 - 37 k€ brut annuel",
+    "date": "2026-08-31T13:55:32.000+0000",
+    "source": "APEC",
     "borderline": false,
-    "score": 85,
+    "score": 75,
     "is_new": true
   }
 ]
