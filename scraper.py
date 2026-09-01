@@ -606,6 +606,12 @@ def is_over_senior_title(title):
 # Seuil « salaire élevé » (en k€) pour la sous-section dédiée de l'email.
 HIGH_SALARY_K = 55
 
+# Compacité du mail : le corps ne montre que les offres NOUVELLES d'un score
+# suffisant, plafonnées par section ; le reste (déjà vues, sous le seuil, ou
+# au-delà du plafond) va dans une section repliable en bas. Réglables ici.
+DISPLAY_MIN_SCORE = 60
+SECTION_MAX = 8
+
 
 def salary_max_k(value):
     """Extrait le plus haut montant annuel d'un libellé de salaire, en k€.
@@ -2291,24 +2297,42 @@ def _pill(text, bg, fg="#ffffff"):
             f'margin:0 5px 5px 0;white-space:nowrap;font-weight:600">{text}</span>')
 
 
-def section_html(title, emoji, jobs, color):
+def section_html(title, emoji, jobs, color, sink=None):
+    """Affiche une section. Si `sink` est fourni, seules les offres NOUVELLES
+    de score >= DISPLAY_MIN_SCORE sont montrées (les meilleures d'abord, max
+    SECTION_MAX) ; toutes les autres (déjà vues, sous le seuil, surplus) sont
+    ajoutées au `sink` pour la section repliable de bas de mail."""
     if not jobs:
         return ""
-    # Tri par score IA décroissant (meilleures correspondances en haut),
-    # puis nouveautés avant déjà-vues à score égal.
     jobs = sorted(jobs, key=lambda j: (j.get("score", DEFAULT_KEPT_SCORE), j.get("is_new", False)), reverse=True)
-    new_count = sum(1 for j in jobs if j.get("is_new"))
-    new_chip = (f'<span style="font-size:12px;color:#fff;background:#e05c2a;'
-                f'padding:3px 10px;border-radius:20px;margin-left:8px;font-weight:600">'
-                f'🆕 {new_count}</span>') if new_count else ""
+
+    if sink is not None:
+        primary, others = [], []
+        for j in jobs:
+            if j.get("is_new") and j.get("score", DEFAULT_KEPT_SCORE) >= DISPLAY_MIN_SCORE:
+                primary.append(j)
+            else:
+                others.append(j)
+        shown = primary[:SECTION_MAX]
+        for j in primary[SECTION_MAX:] + others:
+            sink.append((title, j))
+    else:
+        shown = jobs
+
+    if not shown:
+        return ""
+
+    hidden = len(jobs) - len(shown)
+    hidden_chip = (f'<span style="font-size:12px;color:#96a09a;margin-left:8px">+{hidden} repliées</span>'
+                   if hidden else "")
     html = f"""
     <div style="margin:28px 0 10px">
         <span style="font-size:16px;font-weight:700;color:{color}">{emoji}&nbsp;{title}</span>
-        <span style="font-size:12px;color:#6a756e;background:#eef2ef;padding:3px 10px;border-radius:20px;margin-left:8px;font-weight:600">{len(jobs)}</span>
-        {new_chip}
+        <span style="font-size:12px;color:#6a756e;background:#eef2ef;padding:3px 10px;border-radius:20px;margin-left:8px;font-weight:600">{len(shown)}</span>
+        {hidden_chip}
     </div>
     """
-    for job in jobs:
+    for job in shown:
         is_new = job.get("is_new", True)
         source = job.get("source", "")
         sc = SOURCE_COLORS.get(source, "#8a8f8c")
@@ -2346,6 +2370,32 @@ def section_html(title, emoji, jobs, color):
     </table>
         """
     return html
+
+
+def collapsed_others_html(sink):
+    """Section repliable regroupant les offres non mises en avant (déjà vues,
+    score < seuil, ou au-delà du plafond de section). Rendu compact : une ligne
+    par offre, triées par score décroissant."""
+    if not sink:
+        return ""
+    items = sorted(sink, key=lambda t: t[1].get("score", DEFAULT_KEPT_SCORE), reverse=True)
+    rows = ""
+    for sect, j in items[:80]:
+        sc = j.get("score", DEFAULT_KEPT_SCORE)
+        seen = "" if j.get("is_new") else ' <span style="color:#b6bdb8">· déjà vu</span>'
+        rows += (f'<div style="padding:7px 0;border-bottom:1px solid #f0f2f0;font-size:13px;line-height:1.4">'
+                 f'{_pill(str(sc), _score_color(sc))}'
+                 f'<a href="{j["url"]}" style="color:#16281f;text-decoration:none;font-weight:600">{j["title"]}</a> '
+                 f'<span style="color:#8a938c">— {j["company"]} · {sect}{seen}</span></div>')
+    extra = f'<div style="padding:8px 0;font-size:12px;color:#96a09a">… et {len(sink) - 80} autres</div>' if len(sink) > 80 else ""
+    return f"""
+    <details style="margin-top:24px;padding:14px 16px;background:#fafbfa;border-radius:10px;border:1px solid #e8ece9">
+        <summary style="cursor:pointer;font-size:14px;color:#54615a;font-weight:600">
+            📂 Voir les {len(sink)} autres offres (déjà vues, scores plus bas, ou au-delà du top {SECTION_MAX})
+        </summary>
+        <div style="margin-top:10px">{rows}{extra}</div>
+    </details>
+    """
 
 
 def excluded_section_html(excluded_log):
@@ -2470,9 +2520,13 @@ def build_email(jobs, feedback_url, excluded_log=None, disappeared=None, health_
         </a>
     """
 
-    body += section_html("Marseille", "🔵", marseille, "#0f6e56")
-    body += section_html("Région PACA hors Marseille", "🟢", paca, "#3b6d11")
-    body += section_html("Entreprises ciblées", "🏢", watchlist, "#0a5c54")
+    # Corps compact : seules les nouvelles offres bien notées (max SECTION_MAX
+    # par section) sont mises en avant ; tout le reste va dans `sink` → section
+    # repliable en bas.
+    sink = []
+    body += section_html("Marseille", "🔵", marseille, "#0f6e56", sink)
+    body += section_html("Région PACA hors Marseille", "🟢", paca, "#3b6d11", sink)
+    body += section_html("Entreprises ciblées", "🏢", watchlist, "#0a5c54", sink)
     # Section « Hors PACA » découpée en sous-catégories : télétravail, salaire
     # élevé, puis le reste (Paris & autres villes). Buckets exclusifs, dans cet
     # ordre de priorité (une offre remote bien payée va dans Télétravail).
@@ -2482,9 +2536,10 @@ def build_email(jobs, feedback_url, excluded_log=None, disappeared=None, health_
                 and (salary_max_k(j.get("salary", "")) or 0) >= HIGH_SALARY_K]
     used |= {id(j) for j in high_sal}
     autres = [j for j in paris if id(j) not in used]
-    body += section_html("Télétravail / Remote", "🏠", remote_jobs, "#1f7a99")
-    body += section_html(f"Salaire élevé (≥ {HIGH_SALARY_K} k€)", "💰", high_sal, "#7a5b00")
-    body += section_html("Autres — Paris &amp; France", "🔴", autres, "#993c1d")
+    body += section_html("Télétravail / Remote", "🏠", remote_jobs, "#1f7a99", sink)
+    body += section_html(f"Salaire élevé (≥ {HIGH_SALARY_K} k€)", "💰", high_sal, "#7a5b00", sink)
+    body += section_html("Autres — Paris &amp; France", "🔴", autres, "#993c1d", sink)
+    body += collapsed_others_html(sink)
     body += disappeared_section_html(disappeared or [])
     body += excluded_section_html(excluded_log or [])
     body += health_footer_html(health_alerts or [])
