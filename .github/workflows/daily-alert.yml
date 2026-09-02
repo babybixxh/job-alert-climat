@@ -49,7 +49,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add seen_jobs.json today_jobs.json rejected_keywords.json rejected_reasons.json ai_verdicts.json source_health.json || true
+          git add seen_jobs.json today_jobs.json rejected_keywords.json rejected_reasons.json ai_verdicts.json source_health.json autres.html || true
           git status
           git diff --staged --quiet || git commit -m "Update jobs data"
           git push origin HEAD
