@@ -72,54 +72,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/senior-consultant-%C3%A0-manager-technology-strategy-transformation-cto-advisory-et-green-it-f-h-at-ey-4401677170",
-    "title": "Senior Consultant à Manager - Technology Strategy & Transformation - CTO Advisory et Green IT F/H",
-    "company": "EY",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/senior-consultant-%C3%A0-manager-technology-strategy-transformation-cto-advisory-et-green-it-f-h-at-ey-4401677170",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-manager-f-h-%E2%80%93-conseil-en-transition-environnementale-et-%C3%A9conomique-at-persuaders-rh-4458089955",
-    "title": "Consultant Manager F/H – Conseil en transition environnementale et économique",
-    "company": "PERSUADERS RH",
-    "location": "Ville de Paris",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-manager-f-h-%E2%80%93-conseil-en-transition-environnementale-et-%C3%A9conomique-at-persuaders-rh-4458089955",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 80,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/manager-energy-utilities-marseille-at-sia-4459315951",
-    "title": "Manager - Energy & Utilities - Marseille",
-    "company": "Sia",
-    "location": "Marseille",
-    "url": "https://fr.linkedin.com/jobs/view/manager-energy-utilities-marseille-at-sia-4459315951",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/programme-management-officer-at-un-environment-programme-4461054893",
-    "title": "PROGRAMME MANAGEMENT OFFICER",
-    "company": "UN Environment Programme",
-    "location": "Ville de Paris",
-    "url": "https://fr.linkedin.com/jobs/view/programme-management-officer-at-un-environment-programme-4461054893",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 95,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/responsable-expertise-carbone-et-environnement-f-h-at-grdf-4459182922",
     "title": "Responsable expertise carbone et environnement F/H",
     "company": "GRDF",
@@ -144,11 +96,47 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/programme-management-officer-at-un-environment-programme-4461054893",
+    "title": "PROGRAMME MANAGEMENT OFFICER",
+    "company": "UN Environment Programme",
+    "location": "Ville de Paris",
+    "url": "https://fr.linkedin.com/jobs/view/programme-management-officer-at-un-environment-programme-4461054893",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 95,
+    "is_new": false
+  },
+  {
     "id": "https://fr.linkedin.com/jobs/view/chef-de-projet-adaptation-au-changement-climatique-et-r%C3%A9silience-urbaine-h-f-at-suez-4459687063",
     "title": "Chef de projet Adaptation au changement climatique et résilience urbaine - H/F",
     "company": "SUEZ",
     "location": "Nanterre",
     "url": "https://fr.linkedin.com/jobs/view/chef-de-projet-adaptation-au-changement-climatique-et-r%C3%A9silience-urbaine-h-f-at-suez-4459687063",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 85,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-manager-f-h-%E2%80%93-conseil-en-transition-environnementale-et-%C3%A9conomique-at-persuaders-rh-4458089955",
+    "title": "Consultant Manager F/H – Conseil en transition environnementale et économique",
+    "company": "PERSUADERS RH",
+    "location": "Ville de Paris",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-manager-f-h-%E2%80%93-conseil-en-transition-environnementale-et-%C3%A9conomique-at-persuaders-rh-4458089955",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 80,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/manager-energy-utilities-marseille-at-sia-4459315951",
+    "title": "Manager - Energy & Utilities - Marseille",
+    "company": "Sia",
+    "location": "Marseille",
+    "url": "https://fr.linkedin.com/jobs/view/manager-energy-utilities-marseille-at-sia-4459315951",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
@@ -204,51 +192,15 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/accompagnement-de-projets-rse-mobilit%C3%A9-durable-et-plans-d%E2%80%99actions-bas-carbone-at-inrae-4460365561",
-    "title": "Accompagnement de projets RSE : Mobilité durable et Plans d’actions Bas Carbone",
-    "company": "INRAE",
-    "location": "Avignon",
-    "url": "https://fr.linkedin.com/jobs/view/accompagnement-de-projets-rse-mobilit%C3%A9-durable-et-plans-d%E2%80%99actions-bas-carbone-at-inrae-4460365561",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": true,
-    "score": 50,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/product-manager-greenit-finops-at-station-f-4457483418",
-    "title": "PRODUCT MANAGER GREENIT & FINOPS",
-    "company": "STATION F",
+    "id": "https://fr.linkedin.com/jobs/view/consultant-france-at-boston-consulting-group-bcg-4457973133",
+    "title": "Consultant, France",
+    "company": "Boston Consulting Group (BCG)",
     "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/product-manager-greenit-finops-at-station-f-4457483418",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-france-at-boston-consulting-group-bcg-4457973133",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/chef-de-projets-d%C3%A9carbonation-innovation-h-f-4450347608",
-    "title": "Chef de Projets Décarbonation & Innovation (H/F).",
-    "company": "Société de services et solutions de mobilité B2B",
-    "location": "Île-de-France, France",
-    "url": "https://fr.linkedin.com/jobs/view/chef-de-projets-d%C3%A9carbonation-innovation-h-f-4450347608",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/%F0%9F%9A%A8-nous-recrutons-%21-charg%C3%A9-e-de-mission-%E2%80%93-fili%C3%A8res-urgentes-intensives-at-agence-r%C3%A9gionale-de-sant%C3%A9-provence-alpes-c%C3%B4te-d-azur-ars-paca-4458766481",
-    "title": "🚨 Nous recrutons ! Chargé(e) de mission – Filières Urgentes & Intensives",
-    "company": "Agence régionale de santé - Provence-Alpes-Côte-d'Azur ( ARS Paca )",
-    "location": "Marseille",
-    "url": "https://fr.linkedin.com/jobs/view/%F0%9F%9A%A8-nous-recrutons-%21-charg%C3%A9-e-de-mission-%E2%80%93-fili%C3%A8res-urgentes-intensives-at-agence-r%C3%A9gionale-de-sant%C3%A9-provence-alpes-c%C3%B4te-d-azur-ars-paca-4458766481",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
+    "score": 95,
     "is_new": false
   },
   {
@@ -261,32 +213,6 @@
     "source": "France Travail",
     "borderline": false,
     "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/electricity-grids-and-security-analyst-at-oecd-ocde-4448227105",
-    "title": "Electricity Grids and Security Analyst",
-    "company": "OECD-OCDE",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/electricity-grids-and-security-analyst-at-oecd-ocde-4448227105",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 95,
-    "is_new": false
-  },
-  {
-    "id": "5861722375",
-    "title": "Consultant Sénior en Energie H/F",
-    "company": "EPSA",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5861722375?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Au sein de notre Business Line Energy Performance, OMNEGY est une société de conseil en achat d'énergie et économie d'énergie accompagnant les entrepr...",
-    "salary": "",
-    "date": "2026-08-30T02:42:53Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "score": 70,
     "is_new": false
   },
   {
@@ -304,20 +230,6 @@
     "is_new": false
   },
   {
-    "id": "5861226980",
-    "title": "Conseiller Transition énergétique et écologique en santé (CTEES)-AP-HP GHU Nord F/H",
-    "company": "Ap-Hp",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5861226980?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Informations générales Entité de rattachement du publieur Situé à Paris (10è arrondissement), l'hôpital Lariboisière Fernand-Widal est un hôpital de p...",
-    "salary": "",
-    "date": "2026-08-29T17:22:55Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
     "id": "5858135683",
     "title": "Ingénieur d'études réseaux de chaleur - Paris",
     "company": "METIGA",
@@ -329,6 +241,20 @@
     "source": "Adzuna",
     "borderline": false,
     "score": 70,
+    "is_new": false
+  },
+  {
+    "id": "5858135681",
+    "title": "Chef de projet réseaux de chaleur",
+    "company": "METIGA",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5858135681?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Au sein d'un bureau d'études reconnu sur le marché du conseil et de l'ingénierie dans le domaine de l'environnement participant activement à la transi...",
+    "salary": "",
+    "date": "2026-08-27T12:37:55Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 75,
     "is_new": false
   },
   {
@@ -382,61 +308,11 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-mission-mon-accompagnateur-r%C3%A9nov-mar-h-f-at-anah-4446613441",
-    "title": "Chargé(e) de mission Mon Accompagnateur Rénov' (MAR) H/F",
-    "company": "Anah",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-mission-mon-accompagnateur-r%C3%A9nov-mar-h-f-at-anah-4446613441",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 80,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-transition-environnementale-et-planification-territoriale-paris-at-scet-groupe-scet-htc-4423140783",
-    "title": "Chef.fe de projet Transition environnementale et Planification territoriale - Paris",
-    "company": "SCET | Groupe SCET HTC",
-    "location": "Ville de Paris",
-    "url": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-transition-environnementale-et-planification-territoriale-paris-at-scet-groupe-scet-htc-4423140783",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "5855269397",
-    "title": "Responsable Energy Management System (EMS) H/F",
-    "company": "GROUPE IDEC E.N.R",
-    "location": "8ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/details/5855269397?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Dans le cadre du développement de ses activités, GROUPE IDEC E.N.R., filiale du GROUPE IDEC spécialisée dans la performance énergétique, la décarbonat...",
-    "salary": "50 k€ – 70 k€",
-    "date": "2026-08-25T12:39:51Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/public-affairs-policy-officer-m-f-at-adryada-4459687603",
     "title": "PUBLIC AFFAIRS/ POLICY OFFICER (M/F)",
     "company": "aDryada",
     "location": "Paris",
     "url": "https://fr.linkedin.com/jobs/view/public-affairs-policy-officer-m-f-at-adryada-4459687603",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-durabilit%C3%A9-at-jlb-expertises-4460366041",
-    "title": "Chargé de mission durabilité",
-    "company": "JLB Expertises",
-    "location": "Marseille",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-durabilit%C3%A9-at-jlb-expertises-4460366041",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
@@ -456,6 +332,30 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-transition-environnementale-et-planification-territoriale-paris-at-scet-groupe-scet-htc-4423140783",
+    "title": "Chef.fe de projet Transition environnementale et Planification territoriale - Paris",
+    "company": "SCET | Groupe SCET HTC",
+    "location": "Ville de Paris",
+    "url": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-transition-environnementale-et-planification-territoriale-paris-at-scet-groupe-scet-htc-4423140783",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
+    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-thematique-economie-circulaire-f-h_4772.aspx",
+    "title": "VSC - Chargé.e de mission thématique Economie Circulaire F/H",
+    "company": "ADEME",
+    "location": "France",
+    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-thematique-economie-circulaire-f-h_4772.aspx",
+    "description": "",
+    "source": "ADEME",
+    "borderline": false,
+    "score": 85,
+    "is_new": false
+  },
+  {
     "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-economie-circulaire-f-h_4743.aspx",
     "title": "VSC - Chargé.e de mission - Economie circulaire F/H",
     "company": "ADEME",
@@ -465,18 +365,6 @@
     "source": "ADEME",
     "borderline": false,
     "score": 85,
-    "is_new": false
-  },
-  {
-    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-systeme-electrique-et-electricte-renouvelables-f-h_4842.aspx",
-    "title": "Chargé.e de mission système électrique et électricté renouvelables F/H",
-    "company": "ADEME",
-    "location": "France",
-    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-systeme-electrique-et-electricte-renouvelables-f-h_4842.aspx",
-    "description": "",
-    "source": "ADEME",
-    "borderline": false,
-    "score": 75,
     "is_new": false
   },
   {
@@ -529,29 +417,16 @@
     "is_new": false
   },
   {
-    "id": "5861721793",
-    "title": "Account Manager H/F",
+    "id": "5832356633",
+    "title": "Account Manager",
     "company": "Deepki",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/land/ad/5861721793?se=NBv2beql8RG2srOgge7pvg&utm_medium=api&utm_source=ae8a5ffa&v=44615C8FFD8F77CD627950A82CCBEA051CAC4F5B",
+    "location": "11ème Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/details/5832356633?utm_medium=api&utm_source=ae8a5ffa",
     "description": "About Deepki Founded in 2014, Deepki is the most trusted sustainability SaaS solution for sustainability in the real estate sector. Its comprehensive ...",
     "source": "Adzuna",
     "company_watch": true,
     "borderline": false,
-    "score": 80,
-    "is_new": false
-  },
-  {
-    "id": "5858767984",
-    "title": "Data Scientist - CDI",
-    "company": "Descartes Underwriting",
-    "location": "17ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/details/5858767984?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "ABOUT DESCARTES UNDERWRITING Join Descartes and contribute to our mission: Building Resilience in a World at Risk. Descartes is a corporate insurance ...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "borderline": false,
-    "score": 95,
+    "score": 85,
     "is_new": false
   },
   {
@@ -607,18 +482,6 @@
     "is_new": false
   },
   {
-    "id": "https://jobs.makesense.org/fr/jobs/cpme-sud-chargee-de-mission-adaptation-au-changement-climatique-hf-7tR5ijve36KeBXzsFnlB?source=search",
-    "title": "Chargé·e de mission Adaptation au Changement Climatique (H/F)",
-    "company": "CPME SUD",
-    "location": "Marseille",
-    "url": "https://jobs.makesense.org/fr/jobs/cpme-sud-chargee-de-mission-adaptation-au-changement-climatique-hf-7tR5ijve36KeBXzsFnlB?source=search",
-    "description": "",
-    "source": "JTMS",
-    "borderline": false,
-    "score": 95,
-    "is_new": false
-  },
-  {
     "id": "75807421",
     "title": "Call for Experts: Climatebase Fellowship",
     "company": "Climatebase",
@@ -630,20 +493,6 @@
     "source": "Remote EU",
     "borderline": false,
     "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "179269160W",
-    "title": "Business Manager Nantes F/H",
-    "company": "PMEJOB",
-    "location": "Nantes - 44",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179269160W",
-    "description": "Notre client, un cabinet de conseil IT fondé en 2021 et déjà bien implanté à Bordeaux, Toulouse et Lyon (140 consultants) recherche son nouveau Business Manager pour accompagner le Directeur D'agence ...",
-    "salary": "50 - 70 k€ brut annuel",
-    "date": "2026-08-17T00:40:42.000+0000",
-    "source": "APEC",
-    "borderline": true,
-    "score": 50,
     "is_new": false
   },
   {
@@ -840,6 +689,20 @@
     "source": "APEC",
     "borderline": true,
     "score": 70,
+    "is_new": false
+  },
+  {
+    "id": "179300446W",
+    "title": "Conseiller en transition écologique - Plan de mobilité F/H",
+    "company": "SERVICES CENTRAUX DG",
+    "location": "Cergy - 95",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179300446W",
+    "description": "Au sein de la CCI du Val d'Oise, le poste de conseiller en transition écologique F/H a pour mission d'informer et d'accompagner les TPE, PME, commerces du Val d'Oise dans la mise en place d'approches ...",
+    "salary": "35 - 37 k€ brut annuel",
+    "date": "2026-08-31T13:55:32.000+0000",
+    "source": "APEC",
+    "borderline": false,
+    "score": 75,
     "is_new": false
   },
   {
@@ -1145,11 +1008,135 @@
     "is_new": false
   },
   {
-    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-thematique-economie-circulaire-f-h_4772.aspx",
-    "title": "VSC - Chargé.e de mission thématique Economie Circulaire F/H",
+    "id": "https://fr.linkedin.com/jobs/view/responsable-technique-f-h-at-veolia-energie-performance-4459935114",
+    "title": "Responsable technique F/H",
+    "company": "Veolia | Energie Performance",
+    "location": "Marseille",
+    "url": "https://fr.linkedin.com/jobs/view/responsable-technique-f-h-at-veolia-energie-performance-4459935114",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 85,
+    "is_new": true
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/senior-analyst-energy-paris-at-compass-lexecon-4461790660",
+    "title": "Senior Analyst (Energy) | Paris",
+    "company": "Compass Lexecon",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/senior-analyst-energy-paris-at-compass-lexecon-4461790660",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 80,
+    "is_new": true
+  },
+  {
+    "id": "5865346039",
+    "title": "Senior Product Owner – Finance Systems (H/F)",
+    "company": "Descartes Underwriting",
+    "location": "17ème Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/details/5865346039?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "A PROPOS DE NOUS Rejoignez Descartes et contribuez à notre mission : Building Resilience in a World at Risk . Descartes est un groupe d’assurance pour...",
+    "salary": "",
+    "date": "2026-09-02T00:00:40Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 95,
+    "is_new": true
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-%C2%AB-int%C3%A9gration-europ%C3%A9enne-des-march%C3%A9s-de-l%E2%80%99%C3%A9lectricit%C3%A9-%C2%BB-h-f-at-cre-commission-de-r%C3%A9gulation-de-l-%C3%A9nergie-4462030331",
+    "title": "Chargé de mission « intégration européenne des marchés de l’électricité » H/F",
+    "company": "Commission de régulation de l'énergie",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-%C2%AB-int%C3%A9gration-europ%C3%A9enne-des-march%C3%A9s-de-l%E2%80%99%C3%A9lectricit%C3%A9-%C2%BB-h-f-at-cre-commission-de-r%C3%A9gulation-de-l-%C3%A9nergie-4462030331",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 85,
+    "is_new": true
+  },
+  {
+    "id": "6498808",
+    "title": "chargé de transition ecologique, santé environnementale, adaptation changement H/F - EC159831",
+    "company": "MAIRIE DE CROISSY SUR SEINE",
+    "location": "78 - Croissy-sur-Seine",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6498808",
+    "description": "chargé de transition ecologique, santé environnementale, adaptation changement H/F - EC159831 Depuis de nombreuses années, la commune de Croissy-sur-S...",
+    "source": "France Travail",
+    "borderline": false,
+    "score": 70,
+    "is_new": true
+  },
+  {
+    "id": "5864422993",
+    "title": "Ingénieur agronome F/H",
+    "company": "METIGA",
+    "location": "Allauch, Marseille",
+    "url": "https://www.adzuna.fr/details/5864422993?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "En collaboration avec l'équipes internes et les parties prenantes externes (agriculteurs, coopératives, bureaux d'études, administrations…), vous sere...",
+    "salary": "35 k€",
+    "date": "2026-09-01T12:50:05Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 85,
+    "is_new": false
+  },
+  {
+    "id": "213FBZN",
+    "title": "Ingénieur  Expert en décarbonation des procédés industriels (H/F)",
+    "company": "YNERGIE",
+    "location": "75 - PARIS 09",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/213FBZN",
+    "description": "Depuis 2016, Ynergie accompagne les professionnels et les particuliers dans la réduction de leur consommation d'énergie et la décarbonation des sites ...",
+    "source": "France Travail",
+    "borderline": false,
+    "score": 95,
+    "is_new": true
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/charge-de-mission-structuration-de-filieres-et-restauration-collective-h-f-at-m%C3%A9tropole-du-grand-paris-4462041474",
+    "title": "CHARGE DE MISSION STRUCTURATION DE FILIERES ET RESTAURATION COLLECTIVE (H/F)",
+    "company": "Métropole du Grand Paris",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/charge-de-mission-structuration-de-filieres-et-restauration-collective-h-f-at-m%C3%A9tropole-du-grand-paris-4462041474",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
+    "is_new": true
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-d%E2%80%99%C3%A9tudes-environnement-f-h-at-ocely-4460375117",
+    "title": "Chargé d’études environnement F/H",
+    "company": "OCELY",
+    "location": "Ville de Paris",
+    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-d%E2%80%99%C3%A9tudes-environnement-f-h-at-ocely-4460375117",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 70,
+    "is_new": true
+  },
+  {
+    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-systeme-electrique-et-electricite-renouvelables-f-h_4842.aspx",
+    "title": "Chargé.e de mission système électrique et électricité renouvelables F/H",
     "company": "ADEME",
     "location": "France",
-    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-thematique-economie-circulaire-f-h_4772.aspx",
+    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-systeme-electrique-et-electricite-renouvelables-f-h_4842.aspx",
+    "description": "",
+    "source": "ADEME",
+    "borderline": false,
+    "score": 80,
+    "is_new": true
+  },
+  {
+    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-ingenieur-e-developpement-act-f-h_4843.aspx",
+    "title": "Ingénieur.e développement ACT F/H",
+    "company": "ADEME",
+    "location": "France",
+    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-ingenieur-e-developpement-act-f-h_4843.aspx",
     "description": "",
     "source": "ADEME",
     "borderline": false,
@@ -1157,17 +1144,43 @@
     "is_new": true
   },
   {
-    "id": "179300446W",
-    "title": "Conseiller en transition écologique - Plan de mobilité F/H",
-    "company": "SERVICES CENTRAUX DG",
-    "location": "Cergy - 95",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179300446W",
-    "description": "Au sein de la CCI du Val d'Oise, le poste de conseiller en transition écologique F/H a pour mission d'informer et d'accompagner les TPE, PME, commerces du Val d'Oise dans la mise en place d'approches ...",
-    "salary": "35 - 37 k€ brut annuel",
-    "date": "2026-08-31T13:55:32.000+0000",
+    "id": "5858767984",
+    "title": "Data Scientist (H/F) - CDI",
+    "company": "Descartes Underwriting",
+    "location": "17ème Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/details/5858767984?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "ABOUT DESCARTES UNDERWRITING Join Descartes and contribute to our mission: Building Resilience in a World at Risk. Descartes is a corporate insurance ...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": false,
+    "score": 90,
+    "is_new": true
+  },
+  {
+    "id": "5839124541",
+    "title": "CDD Appui a Maitrise d'Ouvrage H/F",
+    "company": "Agence Française de Développement AFD",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5839124541?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "CDD APPUI A MAITRISE D'OUVRAGE F/H Quel sera votre rôle ? Assister les équipes d'utilisateurs au sein d'ISR dans la conduite des projets d'évolution d...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": false,
+    "score": 70,
+    "is_new": true
+  },
+  {
+    "id": "179301892W",
+    "title": "Chargé.de mission ' Réglementation H2 et développement H2 naturel ' F/H",
+    "company": "ADEME",
+    "location": "Angers - 49",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/179301892W",
+    "description": "Aussi, dans le cadre de la stratégie de déploiement de l'hydrogène et du programme de financement France 2030, nous recherchons un Chargé.e de mission Réglementation Hydrogène et Développement Hydrogè...",
+    "salary": "A négocier",
+    "date": "2026-09-02T07:50:00.000+0000",
     "source": "APEC",
     "borderline": false,
-    "score": 75,
-    "is_new": true
+    "score": 85,
+    "is_new": false
   }
 ]
