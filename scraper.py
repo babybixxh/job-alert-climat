@@ -2372,29 +2372,72 @@ def section_html(title, emoji, jobs, color, sink=None):
     return html
 
 
-def collapsed_others_html(sink):
-    """Section repliable regroupant les offres non mises en avant (déjà vues,
-    score < seuil, ou au-delà du plafond de section). Rendu compact : une ligne
-    par offre, triées par score décroissant."""
-    if not sink:
-        return ""
+def _folded_rows_html(sink, limit=None):
+    """Rend les offres repliées en lignes compactes (triées par score décroissant)."""
     items = sorted(sink, key=lambda t: t[1].get("score", DEFAULT_KEPT_SCORE), reverse=True)
+    if limit is not None:
+        items = items[:limit]
     rows = ""
-    for sect, j in items[:80]:
+    for sect, j in items:
         sc = j.get("score", DEFAULT_KEPT_SCORE)
         seen = "" if j.get("is_new") else ' <span style="color:#b6bdb8">· déjà vu</span>'
-        rows += (f'<div style="padding:7px 0;border-bottom:1px solid #f0f2f0;font-size:13px;line-height:1.4">'
+        rows += (f'<div style="padding:9px 0;border-bottom:1px solid #f0f2f0;font-size:14px;line-height:1.45">'
                  f'{_pill(str(sc), _score_color(sc))}'
                  f'<a href="{j["url"]}" style="color:#16281f;text-decoration:none;font-weight:600">{j["title"]}</a> '
                  f'<span style="color:#8a938c">— {j["company"]} · {sect}{seen}</span></div>')
-    extra = f'<div style="padding:8px 0;font-size:12px;color:#96a09a">… et {len(sink) - 80} autres</div>' if len(sink) > 80 else ""
+    return rows
+
+
+def write_autres_page(sink, path="autres.html"):
+    """Génère une page web autonome (publiée via GitHub Pages) listant toutes
+    les offres repliées. Gmail n'affiche pas les menus déroulants interactifs :
+    on déporte donc ces offres sur une vraie page, ouverte via un bouton."""
+    today = datetime.now().strftime("%d/%m/%Y")
+    rows = _folded_rows_html(sink)
+    html = f"""<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Autres offres — {today}</title>
+<style>
+  body {{ margin:0; background:#eef1ee; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; color:#16281f; }}
+  .wrap {{ max-width:720px; margin:0 auto; padding:24px 16px 60px; }}
+  .card {{ background:#fff; border-radius:14px; border:1px solid #e3e8e4; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,.05); }}
+  .head {{ padding:22px 24px; background:linear-gradient(135deg,#2d6a4f,#1b4332); color:#fff; }}
+  .head h1 {{ margin:0; font-size:20px; }}
+  .head p {{ margin:6px 0 0; font-size:13px; opacity:.85; }}
+  .body {{ padding:8px 24px 24px; }}
+  a.job {{ }}
+</style></head>
+<body><div class="wrap"><div class="card">
+  <div class="head">
+    <h1>📂 {len(sink)} autres offres</h1>
+    <p>Déjà vues, scores plus bas, ou au-delà du top {SECTION_MAX} par section · {today}</p>
+  </div>
+  <div class="body">{rows}</div>
+</div></div></body></html>"""
+    try:
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(html)
+    except Exception as e:
+        print(f"Écriture {path} échouée : {e}")
+    return html
+
+
+def collapsed_others_html(sink, autres_url):
+    """Bouton vers la page web des offres repliées (Gmail ne sait pas ouvrir un
+    vrai menu déroulant : on renvoie donc vers une page publiée sur GitHub
+    Pages, comme le bouton feedback)."""
+    if not sink:
+        return ""
     return f"""
-    <details style="margin-top:24px;padding:14px 16px;background:#fafbfa;border-radius:10px;border:1px solid #e8ece9">
-        <summary style="cursor:pointer;font-size:14px;color:#54615a;font-weight:600">
-            📂 Voir les {len(sink)} autres offres (déjà vues, scores plus bas, ou au-delà du top {SECTION_MAX})
-        </summary>
-        <div style="margin-top:10px">{rows}{extra}</div>
-    </details>
+    <div style="margin-top:24px;padding:16px 18px;background:#fafbfa;border-radius:12px;border:1px solid #e8ece9;text-align:center">
+        <div style="font-size:13px;color:#54615a;margin-bottom:11px">
+            📂 {len(sink)} autres offres (déjà vues, scores plus bas, ou au-delà du top {SECTION_MAX})
+        </div>
+        <a href="{autres_url}" style="display:inline-block;padding:10px 22px;background:#40655a;color:#fff;border-radius:8px;text-decoration:none;font-size:13px;font-weight:600">
+            Voir les {len(sink)} autres offres →
+        </a>
+    </div>
     """
 
 
@@ -2539,7 +2582,10 @@ def build_email(jobs, feedback_url, excluded_log=None, disappeared=None, health_
     body += section_html("Télétravail / Remote", "🏠", remote_jobs, "#1f7a99", sink)
     body += section_html(f"Salaire élevé (≥ {HIGH_SALARY_K} k€)", "💰", high_sal, "#7a5b00", sink)
     body += section_html("Autres — Paris &amp; France", "🔴", autres, "#993c1d", sink)
-    body += collapsed_others_html(sink)
+    if sink:
+        write_autres_page(sink)
+    autres_url = feedback_url.replace("feedback.html", "autres.html")
+    body += collapsed_others_html(sink, autres_url)
     body += disappeared_section_html(disappeared or [])
     body += excluded_section_html(excluded_log or [])
     body += health_footer_html(health_alerts or [])
