@@ -181,6 +181,7 @@ WTTJ_COMPANIES = {
     "i-care": "I Care",
     "carbon-cutter": "Carbon Cutter",
     "adaptation-s": "adaptation/s",
+    "blunomy": "Blunomy",
     "cci-france": "CCI France",
     # Plateformes de comptabilité carbone (SaaS)
     "sami": "Sami",
