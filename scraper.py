@@ -364,6 +364,13 @@ WTTJ_COMPANIES = {
     "meteo-france": "Météo-France",
 }
 
+# Employeurs recherchés comme les entreprises suivies, MAIS sans le
+# laissez-passer « entreprise ciblée » : leurs offres passent par le filtre IA
+# complet (et n'atterrissent pas dans « Entreprises ciblées »). Utile pour un
+# employeur public dont on ne veut QUE les postes réellement climat/risques et
+# pas les rôles de gouvernance / dialogue de gestion administratif.
+WATCH_AI_FILTERED = {"dreal-paca", "dreal"}
+
 # Types de contrat WTTJ à écarter (on veut CDI/CDD, pas stage/alternance/VIE).
 WTTJ_CONTRACT_EXCLUDE = ("intern", "apprentice", "apprentiss", "stage", "vie", "vix")
 
@@ -784,7 +791,7 @@ def search_adzuna_companies():
                     "url": job.get("redirect_url", ""),
                     "description": description[:150] + "..." if description else "",
                     "source": "Adzuna",
-                    "company_watch": True,
+                    "company_watch": slug not in WATCH_AI_FILTERED,
                 })
         except Exception as e:
             print(f"  EXCEPTION Adzuna entreprise '{label}': {e}")
