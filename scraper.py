@@ -355,6 +355,8 @@ WTTJ_COMPANIES = {
     # France — organismes publics & agences (complément ; ADEME a sa propre source)
     "france-strategie": "France Stratégie",
     "cerema": "CEREMA",
+    "dreal-paca": "DREAL PACA",
+    "dreal": "DREAL",
     "caisse-des-depots": "Caisse des Dépôts",
     "banque-de-france": "Banque de France",
     "terra-nova": "Terra Nova",
