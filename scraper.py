@@ -1203,7 +1203,7 @@ def search_apec():
                     "title": clean_text(title),
                     "company": job.get("nomCommercial", "N/A"),
                     "location": job.get("lieuTexte", "France"),
-                    "url": f"https://www.apec.fr/candidat/recherche-emploi.html/detail-offre/{job_id}",
+                    "url": f"https://www.apec.fr/candidat/recherche-emploi.html/emploi/detail-offre/{job_id}",
                     "description": (description[:200] + "...") if description else "",
                     "salary": job.get("salaireTexte", ""),
                     "date": job.get("datePublication", ""),
