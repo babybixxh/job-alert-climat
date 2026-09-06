@@ -1,17 +1,5 @@
 [
   {
-    "id": "https://fr.linkedin.com/jobs/view/environmental-and-social-consultant-managing-consultant-for-sustainable-finance-at-ramboll-4462844467",
-    "title": "Environmental and Social Consultant/Managing Consultant for Sustainable Finance",
-    "company": "Ramboll",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/environmental-and-social-consultant-managing-consultant-for-sustainable-finance-at-ramboll-4462844467",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 80,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/expert-senior-adaptation-au-changement-climatique-et-r%C3%A9silience-urbaine-h-f-at-suez-4461042952",
     "title": "Expert senior Adaptation au changement climatique et résilience urbaine - H/F",
     "company": "SUEZ",
@@ -21,6 +9,18 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 90,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/environmental-and-social-consultant-managing-consultant-for-sustainable-finance-at-ramboll-4462849386",
+    "title": "Environmental and Social Consultant/Managing Consultant for Sustainable Finance",
+    "company": "Ramboll",
+    "location": "Aix-en-Provence",
+    "url": "https://fr.linkedin.com/jobs/view/environmental-and-social-consultant-managing-consultant-for-sustainable-finance-at-ramboll-4462849386",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 80,
     "is_new": false
   },
   {
@@ -36,18 +36,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/programme-management-officer-at-un-environment-programme-4461054893",
-    "title": "PROGRAMME MANAGEMENT OFFICER",
-    "company": "UN Environment Programme",
-    "location": "Ville de Paris",
-    "url": "https://fr.linkedin.com/jobs/view/programme-management-officer-at-un-environment-programme-4461054893",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 95,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/senior-analyst-energy-paris-at-compass-lexecon-4461790660",
     "title": "Senior Analyst (Energy) | Paris",
     "company": "Compass Lexecon",
@@ -57,18 +45,6 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 80,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-environnement-at-mairie-de-la-croix-valmer-4462675283",
-    "title": "Chargé de mission Environnement",
-    "company": "Mairie de La Croix Valmer",
-    "location": "La Croix-Valmer",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-environnement-at-mairie-de-la-croix-valmer-4462675283",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 70,
     "is_new": false
   },
   {
@@ -98,6 +74,18 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/programme-management-officer-at-un-environment-programme-4461054893",
+    "title": "PROGRAMME MANAGEMENT OFFICER",
+    "company": "UN Environment Programme",
+    "location": "Ville de Paris",
+    "url": "https://fr.linkedin.com/jobs/view/programme-management-officer-at-un-environment-programme-4461054893",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 95,
+    "is_new": false
+  },
+  {
     "id": "211XZCW",
     "title": "Energy Data Analyst (H/F)",
     "company": "EFFY",
@@ -114,7 +102,7 @@
     "title": "CHARGE DE MISSION DEVELOPPEMENT DURABLE",
     "company": "Ministère des Armées",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/land/ad/5866843646?se=ag3DBNOp8RGdbaSyAYRHDQ&utm_medium=api&utm_source=ae8a5ffa&v=72755320889EAC099B48EEBDE9F35F974890CD4D",
+    "url": "https://www.adzuna.fr/land/ad/5866843646?se=gjE-bOap8RG5kZPWkOM-fg&utm_medium=api&utm_source=ae8a5ffa&v=72755320889EAC099B48EEBDE9F35F974890CD4D",
     "description": "Rattaché(e) à la cheffe de la MTEEDD, le/la chargé(e) de mission développement durable l'assiste dans le pilotage de la stratégie « Défense Durable » ...",
     "salary": "",
     "date": "2026-09-02T12:02:01Z",
