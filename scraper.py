@@ -65,6 +65,8 @@ COMPANY_EXCLUSIONS = ["eqosphere"]
 EXCLUSIONS = [
     "stage", "alternance", "alternant", "alternan", "apprentissage", "apprenti",
     "intern", "internship", "junior", "en alternance", "en stage", "contrat pro",
+    "service civique", "volontariat", "doctorat", "doctorate", "phd",
+    "cbam", "vsme", "commissaire aux comptes",
     "contrat d'apprentissage", "bac+2", "bac+3", "débutant accepté",
     "travaux", "moe", "chantier", "réhabilitation", "urbaniste",
     "collecte", "nettoiement", "assainissement", "exploitation eau",
@@ -363,6 +365,21 @@ WTTJ_COMPANIES = {
     "terra-nova": "Terra Nova",
     "shift-project": "The Shift Project",
     "meteo-france": "Météo-France",
+    # Méditerranée — institutions Tier 1 (petites structures, publient rarement
+    # et les offres partent vite : à surveiller à chaque run)
+    "plan-bleu": "Plan Bleu",
+    "medecc": "MedECC",
+    "femise": "FEMISE",
+    "avitem": "AVITEM",
+    "institut-mediterranee": "Institut de la Méditerranée",
+    # Adaptation / conseil (Tier 2 privé)
+    "axionable": "Axionable",
+    # Établissements publics — recherche & environnement (via filtre IA plus bas)
+    "agence-eau-rmc": "Agence de l'eau Rhône Méditerranée Corse",
+    "ofb": "Office Français de la Biodiversité",
+    "brgm": "BRGM",
+    "region-sud": "Région Sud",
+    "metropole-amp": "Métropole Aix-Marseille-Provence",
 }
 
 # Employeurs recherchés comme les entreprises suivies, MAIS sans le
@@ -370,7 +387,8 @@ WTTJ_COMPANIES = {
 # complet (et n'atterrissent pas dans « Entreprises ciblées »). Utile pour un
 # employeur public dont on ne veut QUE les postes réellement climat/risques et
 # pas les rôles de gouvernance / dialogue de gestion administratif.
-WATCH_AI_FILTERED = {"dreal-paca", "dreal"}
+WATCH_AI_FILTERED = {"dreal-paca", "dreal", "agence-eau-rmc", "ofb", "brgm",
+                     "region-sud", "metropole-amp"}
 
 # Types de contrat WTTJ à écarter (on veut CDI/CDD, pas stage/alternance/VIE).
 WTTJ_CONTRACT_EXCLUDE = ("intern", "apprentice", "apprentiss", "stage", "vie", "vix")
