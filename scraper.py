@@ -2141,6 +2141,56 @@ def search_wttj():
 
 
 MISTRAL_BATCH_SIZE = 25
+MISTRAL_MAX_RETRIES = 5      # tentatives par lot avant abandon
+MISTRAL_PACE_SECONDS = 1.2   # pause entre deux lots (lissage du débit)
+
+
+def _mistral_chat(mistral_key, prompt):
+    """Appelle l'API chat Mistral avec backoff sur rate-limit (429) et erreurs
+    serveur (5xx). Renvoie le contenu texte de la réponse, ou lève après
+    MISTRAL_MAX_RETRIES échecs. Cause du bug vu en prod : sur gros volume,
+    l'API renvoyait 429 sans clé 'choices' → KeyError → lot entier écarté."""
+    last_err = None
+    for attempt in range(MISTRAL_MAX_RETRIES):
+        try:
+            r = requests.post(
+                "https://api.mistral.ai/v1/chat/completions",
+                headers={
+                    "Authorization": f"Bearer {mistral_key}",
+                    "Content-Type": "application/json",
+                },
+                json={
+                    "model": "mistral-small-latest",
+                    "max_tokens": 4000,
+                    "messages": [{"role": "user", "content": prompt}],
+                    "temperature": 0,
+                },
+                timeout=45,
+            )
+            if r.status_code == 429 or r.status_code >= 500:
+                # Respecte Retry-After si fourni, sinon backoff exponentiel.
+                retry_after = r.headers.get("Retry-After")
+                wait = float(retry_after) if retry_after and retry_after.isdigit() else 2 ** attempt
+                print(f"  Mistral HTTP {r.status_code} → nouvelle tentative dans {wait:.0f}s "
+                      f"({attempt + 1}/{MISTRAL_MAX_RETRIES})")
+                time.sleep(min(wait, 30))
+                last_err = f"HTTP {r.status_code}"
+                continue
+            data = r.json()
+            choices = data.get("choices")
+            if not choices:
+                # Réponse d'erreur sans 'choices' (quota, payload rejeté…).
+                msg = data.get("message") or data.get("error") or data
+                last_err = f"réponse sans 'choices' : {str(msg)[:120]}"
+                print(f"  Mistral {last_err} → nouvelle tentative ({attempt + 1}/{MISTRAL_MAX_RETRIES})")
+                time.sleep(2 ** attempt)
+                continue
+            return choices[0]["message"]["content"]
+        except Exception as e:
+            last_err = str(e)
+            print(f"  Mistral exception ({attempt + 1}/{MISTRAL_MAX_RETRIES}): {e}")
+            time.sleep(2 ** attempt)
+    raise RuntimeError(f"Mistral indisponible après {MISTRAL_MAX_RETRIES} tentatives ({last_err})")
 
 
 def _filter_jobs_batch(jobs, reasons_text, verdicts=None):
@@ -2236,21 +2286,8 @@ Réponds UNIQUEMENT avec un JSON (sans texte avant/après, sans backticks).
 Chaque objet : index, keep (bool), borderline (bool), score (int 0-100), reason.
 [{{"index": 0, "keep": true, "borderline": false, "score": 90, "reason": "consultant climat senior, correspond au profil"}}, ...]"""
 
-    r = requests.post(
-        "https://api.mistral.ai/v1/chat/completions",
-        headers={
-            "Authorization": f"Bearer {mistral_key}",
-            "Content-Type": "application/json",
-        },
-        json={
-            "model": "mistral-small-latest",
-            "max_tokens": 4000,
-            "messages": [{"role": "user", "content": prompt}],
-            "temperature": 0,
-        },
-        timeout=30,
-    )
-    text = r.json()["choices"][0]["message"]["content"].strip()
+    content = _mistral_chat(mistral_key, prompt)
+    text = content.strip()
     text = re.sub(r"```json|```", "", text).strip()
     # Mistral ajoute parfois du texte avant/après le tableau JSON (provoque
     # « Extra data »/« Unterminated string ») : on isole le tableau lui-même.
@@ -2329,11 +2366,16 @@ def filter_jobs_with_ai(jobs):
     # tronquer sa réponse JSON (cause vue en prod : "Unterminated string").
     for start in range(0, len(to_evaluate), MISTRAL_BATCH_SIZE):
         batch = to_evaluate[start:start + MISTRAL_BATCH_SIZE]
+        if start > 0:
+            time.sleep(MISTRAL_PACE_SECONDS)  # lissage du débit entre lots
         try:
             kept += _filter_jobs_batch(batch, reasons_text, verdicts)
         except Exception as e:
+            # Lot non jugé : on ne l'écrit PAS dans le cache des verdicts, donc
+            # il sera réévalué au prochain run (pas de rejet définitif sur une
+            # simple panne d'API).
             print(f"  EXCEPTION Mistral (lot {start}-{start+len(batch)}): {e}")
-            print("  → lot écarté par sécurité (pas de filtre fiable = pas d'envoi non filtré)")
+            print("  → lot écarté par sécurité (réévalué au prochain run)")
 
     # On borne le cache (dict ordonné par insertion : on garde les plus récents).
     if len(verdicts) > AI_VERDICTS_MAX:
