@@ -136,9 +136,7 @@ APPELS_SOURCES = [
     ("Plan Bleu", "https://planbleu.org/offre-emploi/"),
     ("Plan Bleu", "https://planbleu.org/actualites/"),
     ("MedECC", "https://www.medecc.org/"),
-    ("MedECC", "https://www.medecc.org/category/news/"),
     ("FEMISE", "https://www.femise.org/"),
-    ("FEMISE", "https://www.femise.org/category/appels-a-projets/"),
 ]
 # Termes signalant un appel (dans le texte d'un lien ou d'un titre).
 APPEL_TERMS = [
