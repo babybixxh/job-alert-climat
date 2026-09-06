@@ -127,6 +127,31 @@ AI_PROMPT_VERSION = 10
 SOURCE_HEALTH_FILE = "source_health.json"
 SOURCE_HEALTH_ALERT = 3  # alerte à partir de 3 jours d'affilée à zéro
 
+# Appels à contribution / consultations / TdR des institutions Méditerranée
+# (Plan Bleu, MedECC, FEMISE…). Canal distinct des offres d'emploi : souvent
+# une porte d'entrée directe dans la production de référence (co-signer un
+# rapport, mission courte). On suit les URL déjà vues pour ne pas répéter.
+APPELS_SEEN_FILE = "appels_vus.json"
+APPELS_SOURCES = [
+    ("Plan Bleu", "https://planbleu.org/offre-emploi/"),
+    ("Plan Bleu", "https://planbleu.org/actualites/"),
+    ("MedECC", "https://www.medecc.org/"),
+    ("MedECC", "https://www.medecc.org/category/news/"),
+    ("FEMISE", "https://www.femise.org/"),
+    ("FEMISE", "https://www.femise.org/category/appels-a-projets/"),
+]
+# Termes signalant un appel (dans le texte d'un lien ou d'un titre).
+APPEL_TERMS = [
+    "appel à contribution", "appel a contribution", "appel à contributions",
+    "appel à consultant", "appel a consultant", "appel à consultation",
+    "appel à manifestation", "manifestation d'intérêt", "manifestation d’intérêt",
+    "appel d'offres", "appel d’offres", "appel à projets", "appel a projets",
+    "termes de référence", "termes de reference", "terms of reference",
+    "call for contribution", "call for contributions", "call for proposal",
+    "call for proposals", "call for expression", "expression of interest",
+    "call for consultant", "call for tender", "consultation",
+]
+
 # Score IA en dessous duquel une offre n'est PAS poussée en notif temps réel.
 PRIORITY_SCORE = 85
 # À Paris (hors entreprises suivies), score IA minimal pour retenir une offre :
@@ -1029,6 +1054,55 @@ def search_greenjob(keyword):
     except Exception as e:
         print(f"  EXCEPTION Greenjob.fr: {e}")
         return []
+
+
+def search_appels_contribution():
+    """Balaye les pages des institutions Méditerranée (Plan Bleu, MedECC,
+    FEMISE) à la recherche d'appels à contribution / consultations / TdR.
+    Générique : on ne connaît pas la structure exacte de chaque page (et elle
+    change), donc on ratisse tous les liens dont le texte contient un terme
+    d'appel. Renvoie des dicts {title, url, source} — canal distinct des
+    offres d'emploi (pas de filtrage IA : ce ne sont pas des postes)."""
+    from bs4 import BeautifulSoup
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+               "Accept-Language": "fr-FR,fr;q=0.9,en;q=0.8"}
+    appels = []
+    seen_urls = set()
+    for source, url in APPELS_SOURCES:
+        try:
+            r = requests.get(url, headers=headers, timeout=15)
+            if r.status_code != 200:
+                print(f"  Appels {source} ({url}) → HTTP {r.status_code}")
+                continue
+            soup = BeautifulSoup(r.text, "html.parser")
+            found = 0
+            for a in soup.find_all("a", href=True):
+                text = " ".join(a.get_text(" ", strip=True).split())
+                if len(text) < 8:
+                    continue
+                low = text.lower()
+                if not any(term in low for term in APPEL_TERMS):
+                    continue
+                href = a["href"]
+                if href.startswith("/"):
+                    base = "/".join(url.split("/")[:3])
+                    href = base + href
+                elif not href.startswith("http"):
+                    continue
+                if href in seen_urls:
+                    continue
+                seen_urls.add(href)
+                appels.append({
+                    "title": clean_text(text)[:160],
+                    "url": href,
+                    "source": source,
+                })
+                found += 1
+            print(f"  Appels {source} ({url}) → {found} appel(s)")
+        except Exception as e:
+            print(f"  EXCEPTION Appels {source} ({url}): {e}")
+    print(f"  Appels à contribution total → {len(appels)}")
+    return appels
 
 
 def search_ademe():
@@ -2487,6 +2561,27 @@ def collapsed_others_html(sink, autres_url):
     """
 
 
+def appels_section_html(appels):
+    """Section « Appels à contribution / consultations » (institutions
+    Méditerranée) — placée en tête du mail, canal distinct des offres."""
+    if not appels:
+        return ""
+    rows = ""
+    for a in appels[:20]:
+        new = (_pill("nouveau", "#0f8a4f") if a.get("is_new") else "")
+        rows += (f'<div style="padding:10px 0;border-bottom:1px solid #f0f2f0;font-size:14px;line-height:1.45">'
+                 f'{new}'
+                 f'<a href="{a["url"]}" style="color:#16281f;text-decoration:none;font-weight:600">{a["title"]}</a> '
+                 f'<span style="color:#8a938c">— {a["source"]}</span></div>')
+    return f"""
+    <div style="margin:6px 0 22px;padding:16px 18px;background:#eef6f1;border:1px solid #bfe0cd;border-radius:12px">
+        <div style="font-size:15px;font-weight:700;color:#155e42;margin-bottom:4px">📢 Appels à contribution / consultations</div>
+        <div style="font-size:12px;color:#4f6a5c;margin-bottom:10px">Institutions Méditerranée (Plan Bleu, MedECC, FEMISE) — porte d'entrée vers la production de référence</div>
+        {rows}
+    </div>
+    """
+
+
 def excluded_section_html(excluded_log):
     if not excluded_log:
         return ""
@@ -2555,7 +2650,9 @@ def health_footer_html(health_alerts):
     """
 
 
-def build_email(jobs, feedback_url, excluded_log=None, disappeared=None, health_alerts=None):
+def build_email(jobs, feedback_url, excluded_log=None, disappeared=None,
+                health_alerts=None, appels=None):
+    appels = appels or []
     today = datetime.now().strftime("%d/%m/%Y")
     watchlist = [j for j in jobs if j.get("company_watch")]
     geo_jobs = [j for j in jobs if not j.get("company_watch")]
@@ -2575,7 +2672,10 @@ def build_email(jobs, feedback_url, excluded_log=None, disappeared=None, health_
             <div style="font-size:20px;font-weight:700">🌱 Alerte emploi climat</div>
             <div style="font-size:13px;opacity:.9;margin-top:4px">{today}</div>
           </div>
-          <div style="padding:22px;color:#54615a;font-size:14px">Aucune nouvelle offre trouvée aujourd'hui. 🌤️</div>
+          <div style="padding:22px;color:#54615a;font-size:14px">
+            <div style="margin-bottom:14px">Aucune nouvelle offre trouvée aujourd'hui. 🌤️</div>
+            {appels_section_html(appels)}
+          </div>
         </div></body>
         """
 
@@ -2608,6 +2708,7 @@ def build_email(jobs, feedback_url, excluded_log=None, disappeared=None, health_
             👎 Signaler des offres non pertinentes
         </a>
     """
+    body += appels_section_html(appels)
 
     # Corps compact : seules les nouvelles offres bien notées (max SECTION_MAX
     # par section) sont mises en avant ; tout le reste va dans `sink` → section
@@ -2829,6 +2930,22 @@ if __name__ == "__main__":
         sources_count[j.get("source", "?")] = sources_count.get(j.get("source", "?"), 0) + 1
     print(f"Répartition par source (offres conservées) : {sources_count}")
 
-    html = build_email(jobs, feedback_url, EXCLUDED_LOG, disappeared, health_alerts)
+    # Appels à contribution / consultations (Méditerranée) : canal distinct,
+    # sans filtrage IA. On marque « nouveau » ceux jamais vus et on mémorise
+    # toutes les URL rencontrées pour ne pas les répéter d'une semaine sur l'autre.
+    try:
+        appels = search_appels_contribution()
+    except Exception as e:
+        print(f"  EXCEPTION appels à contribution : {e}")
+        appels = []
+    appels_seen = set(load_json(APPELS_SEEN_FILE, []))
+    for a in appels:
+        a["is_new"] = a["url"] not in appels_seen
+    # Nouveaux d'abord, puis par source, pour la lisibilité.
+    appels.sort(key=lambda a: (not a.get("is_new"), a["source"]))
+    save_json(APPELS_SEEN_FILE, list(appels_seen | {a["url"] for a in appels}))
+    print(f"Appels à contribution : {len(appels)} ({sum(1 for a in appels if a.get('is_new'))} nouveaux)")
+
+    html = build_email(jobs, feedback_url, EXCLUDED_LOG, disappeared, health_alerts, appels)
     send_email(html, len(jobs))
     send_priority_alert(jobs)
