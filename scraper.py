@@ -64,7 +64,7 @@ COMPANY_EXCLUSIONS = ["eqosphere"]
 
 EXCLUSIONS = [
     "stage", "alternance", "alternant", "alternan", "apprentissage", "apprenti",
-    "intern", "junior", "en alternance", "en stage", "contrat pro",
+    "intern", "internship", "junior", "en alternance", "en stage", "contrat pro",
     "contrat d'apprentissage", "bac+2", "bac+3", "débutant accepté",
     "travaux", "moe", "chantier", "réhabilitation", "urbaniste",
     "collecte", "nettoiement", "assainissement", "exploitation eau",
@@ -511,6 +511,24 @@ def get_exclusions():
     return base + rejected
 
 
+_EXCL_RE_CACHE = {}
+
+
+def title_has_exclusion(title, exclusions):
+    """Vrai si un terme d'exclusion apparaît dans le titre EN MOT ENTIER.
+    Le matching par sous-chaîne provoquait des faux positifs (« intern » dans
+    « International », « moe » dans « moelle »…) : on borne donc chaque terme
+    par des frontières de mot."""
+    text = (title or "").lower()
+    key = tuple(exclusions)
+    regex = _EXCL_RE_CACHE.get(key)
+    if regex is None:
+        pattern = "|".join(r"\b" + re.escape(e.lower()) + r"\b" for e in exclusions if e)
+        regex = re.compile(pattern) if pattern else re.compile(r"(?!)")
+        _EXCL_RE_CACHE[key] = regex
+    return bool(regex.search(text))
+
+
 def matches_location(value):
     text = (value or "").lower()
     allowed_terms = ["paris", "marseille", "aix", "aix-en-provence", "toulon", "nice", "remote", "télétravail", "teletravail", "france", "paca", "provence"]
@@ -717,7 +735,7 @@ def search_adzuna(keyword, location):
         for job in results:
             title = job.get("title", "N/A")
             description = job.get("description", "")
-            if any(excl in title.lower() for excl in exclusions):
+            if title_has_exclusion(title, exclusions):
                 print(f"  Exclu Adzuna: {title}")
                 log_excluded(title, job.get("company", {}).get("display_name", "N/A"),
                              job.get("location", {}).get("display_name", location),
@@ -779,7 +797,7 @@ def search_adzuna_companies():
                 company = job.get("company", {}).get("display_name", "N/A")
                 if not name_re.search(company.lower()):
                     continue
-                if any(excl in title.lower() for excl in exclusions):
+                if title_has_exclusion(title, exclusions):
                     log_excluded(title, company, job.get("location", {}).get("display_name", ""),
                                  "Adzuna", "mot-clé exclu")
                     continue
@@ -829,7 +847,7 @@ def search_france_travail(keyword, location):
         for job in results:
             title = job.get("intitule", "N/A")
             description = job.get("description", "")
-            if any(excl in title.lower() for excl in exclusions):
+            if title_has_exclusion(title, exclusions):
                 print(f"  Exclu FT: {title}")
                 log_excluded(title, job.get("entreprise", {}).get("nom", "N/A"),
                              job.get("lieuTravail", {}).get("libelle", location),
@@ -877,7 +895,7 @@ def search_hellowork(keyword, location):
             if not title_el:
                 continue
             title = title_el.get_text(strip=True)
-            if any(excl in title.lower() for excl in exclusions):
+            if title_has_exclusion(title, exclusions):
                 continue
             link_el = card.find("a", href=True)
             href = link_el["href"] if link_el else ""
@@ -928,7 +946,7 @@ def search_jooble(keyword, location):
             if not matches_location(job_location):
                 continue
 
-            if any(excl in title.lower() for excl in exclusions):
+            if title_has_exclusion(title, exclusions):
                 print(f"  Exclu Jooble: {title}")
                 continue
             jobs.append({
@@ -969,7 +987,7 @@ def search_greenjob(keyword):
             title = title_el.get_text(strip=True)
             if not title or len(title) < 5:
                 continue
-            if any(excl in title.lower() for excl in exclusions):
+            if title_has_exclusion(title, exclusions):
                 continue
             link_el = card.find("a", href=True)
             href = link_el["href"] if link_el else ""
@@ -1025,7 +1043,7 @@ def search_ademe():
 
             if not title or len(title) < 5:
                 continue
-            if any(excl in title.lower() for excl in exclusions):
+            if title_has_exclusion(title, exclusions):
                 print(f"  Exclu ADEME: {title}")
                 continue
 
@@ -1113,7 +1131,7 @@ def search_jtms():
                 if not any(term in title.lower() for term in JTMS_CLIMATE_TERMS):
                     continue
                 seen_urls.add(job_url)
-                if any(excl in title.lower() for excl in exclusions):
+                if title_has_exclusion(title, exclusions):
                     log_excluded(title, company, loc, "JTMS", "mot-clé exclu")
                     continue
                 jobs.append({
@@ -1194,7 +1212,7 @@ def search_apec():
                     continue
                 seen_ids.add(job_id)
                 title = job.get("intitule", "")
-                if any(excl in title.lower() for excl in exclusions):
+                if title_has_exclusion(title, exclusions):
                     log_excluded(title, job.get("nomCommercial", "N/A"),
                                  job.get("lieuTexte", "France"), "APEC", "mot-clé exclu")
                     continue
@@ -1247,7 +1265,7 @@ def search_remotive():
             if not any(kw in haystack for kw in keywords_lower):
                 continue
             seen_ids.add(job_id)
-            if any(excl in title.lower() for excl in exclusions):
+            if title_has_exclusion(title, exclusions):
                 log_excluded(title, job.get("company_name", "N/A"),
                              job.get("candidate_required_location", "Remote"),
                              "Remote EU", "mot-clé exclu")
@@ -1308,7 +1326,7 @@ def search_climatebase():
                 log_excluded(title, employer, ", ".join(locs)[:40],
                              "Remote EU", "remote US-only")
                 continue
-            if any(excl in title.lower() for excl in exclusions):
+            if title_has_exclusion(title, exclusions):
                 log_excluded(title, employer, "Remote", "Remote EU", "mot-clé exclu")
                 continue
             slug = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
@@ -1364,7 +1382,7 @@ def search_arbeitnow():
                 if not any(kw in haystack for kw in keywords_lower):
                     continue
                 seen_slugs.add(slug)
-                if any(excl in title.lower() for excl in exclusions):
+                if title_has_exclusion(title, exclusions):
                     log_excluded(title, job.get("company_name", "N/A"),
                                  job.get("location", "Remote"), "Remote EU", "mot-clé exclu")
                     continue
@@ -1437,7 +1455,7 @@ def search_unjobs():
                 # Pré-filtre pertinence (le titre inclut souvent le lieu).
                 if not any(t in low for t in UNJOBS_TITLE_TERMS):
                     continue
-                if any(excl in low for excl in exclusions):
+                if title_has_exclusion(low, exclusions):
                     log_excluded(title[:80], "UNjobs", "", "UNjobs", "mot-clé exclu")
                     continue
                 if any(t in low for t in ("remote", "home based", "home-based", "télétravail", "teletravail")):
@@ -1499,7 +1517,7 @@ def search_smartrecruiters():
                     location = f"{location} (Remote)".strip() if location else "Remote"
                 if not keep_international_location(location):
                     continue
-                if any(excl in title.lower() for excl in exclusions):
+                if title_has_exclusion(title, exclusions):
                     log_excluded(title, company, location, "SmartRecruiters", "mot-clé exclu")
                     continue
                 pid = job.get("id", "")
@@ -1565,7 +1583,7 @@ def search_reliefweb():
             if not title:
                 continue
             source = (f.get("source") or [{}])[0].get("name", "N/A")
-            if any(excl in title.lower() for excl in exclusions):
+            if title_has_exclusion(title, exclusions):
                 log_excluded(title, source, "", "ReliefWeb", "mot-clé exclu")
                 continue
             countries = [c.get("name", "") for c in (f.get("country") or []) if c.get("name")]
@@ -1615,7 +1633,7 @@ def search_greenhouse():
                 location = clean_text((job.get("location") or {}).get("name", ""))
                 if not keep_international_location(location):
                     continue
-                if any(excl in title.lower() for excl in exclusions):
+                if title_has_exclusion(title, exclusions):
                     log_excluded(title, token, location, "Greenhouse", "mot-clé exclu")
                     continue
                 description = clean_text(job.get("content", ""))
@@ -1668,7 +1686,7 @@ def search_lever():
                 location = clean_text(cats.get("location", ""))
                 if not keep_international_location(location):
                     continue
-                if any(excl in title.lower() for excl in exclusions):
+                if title_has_exclusion(title, exclusions):
                     log_excluded(title, company, location, "Lever", "mot-clé exclu")
                     continue
                 description = clean_text(job.get("descriptionPlain", ""))
@@ -1744,7 +1762,7 @@ def search_linkedin(keyword, location):
             if not title_el or not link_el:
                 continue
             title = clean_text(title_el.get_text(strip=True))
-            if not title or any(excl in title.lower() for excl in exclusions):
+            if not title or title_has_exclusion(title, exclusions):
                 if title:
                     log_excluded(title, "LinkedIn", location, "LinkedIn", "mot-clé exclu")
                 continue
@@ -1815,7 +1833,7 @@ def search_ess():
                     continue
                 seen_urls.add(job_url)
                 title = title_a.get_text(strip=True)
-                if any(excl in title.lower() for excl in exclusions):
+                if title_has_exclusion(title, exclusions):
                     log_excluded(title, "Employeur ESS", "France", "ESS", "mot-clé exclu")
                     continue
                 loc_div = card.find("div", class_="offre-localisation")
@@ -1876,7 +1894,7 @@ def search_service_public():
                 if not location:
                     continue
                 seen_urls.add(job_url)
-                if any(excl in title.lower() for excl in exclusions):
+                if title_has_exclusion(title, exclusions):
                     log_excluded(title, "Fonction publique", location, "Service Public", "mot-clé exclu")
                     continue
                 jobs.append({
@@ -1962,7 +1980,7 @@ def search_wttj():
                     title = link.get_text(strip=True)
                     if not title or len(title) < 5:
                         continue
-                    if any(excl in title.lower() for excl in exclusions):
+                    if title_has_exclusion(title, exclusions):
                         log_excluded(title, label, "", "WTTJ", "mot-clé exclu")
                         continue
                     href = link.get("href", "")
@@ -1988,7 +2006,7 @@ def search_wttj():
                 if any(bad in contract for bad in WTTJ_CONTRACT_EXCLUDE):
                     log_excluded(title, label, "", "WTTJ", f"contrat {contract}")
                     continue
-                if any(excl in title.lower() for excl in exclusions):
+                if title_has_exclusion(title, exclusions):
                     log_excluded(title, label, "", "WTTJ", "mot-clé exclu")
                     continue
 
