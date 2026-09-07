@@ -133,10 +133,21 @@ SOURCE_HEALTH_ALERT = 3  # alerte à partir de 3 jours d'affilée à zéro
 # rapport, mission courte). On suit les URL déjà vues pour ne pas répéter.
 APPELS_SEEN_FILE = "appels_vus.json"
 APPELS_SOURCES = [
+    # Méditerranée (Tier 1, petites structures)
     ("Plan Bleu", "https://planbleu.org/offre-emploi/"),
     ("Plan Bleu", "https://planbleu.org/actualites/"),
     ("MedECC", "https://www.medecc.org/"),
     ("FEMISE", "https://www.femise.org/"),
+    # France — think tanks & agences
+    ("I4CE", "https://www.i4ce.org/"),
+    ("IDDRI", "https://www.iddri.org/fr"),
+    ("AFD", "https://www.afd.fr/fr/appels-a-projets"),
+    ("ADEME", "https://www.ademe.fr/les-appels-a-projets/"),
+    ("The Shift Project", "https://theshiftproject.org/en/home/"),
+    # Europe
+    ("European Climate Foundation", "https://europeanclimate.org/grants/"),
+    ("Climate-KIC", "https://www.climate-kic.org/opportunities/"),
+    ("European Environment Agency", "https://www.eea.europa.eu/en/about/procurement"),
 ]
 # Termes signalant un appel (dans le texte d'un lien ou d'un titre).
 APPEL_TERMS = [
@@ -147,7 +158,28 @@ APPEL_TERMS = [
     "termes de référence", "termes de reference", "terms of reference",
     "call for contribution", "call for contributions", "call for proposal",
     "call for proposals", "call for expression", "expression of interest",
-    "call for consultant", "call for tender", "consultation",
+    "call for consultant", "call for tender", "call for papers",
+    "call for abstract", "grant", "consultation",
+]
+# Un appel n'est retenu que s'il porte sur le champ climat/environnement
+# (sinon on remonte des appels sans rapport : design graphique, traiteur,
+# informatique…). Il faut AU MOINS un signal thématique ET aucun terme exclu.
+APPEL_TOPIC_TERMS = [
+    "climat", "climate", "environnement", "environment", "adaptation", "carbone",
+    "carbon", "énergie", "energie", "energy", "biodiversit", "eau ", "water",
+    "méditerran", "mediterran", "durable", "sustainab", "transition", "décarbon",
+    "decarbon", "résilience", "resilience", "écolog", "ecolog", "littoral",
+    "coastal", "marine", "océan", "ocean", "gaz à effet", "ges ", "émission",
+    "emission", "net zero", "net-zero", "forêt", "forest", "agro", "agricol",
+    "pollution", "déchet", "waste", "risque climatique", "physical risk",
+]
+APPEL_EXCLUDE_TERMS = [
+    "graphic", "graphist", "design", "designer", "logo", "charte graphique",
+    "audiovisuel", "vidéo", "video", "photograph", "imprimerie", "impression",
+    "traiteur", "catering", "nettoyage", "mobilier", "fourniture de",
+    "site web", "website", "développeur", "developer", "hébergement",
+    "assurance", "comptable", "commissaire aux comptes", "sécurité incendie",
+    "gardiennage", "maintenance informatique", "téléphonie",
 ]
 
 # Score IA en dessous duquel une offre n'est PAS poussée en notif temps réel.
@@ -1080,6 +1112,12 @@ def search_appels_contribution():
                     continue
                 low = text.lower()
                 if not any(term in low for term in APPEL_TERMS):
+                    continue
+                # Pertinence : doit toucher au climat/environnement ET ne pas
+                # être un appel de prestation sans rapport (design, traiteur…).
+                if not any(t in low for t in APPEL_TOPIC_TERMS):
+                    continue
+                if any(x in low for x in APPEL_EXCLUDE_TERMS):
                     continue
                 href = a["href"]
                 if href.startswith("/"):
@@ -2616,7 +2654,7 @@ def appels_section_html(appels):
     return f"""
     <div style="margin:6px 0 22px;padding:16px 18px;background:#eef6f1;border:1px solid #bfe0cd;border-radius:12px">
         <div style="font-size:15px;font-weight:700;color:#155e42;margin-bottom:4px">📢 Appels à contribution / consultations</div>
-        <div style="font-size:12px;color:#4f6a5c;margin-bottom:10px">Institutions Méditerranée (Plan Bleu, MedECC, FEMISE) — porte d'entrée vers la production de référence</div>
+        <div style="font-size:12px;color:#4f6a5c;margin-bottom:10px">Institutions France &amp; Europe (Méditerranée, think tanks, agences) — filtré climat/environnement, porte d'entrée vers la production de référence</div>
         {rows}
     </div>
     """
