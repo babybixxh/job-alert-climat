@@ -145,9 +145,7 @@ APPELS_SOURCES = [
     ("ADEME", "https://www.ademe.fr/les-appels-a-projets/"),
     ("The Shift Project", "https://theshiftproject.org/en/home/"),
     # Europe
-    ("European Climate Foundation", "https://europeanclimate.org/grants/"),
     ("Climate-KIC", "https://www.climate-kic.org/opportunities/"),
-    ("European Environment Agency", "https://www.eea.europa.eu/en/about/procurement"),
 ]
 # Termes signalant un appel (dans le texte d'un lien ou d'un titre).
 APPEL_TERMS = [
