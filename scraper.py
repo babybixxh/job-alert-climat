@@ -688,6 +688,26 @@ def is_rse_title(title):
     return not _CLIMATE_SIGNAL_RE.search(t)
 
 
+# Pré-filtre AVANT l'IA : le quota Mistral est limité, on ne lui envoie donc que
+# les offres dont le TITRE porte un signal climat/durabilité/transition. Large à
+# dessein (mieux vaut laisser passer un titre ambigu que couper une vraie offre).
+# Ne s'applique PAS aux entreprises suivies (tous leurs postes vont à l'IA).
+_PREFILTER_RE = re.compile(
+    r"climat|climate|carbone|carbon|d[ée]carb|bas.?carbone|net.?z[ée]ro|"
+    r"[ée]mission|scope\s*3|bilan\s+carbone|sbti|\bges\b|greenhouse gas|"
+    r"durabilit|durable|sustainab|\brse\b|\besg\b|environnement|environment|"
+    r"[ée]nerg|energy|transition|adaptation|biodiversit|[ée]colog|ecolog|"
+    r"climatique|d[ée]veloppement durable|[ée]conomie circulaire|"
+    r"renewable|renouvelable|resilience|r[ée]silience|nature|\beau\b|water|"
+    r"d[ée]chet|waste|mobilit[ée]|impact",
+    re.IGNORECASE)
+
+
+def has_climate_signal(title):
+    """Vrai si le titre porte un signal thématique climat/durabilité."""
+    return bool(_PREFILTER_RE.search(title or ""))
+
+
 # Plafond de séniorité : Arnaud vise la fourchette Associate → Manager/Responsable.
 # On écarte au titre les postes trop hauts (Head/Director/Chief/Principal/Lead/VP).
 # Mot entier pour ne pas attraper « directorate », « leadership », etc.
@@ -2965,7 +2985,32 @@ if __name__ == "__main__":
     # Dédup AVANT l'IA : une même offre remontée par plusieurs sources/combos
     # mot-clé×ville n'est ainsi évaluée qu'une fois par Mistral.
     all_jobs = deduplicate(all_jobs)
-    print(f"\n{len(all_jobs)} offres uniques avant filtrage IA")
+    print(f"\n{len(all_jobs)} offres uniques avant pré-filtre")
+
+    # Pré-filtre mots-clés AVANT l'IA : le quota Mistral est limité. On n'envoie
+    # à l'IA que les offres dont le titre porte un signal climat/durabilité, et
+    # toutes les offres d'entreprises suivies (jugées quoi qu'il arrive). Ça
+    # réduit fortement le volume de requêtes et évite de saturer le quota.
+    # Le pré-filtre ne s'applique qu'aux sources « larges » (recherche par
+    # mot-clé, gros volume et bruit) : Adzuna, France Travail, LinkedIn, APEC…
+    # Les sources déjà thématiques (UNjobs, OECD, Greenhouse, Climatebase, ADEME…)
+    # sont exemptées — un « Programme Officer » institutionnel n'a pas de mot
+    # climat dans son titre mais reste pertinent.
+    PREFILTER_SOURCES = {"Adzuna", "France Travail", "LinkedIn", "APEC",
+                         "Jooble", "Hellowork", "Greenjob.fr"}
+    before_prefilter = len(all_jobs)
+    prefiltered = []
+    for job in all_jobs:
+        if (job.get("source") in PREFILTER_SOURCES
+                and not job.get("company_watch")
+                and not has_climate_signal(job.get("title", ""))):
+            log_excluded(job["title"], job["company"], job.get("location", ""),
+                         job.get("source", ""), "pré-filtre : titre hors thème climat")
+        else:
+            prefiltered.append(job)
+    all_jobs = prefiltered
+    print(f"Pré-filtre : {before_prefilter - len(all_jobs)} offre(s) écartée(s) "
+          f"(hors thème), {len(all_jobs)} envoyées à l'IA")
     all_jobs = filter_jobs_with_ai(all_jobs)
 
     # Filtre Paris (combiné) : une offre parisienne hors entreprise suivie n'est
