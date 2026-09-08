@@ -1,38 +1,14 @@
 [
   {
-    "id": "https://fr.linkedin.com/jobs/view/environmental-and-social-consultant-managing-consultant-for-sustainable-finance-at-ramboll-4462849386",
+    "id": "https://fr.linkedin.com/jobs/view/environmental-and-social-consultant-managing-consultant-for-sustainable-finance-at-ramboll-4462844467",
     "title": "Environmental and Social Consultant/Managing Consultant for Sustainable Finance",
     "company": "Ramboll",
-    "location": "Aix-en-Provence",
-    "url": "https://fr.linkedin.com/jobs/view/environmental-and-social-consultant-managing-consultant-for-sustainable-finance-at-ramboll-4462849386",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/environmental-and-social-consultant-managing-consultant-for-sustainable-finance-at-ramboll-4462844467",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
     "score": 80,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/responsable-technique-f-h-at-veolia-energie-performance-4459935114",
-    "title": "Responsable technique F/H",
-    "company": "Veolia | Energie Performance",
-    "location": "Marseille",
-    "url": "https://fr.linkedin.com/jobs/view/responsable-technique-f-h-at-veolia-energie-performance-4459935114",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-environnement-at-mairie-de-la-croix-valmer-4462687598",
-    "title": "Chargé de mission Environnement",
-    "company": "Mairie de La Croix Valmer",
-    "location": "La Croix-Valmer",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-environnement-at-mairie-de-la-croix-valmer-4462687598",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 70,
     "is_new": false
   },
   {
@@ -48,44 +24,6 @@
     "is_new": false
   },
   {
-    "id": "5865346039",
-    "title": "Senior Product Owner – Finance Systems (H/F)",
-    "company": "Descartes Underwriting",
-    "location": "17ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/details/5865346039?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "A PROPOS DE NOUS Rejoignez Descartes et contribuez à notre mission : Building Resilience in a World at Risk . Descartes est un groupe d’assurance pour...",
-    "salary": "",
-    "date": "2026-09-02T00:00:40Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "score": 95,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/responsable-du-secteur-risques-et-milieux-aquatiques-at-d%C3%A9partement-de-l-essonne-4458954624",
-    "title": "RESPONSABLE DU SECTEUR RISQUES ET MILIEUX AQUATIQUES",
-    "company": "Département de l'Essonne",
-    "location": "Évry-Courcouronnes",
-    "url": "https://fr.linkedin.com/jobs/view/responsable-du-secteur-risques-et-milieux-aquatiques-at-d%C3%A9partement-de-l-essonne-4458954624",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/programme-management-officer-at-un-environment-programme-4464301399",
-    "title": "PROGRAMME MANAGEMENT OFFICER",
-    "company": "UN Environment Programme",
-    "location": "Ville de Paris",
-    "url": "https://fr.linkedin.com/jobs/view/programme-management-officer-at-un-environment-programme-4464301399",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 95,
-    "is_new": false
-  },
-  {
     "id": "211XZCW",
     "title": "Energy Data Analyst (H/F)",
     "company": "EFFY",
@@ -93,6 +31,20 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/211XZCW",
     "description": "Poste à pourvoir à partir de janvier 2027\n\nEffy est le spécialiste de l'efficience énergétique depuis 2008.\n\nNous aidons les propriétaires à rendre le...",
     "source": "France Travail",
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
+    "id": "5873176758",
+    "title": "Charge De Mission Developpement Durable",
+    "company": "Ministère des Armées",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5873176758?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots Rattaché(e) à la cheffe de la MTEEDD, le/la chargé(e) de mission développement durable l'assiste dans le pilotage de la ...",
+    "salary": "",
+    "date": "2026-09-06T17:38:17Z",
+    "source": "Adzuna",
     "borderline": false,
     "score": 75,
     "is_new": false
@@ -146,6 +98,20 @@
     "is_new": false
   },
   {
+    "id": "5867258655",
+    "title": "Ingénieur (e) stratégie énergie carbone",
+    "company": "Lhirr",
+    "location": "20ème Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/details/5867258655?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Afin d’accompagner notre développement, nous sommes à la recherche d’un(e) ingénieur(e) « Stratégie Energie-Carbone » pour réaliser et conduire des mi...",
+    "salary": "40 k€ – 55 k€",
+    "date": "2026-09-02T18:14:14Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 90,
+    "is_new": false
+  },
+  {
     "id": "213FBZN",
     "title": "Ingénieur  Expert en décarbonation des procédés industriels (H/F)",
     "company": "YNERGIE",
@@ -155,20 +121,6 @@
     "source": "France Travail",
     "borderline": false,
     "score": 95,
-    "is_new": false
-  },
-  {
-    "id": "5867227148",
-    "title": "Chargé.e de mission programmation et gestion financière",
-    "company": "DREAL",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5867227148?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Vous intégrerez le service énergie et logement de la DREAL, composé d environ 40 agents répartis dans 3 unités et 2 miss...",
-    "salary": "",
-    "date": "2026-09-02T18:01:14Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "score": 70,
     "is_new": false
   },
   {
@@ -183,18 +135,6 @@
     "source": "Adzuna",
     "borderline": false,
     "score": 65,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-%C2%AB-int%C3%A9gration-europ%C3%A9enne-des-march%C3%A9s-de-l%E2%80%99%C3%A9lectricit%C3%A9-%C2%BB-h-f-at-cre-commission-de-r%C3%A9gulation-de-l-%C3%A9nergie-4462030331",
-    "title": "Chargé de mission « intégration européenne des marchés de l’électricité » H/F",
-    "company": "Commission de régulation de l'énergie",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-%C2%AB-int%C3%A9gration-europ%C3%A9enne-des-march%C3%A9s-de-l%E2%80%99%C3%A9lectricit%C3%A9-%C2%BB-h-f-at-cre-commission-de-r%C3%A9gulation-de-l-%C3%A9nergie-4462030331",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
     "is_new": false
   },
   {
@@ -274,19 +214,6 @@
     "is_new": false
   },
   {
-    "id": "5867222612",
-    "title": "Chargé.e de mission Valorisation des politiques publiques",
-    "company": "DREAL",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5867222612?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Vous souhaitez participer à la valorisation des politiques publiques de la DREAL Provence-Alpes-Côte d Azur ? Les enjeux...",
-    "source": "Adzuna",
-    "company_watch": false,
-    "borderline": false,
-    "score": 80,
-    "is_new": false
-  },
-  {
     "id": "75807421",
     "title": "Call for Experts: Climatebase Fellowship",
     "company": "Climatebase",
@@ -298,20 +225,6 @@
     "source": "Remote EU",
     "borderline": false,
     "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "179247223W",
-    "title": "Consultant PMO Environnement & Sustainability F/H",
-    "company": "Proaxian",
-    "location": "Toulouse - 31",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/emploi/detail-offre/179247223W",
-    "description": "Dans un contexte de renforcement des exigences environnementales, réglementaires et RSE (Décarbonation, éco-conception, conformité environnementale) , Alten accompagne ses clients industriels dans la ...",
-    "salary": "A négocier",
-    "date": "2026-08-10T02:28:01.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "score": 85,
     "is_new": false
   },
   {
@@ -329,17 +242,17 @@
     "is_new": false
   },
   {
-    "id": "179293563W",
-    "title": "Consultant Chef de projet AMO / Exploitation & Maintenance F/H",
-    "company": "GROUPE EGIS / GROUPEGIS / EGIS GROUP",
-    "location": "Montreuil - 93",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/emploi/detail-offre/179293563W",
-    "description": "Au sein de l'activité Conseil, le pôle Performance des Existants et Transition œuvre chaque jour à maintenir la performance des bâtiments et des infrastructures en intégrant les grands enjeux climatiq...",
+    "id": "179247223W",
+    "title": "Consultant PMO Environnement & Sustainability F/H",
+    "company": "Proaxian",
+    "location": "Toulouse - 31",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/emploi/detail-offre/179247223W",
+    "description": "Dans un contexte de renforcement des exigences environnementales, réglementaires et RSE (Décarbonation, éco-conception, conformité environnementale) , Alten accompagne ses clients industriels dans la ...",
     "salary": "A négocier",
-    "date": "2026-08-21T14:55:04.000+0000",
+    "date": "2026-08-10T02:28:01.000+0000",
     "source": "APEC",
     "borderline": false,
-    "score": 90,
+    "score": 85,
     "is_new": false
   },
   {
@@ -483,20 +396,6 @@
     "is_new": false
   },
   {
-    "id": "179260367W",
-    "title": "Ingénieur Procédés Industriels – Décarbonation F/H",
-    "company": "Kali Group",
-    "location": "Aulnoy-lez-Valenciennes - 59",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/emploi/detail-offre/179260367W",
-    "description": "Dans le cadre de projets de transformation industrielle, nous recherchons un Ingénieur Procédés Industriels spécialisé en thermique et énergétique, afin de contribuer au développement de procédés de f...",
-    "salary": "A partir de 45 k€ brut annuel",
-    "date": "2026-08-13T05:49:20.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
     "id": "179268796W",
     "title": "Responsable de Projet Décarbonation Des Procédés F/H",
     "company": "DALKIA",
@@ -550,20 +449,6 @@
     "source": "APEC",
     "borderline": false,
     "score": 80,
-    "is_new": false
-  },
-  {
-    "id": "179252485W",
-    "title": "Ingénieur Etudes et Chiffrage - Performance Energétique et Décarbonation F/H",
-    "company": "Hellowork",
-    "location": "Bron - 69",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/emploi/detail-offre/179252485W",
-    "description": "Au sein de la Direction Performance Opérationnelle & Projets, rattaché(e) au Responsable Etudes et Chiffrage, vos activités consisteront à :   Réaliser des études/audits techniques et économiques pour...",
-    "salary": "A négocier",
-    "date": "2026-08-11T04:02:24.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "score": 70,
     "is_new": false
   },
   {
