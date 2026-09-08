@@ -1,10 +1,10 @@
 [
   {
-    "id": "https://fr.linkedin.com/jobs/view/environmental-and-social-consultant-managing-consultant-for-sustainable-finance-at-ramboll-4462844467",
+    "id": "https://fr.linkedin.com/jobs/view/environmental-and-social-consultant-managing-consultant-for-sustainable-finance-at-ramboll-4462849386",
     "title": "Environmental and Social Consultant/Managing Consultant for Sustainable Finance",
     "company": "Ramboll",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/environmental-and-social-consultant-managing-consultant-for-sustainable-finance-at-ramboll-4462844467",
+    "location": "Aix-en-Provence",
+    "url": "https://fr.linkedin.com/jobs/view/environmental-and-social-consultant-managing-consultant-for-sustainable-finance-at-ramboll-4462849386",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
@@ -211,6 +211,19 @@
     "company_watch": true,
     "borderline": false,
     "score": 90,
+    "is_new": false
+  },
+  {
+    "id": "5856986407",
+    "title": "Responsable Data & Agriculture F/H",
+    "company": "Invivo",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5856986407?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Informations générales Société InVivo est l'un des premiers groupes agricoles européens avec un CA de 11 milliards d'euros et un effectif de près de 1...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": false,
+    "score": 95,
     "is_new": false
   },
   {
