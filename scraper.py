@@ -237,6 +237,7 @@ WTTJ_COMPANIES = {
     "carbon-cutter": "Carbon Cutter",
     "adaptation-s": "adaptation/s",
     "blunomy": "Blunomy",
+    "reset": "(RE)SET",
     "cci-france": "CCI France",
     # Plateformes de comptabilité carbone (SaaS)
     "sami": "Sami",
