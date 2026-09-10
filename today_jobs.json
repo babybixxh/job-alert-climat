@@ -12,6 +12,30 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/cheffe-chef-de-projets-environnement-r%C3%A9glementaire-at-artelia-4446303588",
+    "title": "Cheffe / Chef de projets Environnement Réglementaire",
+    "company": "Artelia",
+    "location": "Marseille",
+    "url": "https://fr.linkedin.com/jobs/view/cheffe-chef-de-projets-environnement-r%C3%A9glementaire-at-artelia-4446303588",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 85,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/chef-de-projets-d%C3%A9carbonation-innovation-h-f-4450347608",
+    "title": "Chef de Projets Décarbonation & Innovation (H/F).",
+    "company": "Société de services et solutions de mobilité B2B",
+    "location": "Île-de-France, France",
+    "url": "https://fr.linkedin.com/jobs/view/chef-de-projets-d%C3%A9carbonation-innovation-h-f-4450347608",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 85,
+    "is_new": false
+  },
+  {
     "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-environnement-at-mairie-de-la-croix-valmer-4463518629",
     "title": "Chargé de mission Environnement",
     "company": "Mairie de La Croix Valmer",
@@ -21,6 +45,18 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 70,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/accompagnement-de-projets-rse-mobilit%C3%A9-durable-et-plans-d%E2%80%99actions-bas-carbone-at-inrae-4460365561",
+    "title": "Accompagnement de projets RSE : Mobilité durable et Plans d’actions Bas Carbone",
+    "company": "INRAE",
+    "location": "Avignon",
+    "url": "https://fr.linkedin.com/jobs/view/accompagnement-de-projets-rse-mobilit%C3%A9-durable-et-plans-d%E2%80%99actions-bas-carbone-at-inrae-4460365561",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": true,
+    "score": 50,
     "is_new": false
   },
   {
@@ -88,18 +124,6 @@
     "is_new": false
   },
   {
-    "id": "4247216",
-    "title": "assistante assistant direction espace public transition écologique H/F - EC21045",
-    "company": "Ville de CHAMPIGNY SUR MARNE",
-    "location": "94 - Champigny-sur-Marne",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4247216",
-    "description": "assistante assistant direction espace public transition écologique H/F - EC21045 Vous ne tiendrez pas la pelle. Mais vous aiderez les projets à sortir...",
-    "source": "France Travail",
-    "borderline": true,
-    "score": 50,
-    "is_new": false
-  },
-  {
     "id": "212WTZZ",
     "title": "Référent pôle transition écologique (H/F)",
     "company": "N/A",
@@ -112,6 +136,18 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-transition-environnementale-et-planification-territoriale-paris-at-scet-groupe-scet-htc-4423140783",
+    "title": "Chef.fe de projet Transition environnementale et Planification territoriale - Paris",
+    "company": "SCET | Groupe SCET HTC",
+    "location": "Ville de Paris",
+    "url": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-transition-environnementale-et-planification-territoriale-paris-at-scet-groupe-scet-htc-4423140783",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
     "id": "213FBZN",
     "title": "Ingénieur  Expert en décarbonation des procédés industriels (H/F)",
     "company": "YNERGIE",
@@ -121,20 +157,6 @@
     "source": "France Travail",
     "borderline": false,
     "score": 95,
-    "is_new": false
-  },
-  {
-    "id": "5867223050",
-    "title": "Chargé.e de mission « Protection et gestion de la Nature »",
-    "company": "DREAL",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5867223050?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Au sein de la DREAL, le SBEP, composé de 5 unités et d une quarantaine d'agent.e.s, a pour objectifs la protection, la g...",
-    "salary": "",
-    "date": "2026-09-02T17:58:45Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "score": 65,
     "is_new": false
   },
   {
@@ -176,12 +198,12 @@
     "is_new": false
   },
   {
-    "id": "5835725601",
-    "title": "Oliver Wyman - Associate - F&R - Paris",
-    "company": "Marsh McLennan",
-    "location": "France",
-    "url": "https://www.adzuna.fr/details/5835725601?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Description: Associate - Finance & Risk Practice - Paris ____ WHO WE ARE Oliver Wyman is a global leader in management consulting. With a staff of ove...",
+    "id": "5865346039",
+    "title": "Senior Product Owner – Finance Systems (H/F)",
+    "company": "Descartes Underwriting",
+    "location": "17ème Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/details/5865346039?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "A PROPOS DE NOUS Rejoignez Descartes et contribuez à notre mission : Building Resilience in a World at Risk . Descartes est un groupe d’assurance pour...",
     "source": "Adzuna",
     "company_watch": true,
     "borderline": false,
@@ -243,20 +265,6 @@
     "is_new": false
   },
   {
-    "id": "179247223W",
-    "title": "Consultant PMO Environnement & Sustainability F/H",
-    "company": "Proaxian",
-    "location": "Toulouse - 31",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/emploi/detail-offre/179247223W",
-    "description": "Dans un contexte de renforcement des exigences environnementales, réglementaires et RSE (Décarbonation, éco-conception, conformité environnementale) , Alten accompagne ses clients industriels dans la ...",
-    "salary": "A négocier",
-    "date": "2026-08-10T02:28:01.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
     "id": "179276789W",
     "title": "Consultant(e) électricité, gaz et transition énergétique F/H",
     "company": "NALDEO",
@@ -310,6 +318,20 @@
     "source": "APEC",
     "borderline": false,
     "score": 95,
+    "is_new": false
+  },
+  {
+    "id": "179395486W",
+    "title": "Chef de projet carbone F/H",
+    "company": "SIAAP (Service Public de l'Assainissement Francilien)",
+    "location": "Paris 12 - 75",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/emploi/detail-offre/179395486W",
+    "description": "Intégrée au sein de la Direction déléguée en charge de l'Innovation, de la Stratégie et de l'Environnement (DISE), la Direction Environnement (DE) est garante de la définition et du déploiement de la ...",
+    "salary": "A négocier",
+    "date": "2026-09-09T16:29:05.000+0000",
+    "source": "APEC",
+    "borderline": false,
+    "score": 90,
     "is_new": false
   },
   {
@@ -397,6 +419,20 @@
     "is_new": false
   },
   {
+    "id": "179398251W",
+    "title": "Ingénieur Procédés Industriels – Décarbonation F/H",
+    "company": "Kali Group",
+    "location": "Aulnoy-lez-Valenciennes - 59",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/emploi/detail-offre/179398251W",
+    "description": "Dans le cadre de projets de transformation industrielle, nous recherchons un Ingénieur Procédés Industriels spécialisé en thermique et énergétique, afin de contribuer au développement de procédés de f...",
+    "salary": "A partir de 45 k€ brut annuel",
+    "date": "2026-09-10T05:49:35.000+0000",
+    "source": "APEC",
+    "borderline": false,
+    "score": 85,
+    "is_new": false
+  },
+  {
     "id": "179268796W",
     "title": "Responsable de Projet Décarbonation Des Procédés F/H",
     "company": "DALKIA",
@@ -459,7 +495,7 @@
     "location": "Remote",
     "url": "https://boards.greenhouse.io/tomorrow/jobs/7776130003?gh_jid=7776130003",
     "description": "<p><em>Tomorrow.io is a leading weather intelligence and climate resilience platform helping organizations and governments make better decisions in a ...",
-    "date": "2026-08-21T09:27:58-04:00",
+    "date": "2026-09-09T12:59:25-04:00",
     "source": "Greenhouse",
     "company_watch": true,
     "borderline": false,
@@ -586,18 +622,6 @@
     "source": "UNjobs",
     "borderline": false,
     "score": 90,
-    "is_new": false
-  },
-  {
-    "id": "https://unjobs.org/vacancies/1770228119966",
-    "title": "Sustainability Advisor, London, United Kingdom",
-    "company": "UNjobs (ONU/institutions)",
-    "location": "International",
-    "url": "https://unjobs.org/vacancies/1770228119966",
-    "description": "",
-    "source": "UNjobs",
-    "borderline": false,
-    "score": 95,
     "is_new": false
   }
 ]
