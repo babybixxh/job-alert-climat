@@ -1,10 +1,10 @@
 [
   {
-    "id": "https://fr.linkedin.com/jobs/view/environmental-and-social-consultant-managing-consultant-for-sustainable-finance-at-ramboll-4462849386",
-    "title": "Environmental and Social Consultant/Managing Consultant for Sustainable Finance",
-    "company": "Ramboll",
-    "location": "Aix-en-Provence",
-    "url": "https://fr.linkedin.com/jobs/view/environmental-and-social-consultant-managing-consultant-for-sustainable-finance-at-ramboll-4462849386",
+    "id": "https://fr.linkedin.com/jobs/view/energy-manager-senior-at-carb0n-4458233489",
+    "title": "Energy Manager Senior",
+    "company": "Carb0n",
+    "location": "Ville de Paris",
+    "url": "https://fr.linkedin.com/jobs/view/energy-manager-senior-at-carb0n-4458233489",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
@@ -12,15 +12,27 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/cheffe-chef-de-projets-environnement-r%C3%A9glementaire-at-artelia-4446303588",
-    "title": "Cheffe / Chef de projets Environnement Réglementaire",
-    "company": "Artelia",
-    "location": "Marseille",
-    "url": "https://fr.linkedin.com/jobs/view/cheffe-chef-de-projets-environnement-r%C3%A9glementaire-at-artelia-4446303588",
+    "id": "https://fr.linkedin.com/jobs/view/environmental-and-social-consultant-managing-consultant-for-sustainable-finance-at-ramboll-4462844467",
+    "title": "Environmental and Social Consultant/Managing Consultant for Sustainable Finance",
+    "company": "Ramboll",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/environmental-and-social-consultant-managing-consultant-for-sustainable-finance-at-ramboll-4462844467",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
-    "score": 85,
+    "score": 80,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-ou-expert-e-en-d%C3%A9carbonation-des-proc%C3%A9d%C3%A9s-industriels-h-f-at-ynergie-4453447109",
+    "title": "Ingénieur(e) ou Expert(e) en décarbonation des procédés industriels (H/F)",
+    "company": "Ynergie",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-ou-expert-e-en-d%C3%A9carbonation-des-proc%C3%A9d%C3%A9s-industriels-h-f-at-ynergie-4453447109",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 95,
     "is_new": false
   },
   {
@@ -36,6 +48,30 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/accompagnement-de-projets-rse-mobilit%C3%A9-durable-et-plans-d%E2%80%99actions-bas-carbone-at-inrae-4460365561",
+    "title": "Accompagnement de projets RSE : Mobilité durable et Plans d’actions Bas Carbone",
+    "company": "INRAE",
+    "location": "Avignon",
+    "url": "https://fr.linkedin.com/jobs/view/accompagnement-de-projets-rse-mobilit%C3%A9-durable-et-plans-d%E2%80%99actions-bas-carbone-at-inrae-4460365561",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": true,
+    "score": 50,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-transition-environnementale-et-planification-territoriale-paris-at-scet-groupe-scet-htc-4423140783",
+    "title": "Chef.fe de projet Transition environnementale et Planification territoriale - Paris",
+    "company": "SCET | Groupe SCET HTC",
+    "location": "Ville de Paris",
+    "url": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-transition-environnementale-et-planification-territoriale-paris-at-scet-groupe-scet-htc-4423140783",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
     "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-environnement-at-mairie-de-la-croix-valmer-4463518629",
     "title": "Chargé de mission Environnement",
     "company": "Mairie de La Croix Valmer",
@@ -48,15 +84,15 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/accompagnement-de-projets-rse-mobilit%C3%A9-durable-et-plans-d%E2%80%99actions-bas-carbone-at-inrae-4460365561",
-    "title": "Accompagnement de projets RSE : Mobilité durable et Plans d’actions Bas Carbone",
-    "company": "INRAE",
-    "location": "Avignon",
-    "url": "https://fr.linkedin.com/jobs/view/accompagnement-de-projets-rse-mobilit%C3%A9-durable-et-plans-d%E2%80%99actions-bas-carbone-at-inrae-4460365561",
+    "id": "https://fr.linkedin.com/jobs/view/cheffe-chef-de-projets-environnement-r%C3%A9glementaire-at-artelia-4446303588",
+    "title": "Cheffe / Chef de projets Environnement Réglementaire",
+    "company": "Artelia",
+    "location": "Marseille",
+    "url": "https://fr.linkedin.com/jobs/view/cheffe-chef-de-projets-environnement-r%C3%A9glementaire-at-artelia-4446303588",
     "description": "",
     "source": "LinkedIn",
-    "borderline": true,
-    "score": 50,
+    "borderline": false,
+    "score": 85,
     "is_new": false
   },
   {
@@ -133,18 +169,6 @@
     "source": "France Travail",
     "borderline": true,
     "score": 50,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-transition-environnementale-et-planification-territoriale-paris-at-scet-groupe-scet-htc-4423140783",
-    "title": "Chef.fe de projet Transition environnementale et Planification territoriale - Paris",
-    "company": "SCET | Groupe SCET HTC",
-    "location": "Ville de Paris",
-    "url": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-transition-environnementale-et-planification-territoriale-paris-at-scet-groupe-scet-htc-4423140783",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
     "is_new": false
   },
   {
@@ -398,7 +422,7 @@
     "url": "https://www.apec.fr/candidat/recherche-emploi.html/emploi/detail-offre/179282252W",
     "description": "CDD de mission d’une durée de 3 ans à temps plein (35 heures hebdomadaires) réparti entre les deux associations situées respectivement sur les zones géographiques de Beaune, du Creusot/ Chalon Sur Saô...",
     "salary": "41 - 46 k€ brut annuel",
-    "date": "2026-08-19T14:01:55.000+0000",
+    "date": "2026-09-10T15:15:16.000+0000",
     "source": "APEC",
     "borderline": true,
     "score": 60,
