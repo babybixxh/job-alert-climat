@@ -12,11 +12,11 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/environmental-and-social-consultant-managing-consultant-for-sustainable-finance-at-ramboll-4462844467",
+    "id": "https://fr.linkedin.com/jobs/view/environmental-and-social-consultant-managing-consultant-for-sustainable-finance-at-ramboll-4466302725",
     "title": "Environmental and Social Consultant/Managing Consultant for Sustainable Finance",
     "company": "Ramboll",
     "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/environmental-and-social-consultant-managing-consultant-for-sustainable-finance-at-ramboll-4462844467",
+    "url": "https://fr.linkedin.com/jobs/view/environmental-and-social-consultant-managing-consultant-for-sustainable-finance-at-ramboll-4466302725",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
@@ -33,6 +33,42 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 95,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-environnemental-social-en-financement-durable-at-ramboll-4466311568",
+    "title": "Consultant Environnemental & Social en Financement Durable",
+    "company": "Ramboll",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-environnemental-social-en-financement-durable-at-ramboll-4466311568",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 70,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-d%E2%80%99affaires-energie-environnement-f-h-at-bpifrance-4457088721",
+    "title": "Chargé d’Affaires Energie Environnement F/H",
+    "company": "Bpifrance",
+    "location": "Marseille",
+    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-d%E2%80%99affaires-energie-environnement-f-h-at-bpifrance-4457088721",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-environnement-at-mairie-de-la-croix-valmer-4463518629",
+    "title": "Chargé de mission Environnement",
+    "company": "Mairie de La Croix Valmer",
+    "location": "La Croix-Valmer",
+    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-environnement-at-mairie-de-la-croix-valmer-4463518629",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 70,
     "is_new": false
   },
   {
@@ -57,42 +93,6 @@
     "source": "LinkedIn",
     "borderline": true,
     "score": 50,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-transition-environnementale-et-planification-territoriale-paris-at-scet-groupe-scet-htc-4423140783",
-    "title": "Chef.fe de projet Transition environnementale et Planification territoriale - Paris",
-    "company": "SCET | Groupe SCET HTC",
-    "location": "Ville de Paris",
-    "url": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-transition-environnementale-et-planification-territoriale-paris-at-scet-groupe-scet-htc-4423140783",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-environnement-at-mairie-de-la-croix-valmer-4463518629",
-    "title": "Chargé de mission Environnement",
-    "company": "Mairie de La Croix Valmer",
-    "location": "La Croix-Valmer",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-environnement-at-mairie-de-la-croix-valmer-4463518629",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 70,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/cheffe-chef-de-projets-environnement-r%C3%A9glementaire-at-artelia-4446303588",
-    "title": "Cheffe / Chef de projets Environnement Réglementaire",
-    "company": "Artelia",
-    "location": "Marseille",
-    "url": "https://fr.linkedin.com/jobs/view/cheffe-chef-de-projets-environnement-r%C3%A9glementaire-at-artelia-4446303588",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
     "is_new": false
   },
   {
@@ -172,6 +172,18 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/cheffe-chef-de-projets-environnement-r%C3%A9glementaire-at-artelia-4446303588",
+    "title": "Cheffe / Chef de projets Environnement Réglementaire",
+    "company": "Artelia",
+    "location": "Marseille",
+    "url": "https://fr.linkedin.com/jobs/view/cheffe-chef-de-projets-environnement-r%C3%A9glementaire-at-artelia-4446303588",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 85,
+    "is_new": false
+  },
+  {
     "id": "213FBZN",
     "title": "Ingénieur  Expert en décarbonation des procédés industriels (H/F)",
     "company": "YNERGIE",
@@ -184,13 +196,13 @@
     "is_new": false
   },
   {
-    "id": "213BZRV",
-    "title": "Responsable Environnement et Procédures F/H",
-    "company": "SNCF RESEAU",
-    "location": "13 - Marseille 6e Arrondissement",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/213BZRV",
-    "description": "\nEn tant que Responsable Environnement et Procédures, vous serez amené à réaliser des misions dans les domaines suivants :\n\n * Piloter l'intégration d...",
-    "source": "France Travail",
+    "id": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-transition-environnementale-et-planification-territoriale-paris-at-scet-groupe-scet-htc-4423140783",
+    "title": "Chef.fe de projet Transition environnementale et Planification territoriale - Paris",
+    "company": "SCET | Groupe SCET HTC",
+    "location": "Ville de Paris",
+    "url": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-transition-environnementale-et-planification-territoriale-paris-at-scet-groupe-scet-htc-4423140783",
+    "description": "",
+    "source": "LinkedIn",
     "borderline": false,
     "score": 75,
     "is_new": false
@@ -387,6 +399,20 @@
     "is_new": false
   },
   {
+    "id": "179301892W",
+    "title": "Chargé.de mission ' Réglementation H2 et développement H2 naturel ' F/H",
+    "company": "ADEME",
+    "location": "Angers - 49",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/emploi/detail-offre/179301892W",
+    "description": "Aussi, dans le cadre de la stratégie de déploiement de l'hydrogène et du programme de financement France 2030, nous recherchons un Chargé.e de mission Réglementation Hydrogène et Développement Hydrogè...",
+    "salary": "A négocier",
+    "date": "2026-09-02T07:50:00.000+0000",
+    "source": "APEC",
+    "borderline": false,
+    "score": 85,
+    "is_new": false
+  },
+  {
     "id": "179300446W",
     "title": "Conseiller en transition écologique - Plan de mobilité F/H",
     "company": "SERVICES CENTRAUX DG",
@@ -401,20 +427,6 @@
     "is_new": false
   },
   {
-    "id": "179234478W",
-    "title": "CONSEILLER EN TRANSITION ÉNERGÉTIQUE ET ÉCOLOGIQUE EN SANTÉ (CTEES) F/H",
-    "company": "ARSEAA",
-    "location": "Toulouse - 31",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/emploi/detail-offre/179234478W",
-    "description": "CONSEILLER EN TRANSITION ÉNERGÉTIQUE ET ÉCOLOGIQUE EN SANTÉ (CTEES) H/F   Spécialisation : Projets transversaux Bâtiment - Mobilités - Achats responsables   Rejoignez l’équipe de la Direction Générale...",
-    "salary": "37 - 42 k€ brut annuel",
-    "date": "2026-08-12T13:20:56.000+0000",
-    "source": "APEC",
-    "borderline": true,
-    "score": 65,
-    "is_new": false
-  },
-  {
     "id": "179282252W",
     "title": "Un(e) Conseiller(ère) en Transition Energétique et Ecologique en Santé F/H",
     "company": "ENFANCE ET HANDICAP EN COTE D'OR",
@@ -426,20 +438,6 @@
     "source": "APEC",
     "borderline": true,
     "score": 60,
-    "is_new": false
-  },
-  {
-    "id": "179301892W",
-    "title": "Chargé.de mission ' Réglementation H2 et développement H2 naturel ' F/H",
-    "company": "ADEME",
-    "location": "Angers - 49",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/emploi/detail-offre/179301892W",
-    "description": "Aussi, dans le cadre de la stratégie de déploiement de l'hydrogène et du programme de financement France 2030, nous recherchons un Chargé.e de mission Réglementation Hydrogène et Développement Hydrogè...",
-    "salary": "A négocier",
-    "date": "2026-09-02T07:50:00.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "score": 85,
     "is_new": false
   },
   {
@@ -492,7 +490,7 @@
     "url": "https://www.apec.fr/candidat/recherche-emploi.html/emploi/detail-offre/179287534W",
     "description": "Sous l'autorité d'un responsable de pôle, au sein d'une équipe d'ingénieurs et de chargés d'études, le Chef de Projet prend en charge le volet conception d'installations CVCD Plomberie des projets att...",
     "salary": "40 - 65 k€ brut annuel",
-    "date": "2026-09-05T10:14:26.000+0000",
+    "date": "2026-09-12T08:17:12.000+0000",
     "source": "APEC",
     "borderline": false,
     "score": 80,
