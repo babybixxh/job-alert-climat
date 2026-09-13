@@ -96,6 +96,18 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/client-success-specialist-sustainability-solutions-at-iss-stoxx-sustainability-4447575773",
+    "title": "Client Success Specialist - Sustainability Solutions",
+    "company": "ISS STOXX Sustainability",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/client-success-specialist-sustainability-solutions-at-iss-stoxx-sustainability-4447575773",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 85,
+    "is_new": false
+  },
+  {
     "id": "211XZCW",
     "title": "Energy Data Analyst (H/F)",
     "company": "EFFY",
@@ -184,18 +196,6 @@
     "is_new": false
   },
   {
-    "id": "213FBZN",
-    "title": "Ingénieur  Expert en décarbonation des procédés industriels (H/F)",
-    "company": "YNERGIE",
-    "location": "75 - PARIS 09",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/213FBZN",
-    "description": "Depuis 2016, Ynergie accompagne les professionnels et les particuliers dans la réduction de leur consommation d'énergie et la décarbonation des sites ...",
-    "source": "France Travail",
-    "borderline": false,
-    "score": 95,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/chef-fe-de-projet-transition-environnementale-et-planification-territoriale-paris-at-scet-groupe-scet-htc-4423140783",
     "title": "Chef.fe de projet Transition environnementale et Planification territoriale - Paris",
     "company": "SCET | Groupe SCET HTC",
@@ -270,6 +270,19 @@
     "company_watch": true,
     "borderline": false,
     "score": 95,
+    "is_new": false
+  },
+  {
+    "id": "5867223050",
+    "title": "Chargé.e de mission « Protection et gestion de la Nature »",
+    "company": "DREAL",
+    "location": "Marseille, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5867223050?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots Au sein de la DREAL, le SBEP, composé de 5 unités et d une quarantaine d'agent.e.s, a pour objectifs la protection, la g...",
+    "source": "Adzuna",
+    "company_watch": false,
+    "borderline": false,
+    "score": 65,
     "is_new": false
   },
   {
@@ -606,20 +619,6 @@
     "company_watch": true,
     "borderline": false,
     "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "sr-OECD-744000139021269",
-    "title": "Energy Modeler and Technology Analyst",
-    "company": "OECD",
-    "location": "Paris, Île-de-France Region, fr",
-    "url": "https://jobs.smartrecruiters.com/OECD/744000139021269",
-    "description": "",
-    "date": "2026-07-22",
-    "source": "SmartRecruiters",
-    "company_watch": true,
-    "borderline": false,
-    "score": 85,
     "is_new": false
   },
   {
