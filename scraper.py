@@ -245,7 +245,8 @@ APPEL_EXCLUDE_TERMS = [
 ]
 
 # Score IA en dessous duquel une offre n'est PAS poussée en notif temps réel.
-PRIORITY_SCORE = 85
+# 85 était trop strict (plus aucune notif ne partait) → abaissé à 80.
+PRIORITY_SCORE = 80
 # À Paris (hors entreprises suivies), score IA minimal pour retenir une offre :
 # ne garde que le conseil/stratégie senior bien noté, pas le RSE générique.
 PARIS_MIN_SCORE = 70
@@ -3071,7 +3072,10 @@ def send_priority_alert(jobs):
     notif n'est configuré."""
     priority = [j for j in jobs
                 if j.get("is_new") and j.get("score", 0) >= PRIORITY_SCORE]
+    top = max((j.get("score", 0) for j in jobs if j.get("is_new")), default=0)
     if not priority:
+        print(f"  Notif prioritaire : aucune offre ≥{PRIORITY_SCORE} "
+              f"(meilleur score du jour : {top})")
         return
     priority.sort(key=lambda j: j.get("score", 0), reverse=True)
     lines = [f"🔥 {len(priority)} offre(s) climat à fort potentiel :"]
@@ -3092,6 +3096,9 @@ def send_priority_alert(jobs):
         elif slack_url:
             r = requests.post(slack_url, json={"text": text}, timeout=15)
             print(f"  Notif Slack → HTTP {r.status_code} ({len(priority)} offre(s))")
+        else:
+            print(f"  Notif prioritaire : {len(priority)} offre(s) ≥{PRIORITY_SCORE} "
+                  f"mais AUCUN secret Telegram/Slack configuré")
     except Exception as e:
         print(f"  EXCEPTION notif prioritaire: {e}")
 
