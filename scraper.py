@@ -127,6 +127,44 @@ AI_PROMPT_VERSION = 10
 SOURCE_HEALTH_FILE = "source_health.json"
 SOURCE_HEALTH_ALERT = 3  # alerte à partir de 3 jours d'affilée à zéro
 
+# Énergies renouvelables à Marseille : catégorie SÉPARÉE et exploratoire.
+# Les EnR (solaire, éolien, hydrogène…) sont écartées du flux principal (hors
+# cœur de cible conseil/adaptation), mais l'utilisateur veut les suivre à part
+# pour Marseille uniquement. Piste distincte : pas de filtre IA, seen-file dédié.
+ENR_SEEN_FILE = "enr_marseille_vus.json"
+ENR_KEYWORDS = [
+    "énergies renouvelables", "énergie renouvelable", "photovoltaïque",
+    "énergie solaire", "parc solaire", "centrale solaire", "éolien",
+    "biomasse", "méthanisation", "géothermie", "hydrogène vert", "power to gas",
+]
+# Un job n'est retenu dans cette catégorie que si titre/description porte un
+# signal EnR (évite le bruit d'une recherche large).
+_ENR_SIGNAL_RE = re.compile(
+    r"renouvelabl|renewable|photovolta|solaire|\bsolar\b|[ée]olien|\bwind\b|"
+    r"biomasse|biogaz|m[ée]thanis|g[ée]othermi|hydrog[èe]ne|hydrogen|"
+    r"power.to.gas|\benr\b|transition [ée]nerg|mix [ée]nerg|stockage d.[ée]nergie",
+    re.IGNORECASE)
+# Titres à écarter MÊME dans la catégorie EnR : stages, postes de terrain/pose,
+# purement commerciaux (on garde ingénierie / dev de projet / chef de projet).
+_ENR_EXCLUDE_RE = re.compile(
+    r"stage|alternan|apprenti|\bvie\b|\bposeur|couvreur|monteur|"
+    r"[ée]lectricien|technicien|op[ée]rateur|conducteur|chauffeur|"
+    r"\bsdr\b|\bbdr\b|commercial|sales|business developer|t[ée]l[ée]vente",
+    re.IGNORECASE)
+
+
+def enr_keep_title(title, description=""):
+    t = title or ""
+    # Signal EnR cherché dans titre + description ; exclusions sur le titre seul.
+    if not _ENR_SIGNAL_RE.search(t + " " + (description or "")):
+        return False
+    if _ENR_EXCLUDE_RE.search(t):
+        return False
+    if is_over_senior_title(t):
+        return False
+    return True
+
+
 # Appels à contribution / consultations / TdR des institutions Méditerranée
 # (Plan Bleu, MedECC, FEMISE…). Canal distinct des offres d'emploi : souvent
 # une porte d'entrée directe dans la production de référence (co-signer un
@@ -1103,6 +1141,61 @@ def search_greenjob(keyword):
     except Exception as e:
         print(f"  EXCEPTION Greenjob.fr: {e}")
         return []
+
+
+def search_enr_marseille():
+    """Recherche EnR à Marseille (catégorie séparée). Interroge Adzuna sur des
+    mots-clés énergies renouvelables, restreint à Marseille, avec un filtre
+    dédié (garde ingénierie / dev de projet / chef de projet ; écarte stages,
+    postes de terrain, purement commerciaux). Piste distincte du flux principal :
+    ces offres ne passent NI par les exclusions globales NI par le filtre IA."""
+    app_id = os.environ.get("ADZUNA_APP_ID", "")
+    app_key = os.environ.get("ADZUNA_APP_KEY", "")
+    if not app_id or not app_key:
+        return []
+    jobs = []
+    seen = set()
+    for kw in ENR_KEYWORDS:
+        url = (
+            f"https://api.adzuna.com/v1/api/jobs/fr/search/1"
+            f"?app_id={app_id}&app_key={app_key}"
+            f"&results_per_page=10"
+            f"&what={requests.utils.quote(kw)}"
+            f"&where={requests.utils.quote('Marseille')}"
+            f"&max_days_old=14"
+            f"&content-type=application/json"
+        )
+        try:
+            r = requests.get(url, timeout=10)
+            r.raise_for_status()
+            data = r.json()
+            if "exception" in data:
+                continue
+            for job in data.get("results", []):
+                title = job.get("title", "N/A")
+                location = job.get("location", {}).get("display_name", "")
+                if "marseille" not in location.lower():
+                    continue
+                description = job.get("description", "")
+                if not enr_keep_title(title, description):
+                    continue
+                jid = str(job.get("id", ""))
+                if jid in seen:
+                    continue
+                seen.add(jid)
+                jobs.append({
+                    "id": jid,
+                    "title": clean_text(title),
+                    "company": job.get("company", {}).get("display_name", "N/A"),
+                    "location": location or "Marseille",
+                    "url": job.get("redirect_url", ""),
+                    "salary": format_salary_range(job.get("salary_min"), job.get("salary_max")),
+                    "source": "Adzuna",
+                })
+        except Exception as e:
+            print(f"  EXCEPTION EnR Marseille '{kw}': {e}")
+    print(f"  EnR Marseille → {len(jobs)} offre(s)")
+    return jobs
 
 
 def search_appels_contribution():
@@ -2679,6 +2772,29 @@ def appels_section_html(appels):
     """
 
 
+def enr_section_html(enr):
+    """Section séparée « Énergies renouvelables — Marseille » (exploratoire,
+    hors cœur de cible, sans filtrage IA)."""
+    if not enr:
+        return ""
+    rows = ""
+    for j in enr[:15]:
+        new = (_pill("nouveau", "#0f8a4f") if j.get("is_new") else "")
+        sal = (f' <span style="color:#8a938c">· {j["salary"]}</span>'
+               if j.get("salary") else "")
+        rows += (f'<div style="padding:10px 0;border-bottom:1px solid #f0f2f0;font-size:14px;line-height:1.45">'
+                 f'{new}'
+                 f'<a href="{j["url"]}" style="color:#16281f;text-decoration:none;font-weight:600">{j["title"]}</a> '
+                 f'<span style="color:#8a938c">— {j["company"]} · {j["location"]}</span>{sal}</div>')
+    return f"""
+    <div style="margin:6px 0 22px;padding:16px 18px;background:#fff7ec;border:1px solid #f0d29a;border-radius:12px">
+        <div style="font-size:15px;font-weight:700;color:#8a5a00;margin-bottom:4px">🌞 Énergies renouvelables — Marseille</div>
+        <div style="font-size:12px;color:#7a6033;margin-bottom:10px">Catégorie à part, exploratoire (solaire, éolien, hydrogène, biomasse…) — hors filtre principal</div>
+        {rows}
+    </div>
+    """
+
+
 def excluded_section_html(excluded_log):
     if not excluded_log:
         return ""
@@ -2748,8 +2864,9 @@ def health_footer_html(health_alerts):
 
 
 def build_email(jobs, feedback_url, excluded_log=None, disappeared=None,
-                health_alerts=None, appels=None):
+                health_alerts=None, appels=None, enr=None):
     appels = appels or []
+    enr = enr or []
     today = datetime.now().strftime("%d/%m/%Y")
     watchlist = [j for j in jobs if j.get("company_watch")]
     geo_jobs = [j for j in jobs if not j.get("company_watch")]
@@ -2772,6 +2889,7 @@ def build_email(jobs, feedback_url, excluded_log=None, disappeared=None,
           <div style="padding:22px;color:#54615a;font-size:14px">
             <div style="margin-bottom:14px">Aucune nouvelle offre trouvée aujourd'hui. 🌤️</div>
             {appels_section_html(appels)}
+            {enr_section_html(enr)}
           </div>
         </div></body>
         """
@@ -2806,6 +2924,7 @@ def build_email(jobs, feedback_url, excluded_log=None, disappeared=None,
         </a>
     """
     body += appels_section_html(appels)
+    body += enr_section_html(enr)
 
     # Corps compact : seules les nouvelles offres bien notées (max SECTION_MAX
     # par section) sont mises en avant ; tout le reste va dans `sink` → section
@@ -3068,6 +3187,21 @@ if __name__ == "__main__":
     save_json(APPELS_SEEN_FILE, list(appels_seen | {a["url"] for a in appels}))
     print(f"Appels à contribution : {len(appels)} ({sum(1 for a in appels if a.get('is_new'))} nouveaux)")
 
-    html = build_email(jobs, feedback_url, EXCLUDED_LOG, disappeared, health_alerts, appels)
+    # Énergies renouvelables à Marseille : catégorie séparée, sans filtrage IA.
+    try:
+        enr = search_enr_marseille()
+    except Exception as e:
+        print(f"  EXCEPTION EnR Marseille : {e}")
+        enr = []
+    enr = deduplicate(enr)
+    enr_seen = set(load_json(ENR_SEEN_FILE, []))
+    for j in enr:
+        key = f"{j['title'].lower()}|{j['company'].lower()}"
+        j["is_new"] = key not in enr_seen
+    enr.sort(key=lambda j: (not j.get("is_new"), j["company"]))
+    save_json(ENR_SEEN_FILE, list(enr_seen | {f"{j['title'].lower()}|{j['company'].lower()}" for j in enr}))
+    print(f"EnR Marseille : {len(enr)} ({sum(1 for j in enr if j.get('is_new'))} nouveaux)")
+
+    html = build_email(jobs, feedback_url, EXCLUDED_LOG, disappeared, health_alerts, appels, enr)
     send_email(html, len(jobs))
     send_priority_alert(jobs)
