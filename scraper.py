@@ -137,6 +137,32 @@ ENR_KEYWORDS = [
     "énergie solaire", "parc solaire", "centrale solaire", "éolien",
     "biomasse", "méthanisation", "géothermie", "hydrogène vert", "power to gas",
 ]
+# Villes interrogées (élargi à la PACA) et acceptation de lieu associée.
+ENR_LOCATIONS = ["Marseille", "Aix-en-Provence", "Toulon", "Nice", "Avignon"]
+_ENR_LOC_RE = re.compile(
+    r"marseille|\baix\b|aix-en-provence|toulon|nice|avignon|\bgap\b|"
+    r"provence|paca|bouches-du-rh|\bvar\b|vaucluse|alpes-maritimes|"
+    r"alpes-de-haute|hautes-alpes", re.IGNORECASE)
+# Entreprises EnR suivies dans cette catégorie (recherche par nom, gardées même
+# sans mot-clé EnR dans le titre — l'employeur EST une boîte EnR).
+ENR_COMPANIES = {"Kraken Subsea": "Éolien"}
+# Typologie EnR pour classer les offres dans le mail.
+_ENR_TYPES = [
+    ("Solaire / photovoltaïque", re.compile(r"photovolta|solaire|\bsolar\b|\bpv\b", re.I)),
+    ("Éolien", re.compile(r"[ée]olien|\bwind\b|offshore|subsea|maritime", re.I)),
+    ("Hydrogène", re.compile(r"hydrog[èe]ne|hydrogen|power.to.gas", re.I)),
+    ("Biomasse / biogaz / méthanisation", re.compile(r"biomasse|biogaz|m[ée]thanis|biom[ée]thane", re.I)),
+    ("Géothermie", re.compile(r"g[ée]othermi", re.I)),
+]
+
+
+def enr_type(title, description=""):
+    """Renvoie la typologie EnR d'une offre (pour le classement du mail)."""
+    hay = (title or "") + " " + (description or "")
+    for label, rx in _ENR_TYPES:
+        if rx.search(hay):
+            return label
+    return "Autres EnR"
 # Un job n'est retenu dans cette catégorie que si titre/description porte un
 # signal EnR (évite le bruit d'une recherche large).
 _ENR_SIGNAL_RE = re.compile(
@@ -1143,58 +1169,84 @@ def search_greenjob(keyword):
         return []
 
 
-def search_enr_marseille():
-    """Recherche EnR à Marseille (catégorie séparée). Interroge Adzuna sur des
-    mots-clés énergies renouvelables, restreint à Marseille, avec un filtre
-    dédié (garde ingénierie / dev de projet / chef de projet ; écarte stages,
-    postes de terrain, purement commerciaux). Piste distincte du flux principal :
-    ces offres ne passent NI par les exclusions globales NI par le filtre IA."""
+def _enr_adzuna_query(what, where):
+    """Un appel Adzuna FR (EnR), renvoie la liste brute de résultats."""
     app_id = os.environ.get("ADZUNA_APP_ID", "")
     app_key = os.environ.get("ADZUNA_APP_KEY", "")
     if not app_id or not app_key:
         return []
+    url = (
+        f"https://api.adzuna.com/v1/api/jobs/fr/search/1"
+        f"?app_id={app_id}&app_key={app_key}"
+        f"&results_per_page=10"
+        f"&what={requests.utils.quote(what)}"
+        f"&where={requests.utils.quote(where)}"
+        f"&max_days_old=14"
+        f"&content-type=application/json"
+    )
+    try:
+        r = requests.get(url, timeout=10)
+        r.raise_for_status()
+        data = r.json()
+        if "exception" in data:
+            return []
+        return data.get("results", [])
+    except Exception as e:
+        print(f"  EXCEPTION EnR Adzuna '{what}'/'{where}': {e}")
+        return []
+
+
+def search_enr_marseille():
+    """Recherche EnR à Marseille & PACA (catégorie séparée). Interroge Adzuna
+    sur des mots-clés énergies renouvelables (élargi Aix/Toulon/Nice/Avignon)
+    plus les entreprises EnR suivies (Kraken Subsea…), avec un filtre dédié
+    (garde ingénierie / dev de projet ; écarte stages, terrain, commercial).
+    Piste distincte : ni exclusions globales, ni filtre IA. Chaque offre reçoit
+    une typologie EnR (solaire / éolien / hydrogène…)."""
     jobs = []
     seen = set()
+
+    def add(job, force_keep=False, forced_type=None):
+        title = job.get("title", "N/A")
+        location = job.get("location", {}).get("display_name", "")
+        if not _ENR_LOC_RE.search(location):
+            return
+        description = job.get("description", "")
+        # Entreprise EnR suivie : on garde même sans mot-clé EnR dans le titre,
+        # mais on applique quand même l'exclusion terrain/commercial/séniorité.
+        if force_keep:
+            if _ENR_EXCLUDE_RE.search(title) or is_over_senior_title(title):
+                return
+        elif not enr_keep_title(title, description):
+            return
+        jid = str(job.get("id", ""))
+        if not jid or jid in seen:
+            return
+        seen.add(jid)
+        jobs.append({
+            "id": jid,
+            "title": clean_text(title),
+            "company": job.get("company", {}).get("display_name", "N/A"),
+            "location": location or "PACA",
+            "url": job.get("redirect_url", ""),
+            "salary": format_salary_range(job.get("salary_min"), job.get("salary_max")),
+            "source": "Adzuna",
+            "enr_type": forced_type or enr_type(title, description),
+        })
+
     for kw in ENR_KEYWORDS:
-        url = (
-            f"https://api.adzuna.com/v1/api/jobs/fr/search/1"
-            f"?app_id={app_id}&app_key={app_key}"
-            f"&results_per_page=10"
-            f"&what={requests.utils.quote(kw)}"
-            f"&where={requests.utils.quote('Marseille')}"
-            f"&max_days_old=14"
-            f"&content-type=application/json"
-        )
-        try:
-            r = requests.get(url, timeout=10)
-            r.raise_for_status()
-            data = r.json()
-            if "exception" in data:
-                continue
-            for job in data.get("results", []):
-                title = job.get("title", "N/A")
-                location = job.get("location", {}).get("display_name", "")
-                if "marseille" not in location.lower():
-                    continue
-                description = job.get("description", "")
-                if not enr_keep_title(title, description):
-                    continue
-                jid = str(job.get("id", ""))
-                if jid in seen:
-                    continue
-                seen.add(jid)
-                jobs.append({
-                    "id": jid,
-                    "title": clean_text(title),
-                    "company": job.get("company", {}).get("display_name", "N/A"),
-                    "location": location or "Marseille",
-                    "url": job.get("redirect_url", ""),
-                    "salary": format_salary_range(job.get("salary_min"), job.get("salary_max")),
-                    "source": "Adzuna",
-                })
-        except Exception as e:
-            print(f"  EXCEPTION EnR Marseille '{kw}': {e}")
-    print(f"  EnR Marseille → {len(jobs)} offre(s)")
+        for where in ENR_LOCATIONS:
+            for job in _enr_adzuna_query(kw, where):
+                add(job)
+    # Entreprises EnR suivies (par nom), sur toute la PACA.
+    for company, typ in ENR_COMPANIES.items():
+        name_re = re.compile(r"\b" + re.escape(company.lower()) + r"\b")
+        for where in ENR_LOCATIONS:
+            for job in _enr_adzuna_query(company, where):
+                comp = job.get("company", {}).get("display_name", "")
+                if name_re.search(comp.lower()):
+                    add(job, force_keep=True, forced_type=typ)
+    print(f"  EnR Marseille/PACA → {len(jobs)} offre(s)")
     return jobs
 
 
@@ -2773,24 +2825,43 @@ def appels_section_html(appels):
 
 
 def enr_section_html(enr):
-    """Section séparée « Énergies renouvelables — Marseille » (exploratoire,
-    hors cœur de cible, sans filtrage IA)."""
+    """Section séparée « Énergies renouvelables — Marseille & PACA », classée
+    par typologie d'EnR (exploratoire, hors cœur de cible, sans filtrage IA)."""
     if not enr:
         return ""
-    rows = ""
-    for j in enr[:15]:
-        new = (_pill("nouveau", "#0f8a4f") if j.get("is_new") else "")
-        sal = (f' <span style="color:#8a938c">· {j["salary"]}</span>'
-               if j.get("salary") else "")
-        rows += (f'<div style="padding:10px 0;border-bottom:1px solid #f0f2f0;font-size:14px;line-height:1.45">'
-                 f'{new}'
-                 f'<a href="{j["url"]}" style="color:#16281f;text-decoration:none;font-weight:600">{j["title"]}</a> '
-                 f'<span style="color:#8a938c">— {j["company"]} · {j["location"]}</span>{sal}</div>')
+    # Groupe par typologie, dans un ordre stable.
+    groups = {}
+    for j in enr:
+        groups.setdefault(j.get("enr_type", "Autres EnR"), []).append(j)
+    # Ordre stable ; toute typologie inattendue est rendue avant « Autres EnR ».
+    known = [lbl for lbl, _ in _ENR_TYPES]
+    extra = [g for g in groups if g not in known and g != "Autres EnR"]
+    order = known + extra + ["Autres EnR"]
+
+    blocks = ""
+    for typ in order:
+        items = groups.get(typ)
+        if not items:
+            continue
+        rows = ""
+        for j in items[:12]:
+            new = (_pill("nouveau", "#0f8a4f") if j.get("is_new") else "")
+            sal = (f' <span style="color:#8a938c">· {j["salary"]}</span>'
+                   if j.get("salary") else "")
+            rows += (f'<div style="padding:9px 0;border-bottom:1px solid #f3e7cf;font-size:14px;line-height:1.45">'
+                     f'{new}'
+                     f'<a href="{j["url"]}" style="color:#16281f;text-decoration:none;font-weight:600">{j["title"]}</a> '
+                     f'<span style="color:#8a938c">— {j["company"]} · {j["location"]}</span>{sal}</div>')
+        blocks += (f'<div style="margin-top:12px">'
+                   f'<div style="font-size:13px;font-weight:700;color:#8a5a00;'
+                   f'text-transform:uppercase;letter-spacing:.3px">{typ} '
+                   f'<span style="color:#b89047;font-weight:600">({len(items)})</span></div>'
+                   f'{rows}</div>')
     return f"""
     <div style="margin:6px 0 22px;padding:16px 18px;background:#fff7ec;border:1px solid #f0d29a;border-radius:12px">
-        <div style="font-size:15px;font-weight:700;color:#8a5a00;margin-bottom:4px">🌞 Énergies renouvelables — Marseille</div>
-        <div style="font-size:12px;color:#7a6033;margin-bottom:10px">Catégorie à part, exploratoire (solaire, éolien, hydrogène, biomasse…) — hors filtre principal</div>
-        {rows}
+        <div style="font-size:15px;font-weight:700;color:#8a5a00;margin-bottom:4px">🌞 Énergies renouvelables — Marseille &amp; PACA</div>
+        <div style="font-size:12px;color:#7a6033;margin-bottom:2px">Catégorie à part, exploratoire (rôles ingénierie / dév. de projet) — hors filtre principal, classée par type</div>
+        {blocks}
     </div>
     """
 
