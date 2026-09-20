@@ -1,5 +1,29 @@
 [
   {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-d%C3%A9carbonation-du-num%C3%A9rique-h-f-at-davidson-consulting-4183122301",
+    "title": "Consultant Senior Décarbonation du Numérique (H/F)",
+    "company": "Davidson consulting",
+    "location": "Île-de-France, France",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-d%C3%A9carbonation-du-num%C3%A9rique-h-f-at-davidson-consulting-4183122301",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 85,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-environnement-gaz-%C3%A0-effet-de-serre-f-h-x-at-bureau-veritas-4450278016",
+    "title": "Consultant Environnement/Gaz à effet de serre (F-H-X)",
+    "company": "Bureau Veritas",
+    "location": "Champs-sur-Marne",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-environnement-gaz-%C3%A0-effet-de-serre-f-h-x-at-bureau-veritas-4450278016",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 90,
+    "is_new": false
+  },
+  {
     "id": "https://fr.linkedin.com/jobs/view/consultant-%E2%80%93-energy-utilities-low-carbon-solutions-at-ppt-consulting-4468042649",
     "title": "Consultant – Energy, Utilities & Low Carbon Solutions",
     "company": "PPT Consulting",
@@ -12,23 +36,11 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/client-success-specialist-sustainability-solutions-at-iss-stoxx-sustainability-4447575773",
-    "title": "Client Success Specialist - Sustainability Solutions",
-    "company": "ISS STOXX Sustainability",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/client-success-specialist-sustainability-solutions-at-iss-stoxx-sustainability-4447575773",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
     "id": "5883344505",
     "title": "CHARGE DE MISSION DEVELOPPEMENT DURABLE",
     "company": "Ministère des Armées",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/land/ad/5883344505?se=jO3BhQq08RGSI57gYuD12g&utm_medium=api&utm_source=ae8a5ffa&v=839A15AB76F12E2ED960A9BAFCE2E5BBE1A8DBB2",
+    "url": "https://www.adzuna.fr/land/ad/5883344505?se=qNL2Dte08RGn6-ql-U9NQA&utm_medium=api&utm_source=ae8a5ffa&v=839A15AB76F12E2ED960A9BAFCE2E5BBE1A8DBB2",
     "description": "Rattaché(e) à la cheffe de la MTEEDD, le/la chargé(e) de mission développement durable l'assiste dans le pilotage de la stratégie « Défense Durable » ...",
     "salary": "",
     "date": "2026-09-14T08:53:30Z",
@@ -59,19 +71,6 @@
     "source": "France Travail",
     "borderline": true,
     "score": 50,
-    "is_new": false
-  },
-  {
-    "id": "5861721793",
-    "title": "Account Manager H/F",
-    "company": "Deepki",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/land/ad/5861721793?se=CCn_pAq08RGm1alvctyjWA&utm_medium=api&utm_source=ae8a5ffa&v=44615C8FFD8F77CD627950A82CCBEA051CAC4F5B",
-    "description": "About Deepki Founded in 2014, Deepki is the most trusted sustainability SaaS solution for sustainability in the real estate sector. Its comprehensive ...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "borderline": false,
-    "score": 80,
     "is_new": false
   },
   {
@@ -316,7 +315,7 @@
     "url": "https://www.apec.fr/candidat/recherche-emploi.html/emploi/detail-offre/179287534W",
     "description": "Sous l'autorité d'un responsable de pôle, au sein d'une équipe d'ingénieurs et de chargés d'études, le Chef de Projet prend en charge le volet conception d'installations CVCD Plomberie des projets att...",
     "salary": "40 - 65 k€ brut annuel",
-    "date": "2026-09-12T08:17:12.000+0000",
+    "date": "2026-09-20T09:27:06.000+0000",
     "source": "APEC",
     "borderline": false,
     "score": 80,
