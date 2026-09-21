@@ -1197,6 +1197,65 @@ def _enr_adzuna_query(what, where):
         return []
 
 
+_OPENC_TITLE_HINT_RE = re.compile(
+    r"charg[ée]|responsable|ing[ée]nieur|chef.?fe? de projet|coordinat|"
+    r"assistant|technicien|d[ée]veloppeur|officer|manager|directeur|directrice|"
+    r"consultant|analyst|chercheur|chercheuse|post.?doc|doctorant|data|"
+    r"juriste|comptable|communication|scientifique|expert|gestionnaire", re.I)
+
+
+def search_open_c():
+    """Fondation Open-C (Marseille, sciences de l'océan) : petite structure
+    suivie, sa page carrières est scrapée directement. Entreprise ciblée
+    (company_watch) → tous ses postes remontent, l'IA jugera la pertinence.
+    Générique : on récupère les liens à l'allure d'intitulé de poste."""
+    from bs4 import BeautifulSoup
+    exclusions = get_exclusions()
+    url = "https://fondation-open-c.org/nous-rejoindre/"
+    try:
+        r = requests.get(url, headers={
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+            "Accept-Language": "fr-FR,fr;q=0.9",
+        }, timeout=15)
+        if r.status_code != 200:
+            print(f"  Open-C → HTTP {r.status_code}")
+            return []
+        soup = BeautifulSoup(r.text, "html.parser")
+        jobs = []
+        seen = set()
+        for a in soup.find_all("a", href=True):
+            title = " ".join(a.get_text(" ", strip=True).split())
+            if len(title) < 8 or len(title) > 130:
+                continue
+            if not _OPENC_TITLE_HINT_RE.search(title):
+                continue
+            if title_has_exclusion(title, exclusions):
+                continue
+            href = a["href"]
+            if href.startswith("/"):
+                href = "https://fondation-open-c.org" + href
+            elif not href.startswith("http"):
+                continue
+            if href in seen:
+                continue
+            seen.add(href)
+            jobs.append({
+                "id": href,
+                "title": clean_text(title),
+                "company": "Fondation Open-C",
+                "location": "Marseille",
+                "url": href,
+                "description": "",
+                "source": "Open-C",
+                "company_watch": True,
+            })
+        print(f"  Open-C → {len(jobs)} poste(s)")
+        return jobs
+    except Exception as e:
+        print(f"  EXCEPTION Open-C: {e}")
+        return []
+
+
 def search_enr_marseille():
     """Recherche EnR à Marseille & PACA (catégorie séparée). Interroge Adzuna
     sur des mots-clés énergies renouvelables (élargi Aix/Toulon/Nice/Avignon)
@@ -2640,6 +2699,7 @@ SOURCE_COLORS = {
     "ESS": "#5a8f3c", "Remote EU": "#1f7a99", "APEC": "#e2001a",
     "Greenhouse": "#1f8a5c", "Lever": "#5a4fcf", "LinkedIn": "#0a66c2",
     "ReliefWeb": "#c8102e", "SmartRecruiters": "#00b6b0", "UNjobs": "#009edb",
+    "Open-C": "#0a7d8c",
 }
 
 
@@ -3132,7 +3192,7 @@ if __name__ == "__main__":
                search_service_public, search_ess, search_remotive,
                search_arbeitnow, search_climatebase, search_apec,
                search_greenhouse, search_lever, search_reliefweb,
-               search_smartrecruiters, search_unjobs):
+               search_smartrecruiters, search_unjobs, search_open_c):
         tasks.append((fn, ()))
 
     all_jobs = []
