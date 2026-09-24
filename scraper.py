@@ -163,6 +163,26 @@ def enr_type(title, description=""):
         if rx.search(hay):
             return label
     return "Autres EnR"
+
+
+# Catégorie de poste (2ᵉ niveau de classement, sous chaque type d'EnR).
+_ENR_JOB_CATEGORIES = [
+    ("Chef·fe de projet", re.compile(r"chef(?:fe)?\s+de\s+projet|project manager", re.I)),
+    ("Ingénierie", re.compile(r"ing[ée]nieur|engineer", re.I)),
+    ("Développement de projet", re.compile(r"d[ée]veloppe|business developer|development", re.I)),
+    ("Chargé·e d'affaires / d'études", re.compile(r"charg[ée].{0,15}(affaires|[ée]tudes|mission)|analyst|consultant", re.I)),
+    ("Management / coordination", re.compile(r"responsable|manager|coordinat|directeur|directrice|head", re.I)),
+]
+
+
+def enr_job_category(title):
+    """Catégorie de poste d'une offre EnR (chef de projet, ingénierie…)."""
+    t = title or ""
+    for label, rx in _ENR_JOB_CATEGORIES:
+        if rx.search(t):
+            return label
+    return "Autres postes"
+
 # Un job n'est retenu dans cette catégorie que si titre/description porte un
 # signal EnR (évite le bruit d'une recherche large).
 _ENR_SIGNAL_RE = re.compile(
@@ -2900,28 +2920,42 @@ def enr_section_html(enr):
     order = known + extra + ["Autres EnR"]
 
     blocks = ""
+    job_order = [lbl for lbl, _ in _ENR_JOB_CATEGORIES] + ["Autres postes"]
     for typ in order:
         items = groups.get(typ)
         if not items:
             continue
-        rows = ""
-        for j in items[:12]:
-            new = (_pill("nouveau", "#0f8a4f") if j.get("is_new") else "")
-            sal = (f' <span style="color:#8a938c">· {j["salary"]}</span>'
-                   if j.get("salary") else "")
-            rows += (f'<div style="padding:9px 0;border-bottom:1px solid #f3e7cf;font-size:14px;line-height:1.45">'
-                     f'{new}'
-                     f'<a href="{j["url"]}" style="color:#16281f;text-decoration:none;font-weight:600">{j["title"]}</a> '
-                     f'<span style="color:#8a938c">— {j["company"]} · {j["location"]}</span>{sal}</div>')
-        blocks += (f'<div style="margin-top:12px">'
+        # 2ᵉ niveau : sous-groupe par catégorie de poste.
+        sub = {}
+        for j in items:
+            sub.setdefault(enr_job_category(j["title"]), []).append(j)
+        sub_html = ""
+        for cat in job_order:
+            cat_items = sub.get(cat)
+            if not cat_items:
+                continue
+            rows = ""
+            for j in cat_items[:12]:
+                new = (_pill("nouveau", "#0f8a4f") if j.get("is_new") else "")
+                sal = (f' <span style="color:#8a938c">· {j["salary"]}</span>'
+                       if j.get("salary") else "")
+                rows += (f'<div style="padding:8px 0;border-bottom:1px solid #f3e7cf;font-size:14px;line-height:1.45">'
+                         f'{new}'
+                         f'<a href="{j["url"]}" style="color:#16281f;text-decoration:none;font-weight:600">{j["title"]}</a> '
+                         f'<span style="color:#8a938c">— {j["company"]} · {j["location"]}</span>{sal}</div>')
+            sub_html += (f'<div style="margin:8px 0 4px 10px;padding-left:8px;border-left:2px solid #eccf92">'
+                         f'<div style="font-size:12px;font-weight:600;color:#a5702a;margin-bottom:2px">'
+                         f'{cat} <span style="color:#c0975a">({len(cat_items)})</span></div>'
+                         f'{rows}</div>')
+        blocks += (f'<div style="margin-top:14px">'
                    f'<div style="font-size:13px;font-weight:700;color:#8a5a00;'
                    f'text-transform:uppercase;letter-spacing:.3px">{typ} '
                    f'<span style="color:#b89047;font-weight:600">({len(items)})</span></div>'
-                   f'{rows}</div>')
+                   f'{sub_html}</div>')
     return f"""
     <div style="margin:6px 0 22px;padding:16px 18px;background:#fff7ec;border:1px solid #f0d29a;border-radius:12px">
         <div style="font-size:15px;font-weight:700;color:#8a5a00;margin-bottom:4px">🌞 Énergies renouvelables — Marseille &amp; PACA</div>
-        <div style="font-size:12px;color:#7a6033;margin-bottom:2px">Catégorie à part, exploratoire (rôles ingénierie / dév. de projet) — hors filtre principal, classée par type</div>
+        <div style="font-size:12px;color:#7a6033;margin-bottom:2px">Catégorie à part, exploratoire (rôles ingénierie / dév. de projet) — hors filtre principal, classée par énergie puis par type de poste</div>
         {blocks}
     </div>
     """
