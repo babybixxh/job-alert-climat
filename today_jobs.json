@@ -24,6 +24,30 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/senior-analyst-energy-paris-at-compass-lexecon-4461790660",
+    "title": "Senior Analyst (Energy) | Paris",
+    "company": "Compass Lexecon",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/senior-analyst-energy-paris-at-compass-lexecon-4461790660",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 80,
+    "is_new": false
+  },
+  {
+    "id": "211WYQL",
+    "title": "Chargé-e de mission Adaptation au Changement Climatique (H/F)",
+    "company": "CONFEDERATION GENERALE DES PETITES ET MO",
+    "location": "13 - MARSEILLE",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/211WYQL",
+    "description": "Les Entrepreneurs Sud (ex-CPME Sud) porte le projet Cap Climat, ayant pour but de sensibiliser et accompagner les TPE-PME de la région Sud-Provence-Al...",
+    "source": "France Travail",
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
     "id": "6498808",
     "title": "chargé de transition ecologique, santé environnementale, adaptation changement H/F - EC159831",
     "company": "MAIRIE DE CROISSY SUR SEINE",
@@ -87,6 +111,19 @@
     "is_new": false
   },
   {
+    "id": "5856986407",
+    "title": "Responsable Data & Agriculture F/H",
+    "company": "Invivo",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5856986407?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Informations générales Société InVivo est l'un des premiers groupes agricoles européens avec un CA de 11 milliards d'euros et un effectif de près de 1...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": false,
+    "score": 95,
+    "is_new": false
+  },
+  {
     "id": "179321743W",
     "title": "Chargé de Missions Eau Bassin Adour Garonne F/H",
     "company": "CHAMBRE REGIONALE D'AGRICULTURE OCCITANIE",
@@ -137,6 +174,20 @@
     "description": "Notre agence Stratégie Climat, composée d'une dizaine de collaborateurs, se consacre à soutenir spécifiquement la transition écologique, à l'échelle territoriale et organisationnelle. Nous proposons à...",
     "salary": "A négocier",
     "date": "2026-08-25T06:30:13.000+0000",
+    "source": "APEC",
+    "borderline": false,
+    "score": 95,
+    "is_new": false
+  },
+  {
+    "id": "179472271W",
+    "title": "Chef de projet Énergie & Carbone expérimenté F/H",
+    "company": "Profila",
+    "location": "Boulogne-Billancourt - 92",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/emploi/detail-offre/179472271W",
+    "description": "Nous recherchons pour notre client un Chef de projet énergie et carbone H/F expérimenté.  Missions :    \t- Définir et piloter des stratégies de décarbonation et de valorisation énergétique à l'échelle...",
+    "salary": "A partir de 40 k€ brut annuel",
+    "date": "2026-09-23T21:43:11.000+0000",
     "source": "APEC",
     "borderline": false,
     "score": 95,
@@ -196,6 +247,20 @@
     "source": "APEC",
     "borderline": false,
     "score": 75,
+    "is_new": false
+  },
+  {
+    "id": "179464911W",
+    "title": "Responsable d'affaires décarbonation F/H",
+    "company": "EFFEKTIV",
+    "location": "Toulouse - 31",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/emploi/detail-offre/179464911W",
+    "description": "Description  Dans ce cadre, elle recrute un Responsables d'affaires décarbonation H/F pour contribuer activement à l'élargissement de sa clientèle d'abord sur le territoire France puis Europe.   Missi...",
+    "salary": "45 - 70 k€ brut annuel",
+    "date": "2026-09-24T08:25:38.000+0000",
+    "source": "APEC",
+    "borderline": false,
+    "score": 95,
     "is_new": false
   },
   {
