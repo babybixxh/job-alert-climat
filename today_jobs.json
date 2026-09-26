@@ -52,7 +52,7 @@
     "title": "CHARGE DE MISSION DEVELOPPEMENT DURABLE",
     "company": "Ministère des Armées",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/land/ad/5892498903?se=FKWaS8i48RGqSP-Ku-S77g&utm_medium=api&utm_source=ae8a5ffa&v=237690251472186C00C4A73E641DDEE1EB430B9F",
+    "url": "https://www.adzuna.fr/land/ad/5892498903?se=2Lmo44658RGCw6kuTDrJlg&utm_medium=api&utm_source=ae8a5ffa&v=237690251472186C00C4A73E641DDEE1EB430B9F",
     "description": "Rattaché(e) à la cheffe de la MTEEDD, le/la chargé(e) de mission développement durable l'assiste dans le pilotage de la stratégie « Défense Durable » ...",
     "salary": "",
     "date": "2026-09-21T09:06:37Z",
@@ -71,6 +71,31 @@
     "source": "France Travail",
     "borderline": false,
     "score": 70,
+    "is_new": false
+  },
+  {
+    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-thematique-economie-circulaire-f-h_4772.aspx",
+    "title": "VSC - Chargé.e de mission thématique Economie Circulaire F/H",
+    "company": "ADEME",
+    "location": "France",
+    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-thematique-economie-circulaire-f-h_4772.aspx",
+    "description": "",
+    "source": "ADEME",
+    "borderline": false,
+    "score": 85,
+    "is_new": false
+  },
+  {
+    "id": "5867702633",
+    "title": "Senior Events Specialist (H/F)",
+    "company": "Descartes Underwriting",
+    "location": "17ème Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/details/5867702633?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "ABOUT DESCARTES UNDERWRITING Join Descartes and contribute to our mission: Building Resilience in a World at Risk. Descartes is a corporate insurance ...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": false,
+    "score": 95,
     "is_new": false
   },
   {
@@ -184,20 +209,6 @@
     "is_new": false
   },
   {
-    "id": "179315808W",
-    "title": "Une Chargée ou un Chargé de Décarbonation et de sensibilisation F/H",
-    "company": "MAIRIE",
-    "location": "Champigny-sur-Marne - 94",
-    "url": "https://www.apec.fr/candidat/recherche-emploi.html/emploi/detail-offre/179315808W",
-    "description": "Vos missions principales  Co-piloter l’Agenda 2030, le RDD, le BEGES et le budget vert. Accompagner les directions dans leurs projets de décarbonation. Contribuer aux actions de sobriété et de rénovat...",
-    "salary": "A négocier",
-    "date": "2026-08-26T14:34:29.000+0000",
-    "source": "APEC",
-    "borderline": false,
-    "score": 90,
-    "is_new": false
-  },
-  {
     "id": "179300446W",
     "title": "Conseiller en transition écologique - Plan de mobilité F/H",
     "company": "SERVICES CENTRAUX DG",
@@ -254,6 +265,20 @@
     "is_new": false
   },
   {
+    "id": "179487903W",
+    "title": "Ingenieur d'Etudes - Décarbonation Des Procédés F/H",
+    "company": "DALKIA",
+    "location": "Villeurbanne - 69",
+    "url": "https://www.apec.fr/candidat/recherche-emploi.html/emploi/detail-offre/179487903W",
+    "description": "Dans le cadre d'un développement commercial, Dalkia Centre-Est recrute un.e Ingénieur.re d'Etudes Décarbonation Des Procédés.   Prêt.e à rejoindre l'équipe de Christophe ? Vous intégrerez une équipe d...",
+    "salary": "A négocier",
+    "date": "2026-09-26T06:34:01.000+0000",
+    "source": "APEC",
+    "borderline": false,
+    "score": 85,
+    "is_new": false
+  },
+  {
     "id": "179287534W",
     "title": "Chef de Projet Industrie Décarbonation BET 93 F/H",
     "company": "ANTHROPY THERMO CONSEILS",
@@ -261,7 +286,7 @@
     "url": "https://www.apec.fr/candidat/recherche-emploi.html/emploi/detail-offre/179287534W",
     "description": "Sous l'autorité d'un responsable de pôle, au sein d'une équipe d'ingénieurs et de chargés d'études, le Chef de Projet prend en charge le volet conception d'installations CVCD Plomberie des projets att...",
     "salary": "40 - 65 k€ brut annuel",
-    "date": "2026-09-20T09:27:06.000+0000",
+    "date": "2026-09-25T16:58:38.000+0000",
     "source": "APEC",
     "borderline": false,
     "score": 80,
