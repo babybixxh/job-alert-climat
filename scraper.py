@@ -2425,6 +2425,28 @@ def search_wttj():
 MISTRAL_BATCH_SIZE = 25
 MISTRAL_MAX_RETRIES = 5      # tentatives par lot avant abandon
 MISTRAL_PACE_SECONDS = 1.2   # pause entre deux lots (lissage du débit)
+# Plafond d'offres envoyées à l'IA par run (étalement sur plusieurs jours pour
+# ne pas saturer le quota). Le surplus n'est pas jugé aujourd'hui → réévalué au
+# prochain run (et passé au repli mots-clés en attendant).
+MISTRAL_MAX_EVAL_PER_RUN = 60
+
+# Repli quand l'IA est indisponible (quota/429) ou qu'une offre n'a pas pu être
+# jugée : on garde quand même les offres à FORT signal climat dans le titre
+# (profil conseil/stratégie climat), pour ne pas se retrouver avec un mail vide.
+# Volontairement plus strict que le pré-filtre (qui, lui, est large).
+_STRONG_CLIMATE_RE = re.compile(
+    r"climat|carbone|\bcarbon\b|d[ée]carb|bas.?carbone|net.?z[ée]ro|bilan carbone|"
+    r"\bsbti\b|\bges\b|gaz à effet|transition [ée]nerg|transition [ée]colog|"
+    r"\badaptation\b|strat[ée]gie bas|empreinte carbone|climate|greenhouse gas",
+    re.IGNORECASE)
+
+
+def ai_fallback_keep(job):
+    """Repli sans IA : garde une offre si entreprise ciblée, ou si son titre
+    porte un fort signal climat. Score par défaut, marquée « non vérifiée IA »."""
+    if job.get("company_watch"):
+        return True
+    return bool(_STRONG_CLIMATE_RE.search(job.get("title", "")))
 
 
 def _mistral_chat(mistral_key, prompt):
@@ -2640,24 +2662,48 @@ def filter_jobs_with_ai(jobs):
         else:
             log_excluded(job['title'], job['company'], job.get('location', ''),
                          job.get('source', ''), f"IA (cache): {cached.get('reason', '')}")
+    # Étalement : on ne soumet qu'au plus MISTRAL_MAX_EVAL_PER_RUN offres à l'IA
+    # par run. Le surplus sera réévalué au prochain run (et passe au repli ci-dessous).
+    ai_batch = to_evaluate[:MISTRAL_MAX_EVAL_PER_RUN]
+    overflow = to_evaluate[MISTRAL_MAX_EVAL_PER_RUN:]
     print(f"  Cache IA : {len(jobs) - len(to_evaluate)} offre(s) déjà jugée(s), "
-          f"{len(to_evaluate)} à évaluer")
+          f"{len(to_evaluate)} à évaluer (dont {len(ai_batch)} ce run, {len(overflow)} reportées)")
 
     # On découpe en lots : avec beaucoup de sources actives, le nombre
     # d'offres peut dépasser ce qu'un seul appel Mistral peut traiter sans
     # tronquer sa réponse JSON (cause vue en prod : "Unterminated string").
-    for start in range(0, len(to_evaluate), MISTRAL_BATCH_SIZE):
-        batch = to_evaluate[start:start + MISTRAL_BATCH_SIZE]
+    judged_keys = set()
+    for start in range(0, len(ai_batch), MISTRAL_BATCH_SIZE):
+        batch = ai_batch[start:start + MISTRAL_BATCH_SIZE]
         if start > 0:
             time.sleep(MISTRAL_PACE_SECONDS)  # lissage du débit entre lots
         try:
-            kept += _filter_jobs_batch(batch, reasons_text, verdicts)
+            batch_kept = _filter_jobs_batch(batch, reasons_text, verdicts)
+            kept += batch_kept
+            # Toutes les offres du lot ont reçu un verdict (gardé ou rejeté).
+            judged_keys.update(ai_key(j) for j in batch)
         except Exception as e:
             # Lot non jugé : on ne l'écrit PAS dans le cache des verdicts, donc
             # il sera réévalué au prochain run (pas de rejet définitif sur une
-            # simple panne d'API).
+            # simple panne d'API). En attendant → repli mots-clés ci-dessous.
             print(f"  EXCEPTION Mistral (lot {start}-{start+len(batch)}): {e}")
-            print("  → lot écarté par sécurité (réévalué au prochain run)")
+            print("  → lot non jugé (repli mots-clés, réévalué au prochain run)")
+
+    # Repli : pour toute offre à évaluer NON jugée par l'IA (lot en échec quota,
+    # ou reportée par l'étalement), on garde celles à fort signal climat ou des
+    # entreprises ciblées, marquées « non vérifiée IA ».
+    fallback_kept = 0
+    for job in to_evaluate:
+        if ai_key(job) in judged_keys:
+            continue
+        if ai_fallback_keep(job):
+            job["score"] = DEFAULT_KEPT_SCORE
+            job["borderline"] = True
+            job["ai_unverified"] = True
+            kept.append(job)
+            fallback_kept += 1
+    if fallback_kept:
+        print(f"  Repli (IA indisponible/reportée) : {fallback_kept} offre(s) gardée(s) sans IA")
 
     # On borne le cache (dict ordonné par insertion : on garde les plus récents).
     if len(verdicts) > AI_VERDICTS_MAX:
@@ -2665,7 +2711,7 @@ def filter_jobs_with_ai(jobs):
     save_json(AI_VERDICTS_FILE, verdicts)
 
     print(f"  Mistral: {len(kept)}/{len(jobs)} offres conservées "
-          f"({len(to_evaluate)} réellement évaluées par l'IA)")
+          f"({len(judged_keys)} réellement jugées par l'IA, {fallback_kept} par repli)")
     return kept
 
 
@@ -2784,12 +2830,14 @@ def section_html(title, emoji, jobs, color, sink=None):
         badges = ""
         if is_new:
             badges += _pill("NOUVEAU", "#e05c2a")
-        if job.get("borderline"):
+        if job.get("ai_unverified"):
+            badges += _pill("🤖 NON VÉRIFIÉ IA", "#8a6d3b")
+        elif job.get("borderline"):
             badges += _pill("⚠️ À VÉRIFIER", "#d99000")
         badges += _pill(source, sc) if source else ""
 
         meta = ""
-        if score is not None:
+        if score is not None and not job.get("ai_unverified"):
             meta += _pill(f"🎯 {score}/100", _score_color(score))
         if job.get("salary"):
             meta += _pill(f"💰 {job['salary']}", "#e8efe9", "#2d6a4f")
