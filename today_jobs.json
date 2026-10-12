@@ -36,11 +36,11 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/manager-energy-utilities-marseille-at-sia-4477840556",
+    "id": "https://fr.linkedin.com/jobs/view/manager-energy-utilities-marseille-at-sia-4475254301",
     "title": "Manager - Energy & Utilities - Marseille",
     "company": "Sia",
     "location": "Marseille",
-    "url": "https://fr.linkedin.com/jobs/view/manager-energy-utilities-marseille-at-sia-4477840556",
+    "url": "https://fr.linkedin.com/jobs/view/manager-energy-utilities-marseille-at-sia-4475254301",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
@@ -60,6 +60,18 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-mission-syst%C3%A8me-%C3%A9lectrique-et-%C3%A9lectricit%C3%A9-renouvelables-f-h-at-ademe-4477501939",
+    "title": "Chargé.e de mission système électrique et électricité renouvelables F/H",
+    "company": "ADEME",
+    "location": "Montrouge",
+    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-mission-syst%C3%A8me-%C3%A9lectrique-et-%C3%A9lectricit%C3%A9-renouvelables-f-h-at-ademe-4477501939",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 80,
+    "is_new": false
+  },
+  {
     "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-thematique-economie-circulaire-f-h_4772.aspx",
     "title": "VSC - Chargé.e de mission thématique Economie Circulaire F/H",
     "company": "ADEME",
@@ -69,18 +81,6 @@
     "source": "ADEME",
     "borderline": false,
     "score": 85,
-    "is_new": false
-  },
-  {
-    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-systeme-electrique-et-electricite-renouvelables-f-h_4842.aspx",
-    "title": "Chargé.e de mission système électrique et électricité renouvelables F/H",
-    "company": "ADEME",
-    "location": "France",
-    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-systeme-electrique-et-electricite-renouvelables-f-h_4842.aspx",
-    "description": "",
-    "source": "ADEME",
-    "borderline": false,
-    "score": 80,
     "is_new": false
   },
   {
@@ -161,19 +161,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/animateur-de-formation-g%C3%A9nie-climatique-at-hunteo-4474289344",
-    "title": "Animateur de formation Génie climatique",
-    "company": "HUNTEO",
-    "location": "Rueil-Malmaison",
-    "url": "https://fr.linkedin.com/jobs/view/animateur-de-formation-g%C3%A9nie-climatique-at-hunteo-4474289344",
-    "description": "",
-    "source": "LinkedIn",
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
     "id": "214BZBP",
     "title": "Consultant Bilan Carbone (H/F)",
     "company": "BEST VALUE",
@@ -181,21 +168,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/214BZBP",
     "description": "Contexte\nBEST VALUE est une société à mission, dont l'objet est d'accompagner les organisations dans la structuration de démarches de durabilité créat...",
     "source": "France Travail",
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5911654274",
-    "title": "Chargé de mission FEDER transition énergétique et écologique (H/F)",
-    "company": "Fonction Publique Territoriale",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5911654274?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Sous l'autorité du chef de service et de son adjoint, le chargé de mission contribue à la mise en oeuvre et à la dynamis...",
-    "salary": "",
-    "date": "2026-10-04T17:54:57Z",
-    "source": "Adzuna",
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
@@ -214,17 +186,17 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
-    "id": "5911689646",
-    "title": "Animateur transition écologique (h/f) - Commune de Menton",
+    "id": "5919336001",
+    "title": "Animateur transition écologique (h/f) - Communauté d'agglomération de la Riviéra Française",
     "company": "Fonction publique Territoriale",
     "location": "Menton, Nice",
-    "url": "https://www.adzuna.fr/details/5911689646?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Au sein de la Direction Environnement et Développement durable, vous serez chargé (e) de coordonner et piloter les proje...",
+    "url": "https://www.adzuna.fr/details/5919336001?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots Véritable moteur du changement, votre rôle sera de concevoir des ateliers pédagogiques et de piloter des projets environ...",
     "salary": "",
-    "date": "2026-10-04T18:18:53Z",
+    "date": "2026-10-08T18:21:46Z",
     "source": "Adzuna",
     "score": 60,
     "borderline": true,
@@ -243,6 +215,32 @@
     "borderline": true,
     "ai_unverified": true,
     "is_new": false
+  },
+  {
+    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-transition-ecologique-territoires-durables-f-h_4871.aspx",
+    "title": "VSC - Chargé-e de mission Transition Ecologique - Territoires durables F/H",
+    "company": "ADEME",
+    "location": "France",
+    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-transition-ecologique-territoires-durables-f-h_4871.aspx",
+    "description": "",
+    "source": "ADEME",
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
+  },
+  {
+    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-transition-ecologique-economie-circulaire-f-h_4870.aspx",
+    "title": "VSC - Chargé-e de mission Transition Ecologique - Economie circulaire F/H",
+    "company": "ADEME",
+    "location": "France",
+    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-transition-ecologique-economie-circulaire-f-h_4870.aspx",
+    "description": "",
+    "source": "ADEME",
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
   },
   {
     "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-decarbonation-industrie-f-h_4850.aspx",
@@ -313,20 +311,6 @@
     "is_new": false
   },
   {
-    "id": "5904436523",
-    "title": "Senior IT Support Engineer H/F",
-    "company": "Sweep",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5904436523?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "This is a hands-on, operational mission. You'll take over the day-to-day IT support and device logistics so our internal team can operate seamlessly t...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
     "id": "5911386454",
     "title": "Educateur de Jeunes Enfants ou Éducateur Spécialisé — H/F",
     "company": "CAMSP Nelson Mandela",
@@ -347,20 +331,6 @@
     "location": "Ecully, Lyon",
     "url": "https://www.adzuna.fr/details/5911386455?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Auxiliaire de puériculture — H/F Les missions Structure de 24 berceaux accueillant 6 enfants en situation de handicap. Sous l’autorité de la responsab...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5903217799",
-    "title": "Senior Product Owner - Finance Systems H/F",
-    "company": "Descartes Underwriting",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5903217799?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "A PROPOS DE NOUS Rejoignez Descartes et contribuez à notre mission : Building Resilience in a World at Risk. Descartes est un groupe d'assurance pour ...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -403,20 +373,6 @@
     "location": "France",
     "url": "https://www.adzuna.fr/details/5890792470?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Company: Oliver Wyman Description: QUI SOMMES-NOUS ? Oliver Wyman, une entreprise de Marsh (NYSE : MRSH), est un cabinet de conseil en management qui ...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5879878436",
-    "title": "Oliver Wyman - Analyst/Senior Analyst - DnA- Paris",
-    "company": "Marsh McLennan",
-    "location": "France",
-    "url": "https://www.adzuna.fr/details/5879878436?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Company: Oliver Wyman Description: Oliver Wyman Oliver Wyman est un cabinet international leader dans le conseil en stratégie, intervenant dans différ...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -481,26 +437,26 @@
     "is_new": false
   },
   {
+    "id": "5905897857",
+    "title": "Consultant(e) technique, service Actuariat et Innovation SANTE/PREVOYANCE H/F",
+    "company": "Marsh McLennan",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5905897857?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Company: Marsh Description: Description de l'emploi Marsh Health & Benefits recherche de nouveaux talents pour l'équipe Actuariat et Innovation. Le po...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
+  },
+  {
     "id": "5898478515",
     "title": "Gestionnaire Indemnisation Automobile - CDD H/F",
     "company": "WTW",
     "location": "Noisy-le-Grand, Le Raincy",
     "url": "https://www.adzuna.fr/details/5898478515?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Description Le rôle Intégré(e) au sein du Département Auto-Flottes Transport, vos missions seront les suivantes Assurer la gestion des sinistres autom...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5879888851",
-    "title": "Chargé de clientèle Health & Benefits - CDI H/F",
-    "company": "WTW",
-    "location": "Puteaux, Nanterre",
-    "url": "https://www.adzuna.fr/details/5879888851?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Description Le rôle Assurer la bonne gestion de son portefeuille clients (organisation, acteurs, culture, environnement économique, métiers, risques, ...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -537,6 +493,20 @@
     "is_new": false
   },
   {
+    "id": "5905911908",
+    "title": "Gestionnaire de production Auto & Transport - CDI H/F",
+    "company": "WTW",
+    "location": "Puteaux, Nanterre",
+    "url": "https://www.adzuna.fr/details/5905911908?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Description Le rôle : Intégré au sein du Département Auto-Flottes Transport, vos missions seront les suivantes : Assure la gestion des contrats qui lu...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
     "id": "5908354973",
     "title": "SCOR SE Performance Analyst",
     "company": "SCOR",
@@ -551,46 +521,18 @@
     "is_new": false
   },
   {
-    "id": "5921012688",
-    "title": "Senior Underwriter - Treaty",
-    "company": "SCOR",
-    "location": "Ile-de-France, France",
-    "url": "https://www.adzuna.fr/details/5921012688?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Description Vous contribuez à l’exécution de la stratégie P&C au travers d’une souscription technique et vous développez un portefeuille de traités re...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": true
-  },
-  {
-    "id": "5893421155",
-    "title": "Conseiller Social H/F",
+    "id": "5921559903",
+    "title": "Gardien d'Immeubles Gq H/F",
     "company": "Icf Habitat",
-    "location": "Seine-Saint-Denis, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5893421155?utm_medium=api&utm_source=ae8a5ffa",
+    "location": "Aude, Occitanie",
+    "url": "https://www.adzuna.fr/details/5921559903?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Description de la mission: ICF Habitat, filiale logement du groupe SNCF, est un acteur majeur du logement en France avec près de 105 000 logements, pr...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
-  },
-  {
-    "id": "5922393863",
-    "title": "Gestionnaire d'immeubles - F/H",
-    "company": "ICF Habitat",
-    "location": "Alpes-Maritimes, Provence-Alpes-Côte d'Azur",
-    "url": "https://www.adzuna.fr/details/5922393863?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Gestionnaire d'immeubles - F/H ICF Habitat, filiale logement du groupe SNCF, est l’un des principaux opérateurs de logement en France avec près de 105...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5905495965",
@@ -705,20 +647,6 @@
     "is_new": false
   },
   {
-    "id": "5904416858",
-    "title": "Electromécanicien Fluides H/F",
-    "company": "Bonduelle",
-    "location": "France",
-    "url": "https://www.adzuna.fr/details/5904416858?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Sous la responsabilité du chef d'équipe technique Maintenance Fluide, l'électromécanicien : * Assure le bon fonctionnement et la maintenance des matér...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
     "id": "5922806097",
     "title": "Assistant Contrôle de Gestion H/F",
     "company": "Bonduelle",
@@ -730,7 +658,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5921580132",
@@ -772,20 +700,6 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
-  },
-  {
-    "id": "5916905659",
-    "title": "GESTIONNAIRE ADMINISTRATION RH - GTA (Gestion Temps Activité) F/H",
-    "company": "SAVENCIA B.G.",
-    "location": "Saint-Dié-des-Vosges-Ouest, Saint-Dié-des-Vosges",
-    "url": "https://www.adzuna.fr/details/5916905659?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "SAVENCIA , Groupe alimentaire international, familial et indépendant, engagé dans la transition agricole et environnementale et guidé par la vocation ...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
     "is_new": false
   },
   {
@@ -801,6 +715,20 @@
     "borderline": true,
     "ai_unverified": true,
     "is_new": false
+  },
+  {
+    "id": "5922419915",
+    "title": "Data Engineer Confirmé F/H",
+    "company": "Invivo",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5922419915?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Informations générales Société InVivo est l'un des premiers groupes agricoles européens avec un CA de 11 milliards d'euros et un effectif de près de 1...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
   },
   {
     "id": "5899867687",
@@ -898,21 +826,21 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
-    "id": "5922379206",
+    "id": "5922379212",
     "title": "Mécanicien VL et PL (F/H)",
     "company": "Terrena",
-    "location": "Saint-Varent, Bressuire",
-    "url": "https://www.adzuna.fr/details/5922379206?utm_medium=api&utm_source=ae8a5ffa",
+    "location": "Airvault, Parthenay",
+    "url": "https://www.adzuna.fr/details/5922379212?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Le poste de Mécanicien VL et PL (F/H) Terrena Services recherche un Mécanicien Véhicules Légers et Poids Lourds F/H pour son équipe basée à Thouars. A...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5913742324",
@@ -949,48 +877,6 @@
     "location": "Pantin, Bobigny",
     "url": "https://www.adzuna.fr/details/5912625045?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Contexte Pour le WWF, la transition écologique ne peut se passer d’une transformation profonde de l’économie . En 2025, 300 à 500 entreprises concentr...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5900744961",
-    "title": "Mécénat de compétences - Chargé de partenariats entreprises (F/H)",
-    "company": "WWF France",
-    "location": "Pantin, Bobigny",
-    "url": "https://www.adzuna.fr/details/5900744961?utm_medium=api&utm_source=ae8a5ffa",
-    "description": " Mécénat de compétences (non ouvert aux candidatures en CDD/CDI classiques) En travaillant avec le monde de l’entreprise, le WWF s’efforce de faire ch...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5879918196",
-    "title": "Mécénat de compétences - Expert(e) Systèmes d'Information (F/H)",
-    "company": "WWF France",
-    "location": "Pantin, Bobigny",
-    "url": "https://www.adzuna.fr/details/5879918196?utm_medium=api&utm_source=ae8a5ffa",
-    "description": " Mécénat de compétences (non ouvert aux candidatures en CDD/CDI classiques) Vous êtes spécialiste de systèmes d’information et sensible aux enjeux env...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5905899843",
-    "title": "Stagiaire Juriste (F/H)",
-    "company": "WWF France",
-    "location": "Pantin, Bobigny",
-    "url": "https://www.adzuna.fr/details/5905899843?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Au sein du service Assurance risque et qualité, dépendant de la Direction Générale, l’équipe juridique a pour mission principale de protéger les intér...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -1089,34 +975,6 @@
     "location": "Paris, Ile-de-France",
     "url": "https://www.adzuna.fr/details/5898224535?utm_medium=api&utm_source=ae8a5ffa",
     "description": "La Banque de France recrute un \" Juriste assurance (H/F) \" pour renforcer ses équipes. Au sein de la Direction des Affaires Juridiques, vous intégrere...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5898224860",
-    "title": "Business Analyst F/H",
-    "company": "Banque de France",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5898224860?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "La Banque de France recrute un \"Business Analyst (H/F)\" en CDD pour renforcer ses équipes. Présentation de la direction générale et du service L'Autor...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5898251531",
-    "title": "Développeur Python F/H",
-    "company": "Banque de France",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5898251531?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Description du poste La Direction Générale de la Stabilité financière et des Opérations, la DGSO, exerce une grande partie de ses activités dans le ca...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
