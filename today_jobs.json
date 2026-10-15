@@ -1,17 +1,5 @@
 [
   {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-%E2%80%93-energy-utilities-low-carbon-solutions-at-sia-4477847138",
-    "title": "Consultant – Energy, Utilities & Low Carbon Solutions",
-    "company": "Sia",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-%E2%80%93-energy-utilities-low-carbon-solutions-at-sia-4477847138",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 80,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/consultant-senior-d%C3%A9carbonation-du-num%C3%A9rique-h-f-at-davidson-consulting-4183122301",
     "title": "Consultant Senior Décarbonation du Numérique (H/F)",
     "company": "Davidson consulting",
@@ -21,6 +9,18 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 85,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-%E2%80%93-energy-utilities-low-carbon-solutions-at-sia-4477847138",
+    "title": "Consultant – Energy, Utilities & Low Carbon Solutions",
+    "company": "Sia",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-%E2%80%93-energy-utilities-low-carbon-solutions-at-sia-4477847138",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 80,
     "is_new": false
   },
   {
@@ -159,7 +159,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "214BZBP",
@@ -181,6 +181,19 @@
     "location": "95 - CERGY",
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/214WYQW",
     "description": "Depuis 2004, l'association b.a-BA s'engage dans l'accompagnement de la transition écologique sur Cergy-Pontoise, dans ses quartiers populaires. Elle y...",
+    "source": "France Travail",
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "7922293",
+    "title": "Che(fe) de projet RSE, transition écologique et efficience en santé F/H",
+    "company": "APHP HUP SEINE-ST-DENIS - AVICENNE",
+    "location": "93 - Bobigny",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7922293",
+    "description": "Situé à Bobigny (93), l'hôpital Avicenne exerce une triple mission de soins, de recherche et d'enseignement. Il est orienté vers deux axes forts : la ...",
     "source": "France Travail",
     "score": 60,
     "borderline": true,
@@ -241,7 +254,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "7903495",
@@ -254,7 +267,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-transition-ecologique-territoires-durables-f-h_4871.aspx",
@@ -296,12 +309,12 @@
     "is_new": false
   },
   {
-    "id": "5905299038",
-    "title": "Developer H/F",
-    "company": "Blunomy ",
-    "location": "Allier, Auvergne-Rhône-Alpes",
-    "url": "https://www.adzuna.fr/details/5905299038?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Le poste de Developer H/F Blunomy…… from Intention to Impact Blunomy is an international consulting & data firm, dedicated to accelerating the move to...",
+    "id": "5913236608",
+    "title": "Marketing Specialist Fixed Contract - CDD H/F",
+    "company": "Quantis",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/land/ad/5913236608?se=SIGIenzI8RGlQa862uEugg&utm_medium=api&utm_source=ae8a5ffa&v=DCB970CC49D3D673ED75834EB17CC1D20D32E006",
+    "description": "Support our people. Amplify our impact. - Do you want to contribute your Marketing expertise to a mission that truly matters? - Do you want to develop...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -352,6 +365,20 @@
     "is_new": false
   },
   {
+    "id": "5915039859",
+    "title": "Product Manager Freelance H/F",
+    "company": "Sweep",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5915039859?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Our platform maps climate and ESG data across entire organizations, enabling them to track, disclose, and take action. By turning sustainability into ...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
     "id": "5911386454",
     "title": "Educateur de Jeunes Enfants ou Éducateur Spécialisé — H/F",
     "company": "CAMSP Nelson Mandela",
@@ -394,12 +421,12 @@
     "is_new": false
   },
   {
-    "id": "5925963588",
-    "title": "Product Management Senior Expert",
+    "id": "5928404564",
+    "title": "Product Management Senior Expert H/F",
     "company": "Ecovadis",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5925963588?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Work smart, have fun and make an impact! EcoVadis is the leading provider of business sustainability ratings. Our solutions are backed by an internati...",
+    "url": "https://www.adzuna.fr/land/ad/5928404564?se=ZIjFg3zI8RGlQa862uEugg&utm_medium=api&utm_source=ae8a5ffa&v=710D9BC95DDDA470FCE1DFD0100A710A078A8E87",
+    "description": "As a Senior Product Manager for one of our Strategic Use Cases, you will own that use case end-to-end - from the customer problem and the data it depe...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -419,14 +446,14 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
-    "id": "5905888770",
+    "id": "5905927276",
     "title": "Chargé(e) d'Indemnisation Flotte Automobile (H/F)",
     "company": "Howden France",
     "location": "9ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/details/5905888770?utm_medium=api&utm_source=ae8a5ffa",
+    "url": "https://www.adzuna.fr/details/5905927276?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Pour accompagner sa croissance, Howden France recrute pour sa ligne produit « flotte automobile » son Chargé(e) d’Indemnisation Flotte Automobile (H/F...",
     "source": "Adzuna",
     "company_watch": true,
@@ -448,6 +475,20 @@
     "borderline": true,
     "ai_unverified": true,
     "is_new": false
+  },
+  {
+    "id": "5927752833",
+    "title": "Conseiller(ère) Service Indemnisation (CSI) H/F",
+    "company": "Marsh McLennan",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5927752833?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Company: Marsh Description: Nous recherchons un nouveau talent pour rejoindre notre équipe Affinity Claims Advisory. Ce poste offre une excellente opp...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
   },
   {
     "id": "5890792470",
@@ -520,20 +561,6 @@
     "is_new": false
   },
   {
-    "id": "5899844390",
-    "title": "Paralegal H/F",
-    "company": "Marsh McLennan",
-    "location": "France",
-    "url": "https://www.adzuna.fr/details/5899844390?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Company: Marsh Description: Marsh, leader mondial du courtage d'assurance et du conseil en gestion des risques, recherche un(e) Paralegal pour rejoind...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
     "id": "5898478515",
     "title": "Gestionnaire Indemnisation Automobile - CDD H/F",
     "company": "WTW",
@@ -590,18 +617,32 @@
     "is_new": false
   },
   {
-    "id": "5911204232",
+    "id": "5908354973",
     "title": "SCOR SE Performance Analyst",
     "company": "SCOR",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5911204232?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Planning and reporting deliverables are complete, accurate, documented and submitted within agreed deadlines. Financial variances and underlying drive...",
+    "location": "Ile-de-France, France",
+    "url": "https://www.adzuna.fr/details/5908354973?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Description Expected outcomes and success measures: Planning and reporting deliverables are complete, accurate, documented and submitted within agreed...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
     "is_new": false
+  },
+  {
+    "id": "5910971742",
+    "title": "SCOR SE Performance Analyst",
+    "company": "SCOR Group",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5910971742?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Planning and reporting deliverables are complete, accurate, documented and submitted within agreed deadlines. Financial variances and underlying drive...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
   },
   {
     "id": "5921012688",
@@ -629,7 +670,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5921559903",
@@ -671,6 +712,20 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5923826101",
+    "title": "Charge·e d'Affaires Risques & Seconde Opinion H/F",
+    "company": "Agence Française de Développement AFD",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/land/ad/5923826101?se=BCQrnHzI8RGRo8r52Aj1bQ&utm_medium=api&utm_source=ae8a5ffa&v=E81D1B245FCDF3023A7FA4B5B99FE124970787D1",
+    "description": "CHARGE.E D'AFFAIRES RISQUES & SECONDE OPINION H/F Quel sera votre rôle ? Au coeur de l'activité de PROPARCO, vous analyserez les opportunités de finan...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
     "is_new": true
   },
   {
@@ -685,7 +740,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5909906012",
@@ -730,20 +785,6 @@
     "is_new": false
   },
   {
-    "id": "5918856835",
-    "title": "Master Planner (/X) F/H",
-    "company": "Groupe Bel",
-    "location": "Suresnes, Nanterre",
-    "url": "https://www.adzuna.fr/details/5918856835?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "MISSIONS PRINCIPALES Activités hebdomadaires : Élaborer et optimiser les plans de production hebdomadaires afin de répondre à la demande du marché, en...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
     "id": "5921580132",
     "title": "OPERATEUR PRODUCTION POLYVALENT H/F",
     "company": "BONDUELLE EUROPE LONG LIFE",
@@ -778,48 +819,6 @@
     "location": "France",
     "url": "https://www.adzuna.fr/details/5904058007?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Savencia, Groupe alimentaire international, familial et indépendant, engagé dans la transition agricole et environnementale et guidé par la vocation \"...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5919370950",
-    "title": "Chef de secteur Paris Nord (H/F)",
-    "company": "Groupe Savencia",
-    "location": "Viroflay, Versailles",
-    "url": "https://www.adzuna.fr/details/5919370950?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Description Qui sommes‑nous ? Vous intégrerez Savencia Produits Laitiers France , filiale du Groupe Savencia, au sein de la branche Fromage & Dairy, l...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5919373339",
-    "title": "Assistant administratif polyvalent F/H",
-    "company": "Invivo",
-    "location": "France",
-    "url": "https://www.adzuna.fr/details/5919373339?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Informations générales Société InVivo est l'un des premiers groupes agricoles européens avec un CA de 11 milliards d'euros et un effectif de près de 1...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5922419915",
-    "title": "Data Engineer Confirmé F/H",
-    "company": "Invivo",
-    "location": "France",
-    "url": "https://www.adzuna.fr/details/5922419915?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Informations générales Société InVivo est l'un des premiers groupes agricoles européens avec un CA de 11 milliards d'euros et un effectif de près de 1...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -912,25 +911,25 @@
     "is_new": false
   },
   {
-    "id": "5893530042",
-    "title": "Expert sécurité informatique F/H (CDI)",
+    "id": "5923829293",
+    "title": "Adjoint au Chef de Culture H/F",
     "company": "Terrena",
-    "location": "Maine-et-Loire, Pays de la Loire",
-    "url": "https://www.adzuna.fr/land/ad/5893530042?se=Ppbk7rXH8RGU-cdu1G5hPQ&utm_medium=api&utm_source=ae8a5ffa&v=46F6CC04206ED487387455B1D36EF913D5AADBAD",
-    "description": "Nous sommes une coopérative agricole du Grand Ouest de la France investie sur toute la chaîne alimentaire, du champ à l'assiette. Chez Terrena, nous v...",
+    "location": "France",
+    "url": "https://www.adzuna.fr/land/ad/5923829293?se=yrtjpnzI8RGlQa862uEugg&utm_medium=api&utm_source=ae8a5ffa&v=BC26A7A77DA9E7DD994B031A6EC16DEED9487237",
+    "description": "Conduite des cultures : En concertation avec le Chef de Site et sous sa délégation vous êtes amené à : · Suivre et encadrer les opérations culturales ...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": false
+    "is_new": true
   },
   {
-    "id": "5922518530",
+    "id": "5921835900",
     "title": "Mécanicien VL et PL (F/H)",
     "company": "Terrena",
-    "location": "Thouars, Bressuire",
-    "url": "https://www.adzuna.fr/details/5922518530?utm_medium=api&utm_source=ae8a5ffa",
+    "location": "Saint-Varent, Bressuire",
+    "url": "https://www.adzuna.fr/details/5921835900?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Le poste de Mécanicien VL et PL (F/H) Terrena Services recherche un Mécanicien Véhicules Légers et Poids Lourds F/H pour son équipe basée à Thouars. A...",
     "source": "Adzuna",
     "company_watch": true,
@@ -946,20 +945,6 @@
     "location": "Rennes, Ille-et-Vilaine",
     "url": "https://www.adzuna.fr/details/5913742324?utm_medium=api&utm_source=ae8a5ffa",
     "description": "En tant qu’Account Manager F/H, votre mission est de piloter et de développer le chiffre d'affaires de l'un de nos comptes stratégiques les plus impor...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5885630062",
-    "title": "Automaticien",
-    "company": "PURECONTROL",
-    "location": "Ille-et-Vilaine, Bretagne",
-    "url": "https://www.adzuna.fr/details/5885630062?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Les missions du poste Purecontrol recherche un.e Technicien.ne en automatisme industriel pour participer à la conception, la programmation et la mise ...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -1010,54 +995,26 @@
     "is_new": false
   },
   {
-    "id": "5911682543",
-    "title": "Chargé-e d'études cartographie inondations ANR MOBILIENCE",
+    "id": "5927782295",
+    "title": "Chef de projet sécurité routière projet STRADA",
     "company": "CEREMA",
-    "location": "Aix-en-Provence, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5911682543?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Intégré au groupe Risques inondations et littoraux, l’agent travaille sur le projet MOBILIENCE (Résilience urbaine et mo...",
+    "location": "Lyon, Rhône",
+    "url": "https://www.adzuna.fr/details/5927782295?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots Le/la chef de projet est chargé(e) plus particulièrement de : • Produire une revue bibliographique nationale et réaliser...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": false
+    "is_new": true
   },
   {
-    "id": "5887943509",
-    "title": "Chef de projet européen MSP-COMPASS",
+    "id": "5919243766",
+    "title": "Chargé-e d'études sécurité routière et aménagements urbains",
     "company": "CEREMA",
-    "location": "Brest-Plouzané, Brest",
-    "url": "https://www.adzuna.fr/details/5887943509?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Piloter la mise en œuvre du projet européen MSP-COMPASS dans ses dimensions administrative, opérationnelle, juridique et...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5911648381",
-    "title": "Postdoc ou Ingénier(e) de Recherche",
-    "company": "CEREMA",
-    "location": "Le Grand-Quevilly, Rouen",
-    "url": "https://www.adzuna.fr/details/5911648381?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots En assurant la transition entre les recherches menées en laboratoire et leur mise en œuvre à l’échelle d’un ouvrage réel...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5911683013",
-    "title": "Chargé-e d'études – risque inondations et sécurité/stabilité des ouvrages hydrauliques",
-    "company": "CEREMA",
-    "location": "Toulouse, Haute-Garonne",
-    "url": "https://www.adzuna.fr/details/5911683013?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Le/la titulaire du poste conduit et pilote des études et expertises dans le domaine des risques d’inondation et de la sé...",
+    "location": "Saint-Mandé, Nogent-sur-Marne",
+    "url": "https://www.adzuna.fr/details/5919243766?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots Le-la chargé-e d’études en sécurité routière et aménagements urbains participe à la conduite d’études et réalise des pro...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -1094,6 +1051,20 @@
     "is_new": false
   },
   {
+    "id": "5928535364",
+    "title": "Juriste en droit notarial (H/F)",
+    "company": "Banque de France",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5928535364?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "La Banque de France est une institution indépendante, au cœur des enjeux économiques et financiers et du fonctionnement de l'Europe. Ce rôle central p...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
+  },
+  {
     "id": "5898224860",
     "title": "Business Analyst F/H",
     "company": "Banque de France",
@@ -1106,34 +1077,6 @@
     "borderline": true,
     "ai_unverified": true,
     "is_new": false
-  },
-  {
-    "id": "5898251531",
-    "title": "Développeur Python F/H",
-    "company": "Banque de France",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5898251531?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Description du poste La Direction Générale de la Stabilité financière et des Opérations, la DGSO, exerce une grande partie de ses activités dans le ca...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5909924290",
-    "title": "Inspecteur général F/H",
-    "company": "Météo-France",
-    "location": "Toulouse, Haute-Garonne",
-    "url": "https://www.adzuna.fr/details/5909924290?utm_medium=api&utm_source=ae8a5ffa",
-    "description": " Inspecteur général F/H* Toulouse, 31057* Statutaire* 01/07/2026 DescriptionExpert public de la météo et du climat, Météo-France est à vos côtés pour ...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": true
   },
   {
     "id": "5908417097",
