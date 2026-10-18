@@ -1,17 +1,5 @@
 [
   {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-d%C3%A9carbonation-du-num%C3%A9rique-h-f-at-davidson-consulting-4183122301",
-    "title": "Consultant Senior Décarbonation du Numérique (H/F)",
-    "company": "Davidson consulting",
-    "location": "Île-de-France, France",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-d%C3%A9carbonation-du-num%C3%A9rique-h-f-at-davidson-consulting-4183122301",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/senior-analyst-energy-paris-at-compass-lexecon-4461790660",
     "title": "Senior Analyst (Energy) | Paris",
     "company": "Compass Lexecon",
@@ -122,7 +110,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "6620506",
@@ -153,17 +141,19 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/formateur-formatrice-en-g%C3%A9nie-climatique-h-f-4479321462",
-    "title": "Formateur / Formatrice en Génie Climatique (H/F)",
-    "company": "CENTRE FORMATION APPRENTIS BATIMENT",
-    "location": "Ermont",
-    "url": "https://fr.linkedin.com/jobs/view/formateur-formatrice-en-g%C3%A9nie-climatique-h-f-4479321462",
-    "description": "",
-    "source": "LinkedIn",
+    "id": "5932820270",
+    "title": "Climaticien H/F",
+    "company": "asap work",
+    "location": "Marseille, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5932820270?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Nous recherchons un Climaticien (H/F) sur Marseille. Tu seras chargé de l'installation, de la maintenance et du dépannage des systèmes de climatisatio...",
+    "salary": "",
+    "date": "2026-10-18T04:38:48Z",
+    "source": "Adzuna",
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "7903569",
@@ -177,19 +167,6 @@
     "borderline": true,
     "ai_unverified": true,
     "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/plombier-climaticien-h-f-4479303910",
-    "title": "Plombier climaticien (H/F)",
-    "company": "GERVASI LORENZO",
-    "location": "Var",
-    "url": "https://fr.linkedin.com/jobs/view/plombier-climaticien-h-f-4479303910",
-    "description": "",
-    "source": "LinkedIn",
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": true
   },
   {
     "id": "214BZBP",
@@ -257,19 +234,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-relation-client-%E2%80%93-projets-d-adaptation-du-logement-cdi-at-logiadapt-4478128820",
-    "title": "Chargé(e) de relation client – projets d'adaptation du logement (CDI)",
-    "company": "Logiadapt'",
-    "location": "Marseille",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-relation-client-%E2%80%93-projets-d-adaptation-du-logement-cdi-at-logiadapt-4478128820",
-    "description": "",
-    "source": "LinkedIn",
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": true
-  },
-  {
     "id": "5928911908",
     "title": "Responsable Énergie, Décarbonation et Performance Environnementale F/H",
     "company": "SOM Siège",
@@ -308,7 +272,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-transition-ecologique-territoires-durables-f-h_4871.aspx",
@@ -560,6 +524,20 @@
     "is_new": false
   },
   {
+    "id": "5895373057",
+    "title": "Manager Business Resilience (H/F)",
+    "company": "Marsh McLennan",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5895373057?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Company: Marsh Risk Description: Fort de son expertise dans la gestion des risques et d’un réseau de clients stratégiques, Risk Consulting France souh...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
+  },
+  {
     "id": "5898478515",
     "title": "Gestionnaire Indemnisation Automobile - CDD H/F",
     "company": "WTW",
@@ -616,18 +594,46 @@
     "is_new": false
   },
   {
-    "id": "5908354973",
+    "id": "5911204232",
     "title": "SCOR SE Performance Analyst",
     "company": "SCOR",
-    "location": "Ile-de-France, France",
-    "url": "https://www.adzuna.fr/details/5908354973?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Description Expected outcomes and success measures: Planning and reporting deliverables are complete, accurate, documented and submitted within agreed...",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5911204232?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Planning and reporting deliverables are complete, accurate, documented and submitted within agreed deadlines. Financial variances and underlying drive...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
     "is_new": false
+  },
+  {
+    "id": "5921012688",
+    "title": "Senior Underwriter - Treaty",
+    "company": "SCOR",
+    "location": "Ile-de-France, France",
+    "url": "https://www.adzuna.fr/details/5921012688?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Description Vous contribuez à l’exécution de la stratégie P&C au travers d’une souscription technique et vous développez un portefeuille de traités re...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5918205038",
+    "title": "Chargé de Projet Développement Durable H/F",
+    "company": "Icf Habitat",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/land/ad/5918205038?se=1NeWktXK8RGq65mh8wCbFA&utm_medium=api&utm_source=ae8a5ffa&v=92DF84C1D632A22E4A0EA17C7B6C3BB7E6E5E584",
+    "description": "Chargé(e) de projet développement durable F/H Engagé dans la transition énergétique et la décarbonation de son patrimoine, ICF Habitat renforce son ac...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
   },
   {
     "id": "5922393863",
@@ -644,40 +650,12 @@
     "is_new": false
   },
   {
-    "id": "5917361919",
-    "title": "Responsable Territorial - F/H",
-    "company": "ICF Habitat",
-    "location": "La-Madeleine, Lille",
-    "url": "https://www.adzuna.fr/details/5917361919?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Responsable Territorial - F/H ICF Habitat, filiale logement du groupe SNCF, est l’un des principaux opérateurs de logement en France avec près de 105 ...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": true
-  },
-  {
     "id": "5905495965",
     "title": "Ingénieur VRD F/H",
     "company": "WSP FRANCE",
     "location": "Paris, Ile-de-France",
     "url": "https://www.adzuna.fr/details/5905495965?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Au sein de notre Branche Bâtiment, vous interviendrez en tant qu’Ingénieur(e) VRD sur des projets de MOE en phase conception - réalisation notamment s...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5902770550",
-    "title": "Responsable Administratif et Financier F/H",
-    "company": "ASSOCIATION IMF GESTIONNAIRE DE L'INSTITUT MEDITERRANEEN DE FORMATION RECHERCHE ET INTERVENTION SOCIALE",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5902770550?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Le/la Responsable Administratif et Financier assure le pilotage administratif, budgétaire, financier et comptable de l’association. Il/elle garantit l...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -742,6 +720,20 @@
     "is_new": false
   },
   {
+    "id": "5896708041",
+    "title": "Conseiller(e) Service Client (/X) - CDD F/H",
+    "company": "Groupe Bel",
+    "location": "Ecully, Lyon",
+    "url": "https://www.adzuna.fr/details/5896708041?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Gestion des commandes EDI : Être garant(e) de la gestion des commandes transmises, de leur enregistrement jusqu’à leur clôture complète en visant la s...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
+  },
+  {
     "id": "5928938046",
     "title": "Responsable Grands Comptes Food Service F/H",
     "company": "BONDUELLE",
@@ -762,20 +754,6 @@
     "location": "Villeneuve-d'Ascq, Lille",
     "url": "https://www.adzuna.fr/details/5928938288?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Nous recherchons, en CDD de 12 mois notre Juriste en Droit Social H/F Poste basé à Villeneuve d'Ascq (59) En renfort de l’équipe Juridique et Affaires...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5910861869",
-    "title": "Mécanicien Sertisseur - Secteur Maintenance Sertisseuses H/F",
-    "company": "Bonduelle",
-    "location": "France",
-    "url": "https://www.adzuna.fr/details/5910861869?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos futures missions seront : Le mécanicien est chargé d'assurer l'entretien, la maintenance et le dépannage des équipements du périmètre emboitage, j...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -809,7 +787,35 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
+  },
+  {
+    "id": "5904058007",
+    "title": "CHEF DE SECTEUR TOULON (H/F)",
+    "company": "SAVENCIA",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5904058007?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Savencia, Groupe alimentaire international, familial et indépendant, engagé dans la transition agricole et environnementale et guidé par la vocation \"...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5919370950",
+    "title": "Chef de secteur Paris Nord (H/F)",
+    "company": "Groupe Savencia",
+    "location": "Viroflay, Versailles",
+    "url": "https://www.adzuna.fr/details/5919370950?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Description Qui sommes‑nous ? Vous intégrerez Savencia Produits Laitiers France , filiale du Groupe Savencia, au sein de la branche Fromage & Dairy, l...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
   },
   {
     "id": "5929182744",
@@ -840,12 +846,12 @@
     "is_new": false
   },
   {
-    "id": "5912043749",
-    "title": "Référent Support Applicatif H/F",
-    "company": "Sodiaal",
-    "location": "Lyon, Rhône",
-    "url": "https://www.adzuna.fr/details/5912043749?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Au sein du département Opérations Informatiques de la Direction des Systèmes d'Information du Groupe SODIAAL, vous intégrez l'équipe Support Informati...",
+    "id": "5919342711",
+    "title": "Operateur de Process industriel F/H",
+    "company": "Invivo",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5919342711?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Informations générales Société Engagés en faveur de la diversité, tous nos postes sont ouverts aux personnes en situation de handicap. Rejoignez Souff...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -874,6 +880,20 @@
     "location": "Boulogne-Billancourt, Hauts-de-Seine",
     "url": "https://www.adzuna.fr/details/5919270491?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Description Au sein de la Direction Industrielle Yoplait, basée à Boulogne-Billancourt, tu rejoindras l’équipe Performance & Amélioration Continue. Tu...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5908406337",
+    "title": "Référent Support Applicatif F/H",
+    "company": "Sodiaal",
+    "location": "Lyon, Rhône",
+    "url": "https://www.adzuna.fr/details/5908406337?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Description Au sein du département Opérations Informatiques de la Direction des Systèmes d’Information du Groupe SODIAAL, vous intégrez l’équipe Suppo...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -924,32 +944,46 @@
     "is_new": false
   },
   {
-    "id": "5929855455",
-    "title": "Conducteur d'Installation © H/F",
+    "id": "5932803808",
+    "title": "Mécanicien VL et PL H/F",
     "company": "Terrena",
-    "location": "Craon, Château-Gontier",
-    "url": "https://www.adzuna.fr/details/5929855455?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "L'équipe de Sébastien recherche un Conducteur.trice d'installation F/H qui : - Prendra en charge la conduite d'une installation (conduite, surveillanc...",
+    "location": "France",
+    "url": "https://www.adzuna.fr/land/ad/5932803808?se=8HtTndXK8RGjutuTSb6jOA&utm_medium=api&utm_source=ae8a5ffa&v=A3656BD0E9906544B21FBE634EC2FB8DD21002E4",
+    "description": "Terrena Services recherche un Mécanicien Véhicules Légers et Poids Lourds F/H pour son équipe basée à Thouars. Après une période de formation, vous se...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": false
+    "is_new": true
   },
   {
-    "id": "5895791949",
-    "title": "Chef(fe) de projet informatique infrastructure F/H (CDI)",
+    "id": "5932809287",
+    "title": "Ouvrier Pépiniériste - Arboricole Saisonnier H/F",
     "company": "Terrena",
-    "location": "Maine-et-Loire, Pays de la Loire",
-    "url": "https://www.adzuna.fr/land/ad/5895791949?se=9mrl4gnK8RGyo_y5MK0nqA&utm_medium=api&utm_source=ae8a5ffa&v=178A7C072F63D3F205AFF4072A5F07CB7187AF55",
-    "description": "Nous sommes une coopérative agricole du Grand Ouest de la France investie sur toute la chaîne alimentaire, du champ à l'assiette. Chez Terrena, nous v...",
+    "location": "Seiches-sur-le-Loir, Angers",
+    "url": "https://www.adzuna.fr/land/ad/5932809287?se=8HtTndXK8RGjutuTSb6jOA&utm_medium=api&utm_source=ae8a5ffa&v=2CFE4E2171BD9FC824D22E0D7BBBDD3D28C825F7",
+    "description": "Notre site de Seiches sur Le Loir (49), recherche plusieurs agents pépiniéristes/arboricoles saisonnier (f/h). Vous serez rattaché(e) au Chef de Cultu...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": false
+    "is_new": true
+  },
+  {
+    "id": "5932805675",
+    "title": "Ouvrier Pépiniériste Saisonnier H/F",
+    "company": "Terrena",
+    "location": "Villers-Cotterêts, Soissons",
+    "url": "https://www.adzuna.fr/land/ad/5932805675?se=8HtTndXK8RGjutuTSb6jOA&utm_medium=api&utm_source=ae8a5ffa&v=D32B3A92E476E757D5E260261B35B565633EB0DD",
+    "description": "Notre site de Villers-Cotterêts (02 ) recherche des ouvriers pépiniéristes saisonniers (f/h) pour renforcer ses équipes. Vous interviendrez sur plusie...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
   },
   {
     "id": "5913742324",
@@ -1014,20 +1048,6 @@
     "location": "Aix-en-Provence, Bouches-du-Rhône",
     "url": "https://www.adzuna.fr/details/5911682543?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Vos missions en quelques mots Intégré au groupe Risques inondations et littoraux, l’agent travaille sur le projet MOBILIENCE (Résilience urbaine et mo...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5887943509",
-    "title": "Chef de projet européen MSP-COMPASS",
-    "company": "CEREMA",
-    "location": "Brest-Plouzané, Brest",
-    "url": "https://www.adzuna.fr/details/5887943509?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Piloter la mise en œuvre du projet européen MSP-COMPASS dans ses dimensions administrative, opérationnelle, juridique et...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -1106,6 +1126,20 @@
     "is_new": false
   },
   {
+    "id": "5928535364",
+    "title": "Juriste en droit notarial (H/F)",
+    "company": "Banque de France",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5928535364?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "La Banque de France est une institution indépendante, au cœur des enjeux économiques et financiers et du fonctionnement de l'Europe. Ce rôle central p...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
     "id": "5898224860",
     "title": "Business Analyst F/H",
     "company": "Banque de France",
@@ -1118,6 +1152,20 @@
     "borderline": true,
     "ai_unverified": true,
     "is_new": false
+  },
+  {
+    "id": "5900760278",
+    "title": "Stagiaire de fin d'études - Marketing et Développement commercial",
+    "company": "Axionable",
+    "location": "3ème Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/details/5900760278?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Rattaché(e) à la Direction commerciale, vous contribuerez directement à l’acquisition de nouveaux clients via l’organisation d’évènements, l’animation...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
   },
   {
     "id": "5908417097",
