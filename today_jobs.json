@@ -74,32 +74,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/responsable-adaptation-climatique-r%C3%A9silience-h-f-at-ortec-group-4478778581",
-    "title": "Responsable Adaptation Climatique & Résilience H/F",
-    "company": "Ortec Group",
-    "location": "Aix-en-Provence",
-    "url": "https://fr.linkedin.com/jobs/view/responsable-adaptation-climatique-r%C3%A9silience-h-f-at-ortec-group-4478778581",
-    "description": "",
-    "source": "LinkedIn",
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/responsable-%C3%A9nergie-d%C3%A9carbonation-performance-environnementale-h-f-at-ortec-group-4478787171",
-    "title": "Responsable Énergie, Décarbonation & Performance Environnementale (H/F)",
-    "company": "Ortec Group",
-    "location": "Aix-en-Provence",
-    "url": "https://fr.linkedin.com/jobs/view/responsable-%C3%A9nergie-d%C3%A9carbonation-performance-environnementale-h-f-at-ortec-group-4478787171",
-    "description": "",
-    "source": "LinkedIn",
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/climaticien-sav-at-talent-sourcing-4480360155",
     "title": "Climaticien SAV",
     "company": "Talent Sourcing",
@@ -126,17 +100,30 @@
     "is_new": false
   },
   {
-    "id": "8042445",
+    "id": "8111232",
     "title": "Conseiller environnement - Transition écologique (H/F)",
     "company": "CMA IDF",
-    "location": "95 - Cergy",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8042445",
+    "location": "91 - Évry-Courcouronnes",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8111232",
     "description": "RESPONSABILITÉS : \n\nPourquoi ce poste compte\nChaque année, la CMA Île-de-France accompagne plusieurs milliers d'entreprises artisanales (bâtiment, ali...",
     "source": "France Travail",
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
     "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/sustainability-manager-%E2%80%93-climate-plan-manager-global-corporate-responsibility-team-at-l-or%C3%A9al-4480456286",
+    "title": "SUSTAINABILITY MANAGER – CLIMATE PLAN MANAGER - Global Corporate Responsibility Team",
+    "company": "L'Oréal",
+    "location": "Clichy",
+    "url": "https://fr.linkedin.com/jobs/view/sustainability-manager-%E2%80%93-climate-plan-manager-global-corporate-responsibility-team-at-l-or%C3%A9al-4480456286",
+    "description": "",
+    "source": "LinkedIn",
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
   },
   {
     "id": "5928911873",
@@ -167,6 +154,21 @@
     "is_new": false
   },
   {
+    "id": "5932820270",
+    "title": "Climaticien H/F",
+    "company": "asap work",
+    "location": "Marseille, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5932820270?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Nous recherchons un Climaticien (H/F) sur Marseille. Tu seras chargé de l'installation, de la maintenance et du dépannage des systèmes de climatisatio...",
+    "salary": "",
+    "date": "2026-10-18T04:38:48Z",
+    "source": "Adzuna",
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
     "id": "7903569",
     "title": "Responsable Adaptation Climatique & Résilience H/F",
     "company": "SOM Siège",
@@ -187,32 +189,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/7922293",
     "description": "Situé à Bobigny (93), l'hôpital Avicenne exerce une triple mission de soins, de recherche et d'enseignement. Il est orienté vers deux axes forts : la ...",
     "source": "France Travail",
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/che-fe-de-projet-rse-transition-%C3%A9cologique-et-efficience-en-sant%C3%A9-f-h-at-greater-paris-university-hospitals-ap-hp-4476465275",
-    "title": "Che(fe) de projet RSE, transition écologique et efficience en santé F/H",
-    "company": "AP-HP, Assistance Publique - Hôpitaux de Paris",
-    "location": "Bobigny",
-    "url": "https://fr.linkedin.com/jobs/view/che-fe-de-projet-rse-transition-%C3%A9cologique-et-efficience-en-sant%C3%A9-f-h-at-greater-paris-university-hospitals-ap-hp-4476465275",
-    "description": "",
-    "source": "LinkedIn",
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-relation-client-%E2%80%93-projets-d-adaptation-du-logement-cdi-at-logiadapt-4478128820",
-    "title": "Chargé(e) de relation client – projets d'adaptation du logement (CDI)",
-    "company": "Logiadapt'",
-    "location": "Marseille",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-relation-client-%E2%80%93-projets-d-adaptation-du-logement-cdi-at-logiadapt-4478128820",
-    "description": "",
-    "source": "LinkedIn",
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
@@ -312,6 +288,20 @@
     "is_new": false
   },
   {
+    "id": "5935326984",
+    "title": "Software Tester/Developer H/F",
+    "company": "Blunomy ",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5935326984?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "based environment. Fluent in English Why work for Blunomy? You will be joining a passionate group of professionals, aligned in our mission. At Blunomy...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
+  },
+  {
     "id": "5928798713",
     "title": "Data Team Manager H/F",
     "company": "Blunomy ",
@@ -326,18 +316,18 @@
     "is_new": false
   },
   {
-    "id": "5893851561",
-    "title": "Chef(fe) de projets formation en environnement - CDD 24 mois F/H",
-    "company": "CCI FRANCE",
-    "location": "Levallois-Perret, Nanterre",
-    "url": "https://www.adzuna.fr/details/5893851561?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "VOUS INTEGREZ UNE DIRECTION DYNAMIQUE ET ENGAGÉE Au sein de la Direction des opérations, le Pôle « CFDE » : Organise des sessions de formation sur les...",
+    "id": "5935559058",
+    "title": "Developer (Python & React) H/F",
+    "company": "Blunomy ",
+    "location": "Dornes, Nevers",
+    "url": "https://www.adzuna.fr/details/5935559058?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Le poste de Developer (Python & React) H/F Blunomy…… from Intention to Impact Blunomy is an international consulting & data firm, dedicated to acceler...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "5904497842",
@@ -346,34 +336,6 @@
     "location": "2ème Arrondissement, Paris",
     "url": "https://www.adzuna.fr/details/5904497842?utm_medium=api&utm_source=ae8a5ffa",
     "description": "En alliant technologie et expertise, logiciel et conseil, nous aidons les entreprises à piloter efficacement leur performance durable, ESG, Carbone et...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5911386454",
-    "title": "Educateur de Jeunes Enfants ou Éducateur Spécialisé — H/F",
-    "company": "CAMSP Nelson Mandela",
-    "location": "Ecully, Lyon",
-    "url": "https://www.adzuna.fr/details/5911386454?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Educateur de Jeunes Enfants ou Éducateur Spécialisé — H/F Les missions Au sein d’une équipe pluridisciplinaire, sous l’autorité de la directrice du Pô...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5911386455",
-    "title": "Auxiliaire de puériculture — H/F",
-    "company": "CAMSP Nelson Mandela",
-    "location": "Ecully, Lyon",
-    "url": "https://www.adzuna.fr/details/5911386455?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Auxiliaire de puériculture — H/F Les missions Structure de 24 berceaux accueillant 6 enfants en situation de handicap. Sous l’autorité de la responsab...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -407,14 +369,14 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
-    "id": "5905888770",
+    "id": "5905927276",
     "title": "Chargé(e) d'Indemnisation Flotte Automobile (H/F)",
     "company": "Howden France",
     "location": "9ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/details/5905888770?utm_medium=api&utm_source=ae8a5ffa",
+    "url": "https://www.adzuna.fr/details/5905927276?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Pour accompagner sa croissance, Howden France recrute pour sa ligne produit « flotte automobile » son Chargé(e) d’Indemnisation Flotte Automobile (H/F...",
     "source": "Adzuna",
     "company_watch": true,
@@ -424,12 +386,12 @@
     "is_new": false
   },
   {
-    "id": "5927752833",
-    "title": "Conseiller(ère) Service Indemnisation (CSI) H/F",
-    "company": "Marsh McLennan",
-    "location": "France",
-    "url": "https://www.adzuna.fr/details/5927752833?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Company: Marsh Description: Nous recherchons un nouveau talent pour rejoindre notre équipe Affinity Claims Advisory. Ce poste offre une excellente opp...",
+    "id": "5900757456",
+    "title": "Chargé(e) de clientèle IARD Entreprise (H/F)",
+    "company": "Howden France",
+    "location": "9ème Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/details/5900757456?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Votre rôle : Chargé(e) de clientèle En tant que Chargé(e) de Clientèle IARD, vous serez au cœur de la stratégie commerciale pour développer et fidélis...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -438,12 +400,26 @@
     "is_new": false
   },
   {
-    "id": "5891922391",
-    "title": "Responsable Equipe Commerciale – Marsh Aix-en-Provence",
+    "id": "5935548408",
+    "title": "Conseiller Sinistres RC H/F",
     "company": "Marsh McLennan",
     "location": "France",
-    "url": "https://www.adzuna.fr/details/5891922391?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Company: Marsh Description: Pourquoi ce rôle est important dans notre organisation ? Après plusieurs années de belle croissance et déjà 10 bureaux en ...",
+    "url": "https://www.adzuna.fr/details/5935548408?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Company: Marsh Description: Le département Responsabilité Civile recherche un nouveau talent pour rejoindre l’équipe sinistre composée de 10 personnes...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
+  },
+  {
+    "id": "5927752833",
+    "title": "Conseiller(ère) Service Indemnisation (CSI) H/F",
+    "company": "Marsh McLennan",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5927752833?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Company: Marsh Description: Nous recherchons un nouveau talent pour rejoindre notre équipe Affinity Claims Advisory. Ce poste offre une excellente opp...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -519,7 +495,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5904053280",
@@ -533,7 +509,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5898478515",
@@ -620,20 +596,6 @@
     "is_new": false
   },
   {
-    "id": "5891881743",
-    "title": "Responsable Sélection des Risques et Sinistres",
-    "company": "SCOR",
-    "location": "Ile-de-France, France",
-    "url": "https://www.adzuna.fr/details/5891881743?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Description Sous l'autorité du Directeur du Marché Français, couvrant la France, le Liban et l'Afrique Francophone, le Responsable Sélection des Risqu...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
     "id": "5933468417",
     "title": "Conseiller social - stagiaire - F/H",
     "company": "ICF Habitat",
@@ -668,6 +630,20 @@
     "location": "Paris, Ile-de-France",
     "url": "https://www.adzuna.fr/details/5905495965?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Au sein de notre Branche Bâtiment, vous interviendrez en tant qu’Ingénieur(e) VRD sur des projets de MOE en phase conception - réalisation notamment s...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5926347533",
+    "title": "Assistant / Assistante de vie H/F",
+    "company": "AFD UNA 73",
+    "location": "La Ravoire, Chambéry",
+    "url": "https://www.adzuna.fr/land/ad/5926347533?se=KlREZTXN8RGeF-Sw_vHIlg&utm_medium=api&utm_source=ae8a5ffa&v=671892BA0C7AFE904CC98A97022445F8CA6688ED",
+    "description": "Le poste de Assistant / Assistante de vie H/F Envie de donner du sens à votre métier en rejoignant une association à but non lucratif ? Venez intégrer...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -718,20 +694,6 @@
     "is_new": false
   },
   {
-    "id": "5896708041",
-    "title": "Conseiller(e) Service Client (/X) - CDD F/H",
-    "company": "Groupe Bel",
-    "location": "Ecully, Lyon",
-    "url": "https://www.adzuna.fr/details/5896708041?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Gestion des commandes EDI : Être garant(e) de la gestion des commandes transmises, de leur enregistrement jusqu’à leur clôture complète en visant la s...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
     "id": "5920505945",
     "title": "Coordinateur Logistique et Projets (/X) F/H",
     "company": "Groupe Bel",
@@ -752,6 +714,34 @@
     "location": "Sablé-sur-Sarthe, La Flèche",
     "url": "https://www.adzuna.fr/details/5927352642?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Au sein de l’atelier KIRI, vous reportez au Responsable de Production dont vous êtes l’Adjoint « QHSE et BMM ». Dans ce cadre, vos missions principale...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5931712564",
+    "title": "Responsable atelier H/F",
+    "company": "Materne by Bel",
+    "location": "Guise, Vervins",
+    "url": "https://www.adzuna.fr/details/5931712564?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Avec un portefeuille de marques iconiques - Pom'Potes®, GoGo squeeZ®, Materne® et Mont Blanc®, Materne by Bel est l'un des leaders du snacking sain fr...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
+  },
+  {
+    "id": "5927699255",
+    "title": "Agents d'entretien (H/F)",
+    "company": "Camping Bel-Air",
+    "location": "Talmont-Saint-Hilaire, Les Sables-d'Olonne",
+    "url": "https://www.adzuna.fr/details/5927699255?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Cybèle Vacances Situé en Vendée aux Sables d'Olonne, Le Camping le Bel air  est à 600m de la côte rocheuse, à 3km des plages de sables fins et 6km du ...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -816,6 +806,20 @@
     "is_new": false
   },
   {
+    "id": "5933463836",
+    "title": "Quality Project Leader (H/F)",
+    "company": "Roquette",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5933463836?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Roquette is a family-owned global leader in plant-based ingredients and a leading provider of pharmaceutical excipients. Want to help us make a differ...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
+  },
+  {
     "id": "5931509094",
     "title": "Agent Magasinier - Réception - Expéditions H/F",
     "company": "SAVENCIA",
@@ -849,6 +853,34 @@
     "company": "InVivo",
     "location": "France",
     "url": "https://www.adzuna.fr/details/5929182744?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Informations générales Société InVivo est l'un des premiers groupes agricoles européens avec un CA de 11 milliards d'euros et un effectif de près de 1...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5919373339",
+    "title": "Assistant administratif polyvalent F/H",
+    "company": "Invivo",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5919373339?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Informations générales Société InVivo est l'un des premiers groupes agricoles européens avec un CA de 11 milliards d'euros et un effectif de près de 1...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5922419915",
+    "title": "Data Engineer Confirmé F/H",
+    "company": "Invivo",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5922419915?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Informations générales Société InVivo est l'un des premiers groupes agricoles européens avec un CA de 11 milliards d'euros et un effectif de près de 1...",
     "source": "Adzuna",
     "company_watch": true,
@@ -928,20 +960,6 @@
     "is_new": false
   },
   {
-    "id": "5891903727",
-    "title": "Agent Controle Qualite H/F",
-    "company": "Sodiaal",
-    "location": "France",
-    "url": "https://www.adzuna.fr/details/5891903727?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Description Bonilait appartient à Sodiaal, 1ère coopérative laitière française, qui collecte et valorise le lait de ses plus de 10 000 éleveurs sociét...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
     "id": "5930839157",
     "title": "Gestionnaire Paie Et Adp F/H",
     "company": "Sodiaal",
@@ -970,11 +988,25 @@
     "is_new": false
   },
   {
+    "id": "5904039653",
+    "title": "Contrôleur de gestion international senior - FHX",
+    "company": "Sodiaal",
+    "location": "Boulogne-Billancourt, Hauts-de-Seine",
+    "url": "https://www.adzuna.fr/details/5904039653?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Description POSTE Vous souhaitez mettre votre expérience en finance au service d’un environnement international, entrepreneurial et en pleine évolutio...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
+  },
+  {
     "id": "5932803808",
     "title": "Mécanicien VL et PL H/F",
     "company": "Terrena",
     "location": "France",
-    "url": "https://www.adzuna.fr/land/ad/5932803808?se=-A6x-GvM8RGDdvJW8eCByg&utm_medium=api&utm_source=ae8a5ffa&v=A3656BD0E9906544B21FBE634EC2FB8DD21002E4",
+    "url": "https://www.adzuna.fr/details/5932803808?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Terrena Services recherche un Mécanicien Véhicules Légers et Poids Lourds F/H pour son équipe basée à Thouars. Après une période de formation, vous se...",
     "source": "Adzuna",
     "company_watch": true,
@@ -984,12 +1016,40 @@
     "is_new": false
   },
   {
+    "id": "5936138719",
+    "title": "Vendeur Conseil H/F",
+    "company": "Terrena",
+    "location": "Craon, Château-Gontier",
+    "url": "https://www.adzuna.fr/land/ad/5936138719?se=UrxebzXN8RGUlZcLbi9XfA&utm_medium=api&utm_source=ae8a5ffa&v=6ED16D7EAC2DA0F1469CD9042F07459B4A4C4AD7",
+    "description": "Où : Craon (53) - Quand : dès que possible au 31/06/2027 (possibilité de prolongation jusqu'à 18 mois) - Quoi : CDD Vendeur Conseil F/H Rejoignez TERR...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
+  },
+  {
     "id": "5913742324",
     "title": "Key account manager (Responsable grands comptes) F/H",
     "company": "PURECONTROL",
     "location": "Rennes, Ille-et-Vilaine",
     "url": "https://www.adzuna.fr/details/5913742324?utm_medium=api&utm_source=ae8a5ffa",
     "description": "En tant qu’Account Manager F/H, votre mission est de piloter et de développer le chiffre d'affaires de l'un de nos comptes stratégiques les plus impor...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5900744961",
+    "title": "Mécénat de compétences - Chargé de partenariats entreprises (F/H)",
+    "company": "WWF France",
+    "location": "Pantin, Bobigny",
+    "url": "https://www.adzuna.fr/details/5900744961?utm_medium=api&utm_source=ae8a5ffa",
+    "description": " Mécénat de compétences (non ouvert aux candidatures en CDD/CDI classiques) En travaillant avec le monde de l’entreprise, le WWF s’efforce de faire ch...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -1054,54 +1114,12 @@
     "is_new": false
   },
   {
-    "id": "5919243766",
-    "title": "Chargé-e d'études sécurité routière et aménagements urbains",
-    "company": "CEREMA",
-    "location": "Saint-Mandé, Nogent-sur-Marne",
-    "url": "https://www.adzuna.fr/details/5919243766?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Le-la chargé-e d’études en sécurité routière et aménagements urbains participe à la conduite d’études et réalise des pro...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
     "id": "5933476296",
     "title": "Chef du service des communications internes et digitales H/F",
     "company": "Banque de France",
     "location": "France",
     "url": "https://www.adzuna.fr/details/5933476296?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Type de recrutement : ‎ CDI ‎ Domaine de compétences : Management stratégique ‎ Ville : Paris ‎ Département : Paris ‎ Description du poste: ‎ La banqu...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5898224535",
-    "title": "Juriste assurance - F/H",
-    "company": "Banque de France",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5898224535?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "La Banque de France recrute un \" Juriste assurance (H/F) \" pour renforcer ses équipes. Au sein de la Direction des Affaires Juridiques, vous intégrere...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5898224860",
-    "title": "Business Analyst F/H",
-    "company": "Banque de France",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5898224860?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "La Banque de France recrute un \"Business Analyst (H/F)\" en CDD pour renforcer ses équipes. Présentation de la direction générale et du service L'Autor...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -1176,7 +1194,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "gh-tomorrow-8002477003",
@@ -1251,7 +1269,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "sr-OECD-744000156300479",
@@ -1266,7 +1284,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "sr-OECD-744000156298574",
@@ -1281,7 +1299,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "sr-OECD-744000156297315",
@@ -1296,7 +1314,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "sr-OECD-744000156294344",
@@ -1311,7 +1329,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "sr-OECD-744000154441060",
@@ -1396,36 +1414,6 @@
     "url": "https://jobs.smartrecruiters.com/OECD/744000153193529",
     "description": "",
     "date": "2026-10-02",
-    "source": "SmartRecruiters",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "sr-OECD-744000152481873",
-    "title": "Statisticien(ne)s-Analystes de données",
-    "company": "OECD",
-    "location": "Paris, Île-de-France Region, fr",
-    "url": "https://jobs.smartrecruiters.com/OECD/744000152481873",
-    "description": "",
-    "date": "2026-09-29",
-    "source": "SmartRecruiters",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "sr-OECD-744000152479229",
-    "title": "Statisticians-Data analysts",
-    "company": "OECD",
-    "location": "Paris, Île-de-France Region, fr",
-    "url": "https://jobs.smartrecruiters.com/OECD/744000152479229",
-    "description": "",
-    "date": "2026-09-29",
     "source": "SmartRecruiters",
     "company_watch": true,
     "score": 60,
