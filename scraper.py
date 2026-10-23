@@ -2462,14 +2462,18 @@ def ai_fallback_keep(job):
 
 
 def llm_config():
-    """Choisit le fournisseur LLM selon les secrets disponibles (Groq prioritaire
-    — palier gratuit généreux —, repli Mistral). Les deux API sont compatibles
-    OpenAI (même format de requête/réponse). Renvoie (url, key, model, nom) ou
-    None si aucune clé n'est configurée."""
+    """Choisit le fournisseur LLM selon les secrets disponibles (Groq, puis
+    Gemini, puis Mistral). Les trois exposent une API compatible OpenAI (même
+    format requête/réponse). Renvoie (url, key, model, nom) ou None si aucune
+    clé n'est configurée."""
     groq = os.environ.get("GROQ_API_KEY", "")
     if groq:
         return ("https://api.groq.com/openai/v1/chat/completions", groq,
                 os.environ.get("GROQ_MODEL", "llama-3.3-70b-versatile"), "Groq")
+    gemini = os.environ.get("GEMINI_API_KEY", "")
+    if gemini:
+        return ("https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
+                gemini, os.environ.get("GEMINI_MODEL", "gemini-2.0-flash"), "Gemini")
     mistral = os.environ.get("MISTRAL_API_KEY", "")
     if mistral:
         return ("https://api.mistral.ai/v1/chat/completions", mistral,
