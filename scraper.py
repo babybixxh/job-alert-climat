@@ -2469,15 +2469,15 @@ def llm_config():
     groq = os.environ.get("GROQ_API_KEY", "")
     if groq:
         return ("https://api.groq.com/openai/v1/chat/completions", groq,
-                os.environ.get("GROQ_MODEL", "llama-3.3-70b-versatile"), "Groq")
+                os.environ.get("GROQ_MODEL") or "llama-3.3-70b-versatile", "Groq")
     gemini = os.environ.get("GEMINI_API_KEY", "")
     if gemini:
         return ("https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
-                gemini, os.environ.get("GEMINI_MODEL", "gemini-2.0-flash"), "Gemini")
+                gemini, os.environ.get("GEMINI_MODEL") or "gemini-2.0-flash", "Gemini")
     mistral = os.environ.get("MISTRAL_API_KEY", "")
     if mistral:
         return ("https://api.mistral.ai/v1/chat/completions", mistral,
-                os.environ.get("MISTRAL_MODEL", "mistral-small-latest"), "Mistral")
+                os.environ.get("MISTRAL_MODEL") or "mistral-small-latest", "Mistral")
     return None
 
 
