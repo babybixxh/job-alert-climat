@@ -132,6 +132,7 @@ SOURCE_HEALTH_ALERT = 3  # alerte à partir de 3 jours d'affilée à zéro
 # cœur de cible conseil/adaptation), mais l'utilisateur veut les suivre à part
 # pour Marseille uniquement. Piste distincte : pas de filtre IA, seen-file dédié.
 ENR_SEEN_FILE = "enr_marseille_vus.json"
+ENR_DISPLAY_MAX = 5   # EnR trop nombreuses pour l'instant → on n'en montre qu'une poignée
 ENR_KEYWORDS = [
     "énergies renouvelables", "énergie renouvelable", "photovoltaïque",
     "énergie solaire", "parc solaire", "centrale solaire", "éolien",
@@ -3202,10 +3203,10 @@ def build_email(jobs, feedback_url, excluded_log=None, disappeared=None,
     # Corps compact : seules les nouvelles offres bien notées (max SECTION_MAX
     # par section) sont mises en avant ; tout le reste va dans `sink` → section
     # repliable en bas.
-    sink = []
-    body += section_html("Marseille", "🔵", marseille, "#0f6e56", sink)
-    body += section_html("Région PACA hors Marseille", "🟢", paca, "#3b6d11", sink)
-    body += section_html("Entreprises ciblées", "🏢", watchlist, "#0a5c54", sink)
+    # Tout afficher : chaque offre retenue est montrée en entier (pas de repli).
+    body += section_html("Marseille", "🔵", marseille, "#0f6e56")
+    body += section_html("Région PACA hors Marseille", "🟢", paca, "#3b6d11")
+    body += section_html("Entreprises ciblées", "🏢", watchlist, "#0a5c54")
     # Section « Hors PACA » découpée en sous-catégories : télétravail, salaire
     # élevé, puis le reste (Paris & autres villes). Buckets exclusifs, dans cet
     # ordre de priorité (une offre remote bien payée va dans Télétravail).
@@ -3215,13 +3216,9 @@ def build_email(jobs, feedback_url, excluded_log=None, disappeared=None,
                 and (salary_max_k(j.get("salary", "")) or 0) >= HIGH_SALARY_K]
     used |= {id(j) for j in high_sal}
     autres = [j for j in paris if id(j) not in used]
-    body += section_html("Télétravail / Remote", "🏠", remote_jobs, "#1f7a99", sink)
-    body += section_html(f"Salaire élevé (≥ {HIGH_SALARY_K} k€)", "💰", high_sal, "#7a5b00", sink)
-    body += section_html("Autres — Paris &amp; France", "🔴", autres, "#993c1d", sink)
-    if sink:
-        write_autres_page(sink)
-    autres_url = feedback_url.replace("feedback.html", "autres.html")
-    body += collapsed_others_html(sink, autres_url)
+    body += section_html("Télétravail / Remote", "🏠", remote_jobs, "#1f7a99")
+    body += section_html(f"Salaire élevé (≥ {HIGH_SALARY_K} k€)", "💰", high_sal, "#7a5b00")
+    body += section_html("Autres — Paris &amp; France", "🔴", autres, "#993c1d")
     body += disappeared_section_html(disappeared or [])
     body += excluded_section_html(excluded_log or [])
     body += health_footer_html(health_alerts or [])
@@ -3480,6 +3477,9 @@ if __name__ == "__main__":
     enr.sort(key=lambda j: (not j.get("is_new"), j["company"]))
     save_json(ENR_SEEN_FILE, list(enr_seen | {f"{j['title'].lower()}|{j['company'].lower()}" for j in enr}))
     print(f"EnR Marseille : {len(enr)} ({sum(1 for j in enr if j.get('is_new'))} nouveaux)")
+    # Volontairement discret pour l'instant (trop d'offres EnR) : on n'en montre
+    # qu'une poignée (nouvelles en priorité). Le reste reste mémorisé comme vu.
+    enr = enr[:ENR_DISPLAY_MAX]
 
     html = build_email(jobs, feedback_url, EXCLUDED_LOG, disappeared, health_alerts, appels, enr)
     send_email(html, len(jobs))
