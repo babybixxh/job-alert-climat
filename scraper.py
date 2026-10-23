@@ -2473,7 +2473,7 @@ def llm_config():
     gemini = os.environ.get("GEMINI_API_KEY", "")
     if gemini:
         return ("https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
-                gemini, os.environ.get("GEMINI_MODEL") or "gemini-2.0-flash", "Gemini")
+                gemini, os.environ.get("GEMINI_MODEL") or "gemini-3.8-flash", "Gemini")
     mistral = os.environ.get("MISTRAL_API_KEY", "")
     if mistral:
         return ("https://api.mistral.ai/v1/chat/completions", mistral,
@@ -2517,8 +2517,10 @@ def _llm_chat(prompt):
                 continue
             if r.status_code >= 400:
                 # Erreur client (clé invalide, modèle inconnu, requête rejetée) :
-                # inutile de retenter, on expose le vrai message de l'API.
-                raise RuntimeError(f"{name} HTTP {r.status_code}: {r.text[:300]}")
+                # non récupérable, inutile de retenter — on sort avec le message.
+                last_err = f"HTTP {r.status_code}: {r.text[:300]}"
+                print(f"  {name} {last_err} (erreur client, pas de nouvelle tentative)")
+                break
             data = r.json()
             # Certaines API (Google) renvoient une liste JSON ; on prend le 1er objet.
             if isinstance(data, list):
