@@ -2422,7 +2422,7 @@ def search_wttj():
     return jobs
 
 
-MISTRAL_BATCH_SIZE = 15     # offres par appel LLM (plus petit = réponses plus rapides)
+MISTRAL_BATCH_SIZE = 10     # offres par appel LLM (plus petit = réponses plus rapides)
 MISTRAL_MAX_RETRIES = 6     # tentatives par lot avant abandon
 MISTRAL_PACE_SECONDS = 1.2   # pause entre deux lots (lissage du débit)
 # Plafond d'offres envoyées à l'IA par run (étalement sur plusieurs jours pour
@@ -2500,7 +2500,7 @@ def _llm_chat(prompt):
                 },
                 json={
                     "model": model,
-                    "max_tokens": 4000,
+                    "max_tokens": 8000,
                     "messages": [{"role": "user", "content": prompt}],
                     "temperature": 0,
                 },
@@ -2636,13 +2636,26 @@ Chaque objet : index, keep (bool), borderline (bool), score (int 0-100), reason.
     content = _llm_chat(prompt)
     text = content.strip()
     text = re.sub(r"```json|```", "", text).strip()
-    # Mistral ajoute parfois du texte avant/après le tableau JSON (provoque
+    # Le LLM ajoute parfois du texte avant/après le tableau JSON (provoque
     # « Extra data »/« Unterminated string ») : on isole le tableau lui-même.
     start = text.find("[")
     end = text.rfind("]")
     if start != -1 and end != -1 and end > start:
         text = text[start:end + 1]
-    decisions = json.loads(text)
+    try:
+        decisions = json.loads(text)
+    except json.JSONDecodeError:
+        # Réponse tronquée / malformée (vu avec Gemini) : on récupère chaque
+        # objet {...} complet individuellement plutôt que de jeter tout le lot.
+        decisions = []
+        for m in re.finditer(r"\{[^{}]*\}", text):
+            try:
+                decisions.append(json.loads(m.group(0)))
+            except json.JSONDecodeError:
+                continue
+        if not decisions:
+            raise
+        print(f"  (JSON partiel récupéré : {len(decisions)} décision(s) sur le lot)")
 
     kept = []
     for decision in decisions:
