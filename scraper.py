@@ -2422,8 +2422,8 @@ def search_wttj():
     return jobs
 
 
-MISTRAL_BATCH_SIZE = 25
-MISTRAL_MAX_RETRIES = 5      # tentatives par lot avant abandon
+MISTRAL_BATCH_SIZE = 15     # offres par appel LLM (plus petit = réponses plus rapides)
+MISTRAL_MAX_RETRIES = 6     # tentatives par lot avant abandon
 MISTRAL_PACE_SECONDS = 1.2   # pause entre deux lots (lissage du débit)
 # Plafond d'offres envoyées à l'IA par run (étalement sur plusieurs jours pour
 # ne pas saturer le quota). Le surplus n'est pas jugé aujourd'hui → réévalué au
@@ -2504,7 +2504,7 @@ def _llm_chat(prompt):
                     "messages": [{"role": "user", "content": prompt}],
                     "temperature": 0,
                 },
-                timeout=45,
+                timeout=90,
             )
             if r.status_code == 429 or r.status_code >= 500:
                 # Respecte Retry-After si fourni, sinon backoff exponentiel.
