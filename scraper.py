@@ -2439,14 +2439,26 @@ _STRONG_CLIMATE_RE = re.compile(
     r"\bsbti\b|\bges\b|gaz à effet|transition [ée]nerg|transition [ée]colog|"
     r"\badaptation\b|strat[ée]gie bas|empreinte carbone|climate|greenhouse gas",
     re.IGNORECASE)
+# Rôle cohérent avec le profil (conseil/mission/projet senior) : le repli exige
+# un rôle ET un signal climat (sinon un simple « ... climat » dans n'importe quel
+# intitulé passait, d'où le mail noyé de 95 offres peu pertinentes).
+_FALLBACK_ROLE_RE = re.compile(
+    r"consultant|conseil|charg[ée] de mission|charg[ée] d.?[ée]tudes|"
+    r"chef(?:fe)?\s+de\s+projet|responsable|expert|analyst|manager|officer|"
+    r"coordinat|charg[ée] de projet|charg[ée] de programme|directeur de projet",
+    re.IGNORECASE)
+# Plafond d'offres gardées par le repli (évite de noyer le mail quand l'IA est HS).
+FALLBACK_MAX_KEEP = 20
 
 
 def ai_fallback_keep(job):
-    """Repli sans IA : garde une offre si entreprise ciblée, ou si son titre
-    porte un fort signal climat. Score par défaut, marquée « non vérifiée IA »."""
+    """Repli sans IA (strict) : garde une offre si entreprise ciblée, OU si son
+    titre combine un rôle cohérent (conseil/mission/projet) ET un fort signal
+    climat. Score par défaut, marquée « non vérifiée IA »."""
     if job.get("company_watch"):
         return True
-    return bool(_STRONG_CLIMATE_RE.search(job.get("title", "")))
+    title = job.get("title", "")
+    return bool(_FALLBACK_ROLE_RE.search(title) and _STRONG_CLIMATE_RE.search(title))
 
 
 def _mistral_chat(mistral_key, prompt):
@@ -2696,6 +2708,8 @@ def filter_jobs_with_ai(jobs):
     for job in to_evaluate:
         if ai_key(job) in judged_keys:
             continue
+        if fallback_kept >= FALLBACK_MAX_KEEP:
+            break
         if ai_fallback_keep(job):
             job["score"] = DEFAULT_KEPT_SCORE
             job["borderline"] = True
