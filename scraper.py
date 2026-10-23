@@ -2461,22 +2461,41 @@ def ai_fallback_keep(job):
     return bool(_FALLBACK_ROLE_RE.search(title) and _STRONG_CLIMATE_RE.search(title))
 
 
-def _mistral_chat(mistral_key, prompt):
-    """Appelle l'API chat Mistral avec backoff sur rate-limit (429) et erreurs
-    serveur (5xx). Renvoie le contenu texte de la réponse, ou lève après
-    MISTRAL_MAX_RETRIES échecs. Cause du bug vu en prod : sur gros volume,
-    l'API renvoyait 429 sans clé 'choices' → KeyError → lot entier écarté."""
+def llm_config():
+    """Choisit le fournisseur LLM selon les secrets disponibles (Groq prioritaire
+    — palier gratuit généreux —, repli Mistral). Les deux API sont compatibles
+    OpenAI (même format de requête/réponse). Renvoie (url, key, model, nom) ou
+    None si aucune clé n'est configurée."""
+    groq = os.environ.get("GROQ_API_KEY", "")
+    if groq:
+        return ("https://api.groq.com/openai/v1/chat/completions", groq,
+                os.environ.get("GROQ_MODEL", "llama-3.3-70b-versatile"), "Groq")
+    mistral = os.environ.get("MISTRAL_API_KEY", "")
+    if mistral:
+        return ("https://api.mistral.ai/v1/chat/completions", mistral,
+                os.environ.get("MISTRAL_MODEL", "mistral-small-latest"), "Mistral")
+    return None
+
+
+def _llm_chat(prompt):
+    """Appelle l'API chat du fournisseur LLM choisi (Groq ou Mistral, compatibles
+    OpenAI) avec backoff sur rate-limit (429) et erreurs serveur (5xx). Renvoie
+    le contenu texte, ou lève après MISTRAL_MAX_RETRIES échecs."""
+    cfg = llm_config()
+    if cfg is None:
+        raise RuntimeError("aucune clé LLM (GROQ_API_KEY ou MISTRAL_API_KEY)")
+    url, key, model, name = cfg
     last_err = None
     for attempt in range(MISTRAL_MAX_RETRIES):
         try:
             r = requests.post(
-                "https://api.mistral.ai/v1/chat/completions",
+                url,
                 headers={
-                    "Authorization": f"Bearer {mistral_key}",
+                    "Authorization": f"Bearer {key}",
                     "Content-Type": "application/json",
                 },
                 json={
-                    "model": "mistral-small-latest",
+                    "model": model,
                     "max_tokens": 4000,
                     "messages": [{"role": "user", "content": prompt}],
                     "temperature": 0,
@@ -2486,8 +2505,8 @@ def _mistral_chat(mistral_key, prompt):
             if r.status_code == 429 or r.status_code >= 500:
                 # Respecte Retry-After si fourni, sinon backoff exponentiel.
                 retry_after = r.headers.get("Retry-After")
-                wait = float(retry_after) if retry_after and retry_after.isdigit() else 2 ** attempt
-                print(f"  Mistral HTTP {r.status_code} → nouvelle tentative dans {wait:.0f}s "
+                wait = float(retry_after) if retry_after and retry_after.replace(".", "", 1).isdigit() else 2 ** attempt
+                print(f"  {name} HTTP {r.status_code} → nouvelle tentative dans {wait:.0f}s "
                       f"({attempt + 1}/{MISTRAL_MAX_RETRIES})")
                 time.sleep(min(wait, 30))
                 last_err = f"HTTP {r.status_code}"
@@ -2498,15 +2517,15 @@ def _mistral_chat(mistral_key, prompt):
                 # Réponse d'erreur sans 'choices' (quota, payload rejeté…).
                 msg = data.get("message") or data.get("error") or data
                 last_err = f"réponse sans 'choices' : {str(msg)[:120]}"
-                print(f"  Mistral {last_err} → nouvelle tentative ({attempt + 1}/{MISTRAL_MAX_RETRIES})")
+                print(f"  {name} {last_err} → nouvelle tentative ({attempt + 1}/{MISTRAL_MAX_RETRIES})")
                 time.sleep(2 ** attempt)
                 continue
             return choices[0]["message"]["content"]
         except Exception as e:
             last_err = str(e)
-            print(f"  Mistral exception ({attempt + 1}/{MISTRAL_MAX_RETRIES}): {e}")
+            print(f"  {name} exception ({attempt + 1}/{MISTRAL_MAX_RETRIES}): {e}")
             time.sleep(2 ** attempt)
-    raise RuntimeError(f"Mistral indisponible après {MISTRAL_MAX_RETRIES} tentatives ({last_err})")
+    raise RuntimeError(f"{name} indisponible après {MISTRAL_MAX_RETRIES} tentatives ({last_err})")
 
 
 def _filter_jobs_batch(jobs, reasons_text, verdicts=None):
@@ -2515,7 +2534,6 @@ def _filter_jobs_batch(jobs, reasons_text, verdicts=None):
     lot non filtré (ce qui spammerait l'utilisateur avec tout le bruit que
     le filtre est censé éliminer). Si `verdicts` est fourni, on y enregistre
     la décision (garder/rejeter + raison) de chaque offre pour le cache."""
-    mistral_key = os.environ["MISTRAL_API_KEY"]
     jobs_text = "\n".join([
         f"{i}. TITRE: {job['title']} | ENTREPRISE: {job['company']} | LIEU: {job['location']}"
         + (f" | ENTREPRISE CIBLÉE: oui" if job.get("company_watch") else "")
@@ -2602,7 +2620,7 @@ Réponds UNIQUEMENT avec un JSON (sans texte avant/après, sans backticks).
 Chaque objet : index, keep (bool), borderline (bool), score (int 0-100), reason.
 [{{"index": 0, "keep": true, "borderline": false, "score": 90, "reason": "consultant climat senior, correspond au profil"}}, ...]"""
 
-    content = _mistral_chat(mistral_key, prompt)
+    content = _llm_chat(prompt)
     text = content.strip()
     text = re.sub(r"```json|```", "", text).strip()
     # Mistral ajoute parfois du texte avant/après le tableau JSON (provoque
@@ -2643,10 +2661,11 @@ Chaque objet : index, keep (bool), borderline (bool), score (int 0-100), reason.
 
 
 def filter_jobs_with_ai(jobs):
-    mistral_key = os.environ.get("MISTRAL_API_KEY", "")
-    if not mistral_key:
-        print("  Mistral: clé API absente, pas de filtrage IA")
+    cfg = llm_config()
+    if cfg is None:
+        print("  LLM : aucune clé (GROQ_API_KEY/MISTRAL_API_KEY), pas de filtrage IA")
         return jobs
+    print(f"  LLM : fournisseur {cfg[3]} (modèle {cfg[2]})")
     if not jobs:
         return jobs
 
