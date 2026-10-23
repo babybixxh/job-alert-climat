@@ -2515,8 +2515,15 @@ def _llm_chat(prompt):
                 time.sleep(min(wait, 30))
                 last_err = f"HTTP {r.status_code}"
                 continue
+            if r.status_code >= 400:
+                # Erreur client (clé invalide, modèle inconnu, requête rejetée) :
+                # inutile de retenter, on expose le vrai message de l'API.
+                raise RuntimeError(f"{name} HTTP {r.status_code}: {r.text[:300]}")
             data = r.json()
-            choices = data.get("choices")
+            # Certaines API (Google) renvoient une liste JSON ; on prend le 1er objet.
+            if isinstance(data, list):
+                data = data[0] if data else {}
+            choices = data.get("choices") if isinstance(data, dict) else None
             if not choices:
                 # Réponse d'erreur sans 'choices' (quota, payload rejeté…).
                 msg = data.get("message") or data.get("error") or data
