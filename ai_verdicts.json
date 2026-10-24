@@ -1,137 +1,4 @@
 {
-  "stagiaire bac+4 – chargé de projet rse climat h/f|egis en france": {
-    "keep": false,
-    "reason": "Stage RSE Climat (junior) et hors entreprise ciblée climate-tech",
-    "borderline": false,
-    "score": 0,
-    "v": 3
-  },
-  "policier municipal brigade environnement (h/f)|ville de sainte-maxime": {
-    "keep": false,
-    "reason": "Policier municipal environnement (poste terrain, pas conseil/stratégie).",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
-  "chargé de projet climat, littoraux et océans débutant h/f|totalenergies": {
-    "keep": false,
-    "reason": "Poste débutant climat chez TotalEnergies (hors stratégie conseil) et hors entreprise ciblée climate-tech",
-    "borderline": false,
-    "score": 0,
-    "v": 3
-  },
-  "formateur(trice) indépendant(e) en foad – responsable d'établissement touristique (nouveau référentiel 2026)|eureka education": {
-    "keep": false,
-    "reason": "formation hors climat, pas conseil/stratégie",
-    "borderline": false,
-    "score": 0,
-    "v": 2
-  },
-  "responsable merchandising visuel|c&a": {
-    "keep": false,
-    "reason": "merchandising (C&A), pas conseil/stratégie climat",
-    "borderline": false,
-    "score": 0,
-    "v": 2
-  },
-  "assistant store manager h/f - cdi 35h - nice etoile|c&a": {
-    "keep": false,
-    "reason": "management retail (C&A), pas conseil/stratégie climat",
-    "borderline": false,
-    "score": 0,
-    "v": 2
-  },
-  "visual merchandiser manager ( h/f) - nice etoile|c&a": {
-    "keep": false,
-    "reason": "Poste commercial (Visual Merchandiser), pas de lien avec climat/stratégie",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "chargé de projet et communication mission handicap débutant h/f|totalenergies": {
-    "keep": false,
-    "reason": "Poste RH/handicap sans lien climat",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "chef de projet production build (h/f)|storm group": {
-    "keep": false,
-    "reason": "Poste production industrielle sans lien climat",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "business analyst summit moa – h/f|storm group": {
-    "keep": false,
-    "reason": "Poste MOA générique sans lien climat",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "chargé d’affaires machines spéciales - h/f|neo2": {
-    "keep": false,
-    "reason": "Chargé d’affaires machines spéciales : poste technique commercial, hors climat.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "chef de production technique build – h/f|storm group": {
-    "keep": false,
-    "reason": "Poste production industrielle sans lien climat",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "chargé-e d’innovation pui (ci-pui)|inrae": {
-    "keep": false,
-    "reason": "Poste innovation pédagogique sans lien climat",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "responsable développement foncier immobilier - consultations (h/f)|groupe giboire": {
-    "keep": false,
-    "reason": "hors domaine climat/RSE (immobilier foncier)",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "un ou une stagiaire chargé/chargée de mission lycées eco-responsables|région île-de-france": {
-    "keep": false,
-    "reason": "Stage, hors climat",
-    "borderline": false,
-    "score": 0,
-    "v": 3
-  },
-  "développeur murex – h/f|storm group": {
-    "keep": false,
-    "reason": "Poste dev pur, hors climat",
-    "borderline": false,
-    "score": 0,
-    "v": 3
-  },
-  "chargé r&d sites et sols pollués h/f|nge - btp": {
-    "keep": false,
-    "reason": "poste terrain/technique (R&D sols pollués)",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "responsable développement - marseille|sogeprom": {
-    "keep": true,
-    "reason": "Poste à Marseille mais développement immobilier (hors climat/stratégie)",
-    "borderline": true,
-    "score": 55,
-    "v": 4
-  },
-  "solution sales engineer - dach market - deepki h/f|deepki": {
-    "keep": true,
-    "reason": "Solution Sales Engineer - Deepki : poste climate-tech hybride (avant-vente technique), aligné avec cible éditeur logiciel carbone",
-    "borderline": false,
-    "score": 95,
-    "v": 9
-  },
   "senior customer success manager f - m - x - paris - deepki h/f|deepki": {
     "keep": false,
     "reason": "Customer Success Manager (relation client pure)",
@@ -5944,10 +5811,10 @@
   },
   "consultant(e) - energies et utilities h/f|mc2i": {
     "keep": false,
-    "reason": "Consultant Energies et Utilities trop générique (pas focus climat/carbone)",
+    "reason": "Conseil AMOA / SI digitalisé pour le secteur des utilities chez mc2i, sans volet stratégie climat ou durabilité.",
     "borderline": false,
     "score": 0,
-    "v": 9
+    "v": 10
   },
   "analyste vulnérabilité f/h|thales": {
     "keep": true,
@@ -20997,6 +20864,139 @@
     "reason": "Manager des ventes installateurs (commercial pur, hors climat)",
     "borderline": false,
     "score": 0,
+    "v": 10
+  },
+  "chargé d'affaire efficacité energétique|tercio rh": {
+    "keep": false,
+    "reason": "Poste technico-commercial / d'affaires en efficacité énergétique, éloigné du conseil en stratégie climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "ingénieur process waste to energy - h/f|egis en france": {
+    "keep": false,
+    "reason": "Ingénierie de process industriel (valorisation énergétique des déchets), poste technique hors stratégie/conseil climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "ingénieur d’affaires – services à l’environnement - international h/f|ortec group": {
+    "keep": false,
+    "reason": "Poste commercial / ingénieur d'affaires pour services industriels et assainissement, hors cible.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "ingénieur process waste to energy - h/f|l'usine nouvelle": {
+    "keep": false,
+    "reason": "Ingénierie de process industriel (valorisation énergétique des déchets), poste technique hors stratégie climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "ingénieur de projet études génie climatique et cvc (h/f)|olydes": {
+    "keep": false,
+    "reason": "Ingénierie CVC / génie climatique bâtiment en bureau d'études, hors conseil stratégique climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chef de projet électricité bt/tbt et performance énergétique h/f|l'usine nouvelle": {
+    "keep": false,
+    "reason": "Poste technique d'ingénierie électrique BT/TBT et bâtiment, hors conseil climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "consultant senior - energie f/h|yélé consulting": {
+    "keep": true,
+    "reason": "Cabinet de conseil spécialisé en transition énergétique, poste senior en adéquation avec son double profil ingénieur et consultant.",
+    "borderline": false,
+    "score": 75,
+    "v": 10
+  },
+  "sustainability manager - climate plan manager - global corporate responsibility team|station f": {
+    "keep": true,
+    "reason": "Poste interne de pilotage du plan climat d'un grand groupe, niveau manager, ciblant exactement la stratégie bas-carbone et décarbonation.",
+    "borderline": false,
+    "score": 85,
+    "v": 10
+  },
+  "sustainability manager – climate plan manager - global corporate responsibility team|l'oréal": {
+    "keep": true,
+    "reason": "Poste interne de pilotage du plan climat chez L'Oréal (niveau manager), ciblant exactement la stratégie climat/décarbonation en entreprise.",
+    "borderline": false,
+    "score": 85,
+    "v": 10
+  },
+  "consultant - energy, transport & manufacturing|sia": {
+    "keep": false,
+    "reason": "Consulting sectoriel généraliste (industrie/transport/énergie) sans dominante explicite climat/décarbonation, niveau junior/confirmé non spécifique.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "ingénieur projet environnement ferroviaire h/f- 13|ortec group": {
+    "keep": false,
+    "reason": "Poste d'ingénierie de chantier/projet ferroviaire opérationnel chez Ortec, sans volet stratégique climat ou décarbonation.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "consultante/consultant energy transition & utility h/f|n/a": {
+    "keep": true,
+    "reason": "Conseil en transition énergétique et utilities, potentiellement pertinent mais risque de dominante AMOA/SI sectorielle plutôt que stratégie bas-carbone pure.",
+    "borderline": true,
+    "score": 55,
+    "v": 10
+  },
+  "consultant pmo senior  transition environnementale & énergétique f/h|orange sa": {
+    "keep": true,
+    "reason": "Poste de consultant PMO senior dédié à la transition environnementale et énergétique chez Sofrecom, en phase avec son double bagage Bartle (transformation/PMO) et ekodev (transition).",
+    "borderline": false,
+    "score": 75,
+    "v": 10
+  },
+  "délégué de transition (h/f)|fédération des centres sociaux et socio-culturels de": {
+    "keep": false,
+    "reason": "Management de transition en centre social/associatif, sans aucun rapport avec la transition écologique ou le climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "responsable prévention des risques industriels & transition bas carbone f/h (h/f)|n/a": {
+    "keep": true,
+    "reason": "Poste interne chez un grand industriel (Safran) intégrant la transition bas carbone, bien que couplé à la prévention des risques industriels (HSE).",
+    "borderline": true,
+    "score": 65,
+    "v": 10
+  },
+  "conseiller / conseillère en transition énergétique en santé (h/f)|forums talents handicap": {
+    "keep": true,
+    "reason": "Mission de conseil stratégique en transition énergétique pour le secteur de la santé, alignée avec ses compétences d'ingénieur et de consultant transition.",
+    "borderline": false,
+    "score": 75,
+    "v": 10
+  },
+  "conseiller/conseillère transition (h/f)|n/a": {
+    "keep": false,
+    "reason": "Accompagnement à la transition professionnelle et parcours d'insertion, hors domaine environnemental.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "conseiller.ere mobilité h/f|groupe sos": {
+    "keep": false,
+    "reason": "Poste d'insertion et de mobilité solidaire dans le secteur social, hors décarbonation des transports ou stratégie climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "snr process improvement specialist, planning & reporting, eu ops sustainability, eu ops sustainability|amazon": {
+    "keep": true,
+    "reason": "Rôle senior de pilotage et reporting sustainability au sein des opérations européennes d'Amazon, valorisant son profil transformation/process et son expertise en reporting durabilité/climat.",
+    "borderline": false,
+    "score": 80,
     "v": 10
   }
 }
