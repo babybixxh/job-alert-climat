@@ -191,19 +191,30 @@ _ENR_SIGNAL_RE = re.compile(
     r"biomasse|biogaz|m[ée]thanis|g[ée]othermi|hydrog[èe]ne|hydrogen|"
     r"power.to.gas|\benr\b|transition [ée]nerg|mix [ée]nerg|stockage d.[ée]nergie",
     re.IGNORECASE)
-# Titres à écarter MÊME dans la catégorie EnR : stages, postes de terrain/pose,
+# Titres à écarter MÊME dans la catégorie EnR : postes de terrain/pose,
 # purement commerciaux (on garde ingénierie / dev de projet / chef de projet).
 _ENR_EXCLUDE_RE = re.compile(
-    r"stage|alternan|apprenti|\bvie\b|\bposeur|couvreur|monteur|"
+    r"\bposeur|couvreur|monteur|"
     r"[ée]lectricien|technicien|op[ée]rateur|conducteur|chauffeur|"
     r"\bsdr\b|\bbdr\b|commercial|sales|business developer|t[ée]l[ée]vente",
+    re.IGNORECASE)
+# Contrats écartés (stages/alternances/VIE/intern…) — cherchés dans le TITRE ET
+# la DESCRIPTION (un stage est souvent signalé dans le corps, pas le titre).
+_ENR_CONTRACT_EXCLUDE_RE = re.compile(
+    r"stagiaire|\bstage\b|\bstages\b|alternan|apprenti|apprentiss|"
+    r"\bv\.?i\.?e\b|\bvie\b|\bintern\b|internship|c[ée]sure|graduate program|"
+    r"contrat pro|contrat d.apprentissage|service civique",
     re.IGNORECASE)
 
 
 def enr_keep_title(title, description=""):
     t = title or ""
-    # Signal EnR cherché dans titre + description ; exclusions sur le titre seul.
-    if not _ENR_SIGNAL_RE.search(t + " " + (description or "")):
+    hay = t + " " + (description or "")
+    # Signal EnR cherché dans titre + description ; exclusions terrain sur le
+    # titre ; exclusions de contrat (stage/alternance…) sur titre + description.
+    if not _ENR_SIGNAL_RE.search(hay):
+        return False
+    if _ENR_CONTRACT_EXCLUDE_RE.search(hay):
         return False
     if _ENR_EXCLUDE_RE.search(t):
         return False
@@ -1296,7 +1307,8 @@ def search_enr_marseille():
         # Entreprise EnR suivie : on garde même sans mot-clé EnR dans le titre,
         # mais on applique quand même l'exclusion terrain/commercial/séniorité.
         if force_keep:
-            if _ENR_EXCLUDE_RE.search(title) or is_over_senior_title(title):
+            if (_ENR_EXCLUDE_RE.search(title) or is_over_senior_title(title)
+                    or _ENR_CONTRACT_EXCLUDE_RE.search(title + " " + description)):
                 return
         elif not enr_keep_title(title, description):
             return
