@@ -1,67 +1,4 @@
 {
-  "pmo it (h/f)|davidson consulting": {
-    "keep": false,
-    "reason": "Titre générique PMO IT sans lien climat/durabilité",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
-  "chef de projet si (h/f)|davidson consulting": {
-    "keep": false,
-    "reason": "chef de projet SI, hors climat/durabilité",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "ingénieur data analyst / business analyst data|alten": {
-    "keep": false,
-    "reason": "Ingénieur Data Analyst : pas de lien climat/stratégie, poste technique",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "business analyst - toulon|sopra steria": {
-    "keep": false,
-    "reason": "Business Analyst - hors domaine climat/stratégie",
-    "borderline": false,
-    "score": 0,
-    "v": 8
-  },
-  "costs, strategy and environment analyst|maiaspace": {
-    "keep": false,
-    "reason": "Costs, Strategy and Environment Analyst (MaiaSpace). Poste trop générique (coûts + stratégie) sans focus climat/stratégie bas-carbone.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "esg manager|pearse partners": {
-    "keep": false,
-    "reason": "Titre générique 'ESG Manager' sans preuve de niveau senior conseil/stratégie",
-    "borderline": false,
-    "score": 0,
-    "v": 3
-  },
-  "financial & esg officer|360 capital": {
-    "keep": false,
-    "reason": "Titre générique 'Financial & ESG Officer' (finance + ESG)",
-    "borderline": false,
-    "score": 0,
-    "v": 3
-  },
-  "gas&power purchaser (m/f)|cma cgm": {
-    "keep": false,
-    "reason": "Gas&Power Purchaser : achats, hors climat. Rejeté.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "responsable budget & reporting h/f|bourbon": {
-    "keep": false,
-    "reason": "poste finance/comptabilité (responsable budget & reporting), hors scope",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
   "chargé pricing - h/f|collectif energie": {
     "keep": false,
     "reason": "Titre générique 'Chargé Pricing' (finance)",
@@ -12321,10 +12258,10 @@
   },
   "stagiaire impact f/h|aroma-zone": {
     "keep": false,
-    "reason": "Stagiaire Impact : stage, niveau junior.",
+    "reason": "Offre de stage, inadaptée pour un profil avec 6 ans d'expérience.",
     "borderline": false,
     "score": 0,
-    "v": 9
+    "v": 10
   },
   "chargé de mission durabilité|jlb expertises": {
     "keep": true,
@@ -20995,6 +20932,69 @@
   "esg senior project manager – mandants & commande publique / privée (h/f)|jcdecaux": {
     "keep": false,
     "reason": "Poste ESG orienté commande publique, mandants et réponses aux appels d'offres, sans focus central sur la stratégie climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "engagement manager / pilote de projets énergie (h/f)|yélé consulting": {
+    "keep": true,
+    "reason": "Cabinet de conseil en transition énergétique renommé (Yélé), rôle d'Engagement Manager correspondant à son niveau de séniorité et à son double profil ingénieur / conseil en stratégie.",
+    "borderline": false,
+    "score": 72,
+    "v": 10
+  },
+  "chef de projet réseaux de chaleur et energies renouvelables|amanora technologies": {
+    "keep": false,
+    "reason": "Poste en prestation d'ingénierie technique / bureau d'études réseaux de chaleur, éloigné du conseil en stratégie climat / décarbonation.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "eau - ingénieur.e de projets maitrise d’oeuvre aménagements hydrauliques et milieux aquatiques (f/h) à aubagne (proche marseille - 13)|irh ingenieur conseil": {
+    "keep": false,
+    "reason": "Poste de maîtrise d'œuvre et ingénierie hydraulique / génie civil, hors cible conseil climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "eau - ingénieur.e de projets maitrise d’oeuvre aménagements hydrauliques et milieux aquatiques (f/h) à aubagne (proche marseille - 13)|antea group - france": {
+    "keep": false,
+    "reason": "Poste de maîtrise d'œuvre et ingénierie hydraulique / génie civil, hors cible conseil climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "eau -chef de projet hydrogéologie à aubagne (13) - (f/h) - ant213|antea group - france": {
+    "keep": false,
+    "reason": "Poste technique d'hydrogéologie, sans lien avec la stratégie carbone ou l'atténuation/adaptation climatique.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "esg reporting officer f/h|knds france": {
+    "keep": false,
+    "reason": "Poste de reporting ESG / conformité générique sans dominante stratégie climat / décarbonation.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "responsable opérations energie (h/f)|syclef": {
+    "keep": false,
+    "reason": "Poste d'opérations techniques / maintenance en réfrigération et CVC chez un installateur, hors conseil stratégique.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "climaticien h/f|asap work": {
+    "keep": false,
+    "reason": "Faux ami : climaticien désigne un technicien d'installation et de maintenance CVC (climatisation).",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "climaticien / climaticienne (h/f)|gilbert developpement": {
+    "keep": false,
+    "reason": "Faux ami : poste de technicien de maintenance/dépannage en climatisation (CVC).",
     "borderline": false,
     "score": 0,
     "v": 10

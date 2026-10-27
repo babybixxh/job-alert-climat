@@ -12,18 +12,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/responsable-climat-h-f-at-groupe-sos-international-4480789135",
-    "title": "Responsable climat H/F",
-    "company": "Groupe SOS - International",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/responsable-climat-h-f-at-groupe-sos-international-4480789135",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 90,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/consultant-environnement-gaz-%C3%A0-effet-de-serre-f-h-x-at-bureau-veritas-4450278016",
     "title": "Consultant Environnement/Gaz à effet de serre (F-H-X)",
     "company": "Bureau Veritas",
@@ -33,6 +21,18 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 90,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/sustainability-manager-climate-plan-manager-global-corporate-responsibility-team-at-station-f-4482301754",
+    "title": "SUSTAINABILITY MANAGER - CLIMATE PLAN MANAGER - GLOBAL CORPORATE RESPONSIBILITY TEAM",
+    "company": "STATION F",
+    "location": "Clichy",
+    "url": "https://fr.linkedin.com/jobs/view/sustainability-manager-climate-plan-manager-global-corporate-responsibility-team-at-station-f-4482301754",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 85,
     "is_new": false
   },
   {
@@ -69,30 +69,6 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/sustainability-manager-climate-plan-manager-global-corporate-responsibility-team-at-station-f-4482301754",
-    "title": "SUSTAINABILITY MANAGER - CLIMATE PLAN MANAGER - GLOBAL CORPORATE RESPONSIBILITY TEAM",
-    "company": "STATION F",
-    "location": "Clichy",
-    "url": "https://fr.linkedin.com/jobs/view/sustainability-manager-climate-plan-manager-global-corporate-responsibility-team-at-station-f-4482301754",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/sustainability-manager-%E2%80%93-climate-plan-manager-global-corporate-responsibility-team-at-l-or%C3%A9al-4480456286",
-    "title": "SUSTAINABILITY MANAGER – CLIMATE PLAN MANAGER - Global Corporate Responsibility Team",
-    "company": "L'Oréal",
-    "location": "Clichy",
-    "url": "https://fr.linkedin.com/jobs/view/sustainability-manager-%E2%80%93-climate-plan-manager-global-corporate-responsibility-team-at-l-or%C3%A9al-4480456286",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
     "is_new": false
   },
   {
@@ -218,6 +194,18 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/engagement-manager-pilote-de-projets-%C3%A9nergie-h-f-at-y%C3%A9l%C3%A9-consulting-4482180047",
+    "title": "Engagement Manager / Pilote de projets énergie (H/F)",
+    "company": "Yélé Consulting",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/engagement-manager-pilote-de-projets-%C3%A9nergie-h-f-at-y%C3%A9l%C3%A9-consulting-4482180047",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 72,
+    "is_new": true
+  },
+  {
     "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-de-mission-transition-energetique-f-h_4876.aspx",
     "title": "VSC - Chargé de mission transition énergétique F/H",
     "company": "ADEME",
@@ -231,26 +219,26 @@
     "is_new": false
   },
   {
-    "id": "5940680184",
-    "title": "Data Scientist/Developer H/F",
-    "company": "Blunomy ",
-    "location": "Le Montet, Moulins",
-    "url": "https://www.adzuna.fr/details/5940680184?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Le poste de Data Scientist/Developer H/F Blunomy…… from Intention to Impact Blunomy is an international consulting & data firm, dedicated to accelerat...",
+    "id": "5913236608",
+    "title": "Marketing Specialist Fixed Contract - CDD H/F",
+    "company": "Quantis",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/land/ad/5913236608?se=EAe1b-_R8RG1893qHQXvOQ&utm_medium=api&utm_source=ae8a5ffa&v=DCB970CC49D3D673ED75834EB17CC1D20D32E006",
+    "description": "Support our people. Amplify our impact. - Do you want to contribute your Marketing expertise to a mission that truly matters? - Do you want to develop...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
-    "id": "5935326984",
-    "title": "Software Tester/Developer H/F",
+    "id": "5940481852",
+    "title": "Data Scientist/Developer H/F",
     "company": "Blunomy ",
-    "location": "France",
-    "url": "https://www.adzuna.fr/details/5935326984?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "based environment. Fluent in English Why work for Blunomy? You will be joining a passionate group of professionals, aligned in our mission. At Blunomy...",
+    "location": "Allier, Auvergne-Rhône-Alpes",
+    "url": "https://www.adzuna.fr/details/5940481852?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Le poste de Data Scientist/Developer H/F Blunomy…… from Intention to Impact Blunomy is an international consulting & data firm, dedicated to accelerat...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -264,6 +252,20 @@
     "company": "Blunomy ",
     "location": "France",
     "url": "https://www.adzuna.fr/details/5928798713?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "based environment. Fluent in English Why work for Blunomy? You will be joining a passionate group of professionals, aligned in our mission. At Blunomy...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5935326984",
+    "title": "Software Tester/Developer H/F",
+    "company": "Blunomy ",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5935326984?utm_medium=api&utm_source=ae8a5ffa",
     "description": "based environment. Fluent in English Why work for Blunomy? You will be joining a passionate group of professionals, aligned in our mission. At Blunomy...",
     "source": "Adzuna",
     "company_watch": true,
@@ -343,20 +345,6 @@
     "is_new": false
   },
   {
-    "id": "5925765512",
-    "title": "Product Management Senior Expert",
-    "company": "Ecovadis",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5925765512?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Work smart, have fun and make an impact! EcoVadis is the leading provider of business sustainability ratings Our solutions are backed by an internatio...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
     "id": "5934763118",
     "title": "Coordinateur Commercial - H/F - CDD",
     "company": "Deepki",
@@ -377,6 +365,20 @@
     "location": "9ème Arrondissement, Paris",
     "url": "https://www.adzuna.fr/details/5905927276?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Pour accompagner sa croissance, Howden France recrute pour sa ligne produit « flotte automobile » son Chargé(e) d’Indemnisation Flotte Automobile (H/F...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5900757456",
+    "title": "Chargé(e) de clientèle IARD Entreprise (H/F)",
+    "company": "Howden France",
+    "location": "9ème Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/details/5900757456?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Votre rôle : Chargé(e) de clientèle En tant que Chargé(e) de Clientèle IARD, vous serez au cœur de la stratégie commerciale pour développer et fidélis...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -427,20 +429,6 @@
     "is_new": false
   },
   {
-    "id": "5899844390",
-    "title": "Paralegal H/F",
-    "company": "Marsh McLennan",
-    "location": "France",
-    "url": "https://www.adzuna.fr/details/5899844390?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Company: Marsh Description: Marsh, leader mondial du courtage d'assurance et du conseil en gestion des risques, recherche un(e) Paralegal pour rejoind...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
     "id": "5904053280",
     "title": "Coordinateur International HF",
     "company": "Marsh McLennan",
@@ -469,26 +457,26 @@
     "is_new": false
   },
   {
+    "id": "5933475785",
+    "title": "Consultant(e) expérimenté(e) H/F – Workforce Reward",
+    "company": "Marsh McLennan",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5933475785?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Company: Marsh Description: Nous recherchons un nouveau talent pour rejoindre notre équipe Conseil Workforce Rewards. Ce poste est basé à Paris La Déf...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
+  },
+  {
     "id": "5914013065",
     "title": "Gestionnaire Sinistres Dommages CDI (H/F)",
     "company": "WTW",
     "location": "Saint-Denis-de-l'Hôtel, Orléans",
     "url": "https://www.adzuna.fr/details/5914013065?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Description Le rôle : Intégré(e) au sein de l’équipe Dommages/Moyens de Paiement du département Solutions Affinitaire, vos missions sont les suivantes...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5914044027",
-    "title": "Expert Métier Réclamation - CDI (H/F)",
-    "company": "WTW",
-    "location": "Saint-Denis-de-l'Hôtel, Orléans",
-    "url": "https://www.adzuna.fr/details/5914044027?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Description Le Rôle L’Expert(e) Réclamation est chargé(e) d’analyser, d’ instruire et de traiter les réclamations clients dans le respect des procédur...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
