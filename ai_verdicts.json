@@ -1,74 +1,4 @@
 {
-  "chargé pricing - h/f|collectif energie": {
-    "keep": false,
-    "reason": "Titre générique 'Chargé Pricing' (finance)",
-    "borderline": false,
-    "score": 0,
-    "v": 3
-  },
-  "cost controller - h/f|parlym": {
-    "keep": false,
-    "reason": "Cost Controller (Parlym). Poste finance/comptabilité, hors climat/durabilité.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "chargé d'études de prix f/h|eiffage énergie systèmes": {
-    "keep": false,
-    "reason": "Études de prix terrain sans lien avec le climat ou la stratégie.",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
-  "expert carbone règlementaire h/f|groupe afnor": {
-    "keep": true,
-    "reason": "Expert carbone réglementaire, poste stratégique conseil climat. Localisation Saint-Denis compatible avec Paris.",
-    "borderline": false,
-    "score": 80,
-    "v": 3
-  },
-  "chef de projet technique maritime h/f|charly (la page pour nos annonces)": {
-    "keep": false,
-    "reason": "Poste technique maritime, hors climat/décarbonation",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
-  "responsable d'exploitation h/f|ortec group": {
-    "keep": false,
-    "reason": "Responsable d'exploitation ≠ climat/carbone (hors cible)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "responsable d'equipe logistique (h/f)|amazon": {
-    "keep": false,
-    "reason": "Responsable équipe logistique (Amazon), hors climat/durabilité",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "chargé.e de consignation - h/f|neo2": {
-    "keep": false,
-    "reason": "Poste technique consignation, hors climat",
-    "borderline": false,
-    "score": 0,
-    "v": 3
-  },
-  "expert messagerie microsoft exchange – h/f|storm group": {
-    "keep": false,
-    "reason": "Poste technique messagerie, hors climat",
-    "borderline": false,
-    "score": 0,
-    "v": 3
-  },
-  "directeur technique nice h/f|icade": {
-    "keep": false,
-    "reason": "Directeur technique hors scope climat/stratégie.",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
   "strategy advisor h/f|legrand": {
     "keep": false,
     "reason": "Strategy advisor hors scope climat/stratégie.",
@@ -20997,6 +20927,76 @@
     "reason": "Faux ami : poste de technicien de maintenance/dépannage en climatisation (CVC).",
     "borderline": false,
     "score": 0,
+    "v": 10
+  },
+  "business analyst esg h/f|crédit agricole cib": {
+    "keep": false,
+    "reason": "Poste de Business Analyst IT/finance axé reporting ESG bancaire, hors conseil stratégique climat ou décarbonation.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "data quality manager (esg)|weefin": {
+    "keep": false,
+    "reason": "Rôle de gouvernance et qualité de données ESG financières, hors rôles hybrides climat ciblés (comptabilité carbone, climate risk).",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "gynécologue - paris (75)|n/a": {
+    "keep": false,
+    "reason": "Hors sujet (secteur médical).",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "gynécologue - nice (06) f/h|dn8 solutions ltd": {
+    "keep": false,
+    "reason": "Hors sujet (secteur médical).",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "emea sales manager - saas for renewables|station f": {
+    "keep": false,
+    "reason": "Poste commercial pur (Sales Manager), exclu par les critères de recherche.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chargé de mission expertise écologique - métropole aix-marseille-provence (recrutements)|fonction publique territoriale": {
+    "keep": true,
+    "reason": "Marseille / Métropole AMP au Pôle Transition Écologique et Énergétique : correspond aux critères élargis collectivité / transition en PACA.",
+    "borderline": false,
+    "score": 80,
+    "v": 10
+  },
+  "ingénieur process waste to energy - f/h|egis": {
+    "keep": false,
+    "reason": "Ingénierie de procédé / process industriel (usines UVE), hors conseil ou pilotage de transition/climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chef de projet biodiversité - cdi f/h|eiffage": {
+    "keep": false,
+    "reason": "Poste biodiversité orienté BTP/infrastructures en IDF, sans dominante décarbonation ou stratégie climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "esg performance & reporting manager|sia": {
+    "keep": false,
+    "reason": "Reporting et conformité ESG générique, sans dimension climat ou stratégie bas-carbone explicite.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "policy manager – sustainability|international chamber of commerce": {
+    "keep": true,
+    "reason": "Politiques publiques de durabilité dans une institution internationale d'influence (ICC) à Paris ; pertinent pour son profil ESSEC/stratégie, bien qu'élargi à la durabilité globale.",
+    "borderline": true,
+    "score": 70,
     "v": 10
   }
 }

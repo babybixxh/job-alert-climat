@@ -24,18 +24,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/sustainability-manager-climate-plan-manager-global-corporate-responsibility-team-at-station-f-4482301754",
-    "title": "SUSTAINABILITY MANAGER - CLIMATE PLAN MANAGER - GLOBAL CORPORATE RESPONSIBILITY TEAM",
-    "company": "STATION F",
-    "location": "Clichy",
-    "url": "https://fr.linkedin.com/jobs/view/sustainability-manager-climate-plan-manager-global-corporate-responsibility-team-at-station-f-4482301754",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/consultant-environnement-%E2%80%93-chef-de-projet-exp%C3%A9riment%C3%A9-dans-le-domaine-des-data-centres-at-ramboll-4482082142",
     "title": "Consultant Environnement – Chef de projet expérimenté dans le domaine des Data Centres",
     "company": "Ramboll",
@@ -132,6 +120,18 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/engagement-manager-pilote-de-projets-%C3%A9nergie-h-f-at-y%C3%A9l%C3%A9-consulting-4482180047",
+    "title": "Engagement Manager / Pilote de projets énergie (H/F)",
+    "company": "Yélé Consulting",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/engagement-manager-pilote-de-projets-%C3%A9nergie-h-f-at-y%C3%A9l%C3%A9-consulting-4482180047",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 72,
+    "is_new": false
+  },
+  {
     "id": "5936251946",
     "title": "Chef de projet Amélioration de la performance industrielle et environnementale (H/F)",
     "company": "FAREVA CORPORATE France",
@@ -158,16 +158,17 @@
     "is_new": false
   },
   {
-    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-thematique-economie-circulaire-f-h_4772.aspx",
-    "title": "VSC - Chargé.e de mission thématique Economie Circulaire F/H",
-    "company": "ADEME",
-    "location": "France",
-    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-thematique-economie-circulaire-f-h_4772.aspx",
-    "description": "",
-    "source": "ADEME",
-    "borderline": false,
-    "score": 85,
-    "is_new": false
+    "id": "5935973070",
+    "title": "Consultant Carbone Senior - German speaker - Nooco - CDI - (F/H/X)",
+    "company": "Deepki",
+    "location": "11ème Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/details/5935973070?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Date de démarrage : 4 Janvier 2027 Nooco est une société française d’édition de logiciel SaaS, spécialiste de la mesure de l‘empreinte carbone des pro...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": true,
+    "score": 65,
+    "is_new": true
   },
   {
     "id": "https://unjobs.org/vacancies/1772727833707",
@@ -194,15 +195,29 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/engagement-manager-pilote-de-projets-%C3%A9nergie-h-f-at-y%C3%A9l%C3%A9-consulting-4482180047",
-    "title": "Engagement Manager / Pilote de projets énergie (H/F)",
-    "company": "Yélé Consulting",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/engagement-manager-pilote-de-projets-%C3%A9nergie-h-f-at-y%C3%A9l%C3%A9-consulting-4482180047",
+    "id": "5938139307",
+    "title": "Chargé de mission expertise écologique - Métropole Aix-Marseille-Provence (recrutements)",
+    "company": "Fonction Publique Territoriale",
+    "location": "Marseille, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5938139307?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Vos missions en quelques mots Poste rattaché à la DGD Transition Environnementale, Eau, Culture et Sport, Pôle Transition Ecologique et Energétique Co...",
+    "salary": "",
+    "date": "2026-10-22T17:53:11Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 80,
+    "is_new": true
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/policy-manager-%E2%80%93-sustainability-at-international-chamber-of-commerce-4483635652",
+    "title": "Policy Manager – Sustainability",
+    "company": "International Chamber of Commerce",
+    "location": "Paris et périphérie",
+    "url": "https://fr.linkedin.com/jobs/view/policy-manager-%E2%80%93-sustainability-at-international-chamber-of-commerce-4483635652",
     "description": "",
     "source": "LinkedIn",
-    "borderline": false,
-    "score": 72,
+    "borderline": true,
+    "score": 70,
     "is_new": true
   },
   {
@@ -223,7 +238,7 @@
     "title": "Marketing Specialist Fixed Contract - CDD H/F",
     "company": "Quantis",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/land/ad/5913236608?se=EAe1b-_R8RG1893qHQXvOQ&utm_medium=api&utm_source=ae8a5ffa&v=DCB970CC49D3D673ED75834EB17CC1D20D32E006",
+    "url": "https://www.adzuna.fr/details/5913236608?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Support our people. Amplify our impact. - Do you want to contribute your Marketing expertise to a mission that truly matters? - Do you want to develop...",
     "source": "Adzuna",
     "company_watch": true,
@@ -233,26 +248,12 @@
     "is_new": false
   },
   {
-    "id": "5940481852",
+    "id": "5940680192",
     "title": "Data Scientist/Developer H/F",
     "company": "Blunomy ",
-    "location": "Allier, Auvergne-Rhône-Alpes",
-    "url": "https://www.adzuna.fr/details/5940481852?utm_medium=api&utm_source=ae8a5ffa",
+    "location": "Dornes, Nevers",
+    "url": "https://www.adzuna.fr/details/5940680192?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Le poste de Data Scientist/Developer H/F Blunomy…… from Intention to Impact Blunomy is an international consulting & data firm, dedicated to accelerat...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5928798713",
-    "title": "Data Team Manager H/F",
-    "company": "Blunomy ",
-    "location": "France",
-    "url": "https://www.adzuna.fr/details/5928798713?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "based environment. Fluent in English Why work for Blunomy? You will be joining a passionate group of professionals, aligned in our mission. At Blunomy...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -275,11 +276,25 @@
     "is_new": false
   },
   {
-    "id": "5935412074",
+    "id": "5928798713",
+    "title": "Data Team Manager H/F",
+    "company": "Blunomy ",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5928798713?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "based environment. Fluent in English Why work for Blunomy? You will be joining a passionate group of professionals, aligned in our mission. At Blunomy...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5935559069",
     "title": "Developer (Python & React) H/F",
     "company": "Blunomy ",
-    "location": "Allier, Auvergne-Rhône-Alpes",
-    "url": "https://www.adzuna.fr/details/5935412074?utm_medium=api&utm_source=ae8a5ffa",
+    "location": "Le Montet, Moulins",
+    "url": "https://www.adzuna.fr/details/5935559069?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Le poste de Developer (Python & React) H/F Blunomy…… from Intention to Impact Blunomy is an international consulting & data firm, dedicated to acceler...",
     "source": "Adzuna",
     "company_watch": true,
@@ -359,34 +374,6 @@
     "is_new": false
   },
   {
-    "id": "5905927276",
-    "title": "Chargé(e) d'Indemnisation Flotte Automobile (H/F)",
-    "company": "Howden France",
-    "location": "9ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/details/5905927276?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Pour accompagner sa croissance, Howden France recrute pour sa ligne produit « flotte automobile » son Chargé(e) d’Indemnisation Flotte Automobile (H/F...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5900757456",
-    "title": "Chargé(e) de clientèle IARD Entreprise (H/F)",
-    "company": "Howden France",
-    "location": "9ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/details/5900757456?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Votre rôle : Chargé(e) de clientèle En tant que Chargé(e) de Clientèle IARD, vous serez au cœur de la stratégie commerciale pour développer et fidélis...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
     "id": "5935548408",
     "title": "Conseiller Sinistres RC H/F",
     "company": "Marsh McLennan",
@@ -457,20 +444,6 @@
     "is_new": false
   },
   {
-    "id": "5933475785",
-    "title": "Consultant(e) expérimenté(e) H/F – Workforce Reward",
-    "company": "Marsh McLennan",
-    "location": "France",
-    "url": "https://www.adzuna.fr/details/5933475785?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Company: Marsh Description: Nous recherchons un nouveau talent pour rejoindre notre équipe Conseil Workforce Rewards. Ce poste est basé à Paris La Déf...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": true
-  },
-  {
     "id": "5914013065",
     "title": "Gestionnaire Sinistres Dommages CDI (H/F)",
     "company": "WTW",
@@ -483,5 +456,47 @@
     "borderline": true,
     "ai_unverified": true,
     "is_new": false
+  },
+  {
+    "id": "5914044027",
+    "title": "Expert Métier Réclamation - CDI (H/F)",
+    "company": "WTW",
+    "location": "Saint-Denis-de-l'Hôtel, Orléans",
+    "url": "https://www.adzuna.fr/details/5914044027?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Description Le Rôle L’Expert(e) Réclamation est chargé(e) d’analyser, d’ instruire et de traiter les réclamations clients dans le respect des procédur...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5905911908",
+    "title": "Gestionnaire de production Auto & Transport - CDI H/F",
+    "company": "WTW",
+    "location": "Puteaux, Nanterre",
+    "url": "https://www.adzuna.fr/details/5905911908?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Description Le rôle : Intégré au sein du Département Auto-Flottes Transport, vos missions seront les suivantes : Assure la gestion des contrats qui lu...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5910207081",
+    "title": "Gestionnaire de production Construction Internationale - CDI H/F",
+    "company": "WTW",
+    "location": "Puteaux, Nanterre",
+    "url": "https://www.adzuna.fr/details/5910207081?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Description Le rôle Au sein du département Opérations Risk Management, vous œuvrerez au sein de la branche Construction Internationale sur les mission...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
   }
 ]
