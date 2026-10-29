@@ -1,74 +1,4 @@
 {
-  "strategy advisor h/f|legrand": {
-    "keep": false,
-    "reason": "Strategy advisor hors scope climat/stratégie.",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "energy consultant (m/f)|magellan consulting": {
-    "keep": false,
-    "reason": "Energy Consultant générique hors scope climat/stratégie.",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "consultant.e senior / manager stratégie & innovation [secteurs energies & industrie]|impulse partners - a fast lane for innovation": {
-    "keep": true,
-    "reason": "Consultant Senior / Manager Stratégie & Innovation dans les secteurs Énergie & Industrie. Niveau senior, stratégique et aligné sur la décarbonation.",
-    "borderline": false,
-    "score": 90,
-    "v": 9
-  },
-  "consultant en diagnostic stratégique & financier - marseille (h/f)|secafi": {
-    "keep": false,
-    "reason": "Consultant diagnostic stratégique & financier, pas climat/stratégie bas-carbone",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
-  "business value advisor (h/f/nb)|keyrus": {
-    "keep": true,
-    "reason": "Business Value Advisor chez Keyrus (Sophia Antipolis) : rôle hybride conseil/data, potentiellement lié à la data-climat/ESG, mais description trop générique.",
-    "borderline": true,
-    "score": 65,
-    "v": 4
-  },
-  "consultant conduite du changement f/h|onepoint": {
-    "keep": false,
-    "reason": "Consultant en conduite du changement sans dimension climat.",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
-  "consultant change confirmé h/f|inetum": {
-    "keep": false,
-    "reason": "Titre générique 'Change Management' sans lien climat/durabilité",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "consultant ia (h/f)|thales": {
-    "keep": false,
-    "reason": "Consultant IA : hors scope climat/durabilité",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "business analyst senior - antibes, france (h/f)|astek": {
-    "keep": false,
-    "reason": "Business Analyst Senior sans lien climat/durabilité",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
-  "energy manager f/h|edf": {
-    "keep": false,
-    "reason": "Energy Manager : hors scope climat/durabilité (énergie ≠ climat/stratégie)",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
   "business analyst / product owner (f/h)|atos": {
     "keep": false,
     "reason": "Consultant Conduite du changement (Onepoint) — poste RH/transformation générique. Lieu PACA mais hors cible.",
@@ -20997,6 +20927,76 @@
     "reason": "Politiques publiques de durabilité dans une institution internationale d'influence (ICC) à Paris ; pertinent pour son profil ESSEC/stratégie, bien qu'élargi à la durabilité globale.",
     "borderline": true,
     "score": 70,
+    "v": 10
+  },
+  "chargé.e de mission économie circulaire et sobriété|ademe": {
+    "keep": true,
+    "reason": "Poste qualifié de chargé de mission à l'ADEME sur la sobriété et l'économie circulaire, pertinent en agence publique mais moins centré sur le climat/carbone",
+    "borderline": true,
+    "score": 65,
+    "v": 10
+  },
+  "chargé.e de mission rep bâtiment f/h|ademe": {
+    "keep": false,
+    "reason": "Poste très axé réglementation des filières déchets/REP bâtiment, éloigné de la stratégie climat et décarbonation",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chef.fe de projet plateforme \"territoires en transition\" f/h|ademe": {
+    "keep": true,
+    "reason": "Chef de projet sur la plateforme Territoires en Transition de l'ADEME (outil climat-air-énergie des collectivités), excellent mix politiques publiques, climat et data",
+    "borderline": false,
+    "score": 75,
+    "v": 10
+  },
+  "vsc - chargé de mission transition énergétique f/h|ademe": {
+    "keep": false,
+    "reason": "Contrat VSC (volontariat de service civique), réservé aux profils juniors / sous-rémunéré pour 6 ans d'expérience",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chef.fe de projet financement de la transition écologique des bâtiments f/h|ademe": {
+    "keep": true,
+    "reason": "Chef de projet transition des bâtiments à l'ADEME, valorise son profil ingénieur thermo/stratégie, bien qu'axé sur les dispositifs de financement",
+    "borderline": true,
+    "score": 65,
+    "v": 10
+  },
+  "chef.fe de projet numérique agir f/h|ademe": {
+    "keep": false,
+    "reason": "Chef de projet numérique/IT sur la plateforme web AGIR, sans dimension stratégie climat ou méthodologique",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "vsc - chargé-e de mission transition ecologique - territoires durables f/h|ademe": {
+    "keep": false,
+    "reason": "Contrat VSC (volontariat de service civique), statut junior inadapté à un profil confirmé",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "vsc - chargé-e de mission transition ecologique - economie circulaire f/h|ademe": {
+    "keep": false,
+    "reason": "Contrat VSC (volontariat de service civique), statut junior inadapté à un profil confirmé",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "data scientist/developer h/f|blunomy": {
+    "keep": false,
+    "reason": "Rôle de Data Scientist/Developer pur, explicitement à exclure même au sein d'une entreprise ciblée",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "software tester/developer h/f|blunomy": {
+    "keep": false,
+    "reason": "Rôle de testeur logiciel / dev (QA/software testing), explicitement exclu même chez un cabinet/éditeur ciblé",
+    "borderline": false,
+    "score": 0,
     "v": 10
   }
 }
