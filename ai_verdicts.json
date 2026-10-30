@@ -1,144 +1,4 @@
 {
-  "business analyst / product owner (f/h)|atos": {
-    "keep": false,
-    "reason": "Consultant Conduite du changement (Onepoint) — poste RH/transformation générique. Lieu PACA mais hors cible.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "district manager|aroma-zone": {
-    "keep": false,
-    "reason": "Titre 'District Manager' ne correspond pas au climat/stratégie/durabilité",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "adjoint à la responsable technique - f/h - cdi (région nord)|écosphère": {
-    "keep": false,
-    "reason": "Titre 'Adjoint à la responsable technique' hors stratégie climat",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "un(e) animateur(rice) captage|chambre d'agriculture de région ile-de-france": {
-    "keep": false,
-    "reason": "Titre 'animateur captage' hors stratégie climat senior",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "jardinier·e éco-animateur·ice|urbanescence": {
-    "keep": false,
-    "reason": "Titre 'Jardinier éco-animateur' hors stratégie climat senior",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "^)canalisateur h/f|nge - btp": {
-    "keep": false,
-    "reason": "Canalisateur — poste technique BTP.",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "chargé(e) de mission réseaux de chaleur et de froid (h/f)|ville de levallois": {
-    "keep": false,
-    "reason": "Chargé de mission réseaux de chaleur — hors zone PACA (Levallois-Perret).",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "coordonnateur hygiène-sécurité-environnement/coordonnatrice hygiène-sécurité-environnement|expectra": {
-    "keep": false,
-    "reason": "Poste QSE générique sans lien climat/stratégie",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "responsable qualité et environnement (h/f/x)|bel": {
-    "keep": false,
-    "reason": "Poste en Normandie hors zone cible, QHSE industriel sans lien climat stratégique",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "responsable qhse-esg groupe / group qhse esg manager h/f|sulo france": {
-    "keep": false,
-    "reason": "Poste en Île-de-France hors télétravail, QHSE industriel sans lien climat stratégique",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "chargé(e) de coordination des missions et développement (h/f)|active-faraide": {
-    "keep": false,
-    "reason": "Coordination missions sans lien climat/durabilité",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
-  "un ou une responsable adjoint/adjointe du service spectacle vivant|région île-de-france": {
-    "keep": false,
-    "reason": "Poste administratif culturel sans lien climat",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "arquus - ingénieur diagnostic (h/f)|john cockerill": {
-    "keep": false,
-    "reason": "poste terrain/technique (diagnostic)",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "ingénieur projet- f/h|danone": {
-    "keep": true,
-    "reason": "Ingénieur projet chez Danone (décarbonation industrielle, mais poste terrain/usine)",
-    "borderline": true,
-    "score": 65,
-    "v": 4
-  },
-  "cariste - saisonnier h/f|bonduelle": {
-    "keep": false,
-    "reason": "Cariste (Bonduelle), poste terrain/junior, hors climat.",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
-  "assistant commercial private label h/f|bonduelle": {
-    "keep": false,
-    "reason": "Assistant Commercial (hors climat)",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "cariste h/f|bonduelle": {
-    "keep": false,
-    "reason": "Poste technique (cariste) sans lien avec le climat ou la stratégie.",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
-  "cariste production - rangement h/f|bonduelle": {
-    "keep": false,
-    "reason": "Poste terrain/technique (cariste) sans lien climat/durabilité.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "référent mécanicien h/f|bonduelle": {
-    "keep": false,
-    "reason": "Référent Mécanicien : poste technique terrain sans lien stratégie climat. Rejeté.",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
-  "mécanicien expérimenté h/f|bonduelle": {
-    "keep": false,
-    "reason": "Mécanicien (poste technique) hors cible",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
   "conducteur de machines saisonnier h/f|bonduelle": {
     "keep": false,
     "reason": "Conducteur de machines saisonnier (poste terrain/technique)",
@@ -20997,6 +20857,146 @@
     "reason": "Rôle de testeur logiciel / dev (QA/software testing), explicitement exclu même chez un cabinet/éditeur ciblé",
     "borderline": false,
     "score": 0,
+    "v": 10
+  },
+  "ingénieur adaptation & résilience climatique f/h|vinci": {
+    "keep": true,
+    "reason": "Ingénieur adaptation et résilience climatique dans un grand groupe d'ingénierie/construction, en plein dans le sweet spot adaptation/risque physique",
+    "borderline": false,
+    "score": 90,
+    "v": 10
+  },
+  "ingénieur adaptation & résilience climatique f/h|sixense group": {
+    "keep": true,
+    "reason": "Ingénieur adaptation et résilience climatique chez Sixense (conseil/ingénierie des infrastructures), en plein dans le sweet spot adaptation/risque physique",
+    "borderline": false,
+    "score": 90,
+    "v": 10
+  },
+  "sustainability & climate sales specialist - frabelux|msci inc.": {
+    "keep": false,
+    "reason": "Poste commercial pur (Sales Specialist), hors cible pour son profil de consultant/ingénieur climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chef de projet adaptation aux changements climatiques|rivp": {
+    "keep": true,
+    "reason": "Chef de projet adaptation aux changements climatiques chez un grand bailleur, ciblé sur son sweet spot adaptation",
+    "borderline": false,
+    "score": 83,
+    "v": 10
+  },
+  "machine learning engineer (climate tech)|station f": {
+    "keep": false,
+    "reason": "Poste de Machine Learning Engineer (développement tech / data science pure), hors profil",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "climaticiens (f/h)|adéquat interim & recrutement": {
+    "keep": false,
+    "reason": "Métier technique de génie climatique / CVC (technicien climaticien), hors profil",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "ingénieur stagiaire mobilité, planification & economie des transports (h/f)|setec international": {
+    "keep": false,
+    "reason": "Offre de stage, hors séniorité",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "gynécologue - paris (75) f/h|dn8 solutions ltd": {
+    "keep": false,
+    "reason": "Métier médical sans aucun rapport avec le climat ou le profil",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chargé(e) d’investissement – capital-développement à impact (h/f)|lincoln": {
+    "keep": false,
+    "reason": "Poste d'investissement / finance, hors cible conseil et stratégie climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "stagiaire rse bilan carbone - h/f|groupe advenis": {
+    "keep": false,
+    "reason": "Offre de stage, hors séniorité",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chargé.e de plaidoyer climat|humanitalents": {
+    "keep": true,
+    "reason": "Poste de plaidoyer climat en ONG/secteur de la solidarité internationale, aligné avec ses cibles ONG/think tanks et son expertise climat.",
+    "borderline": false,
+    "score": 80,
+    "v": 10
+  },
+  "adjoint(e) au responsable du service des politiques d'autonomie et de rénovation énergétique (spare) h/f|anah": {
+    "keep": true,
+    "reason": "Poste en agence publique nationale (Anah) pilotant les politiques de rénovation énergétique et décarbonation du bâtiment, bon niveau de responsabilité.",
+    "borderline": false,
+    "score": 75,
+    "v": 10
+  },
+  "chef.fe de projet confirmé.e infrastructures et mobilités - vivier f/h (cdi)|setec organisation": {
+    "keep": false,
+    "reason": "Offre vivier de gestion de projet d'infrastructures/mobilités sans focus stratégique explicite sur le climat ou la décarbonation.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "ingénieur / ingénieure hygiène, sécurité et environnement en indu (h/f)|guerbet": {
+    "keep": false,
+    "reason": "Poste d'ingénieur HSE sur site industriel et en CDD, expressément exclu.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "senior commercial manager- renewables development|leap29": {
+    "keep": false,
+    "reason": "Rôle commercial pur en développement d'énergies renouvelables, exclu.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "sgae - adjoint(e) au chef de bureau \"environnement, énergie, climat\" (eec) h/f|choisir le service public": {
+    "keep": true,
+    "reason": "Poste d'expert politiques publiques énergie/climat au SGAE (Services du Premier ministre), niveau stratégique et institutionnel prestigieux.",
+    "borderline": false,
+    "score": 88,
+    "v": 10
+  },
+  "charge.e de mission environnement et mammifères marins f/h|comité national des pêches maritimes et des élevages marins": {
+    "keep": false,
+    "reason": "Mission biodiversité marine / filière pêche, hors de son champ d'expertise climat et décarbonation.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "responsable de service développement urbain, économique et durable f/h.|mairie de stains": {
+    "keep": false,
+    "reason": "Développement urbain et économique local en collectivité (93), pas de dimension stratégie climat / décarbonation.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chef de projets amo environnement f/h|groupe adp": {
+    "keep": false,
+    "reason": "AMO environnementale de chantiers/bâtiments aéroportuaires (95), centré sur les démarches environnementales opérationnelles et non la stratégie climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "cdi - chef de projet ingénierie & bâtiment durable groupe (h/f)|klepierre": {
+    "keep": true,
+    "reason": "Poste interne groupe en immobilier commercial valorisant sa double compétence ingénieur thermo et stratégie, orienté bâtiment durable mais sans mention explicite de décarbonation/climat.",
+    "borderline": true,
+    "score": 55,
     "v": 10
   }
 }
