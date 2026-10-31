@@ -12,11 +12,11 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4483163066",
+    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4485640067",
     "title": "Consultant senior - Energie F/H",
     "company": "Yélé Consulting",
     "location": "Nanterre",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4483163066",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4485640067",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
@@ -48,17 +48,41 @@
     "is_new": false
   },
   {
-    "id": "5939476454",
-    "title": "Chef / Cheffe de projet Adaptation au changement climatique du bâtiment",
-    "company": "Pouget Consultants",
+    "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-adaptation-r%C3%A9silience-climatique-f-h-at-vinci-4484997120",
+    "title": "Ingénieur Adaptation & Résilience Climatique F/H",
+    "company": "VINCI",
+    "location": "Nanterre",
+    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-adaptation-r%C3%A9silience-climatique-f-h-at-vinci-4484997120",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 90,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-adaptation-r%C3%A9silience-climatique-f-h-at-sixense-group-4484942266",
+    "title": "Ingénieur Adaptation & Résilience Climatique F/H",
+    "company": "Sixense Group",
+    "location": "Nanterre",
+    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-adaptation-r%C3%A9silience-climatique-f-h-at-sixense-group-4484942266",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 90,
+    "is_new": false
+  },
+  {
+    "id": "5946256938",
+    "title": "Chef de projet adaptation aux changements climatiques",
+    "company": "RIVP",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5939476454?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "À propos de Pouget Consultants Pouget Consultants est une société de conseils et d’ingénierie en efficacité énergétique et environnementale des bâtime...",
+    "url": "https://www.adzuna.fr/details/5946256938?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Description du poste et Missions La RIVP est un bailleur social qui emploie plus de 1 200 collaborateurs. Notre groupe immobilier a vocation de constr...",
     "salary": "",
-    "date": "2026-10-23T18:19:36Z",
+    "date": "2026-10-30T03:21:54Z",
     "source": "Adzuna",
     "borderline": false,
-    "score": 80,
+    "score": 83,
     "is_new": false
   },
   {
@@ -74,18 +98,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/engagement-manager-pilote-de-projets-%C3%A9nergie-h-f-at-y%C3%A9l%C3%A9-consulting-4484745706",
-    "title": "Engagement Manager / Pilote de projets énergie (H/F)",
-    "company": "Yélé Consulting",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/engagement-manager-pilote-de-projets-%C3%A9nergie-h-f-at-y%C3%A9l%C3%A9-consulting-4484745706",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 72,
-    "is_new": false
-  },
-  {
     "id": "7903495",
     "title": "Responsable Énergie, Décarbonation & Performance Environnementale (H/F)",
     "company": "SOM Siège",
@@ -95,6 +107,32 @@
     "source": "France Travail",
     "borderline": false,
     "score": 88,
+    "is_new": false
+  },
+  {
+    "id": "5944685487",
+    "title": "SGAE - Adjoint(e) au chef de bureau \"Environnement, énergie, climat\" (EEC) H/F",
+    "company": "Choisir le Service Public",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5944685487?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Informations générales Organisme de rattachement Secrétariat général des affaires européennes (SGAE) Référence MEF_2026-33447 Date de début de diffusi...",
+    "salary": "",
+    "date": "2026-10-28T16:57:46Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 88,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/adjoint-e-au-responsable-du-service-des-politiques-d-autonomie-et-de-r%C3%A9novation-%C3%A9nerg%C3%A9tique-spare-h-f-at-anah-4474444600",
+    "title": "Adjoint(e) au responsable du service des politiques d'autonomie et de rénovation énergétique (SPARE) H/F",
+    "company": "Anah",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/adjoint-e-au-responsable-du-service-des-politiques-d-autonomie-et-de-r%C3%A9novation-%C3%A9nerg%C3%A9tique-spare-h-f-at-anah-4474444600",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
     "is_new": false
   },
   {
@@ -183,80 +221,42 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-adaptation-r%C3%A9silience-climatique-f-h-at-vinci-4484997120",
-    "title": "Ingénieur Adaptation & Résilience Climatique F/H",
-    "company": "VINCI",
-    "location": "Nanterre",
-    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-adaptation-r%C3%A9silience-climatique-f-h-at-vinci-4484997120",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 90,
-    "is_new": true
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-adaptation-r%C3%A9silience-climatique-f-h-at-sixense-group-4484942266",
-    "title": "Ingénieur Adaptation & Résilience Climatique F/H",
-    "company": "Sixense Group",
-    "location": "Nanterre",
-    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-adaptation-r%C3%A9silience-climatique-f-h-at-sixense-group-4484942266",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 90,
-    "is_new": true
-  },
-  {
-    "id": "5946256938",
-    "title": "Chef de projet adaptation aux changements climatiques",
-    "company": "RIVP",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5946256938?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Description du poste et Missions La RIVP est un bailleur social qui emploie plus de 1 200 collaborateurs. Notre groupe immobilier a vocation de constr...",
-    "salary": "",
-    "date": "2026-10-30T03:21:54Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "score": 83,
-    "is_new": true
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-plaidoyer-climat-at-humanitalents-4485307734",
-    "title": "Chargé.e de plaidoyer climat",
-    "company": "Humanitalents",
-    "location": "Ville de Paris",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-e-de-plaidoyer-climat-at-humanitalents-4485307734",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 80,
-    "is_new": true
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/adjoint-e-au-responsable-du-service-des-politiques-d-autonomie-et-de-r%C3%A9novation-%C3%A9nerg%C3%A9tique-spare-h-f-at-anah-4474444600",
-    "title": "Adjoint(e) au responsable du service des politiques d'autonomie et de rénovation énergétique (SPARE) H/F",
-    "company": "Anah",
+    "id": "https://fr.linkedin.com/jobs/view/platform-sustainability-expert-at-sweep-4484903700",
+    "title": "Platform & Sustainability Expert",
+    "company": "SWEEP",
     "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/adjoint-e-au-responsable-du-service-des-politiques-d-autonomie-et-de-r%C3%A9novation-%C3%A9nerg%C3%A9tique-spare-h-f-at-anah-4474444600",
+    "url": "https://fr.linkedin.com/jobs/view/platform-sustainability-expert-at-sweep-4484903700",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
-    "score": 75,
+    "score": 92,
     "is_new": true
   },
   {
-    "id": "5944685487",
-    "title": "SGAE - Adjoint(e) au chef de bureau \"Environnement, énergie, climat\" (EEC) H/F",
-    "company": "Choisir le Service Public",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5944685487?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Informations générales Organisme de rattachement Secrétariat général des affaires européennes (SGAE) Référence MEF_2026-33447 Date de début de diffusi...",
-    "salary": "",
-    "date": "2026-10-28T16:57:46Z",
+    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-consultant-%E2%80%93-energy-transition-utilities-at-capgemini-invent-4483053710",
+    "title": "Consultant / Senior Consultant – Energy Transition & Utilities",
+    "company": "Capgemini Invent",
+    "location": "Issy-les-Moulineaux",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-consultant-%E2%80%93-energy-transition-utilities-at-capgemini-invent-4483053710",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 85,
+    "is_new": true
+  },
+  {
+    "id": "5939963271",
+    "title": "Responsable Adaptation Climatique & Résilience H/F",
+    "company": "Ortec Group",
+    "location": "Aix-en-Provence, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5939963271?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "SOM accompagne les industriels dans leur transition bas carbone en combinant diagnostic, conseil, ingénierie et suivi opérationnel. Notre approche ter...",
+    "salary": "45 k€ – 55 k€",
+    "date": "2026-10-24T04:52:41Z",
     "source": "Adzuna",
     "borderline": false,
-    "score": 88,
-    "is_new": true
+    "score": 92,
+    "is_new": false
   },
   {
     "id": "5944473590",
@@ -268,10 +268,22 @@
     "salary": "37 k€",
     "date": "2026-10-28T12:42:24Z",
     "source": "Adzuna",
+    "borderline": false,
+    "score": 78,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-carbone-manager-f-h-at-vinci-energies-4485684548",
+    "title": "Ingénieur(e) Carbone Manager F/H",
+    "company": "VINCI Energies",
+    "location": "Osny",
+    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-carbone-manager-f-h-at-vinci-energies-4485684548",
+    "description": "",
+    "source": "LinkedIn",
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "5931025624",
@@ -285,7 +297,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5928798713",
@@ -358,26 +370,12 @@
     "is_new": false
   },
   {
-    "id": "5934763118",
-    "title": "Coordinateur Commercial - H/F - CDD",
+    "id": "5947544473",
+    "title": "Coordinateur Commercial - CDD H/F",
     "company": "Deepki",
-    "location": "11ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/details/5934763118?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Fondée en 2014, Deepki est la solution SaaS de référence en matière de durabilité dans le secteur immobilier. Elle accompagne les acteurs de l’immobil...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5945973926",
-    "title": "Latam Underwriter H/F",
-    "company": "AXA Climate",
-    "location": "Levallois-Perret, Nanterre",
-    "url": "https://www.adzuna.fr/details/5945973926?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Le poste de Latam Underwriter H/F Business Development & Growth Define and execute AXA Climate’s commercial growth strategy across LATAM markets. Iden...",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/land/ad/5947544473?se=GkqKXRjV8RGKCcw5gOl_8A&utm_medium=api&utm_source=ae8a5ffa&v=F62FC559A2921D06502D6BE59C0F6A1E7A710D64",
+    "description": "Nous recherchons un profil Coordinateur Commercial H/F pour soutenir notre équipe Key Account Management. Votre rôle est essentiel pour garantir le bo...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -467,7 +465,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5914013065",
@@ -518,6 +516,34 @@
     "location": "Puteaux, Nanterre",
     "url": "https://www.adzuna.fr/details/5910207081?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Description Le rôle Au sein du département Opérations Risk Management, vous œuvrerez au sein de la branche Construction Internationale sur les mission...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5908362512",
+    "title": "Contrôleur de gestion sociale - CDI H/F",
+    "company": "WTW",
+    "location": "Puteaux, Nanterre",
+    "url": "https://www.adzuna.fr/details/5908362512?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Responsibilities Les exigences Formation supérieure Bac5 en RH, Contrôle de gestion, Finance ou équivalent. Expérience de 3 minimum en contrôle de ges...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
+  },
+  {
+    "id": "5908354973",
+    "title": "SCOR SE Performance Analyst",
+    "company": "SCOR",
+    "location": "Ile-de-France, France",
+    "url": "https://www.adzuna.fr/details/5908354973?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Description Expected outcomes and success measures: Planning and reporting deliverables are complete, accurate, documented and submitted within agreed...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,

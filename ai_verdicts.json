@@ -1,102 +1,4 @@
 {
-  "conducteur de machines saisonnier h/f|bonduelle": {
-    "keep": false,
-    "reason": "Conducteur de machines saisonnier (poste terrain/technique)",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
-  "chef de secteur compiegne f/h|savencia produits laitiers france": {
-    "keep": false,
-    "reason": "Poste commercial pur (chef de secteur) sans lien climat/durabilité.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "chef de secteur dijon f/h|savencia produits laitiers france": {
-    "keep": false,
-    "reason": "Chef de secteur (commercial) sans lien climat",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
-  "chef de secteur dijon h/f|groupe savencia": {
-    "keep": false,
-    "reason": "Poste terrain commercial (chef de secteur) sans lien climat/stratégie",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "adjoint responsable credit management f/h|savencia normandie services": {
-    "keep": false,
-    "reason": "poste finance/comptabilité (crédit management) sans lien climat/stratégie",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "assistant(e) commercial f/h|savencia fromage & dairy foodservice": {
-    "keep": false,
-    "reason": "Poste commercial pur (assistant commercial) sans lien climat",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "assistant logistique f/h|invivo": {
-    "keep": false,
-    "reason": "Assistant logistique (opérations) sans lien climat",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
-  "contrôleur de gestion f/h|invivo": {
-    "keep": false,
-    "reason": "Poste finance (contrôleur de gestion), hors stratégie climat",
-    "borderline": false,
-    "score": 0,
-    "v": 8
-  },
-  "assistant(e) commercial adv f/h|invivo": {
-    "keep": false,
-    "reason": "Poste commercial (assistant commercial), hors stratégie climat",
-    "borderline": false,
-    "score": 0,
-    "v": 8
-  },
-  "responsable qualité innovations - f/h|sodiaal": {
-    "keep": false,
-    "reason": "Poste qualité/innovation sans lien climat/stratégie",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "stagiaire en performance industrielle laitiere f/h|sodiaal": {
-    "keep": false,
-    "reason": "stage sans lien climat/stratégie",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
-  "electromecanicien h/f|sodiaal": {
-    "keep": false,
-    "reason": "Électromécanicien, hors stratégie/consulting climat senior",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "infirmier d'entreprise f/h|sodiaal": {
-    "keep": false,
-    "reason": "Poste technique (infirmier d'entreprise), hors cible",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
-  "coordinateur hygiene site f/h|sodiaal": {
-    "keep": false,
-    "reason": "poste technique terrain (hygiène) sans lien climat/stratégie",
-    "borderline": false,
-    "score": 0,
-    "v": 4
-  },
   "mécanicien poids lourds (f/h)|terrena": {
     "keep": false,
     "reason": "Poste technique terrain (mécanicien) sans lien avec climat/stratégie",
@@ -20997,6 +20899,104 @@
     "reason": "Poste interne groupe en immobilier commercial valorisant sa double compétence ingénieur thermo et stratégie, orienté bâtiment durable mais sans mention explicite de décarbonation/climat.",
     "borderline": true,
     "score": 55,
+    "v": 10
+  },
+  "platform & sustainability expert|sweep": {
+    "keep": true,
+    "reason": "Éditeur SaaS climat ciblé (Sweep), rôle hybride d'expertise plateforme/durabilité en plein dans sa cible climate-tech.",
+    "borderline": false,
+    "score": 92,
+    "v": 10
+  },
+  "expert développement durable f/h|anap": {
+    "keep": true,
+    "reason": "Poste d'expert en agence publique nationale (ANAP) à Paris, mais profil développement durable généraliste sans focus décarbonation/climat affirmé.",
+    "borderline": true,
+    "score": 55,
+    "v": 10
+  },
+  "senior esg consultant – financial services|sia": {
+    "keep": true,
+    "reason": "Cabinet de conseil renommé (Sia) et niveau senior adéquat, mais orientation ESG services financiers plutôt que stratégie bas-carbone/climat pure.",
+    "borderline": true,
+    "score": 65,
+    "v": 10
+  },
+  "consultant / senior consultant – energy transition & utilities|capgemini invent": {
+    "keep": true,
+    "reason": "Cabinet de conseil de premier plan (Capgemini Invent), niveau senior en transition énergétique, parfait alignement ingénieur + stratégie.",
+    "borderline": false,
+    "score": 85,
+    "v": 10
+  },
+  "post-doc position modelling organic carbon under climate change|european geosciences union (egu)": {
+    "keep": false,
+    "reason": "Poste académique de post-doctorat exigeant un doctorat/PhD (hors cible).",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "stagiaire ingénieur - récupération de chaleur et systèmes énergétiques|d2m engineering": {
+    "keep": false,
+    "reason": "Offre de stage (rejet absolu).",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "responsable adaptation climatique & résilience h/f|ortec group": {
+    "keep": true,
+    "reason": "Plein cœur de cible (adaptation au changement climatique et résilience) en ingénierie/conseil à Aix-en-Provence.",
+    "borderline": false,
+    "score": 92,
+    "v": 10
+  },
+  "stagiaire rse bilan carbone - 6 mois|advenis": {
+    "keep": false,
+    "reason": "Offre de stage (rejet absolu).",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "stagiaire immobilier durable h/f|cbre group, inc.": {
+    "keep": false,
+    "reason": "Offre de stage (rejet absolu).",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "stagiaire immobilier durable – esg & certifications|cbre group, inc.": {
+    "keep": false,
+    "reason": "Offre de stage (rejet absolu).",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chargé de mission sensibilisation à la transition écologique juste h/f|secours catholique": {
+    "keep": false,
+    "reason": "Mission de sensibilisation associative à Paris, hors cible conseil ou stratégie climat senior.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "kam - solutions de gestion des déchets f/h|uptoo": {
+    "keep": false,
+    "reason": "Poste de commercial pur / Key Account Manager (rejet explicite).",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "médiateur-ice transition écologique / poste adulte relais (h/f)|b.a-ba": {
+    "keep": false,
+    "reason": "Poste de médiateur de quartier / Adulte Relais, non adapté au profil cadre/ingénieur.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "conseiller en transition énergétique et écologique en santé f/h|union gest ets cais ass mal paca corse": {
+    "keep": true,
+    "reason": "Conseil en transition énergétique et écologique en établissement de santé public/para-public, situé à Marseille.",
+    "borderline": false,
+    "score": 78,
     "v": 10
   }
 }
