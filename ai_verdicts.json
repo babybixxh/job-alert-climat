@@ -1,74 +1,4 @@
 {
-  "business analyst|smarttrade technologies": {
-    "keep": false,
-    "reason": "Business Analyst, hors climat/stratégie.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "data business analyst|capgemini": {
-    "keep": false,
-    "reason": "Data Business Analyst (Capgemini). Poste data générique, sans focus climat.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "consultant(e) fonctionnel(le) oracle - solutions & expertises - aix-en-provence|sopra steria": {
-    "keep": false,
-    "reason": "Consultant Oracle : tech pur, hors climat. Rejeté.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "architecte solutions ia|capgemini": {
-    "keep": false,
-    "reason": "Architecte solutions IA (tech pur) hors climat/durabilité",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "consultant intégrateur de solutions d'impression (h/f)|konica minolta business solutions france": {
-    "keep": false,
-    "reason": "Consultant intégrateur solutions impression hors climat/durabilité",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "project manager h/f|eng'in technologies": {
-    "keep": false,
-    "reason": "Poste hors climat/durabilité (gestion de projet technique)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "risk & opportunity manager (f/h)|amentum": {
-    "keep": false,
-    "reason": "Poste hors climat/durabilité (risk management bancaire)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "business analyst h/f|innova solutions": {
-    "keep": false,
-    "reason": "Poste hors climat/durabilité (business analyst)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "business analyst|inetum": {
-    "keep": false,
-    "reason": "Poste hors domaine climat/durabilité (business analyst)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "business analyst it h/f|klanik": {
-    "keep": false,
-    "reason": "business analyst IT (hors climat/stratégie)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
   "analyste liquidité h/f|crédit agricole": {
     "keep": false,
     "reason": "Poste hors climat/durabilité (analyse liquidité)",
@@ -20997,6 +20927,76 @@
     "reason": "Commercialisation immobilière locative en CDD court, sans aucun lien avec le climat.",
     "borderline": false,
     "score": 0,
+    "v": 10
+  },
+  "senior consultant - climate resilience and school safety|un atlas": {
+    "keep": true,
+    "reason": "Rôle senior de résilience climatique au sein d'une agence onusienne (UNESCO), pile dans sa cible institutionnelle et adaptation.",
+    "borderline": false,
+    "score": 88,
+    "v": 10
+  },
+  "climate consultant|carbometrix": {
+    "keep": true,
+    "reason": "Poste de Climate Consultant chez Carbometrix, éditeur ciblé de la climate-tech, parfaitement aligné avec son double profil conseil et data carbone.",
+    "borderline": false,
+    "score": 92,
+    "v": 10
+  },
+  "climate mitigation modelling consultant|united nations group": {
+    "keep": true,
+    "reason": "Consultant en modélisation de l'atténuation climatique à l'ONU, valorisant ses compétences quantitatives, d'ingénieur et de modélisation.",
+    "borderline": false,
+    "score": 90,
+    "v": 10
+  },
+  "consultant senior décarbonation du numérique (h/f)|davidson consulting": {
+    "keep": true,
+    "reason": "Consultant senior en décarbonation en cabinet de conseil, aligné avec son expérience de 3 ans en stratégie climat.",
+    "borderline": false,
+    "score": 82,
+    "v": 10
+  },
+  "consultant – energy transition advisory|sigma earth": {
+    "keep": true,
+    "reason": "Poste de consultant en conseil transition énergétique et bas-carbone, bon match conseil stratégique.",
+    "borderline": false,
+    "score": 80,
+    "v": 10
+  },
+  "consultant formateur rse & transition écologique|gereso": {
+    "keep": false,
+    "reason": "Mission de formateur externe pour un organisme de formation professionnelle continue, orienté RSE générique et non conseil stratégique climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "carbon & climate analyst|removall carbon": {
+    "keep": true,
+    "reason": "Rôle de Carbon & Climate Analyst chez un développeur de projets carbone, très pertinent pour son expertise comptabilité carbone et marchés.",
+    "borderline": false,
+    "score": 88,
+    "v": 10
+  },
+  "cdd – charge de projets developpement durable matieres premieres – pantin –parfums beaute- janvier 2027 – h/f/x|chanel": {
+    "keep": false,
+    "reason": "CDD axé développement durable / sourcing matières premières sans dimension décarbonation ou climat affirmée à Paris.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "evolution de la saison sèche en afrique centrale au cours de l’holocène et implication sur la structure forestière et les flux d’eau et de carbone (h/f)|icmn": {
+    "keep": false,
+    "reason": "Offre de recherche académique / thèse doctorale, hors du périmètre ciblé.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "manager risques climatiques - cdi (h/f)|nexialog consulting": {
+    "keep": true,
+    "reason": "Poste de Manager Risques Climatiques en cabinet de conseil, en plein dans son sweet spot risques climatiques et dans sa fourchette de séniorité.",
+    "borderline": false,
+    "score": 93,
     "v": 10
   }
 }
