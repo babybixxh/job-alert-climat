@@ -1,74 +1,4 @@
 {
-  "analyste liquidité h/f|crédit agricole": {
-    "keep": false,
-    "reason": "Poste hors climat/durabilité (analyse liquidité)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "senior analyst forecasting (f/m/x)|accor": {
-    "keep": false,
-    "reason": "Poste hors climat/durabilité (forecasting financier)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "analyste esg & impact f/h - cdi - nanterre|crédit coopératif": {
-    "keep": false,
-    "reason": "Analyste ESG & Impact - RSE générique (hors climat/stratégie pur)",
-    "borderline": false,
-    "score": 0,
-    "v": 8
-  },
-  "analyste mainframe f/h|alteis groupe": {
-    "keep": false,
-    "reason": "Analyste Mainframe - hors domaine climat/stratégie (IT)",
-    "borderline": false,
-    "score": 0,
-    "v": 8
-  },
-  "sugar senior analyst- f/h|tereos": {
-    "keep": false,
-    "reason": "Sugar Senior Analyst - hors domaine climat/stratégie (agroalimentaire, pas décarbonation)",
-    "borderline": false,
-    "score": 0,
-    "v": 8
-  },
-  "ingénieur energy management et outils|cve (changeons notre vision de l'energie)": {
-    "keep": true,
-    "reason": "Ingénieur energy management et outils - lien énergie/climat, mais pas explicitement stratégie climat senior (poste technique)",
-    "borderline": false,
-    "score": 75,
-    "v": 8
-  },
-  "data analyst|vishay intertechnology, inc.": {
-    "keep": false,
-    "reason": "Data Analyst - hors domaine climat/stratégie",
-    "borderline": false,
-    "score": 0,
-    "v": 8
-  },
-  "chargé études de prix f/h|eiffage énergie systèmes": {
-    "keep": false,
-    "reason": "Chargé études de prix : poste technique/financier sans lien climat.",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
-  "contrôle de gestion offres et projet - f/h|thales": {
-    "keep": false,
-    "reason": "Contrôle de gestion projets - hors domaine climat/stratégie",
-    "borderline": false,
-    "score": 0,
-    "v": 8
-  },
-  "responsable du succès client|osol": {
-    "keep": false,
-    "reason": "Responsable succès client (commercial pur), pas de lien climat",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
   "contrôleur de gestion(h/f)|tercio rh": {
     "keep": false,
     "reason": "Contrôleur de gestion - hors domaine climat/stratégie",
@@ -20997,6 +20927,76 @@
     "reason": "Poste de Manager Risques Climatiques en cabinet de conseil, en plein dans son sweet spot risques climatiques et dans sa fourchette de séniorité.",
     "borderline": false,
     "score": 93,
+    "v": 10
+  },
+  "energy and power system architect (f/m/d)|nxp semiconductors": {
+    "keep": false,
+    "reason": "Poste d'ingénierie électronique / semiconducteurs, sans rapport avec le conseil ou la stratégie climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "rédacteur/rédactrice gouvernance internationale de l'environnement|ministère de l'europe et des affaires étrangères": {
+    "keep": true,
+    "reason": "Poste de politiques publiques internationales de l'environnement au MEAE ; intéressant pour son volet stratégique et institutionnel, bien que plus diplomatique que purement climat/carbone.",
+    "borderline": true,
+    "score": 65,
+    "v": 10
+  },
+  "chef.fe de projet « eau et biodiversité » h/f|groupe sos": {
+    "keep": false,
+    "reason": "Poste en association/ESS axé sur l'eau et la biodiversité à Paris, hors de sa cible prioritaire (stratégie climat et décarbonation).",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "intitulé de poste chargé(e) de mission stratégie départementale biodiversité f/h|département du val d'oise": {
+    "keep": false,
+    "reason": "Poste en collectivité francilienne dédié à la biodiversité ; les collectivités sont réservées à la région PACA et le sujet n'est pas le climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "coordinateur ou coordinatrice contrats énergie|région île-de-france": {
+    "keep": false,
+    "reason": "Gestion administrative et contractuelle de contrats d'énergie en collectivité francilienne, éloignée du conseil et de la stratégie climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chargé de mission développement durable|ville de clichy-la-garenne": {
+    "keep": false,
+    "reason": "Poste de développement durable généraliste en collectivité francilienne, hors cible géographique pour ce type de structure.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chef de projet économie circulaire - cdi f/h|eiffage": {
+    "keep": false,
+    "reason": "Poste interne axé économie circulaire dans le BTP en Île-de-France, hors dominante stratégie climat / décarbonation.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chargé.e de mission rdi et prospective - pollution de l'air ambiant f/h|ademe": {
+    "keep": true,
+    "reason": "ADEME et prospective/RDI très pertinents pour son profil ingénieur/stratégie, bien que centré sur la qualité de l'air plutôt que directement sur le climat.",
+    "borderline": true,
+    "score": 70,
+    "v": 10
+  },
+  "chargé.e de mission trajectoires de décarbonation des zones industrielles f/h|ademe": {
+    "keep": true,
+    "reason": "Cible parfaite : ADEME, trajectoires de décarbonation industrielle, en plein dans son expertise conseil bas-carbone et son profil ingénieur.",
+    "borderline": false,
+    "score": 95,
+    "v": 10
+  },
+  "marketing specialist fixed contract - cdd h/f|quantis": {
+    "keep": false,
+    "reason": "Rôle marketing/communication, explicitement exclu par les règles même au sein d'une entreprise ciblée comme Quantis.",
+    "borderline": false,
+    "score": 0,
     "v": 10
   }
 }

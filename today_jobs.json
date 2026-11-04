@@ -36,27 +36,15 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-consultant-%E2%80%93-energy-transition-utilities-at-capgemini-invent-4483053710",
-    "title": "Consultant / Senior Consultant – Energy Transition & Utilities",
-    "company": "Capgemini Invent",
-    "location": "Issy-les-Moulineaux",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-consultant-%E2%80%93-energy-transition-utilities-at-capgemini-invent-4483053710",
+    "id": "https://fr.linkedin.com/jobs/view/responsable-adaptation-climatique-r%C3%A9silience-h-f-at-ortec-group-4478778581",
+    "title": "Responsable Adaptation Climatique & Résilience H/F",
+    "company": "Ortec Group",
+    "location": "Aix-en-Provence",
+    "url": "https://fr.linkedin.com/jobs/view/responsable-adaptation-climatique-r%C3%A9silience-h-f-at-ortec-group-4478778581",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
-    "score": 85,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/responsable-batiment-durable-at-soler-ide-4484074461",
-    "title": "Responsable Batiment Durable",
-    "company": "Soler IDE",
-    "location": "Nice",
-    "url": "https://fr.linkedin.com/jobs/view/responsable-batiment-durable-at-soler-ide-4484074461",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": true,
-    "score": 55,
+    "score": 92,
     "is_new": false
   },
   {
@@ -93,6 +81,18 @@
     "source": "France Travail",
     "borderline": false,
     "score": 75,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-carbone-manager-f-h-at-vinci-energies-4485684548",
+    "title": "Ingénieur(e) Carbone Manager F/H",
+    "company": "VINCI Energies",
+    "location": "Osny",
+    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-carbone-manager-f-h-at-vinci-energies-4485684548",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 80,
     "is_new": false
   },
   {
@@ -141,20 +141,6 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 88,
-    "is_new": false
-  },
-  {
-    "id": "5946256938",
-    "title": "Chef de projet adaptation aux changements climatiques",
-    "company": "RIVP",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5946256938?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Description du poste et Missions La RIVP est un bailleur social qui emploie plus de 1 200 collaborateurs. Notre groupe immobilier a vocation de constr...",
-    "salary": "",
-    "date": "2026-10-30T03:21:54Z",
-    "source": "Adzuna",
-    "borderline": false,
-    "score": 83,
     "is_new": false
   },
   {
@@ -220,6 +206,20 @@
     "is_new": false
   },
   {
+    "id": "5948515426",
+    "title": "Chef de Projet Développement Durable - Rso H/F",
+    "company": "Ugecam Provence-Alpes-Cote D'azur et Corse",
+    "location": "Marseille, Bouches-du-Rhône",
+    "url": "https://www.adzuna.fr/details/5948515426?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "UGECAM PROVENCE-ALPES-COTE D'AZUR ET CORSE L'UGECAM PACA et Corse recrute un(e) Chef(fe) de projet Développement Durable / RSO - UGECAM PACAC - MARSEI...",
+    "salary": "37 k€",
+    "date": "2026-11-01T03:46:50Z",
+    "source": "Adzuna",
+    "borderline": true,
+    "score": 52,
+    "is_new": false
+  },
+  {
     "id": "7903495",
     "title": "Responsable Énergie, Décarbonation & Performance Environnementale (H/F)",
     "company": "SOM Siège",
@@ -232,15 +232,29 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-carbone-manager-f-h-at-vinci-energies-4485684548",
-    "title": "Ingénieur(e) Carbone Manager F/H",
-    "company": "VINCI Energies",
-    "location": "Osny",
-    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-carbone-manager-f-h-at-vinci-energies-4485684548",
-    "description": "",
-    "source": "LinkedIn",
+    "id": "5944685487",
+    "title": "SGAE - Adjoint(e) au chef de bureau \"Environnement, énergie, climat\" (EEC) H/F",
+    "company": "Choisir le Service Public",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5944685487?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Informations générales Organisme de rattachement Secrétariat général des affaires européennes (SGAE) Référence MEF_2026-33447 Date de début de diffusi...",
+    "salary": "",
+    "date": "2026-10-28T16:57:46Z",
+    "source": "Adzuna",
     "borderline": false,
-    "score": 80,
+    "score": 88,
+    "is_new": false
+  },
+  {
+    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-thematique-economie-circulaire-f-h_4772.aspx",
+    "title": "VSC - Chargé.e de mission thématique Economie Circulaire F/H",
+    "company": "ADEME",
+    "location": "France",
+    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-vsc-charge-e-de-mission-thematique-economie-circulaire-f-h_4772.aspx",
+    "description": "",
+    "source": "ADEME",
+    "borderline": false,
+    "score": 85,
     "is_new": false
   },
   {
@@ -292,44 +306,6 @@
     "is_new": false
   },
   {
-    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-chef-fe-de-projet-financement-de-la-transition-ecologique-des-batiments-f-h_4860.aspx",
-    "title": "Chef.fe de projet financement de la transition écologique des bâtiments F/H",
-    "company": "ADEME",
-    "location": "France",
-    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-chef-fe-de-projet-financement-de-la-transition-ecologique-des-batiments-f-h_4860.aspx",
-    "description": "",
-    "source": "ADEME",
-    "borderline": true,
-    "score": 65,
-    "is_new": false
-  },
-  {
-    "id": "5935973070",
-    "title": "Consultant Carbone Senior - German speaker - Nooco - CDI - (F/H/X)",
-    "company": "Deepki",
-    "location": "11ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/details/5935973070?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Date de démarrage : 4 Janvier 2027 Nooco est une société française d’édition de logiciel SaaS, spécialiste de la mesure de l‘empreinte carbone des pro...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "borderline": true,
-    "score": 65,
-    "is_new": false
-  },
-  {
-    "id": "5945973928",
-    "title": "Latam Underwriter H/F",
-    "company": "AXA Climate",
-    "location": "1er Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/details/5945973928?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Le poste de Latam Underwriter H/F Business Development & Growth Define and execute AXA Climate’s commercial growth strategy across LATAM markets. Iden...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "borderline": true,
-    "score": 60,
-    "is_new": false
-  },
-  {
     "id": "https://unjobs.org/vacancies/1772727833707",
     "title": "Engagement and Policy Outreach Technical Advisor, Madre de Dios, Peru",
     "company": "UNjobs (ONU/institutions)",
@@ -354,26 +330,49 @@
     "is_new": false
   },
   {
-    "id": "5937272190",
-    "title": "Senior IT Support Engineer H/F",
-    "company": "Sweep",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5937272190?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "This is a hands-on, operational role. You'll own day-to-day IT support and device logistics so everyone at Sweep can work seamlessly. Your job is to k...",
-    "source": "Adzuna",
-    "company_watch": true,
+    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-rdi-et-prospective-pollution-de-l-air-ambiant-f-h_4891.aspx",
+    "title": "Chargé.e de mission RDI et prospective - Pollution de l'air ambiant F/H",
+    "company": "ADEME",
+    "location": "France",
+    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-rdi-et-prospective-pollution-de-l-air-ambiant-f-h_4891.aspx",
+    "description": "",
+    "source": "ADEME",
+    "borderline": true,
+    "score": 70,
+    "is_new": true
+  },
+  {
+    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-trajectoires-de-decarbonation-des-zones-industrielles-f-h_4890.aspx",
+    "title": "Chargé.e de mission Trajectoires de Décarbonation des Zones Industrielles F/H",
+    "company": "ADEME",
+    "location": "France",
+    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-trajectoires-de-decarbonation-des-zones-industrielles-f-h_4890.aspx",
+    "description": "",
+    "source": "ADEME",
+    "borderline": false,
+    "score": 95,
+    "is_new": true
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/responsable-%C3%A9nergie-d%C3%A9carbonation-performance-environnementale-h-f-at-ortec-group-4478787171",
+    "title": "Responsable Énergie, Décarbonation & Performance Environnementale (H/F)",
+    "company": "Ortec Group",
+    "location": "Aix-en-Provence",
+    "url": "https://fr.linkedin.com/jobs/view/responsable-%C3%A9nergie-d%C3%A9carbonation-performance-environnementale-h-f-at-ortec-group-4478787171",
+    "description": "",
+    "source": "LinkedIn",
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
     "is_new": false
   },
   {
-    "id": "5914223076",
-    "title": "Game Producer",
-    "company": "Don Nelson Recruitment Limited",
-    "location": "France",
-    "url": "https://www.adzuna.fr/details/5914223076?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "For which tasks (responsibilities)? 職責 1.擁有我們海外休閒手遊的遊戲玩法與設計方向； 管理完整的產品生命週期，包括路線圖、里程碑、範圍、預算和 送貨。 2. 研究全球市場趨勢、熱門遊戲和競爭對手，為產品開發提供資訊。 戰略和方向調整。 3.協調設計、美術與工程...",
+    "id": "5928404564",
+    "title": "Senior Product Manager H/F",
+    "company": "Ecovadis",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/land/ad/5928404564?se=6HzWWU7Y8RG1BbAFnbpeog&utm_medium=api&utm_source=ae8a5ffa&v=710D9BC95DDDA470FCE1DFD0100A710A078A8E87",
+    "description": "As a Senior Product Manager for one of our Strategic Use Cases, you will own that use case end-to-end - from the customer problem and the data it depe...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -382,12 +381,12 @@
     "is_new": true
   },
   {
-    "id": "5911661441",
-    "title": "Insurance Brokerage Regional Sales Leader, Marsh Risk Europe",
+    "id": "5935612183",
+    "title": "Conseiller Sinistre Flotte Auto H/F CDD 18 mois",
     "company": "Marsh McLennan",
     "location": "France",
-    "url": "https://www.adzuna.fr/details/5911661441?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Company: Marsh Description: Role purpose The Marsh Risk Regional Sales Leader, Europe is responsible for regional new business growth, pipeline outcom...",
+    "url": "https://www.adzuna.fr/details/5935612183?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Company: Marsh Description: Nous recherchons un nouveau talent pour rejoindre notre équipe. Ce poste est basé à la Défense. Il s'agit d'un poste hybri...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -407,21 +406,21 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
-    "id": "5950407079",
-    "title": "Data analyst patrimoine F/H (CDD)",
-    "company": "ICF Habitat",
-    "location": "1er Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/land/ad/5950407079?se=eCPa1oPX8RGlPcJxtqMb2Q&utm_medium=api&utm_source=ae8a5ffa&v=1A072C500399381C29A174BE75547DCB606A6265",
-    "description": "ICF Habitat, filiale logement du groupe SNCF, est l'un des principaux opérateurs de logement en France avec près de 105 000 logements répartis sur l'e...",
+    "id": "5948229634",
+    "title": "Chargé de Compte Indemnisation Dommages aux Biens - CDI H/F",
+    "company": "WTW",
+    "location": "Puteaux, Nanterre",
+    "url": "https://www.adzuna.fr/details/5948229634?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Description Le Rôle Le pôle Indemnisation du département recherche un Chargé(e) de Comptes Indemnisation H/F avec une appétence en DOMMAGES / AUTO. Ce...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "5933468417",
@@ -466,12 +465,26 @@
     "is_new": false
   },
   {
-    "id": "5926226674",
-    "title": "Assistant / Assistante de vie H/F",
-    "company": "AFD UNA 73",
-    "location": "Aix-les-Bains-Sud, Chambéry",
-    "url": "https://www.adzuna.fr/details/5926226674?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Le poste de Assistant / Assistante de vie H/F Envie de donner du sens à votre métier en rejoignant une association à but non lucratif ? Venez intégrer...",
+    "id": "5949483614",
+    "title": "E T Consultant",
+    "company": "World Bank Group",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5949483614?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "E T Consultant Job : req39101 Organization: IFC Sector: Grade: EC3 Term Duration: 1 year 0 months Recruitment Type: Local Recruitment Location: Madrid...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5923826101",
+    "title": "Charge·e d'Affaires Risques & Seconde Opinion H/F",
+    "company": "Agence Française de Développement AFD",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/land/ad/5923826101?se=XsPKZ07Y8RGwON_IgccjBg&utm_medium=api&utm_source=ae8a5ffa&v=E81D1B245FCDF3023A7FA4B5B99FE124970787D1",
+    "description": "CHARGE.E D'AFFAIRES RISQUES & SECONDE OPINION H/F Quel sera votre rôle ? Au coeur de l'activité de PROPARCO, vous analyserez les opportunités de finan...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -505,7 +518,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5948451438",
@@ -519,7 +532,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5942888793",
@@ -564,54 +577,12 @@
     "is_new": false
   },
   {
-    "id": "5951252881",
-    "title": "Mécanicien Sertisseur - Secteur Maintenance Sertisseuses H/F",
+    "id": "5952485053",
+    "title": "Electromécanicien Fluides H/F",
     "company": "Bonduelle",
     "location": "France",
-    "url": "https://www.adzuna.fr/details/5951252881?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos futures missions seront : Le mécanicien est chargé d'assurer l'entretien, la maintenance et le dépannage des équipements du périmètre emboitage, j...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5921580132",
-    "title": "OPERATEUR PRODUCTION POLYVALENT H/F",
-    "company": "BONDUELLE EUROPE LONG LIFE",
-    "location": "Croisilles, Arras",
-    "url": "https://www.adzuna.fr/details/5921580132?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Et si vous démarriez une nouvelle expérience avec Alliance Emploi ? Avec plus de 25 ans d'expérience, 1700 salariés et un réseau de 400 entreprises da...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5940657953",
-    "title": "Treasury Analyst & Project leader (H/F)",
-    "company": "Roquette",
-    "location": "La-Madeleine, Lille",
-    "url": "https://www.adzuna.fr/details/5940657953?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Roquette is a family-owned global leader in plant-based ingredients and a leading provider of pharmaceutical excipients. Want to help us make a differ...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": true
-  },
-  {
-    "id": "5939369812",
-    "title": "Coordinateur Qualité Food Safety F/H",
-    "company": "SODIAAL",
-    "location": "Bas-en-Basset, Yssingeaux",
-    "url": "https://www.adzuna.fr/details/5939369812?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Missions : ● Piloter et animer la démarche Food Safety du site ● Structurer les dispositifs clés (HACCP, Food Defense, etc.) ● Définir et analyser les...",
+    "url": "https://www.adzuna.fr/details/5952485053?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Sous la responsabilité du chef d'équipe technique Maintenance Fluide, l'électromécanicien : * Assure le bon fonctionnement et la maintenance des matér...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
