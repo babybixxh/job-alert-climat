@@ -36,11 +36,11 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4485640067",
+    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4488444518",
     "title": "Consultant senior - Energie F/H",
     "company": "Yélé Consulting",
     "location": "Nanterre",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4485640067",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4488444518",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
@@ -72,11 +72,11 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-carbone-manager-f-h-at-vinci-energies-4485684548",
-    "title": "Ingénieur(e) Carbone Manager F/H",
-    "company": "VINCI Energies",
-    "location": "Osny",
-    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-e-carbone-manager-f-h-at-vinci-energies-4485684548",
+    "id": "https://fr.linkedin.com/jobs/view/senior-analyst-energy-paris-at-compass-lexecon-4461790660",
+    "title": "Senior Analyst (Energy) | Paris",
+    "company": "Compass Lexecon",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/senior-analyst-energy-paris-at-compass-lexecon-4461790660",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
@@ -144,42 +144,6 @@
     "is_new": false
   },
   {
-    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-trajectoires-de-decarbonation-des-zones-industrielles-f-h_4890.aspx",
-    "title": "Chargé.e de mission Trajectoires de Décarbonation des Zones Industrielles F/H",
-    "company": "ADEME",
-    "location": "France",
-    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-trajectoires-de-decarbonation-des-zones-industrielles-f-h_4890.aspx",
-    "description": "",
-    "source": "ADEME",
-    "borderline": false,
-    "score": 95,
-    "is_new": false
-  },
-  {
-    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-economie-circulaire-f-h_4889.aspx",
-    "title": "Chargé.e de mission Economie Circulaire F/H",
-    "company": "ADEME",
-    "location": "France",
-    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-economie-circulaire-f-h_4889.aspx",
-    "description": "",
-    "source": "ADEME",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-pilotage-et-animation-des-reseaux-professionnels-de-l-economie-circulaire-f-h_4887.aspx",
-    "title": "Chargé.e de mission pilotage et animation des réseaux professionnels de l'économie circulaire F/H",
-    "company": "ADEME",
-    "location": "France",
-    "url": "https://recrutement.ademe.fr/offre-de-emploi/emploi-charge-e-de-mission-pilotage-et-animation-des-reseaux-professionnels-de-l-economie-circulaire-f-h_4887.aspx",
-    "description": "",
-    "source": "ADEME",
-    "borderline": false,
-    "score": 72,
-    "is_new": false
-  },
-  {
     "id": "5935973070",
     "title": "Consultant Carbone Senior - German speaker - Nooco - CDI - (F/H/X)",
     "company": "Deepki",
@@ -230,20 +194,6 @@
     "is_new": false
   },
   {
-    "id": "5955266412",
-    "title": "Strategic Projects Senior - Industrial And Specialty Risks H/F",
-    "company": "Descartes Underwriting",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/land/ad/5955266412?se=rJZVI-DZ8RGTdZAl5GIvew&utm_medium=api&utm_source=ae8a5ffa&v=9EAD7A5B5168C04D04FAF374F1BFF0309CA2410C",
-    "description": "ABOUT DESCARTES UNDERWRITING Join Descartes and contribute to our mission: Building Resilience in a World at Risk. Descartes is a corporate insurance ...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": true
-  },
-  {
     "id": "5935612183",
     "title": "Conseiller Sinistre Flotte Auto H/F CDD 18 mois",
     "company": "Marsh McLennan",
@@ -258,6 +208,34 @@
     "is_new": false
   },
   {
+    "id": "5956298241",
+    "title": "Internal Consulting Program Manager",
+    "company": "Aon plc",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5956298241?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Internal Consulting Program Manager Êtes‑vous prêt(e) à piloter une transformation à l’échelle de toute l’entreprise ? Aimez-vous travailler avec les ...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
+  },
+  {
+    "id": "5955880199",
+    "title": "Responsable Grands Comptes Corporate France – CDI H/F",
+    "company": "WTW",
+    "location": "4ème-Arrondissement, Lyon",
+    "url": "https://www.adzuna.fr/details/5955880199?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Description Le rôle WTW NSA, spécialiste du courtage d'assurances de panne mécanique pour les professionnels de l'automobile et les particuliers, accé...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
+  },
+  {
     "id": "5954494932",
     "title": "Chargé de Comptes Indemnisation Dommages aux Biens - CDD H/F",
     "company": "WTW",
@@ -269,7 +247,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5940652514",
@@ -297,28 +275,14 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
-  },
-  {
-    "id": "5928411391",
-    "title": "Chef de Projets Appels d'Offre IARD - CDI H/F",
-    "company": "WTW",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5928411391?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Description Le rôle Vous connaissez l'assurance IARD et êtes à l'aise pour coordonner des experts, tenir des délais exigeants et transformer des conte...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5945433897",
     "title": "Data analyst patrimoine F/H (CDD)",
-    "company": "ICF Habitat",
+    "company": "Icf Habitat",
     "location": "1er Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/land/ad/5945433897?se=hG8RKuDZ8RGlAutqKi2xdA&utm_medium=api&utm_source=ae8a5ffa&v=05DDB712827DF997ED63A1FAE6D5D5E96789295D",
+    "url": "https://www.adzuna.fr/land/ad/5945433897?se=DuqNQ5_a8RGzCKIGhSyn9w&utm_medium=api&utm_source=ae8a5ffa&v=05DDB712827DF997ED63A1FAE6D5D5E96789295D",
     "description": "ICF Habitat, filiale logement du groupe SNCF, est l'un des principaux opérateurs de logement en France avec près de 105 000 logements répartis sur l'e...",
     "source": "Adzuna",
     "company_watch": true,
@@ -356,32 +320,18 @@
     "is_new": false
   },
   {
-    "id": "5955348295",
-    "title": "Leader Électricité - Management d'Équipe & Projets BIM",
-    "company": "WSP en France",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5955348295?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "WSP en France est à la recherche d’un manager d’équipe électricité au sein de la branche Bâtiment. Vous piloterez une équipe d’ingénieurs et projeteur...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": true
-  },
-  {
-    "id": "5954483272",
+    "id": "5956281653",
     "title": "(Senior) Investment Officer, Infrastructure Europe",
     "company": "World Bank Group",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5954483272?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "(Senior) Investment Officer, Infrastructure Europe Job : req39273 Organization: IFC Sector: Investment Grade: GG Term Duration: Open-Ended Staff (OPEN...",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5956281653?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "World Bank Group World Bank Group has a vacancy for the position of (Senior) Investment Officer, Infrastructure Europe Location: Washington, DC. Secte...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5940665110",
@@ -410,5 +360,33 @@
     "borderline": true,
     "ai_unverified": true,
     "is_new": false
+  },
+  {
+    "id": "5950030598",
+    "title": "Assistants",
+    "company": "OECD - Organisation for Economic Co-operation and Development",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5950030598?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "The Organisation for Economic Co-operation and Development ( OECD ) is an international organisation comprised of 38 member countries, that works to b...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5956298269",
+    "title": "Internal Auditor",
+    "company": "OECD Parliamentary Group",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5956298269?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "The Organisation for Economic Co-operation and Development ( OECD ) is an international organisation comprised of 38 member countries, that works to b...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
   }
 ]
