@@ -1,67 +1,4 @@
 {
-  "contrôleur de gestion(h/f)|tercio rh": {
-    "keep": false,
-    "reason": "Contrôleur de gestion - hors domaine climat/stratégie",
-    "borderline": false,
-    "score": 0,
-    "v": 8
-  },
-  "ingénieur de recherche – sciences sociales des risques climatiques et des territoires|ecole normale superieure": {
-    "keep": true,
-    "reason": "Poste de recherche en sciences sociales des risques climatiques et des territoires, correspond au profil climat/risque avec niveau senior",
-    "borderline": false,
-    "score": 85,
-    "v": 9
-  },
-  "ingénieur de recherche – sciences sociales des risques climatiques et des territoires|n/a": {
-    "keep": true,
-    "reason": "Poste de recherche en sciences sociales des risques climatiques et des territoires, correspond au profil climat/risque avec niveau senior",
-    "borderline": false,
-    "score": 85,
-    "v": 9
-  },
-  "consultant stress tests|mpg partners": {
-    "keep": false,
-    "reason": "Consultant Stress Tests sans lien climat/durabilité",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
-  "chargé-e de mission en environnement et partenariats scientifiques|inrae": {
-    "keep": false,
-    "reason": "Chargé-e de mission en environnement et partenariats scientifiques chez Inrae : poste administratif/gouvernance interne sans lien clair avec stratégie climat ou conseil.",
-    "borderline": false,
-    "score": 0,
-    "v": 8
-  },
-  "responsable ingénierie de la formation|ccr - caisse centrale de réassurance": {
-    "keep": false,
-    "reason": "Responsable ingénierie de la formation chez CCR : poste RH/formation, hors climat/stratégie.",
-    "borderline": false,
-    "score": 0,
-    "v": 8
-  },
-  "chef de projet data management|ccr - caisse centrale de réassurance": {
-    "keep": false,
-    "reason": "Chef de projet Data Management chez CCR : poste technique data générique, hors climat/stratégie.",
-    "borderline": false,
-    "score": 0,
-    "v": 8
-  },
-  "ingénieur de recherche – sciences sociales des risques climatiques et des territoires (f/h)|université psl": {
-    "keep": true,
-    "reason": "Poste de recherche en sciences sociales des risques climatiques et des territoires, correspond au profil climat/risque avec niveau senior",
-    "borderline": false,
-    "score": 85,
-    "v": 9
-  },
-  "analyste risques esg h/f|action logement": {
-    "keep": false,
-    "reason": "analyste risques ESG (RSE générique)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
   "consultant manager esg risk - financial services f/h|pwc france": {
     "keep": false,
     "reason": "Consultant Manager ESG Risk - Financial Services chez PwC : ESG générique, hors climat/stratégie.",
@@ -12502,11 +12439,11 @@
     "v": 9
   },
   "senior consultant - sustainability - paris|infosys": {
-    "keep": false,
-    "reason": "Senior Consultant Sustainability (RSE générique, pas climat/carbone stratégique)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
+    "keep": true,
+    "reason": "Poste senior en cabinet, mais intitulé 'Sustainability' générique sans focus climat explicite.",
+    "borderline": true,
+    "score": 55,
+    "v": 10
   },
   "consultant(e) si – expert(e) en conduite du changement - h/f|talan - france": {
     "keep": false,
@@ -20997,6 +20934,69 @@
     "reason": "Rôle marketing/communication, explicitement exclu par les règles même au sein d'une entreprise ciblée comme Quantis.",
     "borderline": false,
     "score": 0,
+    "v": 10
+  },
+  "consultant senior – risque de crédit & climatique | cdi (h/f)|nexialog consulting": {
+    "keep": true,
+    "reason": "Poste de conseil senior intégrant le risque climatique, mais forte composante risque de crédit/bancaire.",
+    "borderline": true,
+    "score": 65,
+    "v": 10
+  },
+  "climate strategy expert / project manager|station f": {
+    "keep": true,
+    "reason": "Expertise en stratégie climat et gestion de projet, pile dans ses compétences.",
+    "borderline": false,
+    "score": 88,
+    "v": 10
+  },
+  "climate strategy expert / project manager|greenly": {
+    "keep": true,
+    "reason": "Entreprise climate-tech ciblée (Greenly) et rôle parfait alliant stratégie climat et gestion de projet.",
+    "borderline": false,
+    "score": 95,
+    "v": 10
+  },
+  "ingénieur efficacité energétique senior h/f|otc flow france": {
+    "keep": false,
+    "reason": "Poste centré sur l'efficacité énergétique/CEE chez un courtier, éloigné de la stratégie bas-carbone.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "ingénieur performance énergie-carbone & commissionnement - (h/f)|briks - recrutement immobilier et construction": {
+    "keep": false,
+    "reason": "Poste orienté chantier et commissionnement technique du bâtiment, exclu par les critères.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "managing consultant - product sustainability|erm": {
+    "keep": true,
+    "reason": "Cabinet de référence (ERM), niveau Managing Consultant (Manager), centré sur la durabilité produit et l'ACV.",
+    "borderline": false,
+    "score": 85,
+    "v": 10
+  },
+  "consultant.e senior - energie|colombus consulting": {
+    "keep": true,
+    "reason": "Cabinet de conseil reconnu, poste senior sur le secteur de l'énergie et la transition, adapté à son double profil.",
+    "borderline": false,
+    "score": 78,
+    "v": 10
+  },
+  "consultant – energy, utilities & low carbon solutions|sia": {
+    "keep": true,
+    "reason": "Cabinet de conseil de premier plan avec une dominante explicite 'Low Carbon Solutions' et énergie.",
+    "borderline": false,
+    "score": 88,
+    "v": 10
+  },
+  "responsable énergie, décarbonation & performance environnementale (h/f)|ortec group": {
+    "keep": true,
+    "reason": "Poste interne de responsable décarbonation en entreprise, idéalement situé en PACA (Aix-en-Provence).",
+    "borderline": false,
+    "score": 95,
     "v": 10
   }
 }

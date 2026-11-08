@@ -1,17 +1,5 @@
 [
   {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-d%C3%A9carbonation-du-num%C3%A9rique-h-f-at-davidson-consulting-4183122301",
-    "title": "Consultant Senior Décarbonation du Numérique (H/F)",
-    "company": "Davidson consulting",
-    "location": "Île-de-France, France",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-d%C3%A9carbonation-du-num%C3%A9rique-h-f-at-davidson-consulting-4183122301",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 82,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/carbon-climate-analyst-at-removall-carbon-4485743831",
     "title": "Carbon & Climate Analyst",
     "company": "Removall Carbon",
@@ -33,18 +21,6 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 92,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4488444518",
-    "title": "Consultant senior - Energie F/H",
-    "company": "Yélé Consulting",
-    "location": "Nanterre",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4488444518",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
     "is_new": false
   },
   {
@@ -81,18 +57,6 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 80,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-bas-carbone-cdi-f-h-at-eiffage-4466679881",
-    "title": "Chargé de mission bas carbone - CDI F/H",
-    "company": "Eiffage",
-    "location": "Vélizy-Villacoublay",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-bas-carbone-cdi-f-h-at-eiffage-4466679881",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 88,
     "is_new": false
   },
   {
@@ -157,6 +121,19 @@
     "is_new": false
   },
   {
+    "id": "5945973928",
+    "title": "Latam Underwriter H/F",
+    "company": "AXA Climate",
+    "location": "1er Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/details/5945973928?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Le poste de Latam Underwriter H/F Business Development & Growth Define and execute AXA Climate’s commercial growth strategy across LATAM markets. Iden...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": true,
+    "score": 60,
+    "is_new": false
+  },
+  {
     "id": "https://unjobs.org/vacancies/1772727833707",
     "title": "Engagement and Policy Outreach Technical Advisor, Madre de Dios, Peru",
     "company": "UNjobs (ONU/institutions)",
@@ -181,6 +158,66 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/climate-strategy-expert-project-manager-at-station-f-4487624008",
+    "title": "CLIMATE STRATEGY EXPERT / PROJECT MANAGER",
+    "company": "STATION F",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/climate-strategy-expert-project-manager-at-station-f-4487624008",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 88,
+    "is_new": true
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/climate-strategy-expert-project-manager-at-greenly-4487359135",
+    "title": "Climate Strategy Expert / Project Manager",
+    "company": "Greenly",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/climate-strategy-expert-project-manager-at-greenly-4487359135",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 95,
+    "is_new": true
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/managing-consultant-product-sustainability-at-erm-4486242918",
+    "title": "Managing Consultant - Product Sustainability",
+    "company": "ERM",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/managing-consultant-product-sustainability-at-erm-4486242918",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 85,
+    "is_new": true
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-e-senior-energie-at-colombus-consulting-4366860952",
+    "title": "Consultant.e Senior - Energie",
+    "company": "Colombus Consulting",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-e-senior-energie-at-colombus-consulting-4366860952",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 78,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-%E2%80%93-energy-utilities-low-carbon-solutions-at-sia-4486413653",
+    "title": "Consultant – Energy, Utilities & Low Carbon Solutions",
+    "company": "Sia",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-%E2%80%93-energy-utilities-low-carbon-solutions-at-sia-4486413653",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 88,
+    "is_new": false
+  },
+  {
     "id": "https://fr.linkedin.com/jobs/view/responsable-%C3%A9nergie-d%C3%A9carbonation-performance-environnementale-h-f-at-ortec-group-4478787171",
     "title": "Responsable Énergie, Décarbonation & Performance Environnementale (H/F)",
     "company": "Ortec Group",
@@ -188,9 +225,8 @@
     "url": "https://fr.linkedin.com/jobs/view/responsable-%C3%A9nergie-d%C3%A9carbonation-performance-environnementale-h-f-at-ortec-group-4478787171",
     "description": "",
     "source": "LinkedIn",
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
+    "borderline": false,
+    "score": 95,
     "is_new": false
   },
   {
@@ -219,7 +255,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5955880199",
@@ -233,7 +269,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5954494932",
@@ -278,12 +314,12 @@
     "is_new": false
   },
   {
-    "id": "5945433897",
-    "title": "Data analyst patrimoine F/H (CDD)",
-    "company": "Icf Habitat",
-    "location": "1er Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/land/ad/5945433897?se=DuqNQ5_a8RGzCKIGhSyn9w&utm_medium=api&utm_source=ae8a5ffa&v=05DDB712827DF997ED63A1FAE6D5D5E96789295D",
-    "description": "ICF Habitat, filiale logement du groupe SNCF, est l'un des principaux opérateurs de logement en France avec près de 105 000 logements répartis sur l'e...",
+    "id": "5954514931",
+    "title": "Gestionnaire d'immeubles - F/H",
+    "company": "ICF Habitat",
+    "location": "Drancy, Bobigny",
+    "url": "https://www.adzuna.fr/details/5954514931?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Gestionnaire d'immeubles - F/H ICF Habitat, filiale logement du groupe SNCF, est l’un des principaux opérateurs de logement en France avec près de 105...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -306,26 +342,12 @@
     "is_new": false
   },
   {
-    "id": "5954514931",
-    "title": "Gestionnaire d'immeubles - F/H",
-    "company": "ICF Habitat",
-    "location": "Drancy, Bobigny",
-    "url": "https://www.adzuna.fr/details/5954514931?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Gestionnaire d'immeubles - F/H ICF Habitat, filiale logement du groupe SNCF, est l’un des principaux opérateurs de logement en France avec près de 105...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5956281653",
+    "id": "5954483272",
     "title": "(Senior) Investment Officer, Infrastructure Europe",
     "company": "World Bank Group",
-    "location": "France",
-    "url": "https://www.adzuna.fr/details/5956281653?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "World Bank Group World Bank Group has a vacancy for the position of (Senior) Investment Officer, Infrastructure Europe Location: Washington, DC. Secte...",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5954483272?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "(Senior) Investment Officer, Infrastructure Europe Job : req39273 Organization: IFC Sector: Investment Grade: GG Term Duration: Open-Ended Staff (OPEN...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -376,17 +398,87 @@
     "is_new": false
   },
   {
-    "id": "5956298269",
-    "title": "Internal Auditor",
-    "company": "OECD Parliamentary Group",
+    "id": "5948451438",
+    "title": "Assistant(e)s",
+    "company": "OECD",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5956298269?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "The Organisation for Economic Co-operation and Development ( OECD ) is an international organisation comprised of 38 member countries, that works to b...",
+    "url": "https://www.adzuna.fr/details/5948451438?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "L’Organisation de coopération et de développement économiques ( OCDE ) est une organisation internationale regroupant 38pays Membres, qui œuvre pour l...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
+  },
+  {
+    "id": "5942888793",
+    "title": "Ménage à Mirepeix (64800)",
+    "company": "IRENA",
+    "location": "Nay, Pau",
+    "url": "https://www.adzuna.fr/details/5942888793?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Offre d'emploi : Aide à domicile Bonjour, Je recherche une personne de confiance pour m'aider avec des tâches ménagères à mon domicile situé à Mirepei...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5928938046",
+    "title": "Responsable Grands Comptes Food Service F/H",
+    "company": "BONDUELLE",
+    "location": "Colombier-Saugnieu, Genas",
+    "url": "https://www.adzuna.fr/details/5928938046?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Nous recherchons en CDD, notre Responsable Grands Comptes Food Service H/F Poste basé à Genas (69) à pourvoir dès octobre 2026 Rattaché(e) au Directeu...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5928938288",
+    "title": "Juriste Droit Social F/H",
+    "company": "BONDUELLE",
+    "location": "Villeneuve-d'Ascq, Lille",
+    "url": "https://www.adzuna.fr/details/5928938288?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Nous recherchons, en CDD de 12 mois notre Juriste en Droit Social H/F Poste basé à Villeneuve d'Ascq (59) En renfort de l’équipe Juridique et Affaires...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5948538533",
+    "title": "Conducteur de Machine - Ensacheuse H/F",
+    "company": "Bonduelle",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5948538533?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Travaillant principalement en équipe, le conducteur de machine est amené à réaliser les tâches suivantes dans le respect de la sécurité, de la qualité...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5941027804",
+    "title": "Electrotechnicien H/F",
+    "company": "Bonduelle",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5941027804?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Tu veux un poste d'électricien où ta technicité fait vraiment la différence sur des installations industrielles diversifiées ? Tu es à l'aise pour ana...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
   }
 ]
