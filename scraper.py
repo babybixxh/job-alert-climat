@@ -205,6 +205,20 @@ _ENR_CONTRACT_EXCLUDE_RE = re.compile(
     r"\bv\.?i\.?e\b|\bvie\b|\bintern\b|internship|c[ée]sure|graduate program|"
     r"contrat pro|contrat d.apprentissage|service civique",
     re.IGNORECASE)
+# EnR = UNIQUEMENT des rôles de gestion de projet (le reste — ingénierie pointue,
+# chargé d'affaires… — est jugé trop précis). Le titre doit matcher ce motif.
+_ENR_PROJECT_MGMT_RE = re.compile(
+    r"chef(?:fe)?\s+de\s+projet|charg[ée]\s+de\s+projet|charg[ée]\s+de\s+programme|"
+    r"charg[ée]\s+de\s+d[ée]veloppement|responsable\s+de\s+projet|"
+    r"responsable\s+de\s+programme|directeur\s+de\s+projet|directrice\s+de\s+projet|"
+    r"gestion\s+de\s+projet|d[ée]veloppement\s+de\s+projet|d[ée]veloppeur\s+de\s+projet|"
+    r"project\s+manager|project\s+management|project\s+developer|programme?\s+manager|"
+    r"chef(?:fe)?\s+de\s+programme|porteur\s+de\s+projet",
+    re.IGNORECASE)
+
+
+def enr_is_project_mgmt(title):
+    return bool(_ENR_PROJECT_MGMT_RE.search(title or ""))
 
 
 def enr_keep_title(title, description=""):
@@ -213,6 +227,8 @@ def enr_keep_title(title, description=""):
     # Signal EnR cherché dans titre + description ; exclusions terrain sur le
     # titre ; exclusions de contrat (stage/alternance…) sur titre + description.
     if not _ENR_SIGNAL_RE.search(hay):
+        return False
+    if not enr_is_project_mgmt(t):
         return False
     if _ENR_CONTRACT_EXCLUDE_RE.search(hay):
         return False
@@ -1307,7 +1323,8 @@ def search_enr_marseille():
         # Entreprise EnR suivie : on garde même sans mot-clé EnR dans le titre,
         # mais on applique quand même l'exclusion terrain/commercial/séniorité.
         if force_keep:
-            if (_ENR_EXCLUDE_RE.search(title) or is_over_senior_title(title)
+            if (not enr_is_project_mgmt(title)
+                    or _ENR_EXCLUDE_RE.search(title) or is_over_senior_title(title)
                     or _ENR_CONTRACT_EXCLUDE_RE.search(title + " " + description)):
                 return
         elif not enr_keep_title(title, description):
