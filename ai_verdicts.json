@@ -1,74 +1,4 @@
 {
-  "consultant manager esg risk - financial services f/h|pwc france": {
-    "keep": false,
-    "reason": "Consultant Manager ESG Risk - Financial Services chez PwC : ESG générique, hors climat/stratégie.",
-    "borderline": false,
-    "score": 0,
-    "v": 8
-  },
-  "quantitative structurer|engie - international supply & energy management": {
-    "keep": false,
-    "reason": "Poste hors climat/durabilité (quantitative structurer - énergie)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "chargé(e) de missions multithématiques eau & environnement (h/f)|agence de l'eau seine-normandie": {
-    "keep": true,
-    "reason": "Chargé de missions multithématiques Eau & Environnement (Agence de l'eau) - pertinent mais générique, borderline sur le niveau stratégie climat pur",
-    "borderline": true,
-    "score": 60,
-    "v": 9
-  },
-  "risk manager f/h|bpifrance": {
-    "keep": false,
-    "reason": "Risk Manager : finance/risque générique, hors climat.",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
-  "responsable département performance environnementale|dalkia": {
-    "keep": false,
-    "reason": "Responsable département performance environnementale chez Dalkia : poste technique industriel, hors climat/stratégie.",
-    "borderline": false,
-    "score": 0,
-    "v": 8
-  },
-  "responsable de service - commune de marseille|fonction publique territoriale": {
-    "keep": true,
-    "reason": "Responsable de service en collectivité (Marseille) avec missions de coordination des politiques publiques. Élargissement des critères pour PACA, mais hors conseil/stratégie climat pur.",
-    "borderline": false,
-    "score": 75,
-    "v": 9
-  },
-  "responsable q3ser h/f f/h|vinci energies": {
-    "keep": false,
-    "reason": "Responsable QHSE générique, pas de focus climat/stratégie.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "emplois|sector canada": {
-    "keep": false,
-    "reason": "Offre générique sans détails (Sector Canada), hors zone d'intérêt.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "charge d’animation territoriale et de communication h/f|groupe chiroptères de provence": {
-    "keep": false,
-    "reason": "CHARGE D’ANIMATION TERRITORIALE ET DE COMMUNICATION chez Groupe Chiroptères de Provence : poste communication/animation, hors climat/stratégie.",
-    "borderline": false,
-    "score": 0,
-    "v": 8
-  },
-  "deux nominations chez prisma media|the media leader": {
-    "keep": false,
-    "reason": "Nominations chez Prisma Media : postes non climatiques.",
-    "borderline": false,
-    "score": 0,
-    "v": 8
-  },
   "héloïse léon succède à lucie dugit-gros à la communication de cmi france|the media leader": {
     "keep": false,
     "reason": "Nominations chez The Media Leader : postes non climatiques.",
@@ -20997,6 +20927,76 @@
     "reason": "Poste interne de responsable décarbonation en entreprise, idéalement situé en PACA (Aix-en-Provence).",
     "borderline": false,
     "score": 95,
+    "v": 10
+  },
+  "chargé d'affaires énergie - contrats de performances énergétiques (h/f)|syclef": {
+    "keep": false,
+    "reason": "Poste orienté génie climatique / froid industriel et suivi d'affaires d'installations techniques, hors conseil ou stratégie climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "technico-commercial itinérant génie climatique h/f|tcri group": {
+    "keep": false,
+    "reason": "Poste commercial pur en génie climatique / CVC, à exclure.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "technico-commercial génie climatique h/f – secteur alpes & vaucluse (84/04/05)|tcri group": {
+    "keep": false,
+    "reason": "Poste commercial pur en génie climatique / CVC, à exclure.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "spécialiste certificats d'economie d'energie h/f|groupe qualiconsult": {
+    "keep": false,
+    "reason": "Contrôle technique et conformité réglementaire CEE en bureau de contrôle, sans dimension stratégique climat.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "consulting - consultant confirmé / senior energie & industrie - paris (h/f)|talan": {
+    "keep": true,
+    "reason": "Cabinet de conseil reconnu, poste senior en énergie et industrie à Paris adapté à son double profil ingénieur/ESSEC.",
+    "borderline": false,
+    "score": 75,
+    "v": 10
+  },
+  "consultant senior industrie - energie et carbone (cdi) - hf|greenflex": {
+    "keep": true,
+    "reason": "Acteur de référence de la transition bas-carbone, consultant senior énergie et carbone dans l'industrie, en plein dans son cœur d'expertise.",
+    "borderline": false,
+    "score": 92,
+    "v": 10
+  },
+  "responsable activité économie circulaire & transformation des modèles h/f|ortec group": {
+    "keep": true,
+    "reason": "Poste qualifié de responsable économie circulaire et transformation des modèles en entreprise à Aix-en-Provence (zone prioritaire PACA).",
+    "borderline": false,
+    "score": 80,
+    "v": 10
+  },
+  "manager - energy & utilities - marseille|sia": {
+    "keep": true,
+    "reason": "Cabinet de conseil de premier plan à Marseille, secteur Energy & Utilities, niveau Manager correspondant parfaitement à sa séniorité.",
+    "borderline": false,
+    "score": 90,
+    "v": 10
+  },
+  "chef de projets déchets – ingénierie & valorisation|irh ingenieur conseil": {
+    "keep": false,
+    "reason": "Ingénierie technique et maîtrise d'œuvre déchets chez un bureau d'études, hors conseil stratégique climat ou transition.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chef de projets déchets – valorisation, leadership, cdi|irh ingenieur conseil": {
+    "keep": false,
+    "reason": "Ingénierie technique et opérationnelle de valorisation des déchets, sans dimension stratégie climat ou décarbonation.",
+    "borderline": false,
+    "score": 0,
     "v": 10
   }
 }
