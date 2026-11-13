@@ -24,27 +24,15 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/managing-consultant-product-sustainability-at-erm-4486246879",
+    "id": "https://fr.linkedin.com/jobs/view/managing-consultant-product-sustainability-at-erm-4486242918",
     "title": "Managing Consultant - Product Sustainability",
     "company": "ERM",
     "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/managing-consultant-product-sustainability-at-erm-4486246879",
+    "url": "https://fr.linkedin.com/jobs/view/managing-consultant-product-sustainability-at-erm-4486242918",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
     "score": 85,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-industrie-energie-et-carbone-cdi-hf-at-greenflex-4486763297",
-    "title": "Consultant senior Industrie - Energie et carbone (CDI) - HF",
-    "company": "GreenFlex",
-    "location": "Ville de Paris",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-industrie-energie-et-carbone-cdi-hf-at-greenflex-4486763297",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 92,
     "is_new": false
   },
   {
@@ -57,6 +45,42 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 75,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4488444518",
+    "title": "Consultant senior - Energie F/H",
+    "company": "Yélé Consulting",
+    "location": "Paris et périphérie",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4488444518",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/responsable-adaptation-climatique-r%C3%A9silience-h-f-4489540525",
+    "title": "Responsable Adaptation Climatique & Résilience H/F",
+    "company": "SOM Siège",
+    "location": "Aix-en-Provence",
+    "url": "https://fr.linkedin.com/jobs/view/responsable-adaptation-climatique-r%C3%A9silience-h-f-4489540525",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 95,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/responsable-%C3%A9nergie-d%C3%A9carbonation-performance-environnementale-h-f-4489536620",
+    "title": "Responsable Énergie, Décarbonation & Performance Environnementale (H/F)",
+    "company": "SOM Siège",
+    "location": "Aix-en-Provence",
+    "url": "https://fr.linkedin.com/jobs/view/responsable-%C3%A9nergie-d%C3%A9carbonation-performance-environnementale-h-f-4489536620",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 88,
     "is_new": false
   },
   {
@@ -120,16 +144,16 @@
     "is_new": false
   },
   {
-    "id": "5935973070",
-    "title": "Consultant Carbone Senior - German speaker - Nooco - CDI - (F/H/X)",
-    "company": "Deepki",
-    "location": "11ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/details/5935973070?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Date de démarrage : 4 Janvier 2027 Nooco est une société française d’édition de logiciel SaaS, spécialiste de la mesure de l‘empreinte carbone des pro...",
+    "id": "5949079086",
+    "title": "Latam Underwriter H/F",
+    "company": "AXA Climate",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5949079086?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Business Development & Growth Define and execute AXA Climate’s commercial growth strategy across LATAM markets. Identify emerging climate risks and cl...",
     "source": "Adzuna",
     "company_watch": true,
     "borderline": true,
-    "score": 65,
+    "score": 60,
     "is_new": false
   },
   {
@@ -157,33 +181,18 @@
     "is_new": false
   },
   {
-    "id": "5961899015",
-    "title": "Chargé de mission Climat (Vulnérabilité, Air, Energie, Mobilité) – Risques (h/f)",
-    "company": "Fonction publique Territoriale",
-    "location": "Puget-Théniers, Nice",
-    "url": "https://www.adzuna.fr/details/5961899015?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Créée au 1er janvier 2014, la Communauté de Communes Alpes d’Azur (CCAA) rassemble 34 communes des vallées du Var, du Ci...",
-    "salary": "",
-    "date": "2026-11-11T17:59:50Z",
-    "source": "Adzuna",
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": true
-  },
-  {
-    "id": "5932820852",
-    "title": "Stagiaire Talent & Operations H/F",
-    "company": "Quantis",
+    "id": "5955309341",
+    "title": "Account Manager - US-Market (VIE New York)",
+    "company": "Greenly",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5932820852?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Apprendre, évoluer et accompagner le développement des talents. Contribuer à un impact positif. - Vous souhaitez acquérir une expérience concrète en g...",
+    "url": "https://www.adzuna.fr/details/5955309341?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "About us Greenly was founded in 2019 by Alexis, Matthieu and Arnaud with one mission: make carbon management as essential as financial management . In...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "5960347542",
@@ -192,6 +201,20 @@
     "location": "Lyon, Rhône",
     "url": "https://www.adzuna.fr/details/5960347542?utm_medium=api&utm_source=ae8a5ffa",
     "description": "LES MISSIONS Sous la responsabilité de la directrice et en lien avec l’équipe pluridisciplinaire, vous intervenez auprès d’adultes en situation de han...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5946551665",
+    "title": "Senior Events Specialist (H/F)",
+    "company": "Descartes Underwriting Group",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5946551665?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "ABOUT DESCARTES UNDERWRITING Join Descartes and contribute to our mission: Building Resilience in a World at Risk. Descartes is a corporate insurance ...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -256,6 +279,20 @@
     "is_new": false
   },
   {
+    "id": "5964185380",
+    "title": "Broker Santé-Prévoyance Senior — Télétravail & Avantages",
+    "company": "Aon plc",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5964185380?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Aon plc recherche un Broker Santé-Prévoyance expérimenté pour piloter un portefeuille de clients ETI et grands comptes au sein du département Santé Pr...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
+  },
+  {
     "id": "5955880199",
     "title": "Responsable Grands Comptes Corporate France – CDI H/F",
     "company": "WTW",
@@ -281,7 +318,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5954494932",
@@ -298,12 +335,26 @@
     "is_new": false
   },
   {
-    "id": "5940652514",
-    "title": "Gestionnaire indemnisation DAB & RC - CDD H/F",
+    "id": "5963468605",
+    "title": "Coordinateur d'Affaires Internationales - CDI - H/F",
     "company": "WTW",
-    "location": "Le Havre, Seine-Maritime",
-    "url": "https://www.adzuna.fr/details/5940652514?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Description Le rôle Le Gestionnaire de Sinistres travaille sous la responsabilité du Responsable de service Indemnisation Il intervient sur les domain...",
+    "location": "Puteaux, Nanterre",
+    "url": "https://www.adzuna.fr/details/5963468605?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Description Le rôle Répond aux diverses questions du réseau WTW relatives aux clients et à leurs programmes d'assurance Suit les évolutions du context...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
+  },
+  {
+    "id": "5946180056",
+    "title": "Consultant Work, Rewards & Career H/F CDI",
+    "company": "WTW",
+    "location": "Puteaux, Nanterre",
+    "url": "https://www.adzuna.fr/details/5946180056?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Le rôle Au sein de notre practice Work, Rewards & Careers, vous serez amené(e) à contribuer, sous la supervision d’un project manager, à des projets v...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -312,12 +363,12 @@
     "is_new": false
   },
   {
-    "id": "5953182825",
-    "title": "Gestionnaire Sinistre ADP - CDD 12 mois H/F",
-    "company": "WTW",
-    "location": "Saint-Denis-de-l'Hôtel, Orléans",
-    "url": "https://www.adzuna.fr/details/5953182825?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Description Le rôle Intégré(e) au sein du pôle Emprunteurs, vos missions seront les suivantes: Préparation et étude complète des dossiers adhésions en...",
+    "id": "5946189876",
+    "title": "Operation Security Engineer",
+    "company": "SCOR",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5946189876?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "At SCOR, we combine the Art and Science of risk to help build more resilient societies. Technology is a vital resource and partner in every step of ou...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -332,6 +383,20 @@
     "location": "Drancy, Bobigny",
     "url": "https://www.adzuna.fr/details/5954514931?utm_medium=api&utm_source=ae8a5ffa",
     "description": "Gestionnaire d'immeubles - F/H ICF Habitat, filiale logement du groupe SNCF, est l’un des principaux opérateurs de logement en France avec près de 105...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5933468417",
+    "title": "Conseiller social - stagiaire - F/H",
+    "company": "ICF Habitat",
+    "location": "Woippy, Metz-Campagne",
+    "url": "https://www.adzuna.fr/details/5933468417?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Conseiller social - stagiaire - F/H ICF Habitat, filiale logement du groupe SNCF, est l’un des principaux opérateurs de logement en France avec près d...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
