@@ -1,17 +1,5 @@
 [
   {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-consultant-energy-transition-utilities-at-capgemini-invent-4489920140",
-    "title": "Consultant / Senior Consultant - Energy Transition & Utilities",
-    "company": "Capgemini Invent",
-    "location": "Issy-les-Moulineaux",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-consultant-energy-transition-utilities-at-capgemini-invent-4489920140",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 78,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/consulting-consultant-confirm%C3%A9-senior-energie-industrie-paris-h-f-at-talan-4491144883",
     "title": "Consulting - Consultant Confirmé / Senior Energie & Industrie - Paris (H/F)",
     "company": "Talan",
@@ -24,15 +12,27 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/chef-de-projet-d%C3%A9carbonation-f-h-at-idex-4489484391",
-    "title": "Chef de projet décarbonation F/H",
-    "company": "IDEX",
-    "location": "Boulogne-Billancourt",
-    "url": "https://fr.linkedin.com/jobs/view/chef-de-projet-d%C3%A9carbonation-f-h-at-idex-4489484391",
+    "id": "https://fr.linkedin.com/jobs/view/consultant-environnement-gaz-%C3%A0-effet-de-serre-f-h-x-at-bureau-veritas-4450278016",
+    "title": "Consultant Environnement/Gaz à effet de serre (F-H-X)",
+    "company": "Bureau Veritas",
+    "location": "Champs-sur-Marne",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-environnement-gaz-%C3%A0-effet-de-serre-f-h-x-at-bureau-veritas-4450278016",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
-    "score": 85,
+    "score": 90,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/engagement-manager-en-energie-h-f-at-y%C3%A9l%C3%A9-consulting-4490537109",
+    "title": "Engagement Manager en Energie (H/F)",
+    "company": "Yélé Consulting",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/engagement-manager-en-energie-h-f-at-y%C3%A9l%C3%A9-consulting-4490537109",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
     "is_new": false
   },
   {
@@ -84,18 +84,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4491009104",
-    "title": "Consultant senior - Energie F/H",
-    "company": "Yélé Consulting",
-    "location": "Nanterre",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4491009104",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
     "id": "6620506",
     "title": "Responsable prévention des risques industriels & transition bas carbone f/h (H/F)",
     "company": "N/A",
@@ -115,6 +103,18 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/8141996",
     "description": "Vous mènerez à bien des tâches de conseil stratégique, de conseil en innovation et technologies, de diversification et d'appui au business development...",
     "source": "France Travail",
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4491009104",
+    "title": "Consultant senior - Energie F/H",
+    "company": "Yélé Consulting",
+    "location": "Nanterre",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4491009104",
+    "description": "",
+    "source": "LinkedIn",
     "borderline": false,
     "score": 75,
     "is_new": false
@@ -146,18 +146,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/engagement-manager-en-energie-h-f-at-y%C3%A9l%C3%A9-consulting-4490537109",
-    "title": "Engagement Manager en Energie (H/F)",
-    "company": "Yélé Consulting",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/engagement-manager-en-energie-h-f-at-y%C3%A9l%C3%A9-consulting-4490537109",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
     "id": "5961899015",
     "title": "Chargé de mission Climat (Vulnérabilité, Air, Energie, Mobilité) – Risques (h/f)",
     "company": "Fonction publique Territoriale",
@@ -169,30 +157,6 @@
     "source": "Adzuna",
     "borderline": true,
     "score": 55,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-performance-environnementale-groupe-f-h-at-knds-france-4433974880",
-    "title": "Chargé de performance environnementale groupe F/H",
-    "company": "KNDS France",
-    "location": "Versailles",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-performance-environnementale-groupe-f-h-at-knds-france-4433974880",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": true,
-    "score": 60,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/climate-officer-at-rexel-4489638276",
-    "title": "Climate Officer",
-    "company": "Rexel",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/climate-officer-at-rexel-4489638276",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 88,
     "is_new": false
   },
   {
@@ -241,6 +205,19 @@
     "source": "ADEME",
     "borderline": false,
     "score": 90,
+    "is_new": false
+  },
+  {
+    "id": "5935973070",
+    "title": "Consultant Carbone Senior - German speaker - Nooco - CDI - (F/H/X)",
+    "company": "Deepki",
+    "location": "11ème Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/details/5935973070?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Date de démarrage : 4 Janvier 2027 Nooco est une société française d’édition de logiciel SaaS, spécialiste de la mesure de l‘empreinte carbone des pro...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": true,
+    "score": 65,
     "is_new": false
   },
   {
@@ -349,6 +326,34 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5938134741",
+    "title": "Responsable d'Equipe sinistres Affinitaires B2B/B2B2B HF",
+    "company": "Marsh McLennan",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5938134741?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Company: Marsh Description: Au sein du pôle B2B / B2B2B, Marsh développe des offres et dispositifs d’assurance à destination d’entreprises et de résea...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
+  },
+  {
+    "id": "5948200851",
+    "title": "Solution Architect Workday Finance",
+    "company": "Marsh McLennan",
+    "location": "France",
+    "url": "https://www.adzuna.fr/details/5948200851?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Company: Marsh Description: Dans le cadre du développement de notre practice Workday (Marsh Digital Europe), nous cherchons un profil expérimenté pour...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
     "is_new": true
   },
   {
@@ -422,20 +427,6 @@
     "is_new": false
   },
   {
-    "id": "5963468605",
-    "title": "Coordinateur d'Affaires Internationales - CDI - H/F",
-    "company": "WTW",
-    "location": "Puteaux, Nanterre",
-    "url": "https://www.adzuna.fr/details/5963468605?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Description Le rôle Répond aux diverses questions du réseau WTW relatives aux clients et à leurs programmes d'assurance Suit les évolutions du context...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
     "id": "5940652514",
     "title": "Gestionnaire indemnisation DAB & RC - CDD H/F",
     "company": "WTW",
@@ -448,6 +439,34 @@
     "borderline": true,
     "ai_unverified": true,
     "is_new": false
+  },
+  {
+    "id": "5953182825",
+    "title": "Gestionnaire Sinistre ADP - CDD 12 mois H/F",
+    "company": "WTW",
+    "location": "Saint-Denis-de-l'Hôtel, Orléans",
+    "url": "https://www.adzuna.fr/details/5953182825?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Description Le rôle Intégré(e) au sein du pôle Emprunteurs, vos missions seront les suivantes: Préparation et étude complète des dossiers adhésions en...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5963946733",
+    "title": "Coordinateur d'Affaires Internationales - CDI H/F",
+    "company": "WTW",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5963946733?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Description Le rôle - Répond aux diverses questions du réseau WTW relatives aux clients et à leurs programmes d'assurance - Suit les évolutions du con...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
   },
   {
     "id": "5954514931",
@@ -470,62 +489,6 @@
     "location": "Paris, Ile-de-France",
     "url": "https://www.adzuna.fr/details/5940665110?utm_medium=api&utm_source=ae8a5ffa",
     "description": "MNA Fellow Job : req38819 Organization: IFC Sector: Infrastructure Grade: EC1 Term Duration: Extended Term Consultant (ETC) Recruitment Type: Local Re...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5967021888",
-    "title": "E T Temporary",
-    "company": "World Bank Group",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5967021888?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "E T Temporary Job : req39084 Organization: World Bank Group Sector: Grade: ET3 Term Duration: 1 year Recruitment Type: Local Recruitment Location: Par...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": true
-  },
-  {
-    "id": "5948451440",
-    "title": "Assistants",
-    "company": "OECD Parliamentary Group",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5948451440?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "The Organisation for Economic Co-operation and Development ( OECD ) is an international organisation comprised of 38 member countries, that works to b...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5950030598",
-    "title": "Assistants",
-    "company": "OECD - Organisation for Economic Co-operation and Development",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5950030598?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "The Organisation for Economic Co-operation and Development ( OECD ) is an international organisation comprised of 38 member countries, that works to b...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5957700980",
-    "title": "Internal Auditor",
-    "company": "OECD",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5957700980?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "The Organisation for Economic Co-operation and Development ( OECD ) is an international organisation comprised of 38 member countries, that works to b...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
