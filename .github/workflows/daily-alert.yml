@@ -23,8 +23,22 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4
 
+      # CLI Claude Code : juge les offres avec l'abonnement Claude
+      # (secret CLAUDE_CODE_OAUTH_TOKEN, généré par `claude setup-token`).
+      - name: Install Claude Code
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          if [ -n "$CLAUDE_CODE_OAUTH_TOKEN" ]; then
+            npm install -g @anthropic-ai/claude-code && claude --version
+          else
+            echo "Pas de CLAUDE_CODE_OAUTH_TOKEN : on reste sur Gemini/repli."
+          fi
+
       - name: Run scraper
         env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          CLAUDE_MODEL: ${{ secrets.CLAUDE_MODEL }}
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_PASSWORD: ${{ secrets.GMAIL_PASSWORD }}
           GMAIL_TO: ${{ secrets.GMAIL_TO }}

@@ -3,6 +3,8 @@ import os
 import json
 import requests
 import re
+import shutil
+import subprocess
 import time
 import threading
 import urllib3
@@ -2459,6 +2461,9 @@ MISTRAL_PACE_SECONDS = 1.2   # pause entre deux lots (lissage du débit)
 # ne pas saturer le quota). Le surplus n'est pas jugé aujourd'hui → réévalué au
 # prochain run (et passé au repli mots-clés en attendant).
 MISTRAL_MAX_EVAL_PER_RUN = 60
+# Avec Claude Code (abonnement) : tout le stock jugé, lots de 20 (~10 appels/jour).
+CLAUDE_MAX_EVAL_PER_RUN = 200
+CLAUDE_BATCH_SIZE = 20
 
 # Repli quand l'IA est indisponible (quota/429) ou qu'une offre n'a pas pu être
 # jugée : on garde quand même les offres à FORT signal climat dans le titre
@@ -2491,11 +2496,16 @@ def ai_fallback_keep(job):
     return bool(_FALLBACK_ROLE_RE.search(title) and _STRONG_CLIMATE_RE.search(title))
 
 
+CLAUDE_CLI = "claude-cli"  # marqueur : fournisseur = CLI Claude Code (pas une URL)
+
+
 def llm_config():
-    """Choisit le fournisseur LLM selon les secrets disponibles (Groq, puis
-    Gemini, puis Mistral). Les trois exposent une API compatible OpenAI (même
-    format requête/réponse). Renvoie (url, key, model, nom) ou None si aucune
-    clé n'est configurée."""
+    """Choisit le fournisseur LLM selon les secrets disponibles : Claude Code
+    (abonnement Claude via CLAUDE_CODE_OAUTH_TOKEN, prioritaire), puis Groq,
+    Gemini, Mistral (API compatibles OpenAI). Renvoie (url, key, model, nom)
+    ou None si aucune clé n'est configurée."""
+    if os.environ.get("CLAUDE_CODE_OAUTH_TOKEN") and shutil.which("claude"):
+        return (CLAUDE_CLI, "", os.environ.get("CLAUDE_MODEL") or "sonnet", "Claude")
     groq = os.environ.get("GROQ_API_KEY", "")
     if groq:
         return ("https://api.groq.com/openai/v1/chat/completions", groq,
@@ -2511,6 +2521,34 @@ def llm_config():
     return None
 
 
+def _claude_cli_chat(prompt, model):
+    """Fait juger un lot par Claude Code en mode non interactif (`claude -p`),
+    authentifié par l'abonnement Claude (CLAUDE_CODE_OAUTH_TOKEN, généré avec
+    `claude setup-token`). Aucun outil activé : Claude ne fait que répondre."""
+    last_err = None
+    for attempt in range(3):
+        try:
+            r = subprocess.run(
+                ["claude", "-p", "--output-format", "text", "--model", model,
+                 "--tools", "",
+                 "--system-prompt", "Tu tries des offres d'emploi. Réponds "
+                 "uniquement avec le tableau JSON demandé, sans texte autour."],
+                input=prompt, capture_output=True, text=True, timeout=300)
+        except subprocess.TimeoutExpired:
+            last_err = "délai dépassé (300 s)"
+            print(f"  Claude : {last_err} ({attempt + 1}/3)")
+            continue
+        if r.returncode == 0 and r.stdout.strip():
+            return r.stdout
+        last_err = (r.stderr or r.stdout or f"code {r.returncode}").strip()[:300]
+        print(f"  Claude : échec ({attempt + 1}/3) : {last_err}")
+        low = last_err.lower()
+        if any(w in low for w in ("auth", "login", "token", "invalid api key")):
+            break  # jeton invalide/expiré : inutile de retenter
+        time.sleep(5 * (attempt + 1))
+    raise RuntimeError(f"Claude indisponible ({last_err})")
+
+
 def _llm_chat(prompt):
     """Appelle l'API chat du fournisseur LLM choisi (Groq ou Mistral, compatibles
     OpenAI) avec backoff sur rate-limit (429) et erreurs serveur (5xx). Renvoie
@@ -2519,6 +2557,8 @@ def _llm_chat(prompt):
     if cfg is None:
         raise RuntimeError("aucune clé LLM (GROQ_API_KEY ou MISTRAL_API_KEY)")
     url, key, model, name = cfg
+    if url == CLAUDE_CLI:
+        return _claude_cli_chat(prompt, model)
     last_err = None
     for attempt in range(MISTRAL_MAX_RETRIES):
         try:
@@ -2751,8 +2791,13 @@ def filter_jobs_with_ai(jobs):
                          job.get('source', ''), f"IA (cache): {cached.get('reason', '')}")
     # Étalement : on ne soumet qu'au plus MISTRAL_MAX_EVAL_PER_RUN offres à l'IA
     # par run. Le surplus sera réévalué au prochain run (et passe au repli ci-dessous).
-    ai_batch = to_evaluate[:MISTRAL_MAX_EVAL_PER_RUN]
-    overflow = to_evaluate[MISTRAL_MAX_EVAL_PER_RUN:]
+    # Claude (abonnement) est fiable : on peut juger tout le stock et par lots
+    # plus gros. Les API gratuites restent plafonnées pour ménager leur quota.
+    is_claude = cfg[3] == "Claude"
+    max_eval = CLAUDE_MAX_EVAL_PER_RUN if is_claude else MISTRAL_MAX_EVAL_PER_RUN
+    batch_size = CLAUDE_BATCH_SIZE if is_claude else MISTRAL_BATCH_SIZE
+    ai_batch = to_evaluate[:max_eval]
+    overflow = to_evaluate[max_eval:]
     print(f"  Cache IA : {len(jobs) - len(to_evaluate)} offre(s) déjà jugée(s), "
           f"{len(to_evaluate)} à évaluer (dont {len(ai_batch)} ce run, {len(overflow)} reportées)")
 
@@ -2760,8 +2805,8 @@ def filter_jobs_with_ai(jobs):
     # d'offres peut dépasser ce qu'un seul appel Mistral peut traiter sans
     # tronquer sa réponse JSON (cause vue en prod : "Unterminated string").
     judged_keys = set()
-    for start in range(0, len(ai_batch), MISTRAL_BATCH_SIZE):
-        batch = ai_batch[start:start + MISTRAL_BATCH_SIZE]
+    for start in range(0, len(ai_batch), batch_size):
+        batch = ai_batch[start:start + batch_size]
         if start > 0:
             time.sleep(MISTRAL_PACE_SECONDS)  # lissage du débit entre lots
         try:
