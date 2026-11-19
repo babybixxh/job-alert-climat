@@ -1,5 +1,17 @@
 [
   {
+    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-d%E2%80%99affaires-energie-environnement-f-h-at-bpifrance-4457088721",
+    "title": "Chargé d’Affaires Energie Environnement F/H",
+    "company": "Bpifrance",
+    "location": "Marseille",
+    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-d%E2%80%99affaires-energie-environnement-f-h-at-bpifrance-4457088721",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
     "id": "https://fr.linkedin.com/jobs/view/consulting-consultant-confirm%C3%A9-senior-energie-industrie-paris-h-f-at-talan-4491144883",
     "title": "Consulting - Consultant Confirmé / Senior Energie & Industrie - Paris (H/F)",
     "company": "Talan",
@@ -12,23 +24,11 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-environnement-gaz-%C3%A0-effet-de-serre-f-h-x-at-bureau-veritas-4450278016",
-    "title": "Consultant Environnement/Gaz à effet de serre (F-H-X)",
-    "company": "Bureau Veritas",
-    "location": "Champs-sur-Marne",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-environnement-gaz-%C3%A0-effet-de-serre-f-h-x-at-bureau-veritas-4450278016",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 90,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/engagement-manager-en-energie-h-f-at-y%C3%A9l%C3%A9-consulting-4490537109",
-    "title": "Engagement Manager en Energie (H/F)",
+    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4491009104",
+    "title": "Consultant senior - Energie F/H",
     "company": "Yélé Consulting",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/engagement-manager-en-energie-h-f-at-y%C3%A9l%C3%A9-consulting-4490537109",
+    "location": "Nanterre",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4491009104",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
@@ -57,18 +57,6 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 88,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-d%E2%80%99affaires-energie-environnement-f-h-at-bpifrance-4457088721",
-    "title": "Chargé d’Affaires Energie Environnement F/H",
-    "company": "Bpifrance",
-    "location": "Marseille",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-d%E2%80%99affaires-energie-environnement-f-h-at-bpifrance-4457088721",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
     "is_new": false
   },
   {
@@ -108,18 +96,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4491009104",
-    "title": "Consultant senior - Energie F/H",
-    "company": "Yélé Consulting",
-    "location": "Nanterre",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4491009104",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
     "id": "215YGCM",
     "title": "Chargé(e) de projet \"adaptation au changement climatique\" (H/F)",
     "company": "FONDATION FARM",
@@ -132,31 +108,15 @@
     "is_new": false
   },
   {
-    "id": "5961895589",
-    "title": "Chargé de mission pilotage et suivi de la SPL Energie",
-    "company": "Fonction Publique Territoriale",
-    "location": "Marseille, Bouches-du-Rhône",
-    "url": "https://www.adzuna.fr/details/5961895589?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Poste rattaché au Pôle Transition Ecologique et Energétique de la DGD Transition Environnementale Eau Culture et Sport L...",
-    "salary": "",
-    "date": "2026-11-11T17:55:13Z",
-    "source": "Adzuna",
-    "borderline": true,
-    "score": 65,
-    "is_new": false
-  },
-  {
-    "id": "5961899015",
-    "title": "Chargé de mission Climat (Vulnérabilité, Air, Energie, Mobilité) – Risques (h/f)",
-    "company": "Fonction publique Territoriale",
-    "location": "Puget-Théniers, Nice",
-    "url": "https://www.adzuna.fr/details/5961899015?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Vos missions en quelques mots Créée au 1er janvier 2014, la Communauté de Communes Alpes d’Azur (CCAA) rassemble 34 communes des vallées du Var, du Ci...",
-    "salary": "",
-    "date": "2026-11-11T17:59:50Z",
-    "source": "Adzuna",
-    "borderline": true,
-    "score": 55,
+    "id": "https://fr.linkedin.com/jobs/view/engagement-manager-en-energie-h-f-at-y%C3%A9l%C3%A9-consulting-4490537109",
+    "title": "Engagement Manager en Energie (H/F)",
+    "company": "Yélé Consulting",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/engagement-manager-en-energie-h-f-at-y%C3%A9l%C3%A9-consulting-4490537109",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
     "is_new": false
   },
   {
@@ -208,6 +168,19 @@
     "is_new": false
   },
   {
+    "id": "5946627260",
+    "title": "Analytics Engineer - Environmental Intelligence",
+    "company": "Carbonfact",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5946627260?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "The fashion industry is responsible for 5–10% of global greenhouse gas (GHG) emissions. As climate pressure grows, fashion companies need carbon tools...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "borderline": true,
+    "score": 65,
+    "is_new": false
+  },
+  {
     "id": "5935973070",
     "title": "Consultant Carbone Senior - German speaker - Nooco - CDI - (F/H/X)",
     "company": "Deepki",
@@ -245,12 +218,53 @@
     "is_new": false
   },
   {
+    "id": "8969975",
+    "title": "Conseiller environnement - Transition écologique (H/F)",
+    "company": "CMA IDF",
+    "location": "91 - Évry-Courcouronnes",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8969975",
+    "description": "RESPONSABILITÉS : \n\nPourquoi ce poste compte\nChaque année, la CMA Île-de-France accompagne plusieurs milliers d'entreprises artisanales (bâtiment, ali...",
+    "source": "France Travail",
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5971673960",
+    "title": "Consultant(e) HSEE F/H",
+    "company": "Tennaxia",
+    "location": "Bordeaux, Gironde",
+    "url": "https://www.adzuna.fr/details/5971673960?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Dans le cadre de notre croissance, nous recherchons un(e) Consultant(e) pour rejoindre notre équipe Conseil HSEE. En tant que consultant(e), vous part...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": true
+  },
+  {
     "id": "5960347542",
     "title": "PSYCHOLOGUE CLINICIEN.NE COGNITIVISTE F/H",
     "company": "ODYNEO - CAMSP NELSON MANDELA",
     "location": "Lyon, Rhône",
     "url": "https://www.adzuna.fr/details/5960347542?utm_medium=api&utm_source=ae8a5ffa",
     "description": "LES MISSIONS Sous la responsabilité de la directrice et en lien avec l’équipe pluridisciplinaire, vous intervenez auprès d’adultes en situation de han...",
+    "source": "Adzuna",
+    "company_watch": true,
+    "score": 60,
+    "borderline": true,
+    "ai_unverified": true,
+    "is_new": false
+  },
+  {
+    "id": "5946551665",
+    "title": "Senior Events Specialist (H/F)",
+    "company": "Descartes Underwriting Group",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5946551665?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "ABOUT DESCARTES UNDERWRITING Join Descartes and contribute to our mission: Building Resilience in a World at Risk. Descartes is a corporate insurance ...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -329,20 +343,6 @@
     "is_new": false
   },
   {
-    "id": "5938134741",
-    "title": "Responsable d'Equipe sinistres Affinitaires B2B/B2B2B HF",
-    "company": "Marsh McLennan",
-    "location": "France",
-    "url": "https://www.adzuna.fr/details/5938134741?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Company: Marsh Description: Au sein du pôle B2B / B2B2B, Marsh développe des offres et dispositifs d’assurance à destination d’entreprises et de résea...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": true
-  },
-  {
     "id": "5948200851",
     "title": "Solution Architect Workday Finance",
     "company": "Marsh McLennan",
@@ -354,7 +354,7 @@
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "5956298241",
@@ -427,40 +427,12 @@
     "is_new": false
   },
   {
-    "id": "5940652514",
-    "title": "Gestionnaire indemnisation DAB & RC - CDD H/F",
+    "id": "5970573423",
+    "title": "Gestionnaire polyvalent pôle montagne - CDD 6 mois H/F",
     "company": "WTW",
-    "location": "Le Havre, Seine-Maritime",
-    "url": "https://www.adzuna.fr/details/5940652514?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Description Le rôle Le Gestionnaire de Sinistres travaille sous la responsabilité du Responsable de service Indemnisation Il intervient sur les domain...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5953182825",
-    "title": "Gestionnaire Sinistre ADP - CDD 12 mois H/F",
-    "company": "WTW",
-    "location": "Saint-Denis-de-l'Hôtel, Orléans",
-    "url": "https://www.adzuna.fr/details/5953182825?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Description Le rôle Intégré(e) au sein du pôle Emprunteurs, vos missions seront les suivantes: Préparation et étude complète des dossiers adhésions en...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "score": 60,
-    "borderline": true,
-    "ai_unverified": true,
-    "is_new": false
-  },
-  {
-    "id": "5963946733",
-    "title": "Coordinateur d'Affaires Internationales - CDI H/F",
-    "company": "WTW",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5963946733?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Description Le rôle - Répond aux diverses questions du réseau WTW relatives aux clients et à leurs programmes d'assurance - Suit les évolutions du con...",
+    "location": "Echirolles, Grenoble",
+    "url": "https://www.adzuna.fr/details/5970573423?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Description Le rôle Au sein du Pôle Montagne de notre bureau d’Echirolles, vous gérerez administrativement les sinistres dans le cadre des garanties c...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
@@ -469,26 +441,26 @@
     "is_new": true
   },
   {
-    "id": "5954514931",
-    "title": "Gestionnaire d'immeubles - F/H",
-    "company": "ICF Habitat",
-    "location": "Drancy, Bobigny",
-    "url": "https://www.adzuna.fr/details/5954514931?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Gestionnaire d'immeubles - F/H ICF Habitat, filiale logement du groupe SNCF, est l’un des principaux opérateurs de logement en France avec près de 105...",
+    "id": "5946186043",
+    "title": "Underwriter, Casualty - SBS (SCOR Business Solutions)",
+    "company": "SCOR",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5946186043?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Underwriter, Casualty SBS (SCOR Business Solution) Job Description The Underwriter role combines technical risk assessment with commercial development...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
     "borderline": true,
     "ai_unverified": true,
-    "is_new": false
+    "is_new": true
   },
   {
-    "id": "5940665110",
-    "title": "MNA Fellow",
-    "company": "World Bank Group",
+    "id": "5946189876",
+    "title": "Operation Security Engineer",
+    "company": "SCOR",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5940665110?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "MNA Fellow Job : req38819 Organization: IFC Sector: Infrastructure Grade: EC1 Term Duration: Extended Term Consultant (ETC) Recruitment Type: Local Re...",
+    "url": "https://www.adzuna.fr/details/5946189876?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "At SCOR, we combine the Art and Science of risk to help build more resilient societies. Technology is a vital resource and partner in every step of ou...",
     "source": "Adzuna",
     "company_watch": true,
     "score": 60,
