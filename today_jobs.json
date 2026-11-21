@@ -12,39 +12,15 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/engagement-manager-en-energie-h-f-at-y%C3%A9l%C3%A9-consulting-4492736235",
-    "title": "Engagement Manager en Energie (H/F)",
-    "company": "Yélé Consulting",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/engagement-manager-en-energie-h-f-at-y%C3%A9l%C3%A9-consulting-4492736235",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-d%E2%80%99affaires-energie-environnement-f-h-at-bpifrance-4457088721",
-    "title": "Chargé d’Affaires Energie Environnement F/H",
-    "company": "Bpifrance",
-    "location": "Marseille",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-d%E2%80%99affaires-energie-environnement-f-h-at-bpifrance-4457088721",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/responsable-batiment-durable-at-soler-ide-4484074461",
-    "title": "Responsable Batiment Durable",
-    "company": "Soler IDE",
-    "location": "Nice",
-    "url": "https://fr.linkedin.com/jobs/view/responsable-batiment-durable-at-soler-ide-4484074461",
+    "id": "https://fr.linkedin.com/jobs/view/responsable-d-activit%C3%A9-solutions-%C3%A9co-mobilit%C3%A9-f-h-at-groupe-adf-4489775962",
+    "title": "Responsable d'activité - Solutions éco-mobilité F/H",
+    "company": "GROUPE ADF",
+    "location": "Aix-en-Provence",
+    "url": "https://fr.linkedin.com/jobs/view/responsable-d-activit%C3%A9-solutions-%C3%A9co-mobilit%C3%A9-f-h-at-groupe-adf-4489775962",
     "description": "",
     "source": "LinkedIn",
     "borderline": true,
-    "score": 55,
+    "score": 40,
     "is_new": false
   },
   {
@@ -60,30 +36,6 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4491009104",
-    "title": "Consultant senior - Energie F/H",
-    "company": "Yélé Consulting",
-    "location": "Nanterre",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4491009104",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 75,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/responsable-d-activit%C3%A9-solutions-%C3%A9co-mobilit%C3%A9-f-h-at-groupe-adf-4489775962",
-    "title": "Responsable d'activité - Solutions éco-mobilité F/H",
-    "company": "GROUPE ADF",
-    "location": "Aix-en-Provence",
-    "url": "https://fr.linkedin.com/jobs/view/responsable-d-activit%C3%A9-solutions-%C3%A9co-mobilit%C3%A9-f-h-at-groupe-adf-4489775962",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": true,
-    "score": 40,
-    "is_new": false
-  },
-  {
     "id": "6620506",
     "title": "Responsable prévention des risques industriels & transition bas carbone f/h (H/F)",
     "company": "N/A",
@@ -96,6 +48,18 @@
     "is_new": false
   },
   {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4493221122",
+    "title": "Consultant senior - Energie F/H",
+    "company": "Yélé Consulting",
+    "location": "Nanterre",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4493221122",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
+    "is_new": false
+  },
+  {
     "id": "https://fr.linkedin.com/jobs/view/s%C3%A9lection-de-variables-pour-la-r%C3%A9gionalisation-statistique-du-climat-destin%C3%A9e-%C3%A0-l%E2%80%99%C3%A9tude-des-risques-hydrologiques-at-inrae-4489624115",
     "title": "Sélection de variables pour la régionalisation statistique du climat destinée à l’étude des risques hydrologiques",
     "company": "INRAE",
@@ -105,6 +69,18 @@
     "source": "LinkedIn",
     "borderline": true,
     "score": 40,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-bas-carbone-cdi-f-h-at-eiffage-4466679881",
+    "title": "Chargé de mission bas carbone - CDI F/H",
+    "company": "Eiffage",
+    "location": "Vélizy-Villacoublay",
+    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-bas-carbone-cdi-f-h-at-eiffage-4466679881",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 88,
     "is_new": false
   },
   {
@@ -129,6 +105,18 @@
     "source": "France Travail",
     "borderline": false,
     "score": 95,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/engagement-manager-en-energie-h-f-at-y%C3%A9l%C3%A9-consulting-4492736235",
+    "title": "Engagement Manager en Energie (H/F)",
+    "company": "Yélé Consulting",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/engagement-manager-en-energie-h-f-at-y%C3%A9l%C3%A9-consulting-4492736235",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 75,
     "is_new": false
   },
   {
@@ -182,29 +170,16 @@
     "is_new": false
   },
   {
-    "id": "5946627260",
-    "title": "Analytics Engineer - Environmental Intelligence",
-    "company": "Carbonfact",
+    "id": "5951277482",
+    "title": "Platform & Sustainability Expert H/F",
+    "company": "Sweep",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5946627260?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "The fashion industry is responsible for 5–10% of global greenhouse gas (GHG) emissions. As climate pressure grows, fashion companies need carbon tools...",
+    "url": "https://www.adzuna.fr/details/5951277482?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "As a Platform & Sustainability Expert (P&SE) in the Delivery Team, you will help customers turn their sustainability goals into practical outcomes thr...",
     "source": "Adzuna",
     "company_watch": true,
-    "borderline": true,
-    "score": 65,
-    "is_new": false
-  },
-  {
-    "id": "5935973070",
-    "title": "Consultant Carbone Senior - German speaker - Nooco - CDI - (F/H/X)",
-    "company": "Deepki",
-    "location": "11ème Arrondissement, Paris",
-    "url": "https://www.adzuna.fr/details/5935973070?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Date de démarrage : 4 Janvier 2027 Nooco est une société française d’édition de logiciel SaaS, spécialiste de la mesure de l‘empreinte carbone des pro...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "borderline": true,
-    "score": 65,
+    "borderline": false,
+    "score": 85,
     "is_new": false
   },
   {
@@ -334,26 +309,42 @@
     "is_new": false
   },
   {
-    "id": "5951277482",
-    "title": "Platform & Sustainability Expert H/F",
-    "company": "Sweep",
+    "id": "5973461435",
+    "title": "Chef - Cheffe de Projet Adaptation au Changement Climatique du Bâtiment H/F",
+    "company": "Pouget Consultants",
     "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5951277482?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "As a Platform & Sustainability Expert (P&SE) in the Delivery Team, you will help customers turn their sustainability goals into practical outcomes thr...",
+    "url": "https://www.adzuna.fr/details/5973461435?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Dans le cadre d'une création de poste au sein du pôle Conseil dans l'équipe Etudes & prospectives composée de 9 personnes, nous recherchons un·e Chef·...",
+    "salary": "",
+    "date": "2026-11-21T04:31:54Z",
     "source": "Adzuna",
-    "company_watch": true,
     "borderline": false,
-    "score": 85,
-    "is_new": false
+    "score": 92,
+    "is_new": true
   },
   {
-    "id": "5960430827",
-    "title": "PROGRAMME MANAGEMENT OFFICER, P3",
-    "company": "UNEP - United Nations Environment Programme",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5960430827?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "This is the main content of our website. Job Network : Economic, Social and Development Job Family : Programme Management Category and Level : Profess...",
+    "id": "5973699685",
+    "title": "Chef(fe) de projet Développement Durable / RSO (H/F)",
+    "company": "UGECAM PACA et Corse",
+    "location": "Allauch, Marseille",
+    "url": "https://www.adzuna.fr/details/5973699685?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "L'UGECAM PACA et Corse recrute un(e) Chef(fe) de projet Développement Durable / RSO - UGECAM PACAC - MARSEILLE- N° 20260300, en CDI à temps plein. Au ...",
+    "salary": "37 k€",
+    "date": "2026-11-21T08:16:33Z",
     "source": "Adzuna",
+    "borderline": true,
+    "score": 55,
+    "is_new": true
+  },
+  {
+    "id": "sr-OECD-744000162740801",
+    "title": "Chef·fe adjoint·e du Secrétariat de la CEM – Réunion ministérielle sur les énergies propres",
+    "company": "OECD",
+    "location": "Paris, Île-de-France Region, fr",
+    "url": "https://jobs.smartrecruiters.com/OECD/744000162740801",
+    "description": "",
+    "date": "2026-11-20",
+    "source": "SmartRecruiters",
     "company_watch": true,
     "borderline": true,
     "score": 55,
