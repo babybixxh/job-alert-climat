@@ -1,137 +1,4 @@
 {
-  "business analyst technique (h/f)|1g-link": {
-    "keep": false,
-    "reason": "Poste hors climat/durabilité (finance de marché)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "safety assessor|l'oréal": {
-    "keep": false,
-    "reason": "SAFETY ASSESSOR : sécurité produit, hors scope.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "cdi - référent résilience numérique (h/f)|hermès": {
-    "keep": false,
-    "reason": "Référent résilience numérique chez Hermès. Poste hors climat (résilience numérique). Lieu Pantin.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "safety assessor|station f": {
-    "keep": false,
-    "reason": "SAFETY ASSESSOR : sécurité produit, hors scope.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "chargé(e) développement outils crise h/f|asnr - autorité de sûreté nucléaire et de radioprotection": {
-    "keep": false,
-    "reason": "Chargé(e) Développement Outils Crise : nucléaire/sûreté, hors scope.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "expert gestion de crise et anticipation (f/h)|axa en france": {
-    "keep": false,
-    "reason": "Titre 'Expert gestion de crise' sans lien climat/stratégie",
-    "borderline": false,
-    "score": 0,
-    "v": 8
-  },
-  "cdi - expert surete groupe h/f|hermès": {
-    "keep": false,
-    "reason": "EXPERT SURETE GROUPE : sûreté industrielle, hors scope.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "ai ux researcher (f/h)|thales": {
-    "keep": false,
-    "reason": "AI UX Researcher (Thales). Poste technique pur (IA), sans lien climat.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "chargé développement produit destination h/f|ponant": {
-    "keep": false,
-    "reason": "Titre 'Chargé Développement Produit Destination' sans lien climat/stratégie",
-    "borderline": false,
-    "score": 0,
-    "v": 8
-  },
-  "navigateur h/f|armée de l’air et de l’espace": {
-    "keep": false,
-    "reason": "Navigateur : armée, hors scope.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "auditeur bio en productions agricoles - dpt 84 (h/f)|groupe ecocert": {
-    "keep": false,
-    "reason": "Titre 'Auditeur Bio' sans lien climat/stratégie ou conseil/stratégie senior",
-    "borderline": false,
-    "score": 0,
-    "v": 8
-  },
-  "animateur territorial|cfa rap paca": {
-    "keep": false,
-    "reason": "Titre 'Animateur territorial' sans lien climat/stratégie senior",
-    "borderline": false,
-    "score": 0,
-    "v": 8
-  },
-  "chef(fe) de secteur gms - nice|la vie™": {
-    "keep": false,
-    "reason": "hors domaine climat/durabilité (chef de secteur)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "chef.fe de projet bâtiment, énergie et décarbonation (h/f)|cedrus solutions": {
-    "keep": false,
-    "reason": "Chef de projet bâtiment énergie, hors climat/stratégie (décarbonation mais trop générique)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "chef de projet ops|ecair": {
-    "keep": false,
-    "reason": "Titre trop générique ('Ops') sans lien explicite avec le climat ou la durabilité. Pas de preuve de contenu stratégique ou conseil.",
-    "borderline": false,
-    "score": 0,
-    "v": 8
-  },
-  "responsable département performance environnementale h/f|dalkia": {
-    "keep": false,
-    "reason": "Responsable performance environnementale industriel (QSE) sans focus climat/décarbonation stratégique",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
-  "ingénieur(e) ou expert(e) en décarbonation des procédés industriels (h/f)|ynergie": {
-    "keep": true,
-    "reason": "Ingénieur expert décarbonation des procédés industriels (poste interne climat stratégique)",
-    "borderline": false,
-    "score": 95,
-    "v": 10
-  },
-  "responsable offres stockage (bess) h/f|imagreen": {
-    "keep": false,
-    "reason": "Responsable offres stockage BESS, hors climat/stratégie",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "ingénieur.e généraliste|rhône energies": {
-    "keep": false,
-    "reason": "Ingénieur généraliste terrain sans lien avec le climat ou la stratégie.",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
   "chef de projet avant-vente (oil&gas) f/h|groupe adf": {
     "keep": false,
     "reason": "Chef de projet avant-vente oil&gas : commercial technique, pas climat/stratégie",
@@ -20995,6 +20862,139 @@
   "senior business analyst - m&a (100% remote worldwide)|tether operations limited": {
     "keep": false,
     "reason": "Business Analyst M&A : finance, sans lien climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "responsable de projets, référent.e transition énergétique et innovation|réunir": {
+    "keep": true,
+    "reason": "Responsable de projets transition énergétique et innovation à Paris : angle énergie/climat plausible mais peu de détails, ne ressemble pas clairement à du conseil climat senior",
+    "borderline": true,
+    "score": 55,
+    "v": 10
+  },
+  "cifre migrations climatiques f/h|afd - agence française de développement": {
+    "keep": false,
+    "reason": "CIFRE = thèse doctorale (type PhD/recherche), pas un poste de consultant ; hors profil",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chef(fe) de projet – conseil en transition environnementale d’entreprises f/h|naldeo strategies publiques": {
+    "keep": true,
+    "reason": "Chef de projet conseil en transition environnementale d'entreprises chez Naldeo (« excellence technique au service du climat ») : conseil climat, profil ingénieur + conseil carbone",
+    "borderline": false,
+    "score": 88,
+    "v": 10
+  },
+  "pilotage des conséquences du changement climatique dans les politiques de se|agence régionale de santé (ars) île-de-france": {
+    "keep": true,
+    "reason": "Pilotage des conséquences du changement climatique dans les politiques de santé-environnement à l'ARS : adaptation/climat en établissement public, mais localisé en Île-de-France et niveau/contenu incertain",
+    "borderline": true,
+    "score": 50,
+    "v": 10
+  },
+  "expert buyer energy (m/f)|renault group": {
+    "keep": false,
+    "reason": "Achats (Expert Buyer Energy) : rejet absolu",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "reporting réglementaire esg - taxonomie européenne h/f|huxley": {
+    "keep": false,
+    "reason": "Reporting réglementaire ESG/taxonomie : compliance/reporting sans dimension conseil climat stratégique, mission en assurance, proche RSE reporting rejetée",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "responsable sécurité et environnement - site icpe|capsum": {
+    "keep": false,
+    "reason": "Responsable Sécurité et Environnement site ICPE : HSE terrain/industriel, pas climat stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "consultant(e) sales rewards h/f|marsh mclennan": {
+    "keep": false,
+    "reason": "Consultant Sales Rewards (rémunération) : sans lien avec le climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "développeur sql h/f - cdi|marsh mclennan": {
+    "keep": false,
+    "reason": "Développeur SQL : dev logiciel pur, sans lien climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "gestionnaire sinistre adp - cdd 12 mois h/f|wtw": {
+    "keep": false,
+    "reason": "Gestionnaire sinistre assurance emprunteurs : back-office, sans lien climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "stagiaire category manager enseigne (h/f)|groupe savencia": {
+    "keep": false,
+    "reason": "Stage Category Manager : stage et hors sujet climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "conseiller laitier h/f|sodiaal": {
+    "keep": false,
+    "reason": "Conseiller laitier : poste terrain agricole, sans dimension climat stratégique",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "stagiaire performance - projet matieres h/f|sodiaal": {
+    "keep": false,
+    "reason": "Stage performance matières : stage, hors climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chargé(e) d'études au sein de l'équipe du projet sepia (sécurité des piétons âgés)|cerema": {
+    "keep": false,
+    "reason": "Chargé d'études sécurité des piétons âgés : sécurité routière, sans lien climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "cdd 6 mois - idf - gestionnaire de dossiers de surendettement h/f|banque de france": {
+    "keep": false,
+    "reason": "Gestionnaire de dossiers de surendettement CDD : sans lien climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "senior finance manager (m/w/d)|start to finish consulting gmbh": {
+    "keep": false,
+    "reason": "Senior Finance Manager à Berlin : finance, hors profil",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "engineering manager eu/uk (m/f/x)|makersite gmbh": {
+    "keep": false,
+    "reason": "Engineering Manager : management de dev logiciel, rejet même si éditeur lié à la durabilité produit",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "senior data scientist - research eu/uk (m/f/x)|makersite gmbh": {
+    "keep": false,
+    "reason": "Senior Data Scientist : data scientist/ML = dev pur rejeté",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "solutions engineer, veeam data cloud vault|veeamsoftware": {
+    "keep": false,
+    "reason": "Solutions Engineer pour Veeam (backup/data cloud) : pas de lien climat",
     "borderline": false,
     "score": 0,
     "v": 10
