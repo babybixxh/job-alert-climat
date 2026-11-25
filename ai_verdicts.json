@@ -1,137 +1,4 @@
 {
-  "responsable transformation & conduite du changement f/h|orano": {
-    "keep": false,
-    "reason": "Titre générique 'transformation & conduite du changement' sans lien climat/durabilité",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "consultant - business transformation|sia": {
-    "keep": false,
-    "reason": "Transition Manager : poste trop haut (Manager) et sans lien climat.",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
-  "managing consultante/consultant - conduite du changement / change management|capgemini invent": {
-    "keep": false,
-    "reason": "Titre générique 'Conduite du changement' sans lien climat/durabilité",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "téléconseiller h/f|upsadi - union des prestataires de santé à domicile indépendants": {
-    "keep": false,
-    "reason": "Poste de téléconseiller hors cible climat/durabilité",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "consultant senior salesforce & change management (f/h) - marseille|helpline": {
-    "keep": false,
-    "reason": "Poste Salesforce & Change Management sans lien climat/durabilité",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "responsable projets digital & transformation h/f - groupe piment|aerocontact.com": {
-    "keep": false,
-    "reason": "Poste 'Responsable Projets Digital & Transformation' sans lien climat/durabilité",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "consultant logistique – mission|matches - executive search & management de transition": {
-    "keep": false,
-    "reason": "Poste 'logistique' sans lien climat/durabilité",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "cdi - ems - support de gestion des processus / business process management support f/h|stmicroelectronics france": {
-    "keep": false,
-    "reason": "Poste 'Support de gestion des processus' sans lien climat/durabilité",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "consultant fonctionnel médical - f/h|groupe softway medical": {
-    "keep": false,
-    "reason": "Poste 'Fonctionnel Médical' sans lien climat/durabilité",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "consultant amoa / business analyst confirmé sur les moyens de paiement / instant payment h/f|open": {
-    "keep": false,
-    "reason": "Poste 'AMOA / Business Analyst' sans lien climat/durabilité",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "business analyst - paris, france (h/f)|astek": {
-    "keep": false,
-    "reason": "Poste 'Business Analyst' sans lien climat/durabilité",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "business analyst finance de marché h/f|delane si": {
-    "keep": false,
-    "reason": "Poste hors climat/durabilité (finance de marché)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "architecte solutions logiciels (h/f)|innova solutions": {
-    "keep": false,
-    "reason": "Poste hors climat/durabilité (architecture logicielle)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "analyste m et a h/f|baker tilly france": {
-    "keep": false,
-    "reason": "Poste hors climat/durabilité (M&A)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "analyste rgm|mcdonald's": {
-    "keep": false,
-    "reason": "Poste hors climat/durabilité (RGM)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "manager risk banking h/f|accenture france": {
-    "keep": false,
-    "reason": "Poste hors climat/durabilité (risk banking)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "chef de projet si / scrum master gcp – safe (h/f)|celad-paris": {
-    "keep": false,
-    "reason": "Poste hors climat/durabilité (chef de projet SI)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "chef de projet / scrum master f/h|finance and accounting operations consulting": {
-    "keep": false,
-    "reason": "Poste hors climat/durabilité (chef de projet SI)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "chef de projet si / scrum master gcp – safe (h/f) - cdi|collective.work": {
-    "keep": false,
-    "reason": "Poste hors climat/durabilité (chef de projet SI)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
   "data scientist senior|ccr - caisse centrale de réassurance": {
     "keep": true,
     "reason": "Data Scientist Senior chez CCR (réassurance) avec focus risques climatiques extrêmes, correspond au profil risque climatique/résilience",
@@ -20995,6 +20862,139 @@
   "customer success manager (m/w/d) - 100% remote|provipanda gmbh": {
     "keep": false,
     "reason": "Customer Success Manager dans une app RH/vente (HR-Tech) en Allemagne : produit non climat, hors liste climate-tech.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chef de projet transformation – conduite du changement, méthodes & esg / transformation project manager – change management, methods & esg (h/f)|baudouin": {
+    "keep": false,
+    "reason": "Transformation/conduite du changement avec ESG en annexe, pas centré climat ; proche des offres rejetées",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "consultant.e carbone - senior|orki": {
+    "keep": true,
+    "reason": "Consultant carbone senior à Paris, conseil climat/carbone, cœur de profil",
+    "borderline": false,
+    "score": 88,
+    "v": 10
+  },
+  "chargé d'affaires sites et sols pollués f/h - ecr environnement aix en provence|ecr environnement aix en provence": {
+    "keep": false,
+    "reason": "Sites et sols pollués : poste technique/terrain, pas climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "consultant(e) stagiaire - pôle transitions / transformations|cmi": {
+    "keep": false,
+    "reason": "Stage",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chargé(e) de mission risques naturels – dominantes climatiques|ministere interieur": {
+    "keep": true,
+    "reason": "Chargé de mission risques naturels à dominante climatique (adaptation, risque physique) en administration d'État ; Paris, fonction publique, niveau catégorie A plausible",
+    "borderline": true,
+    "score": 62,
+    "v": 10
+  },
+  "ingénieur-e modélisation climatique f/h|safran": {
+    "keep": false,
+    "reason": "Modélisation climatique chez Safran à Réau (hors zone), axe ingénierie aéronautique, pas conseil/stratégie climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chercheur/e (postdoctorant/e) en modélisation du climat (h/f)|cnrs": {
+    "keep": false,
+    "reason": "Postdoc de recherche : PhD requis, hors cible",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "poseur de climatisation (h/f)|groupe dlsi": {
+    "keep": false,
+    "reason": "Poseur de climatisation : technicien/chantier",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "customer success associate h/f|sweep": {
+    "keep": true,
+    "reason": "Customer Success chez Sweep (entreprise ciblée), rôle de la liste fermée ; poste Associate un peu junior",
+    "borderline": false,
+    "score": 72,
+    "v": 10
+  },
+  "sap business modules functional consultant f/h|afd technologies": {
+    "keep": false,
+    "reason": "Consultant SAP, sans lien avec le climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "mécanicien vl et pl h/f|terrena": {
+    "keep": false,
+    "reason": "Mécanicien : poste technique",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "ingénieur(e) énergie et performance du patrimoine immobilier (energy manager)|fonction publique": {
+    "keep": true,
+    "reason": "Energy manager patrimoine immobilier à Marseille (fonction publique), transition énergétique en collectivité ; plus technique que stratégique",
+    "borderline": true,
+    "score": 58,
+    "v": 10
+  },
+  "business development manager - new customer acquisition|signode": {
+    "keep": false,
+    "reason": "Business development commercial pur sans lien climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "detection & security automation engineer (m/w/d)|virtual7 gmbh": {
+    "keep": false,
+    "reason": "Ingénieur sécurité IT, sans lien climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "internal communications co-ordinator - temporary|oecd": {
+    "keep": false,
+    "reason": "Communication interne temporaire, hors cible",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "transport policy analysts|oecd": {
+    "keep": true,
+    "reason": "Analyste politiques de transport à l'OCDE (entreprise ciblée) ; lien climat/décarbonation du transport probable mais non confirmé",
+    "borderline": true,
+    "score": 55,
+    "v": 10
+  },
+  "analystes des politiques de transport|oecd": {
+    "keep": true,
+    "reason": "Version française du poste d'analyste des politiques de transport à l'OCDE ; angle climat à vérifier",
+    "borderline": true,
+    "score": 55,
+    "v": 10
+  },
+  "analyste des politiques|oecd": {
+    "keep": false,
+    "reason": "Analyste des politiques générique sans lien climat explicite",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "policy analyst|oecd": {
+    "keep": false,
+    "reason": "Policy Analyst générique sans lien climat explicite",
     "borderline": false,
     "score": 0,
     "v": 10
