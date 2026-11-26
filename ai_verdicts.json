@@ -1,151 +1,4 @@
 {
-  "data scientist senior|ccr - caisse centrale de réassurance": {
-    "keep": true,
-    "reason": "Data Scientist Senior chez CCR (réassurance) avec focus risques climatiques extrêmes, correspond au profil risque climatique/résilience",
-    "borderline": false,
-    "score": 75,
-    "v": 9
-  },
-  "chargé(e) d'affaires protection de l'environnement h/f|asnr - autorité de sûreté nucléaire et de radioprotection": {
-    "keep": false,
-    "reason": "Poste lié au nucléaire (ASNR), hors zone d'intérêt climat/transition écologique stratégique.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "responsable opérationnel etudes et risques environnementaux (f-h-x)|bureau veritas": {
-    "keep": false,
-    "reason": "Responsable opérationnel risques environnementaux (Bureau Veritas), hors conseil/stratégie climat.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "coordonnateur hygiène-sécurité-environnement/coordonnatrice hygiène-sécurité-environnement|randstad france": {
-    "keep": false,
-    "reason": "Coordonnateur HSE (Randstad), hors climat/stratégie bas-carbone.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "ingénieure / ingénieur hydrogéologue f/h|edf": {
-    "keep": false,
-    "reason": "Ingénieure hydrogéologue (EDF), poste technique hors conseil/stratégie climat.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "project manager, european projects|sdsn association": {
-    "keep": true,
-    "reason": "Project Manager European Projects (SDSN) : ONG/think tank influent, missions climatiques stratégiques (ONU/SDSN). Poste senior, aligné sur l'expatriation possible.",
-    "borderline": false,
-    "score": 85,
-    "v": 9
-  },
-  "chef.fe de projets amo|arp astrance": {
-    "keep": true,
-    "reason": "Chef·fe de projets AMO immobilier : lien possible avec transition écologique (immobilier durable), mais description trop générique pour confirmer. À évaluer en entretien.",
-    "borderline": true,
-    "score": 50,
-    "v": 10
-  },
-  "project manager h/f|cea": {
-    "keep": false,
-    "reason": "Project manager (CEA), hors climat/stratégie bas-carbone.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "sub-saharan africa program coordinator – temporary|oecd-ocde": {
-    "keep": true,
-    "reason": "Sub-Saharan Africa Program Coordinator (OECD) : institution internationale, missions climatiques stratégiques (expatriation possible).",
-    "borderline": false,
-    "score": 90,
-    "v": 9
-  },
-  "chargé de mission \"leasing social 2026\" f/h|ademe": {
-    "keep": true,
-    "reason": "Chargé de mission Leasing Social (ADEME) : agence publique, missions climat/transition écologique.",
-    "borderline": false,
-    "score": 80,
-    "v": 9
-  },
-  "charge de programmes desk afrique - haiti h/f|secours islamique france": {
-    "keep": false,
-    "reason": "Chargé de programmes (Secours Islamique France), hors climat/stratégie bas-carbone.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "consultant(e) stagiaire en adaptation au changement climatique (f/h/x)|ramboll": {
-    "keep": false,
-    "reason": "Consultant stagiaire en adaptation climatique (Ramboll), poste junior.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "responsable agronomie et innovation maraîchère f/h|domaine du moulin": {
-    "keep": false,
-    "reason": "Responsable agronomie et innovation maraîchère (Domaine du Moulin), poste technique agricole.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "senior consultant - risk & resilience|mckinsey & company": {
-    "keep": false,
-    "reason": "Senior Consultant Risk & Resilience (McKinsey), poste trop haut (Head of niveau implicite).",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "barclays europe controls governance & esg|barclays": {
-    "keep": false,
-    "reason": "Poste de gouvernance ESG dans une banque (Barclays). Trop orienté contrôle/risque interne, pas de lien direct avec conseil climat stratégique.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "expert investissement responsable et indicateurs esg h/f|cnp assurances": {
-    "keep": false,
-    "reason": "Expert investissement responsable (CNP Assurances). Poste financier/ESG générique, pas de focus climat stratégique ou conseil.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "credit risk analyst|national bank of kuwait — france": {
-    "keep": false,
-    "reason": "Credit Risk Analyst (banque). Poste financier pur, sans lien avec climat ou transition.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "business analyst (f/h)|sii group canada": {
-    "keep": false,
-    "reason": "Business Analyst (SII Group Canada). Poste technique/financier, sans lien climat.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "group insurance officer|cma cgm": {
-    "keep": false,
-    "reason": "Group Insurance Officer (assurance), hors climat.",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
-  "consultant grc confirmé - (h/f)|airbus protect": {
-    "keep": false,
-    "reason": "Consultant GRC Confirmé (Airbus Protect). Poste risque/contrôle générique, sans focus climat.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "field application specialist - south of france|thermo fisher scientific": {
-    "keep": false,
-    "reason": "Field Application Specialist (Thermo Fisher). Poste technique terrain, sans lien climat.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
   "expert senior finance verte|ntu international a/s": {
     "keep": false,
     "reason": "Expert Senior Finance Verte (NTU International). Poste financier pur (finance verte), sans focus conseil climat.",
@@ -7274,10 +7127,10 @@
   },
   "mécanicien sertisseur - secteur maintenance sertisseuses h/f|bonduelle": {
     "keep": false,
-    "reason": "Poste technique terrain (mécanicien) — hors scope.",
+    "reason": "Mécanicien maintenance, poste technicien",
     "borderline": false,
     "score": 0,
-    "v": 9
+    "v": 10
   },
   "presales solution consultant|hitachi energy": {
     "keep": false,
@@ -20995,6 +20848,153 @@
   "policy analyst|oecd": {
     "keep": false,
     "reason": "Policy Analyst générique sans lien climat explicite",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "consulting - consultant conduite du changement - energie & industrie - paris h/f|talan": {
+    "keep": false,
+    "reason": "Conduite du changement énergie/industrie, pas de dimension climat stratégique",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "ingénieure/ingénieur chercheur décarbonation des bâtiments f/h|edf": {
+    "keep": false,
+    "reason": "Ingénieur chercheur R&D EDF à Souppes-sur-Loing, hors zone et orienté recherche technique",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chercheur h/f postdoctoral en chimie des produits naturels et intelligence artificielle|centre lasers intenses et applications": {
+    "keep": false,
+    "reason": "Postdoc chimie/IA, hors profil et exige un doctorat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "ecologue fauniste paris 75 ou villeneuve d'asq 59 h/f|systra": {
+    "keep": false,
+    "reason": "Écologue faune, poste terrain/biodiversité, hors profil climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "ingénieur(e) énergie et performance du patrimoine immobilier (energy manager)|choisir le service public": {
+    "keep": true,
+    "reason": "Energy manager patrimoine en établissement public à Marseille/Allauch, transition énergétique, plutôt technique mais dans la zone et l'élargissement public",
+    "borderline": true,
+    "score": 50,
+    "v": 10
+  },
+  "ingénieur environnement en moa (h/f)|agap2": {
+    "keep": false,
+    "reason": "Ingénieur environnement MOA, projet/chantier sans angle climat explicite",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chargé de performance énergétique saint-denis 93 f/h|eiffage énergie systèmes": {
+    "keep": false,
+    "reason": "Performance énergétique technique à Saint-Denis, hors Paris conseil/stratégie climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "ingénieur d'études environnement h/f|bee engineering": {
+    "keep": false,
+    "reason": "Ingénieur d'études environnement (réglementaire/études), sans dimension climat claire",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "responsable marketing digital - energie h/f|centurion search | cabinet de recrutement": {
+    "keep": false,
+    "reason": "Marketing digital, rejet absolu",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "responsable de projets esg f/h|la banque postale": {
+    "keep": false,
+    "reason": "ESG banque, reporting/RSE générique à Paris sans dominante climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chef de projet energie f/h|fnac darty": {
+    "keep": false,
+    "reason": "Chef de projet énergie retail à Paris, plutôt efficacité énergétique/opérations, pas décarbonation explicite",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "amo environnement – ferroviaire (h/f)|oxiam": {
+    "keep": false,
+    "reason": "AMO environnement ferroviaire, projet/chantier sans angle climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "responsable environnement animal nutrition and health emeai h/f|cargill": {
+    "keep": true,
+    "reason": "Responsable Environnement agroalimentaire (Cargill ANH) à Paris, potentiel durabilité/climat agro, mais dominante climat à confirmer",
+    "borderline": true,
+    "score": 55,
+    "v": 10
+  },
+  "esg coordinator f/h|knds france": {
+    "keep": false,
+    "reason": "ESG coordinator à Versailles, RSE/reporting générique hors zone",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "strategic projects senior - industrial and specialty risks h/f|descartes underwriting": {
+    "keep": true,
+    "reason": "Descartes, entreprise ciblée, risque climatique/assurance paramétrique; poste « Strategic Projects Senior » hors liste fermée mais proche du sweet spot, niveau à vérifier",
+    "borderline": true,
+    "score": 60,
+    "v": 10
+  },
+  "conseiller technico commercial agroequipement f/h|sodiaal": {
+    "keep": false,
+    "reason": "Technico-commercial agroéquipement, commercial sans lien climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "analyste d’entreprises (h/f)|banque de france": {
+    "keep": false,
+    "reason": "Stage, rejet absolu",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "m365 engineer (m/w/d), 100 % remote|kigen it-systemhaus": {
+    "keep": false,
+    "reason": "Ingénieur IT M365, hors profil",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "geschäftsführung (m/w/d) | e-sport & gaming|inkuplay ug (haftungsbeschränkt)": {
+    "keep": false,
+    "reason": "Direction e-sport, hors profil",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "founder’s associate (m/w/d)|provipanda gmbh": {
+    "keep": false,
+    "reason": "Founder's Associate dans une startup HR-Tech à Berlin/Hambourg : aucun lien avec le climat ou la durabilité, hors zone.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "senior fp&a expert - financial task design and evaluation|lightly ag": {
+    "keep": false,
+    "reason": "Senior FP&A Expert (finance) dans une entreprise d'IA à Zurich : poste finance/comptabilité sans lien avec le climat, hors zone.",
     "borderline": false,
     "score": 0,
     "v": 10
