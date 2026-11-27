@@ -1,123 +1,4 @@
 {
-  "expert senior finance verte|ntu international a/s": {
-    "keep": false,
-    "reason": "Expert Senior Finance Verte (NTU International). Poste financier pur (finance verte), sans focus conseil climat.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "expert senior finances publiques / budgétisation verte|ntu international a/s": {
-    "keep": false,
-    "reason": "Expert Senior Finances Publiques / Budgétisation Verte (NTU International). Poste administratif/financier, sans lien conseil climat.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "expert senior économiste / financier|ntu international a/s": {
-    "keep": false,
-    "reason": "Expert Senior Économiste / Financier (NTU International). Poste financier pur, sans focus climat.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "analyste financier.ère h/f|boralex": {
-    "keep": false,
-    "reason": "Analyste financier (Boralex). Poste financier, sans lien climat.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "charge(e) d'investissements-analyses financieres- enr (bess&pv) (f/h)|reden": {
-    "keep": false,
-    "reason": "Chargé d'investissements-analyses financières ENR (REDEN). Poste financier/investissement, sans focus conseil climat.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "client sustainable investing manager (f/h) - nimi|natixis investment managers": {
-    "keep": false,
-    "reason": "Poste en finance/investissement durable sans lien climat/stratégie",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
-  "private credit investment associate|eiffel investment group": {
-    "keep": false,
-    "reason": "Private Credit Investment Associate (Eiffel IM). Poste financier pur, sans lien climat.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "regional industry manager, infrastructure, europe - req37823|ifc - international finance corporation": {
-    "keep": true,
-    "reason": "Regional Industry Manager - Infrastructure (IFC). Poste senior en stratégie climat/investissement climatique à Paris. Aligné sur l'expatriation dans les institutions internationales.",
-    "borderline": false,
-    "score": 85,
-    "v": 9
-  },
-  "trésorier groupe - h/f|cve (changeons notre vision de l'energie)": {
-    "keep": false,
-    "reason": "Trésorier Groupe (CVE). Poste financier pur, sans lien climat.",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "manager customer, project and structured finance (f/h)|airbus helicopters": {
-    "keep": false,
-    "reason": "hors domaine climat/stratégie (finance structurée)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "chargé de missions investissements et financements emprunts h/f|provence métropole logement": {
-    "keep": false,
-    "reason": "hors domaine climat/stratégie (financement logement)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "contrôleur de gestion h/f|irisolaris groupe": {
-    "keep": false,
-    "reason": "hors domaine climat/stratégie (contrôle de gestion)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "business analyst - agile - energy & utilities - île-de-france (h/f)|n/a": {
-    "keep": false,
-    "reason": "Titre trop générique (Business Analyst) sans lien explicite avec le climat/énergie stratégique.",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
-  "renewable energy analyst|store2hydro": {
-    "keep": false,
-    "reason": "hors domaine climat/stratégie (analyste énergies renouvelables trop générique)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "chargé.e de partenariats énergies renouvelables|hello watt": {
-    "keep": false,
-    "reason": "hors domaine climat/stratégie (partenariats énergies renouvelables)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "ingénieur efficacité energétique|ocely": {
-    "keep": false,
-    "reason": "Ingénieur efficacité énergétique : technique/terrain, hors stratégie climat.",
-    "borderline": false,
-    "score": 0,
-    "v": 10
-  },
-  "cdi - consultant.e transport, infrastructure, manufacturing & energie|wavestone": {
-    "keep": false,
-    "reason": "hors domaine climat/stratégie (consultant transport/industrie générique)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
   "ingénieur en performance énergétique f/h|knds france": {
     "keep": false,
     "reason": "hors domaine climat/stratégie (performance énergétique technique)",
@@ -708,10 +589,10 @@
   },
   "produktmanager (m/w/d) in hamburg oder remote|demv systems gmbh": {
     "keep": false,
-    "reason": "hors sujet (produit logiciel non climat)",
+    "reason": "Product manager pour courtiers en assurance à Hambourg : sans lien climat, en allemand",
     "borderline": false,
     "score": 0,
-    "v": 9
+    "v": 10
   },
   "senior business analyst (credit technology)|icap energy as": {
     "keep": false,
@@ -20995,6 +20876,125 @@
   "senior fp&a expert - financial task design and evaluation|lightly ag": {
     "keep": false,
     "reason": "Senior FP&A Expert (finance) dans une entreprise d'IA à Zurich : poste finance/comptabilité sans lien avec le climat, hors zone.",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "forward deployed engineer – supply chain & sustainability|co2 ai": {
+    "keep": true,
+    "reason": "Forward Deployed Engineer supply chain & sustainability chez CO2 AI : rôle hybride déploiement/solutions climat-carbone, proche d'un Solutions Engineer, mais risque de dimension code",
+    "borderline": true,
+    "score": 55,
+    "v": 10
+  },
+  "consultant senior industrie - eau, energie et carbone (cdi) - hf - paris 9e|greenflex": {
+    "keep": true,
+    "reason": "Consultant senior eau, énergie et carbone chez GreenFlex à Paris : conseil climat/carbone senior en cabinet reconnu",
+    "borderline": false,
+    "score": 80,
+    "v": 10
+  },
+  "sustainability analyst|workfully": {
+    "keep": false,
+    "reason": "Sustainability Analyst chez workfully : description absente, probablement ESG/reporting générique et niveau peu clair",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "consultant(e) expérimenté / manager – transformation agile | energy & utilities f/h|cgi business consulting": {
+    "keep": false,
+    "reason": "Transformation agile Energy & Utilities : conseil en transformation sans dimension climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chargé de mission rse – environnement & transition ecologique h/f|stelliant": {
+    "keep": false,
+    "reason": "Chargé de mission RSE à Puteaux (Île-de-France) : RSE générique, hors zone et hors profil",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chef de projet eau et climat (h/f)|syndicat mixte du bassin des sorgues • smbs": {
+    "keep": true,
+    "reason": "Chef de projet eau et climat dans un syndicat mixte (établissement public) en Vaucluse/PACA : adaptation et climat en zone prioritaire, mais localité excentrée et niveau à vérifier",
+    "borderline": true,
+    "score": 50,
+    "v": 10
+  },
+  "chargé.e de projets et partenariats internationaux, axe écologie intégrale h/f|secours catholique-caritas france": {
+    "keep": false,
+    "reason": "Partenariats internationaux d'une ONG à Paris, écologie intégrale : pas conseil/stratégie climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "consultant en transformation digitale l'energies et utilities h/f|mc2i": {
+    "keep": false,
+    "reason": "Transformation digitale Energies & Utilities : conseil IT/digital sans dimension climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chef de projet stratégie patrimoniale en charge des questions énergétiques h/f|hlm": {
+    "keep": false,
+    "reason": "Stratégie patrimoniale logement social à Paris, questions énergétiques : poste immobilier, pas conseil/stratégie climat ni décarbonation explicite",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chercheur post-doctorant (h/f) chercheur postdoctorant (h/f) : catalyseurs encagés à base de peptides comme modèles de l'anhydrase carbonique|centre lasers intenses et applications": {
+    "keep": false,
+    "reason": "Post-doctorat en chimie : PhD requis, recherche fondamentale",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "senior product manager h/f|ecovadis": {
+    "keep": true,
+    "reason": "Senior Product Manager chez EcoVadis (entreprise ciblée, plateforme ESG) : rôle Product Manager dans la liste, mais produit ESG plus que climat et séniorité Senior à surveiller",
+    "borderline": true,
+    "score": 62,
+    "v": 10
+  },
+  "responsable applications h/f|howden": {
+    "keep": false,
+    "reason": "Responsable Applications informatiques chez Howden : IT, sans lien climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "responsable sécurité et environnement (f/h)|terrena": {
+    "keep": false,
+    "reason": "Responsable Sécurité et Environnement à Angers : HSE industriel, hors zone, pas climat/décarbonation stratégique",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chef.fe de projet archives|cerema": {
+    "keep": false,
+    "reason": "Chef de projet Archives au CEREMA, Lyon : archivage, sans lien climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "juriste assurance - h/f|banque de france": {
+    "keep": false,
+    "reason": "Juriste assurance à la Banque de France : juridique, sans lien climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "conseiller·ère en insertion professionnelle - frip'insertion - marseille|fripinsertion": {
+    "keep": false,
+    "reason": "Conseiller en insertion professionnelle : hors profil",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "ai research engineer (multi-modal agents)|tether operations limited": {
+    "keep": false,
+    "reason": "AI Research Engineer chez Tether : poste de dev/ML pur, sans lien climat",
     "borderline": false,
     "score": 0,
     "v": 10
