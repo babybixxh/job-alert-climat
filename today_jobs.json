@@ -1,41 +1,5 @@
 [
   {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-e-carbone-senior-at-orki-4494905782",
-    "title": "Consultant.e carbone - Senior",
-    "company": "Orki",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-e-carbone-senior-at-orki-4494905782",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 88,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-d%C3%A9carbonation-du-num%C3%A9rique-h-f-at-davidson-consulting-4183122301",
-    "title": "Consultant Senior Décarbonation du Numérique (H/F)",
-    "company": "Davidson consulting",
-    "location": "Île-de-France, France",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-d%C3%A9carbonation-du-num%C3%A9rique-h-f-at-davidson-consulting-4183122301",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 82,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-e-senior-energie-at-colombus-consulting-4366860952",
-    "title": "Consultant.e Senior - Energie",
-    "company": "Colombus Consulting",
-    "location": "Paris",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-e-senior-energie-at-colombus-consulting-4366860952",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 78,
-    "is_new": false
-  },
-  {
     "id": "https://fr.linkedin.com/jobs/view/responsable-adaptation-climatique-r%C3%A9silience-h-f-at-ortec-group-4478778581",
     "title": "Responsable Adaptation Climatique & Résilience H/F",
     "company": "Ortec Group",
@@ -60,15 +24,63 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4493221122",
+    "id": "https://fr.linkedin.com/jobs/view/consultant-e-senior-energie-at-colombus-consulting-4366860952",
+    "title": "Consultant.e Senior - Energie",
+    "company": "Colombus Consulting",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-e-senior-energie-at-colombus-consulting-4366860952",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 78,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-e-carbone-senior-at-orki-4494905782",
+    "title": "Consultant.e carbone - Senior",
+    "company": "Orki",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-e-carbone-senior-at-orki-4494905782",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 88,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-industrie-eau-energie-et-carbone-cdi-hf-paris-9e-at-greenflex-4495097724",
+    "title": "Consultant senior Industrie - Eau, Energie et carbone (CDI) - HF - Paris 9e",
+    "company": "GreenFlex",
+    "location": "Ville de Paris",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-industrie-eau-energie-et-carbone-cdi-hf-paris-9e-at-greenflex-4495097724",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 80,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4495883824",
     "title": "Consultant senior - Energie F/H",
     "company": "Yélé Consulting",
-    "location": "Paris et périphérie",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4493221122",
+    "location": "Nanterre",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-energie-f-h-at-y%C3%A9l%C3%A9-consulting-4495883824",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
     "score": 75,
+    "is_new": false
+  },
+  {
+    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-d%C3%A9carbonation-du-num%C3%A9rique-h-f-at-davidson-consulting-4183122301",
+    "title": "Consultant Senior Décarbonation du Numérique (H/F)",
+    "company": "Davidson consulting",
+    "location": "Île-de-France, France",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-d%C3%A9carbonation-du-num%C3%A9rique-h-f-at-davidson-consulting-4183122301",
+    "description": "",
+    "source": "LinkedIn",
+    "borderline": false,
+    "score": 82,
     "is_new": false
   },
   {
@@ -107,30 +119,6 @@
     "source": "LinkedIn",
     "borderline": false,
     "score": 72,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-bas-carbone-cdi-f-h-at-eiffage-4466679881",
-    "title": "Chargé de mission bas carbone - CDI F/H",
-    "company": "Eiffage",
-    "location": "Vélizy-Villacoublay",
-    "url": "https://fr.linkedin.com/jobs/view/charg%C3%A9-de-mission-bas-carbone-cdi-f-h-at-eiffage-4466679881",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": false,
-    "score": 88,
-    "is_new": false
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/manager-de-projet-europ%C3%A9en-cofund-med-transition-f-h-4493152683",
-    "title": "Manager de projet européen COFUND - MED-TRANSITION - F/H",
-    "company": "Université Aix-Marseille",
-    "location": "Aix-en-Provence",
-    "url": "https://fr.linkedin.com/jobs/view/manager-de-projet-europ%C3%A9en-cofund-med-transition-f-h-4493152683",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": true,
-    "score": 45,
     "is_new": false
   },
   {
@@ -300,19 +288,6 @@
     "is_new": false
   },
   {
-    "id": "5944076933",
-    "title": "Senior Product Manager",
-    "company": "EcoVadis Inc",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5944076933?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Company Description Work smart, have fun and make an impact! EcoVadis is the leading provider of business sustainability ratings . Our solutions are b...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "borderline": true,
-    "score": 50,
-    "is_new": false
-  },
-  {
     "id": "5949079086",
     "title": "Latam Underwriter H/F",
     "company": "AXA Climate",
@@ -323,45 +298,6 @@
     "company_watch": true,
     "borderline": true,
     "score": 60,
-    "is_new": false
-  },
-  {
-    "id": "5960430827",
-    "title": "PROGRAMME MANAGEMENT OFFICER, P3",
-    "company": "UNEP - United Nations Environment Programme",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5960430827?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "This is the main content of our website. Job Network : Economic, Social and Development Job Family : Programme Management Category and Level : Profess...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "borderline": true,
-    "score": 55,
-    "is_new": false
-  },
-  {
-    "id": "5958536897",
-    "title": "PROGRAMME MANAGEMENT OFFICER",
-    "company": "UNEP",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5958536897?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "PROGRAMME MANAGEMENT OFFICER at UNEP. Grade: P-3. Location: Paris, France. Application deadline: 5 December 2026. Organizes, designs, plans and carrie...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "borderline": true,
-    "score": 55,
-    "is_new": false
-  },
-  {
-    "id": "5949485003",
-    "title": "Programme Manager - Mission Innovation Secretariat",
-    "company": "IEA Infrastructure and Energy Alternatives",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5949485003?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "Full-time Directorate: IEA Grade: PAL5 Company Description The Organisation for Economic Co-operation and Development ( OECD ) is an international org...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "borderline": false,
-    "score": 72,
     "is_new": false
   },
   {
@@ -558,40 +494,43 @@
     "is_new": false
   },
   {
-    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-industrie-eau-energie-et-carbone-cdi-hf-paris-9e-at-greenflex-4495097724",
-    "title": "Consultant senior Industrie - Eau, Energie et carbone (CDI) - HF - Paris 9e",
-    "company": "GreenFlex",
-    "location": "Ville de Paris",
-    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-industrie-eau-energie-et-carbone-cdi-hf-paris-9e-at-greenflex-4495097724",
+    "id": "https://fr.linkedin.com/jobs/view/consultant-senior-manager-%E2%80%93-risques-%C3%A9mergents-%E2%80%93-bu-sustainability-%E2%80%93-cdi-h-f-at-nexialog-consulting-4495833514",
+    "title": "Consultant Senior / Manager – Risques Émergents – BU Sustainability – CDI (H/F)",
+    "company": "Nexialog Consulting",
+    "location": "Paris",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-manager-%E2%80%93-risques-%C3%A9mergents-%E2%80%93-bu-sustainability-%E2%80%93-cdi-h-f-at-nexialog-consulting-4495833514",
     "description": "",
     "source": "LinkedIn",
     "borderline": false,
+    "score": 72,
+    "is_new": true
+  },
+  {
+    "id": "5981249938",
+    "title": "Modélisation des risques climatiques appliquée à l'immobilier",
+    "company": "Forums Talents Handicap",
+    "location": "Paris, Ile-de-France",
+    "url": "https://www.adzuna.fr/details/5981249938?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Rejoignez EDF et mettez la Data et l’Intelligence Artificielle au service de la résilience climatique du patrimoine immobilier. Vous rejoindrez la Dir...",
+    "salary": "",
+    "date": "2026-11-28T04:21:17Z",
+    "source": "Adzuna",
+    "borderline": false,
+    "score": 85,
+    "is_new": true
+  },
+  {
+    "id": "5981470682",
+    "title": "Consultant senior Industrie - Eau, Energie et carbone (CDI) - HF",
+    "company": "GreenFlex",
+    "location": "9ème Arrondissement, Paris",
+    "url": "https://www.adzuna.fr/details/5981470682?utm_medium=api&utm_source=ae8a5ffa",
+    "description": "Au sein de la BU Industrie, vous contribuez à la réduction des impacts hydriques et à la décarbonation des entreprises industrielles en pilotant ou en...",
+    "salary": "45 k€ – 55 k€",
+    "date": "2026-11-28T08:19:20Z",
+    "source": "Adzuna",
+    "borderline": false,
     "score": 80,
     "is_new": true
-  },
-  {
-    "id": "https://fr.linkedin.com/jobs/view/chef-de-projet-eau-et-climat-h-f-at-syndicat-mixte-du-bassin-des-sorgues-%E2%80%A2-smbs-4495512493",
-    "title": "Chef de projet eau et climat (H/F)",
-    "company": "Syndicat Mixte du Bassin des Sorgues • SMBS",
-    "location": "Entraigues-sur-la-Sorgue",
-    "url": "https://fr.linkedin.com/jobs/view/chef-de-projet-eau-et-climat-h-f-at-syndicat-mixte-du-bassin-des-sorgues-%E2%80%A2-smbs-4495512493",
-    "description": "",
-    "source": "LinkedIn",
-    "borderline": true,
-    "score": 50,
-    "is_new": true
-  },
-  {
-    "id": "5980255731",
-    "title": "Senior Product Manager H/F",
-    "company": "Ecovadis",
-    "location": "Paris, Ile-de-France",
-    "url": "https://www.adzuna.fr/details/5980255731?utm_medium=api&utm_source=ae8a5ffa",
-    "description": "As a Senior Product Manager for one of our Strategic Use Cases, you will own that use case end-to-end - from the customer problem and the data it depe...",
-    "source": "Adzuna",
-    "company_watch": true,
-    "borderline": true,
-    "score": 62,
-    "is_new": false
   }
 ]

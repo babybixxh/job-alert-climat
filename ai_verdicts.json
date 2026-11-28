@@ -1,109 +1,4 @@
 {
-  "ingénieur en performance énergétique f/h|knds france": {
-    "keep": false,
-    "reason": "hors domaine climat/stratégie (performance énergétique technique)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "responsable d'équipes energy manager|advizeo": {
-    "keep": false,
-    "reason": "hors domaine climat/stratégie (management d'équipes énergie)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "consultant projet énergie|migso-pcubed": {
-    "keep": true,
-    "reason": "Consultant projet énergie (Marseille), mais niveau junior/confirmé générique. À garder borderline car énergie/climat.",
-    "borderline": true,
-    "score": 50,
-    "v": 10
-  },
-  "nordex technical expert (france)|full circle wind services": {
-    "keep": false,
-    "reason": "hors domaine climat/stratégie (technical expert éolien)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "ingénieur ger f/h|idex": {
-    "keep": false,
-    "reason": "hors domaine climat/stratégie (ingénieur GER)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "pmo h/f|parlym": {
-    "keep": false,
-    "reason": "hors domaine climat/stratégie (PMO)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "chargé de mission « bilan bas-carbone et mobilités durables », chef de projet odrive|ministère de la justice": {
-    "keep": true,
-    "reason": "Chargé de mission Bilan bas-carbone et mobilités durables : poste stratégique climat en collectivité (Ministère de la Justice), niveau senior, aligné avec son expertise",
-    "borderline": false,
-    "score": 85,
-    "v": 9
-  },
-  "chargé de flotte automobile et services généraux (h/f)|irp auto": {
-    "keep": false,
-    "reason": "hors domaine climat/stratégie (flotte automobile et services généraux)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "chargé de formation h/f|alixio group": {
-    "keep": false,
-    "reason": "hors domaine climat/stratégie (formation)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "consultant emploi h/f|alixio group": {
-    "keep": false,
-    "reason": "hors domaine climat/stratégie (consultant emploi)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "chargé(e) de projets transformation écologique|ministere interieur": {
-    "keep": true,
-    "reason": "Chargé de projets transformation écologique (Ministère de l'Intérieur) : poste public stratégique climat, niveau senior, Paris",
-    "borderline": false,
-    "score": 75,
-    "v": 9
-  },
-  "chef de projet réseaux de chaleur|metiga": {
-    "keep": true,
-    "reason": "Chef de projet réseaux de chaleur à Paris : poste technique mais lié à la transition énergétique, niveau senior.",
-    "borderline": false,
-    "score": 75,
-    "v": 10
-  },
-  "chargé.e de mission dd&rs|université gustave eiffel": {
-    "keep": false,
-    "reason": "Chargé·e de mission DD&RS (Université) : RSE générique, pas de focus climat/stratégie senior",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "gestionnaire pedagogique h/f|cy cergy paris université": {
-    "keep": false,
-    "reason": "Gestionnaire pédagogique (poste administratif)",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
-  "chargé de projets d'action sociale (siège) - h/f|inserm paris / île-de-france": {
-    "keep": false,
-    "reason": "Chargé de projets d'action sociale (Inserm) : hors climat",
-    "borderline": false,
-    "score": 0,
-    "v": 9
-  },
   "chargé de mission attractivité, prospective métiers et développement des talents f/h|la gazette des communes": {
     "keep": false,
     "reason": "Chargé de mission attractivité (poste RH/stratégie territoriale)",
@@ -20995,6 +20890,111 @@
   "ai research engineer (multi-modal agents)|tether operations limited": {
     "keep": false,
     "reason": "AI Research Engineer chez Tether : poste de dev/ML pur, sans lien climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "metteur au point/conducteur d'installation energétique|vinci energies": {
+    "keep": false,
+    "reason": "poste technicien/conducteur d'installation, hors profil",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "consultant senior / manager – risques émergents – bu sustainability – cdi (h/f)|nexialog consulting": {
+    "keep": true,
+    "reason": "Consultant senior/Manager risques émergents en BU Sustainability d'un cabinet conseil à Paris, niveau cohérent ; angle climat probable (risques climatiques)",
+    "borderline": false,
+    "score": 72,
+    "v": 10
+  },
+  "modélisation des risques climatiques appliquée à l'immobilier|forums talents handicap": {
+    "keep": true,
+    "reason": "modélisation des risques climatiques physiques appliquée à l'immobilier (EDF), data/IA, sweet spot risque physique ; Paris mais poste interne fortement climat/modélisation",
+    "borderline": false,
+    "score": 85,
+    "v": 10
+  },
+  "chargé d’affaires environnement international (h/f)|systra": {
+    "keep": false,
+    "reason": "chargé d'affaires environnement international en ingénierie transport, pas de dimension climat/conseil stratégique claire",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "agent qualifié d'unité de valorisation énergétique f/h|veolia rvd": {
+    "keep": false,
+    "reason": "agent d'unité de valorisation énergétique, poste opérationnel/terrain",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chargé de mission climat et carbone h/f|regen school": {
+    "keep": false,
+    "reason": "alternance, rejet absolu malgré Marseille et titre pertinent",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "chargé.e de projets de mobilité européenne|fédération nationale profession sport & loisirs": {
+    "keep": false,
+    "reason": "mobilité européenne dans le sport, sans lien climat ; Cagnes-sur-Mer",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "consultant senior industrie - eau, energie et carbone (cdi) - hf|greenflex": {
+    "keep": true,
+    "reason": "consultant senior industrie eau, énergie et carbone chez GreenFlex, conseil décarbonation à Paris, bon match",
+    "borderline": false,
+    "score": 80,
+    "v": 10
+  },
+  "chargé de recouvrement h/f - cdd|deepki": {
+    "keep": false,
+    "reason": "chargé de recouvrement CDD, poste finance/recouvrement, hors liste climate-tech",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "courtier en assurance construction h/f|aon plc": {
+    "keep": false,
+    "reason": "courtier en assurance construction, pas de dimension climat centrale",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "electrotechnicien f/h f/h|invivo": {
+    "keep": false,
+    "reason": "électrotechnicien, poste technicien",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "bi development (m/w/d) mit schwerpunkt ki-enablement|externum ug (haftungsbeschränkt)": {
+    "keep": false,
+    "reason": "BI development, dev/data sans lien climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "sr regional sales manager, public sector (eu)|minio": {
+    "keep": false,
+    "reason": "commercial pur, sans lien climat",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "quality manager (all genders) – quality & sustainability|mammaly": {
+    "keep": false,
+    "reason": "Quality Manager en agroalimentaire à Berlin, qualité avant tout, pas climat/stratégie",
+    "borderline": false,
+    "score": 0,
+    "v": 10
+  },
+  "senior sre / infrastructure engineer (m/f/d)|simscale gmbh": {
+    "keep": false,
+    "reason": "SRE/infrastructure, dev logiciel pur",
     "borderline": false,
     "score": 0,
     "v": 10
